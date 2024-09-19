@@ -2,7 +2,11 @@
 
 This is for internal contributing dynamics between members of C cycling group. anyone else .....
 ### Version Control & GitHub
-We are working on separate scripts for our individual local data processing. Data analyst who is making the 
+We are working on separate scripts for our individual local data processing. Data analyst who is making the main script can make separate shifts.
+we are having a data drive in a separate drive: Gdrive
+naming conventions:
+SLUG
+00_Data.collection_v1.R
 As much as possible, use the style of "[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)" in your commit messages. See [here](https://njlyon0.github.io/tips/commits.html) for a nice summary of the highlights of that approach.
 
 For **minor changes**, (1) communicate with the team to avoid merge conflicts and (2) make commits directly to `main`
