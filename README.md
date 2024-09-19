@@ -1,7 +1,14 @@
 # GROUP NAME HERE
 
 Investigators:
-- YOUR NAME HERE
+- Carla López Lloreda
+- Guopeng Liang
+- Jon Gewirtzman
+- Julie Gan
+- Ricky Brokaw
+- Taylor Walker
+- Yiyang Xu
+
 
 ## Script Explanations
 
