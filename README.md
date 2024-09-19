@@ -15,6 +15,13 @@ We will compile data on carbon stocks, carbon fluxes, and productivity measureme
 - Recommended timescale of experimental manipulation
 - How disturbances affect C stocks, fluxes, and productivity
 
+### Possible environmental manipulations
+- temperature (global long-term & local heat wave)
+- fire
+- nutrient addition
+- precipitation
+- storms
+
 ## Working group members
 - Carla López Lloreda
 - Guopeng Liang
