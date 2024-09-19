@@ -1,4 +1,4 @@
-# GROUP NAME HERE
+# Carbon cycling responses across spatiotemporal scales
 
 Investigators:
 - Carla López Lloreda
