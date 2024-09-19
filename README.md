@@ -6,10 +6,14 @@ This working group is part of the [LTER's](https://lternet.edu/) [Synthesis Skil
 How does carbon cycling respond to environmental change (in experimental manipulations and to natural disturbances) and how does the duration of the disturbance influence how we model carbon cycling projections in the future across ecosystems? Further, what are the mechanisms driving these responses?
 
 ### Motivation
-Experimental manipulations are utilized in many ecological studies to understand how ecosystems respond to disturbances across a variety of scales. These manipulations are designed to mimic future environmental changes, and their results are generally interpreted in the context of how these ecosystems would respond to said changes. We are interested in how relevant the duration of these experiments are to their applicability.
+Experimental manipulations are utilized at multiple LTER sites to understand how ecosystems respond to disturbances across a variety of scales. These manipulations are designed to mimic future environmental stressors, and their results are generally interpreted in the context of ecosystem response to climate change. We are interested in how relevant the duration of these experiments are in their applicability and accuracy in reflecting IRL environmental change.
 
 ### Approach
 We will compile data on carbon stocks, carbon fluxes, and productivity measurements across LTER sites and beyond that implement different experimental manipulations (e.g. warming, nutrients additions, etc.).
+
+### Deliverables
+- Recommended timescale of experimental manipulation
+- How disturbances affect C stocks, fluxes, and productivity
 
 ## Working group members
 - Carla López Lloreda
