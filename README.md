@@ -1,5 +1,7 @@
 # Carbon Cycling Responses Across Spatiotemporal Scales
 
+This repository is part of the [LTER's](https://lternet.edu/) [Synthesis Skills for Early Career Researchers](https://lter.github.io/ssecr/) course
+
 Investigators:
 - Carla López Lloreda
 - Guopeng Liang
