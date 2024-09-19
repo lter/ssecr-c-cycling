@@ -4,8 +4,7 @@ This is for internal contributing dynamics between members of the C cycling grou
 We are working on separate scripts for our individual local data processing. 
 Data analysts who are making the main script can take separate shifts. 
 If someone is going to work on the main script on the side, create a branch and pull request requires the data analyst to review.
-We are having a data drive in a separate drive: [Google Drive]
-https://drive.google.com/drive/u/1/folders/1UQRLxuDRN9Qr8JCxVXwFKRl7qu-0MI4g
+We are having a data drive in a separate drive: [Google Drive](https://drive.google.com/drive/u/1/folders/1UQRLxuDRN9Qr8JCxVXwFKRl7qu-0MI4g)
 Put the author name within your code.
 
 
