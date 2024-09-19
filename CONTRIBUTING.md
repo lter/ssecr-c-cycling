@@ -1,9 +1,8 @@
 ## Contributing Guidelines for the carbon cycling SSECR working group
 
-This document is meant to focus primarily on our _internal_ processes for contributing. If you're not a member of this team, we hope you find this document valuable as-is but you should also feel free to make any modifications you feel are necessary if you choose to use our guidelines as a starting place.
-
+This is for internal contributing dynamics between members of C cycling group. anyone else .....
 ### Version Control & GitHub
-
+We are working on separate scripts for our individual local data processing. Data analyst who is making the 
 As much as possible, use the style of "[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)" in your commit messages. See [here](https://njlyon0.github.io/tips/commits.html) for a nice summary of the highlights of that approach.
 
 For **minor changes**, (1) communicate with the team to avoid merge conflicts and (2) make commits directly to `main`
