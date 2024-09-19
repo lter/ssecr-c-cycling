@@ -1,4 +1,4 @@
-# Carbon cycling responses across spatiotemporal scales
+# Carbon Cycling Responses Across Spatiotemporal Scales
 
 Investigators:
 - Carla López Lloreda
