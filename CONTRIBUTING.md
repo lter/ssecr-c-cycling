@@ -4,7 +4,8 @@ This is for internal contributing dynamics between members of the C cycling grou
 We are working on separate scripts for our individual local data processing. 
 Data analysts who are making the main script can take separate shifts. 
 If someone is going to work on the main script on the side, create a branch and pull request requires the data analyst to review.
-We are having a data drive in a separate drive: Google Drive 
+We are having a data drive in a separate drive: [Google Drive]
+https://drive.google.com/drive/u/1/folders/1UQRLxuDRN9Qr8JCxVXwFKRl7qu-0MI4g
 Put the author name within your code.
 
 
@@ -14,6 +15,7 @@ As much as possible, use the style of "Conventional Commits" in your commit mess
 For minor changes (< 5 min): 
 (1) communicate with the team to avoid merge conflicts 
 (2) make commits directly to main
+
 For major changes (> 5 min):
  	(1) communicate with the team to avoid merge conflicts 
 (2) open a branch with an intuitive but concise name 
@@ -22,6 +24,7 @@ For major changes (> 5 min):
 (5) make any edits they suggest 
 (6) merge the PR, and 
 (7) delete the branch.
+
 For both:
 Communicate in the Whatsapp group chat when you expect to begin and end the change
 React to your Whatsapp message with a “👍” when you end you change
