@@ -15,7 +15,7 @@ Briefly describe the purpose of each script (or folder of scripts) here as you c
 
 ## Contributing Guidelines & Style Guide
 
-You can see our contributing guidelines in [CONTRIBUTIG.md](https://github.com/lter/ssecr-c-cycling/blob/main/CONTRIBUTING.md)
+You can see our contributing guidelines in [CONTRIBUTING.md](https://github.com/lter/ssecr-c-cycling/blob/main/CONTRIBUTING.md)
 
 ## Supplementary Resources
 
