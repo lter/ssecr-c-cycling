@@ -1,6 +1,6 @@
 ## Contributing Guidelines for the carbon cycling SSECR working group
 
-This is for internal contributing dynamics between members of C cycling group. anyone else .....
+This is for internal contributing dynamics between members of C cycling group. anyone else ......
 ### Version Control & GitHub
 We are working on separate scripts for our individual local data processing. Data analyst who is making the main script can make separate shifts.
 we are having a data drive in a separate drive: Gdrive
