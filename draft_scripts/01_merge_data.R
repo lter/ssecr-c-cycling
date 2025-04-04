@@ -715,7 +715,7 @@ create_forest_plots <- function(effect_sizes, meta_results) {
 #=========================#
 
 # Set the directory path where your data files are located
-data_dir <- "/Users/jongewirtzman/Downloads/drive-download-20250404T194054Z-001"
+data_dir <- "drive-download-20250404T194054Z-001"
 
 # Discover all datasets in the specified directory
 all_datasets <- discover_datasets(data_dir)
