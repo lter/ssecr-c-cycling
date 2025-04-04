@@ -11,10 +11,10 @@ library(metafor)  # For effect size calculations
 library(ggplot2)  # For visualization
 library(purrr)    # For functional programming
 
-source("FUNCTIONS_data_loadings.R")  # Load data loading functions
-source("FUNCTIONS_data_harmonizing.R")  # Load harmonizing functions
-source("FUNCTIONS_effect_sizes.R")  # Load effect size calculation functions
-source("FUNCTIONS_metaanaysis.R")  # Load meta-analysis functions
+source("functions/FUNCTIONS_data_loadings.R")  # Load data loading functions
+source("functions/FUNCTIONS_data_harmonizing.R")  # Load harmonizing functions
+source("functions/FUNCTIONS_effect_size.R")  # Load effect size calculation functions
+source("functions/FUNCTIONS_metaanaysis.R")  # Load meta-analysis functions
 
 
 # Set working directory to where your files are located
