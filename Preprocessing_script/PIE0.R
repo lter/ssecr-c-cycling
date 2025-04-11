@@ -26,6 +26,17 @@ head(df)             # First few rows
 # to summarize all the numbers with the same value in
 # the mentioned columns, for example, here we are summarizing
 # any data with the same Year, Species, Creek... etc
+# It gives you mean, standard deviation and total for all the measured variables.
+summarize_by_columns <- function(data, group_cols) {
+  data %>%
+    group_by(across(all_of(group_cols))) %>%
+    summarise(across(where(is.numeric), list(
+      sd   = ~sd(.x, na.rm = TRUE),
+      mean = ~mean(.x, na.rm = TRUE),
+      sum  = ~sum(.x, na.rm = TRUE)
+    ), .names = "{.col}_{.fn}"),
+    .groups = "drop")
+}
 
 sum_df <- summarize_by_columns(df, c("Year", "Species","Creek","Branch","Transect"))
 
