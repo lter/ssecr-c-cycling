@@ -8,8 +8,6 @@ How does carbon cycling respond to environmental change (in experimental manipul
 ### Motivation
 Experimental manipulations are utilized at multiple LTER sites to understand how ecosystems respond to disturbances across a variety of scales. These manipulations are designed to mimic future environmental stressors, and their results are generally interpreted in the context of ecosystem response to climate change. We are interested in how relevant the duration of these experiments are in their applicability and accuracy in reflecting IRL environmental change.
 
-![](hypothesis.png)
-
 ### Approach
 We will compile data on carbon stocks, carbon fluxes, and productivity measurements across LTER sites and beyond that implement different experimental manipulations (e.g. warming, nutrients additions, etc.).
 
@@ -32,6 +30,10 @@ We will compile data on carbon stocks, carbon fluxes, and productivity measureme
 - Ricky Brokaw
 - Taylor Walker
 - Yiyang Xu
+
+## Mentors
+- Marcy Litvak
+- Will Wieder
 
 ## Script Explanations
 
