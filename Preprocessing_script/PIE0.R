@@ -38,8 +38,8 @@ summarize_by_columns <- function(data, group_cols) {
     .groups = "drop")
 }
 
-sum_df <- summarize_by_columns(df, c("Year", "Species","Creek","Branch","Transect"))
-
+sum_df <- summarize_by_columns(df, c("Year", "Species","Creek","Branch"))
+head(sum_df) 
 # saving the processed data to a new spreadsheet and put it into the ready folder!
 # Sip your coffee and carry on to the next dataset!
 
