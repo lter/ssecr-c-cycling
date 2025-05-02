@@ -5,7 +5,8 @@ library(readr)
 # Your file ID: find the share link for your data file,
 # The file ID is the part between /d/ and /view?, 
 # don't forget to make the file open to anyone with the link
-file_id <-  "1RztkWdZEq9pGXdhnMZp-B9hpOEQjqQ4E"
+file_id <-  "1Ill4MrO0rmowhkvNBu62zkO04O-jc1xP"
+  # NWT "1RztkWdZEq9pGXdhnMZp-B9hpOEQjqQ4E"
   # SEV "1EJc1LbdqN2dyjG1x-GZB8U2n1DshUGh2" 
   # VCR Flora Manipulation "1ohOuZ_2YXsohG2cK7bDsvzALJIkOQJdV"
   # GCE Clear Cutting "1JFQQbocvR653UvkONsF_HPD6gt6E8xeK"
@@ -46,11 +47,11 @@ summarize_by_columns <- function(data, group_cols) {
 }
 
 # use command unique(df$block) to find variables that needs to be summarized
-sum_df <- summarize_by_columns(df, c("year","block","snow","N","temp"))
+sum_df <- summarize_by_columns(df, c("YEAR","MONTH","SITE","TRANSECT","TREATMENT"))
 head(sum_df) 
 # saving the processed data to a new spreadsheet and put it into the ready folder!
 # Sip your coffee and carry on to the next dataset!
 
-write.csv(sum_df, "Ready_data/NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv", row.names = FALSE)
+write.csv(sum_df, "Ready_data/SBC_algal_biomass_2008-2024_processed.csv", row.names = FALSE)
 
 
