@@ -5,15 +5,20 @@ library(readr)
 # Your file ID: find the share link for your data file,
 # The file ID is the part between /d/ and /view?, 
 # don't forget to make the file open to anyone with the link
-file_id <- "1WOk0ED2-XU2p0fTrx2Zx0c8G8NDGLJWg"
+file_id <- "1JFQQbocvR653UvkONsF_HPD6gt6E8xeK" # GCE Clear Cutting
+  
+  # NTL Nutrient Addition "1aRxYd1DVEt2oq5zryWk8jqeW61DgPlnx"
+  # PIE Nutrient Addition "1WOk0ED2-XU2p0fTrx2Zx0c8G8NDGLJWg"
 
 # Construct the download URL
 url <- sprintf("https://drive.google.com/uc?export=download&id=%s", file_id)
 
 # Read the CSV file
-df <- read.csv(url)
-
-
+df <- read.csv(url,skip = 2)
+df <- df[c(-1,-2),]
+for (i in 6:31){
+df[,i] <- as.numeric(df[,i])
+}
 
 # General structure and summary, 
 #don't have to run this but good to know the column names
@@ -38,11 +43,11 @@ summarize_by_columns <- function(data, group_cols) {
     .groups = "drop")
 }
 
-sum_df <- summarize_by_columns(df, c("Year", "Species","Creek","Branch"))
+sum_df <- summarize_by_columns(df, c("Date", "Site","Latitude","Longitude","Treatment"))
 head(sum_df) 
 # saving the processed data to a new spreadsheet and put it into the ready folder!
 # Sip your coffee and carry on to the next dataset!
 
-write.csv(sum_df, "Ready_data/PIE1.csv", row.names = FALSE)
+write.csv(sum_df, "Ready_data/GCE1.csv", row.names = FALSE)
 
 
