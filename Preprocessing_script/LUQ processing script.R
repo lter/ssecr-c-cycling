@@ -9,9 +9,7 @@ drive_auth()
 folder_id <- "191tCGsKz2ghXsbFPFbirjp9G3RrgrI3W"
 
 # Find the specific file in the folder
-file_info <- drive_ls(path = as_id(folder_id), pattern = "ARC_Fertilizer_Biomass_1982-2015_gm2.csv")
 file_info <- drive_ls(path = as_id(folder_id), pattern = "LUQ_gas_fluxes_2003-2010.csv")
-
 
 # Download the file to a temporary location
 temp_file <- tempfile(fileext = ".csv")
