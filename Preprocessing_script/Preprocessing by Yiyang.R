@@ -19,7 +19,7 @@ file_id <-
 url <- sprintf("https://drive.google.com/uc?export=download&id=%s", file_id)
 
 # Read the CSV file
-df <- read.csv(url,skip = 22)
+df <- read.csv(url,skip = 23)
 #df <- df[c(-1,-2),]
 #for (i in 6:31){
 #df[,i] <- as.numeric(df[,i])
