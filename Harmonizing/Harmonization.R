@@ -13,4 +13,11 @@ test_key <- ltertools::begin_key(raw_folder = "Ready_data", data_format = "csv",
 test_key
 
 # Write the newly generated test key into a csv file
-write.csv(sum_df, "Harmonizing/test_key.csv", row.names = FALSE)
+write.csv(test_key, "Harmonizing/test_key.csv", row.names = FALSE)
+
+# Use the key to harmonize our example data
+harmony <- ltertools::harmonize(key = test_key, raw_folder = "Ready_data", 
+                                data_format = "csv", quiet = TRUE)
+
+# Check the structure of that
+utils::str(harmony)
