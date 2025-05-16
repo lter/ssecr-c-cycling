@@ -1,0 +1,46 @@
+---
+title: "R Notebook"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/maple/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+#install.packages("devtools")
+library(devtools)
+#devtools::install_github("lter/ltertools")
+library(ltertools)
+```
+
+
+```{r}
+Column_key <- read.csv("Column_key.csv")
+KBS <- read.csv("KBS_Biomass_1990-2022_processed.csv")
+SEV <- read.csv("SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv")
+CDR <- read.csv("CDR_Biomass_1998-2021_gm2_processed.csv")
+KNZ <- read.csv("KNZ_Biomass_1986-2021_processed.csv")
+PIE <- read.csv("PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv")
+SBC <- read.csv("SBC_algal_biomass_2008-2024_processed.csv") #this dataset might not have replicates, might need to be revisited 
+VCR1 <- read.csv("VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv")
+VCR2 <- read.csv("VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv")
+```
+
+```{r}
+temp_folder <- tempdir()
+write.csv(x = KBS, file = file.path(temp_folder, "KBS_Biomass_1990-2022_processed.csv"), row.names = FALSE)
+write.csv(x = SEV, file = file.path(temp_folder, "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv"), row.names = FALSE)
+write.csv(x = CDR, file = file.path(temp_folder, "CDR_Biomass_1998-2021_gm2_processed.csv"), row.names = FALSE)
+write.csv(x = KNZ, file = file.path(temp_folder, "KNZ_Biomass_1986-2021_processed.csv"), row.names = FALSE)
+write.csv(x = PIE, file = file.path(temp_folder, "PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv"), row.names = FALSE)
+write.csv(x = SBC, file = file.path(temp_folder, "SBC_algal_biomass_2008-2024_processed.csv"), row.names = FALSE)
+write.csv(x = VCR1, file = file.path(temp_folder, "VCR_flora manipulation and inundation_live_dead_biomass_1999-2010_gm2_processed.csv"), row.names = FALSE)
+write.csv(x = VCR2, file = file.path(temp_folder, "VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv"), row.names = FALSE)
+
+harmony <- ltertools::harmonize(key = Column_key, raw_folder = temp_folder, 
+                                data_format = "csv", quiet = TRUE)
+
+write.csv(harmony, "harmonized.csv")
+```
+
