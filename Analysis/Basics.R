@@ -4,7 +4,7 @@ library(ggplot2)
 # 
 df <- read.csv("Harmonizing/harmonized_Ian.csv")
 file.name <- unique(df$source)
-file_name <- file.name[6]
+file_name <- file.name[1]
 single.data <- filter(df,df$source==file_name)
 ## make ways to separate control and treatment
 treatment <- unique(single.data$Treatment)
