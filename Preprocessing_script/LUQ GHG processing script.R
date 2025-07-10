@@ -62,4 +62,4 @@ data <- data %>%
 sum_df <- summarize_by_columns(data2, c("Block_Plot", "DATE"))
 
 # save file
-write.csv(sum_df, "Ready_data/LUQ_GHG_fluxes_2003-2010.csv")
+write.csv(sum_df, "Ready_data/LUQ_GHG_fluxes_2003-2010.csv", row.names = F)
