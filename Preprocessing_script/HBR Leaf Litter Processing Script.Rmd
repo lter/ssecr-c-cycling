@@ -1,0 +1,42 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/maple/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("HBR_litterfall_2009-2022_preprocessed.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(Year, Season, Site, Stand, Treatment, Total_Mass_g_m2) %>%
+  filter(Season == "Fall") %>%
+  filter(!is.na(Total_Mass_g_m2)) %>% 
+  group_by(Year, Season, Site, Stand, Treatment) %>%
+  summarise(Mass_gm2 = mean(Total_Mass_g_m2)) 
+
+new_data
+write.csv(new_data, "HBR_litterfall_2009-2022_processed.csv")
+```
