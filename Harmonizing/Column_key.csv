@@ -31,3 +31,31 @@ VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed
 VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,Replicate,Replicate
 VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,locationName,Treatment
 VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,totalMass_mean,Biomass
+GCE1.csv,Date,Date
+GCE1.csv,Treatment,Treatment
+GCE1.csv,Site,Replicate
+GCE1.csv,Vegetation_Cover_sum,Biomass
+NTL_NutrientAddition1.csv,Year,Date
+NTL_NutrientAddition1.csv,UNSURE,Treatment
+NTL_NutrientAddition1.csv,Lake,Replicate
+NTL_NutrientAddition1.csv,Manual_Chl_mean,Biomass
+MCM_SoilOC_2007-2016_processed.csv,Year,Date
+MCM_SoilOC_2007-2016_processed.csv,TREATMENT,Treatment
+MCM_SoilOC_2007-2016_processed.csv,BLOCK_ID,Replicate
+MCM_SoilOC_2007-2016_processed.csv,Total_abundance_per_kg,Biomass
+LUQ_GHG_fluxes_2003-2010_processed.csv,DATE,Date
+LUQ_GHG_fluxes_2003-2010_processed.csv,Reported_N2O_Flux_ng_N_cm-2_hr-1_mean,Treatment
+LUQ_GHG_fluxes_2003-2010_processed.csv,Block_Plot,Replicate
+LUQ_GHG_fluxes_2003-2010_processed.csv,Reported_CO2_Flux_ug_C_cm-2_hr-1_mean,Carbon Flux
+HBR_litterfall_2009-2022_processed.csv,Year,Date
+HBR_litterfall_2009-2022_processed.csv,Treatment,Treatment
+HBR_litterfall_2009-2022_processed.csv,Site,Replicate
+HBR_litterfall_2009-2022_processed.csv,Mass_gm2,PerecentC
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,year,Date
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,block,Replicate
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,N,Treatment
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,mass_mean,Biomass
+CDR_SoilBiomass_1982-2018_%C_processed.csv,Year,Date
+CDR_SoilBiomass_1982-2018_%C_processed.csv,NAdd.g.m2.yr.,Treatment
+CDR_SoilBiomass_1982-2018_%C_processed.csv,Plot,Replicate
+CDR_SoilBiomass_1982-2018_%C_processed.csv,PerecentC,PerecentC
