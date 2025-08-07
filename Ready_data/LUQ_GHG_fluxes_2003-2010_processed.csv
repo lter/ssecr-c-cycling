@@ -1,4 +1,4 @@
-"","Block_Plot","DATE","Reported_CO2_Flux_ug_C_cm-2_hr-1_mean","Reported_CO2_Flux_ug_C_cm-2_hr-1_sd","Reported_CH4_Flux_ng_C_cm-2_hr-1_mean","Reported_CH4_Flux_ng_C_cm-2_hr-1_sd","Reported_N2O_Flux_ng_N_cm-2_hr-1_mean","Reported_N2O_Flux_ng_N_cm-2_hr-1_sd"
+"","Block_Plot","DATE","CO2_Flux_ug_mean","Reported_CO2_Flux_ug_C_cm-2_hr-1_sd","Reported_CH4_Flux_ng_C_cm-2_hr-1_mean","Reported_CH4_Flux_ng_C_cm-2_hr-1_sd","N2O_Flux_ug_mean","Reported_N2O_Flux_ng_N_cm-2_hr-1_sd"
 "1","A-1",2003-01-22,12.148,4.3990760393519,0,0,-2.076,1.52168656430948
 "2","A-1",2003-02-21,10.135,5.21844485135818,0,0,-2.0875,2.79176616738102
 "3","A-1",2003-03-20,9.83,5.57660290858153,0,0,0,0
