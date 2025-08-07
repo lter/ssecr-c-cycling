@@ -1,0 +1,41 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/maple/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("MCM_SoilOC_2007-2016_preprocessed.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(Year, BLOCK_ID, TREATMENT, TOTAL_ROTIFERS, TOTAL) %>%
+  filter(!is.na(TOTAL_ROTIFERS), !is.na(TOTAL)) %>% 
+  group_by(Year, BLOCK_ID, TREATMENT) %>%
+  summarise(Total_abundance_per_kg = sum(TOTAL_ROTIFERS, TOTAL)) 
+
+new_data
+write.csv(new_data, "MCM_SoilOC_2007-2016_processed.csv")
+```
