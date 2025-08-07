@@ -3,7 +3,8 @@
 # devtools::install_github("lter/ltertools")
 # more harmonization tips at: https://lter.github.io/ltertools/articles/ltertools.html
 
-
+#load library ltertools
+library(ltertools)
 
 # Generate a column key with "guesses" at tidy column names
 #test_key <- ltertools::begin_key(raw_folder = "Ready_data", data_format = "csv", 
