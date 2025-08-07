@@ -58,4 +58,5 @@ NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,mass_mean,Response.Variable
 CDR_SoilBiomass_1982-2018_%C_processed.csv,Year,Date
 CDR_SoilBiomass_1982-2018_%C_processed.csv,NAdd.g.m2.yr.,Treatment
 CDR_SoilBiomass_1982-2018_%C_processed.csv,Plot,Replicate
-CDR_SoilBiomass_1982-2018_%C_processed.csv,PerecentC,Response.Variable
+CDR_SoilBiomass_1982-2018_%C_processed.csv,PercentC,Response.Variable
+
