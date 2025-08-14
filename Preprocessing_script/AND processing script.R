@@ -42,10 +42,20 @@ head(data)
 ggplot(data, aes(x=SAMPLEDATE, y = DBA, color = WATERSHED)) +
   geom_point()
 
-# need to finish adding plot summarizing
+# Summarize by plot
 
 new_data <- data %>%
-  select(-COMMENTS)
+  group_by(SAMPLEDATE, PLOTID, YEAR) %>%
+  summarise(DBA_cm = mean(DBA),
+            WATERSHED = first(WATERSHED))
+
+ggplot(new_data, aes(x = SAMPLEDATE, y= DBA_cm, color = WATERSHED)) +
+  geom_point() +
+  geom_line()
+
+
+ggplot(new_data, aes(x = YEAR, y= DBA_cm, color = WATERSHED)) +
+  geom_point()
 
 # summarize means and sd of the dataset
 sum_df <- summarize_by_columns(data, c("SAMPLEDATE"))
