@@ -40,7 +40,23 @@ data <- read_csv(temp_file)
 # head(data)
 
 # summarize means and sd of the dataset
+
+sum_df <- data %>%
+  select()
+  group_by(BLOCK, PLOT, SEEDLINGPLOT) %>%
+  summarise(Diameter = mean(DIAMETER)) %>%
+    
+  
+  
+  new_data <- raw_data %>%
+  dplyr::select(Year, Season, Site, Stand, Treatment, Total_Mass_g_m2) %>%
+  filter(Season == "Fall") %>%
+  filter(!is.na(Total_Mass_g_m2)) %>% 
+  group_by(Year, Season, Site, Stand, Treatment) %>%
+  summarise(Mass_gm2 = mean(Total_Mass_g_m2)) 
 sum_df <- summarize_by_columns(data2, c("Block_Plot", "DATE"))
+
+
 
 # save file
 write.csv(sum_df, "Ready_data/LUQ_seedling_2003-2021_processed.csv")
