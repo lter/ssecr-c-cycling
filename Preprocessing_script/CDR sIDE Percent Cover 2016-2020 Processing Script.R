@@ -58,7 +58,7 @@ sum(CDR_PercentCov_totals$total_cover, na.rm = TRUE) ==
   sum(CDR_PercentCov$cover, na.rm = TRUE)
 
 
-#Now Overwrite the original data to reflect the summed ABG mass
+#Now Overwrite the original data to reflect the summed Percent Cover
 CDR_PercentCov <- CDR_PercentCov %>%
   group_by(date, plot, treatment) %>%
   summarise(
@@ -70,3 +70,4 @@ CDR_PercentCov <- CDR_PercentCov %>%
 write.csv(CDRabg_biomass_data,
           "CDR_sIDEPercentCover_2016-2020_processed.csv",
           row.names = FALSE)
+
