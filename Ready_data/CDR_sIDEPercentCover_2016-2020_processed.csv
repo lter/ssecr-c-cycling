@@ -1,4 +1,4 @@
-"date","plot","treatment","total_mass"
+"date","plot","treatment","total_cover"
 "01/08/2019","01","control_NPK",679.8
 "01/08/2019","02","control_infra_NPK",824.95
 "01/08/2019","03","drought",449.2
@@ -149,3 +149,4 @@
 "25/07/2016","28","drought",561.4
 "25/07/2016","29","control_NPK",1095.1
 "25/07/2016","30","control_infra",551
+
