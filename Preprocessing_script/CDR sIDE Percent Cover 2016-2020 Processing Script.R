@@ -50,7 +50,7 @@ CDR_PercentCov_totals <- CDR_PercentCov %>%
 
 
 # unique Row combos kept; Should be TRUE
-nrow(CDR_PercentCov_totals) == nrow(distinct(CDR_PercentCov_totals, date, plot, treatment))
+nrow(CDR_PercentCov_totals) == nrow(distinct(CDR_PercentCov, date, plot, treatment))
 
 
 # Confirm totals add up to original (ignoring NA); Should be TRUE
@@ -70,4 +70,5 @@ CDR_PercentCov <- CDR_PercentCov %>%
 write.csv(CDRabg_biomass_data,
           "CDR_sIDEPercentCover_2016-2020_processed.csv",
           row.names = FALSE)
+
 
