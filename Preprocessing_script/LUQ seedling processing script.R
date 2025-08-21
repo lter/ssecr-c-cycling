@@ -1,4 +1,4 @@
-# Carla López Lloreda
+# Processed by: Carla López Lloreda
 
 # load libraries
 library(googledrive)
@@ -35,28 +35,37 @@ drive_download(file = file_info$id, path = temp_file, overwrite = TRUE)
 # Read the CSV file
 data <- read_csv(temp_file)
 
-# check out columns and summary
-# summary(data)
-# head(data)
+# Adding treatment information
+
+data <- data %>%
+  mutate(treatment = case_when(
+    BLOCK == "A" & PLOT == 1 ~ "Control",
+    BLOCK == "A" & PLOT == 2 ~ "Trim + clear",
+    BLOCK == "A" & PLOT == 3 ~ "Trim + debris",
+    BLOCK == "A" & PLOT == 4 ~ "No trim + debris",
+    
+    BLOCK == "B" & PLOT == 1 ~ "Control",
+    BLOCK == "B" & PLOT == 2 ~ "Trim + debris",
+    BLOCK == "B" & PLOT == 3 ~ "No trim + debris",
+    BLOCK == "B" & PLOT == 4 ~ "Trim + clear",
+    
+    BLOCK == "C" & PLOT == 1 ~ "No trim + debris",
+    BLOCK == "C" & PLOT == 2 ~ "Trim + debris",
+    BLOCK == "C" & PLOT == 3 ~ "Trim + clear",
+    BLOCK == "C" & PLOT == 4 ~ "Control",
+    
+    TRUE ~ NA_character_
+  ))
 
 # summarize means and sd of the dataset
 
 sum_df <- data %>%
-  select()
   group_by(BLOCK, PLOT, SEEDLINGPLOT) %>%
-  summarise(Diameter = mean(DIAMETER)) %>%
+  summarise(Diameter = mean(DIAMETER))
     
-  
-  
-  new_data <- raw_data %>%
-  dplyr::select(Year, Season, Site, Stand, Treatment, Total_Mass_g_m2) %>%
-  filter(Season == "Fall") %>%
-  filter(!is.na(Total_Mass_g_m2)) %>% 
-  group_by(Year, Season, Site, Stand, Treatment) %>%
-  summarise(Mass_gm2 = mean(Total_Mass_g_m2)) 
-sum_df <- summarize_by_columns(data2, c("Block_Plot", "DATE"))
-
-
+sum_df <- data %>%
+  select(START_DATE, BLOCK, PLOT, HEIGHT, DIAMETER, treatment) %>%
+  summarize_by_columns(c("BLOCK", "PLOT", "treatment", "START_DATE"))
 
 # save file
 write.csv(sum_df, "Ready_data/LUQ_seedling_2003-2021_processed.csv")
