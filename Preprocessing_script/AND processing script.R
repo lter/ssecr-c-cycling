@@ -1,4 +1,4 @@
-# Carla López Lloreda
+# Processed by: Carla López Lloreda
 
 # load libraries
 library(googledrive)
@@ -23,7 +23,7 @@ summarize_by_columns <- function(data, group_cols) {
 
 # File ID from the Google Drive URL
 # The ID is the part after /folders/ in your URL
-folder_id <- "191tCGsKz2ghXsbFPFbirjp9G3RrgrI3W"
+folder_id <- "1GmISK_OKXJ_VBKsTkoS_4FTgsi7dgEz9"
 
 # Find the specific file in the folder
 file_info <- drive_ls(path = as_id(folder_id), pattern = "AND_Logging_DBAHeight_2002-2021_m.csv")
@@ -33,22 +33,31 @@ temp_file <- tempfile(fileext = ".csv")
 drive_download(file = file_info$id, path = temp_file, overwrite = TRUE)
 
 # Read the CSV file
-data <- read_csv(temp_file)
+data_exp <- read_csv(temp_file)
 
-# check out columns and summary
-summary(data)
-head(data)
+# Download the control data
+file_info <- drive_ls(path = as_id(folder_id), pattern = "AND_Logging-control_DBH_1910-2023.csv")
 
-ggplot(data, aes(x=SAMPLEDATE, y = DBA, color = WATERSHED)) +
-  geom_point()
+# Download the file to a temporary location
+temp_file <- tempfile(fileext = ".csv")
+drive_download(file = file_info$id, path = temp_file, overwrite = TRUE)
 
-# need to finish adding plot summarizing
+# Read the CSV file
+data_control <- read_csv(temp_file)
 
-new_data <- data %>%
-  select(-COMMENTS)
+# Filtering control data for same time period as experimental
 
-# summarize means and sd of the dataset
-sum_df <- summarize_by_columns(data, c("SAMPLEDATE"))
+data_control$SAMPLEDATE <- as.Date(data_control$SAMPLEDATE, format = "%m/%d/%Y")
+data_control <- filter(data_control, SAMPLEDATE > "2002-06-18")
+
+data_control$WATERSHED <- "WS08"
+
+data_join <- bind_rows(data_exp, data_control)
+
+# summarize means and sd of the dataset by plot
+sum_df <- data_join %>%
+  select(WATERSHED,PLOT,YEAR,DBA,HEIGHT,DBH, PLOTID,SAMPLEDATE) %>%
+  summarize_by_columns(c("SAMPLEDATE", "WATERSHED", "PLOT", "YEAR"))
 
 # save file
-write.csv(new_data, "Ready_data/AND_plant_biomass_2002-2021_processed.csv")
+write.csv(sum_df, "Ready_data/AND_plant_biomass_2002-2021_processed.csv")
