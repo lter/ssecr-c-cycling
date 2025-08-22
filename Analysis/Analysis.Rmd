@@ -1,0 +1,30 @@
+---
+title: "Analysis"
+output: pdf_document
+---
+
+```{r}
+data <- read.csv("harmonized_aug7.csv") #will change this to the name of the final harmonized file
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+#for log response ratio, we need the mean and sd/n of each treatment 
+summary(data)
+
+mean_sd <- data %>%
+  filter(!is.na(Response.Variable)) %>%
+  group_by(source, Date, Treatment) %>%
+  summarise(means = mean(Response.Variable),
+            SD = sd(Response.Variable),
+            size = n(),
+            CV = sd(Response.Variable)/mean(Response.Variable))
+
+#mean_sd
+
+
+```
+
