@@ -1,0 +1,45 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/Julie Gan/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group/Bonanza Creek Flux Data")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("481_EML_AK_CiPEHR_CO2_2009-2011.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+raw_data$treatment <- paste(raw_data$WW, raw_data$SW)
+
+new_data <- raw_data %>%
+  dplyr::select(year, doy, fence, NEE_g, treatment) %>%
+  filter(!is.na(NEE_g)) %>% 
+  group_by(year, doy, fence, treatment) %>%
+  summarise(NEE = sum(NEE_g)) %>%
+  group_by(year, fence, treatment) %>%
+  summarise(NEE = sum(NEE))
+
+new_data
+write.csv(new_data, "481_EML_AK_CiPEHR_CO2_2009-2011_Processed.csv")
+```
