@@ -59,3 +59,15 @@ CDR_SoilBiomass_1982-2018_%C_processed.csv,Year,Date
 CDR_SoilBiomass_1982-2018_%C_processed.csv,NAdd.g.m2.yr.,Treatment
 CDR_SoilBiomass_1982-2018_%C_processed.csv,Plot,Replicate
 CDR_SoilBiomass_1982-2018_%C_processed.csv,PercentC,Response.Variable
+AND_plant_biomass_2002-2021_processed.csv,YEAR,Date
+AND_plant_biomass_2002-2021_processed.csv,PLOT,Treatment
+AND_plant_biomass_2002-2021_processed.csv,WATERSHED,Replicate
+AND_plant_biomass_2002-2021_processed.csv,DBA_mean,Response.Variable
+BNZ_NEE_2009-2021.csv,year,Date
+BNZ_NEE_2009-2021.csv,treatment,Treatment
+BNZ_NEE_2009-2021.csv,fence,Replicate
+BNZ_NEE_2009-2021.csv,NEE,Response.Variable
+CAP_Biomass_2006-2024_Processed.csv,year,Date
+CAP_Biomass_2006-2024_Processed.csv,treatment_code,Treatment
+CAP_Biomass_2006-2024_Processed.csv,site_code,Replicate
+CAP_Biomass_2006-2024_Processed.csv,Biomass,Response.Variable
