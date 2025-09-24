@@ -1,73 +1,97 @@
-source,raw_name,tidy_name
-KBS_Biomass_1990-2022_processed.csv,Year,Date
-KBS_Biomass_1990-2022_processed.csv,Treatment,Treatment
-KBS_Biomass_1990-2022_processed.csv,Replicate,Replicate
-KBS_Biomass_1990-2022_processed.csv,Biomass,Response.Variable
-SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,year,Date
-SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,treatment,Treatment
-SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,plot,Replicate
-SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,Biomass,Response.Variable
-CDR_Biomass_1998-2021_gm2_processed.csv,Date,Date
-CDR_Biomass_1998-2021_gm2_processed.csv,Ring,Replicate
-CDR_Biomass_1998-2021_gm2_processed.csv,Treatment,Treatment
-CDR_Biomass_1998-2021_gm2_processed.csv,Biomass,Response.Variable
-KNZ_Biomass_1986-2021_processed.csv,RECYEAR,Date
-KNZ_Biomass_1986-2021_processed.csv,PLOT,Replicate
-KNZ_Biomass_1986-2021_processed.csv,TREATMENT,Treatment
-KNZ_Biomass_1986-2021_processed.csv,BIOMASS,Response.Variable
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,Year,Date
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,Branch,Treatment
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,Transect,Replicate
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,Shoot.Mass_mean,Response.Variable
-SBC_algal_biomass_2008-2024_processed_corrected.csv,YEAR,Date
-SBC_algal_biomass_2008-2024_processed_corrected.csv,TREATMENT,Treatment
-SBC_algal_biomass_2008-2024_processed_corrected.csv,DRY_GM2_sum,Response.Variable
-SBC_algal_biomass_2008-2024_processed_corrected.csv,SITE,Replicate
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,EOYBYear,Date
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,locationName,Treatment
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,replicate,Replicate
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,totalMass_mean,Response.Variable
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,EOYBYear,Date
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,Replicate,Replicate
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,locationName,Treatment
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,totalMass_mean,Response.Variable
-GCE1.csv,Date,Date
-GCE1.csv,Treatment,Treatment
-GCE1.csv,Site,Replicate
-GCE1.csv,Vegetation_Cover_sum,Response.Variable
-NTL_NutrientAddition1.csv,Year,Date
-NTL_NutrientAddition1.csv,N_addition,Treatment
-NTL_NutrientAddition1.csv,Lake,Replicate
-NTL_NutrientAddition1.csv,Manual_Chl_mean,Response.Variable
-MCM_SoilOC_2007-2016_processed.csv,Year,Date
-MCM_SoilOC_2007-2016_processed.csv,TREATMENT,Treatment
-MCM_SoilOC_2007-2016_processed.csv,BLOCK_ID,Replicate
-MCM_SoilOC_2007-2016_processed.csv,Total_abundance_per_kg,Response.Variable
-LUQ_GHG_fluxes_2003-2010_processed.csv,DATE,Date
-LUQ_GHG_fluxes_2003-2010_processed.csv,n2o_flux_ng_mean,Treatment
-LUQ_GHG_fluxes_2003-2010_processed.csv,Block_Plot,Replicate
-LUQ_GHG_fluxes_2003-2010_processed.csv,CO2_Flux_ug_mean,Response.Variable
-HBR_litterfall_2009-2022_processed.csv,Year,Date
-HBR_litterfall_2009-2022_processed.csv,Treatment,Treatment
-HBR_litterfall_2009-2022_processed.csv,Site,Replicate
-HBR_litterfall_2009-2022_processed.csv,Mass_gm2,Response.Variable
-NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,year,Date
-NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,block,Replicate
-NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,N,Treatment
-NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,mass_mean,Response.Variable
-CDR_SoilBiomass_1982-2018_%C_processed.csv,Year,Date
-CDR_SoilBiomass_1982-2018_%C_processed.csv,NAdd.g.m2.yr.,Treatment
-CDR_SoilBiomass_1982-2018_%C_processed.csv,Plot,Replicate
-CDR_SoilBiomass_1982-2018_%C_processed.csv,PercentC,Response.Variable
-AND_plant_biomass_2002-2021_processed.csv,YEAR,Date
-AND_plant_biomass_2002-2021_processed.csv,PLOT,Treatment
-AND_plant_biomass_2002-2021_processed.csv,WATERSHED,Replicate
-AND_plant_biomass_2002-2021_processed.csv,DBA_mean,Response.Variable
-BNZ_NEE_2009-2021.csv,year,Date
-BNZ_NEE_2009-2021.csv,treatment,Treatment
-BNZ_NEE_2009-2021.csv,fence,Replicate
-BNZ_NEE_2009-2021.csv,NEE,Response.Variable
-CAP_Biomass_2006-2024_Processed.csv,year,Date
-CAP_Biomass_2006-2024_Processed.csv,treatment_code,Treatment
-CAP_Biomass_2006-2024_Processed.csv,site_code,Replicate
-CAP_Biomass_2006-2024_Processed.csv,Biomass,Response.Variable
+source,tidy_sit_ name,raw_name,tidy_name,Stock_or_Flux?
+KBS_Biomass_1990-2022_processed.csv,KBS,Year,Date,NA
+KBS_Biomass_1990-2022_processed.csv,KBS,Treatment,Treatment,NA
+KBS_Biomass_1990-2022_processed.csv,KBS,Replicate,Replicate,NA
+KBS_Biomass_1990-2022_processed.csv,KBS,Biomass,Response.Variable,Stock
+SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,SEV,year,Date,NA
+SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,SEV,treatment,Treatment,NA
+SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,SEV,plot,Replicate,NA
+SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,SEV,Biomass,Response.Variable,Stock
+CDR_Biomass_1998-2021_gm2_processed.csv,CDR,Date,Date,NA
+CDR_Biomass_1998-2021_gm2_processed.csv,CDR,Ring,Replicate,NA
+CDR_Biomass_1998-2021_gm2_processed.csv,CDR,Treatment,Treatment,NA
+CDR_Biomass_1998-2021_gm2_processed.csv,CDR,Biomass,Response.Variable,Stock
+KNZ_Biomass_1986-2021_processed.csv,KNZ,RECYEAR,Date,NA
+KNZ_Biomass_1986-2021_processed.csv,KNZ,PLOT,Replicate,NA
+KNZ_Biomass_1986-2021_processed.csv,KNZ,TREATMENT,Treatment,NA
+KNZ_Biomass_1986-2021_processed.csv,KNZ,BIOMASS,Response.Variable,Stock
+PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Year,Date,NA
+PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Branch,Treatment,NA
+PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Transect,Replicate,NA
+PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Shoot.Mass_mean,Response.Variable,Stock
+SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,YEAR,Date,NA
+SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,TREATMENT,Treatment,NA
+SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,DRY_GM2_sum,Response.Variable,Stock
+SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,SITE,Replicate,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,EOYBYear,Date,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,locationName,Treatment,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,replicate,Replicate,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,totalMass_mean,Response.Variable,Stock
+VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,EOYBYear,Date,NA
+VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Replicate,Replicate,NA
+VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,locationName,Treatment,NA
+VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,totalMass_mean,Response.Variable,Stock
+GCE1.csv,GCE,Date,Date,NA
+GCE1.csv,GCE,Treatment,Treatment,NA
+GCE1.csv,GCE,Site,Replicate,NA
+GCE1.csv,GCE,Vegetation_Cover_sum,Response.Variable,Stock
+NTL_NutrientAddition1.csv,NTL,Year,Date,NA
+NTL_NutrientAddition1.csv,NTL,N_addition,Treatment,NA
+NTL_NutrientAddition1.csv,NTL,Lake,Replicate,NA
+NTL_NutrientAddition1.csv,NTL,Manual_Chl_mean,Response.Variable,Stock
+MCM_SoilOC_2007-2016_processed.csv,MCM,Year,Date,NA
+MCM_SoilOC_2007-2016_processed.csv,MCM,TREATMENT,Treatment,NA
+MCM_SoilOC_2007-2016_processed.csv,MCM,BLOCK_ID,Replicate,NA
+MCM_SoilOC_2007-2016_processed.csv,MCM,Total_abundance_per_kg,Response.Variable,Stock
+LUQ_GHG_fluxes_2003-2010_processed.csv,LUQ,DATE,Date,NA
+LUQ_GHG_fluxes_2003-2010_processed.csv,LUQ,n2o_flux_ng_mean,Treatment,NA
+LUQ_GHG_fluxes_2003-2010_processed.csv,LUQ,Block_Plot,Replicate,NA
+LUQ_GHG_fluxes_2003-2010_processed.csv,LUQ,CO2_Flux_ug_mean,Carbon Flux,Flux
+HBR_litterfall_2009-2022_processed.csv,HBR,Year,Date,NA
+HBR_litterfall_2009-2022_processed.csv,HBR,Treatment,Treatment,NA
+HBR_litterfall_2009-2022_processed.csv,HBR,Site,Replicate,NA
+HBR_litterfall_2009-2022_processed.csv,HBR,Mass_gm2,PercentCar,Other
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,year,Date,NA
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,block,Replicate,NA
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,N,Treatment,NA
+NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,mass_mean,Response.Variable,Stock
+CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Year,Date,NA
+CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,NAdd.g.m2.yr.,Treatment,NA
+CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Plot,Replicate,NA
+CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,PercentC,PercentCar,Other
+AND_plant_biomass_2002-2021_processed.csv,AND,YEAR,Date,NA
+AND_plant_biomass_2002-2021_processed.csv,AND,PLOT,Treatment,NA
+AND_plant_biomass_2002-2021_processed.csv,AND,WATERSHED,Replicate,NA
+AND_plant_biomass_2002-2021_processed.csv,AND,DBA_mean,Response.Variable,Stock
+BNZ_NEE_2009-2021.csv,BNZ,year,Date,NA
+BNZ_NEE_2009-2021.csv,BNZ,treatment,Treatment,NA
+BNZ_NEE_2009-2021.csv,BNZ,fence,Replicate,NA
+BNZ_NEE_2009-2021.csv,BNZ,NEE,Response.Variable,?
+CAP_Biomass_2006-2024_Processed.csv,CAP,year,Date,NA
+CAP_Biomass_2006-2024_Processed.csv,CAP,treatment_code,Treatment,NA
+CAP_Biomass_2006-2024_Processed.csv,CAP,site_code,Replicate,NA
+CAP_Biomass_2006-2024_Processed.csv,CAP,Biomass,Response.Variable,Stock
+CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,date,Date,NA
+CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,treatment,Treatment,NA
+CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,plot,Replicate,NA
+CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,mass,Biomass,Stock
+CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
+CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,treatment,Treatment,NA
+CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,plot,Replicate,NA
+CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,total_covercover,PercentCov,Other
+CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
+CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,shelter_fertilized_irrigated,Treatment,NA
+CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,plot_subplot,Replicate,NA
+CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,PercentCov,Other
+CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,Date,Date,NA
+CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,Grazed,Treatment,NA
+CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,Plot,Replicate,NA
+CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,total_mass,Biomass,Stock
+CDR_PercentCarbon_1982-2011_processed.csv,CDR,Year,Date,NA
+CDR_PercentCarbon_1982-2011_processed.csv,CDR,Nadd,Treatment,NA
+CDR_PercentCarbon_1982-2011_processed.csv,CDR,Field_Plot,Replicate,NA
+CDR_PercentCarbon_1982-2011_processed.csv,CDR,total_Carpercent,PercentCarbon,Other
+CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Date,Date,NA
+CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cover_Fertilizer(g/m2/year),Treatment,NA
+CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Plot,Replicate,NA
+CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,total_Scf,PercentCarbon,Other
