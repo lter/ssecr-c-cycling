@@ -1,0 +1,43 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/Julie Gan/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("ARC_Biomass_1982-2015.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(Year, Treatment, Species, Tissue, Average.g.m.2) %>%
+  filter(!is.na(Average.g.m.2)) %>% 
+  group_by(Year, Species, Treatment) %>%
+  summarise(biomass = sum(Average.g.m.2)) %>%
+  group_by(Year, Treatment) %>%
+  summarise(biomass = sum(biomass)) 
+
+new_data
+write.csv(new_data, "ARC_Biomass_1982-2015_processed.csv")
+```
