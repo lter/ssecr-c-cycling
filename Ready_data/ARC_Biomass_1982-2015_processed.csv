@@ -1,20 +1,77 @@
-"","Year","Treatment","biomass"
-"1",1982,"Control",961.153
-"2",1983,"Control",964.246
-"3",1983,"GH",714.703
-"4",1983,"GHNP",798.455
-"5",1983,"NP",1198.156
-"6",1983,"SH",655.22
-"7",1984,"Control",257.302
-"8",1984,"NP",356.907
-"9",1989,"Control",1022.929
-"10",1989,"GH",955.969
-"11",1989,"GHNP",831.288
-"12",1989,"NP",1081.382
-"13",1989,"SH",616.587
-"14",1995,"Control",443.638
-"15",1995,"NP",803.931
-"16",2000,"Control",1491.702
-"17",2000,"NP",2070.841
-"18",2015,"Control",1357.872
-"19",2015,"NP",2693.784
+Year,Treatment,Biomass,block
+1982,Control,706.425,block 1
+1983,Control,951.9,block 1
+1983,GH,778.175,block 1
+1983,GHNP,617.21875,block 1
+1983,NP,1403.35,block 1
+1983,SH,740.43125,block 1
+1984,Control,295.01875,block 1
+1984,NP,170.64375,block 1
+1989,Control,1100.28125,block 1
+1989,GH,1098.40625,block 1
+1989,GHNP,655.61875,block 1
+1989,NP,1152.89375,block 1
+1989,SH,656.125,block 1
+1995,Control,396.80625,block 1
+1995,NP,700.8625,block 1
+2000,Control,2149.828125,block 1
+2000,NP,2226.505625,block 1
+2015,Control,NA,block 1
+2015,NP,NA,block 1
+1982,Control,976.48,block 2
+1983,Control,737.215,block 2
+1983,GH,785.735,block 2
+1983,GHNP,957.05,block 2
+1983,NP,1074.61,block 2
+1983,SH,567.95,block 2
+1984,Control,246.79,block 2
+1984,NP,442,block 2
+1989,Control,872.51,block 2
+1989,GH,761.94,block 2
+1989,GHNP,791.495,block 2
+1989,NP,749.775,block 2
+1989,SH,620.565,block 2
+1995,Control,473.79,block 2
+1995,NP,831.935,block 2
+2000,Control,1385.105,block 2
+2000,NP,1930.145,block 2
+2015,Control,NA,block 2
+2015,NP,NA,block 2
+1982,Control,806.42,block 3
+1983,Control,1122.8415,block 3
+1983,GH,796.565,block 3
+1983,GHNP,879.935,block 3
+1983,NP,1262.845,block 3
+1983,SH,680.885,block 3
+1984,Control,244.56,block 3
+1984,NP,380.235,block 3
+1989,Control,887.28,block 3
+1989,GH,853.37,block 3
+1989,GHNP,1068.3,block 3
+1989,NP,995.785,block 3
+1989,SH,568.745,block 3
+1995,Control,428.485,block 3
+1995,NP,635.51,block 3
+2000,Control,1306.515,block 3
+2000,NP,2486.33,block 3
+2015,Control,NA,block 3
+2015,NP,NA,block 3
+1982,Control,1447.16875,block 4
+1983,Control,1016.144375,block 4
+1983,GH,435.59375,block 4
+1983,GHNP,730.3875,block 4
+1983,NP,1045.31875,block 4
+1983,SH,606.0375,block 4
+1984,Control,257.35625,block 4
+1984,NP,339.18125,block 4
+1989,Control,1165.29375,block 4
+1989,GH,1212.9375,block 4
+1989,GHNP,828.01875,block 4
+1989,NP,1281.60625,block 4
+1989,SH,608.3875,block 4
+1995,Control,459.43125,block 4
+1995,NP,1183.1375,block 4
+2000,Control,1161.88125,block 4
+2000,NP,2312.5625,block 4
+2015,Control,NA,block 4
+2015,NP,NA,block 4
