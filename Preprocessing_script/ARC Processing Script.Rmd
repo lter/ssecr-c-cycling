@@ -30,14 +30,73 @@ head(raw_data)
 ```
 
 ```{r}
+raw_data$B1Q3gm2 <- as.double(raw_data$B1Q3gm2)
+raw_data$B1Q4gm2 <- as.double(raw_data$B1Q4gm2)
+raw_data$B1Q5gm2 <- as.double(raw_data$B1Q5gm2)
+
 new_data <- raw_data %>%
-  dplyr::select(Year, Treatment, Species, Tissue, Average.g.m.2) %>%
-  filter(!is.na(Average.g.m.2)) %>% 
-  group_by(Year, Species, Treatment) %>%
-  summarise(biomass = sum(Average.g.m.2)) %>%
-  group_by(Year, Treatment) %>%
-  summarise(biomass = sum(biomass)) 
+  dplyr::select(Year, Treatment, Species, Tissue, B1Q1gm2, B1Q3gm2, B1Q4gm2, B1Q5gm2, B2Q1gm2, B2Q2gm2, B2Q3gm2, B2Q4gm2, B2Q5gm2, B3Q1gm2, B3Q2gm2, B3Q3gm2, B3Q4gm2, B3Q5gm2, B4Q1gm2, B4Q2gm2, B4Q3gm2, B4Q4gm2) %>%
+  group_by(Year, Treatment, Species, Tissue) %>%
+  mutate(B1 = mean(unlist(across(c(B1Q1gm2, B1Q3gm2, B1Q4gm2, B1Q5gm2), mean, na.rm = TRUE))),
+         B2 = mean(unlist(across(c(B2Q1gm2,B2Q2gm2,B2Q3gm2,B2Q4gm2,B2Q5gm2), mean, na.rm = TRUE))),
+         B3 = mean(unlist(across(c(B3Q1gm2,B3Q2gm2,B3Q3gm2,B3Q4gm2,B3Q5gm2), mean, na.rm = TRUE))),
+         B4 = mean(unlist(across(c(B4Q1gm2,B4Q2gm2,B4Q3gm2,B4Q4gm2), mean, na.rm = TRUE)))) 
 
 new_data
-write.csv(new_data, "ARC_Biomass_1982-2015_processed.csv")
+#process this with the blocks and have column called block for the block 
+
+B1_data <- new_data %>%
+  dplyr::select(Year, Treatment, Species, Tissue, B1, B2, B3, B4) %>%
+  group_by(Year, Species, Treatment) %>%
+  summarise(B1_biomass = sum(B1)) %>%
+  group_by(Year, Treatment) %>%
+  summarise(B1_biomass = sum(B1_biomass)) 
+B1_data$block <- "block 1"
+B1_data <- B1_data %>%
+  rename(Biomass = B1_biomass)
+B1_data
+
+B2_data <- new_data %>%
+  dplyr::select(Year, Treatment, Species, Tissue, B1, B2, B3, B4) %>%
+  group_by(Year, Species, Treatment) %>%
+  summarise(B2_biomass = sum(B2)) %>%
+  group_by(Year, Treatment) %>%
+  summarise(B2_biomass = sum(B2_biomass)) 
+B2_data$block <- "block 2"
+B2_data <- B2_data %>%
+  rename(Biomass = B2_biomass)
+B2_data
+
+B3_data <- new_data %>%
+  dplyr::select(Year, Treatment, Species, Tissue, B1, B2, B3, B4) %>%
+  group_by(Year, Species, Treatment) %>%
+  summarise(B3_biomass = sum(B3)) %>%
+  group_by(Year, Treatment) %>%
+  summarise(B3_biomass = sum(B3_biomass)) 
+B3_data$block <- "block 3"
+B3_data <- B3_data %>%
+  rename(Biomass = B3_biomass)
+B3_data
+
+B4_data <- new_data %>%
+  dplyr::select(Year, Treatment, Species, Tissue, B1, B2, B3, B4) %>%
+  group_by(Year, Species, Treatment) %>%
+  summarise(B4_biomass = sum(B4)) %>%
+  group_by(Year, Treatment) %>%
+  summarise(B4_biomass = sum(B4_biomass)) 
+B4_data$block <- "block 4"
+B4_data <- B4_data %>%
+  rename(Biomass = B4_biomass)
+B4_data
+
+B12 <- rbind(B1_data, B2_data)
+B123 <- rbind(B12, B3_data)
+final <- rbind(B123, B4_data)
+
+final
+
+write.csv(final, "ARC_Biomass_1982-2015_processed.csv")
 ```
+
+
+
