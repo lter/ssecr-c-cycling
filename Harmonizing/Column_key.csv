@@ -83,10 +83,10 @@ CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,shelter_fertilized_irrigated,Treatment,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,plot_subplot,Replicate,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,PercentCov,Other
-CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,Date,Date,NA
-CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,Grazed,Treatment,NA
-CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,Plot,Replicate,NA
-CDR AbovegroundBiomass 1995-2005 Processing Script,CDR,total_mass,Biomass,Stock
+CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Date,Date,NA
+CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Grazed,Treatment,NA
+CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Plot,Replicate,NA
+CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,total_mass,Biomass,Stock
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,Year,Date,NA
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,Nadd,Treatment,NA
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,Field_Plot,Replicate,NA
