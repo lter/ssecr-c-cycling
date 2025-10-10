@@ -78,7 +78,7 @@ CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,total_mass,Biomass,Stock
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,treatment,Treatment,NA
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,plot,Replicate,NA
-CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,total_covercover,PercentCov,Other
+CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,PercentCov,Other
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,shelter_fertilized_irrigated,Treatment,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,plot_subplot,Replicate,NA
