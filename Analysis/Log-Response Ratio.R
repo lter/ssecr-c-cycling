@@ -6,85 +6,89 @@
 library(dplyr)
 library(tidyverse)
 
-# Function to calculate log-response ratio and its variance
-calculate_log_response_ratio <- function(data) {
+#read in data 
+data <- read.csv("LR_master_file.csv")
+
+
+# Function to calculate log-response ratio and its variance by a time variable
+calculate_lrr_by_time <- function(data, time_col = "Year") {
+  
   # Ensure we have the required columns
-  required_cols <- c("source", "Treatment", "Response.Variable", "response_sd", "sample_size")
+  required_cols <- c("source", "Treatment", "Response.Variable", "response_sd", "sample_size", time_col)
   
   if (!all(required_cols %in% colnames(data))) {
-    stop("Data must contain columns: source, Treatment, Response.Variable, response_sd, sample_size")
+    stop(paste("Data must contain columns: source, Treatment, Response.Variable, response_sd, sample_size, and", time_col))
   }
   
-  # Calculate log-response ratio for each experiment
-  results <- data %>%
-    group_by(source) %>%
-    do({
-      experiment_data <- .
+  # A vector of possible names for the control group to make the code cleaner
+  control_names <- c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4", "u u c", 
+                     "W", "C C", "pre", "XXX", "WS08", "none", "CONTROL", 
+                     "Outside Juncus", "C(Control Plot)")
+  
+  # 1. Separate control and treatment data
+  control_data <- data %>% 
+    filter(Treatment %in% control_names)
+  
+  treatment_data <- data %>% 
+    filter(!Treatment %in% control_names)
+  
+  # 2. Prepare the control data for joining
+  # We select only the necessary columns and rename them to avoid conflicts after joining.
+  # This groups by BOTH source and the time column.
+  control_summary <- control_data %>%
+    group_by(source, .data[[time_col]]) %>%
+    # If multiple controls exist for a given year, this takes the first one, mimicking the original code's warning.
+    slice(1) %>% 
+    ungroup() %>%
+    select(
+      source, 
+      {{time_col}}, 
+      control_mean = Response.Variable, 
+      control_sd = response_sd, 
+      control_n = sample_size
+    )
+  
+  # 3. Join treatment data with its corresponding control data for each source and time point
+  results <- treatment_data %>%
+    left_join(control_summary, by = c("source", time_col)) %>%
+    # Remove rows where a matching control was not found for that year
+    filter(!is.na(control_mean)) %>%
+    # 4. Calculate LRR and other metrics
+    mutate(
+      # Log-response ratio
+      log_response_ratio = log(Response.Variable / control_mean),
       
-      # Identify control group (assuming it's coded as "control", "Control", "C", or "0")
-      # You may need to modify this based on your control coding
-      control_data <- experiment_data %>%
-        filter(Treatment %in% c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4", "u u c", "W", "C C", "pre", "XXX", "WS08", "none", "CONTROL", "Outside Juncus", "C(Control Plot)"))
+      # Variance of log-response ratio
+      log_rr_variance = (response_sd^2 / (Response.Variable^2 * sample_size)) + 
+        (control_sd^2 / (control_mean^2 * control_n)),
       
-      if (nrow(control_data) == 0) {
-        warning(paste("No control group found for experiment", unique(experiment_data$source)))
-        return(data.frame())
-      }
+      # Standard error
+      log_rr_se = sqrt(log_rr_variance),
       
-      if (nrow(control_data) > 1) {
-        warning(paste("Multiple control groups found for experiment", unique(experiment_data$source), "- using first one"))
-        control_data <- control_data[1, ]
-      }
+      # 95% Confidence intervals
+      log_rr_ci_lower = log_response_ratio - 1.96 * log_rr_se,
+      log_rr_ci_upper = log_response_ratio + 1.96 * log_rr_se,
       
-      # Get treatment groups (all non-control groups)
-      treatment_data <- experiment_data %>%
-        filter(!Treatment %in% c("control", "Control", "C", "0", "ctrl"))
-      
-      if (nrow(treatment_data) == 0) {
-        warning(paste("No treatment groups found for experiment", unique(experiment_data$source)))
-        return(data.frame())
-      }
-      
-      # Calculate log-response ratio for each treatment vs control
-      treatment_results <- treatment_data %>%
-        rowwise() %>%
-        mutate(
-          # Log-response ratio
-          log_response_ratio = log(Response.Variable / control_data$Response.Variable),
-          
-          # Variance of log-response ratio (delta method approximation)
-          # Var(ln(X_t/X_c)) ≈ (SD_t/Mean_t)²/n_t + (SD_c/Mean_c)²/n_c
-          log_rr_variance = (response_sd^2 / (Response.Variable^2 * sample_size)) + 
-            (control_data$response_sd^2 / (control_data$Response.Variable^2 * control_data$sample_size)),
-          
-          # Standard error
-          log_rr_se = sqrt(log_rr_variance),
-          
-          # 95% Confidence intervals
-          log_rr_ci_lower = log_response_ratio - 1.96 * log_rr_se,
-          log_rr_ci_upper = log_response_ratio + 1.96 * log_rr_se,
-          
-          # Back-transformed response ratio and CIs
-          response_ratio = exp(log_response_ratio),
-          response_ratio_ci_lower = exp(log_rr_ci_lower),
-          response_ratio_ci_upper = exp(log_rr_ci_upper),
-          
-          # Control group information for reference
-          control_mean = control_data$Response.Variable,
-          control_sd = control_data$response_sd,
-          control_n = control_data$sample_size
-        ) %>%
-        ungroup()
-      
-      return(treatment_results)
-    }) %>%
-    ungroup()
+      # Back-transformed response ratio and CIs
+      response_ratio = exp(log_response_ratio),
+      response_ratio_ci_lower = exp(log_rr_ci_lower),
+      response_ratio_ci_upper = exp(log_rr_ci_upper)
+    )
   
   return(results)
 }
 
+# Calculate the log response ratio for each year within each experiment
+lrr_results <- calculate_lrr_by_time(data, time_col = "Year")
+
+# View the results
+print(lrr_results)
+
+########################################################################################################################################
+########################################################################################################################################
+
 # Function to read and process data
-process_log_response_data <- function(file_path, control_codes = c("control", "Control", "C", "0", "ctrl")) {
+process_log_response_data <- function(file_path, control_codes = c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4", "u u c", "W", "C C", "pre", "XXX", "WS08", "none", "CONTROL", "Outside Juncus", "C(Control Plot)")) {
   
   # Read the data
   cat("Reading data from:", file_path, "\n")
@@ -111,10 +115,10 @@ process_log_response_data <- function(file_path, control_codes = c("control", "C
 
 # Main execution
 # MODIFY THIS PATH TO YOUR DATA FILE
-file_path <- "harmonized_aug7.csv"  # Change this to your actual file path
+file_path <- "harmonized_Oct10_v2.csv"  # Change this to your actual file path
 
 # If you need to specify different control codes, modify this vector
-control_codes <- c("control", "Control", "C", "0", "ctrl")
+control_codes <- c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4", "u u c", "W", "C C", "pre", "XXX", "WS08", "none", "CONTROL", "Outside Juncus", "C(Control Plot)")
 
 # Process the data
 if (file.exists(file_path)) {
