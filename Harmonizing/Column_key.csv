@@ -102,7 +102,7 @@ HFR_soil-respiration_1991-2021_Processed.csv,HFR,soil_res,Respiration,Flux
 ARC_Biomass_1982-2015_processed.csv,ARC,Year,Date,NA
 ARC_Biomass_1982-2015_processed.csv,ARC,Treatment,Treatment,NA
 ARC_Biomass_1982-2015_processed.csv,ARC,block,Replicate,NA
-ARC_Biomass_1982-2015_processed.csv,ARC,biomass,Response.Variable,Stock
+ARC_Biomass_1982-2015_processed.csv,ARC,Biomass,Response.Variable,Stock
 PIE-PlantShoot_2004-2019_Processed.csv,PIE,Year,Date,NA
 PIE-PlantShoot_2004-2019_Processed.csv,PIE,Treatment,Treatment,NA
 PIE-PlantShoot_2004-2019_Processed.csv,PIE,Replicate,Replicate,NA
