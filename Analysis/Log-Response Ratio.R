@@ -7,17 +7,17 @@ library(dplyr)
 library(tidyverse)
 
 #read in data 
-data <- read.csv("LR_master_file.csv")
+data <- read.csv("Analysis/LR_master_file.csv")
 
 
 # Function to calculate log-response ratio and its variance by a time variable
-calculate_lrr_by_time <- function(data, time_col = "Year") {
+calculate_lrr_by_time <- function(data, time_col = "Date") {
   
   # Ensure we have the required columns
-  required_cols <- c("source", "Treatment", "Response.Variable", "response_sd", "sample_size", time_col)
+  required_cols <- c("source", "Treatment", "means", "response_sd", "sample_size", time_col)
   
   if (!all(required_cols %in% colnames(data))) {
-    stop(paste("Data must contain columns: source, Treatment, Response.Variable, response_sd, sample_size, and", time_col))
+    stop(paste("Data must contain columns: source, Treatment, means, response_sd, sample_size, and", time_col))
   }
   
   # A vector of possible names for the control group to make the code cleaner
@@ -43,7 +43,7 @@ calculate_lrr_by_time <- function(data, time_col = "Year") {
     select(
       source, 
       {{time_col}}, 
-      control_mean = Response.Variable, 
+      control_mean = means, 
       control_sd = response_sd, 
       control_n = sample_size
     )
@@ -56,10 +56,10 @@ calculate_lrr_by_time <- function(data, time_col = "Year") {
     # 4. Calculate LRR and other metrics
     mutate(
       # Log-response ratio
-      log_response_ratio = log(Response.Variable / control_mean),
+      log_response_ratio = log(means / control_mean),
       
       # Variance of log-response ratio
-      log_rr_variance = (response_sd^2 / (Response.Variable^2 * sample_size)) + 
+      log_rr_variance = (response_sd^2 / (means^2 * sample_size)) + 
         (control_sd^2 / (control_mean^2 * control_n)),
       
       # Standard error
@@ -79,10 +79,13 @@ calculate_lrr_by_time <- function(data, time_col = "Year") {
 }
 
 # Calculate the log response ratio for each year within each experiment
-lrr_results <- calculate_lrr_by_time(data, time_col = "Year")
+lrr_results <- calculate_lrr_by_time(data, time_col = "Date")
 
 # View the results
 print(lrr_results)
+
+#write csv
+write.csv(lrr_results, "Analysis/LRR_results.csv")
 
 ########################################################################################################################################
 ########################################################################################################################################
@@ -166,9 +169,9 @@ if (file.exists(file_path)) {
   cat("ERROR: File not found:", file_path, "\n")
   cat("Please update the file_path variable with the correct path to your data file.\n")
   cat("\nExpected data format:\n")
-  cat("Columns required: source, Treatment, Response.Variable, response_sd, sample_size\n")
+  cat("Columns required: source, Treatment, means, response_sd, sample_size\n")
   cat("Example:\n")
-  cat("source | Treatment | Response.Variable | response_sd | sample_size\n")
+  cat("source | Treatment | means | response_sd | sample_size\n")
   cat("exp1         | control        | 10.5          | 2.1         | 20\n")
   cat("exp1         | treatment1     | 12.3          | 2.5         | 18\n")
   cat("exp1         | treatment2     | 11.8          | 2.0         | 22\n")
