@@ -9,39 +9,39 @@ library(tidyverse)
 # Function to calculate log-response ratio and its variance
 calculate_log_response_ratio <- function(data) {
   # Ensure we have the required columns
-  required_cols <- c("experiment_id", "treatment_code", "response_mean", "response_sd", "sample_size")
+  required_cols <- c("source", "Treatment", "Response.Variable", "response_sd", "sample_size")
   
   if (!all(required_cols %in% colnames(data))) {
-    stop("Data must contain columns: experiment_id, treatment_code, response_mean, response_sd, sample_size")
+    stop("Data must contain columns: source, Treatment, Response.Variable, response_sd, sample_size")
   }
   
   # Calculate log-response ratio for each experiment
   results <- data %>%
-    group_by(experiment_id) %>%
+    group_by(source) %>%
     do({
       experiment_data <- .
       
       # Identify control group (assuming it's coded as "control", "Control", "C", or "0")
       # You may need to modify this based on your control coding
       control_data <- experiment_data %>%
-        filter(treatment_code %in% c("control", "Control", "C", "0", "ctrl"))
+        filter(Treatment %in% c("control", "Control", "C", "0", "ctrl"))
       
       if (nrow(control_data) == 0) {
-        warning(paste("No control group found for experiment", unique(experiment_data$experiment_id)))
+        warning(paste("No control group found for experiment", unique(experiment_data$source)))
         return(data.frame())
       }
       
       if (nrow(control_data) > 1) {
-        warning(paste("Multiple control groups found for experiment", unique(experiment_data$experiment_id), "- using first one"))
+        warning(paste("Multiple control groups found for experiment", unique(experiment_data$source), "- using first one"))
         control_data <- control_data[1, ]
       }
       
       # Get treatment groups (all non-control groups)
       treatment_data <- experiment_data %>%
-        filter(!treatment_code %in% c("control", "Control", "C", "0", "ctrl"))
+        filter(!Treatment %in% c("control", "Control", "C", "0", "ctrl"))
       
       if (nrow(treatment_data) == 0) {
-        warning(paste("No treatment groups found for experiment", unique(experiment_data$experiment_id)))
+        warning(paste("No treatment groups found for experiment", unique(experiment_data$source)))
         return(data.frame())
       }
       
@@ -50,12 +50,12 @@ calculate_log_response_ratio <- function(data) {
         rowwise() %>%
         mutate(
           # Log-response ratio
-          log_response_ratio = log(response_mean / control_data$response_mean),
+          log_response_ratio = log(Response.Variable / control_data$Response.Variable),
           
           # Variance of log-response ratio (delta method approximation)
           # Var(ln(X_t/X_c)) ≈ (SD_t/Mean_t)²/n_t + (SD_c/Mean_c)²/n_c
-          log_rr_variance = (response_sd^2 / (response_mean^2 * sample_size)) + 
-            (control_data$response_sd^2 / (control_data$response_mean^2 * control_data$sample_size)),
+          log_rr_variance = (response_sd^2 / (Response.Variable^2 * sample_size)) + 
+            (control_data$response_sd^2 / (control_data$Response.Variable^2 * control_data$sample_size)),
           
           # Standard error
           log_rr_se = sqrt(log_rr_variance),
@@ -70,7 +70,7 @@ calculate_log_response_ratio <- function(data) {
           response_ratio_ci_upper = exp(log_rr_ci_upper),
           
           # Control group information for reference
-          control_mean = control_data$response_mean,
+          control_mean = control_data$Response.Variable,
           control_sd = control_data$response_sd,
           control_n = control_data$sample_size
         ) %>%
@@ -127,13 +127,13 @@ if (file.exists(file_path)) {
   # Display summary
   if (nrow(results) > 0) {
     cat("Results Summary:\n")
-    cat("Number of experiments:", length(unique(results$experiment_id)), "\n")
+    cat("Number of experiments:", length(unique(results$source)), "\n")
     cat("Total treatment comparisons:", nrow(results), "\n\n")
     
     # Show first few results
     cat("First few results:\n")
     print(results %>% 
-            select(experiment_id, treatment_code, log_response_ratio, log_rr_se, 
+            select(source, Treatment, log_response_ratio, log_rr_se, 
                    response_ratio, response_ratio_ci_lower, response_ratio_ci_upper) %>%
             head(10))
     
@@ -162,9 +162,9 @@ if (file.exists(file_path)) {
   cat("ERROR: File not found:", file_path, "\n")
   cat("Please update the file_path variable with the correct path to your data file.\n")
   cat("\nExpected data format:\n")
-  cat("Columns required: experiment_id, treatment_code, response_mean, response_sd, sample_size\n")
+  cat("Columns required: source, Treatment, Response.Variable, response_sd, sample_size\n")
   cat("Example:\n")
-  cat("experiment_id | treatment_code | response_mean | response_sd | sample_size\n")
+  cat("source | Treatment | Response.Variable | response_sd | sample_size\n")
   cat("exp1         | control        | 10.5          | 2.1         | 20\n")
   cat("exp1         | treatment1     | 12.3          | 2.5         | 18\n")
   cat("exp1         | treatment2     | 11.8          | 2.0         | 22\n")
@@ -177,7 +177,7 @@ if (exists("results") && nrow(results) > 0) {
   library(ggplot2)
   
   # Forest plot of log-response ratios
-  plot <- ggplot(results, aes(x = log_response_ratio, y = interaction(experiment_id, treatment_code))) +
+  plot <- ggplot(results, aes(x = log_response_ratio, y = interaction(source, Treatment))) +
     geom_point(size = 2) +
     geom_errorbarh(aes(xmin = log_rr_ci_lower, xmax = log_rr_ci_upper), height = 0.2) +
     geom_vline(xintercept = 0, linetype = "dashed", color = "red") +

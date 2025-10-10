@@ -17,7 +17,7 @@ library(ltertools)
 #write.csv(test_key, "Harmonizing/test_key.csv", row.names = FALSE)
 
 # read in the column key generated from google sheet
-Column_key <- read.csv("Harmonizing/Column_key.csv")
+Column_key <- read.csv("Harmonizing/Column_key_v2.csv")
 
                 
 # Use the key to harmonize our example data
