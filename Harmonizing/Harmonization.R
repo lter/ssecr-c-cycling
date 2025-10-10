@@ -28,4 +28,4 @@ harmony <- ltertools::harmonize(key = Column_key, raw_folder = "Ready_data",
 utils::str(harmony)
 
 # Write the newly generated harmony data into a csv file
-write.csv(harmony, "Harmonizing/harmonized_aug7.csv", row.names = FALSE)
+write.csv(harmony, "Harmonizing/harmonized_Oct10.csv", row.names = FALSE)
