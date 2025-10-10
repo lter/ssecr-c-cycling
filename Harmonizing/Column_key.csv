@@ -74,7 +74,7 @@ CAP_Biomass_2006-2024_Processed.csv,CAP,Biomass,Response.Variable,Stock
 CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,date,Date,NA
 CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,treatment,Treatment,NA
 CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,plot,Replicate,NA
-CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,mass,Biomass,Stock
+CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,total_mass,Biomass,Stock
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,treatment,Treatment,NA
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,plot,Replicate,NA
