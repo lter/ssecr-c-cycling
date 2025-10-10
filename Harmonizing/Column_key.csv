@@ -15,10 +15,6 @@ KNZ_Biomass_1986-2021_processed.csv,KNZ,RECYEAR,Date,NA
 KNZ_Biomass_1986-2021_processed.csv,KNZ,PLOT,Replicate,NA
 KNZ_Biomass_1986-2021_processed.csv,KNZ,TREATMENT,Treatment,NA
 KNZ_Biomass_1986-2021_processed.csv,KNZ,BIOMASS,Response.Variable,Stock
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Year,Date,NA
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Branch,Treatment,NA
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Transect,Replicate,NA
-PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv,PIE,Shoot.Mass_mean,Response.Variable,Stock
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,YEAR,Date,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,TREATMENT,Treatment,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,DRY_GM2_sum,Response.Variable,Stock
