@@ -24,7 +24,7 @@ calculate_log_response_ratio <- function(data) {
       # Identify control group (assuming it's coded as "control", "Control", "C", or "0")
       # You may need to modify this based on your control coding
       control_data <- experiment_data %>%
-        filter(Treatment %in% c("control", "Control", "C", "0", "ctrl"))
+        filter(Treatment %in% c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4", "u u c", "W", "C C", "pre", "XXX", "WS08", "none", "CONTROL", "Outside Juncus", "C(Control Plot)"))
       
       if (nrow(control_data) == 0) {
         warning(paste("No control group found for experiment", unique(experiment_data$source)))
