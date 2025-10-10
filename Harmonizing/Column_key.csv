@@ -94,7 +94,7 @@ CDR_PercentCarbon_1982-2011_processed.csv,CDR,total_Carpercent,PercentCarbon,Oth
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Date,Date,NA
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cover_Fertilizer(g/m2/year),Treatment,NA
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Plot,Replicate,NA
-CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,total_Scf,PercentCarbon,Other
+CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,total_SCF,PercentCarbon,Other
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,year,Date,NA
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,treatment,Treatment,NA
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,plot,Replicate,NA
