@@ -17,7 +17,7 @@ library(ltertools)
 #write.csv(test_key, "Harmonizing/test_key.csv", row.names = FALSE)
 
 # read in the column key generated from google sheet
-Column_key <- read.csv("Harmonizing/Column_key.csv")
+Column_key <- read.csv("Harmonizing/Column_key_v2.csv")
 
                 
 # Use the key to harmonize our example data
@@ -28,4 +28,4 @@ harmony <- ltertools::harmonize(key = Column_key, raw_folder = "Ready_data",
 utils::str(harmony)
 
 # Write the newly generated harmony data into a csv file
-write.csv(harmony, "Harmonizing/harmonized_aug7.csv", row.names = FALSE)
+write.csv(harmony, "Harmonizing/harmonized_Oct10_v2.csv", row.names = FALSE)
