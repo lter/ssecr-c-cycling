@@ -10,7 +10,7 @@ data <- read.csv("harmonized_Oct10_v2.csv")
 ```{r}
 library(tidyverse)
 library(SiZer)
-library(lter/HERON)
+library(HERON)
 ```
 
 ```{r}
@@ -34,12 +34,18 @@ write.csv(mean_sd, "LR_master_file.csv")
 ```{r}
 #For sizer analysis to find changes in linear trend sign in a time series
 data_sub <- data %>%
-  filter()
-sizer_obj <- SiZer::SiZer(x = wrtds_core[[explanatory]], y = wrtds_core[[response]],
+  filter(!is.na(Response.Variable)) %>%
+  filter(source == "VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv") %>%
+  filter(Treatment == "Inside Juncus")
+
+data_sub$Date <- as.numeric(data_sub$Date)
+data_sub$Response.Variable <- as.numeric(data_sub$Response.Variable)
+
+sizer_obj <- SiZer::SiZer(x = data_sub[["Date"]], y = data_sub[["Response.Variable"]],
                           h = c(2, 10), degree = 1, derv = 1, grid.length = 100)
 
 # Plot (and export) the SiZer object with horizontal lines of interest
-png(filename = file.path("graphs", graph_outs, paste0(core_id, "_SiZer-plot.png")),
+png(filename = "_SiZer-plot.png",
     width = 5, height = 5, res = 720, units = 'in')
 HERON::sizer_plot(sizer_object = sizer_obj, bandwidth_vec = 5)
 dev.off()
@@ -50,6 +56,5 @@ sizer_info <- HERON::sizer_slice(sizer_object = sizer_obj, bandwidth = 5)
 # If there are changes and/or inflections, find inflections
 inflects_raw <- c(sizer_info$neg_to_pos, sizer_info$pos_to_neg)
 inflects <- inflects_raw[!is.na(inflects_raw)]
-
 ```
 
