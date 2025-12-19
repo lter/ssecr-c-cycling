@@ -58,3 +58,19 @@ inflects_raw <- c(sizer_info$neg_to_pos, sizer_info$pos_to_neg)
 inflects <- inflects_raw[!is.na(inflects_raw)]
 ```
 
+```{r}
+place_info <- HERON::id_slope_changes(raw_data = data_sub, sizer_data = sizer_info,
+                                        x = "Date", y = "Response.Variable",
+                                        group_dig = 5)
+  
+# Plot 
+demo_plot <- HERON::sizer_ggplot(raw_data = place_info, sizer_data = sizer_info,
+                                   x = "Date", y = "Response.Variable",
+                                   trendline = 'sharp', vline = "changes",
+                                   sharp_colors = c("#bbbbbb", "green")) +
+ggtitle(label = paste0("h = 5 Slope Changes"))
+
+ggplot2::ggsave(filename = "sizer_VCR_ggplot.png",
+                height = 8, width = 8)
+```
+
