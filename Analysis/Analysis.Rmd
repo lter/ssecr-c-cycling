@@ -47,13 +47,17 @@ sizer_obj <- SiZer::SiZer(x = data_sub[["Date"]], y = data_sub[["Response.Variab
 # Plot (and export) the SiZer object with horizontal lines of interest
 png(filename = "_SiZer-plot.png",
     width = 5, height = 5, res = 720, units = 'in')
-HERON::sizer_plot(sizer_object = sizer_obj, bandwidth_vec = 5)
+HERON::sizer_plot(sizer_object = sizer_obj, bandwidth_vec = 5)#bandwidth specifies the window (the range of the y axis on the blobby graph) Greater bandwidth means a wider window and is less sensitive to changes in the slope and vice versa. 
+
 dev.off()
 
+#from this point on, analytical choices have been made regarding the bandwidth.
 # Identify inflection points/slope changes
-sizer_info <- HERON::sizer_slice(sizer_object = sizer_obj, bandwidth = 5)
+sizer_info <- HERON::sizer_slice(sizer_object = sizer_obj, bandwidth = 5)#must match the bandwidth specified in line 50. 
 
-# If there are changes and/or inflections, find inflections
+#could specify different bandwidth for each site because of different sampling duration or use the same bandwidth for all sites. If some sites had non-uniform sampling over time, sizer might interpret periods with less sampling to be breaks. 
+
+# If there are changes (changes in slope e.g., pos to none, neg to none) and/or inflections (changes from pos to neg or vice versa), find inflections
 inflects_raw <- c(sizer_info$neg_to_pos, sizer_info$pos_to_neg)
 inflects <- inflects_raw[!is.na(inflects_raw)]
 ```
@@ -67,7 +71,7 @@ place_info <- HERON::id_slope_changes(raw_data = data_sub, sizer_data = sizer_in
 demo_plot <- HERON::sizer_ggplot(raw_data = place_info, sizer_data = sizer_info,
                                    x = "Date", y = "Response.Variable",
                                    trendline = 'sharp', vline = "changes",
-                                   sharp_colors = c("#bbbbbb", "green")) +
+                                   sharp_colors = c("#bbbbbb", "green")) + #gray means neutral and green means non-neutral (could be pos or neg)
 ggtitle(label = paste0("h = 5 Slope Changes"))
 
 ggplot2::ggsave(filename = "sizer_VCR_ggplot.png",
