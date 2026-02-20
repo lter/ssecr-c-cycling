@@ -1,0 +1,45 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/maple/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("PIE-PlantShoot_2004-2019.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(Year, Species, Creek, Branch, Transect, Shoot.Mass) %>%
+  filter(!is.na(Shoot.Mass)) %>% 
+  group_by(Year, Creek, Branch, Transect, Species) %>%
+  summarise(mean_mass = mean(Shoot.Mass)) %>%
+  group_by(Year, Creek, Branch, Transect) %>%
+  summarise(sum_mass = sum(mean_mass)) %>%
+  group_by(Year, Creek, Branch) %>%
+  summarise(shoot_mass = mean(sum_mass))
+
+new_data
+write.csv(new_data, "PIE-PlantShoot_2004-2019_Processed.csv")
+```

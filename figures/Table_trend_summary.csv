@@ -1,0 +1,5 @@
+"Trend Type","N","Mean (Median) Ratio","Mean (Median) CV","Mean Timepoints"
+"stable",28,"1.08 (1.08)","0.130 (0.143)","6.8"
+"variable",39,"1.47 (1.47)","0.408 (0.326)","11.7"
+"increasing",15,"1.50 (1.50)","0.716 (0.797)","30.6"
+"decreasing",3,"1.49 (1.49)","0.257 (0.270)","9.0"

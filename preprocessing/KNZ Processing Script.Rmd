@@ -1,0 +1,46 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/Julie Gan/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group/Konza Prarie Data")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("KNZ_Biomass_1986-2021.csv")
+
+summary(raw_data)
+head(raw_data)
+
+raw_data$LVGRASS <- as.numeric(raw_data$LVGRASS)
+raw_data$FORBS <- as.numeric(raw_data$FORBS) 
+raw_data$WOODY <- as.numeric(raw_data$WOODY)
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(RECYEAR, RECMONTH, RECDAY, PLOT, BURN, MOW, NUTRIENT, LVGRASS, FORBS, WOODY) %>%
+  filter(!is.na(LVGRASS), !is.na(FORBS)) %>% 
+  dplyr::mutate(TREATMENT = paste(BURN, MOW, NUTRIENT)) %>%
+  dplyr::mutate(BIOMASS = LVGRASS + FORBS + WOODY) %>%
+  group_by(RECYEAR, RECMONTH, RECDAY, PLOT, TREATMENT) %>%
+  summarise(BIOMASS = mean(BIOMASS)) 
+
+write.csv(new_data, "KNZ_Biomass_1986-2021_processed.csv")
+```
+

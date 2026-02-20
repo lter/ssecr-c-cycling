@@ -1,0 +1,48 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/Julie Gan/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("SEV_Aboveground_Biomass_2004-2023_gm2.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(year, season, plot, quad, treatment, kartez, cover, biomass.BM) %>%
+  filter(!is.na(biomass.BM), !is.na(cover)) %>% 
+  group_by(year, season, plot, quad, treatment, kartez) %>%
+  summarise(Biomass = sum(biomass.BM),
+            Cover = sum(cover)) %>%
+  group_by(year, season, plot, quad, treatment) %>%
+  summarise(Biomass = mean(Biomass),
+            Cover = mean(Cover)) %>%
+  group_by(year, season, plot, treatment) %>%
+  summarise(Biomass = mean(Biomass),
+            Cover = mean(Cover)) 
+
+new_data
+write.csv(new_data, "SEV_Aboveground_Biomass_2004-2023_gm2_processed.csv")
+```

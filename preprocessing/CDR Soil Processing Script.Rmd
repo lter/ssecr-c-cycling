@@ -1,0 +1,40 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/maple/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("CDR_SoilBiomass_1982-2018_%C_preprocessed.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(Year, Plot, NAdd.g.m2.yr., X..Carbon) %>%
+  filter(!is.na(X..Carbon)) %>% 
+  group_by(Year, Plot, NAdd.g.m2.yr.) %>%
+  summarise(PercentC = mean(X..Carbon)) 
+
+write.csv(new_data, "CDR_SoilBiomass_1982-2018_%C_processed.csv")
+```
