@@ -35,8 +35,8 @@ write.csv(mean_sd, "LR_master_file.csv")
 #For sizer analysis to find changes in linear trend sign in a time series
 data_sub <- data %>%
   filter(!is.na(Response.Variable)) %>%
-  filter(source == "VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv") %>%
-  filter(Treatment == "Inside Juncus")
+  filter(source == "SBC_algal_biomass_2008-2024_processed_corrected.csv") %>%
+  filter(Treatment == "ANNUAL")
 
 data_sub$Date <- as.numeric(data_sub$Date)
 data_sub$Response.Variable <- as.numeric(data_sub$Response.Variable)
@@ -45,7 +45,7 @@ sizer_obj <- SiZer::SiZer(x = data_sub[["Date"]], y = data_sub[["Response.Variab
                           h = c(2, 10), degree = 1, derv = 1, grid.length = 100)
 
 # Plot (and export) the SiZer object with horizontal lines of interest
-png(filename = "_SiZer-plot.png",
+png(filename = "SBCA_SiZer-plot.png",
     width = 5, height = 5, res = 720, units = 'in')
 HERON::sizer_plot(sizer_object = sizer_obj, bandwidth_vec = 5)#bandwidth specifies the window (the range of the y axis on the blobby graph) Greater bandwidth means a wider window and is less sensitive to changes in the slope and vice versa. 
 
@@ -74,7 +74,7 @@ demo_plot <- HERON::sizer_ggplot(raw_data = place_info, sizer_data = sizer_info,
                                    sharp_colors = c("#bbbbbb", "green")) + #gray means neutral and green means non-neutral (could be pos or neg)
 ggtitle(label = paste0("h = 5 Slope Changes"))
 
-ggplot2::ggsave(filename = "sizer_VCR_ggplot.png",
+ggplot2::ggsave(filename = "sizer_SBCA_ggplot.png",
                 height = 8, width = 8)
 ```
 
