@@ -165,422 +165,422 @@
 "CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv",2020,"control_infra_NPK",743.9,175.617809461341,5
 "CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv",2020,"drought",604.16,248.526646961649,5
 "CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv",2020,"drought_NPK",655.37,375.303964474131,5
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Namb M    ",391.133805133333,61.0228864904427,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Namb S    ",408.362499983333,119.093167741306,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Nenrich M    ",449.6888923,33.9631503679785,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Nenrich S    ",528.638444433333,96.4414451155343,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Namb M    ",389.79695215,42.5122090341238,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Namb S    ",464.438,123.324964493001,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Nenrich M    ",471.66328205,25.8983701917347,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Nenrich S    ",543.509333333333,80.1805370065995,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Namb M    ",454.252794866667,35.1498889484683,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Namb S    ",414.256944433333,60.319523413296,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Nenrich M    ",559.228884616667,79.5950198135149,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Nenrich S    ",580.2765,66.4342178692577,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Namb M    ",479.042087183333,44.5529055992475,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Namb S    ",454.880333333333,85.1533524640496,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Nenrich M    ",582.079666666667,63.4273567875322,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Nenrich S    ",681.024333333333,68.3366189203612,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Namb M    ",654.383266683333,136.330763960155,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Namb S    ",177.499611116667,47.1413880505661,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Nenrich M    ",575.0127205,245.961288362198,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Nenrich S    ",238.86005555,85.1141245344066,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Namb M    ",635.808280766667,290.078716494959,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Namb S    ",164.815333333333,77.0990279748497,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Nenrich M    ",800.928820533333,207.259571188658,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Nenrich S    ",250.027666666667,68.2918870310864,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Namb M    ",656.075876916667,163.672122288756,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Namb S    ",247.0275,56.5191630774338,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Nenrich M    ",796.518905133333,40.6579722225869,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Nenrich S    ",405.433,53.2141877096701,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Namb M    ",747.4548,43.574679088557,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Namb S    ",325.851666666667,61.1644473257681,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Nenrich M    ",733.229341016667,241.582468188111,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Nenrich S    ",427.325333333333,56.2047084812889,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Namb M    ",720.028479483333,31.2225939031098,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Namb S    ",288.047,64.7818157989335,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Nenrich M    ",813.24385135,189.726033178256,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Nenrich S    ",406.063722233333,112.512690838398,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Namb M    ",748.523605116667,60.4039910318085,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Namb S    ",331.420666666667,128.927751697866,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Nenrich M    ",802.59258205,99.4786534911676,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Nenrich S    ",435.719333333333,73.477784840499,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Namb M    ",633.746764116667,40.8862394407658,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Namb S    ",233.158277766667,93.3222167698081,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Nenrich M    ",650.988507683333,61.5709134614647,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Nenrich S    ",276.782222233333,108.013303180743,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Namb M    ",676.533879466667,43.8698404879316,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Namb S    ",254.825666666667,41.7109804328149,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Nenrich M    ",716.9854562,86.8856977796837,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Nenrich S    ",420.214,202.805849702616,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Namb M    ",508.650764966667,208.476950957548,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Namb S    ",418.6476111,36.5252598706525,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Nenrich M    ",713.804958116667,231.090458166124,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Nenrich S    ",477.541777783333,90.6005928201288,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Namb M    ",605.52996645,184.359362458767,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Namb S    ",562.449666666667,156.231837996827,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Nenrich M    ",811.8600795,216.370561171005,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Nenrich S    ",588.403333333333,48.0914549360556,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Namb M    ",320.95665555,71.117776074479,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Namb S    ",302.76333335,81.0108826326838,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Nenrich M    ",333.938576566667,61.1028212251174,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Nenrich S    ",374.301111116667,95.9129828892746,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Namb M    ",368.351850216667,67.5619723392631,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Namb S    ",351.688666666667,157.406449990674,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Nenrich M    ",417.341477033333,84.52977026409,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Nenrich S    ",397.343333333333,69.3087093132362,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Namb M    ",490.655419083333,68.766530241736,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Namb S    ",469.804722233333,158.850144836286,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Nenrich M    ",575.898930433333,85.9062240001123,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Nenrich S    ",639.148666666667,251.984197262392,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Namb M    ",547.78783695,72.9612524320363,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Namb S    ",535.374333333333,94.5495218256902,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Nenrich M    ",713.350223866667,78.2427546545323,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Nenrich S    ",706.156666666667,119.438224646328,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb M    ",245.6332355,24.9459717867845,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb M H2Oamb  ",336.2561111,85.8749344443447,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb M H2Oneg  ",287.475,66.6557855703464,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb S    ",309.040222216667,57.8302935718303,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich M    ",262.474527983333,20.899239617133,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich M H2Oamb  ",416.826111116667,162.176012272214,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich M H2Oneg  ",312.854166666667,100.263700331509,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich S    ",273.965222216667,51.2690449598071,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb M    ",301.098585866667,47.0428714411949,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb M H2Oamb  ",524.366666666667,136.773318548124,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb M H2Oneg  ",443.789166666667,84.6329008374797,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb S    ",359.783333333333,106.907009623629,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich M    ",335.7300974,39.8493568999983,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich M H2Oamb  ",400.941666666667,117.834674084781,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich M H2Oneg  ",487.345,152.267082292924,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich S    ",382.990333333333,79.7284623749052,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb M    ",286.525304433333,44.9120322700844,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb M H2Oamb  ",361.725,61.3553400283952,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb M H2Oneg  ",451.698333333333,102.236218712679,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb S    ",324.095,95.6573385012502,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich M    ",339.999193016667,50.0296573105925,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich M H2Oamb  ",494.057777783333,213.987129489994,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich M H2Oneg  ",444.351666666667,145.062753374761,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich S    ",339.482166666667,55.0433307364904,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb M    ",335.917262266667,38.310733514767,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb M H2Oamb  ",521.060833333333,136.153412862721,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb M H2Oneg  ",503.4675,65.2163785984779,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb S    ",351.969333333333,97.4913835098604,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich M    ",419.160075766667,52.039808775055,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich M H2Oamb  ",529.635,230.921030960803,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich M H2Oneg  ",644.05,137.70621264126,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich S    ",387.395333333333,125.682390280686,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb M    ",262.106656766667,46.0063876053624,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb M H2Oamb  ",364.3111111,160.290832439687,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb M H2Oneg  ",343.429166666667,147.10749995893,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb S    ",330.483055566667,82.5467352065287,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich M    ",253.107146566667,41.6850926593758,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich M H2Oamb  ",453.2611111,195.384948149707,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich M H2Oneg  ",334.515,160.599008558584,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich S    ",286.28855555,75.274275489607,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb M    ",247.863939383333,40.4050084205209,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb M H2Oamb  ",417.608333333333,124.110770752045,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb M H2Oneg  ",290.945,83.8368543660841,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb S    ",244.698333333333,83.6203993142024,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich M    ",279.1193867,91.0270921894032,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich M H2Oamb  ",272.875,106.658945944539,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich M H2Oneg  ",347.584166666667,126.564635282399,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich S    ",323.393,67.4750185920686,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb M    ",341.814223333333,82.6449057582614,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb M H2Oamb  ",486.849166666667,188.632179291251,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb M H2Oneg  ",480.350833333333,107.225350193724,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb S    ",376.077666666667,59.6222445369157,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich M    ",399.203116933333,71.0964390100675,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich M H2Oamb  ",544.29,202.091397342885,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich M H2Oneg  ",411.819166666667,193.959163444697,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich S    ",393.177166666667,118.437809984084,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb M    ",324.887987016667,75.4340186096308,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb M H2Oamb  ",513.7575,183.211076677967,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb M H2Oneg  ",504.344166666667,193.708319501684,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb S    ",359.795333333333,129.669793439593,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich M    ",387.10565655,113.583579240356,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich M H2Oamb  ",510.0975,314.490000552482,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich M H2Oneg  ",599.210833333333,80.2871519246178,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich S    ",501.268333333333,135.887376976181,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb M    ",268.95192755,37.4715107585128,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb M H2Oamb  ",415.688888883333,148.876088544553,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb M H2Oneg  ",356.441666666667,128.564471828988,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb S    ",354.081388883333,116.943416251905,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich M    ",325.856680833333,55.1222618327478,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich M H2Oamb  ",528.53,77.5556035604105,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich M H2Oneg  ",434.48,85.8242165708491,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich S    ",351.212777783333,151.142879443564,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb M    ",275.937445883333,46.1213879409576,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb M H2Oamb  ",354.9075,82.0108086626391,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb M H2Oneg  ",376.970833333333,75.474954548954,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb S    ",309.406,111.141213799382,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich M    ",329.395757566667,112.721954546747,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich M H2Oamb  ",435.155,155.954301992603,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich M H2Oneg  ",454.133333333333,132.271246560493,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich S    ",467.67,173.752155080736,6
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb M    ",257.699896833333,20.1294396817918,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Namb M",391.133805133333,61.0228864904427,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Namb S",408.362499983333,119.093167741306,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Nenrich M",449.6888923,33.9631503679785,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Camb Nenrich S",528.638444433333,96.4414451155343,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Namb M",389.79695215,42.5122090341238,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Namb S",464.438,123.324964493001,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Nenrich M",471.66328205,25.8983701917347,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1998,"Cenrich Nenrich S",543.509333333333,80.1805370065995,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Namb M",454.252794866667,35.1498889484683,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Namb S",414.256944433333,60.319523413296,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Nenrich M",559.228884616667,79.5950198135149,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Camb Nenrich S",580.2765,66.4342178692577,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Namb M",479.042087183333,44.5529055992475,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Namb S",454.880333333333,85.1533524640496,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Nenrich M",582.079666666667,63.4273567875322,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",1999,"Cenrich Nenrich S",681.024333333333,68.3366189203612,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Namb M",654.383266683333,136.330763960155,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Namb S",177.499611116667,47.1413880505661,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Nenrich M",575.0127205,245.961288362198,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Camb Nenrich S",238.86005555,85.1141245344066,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Namb M",635.808280766667,290.078716494959,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Namb S",164.815333333333,77.0990279748497,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Nenrich M",800.928820533333,207.259571188658,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2000,"Cenrich Nenrich S",250.027666666667,68.2918870310864,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Namb M",656.075876916667,163.672122288756,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Namb S",247.0275,56.5191630774338,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Nenrich M",796.518905133333,40.6579722225869,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Camb Nenrich S",405.433,53.2141877096701,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Namb M",747.4548,43.574679088557,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Namb S",325.851666666667,61.1644473257681,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Nenrich M",733.229341016667,241.582468188111,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2001,"Cenrich Nenrich S",427.325333333333,56.2047084812889,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Namb M",720.028479483333,31.2225939031098,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Namb S",288.047,64.7818157989335,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Nenrich M",813.24385135,189.726033178256,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Camb Nenrich S",406.063722233333,112.512690838398,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Namb M",748.523605116667,60.4039910318085,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Namb S",331.420666666667,128.927751697866,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Nenrich M",802.59258205,99.4786534911676,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2002,"Cenrich Nenrich S",435.719333333333,73.477784840499,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Namb M",633.746764116667,40.8862394407658,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Namb S",233.158277766667,93.3222167698081,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Nenrich M",650.988507683333,61.5709134614647,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Camb Nenrich S",276.782222233333,108.013303180743,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Namb M",676.533879466667,43.8698404879316,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Namb S",254.825666666667,41.7109804328149,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Nenrich M",716.9854562,86.8856977796837,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2003,"Cenrich Nenrich S",420.214,202.805849702616,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Namb M",508.650764966667,208.476950957548,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Namb S",418.6476111,36.5252598706525,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Nenrich M",713.804958116667,231.090458166124,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Camb Nenrich S",477.541777783333,90.6005928201288,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Namb M",605.52996645,184.359362458767,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Namb S",562.449666666667,156.231837996827,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Nenrich M",811.8600795,216.370561171005,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2004,"Cenrich Nenrich S",588.403333333333,48.0914549360556,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Namb M",320.95665555,71.117776074479,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Namb S",302.76333335,81.0108826326838,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Nenrich M",333.938576566667,61.1028212251174,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Camb Nenrich S",374.301111116667,95.9129828892746,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Namb M",368.351850216667,67.5619723392631,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Namb S",351.688666666667,157.406449990674,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Nenrich M",417.341477033333,84.52977026409,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2005,"Cenrich Nenrich S",397.343333333333,69.3087093132362,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Namb M",490.655419083333,68.766530241736,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Namb S",469.804722233333,158.850144836286,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Nenrich M",575.898930433333,85.9062240001123,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Camb Nenrich S",639.148666666667,251.984197262392,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Namb M",547.78783695,72.9612524320363,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Namb S",535.374333333333,94.5495218256902,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Nenrich M",713.350223866667,78.2427546545323,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2006,"Cenrich Nenrich S",706.156666666667,119.438224646328,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb M",245.6332355,24.9459717867845,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb M H2Oamb",336.2561111,85.8749344443447,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb M H2Oneg",287.475,66.6557855703464,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Namb S",309.040222216667,57.8302935718303,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich M",262.474527983333,20.899239617133,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich M H2Oamb",416.826111116667,162.176012272214,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich M H2Oneg",312.854166666667,100.263700331509,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Camb Nenrich S",273.965222216667,51.2690449598071,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb M",301.098585866667,47.0428714411949,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb M H2Oamb",524.366666666667,136.773318548124,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb M H2Oneg",443.789166666667,84.6329008374797,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Namb S",359.783333333333,106.907009623629,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich M",335.7300974,39.8493568999983,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich M H2Oamb",400.941666666667,117.834674084781,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich M H2Oneg",487.345,152.267082292924,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2007,"Cenrich Nenrich S",382.990333333333,79.7284623749052,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb M",286.525304433333,44.9120322700844,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb M H2Oamb",361.725,61.3553400283952,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb M H2Oneg",451.698333333333,102.236218712679,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Namb S",324.095,95.6573385012502,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich M",339.999193016667,50.0296573105925,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich M H2Oamb",494.057777783333,213.987129489994,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich M H2Oneg",444.351666666667,145.062753374761,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Camb Nenrich S",339.482166666667,55.0433307364904,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb M",335.917262266667,38.310733514767,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb M H2Oamb",521.060833333333,136.153412862721,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb M H2Oneg",503.4675,65.2163785984779,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Namb S",351.969333333333,97.4913835098604,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich M",419.160075766667,52.039808775055,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich M H2Oamb",529.635,230.921030960803,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich M H2Oneg",644.05,137.70621264126,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2008,"Cenrich Nenrich S",387.395333333333,125.682390280686,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb M",262.106656766667,46.0063876053624,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb M H2Oamb",364.3111111,160.290832439687,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb M H2Oneg",343.429166666667,147.10749995893,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Namb S",330.483055566667,82.5467352065287,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich M",253.107146566667,41.6850926593758,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich M H2Oamb",453.2611111,195.384948149707,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich M H2Oneg",334.515,160.599008558584,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Camb Nenrich S",286.28855555,75.274275489607,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb M",247.863939383333,40.4050084205209,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb M H2Oamb",417.608333333333,124.110770752045,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb M H2Oneg",290.945,83.8368543660841,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Namb S",244.698333333333,83.6203993142024,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich M",279.1193867,91.0270921894032,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich M H2Oamb",272.875,106.658945944539,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich M H2Oneg",347.584166666667,126.564635282399,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2009,"Cenrich Nenrich S",323.393,67.4750185920686,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb M",341.814223333333,82.6449057582614,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb M H2Oamb",486.849166666667,188.632179291251,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb M H2Oneg",480.350833333333,107.225350193724,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Namb S",376.077666666667,59.6222445369157,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich M",399.203116933333,71.0964390100675,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich M H2Oamb",544.29,202.091397342885,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich M H2Oneg",411.819166666667,193.959163444697,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Camb Nenrich S",393.177166666667,118.437809984084,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb M",324.887987016667,75.4340186096308,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb M H2Oamb",513.7575,183.211076677967,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb M H2Oneg",504.344166666667,193.708319501684,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Namb S",359.795333333333,129.669793439593,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich M",387.10565655,113.583579240356,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich M H2Oamb",510.0975,314.490000552482,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich M H2Oneg",599.210833333333,80.2871519246178,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2010,"Cenrich Nenrich S",501.268333333333,135.887376976181,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb M",268.95192755,37.4715107585128,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb M H2Oamb",415.688888883333,148.876088544553,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb M H2Oneg",356.441666666667,128.564471828988,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Namb S",354.081388883333,116.943416251905,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich M",325.856680833333,55.1222618327478,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich M H2Oamb",528.53,77.5556035604105,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich M H2Oneg",434.48,85.8242165708491,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Camb Nenrich S",351.212777783333,151.142879443564,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb M",275.937445883333,46.1213879409576,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb M H2Oamb",354.9075,82.0108086626391,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb M H2Oneg",376.970833333333,75.474954548954,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Namb S",309.406,111.141213799382,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich M",329.395757566667,112.721954546747,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich M H2Oamb",435.155,155.954301992603,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich M H2Oneg",454.133333333333,132.271246560493,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2011,"Cenrich Nenrich S",467.67,173.752155080736,6
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb M",257.699896833333,20.1294396817918,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb M H2Oamb HTamb",367.633333333333,170.552171881021,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb M H2Oamb HTelv",418.766666666667,107.104870726468,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb M H2Oneg HTamb",328.566666666667,41.8557443289847,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb M H2Oneg HTelv",327.1,179.260508757506,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb S    ",326.757222233333,139.879490909922,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich M    ",284.198186133333,10.1485981010805,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Namb S",326.757222233333,139.879490909922,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich M",284.198186133333,10.1485981010805,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich M H2Oamb HTamb",213.2,131.194512080346,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich M H2Oamb HTelv",535.066666666667,107.576499912078,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich M H2Oneg HTamb",377.866666666667,93.762270308122,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich M H2Oneg HTelv",393.733333333333,133.625197224675,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich S    ",380.3888889,9.27150312676587,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb M    ",253.059193366667,44.895941598446,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Camb Nenrich S",380.3888889,9.27150312676587,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb M",253.059193366667,44.895941598446,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb M H2Oamb HTamb",251.133333333333,47.1699409935325,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb M H2Oamb HTelv",596.793333333333,163.762987678331,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb M H2Oneg HTamb",482.956666666667,251.704059628234,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb M H2Oneg HTelv",278.686666666667,131.795125984739,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb S    ",352.249333333333,41.3716701298525,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich M    ",376.0537374,58.9613096209624,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Namb S",352.249333333333,41.3716701298525,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich M",376.0537374,58.9613096209624,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich M H2Oamb HTamb",599.49,273.781579548369,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich M H2Oamb HTelv",829.1,823.08884696611,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich M H2Oneg HTamb",445.47,159.660560878384,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich M H2Oneg HTelv",472.053333333333,161.500657996596,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich S    ",374.887333333333,50.0269616240416,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M    ",387.338126266667,51.935917359552,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2012,"Cenrich Nenrich S",374.887333333333,50.0269616240416,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M",387.338126266667,51.935917359552,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M   HTelv",1190.9,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M H2Oamb  ",347.1,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M H2Oamb",347.1,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M H2Oamb HTamb",669.433333333333,130.138746472115,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M H2Oamb HTelv",562.65,13.5057395206631,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M H2Oneg HTamb",414.186666666667,177.603437560576,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb M H2Oneg HTelv",615.5,75.9799973677283,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb S    ",403.910555566667,53.1623621723251,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M    ",422.329495566667,31.6505672339361,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Namb S",403.910555566667,53.1623621723251,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M",422.329495566667,31.6505672339361,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M   HTamb",546.31,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M H2Oamb  ",779.4,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M H2Oamb",779.4,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M H2Oamb HTamb",374.6,98.4292639411674,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M H2Oamb HTelv",576.706666666667,213.198405560017,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M H2Oneg HTamb",426.549,160.487039984542,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich M H2Oneg HTelv",619.1,343.223207257318,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich S    ",512.408577766667,52.8480090173445,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb M    ",386.6497648,22.9761524388826,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Camb Nenrich S",512.408577766667,52.8480090173445,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb M",386.6497648,22.9761524388826,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb M H2Oamb HTamb",522.983333333333,279.154850993733,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb M H2Oamb HTelv",779.135,197.209373953167,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb M H2Oneg HTamb",589.95,282.758823911828,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb M H2Oneg HTelv",553.333333333333,225.823124000474,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb S    ",409.706666666667,77.5998900342863,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich M    ",475.1569437,23.1825501848853,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Namb S",409.706666666667,77.5998900342863,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich M",475.1569437,23.1825501848853,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich M H2Oamb HTamb",707,338.462538547474,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich M H2Oamb HTelv",979.3,139.428153541528,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich M H2Oneg HTamb",413.733333333333,138.331931719807,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich M H2Oneg HTelv",979.4,195.564516208846,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich S    ",541.608666666667,81.7495662210714,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M    ",266.932075766667,57.9508411321824,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2013,"Cenriched  Nenrich S",541.608666666667,81.7495662210714,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M",266.932075766667,57.9508411321824,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M   HTelv",718.2,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M H2Oamb  ",606.91,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M H2Oamb",606.91,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M H2Oamb HTamb",402,141.70783323444,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M H2Oamb HTelv",757.75,168.927810025466,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M H2Oneg HTamb",422.59,343.465012337501,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb M H2Oneg HTelv",540.433333333333,86.6946557368638,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb S    ",358.431444433333,37.9224185811423,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M    ",334.957590933333,26.9515076168943,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Namb S",358.431444433333,37.9224185811423,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M",334.957590933333,26.9515076168943,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M   HTamb",265.09,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M H2Oamb  ",373.2,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M H2Oamb",373.2,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M H2Oamb HTamb",273.2,195.02005025125,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M H2Oamb HTelv",771.833333333333,190.226636760821,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M H2Oneg HTamb",343.733333333333,79.6168533247411,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich M H2Oneg HTelv",419.033333333333,252.090783911934,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich S    ",469.188,107.113845174188,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb M    ",299.036284266667,67.7594119585674,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Camb Nenrich S",469.188,107.113845174188,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb M",299.036284266667,67.7594119585674,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb M H2Oamb HTamb",165.1,32.2305755455902,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb M H2Oamb HTelv",607.766666666667,286.806072692566,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb M H2Oneg HTamb",455.01,149.400964856322,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb M H2Oneg HTelv",491.033333333333,172.803134616631,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb S    ",381.202666666667,65.3606262311901,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich M    ",421.979090933333,75.08842127745,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Namb S",381.202666666667,65.3606262311901,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich M",421.979090933333,75.08842127745,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich M H2Oamb HTamb",295.5,96.9571039171447,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich M H2Oamb HTelv",781.166666666667,520.698034693174,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich M H2Oneg HTamb",522.733333333333,291.439982386311,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich M H2Oneg HTelv",499.7,92.2502574522153,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich S    ",386.316,149.888841852888,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M    ",432.919772733333,132.336277695884,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2014,"Cenriched  Nenrich S",386.316,149.888841852888,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M",432.919772733333,132.336277695884,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M   HTelv",944.2,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M H2Oamb  ",390.8,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M H2Oamb",390.8,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M H2Oamb HTamb",806.916666666667,272.888495238134,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M H2Oamb HTelv",437.38,236.343370543792,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M H2Oneg HTamb",412.056666666667,150.029105953923,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb M H2Oneg HTelv",460.55,179.300982986709,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb S    ",491.339611133333,57.2784797824324,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M    ",447.4016212,77.1600350212186,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Namb S",491.339611133333,57.2784797824324,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M",447.4016212,77.1600350212186,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M   HTamb",294.3,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M H2Oamb  ",250.1,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M H2Oamb",250.1,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M H2Oamb HTamb",599.85,262.407326498328,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M H2Oamb HTelv",670.633333333333,167.512308005511,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M H2Oneg HTamb",285.313333333333,34.6827973689167,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich M H2Oneg HTelv",435.783333333333,215.675081623569,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich S    ",540.008444433333,166.285245934688,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb M    ",432.3589466,66.9318933003035,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Camb Nenrich S",540.008444433333,166.285245934688,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb M",432.3589466,66.9318933003035,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb M H2Oamb HTamb",505.566666666667,363.677897779523,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb M H2Oamb HTelv",834.133333333333,457.077502545611,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb M H2Oneg HTamb",789.51,221.035332695929,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb M H2Oneg HTelv",601.266666666667,122.603928702686,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb S    ",400.996,43.7185602233194,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich M    ",498.308940133333,80.2624683071053,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Namb S",400.996,43.7185602233194,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich M",498.308940133333,80.2624683071053,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich M H2Oamb HTamb",529.786666666667,347.369298777732,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich M H2Oamb HTelv",610.663333333333,281.056602899369,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich M H2Oneg HTamb",637.166666666667,329.504086975159,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich M H2Oneg HTelv",789.29,106.865374654282,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich S    ",583.192,94.2623990358828,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M    ",336.3776515,61.6036274635979,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2015,"Cenrich Nenrich S",583.192,94.2623990358828,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M",336.3776515,61.6036274635979,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M   HTelv",647.4,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M H2Oamb  ",671.38,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M H2Oamb",671.38,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M H2Oamb HTamb",517.766666666667,214.9222262432,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M H2Oamb HTelv",690.75,314.450385593658,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M H2Oneg HTamb",512.466666666667,363.483181637519,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb M H2Oneg HTelv",349.593333333333,169.047827946216,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb S    ",428.746222233333,46.3250212200185,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M    ",420.3085909,32.8903897456018,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Namb S",428.746222233333,46.3250212200185,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M",420.3085909,32.8903897456018,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M   HTamb",311.6,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M H2Oamb  ",282,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M H2Oamb",282,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M H2Oamb HTamb",466.7,91.6410388417766,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M H2Oamb HTelv",942.44,279.300552810051,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M H2Oneg HTamb",521.066666666667,475.956818769658,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich M H2Oneg HTelv",604.25,234.476454041765,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich S    ",582.1161111,137.893246210308,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb M    ",427.815923533333,93.618367165424,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Camb Nenrich S",582.1161111,137.893246210308,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb M",427.815923533333,93.618367165424,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb M H2Oamb HTamb",587.616666666667,182.62895672191,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb M H2Oamb HTelv",902.453333333333,237.20185609167,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb M H2Oneg HTamb",487.166666666667,151.39723687483,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb M H2Oneg HTelv",599.833333333333,389.541503993263,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb S    ",381.731333333333,86.0578007233123,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich M    ",467.508557,24.9826722454125,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Namb S",381.731333333333,86.0578007233123,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich M",467.508557,24.9826722454125,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich M H2Oamb HTamb",876.15,204.17614331748,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich M H2Oamb HTelv",629.133333333333,116.889235318456,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich M H2Oneg HTamb",1037.87,458.362823208864,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich M H2Oneg HTelv",1287.63666666667,741.35127573461,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich S    ",495.389333333333,84.7689563539232,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M    ",208.489696966667,19.6266091849622,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2016,"Cenrich Nenrich S",495.389333333333,84.7689563539232,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M",208.489696966667,19.6266091849622,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M   HTelv",657.3,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M H2Oamb  ",434.5,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M H2Oamb",434.5,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M H2Oamb HTamb",537.366666666667,287.678802370514,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M H2Oamb HTelv",295.45,11.9501046020526,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M H2Oneg HTamb",357.333333333333,214.487116940233,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb M H2Oneg HTelv",453.233333333333,247.316484152054,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb S    ",213.536666666667,56.533174831016,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M    ",223.3306985,36.1458459889778,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Namb S",213.536666666667,56.533174831016,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M",223.3306985,36.1458459889778,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M   HTamb",261.2,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M H2Oamb  ",151.7,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M H2Oamb",151.7,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M H2Oamb HTamb",261.55,106.419570568575,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M H2Oamb HTelv",443.2,122.734632439259,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M H2Oneg HTamb",232.933333333333,116.757583622364,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich M H2Oneg HTelv",389.1,93.6567669738818,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich S    ",304.437777766667,109.410053242629,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb M    ",251.713852833333,37.9611677308403,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Camb Nenrich S",304.437777766667,109.410053242629,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb M",251.713852833333,37.9611677308403,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb M H2Oamb HTamb",926.006666666667,777.659278947621,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb M H2Oamb HTelv",718.37,362.470825998452,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb M H2Oneg HTamb",478.333333333333,26.5151529004329,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb M H2Oneg HTelv",427.11,215.63878616798,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb S    ",271.624,109.886737543709,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich M    ",282.979754666667,74.9012800338138,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Namb S",271.624,109.886737543709,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich M",282.979754666667,74.9012800338138,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich M H2Oamb HTamb",356.483333333333,50.0061579541293,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich M H2Oamb HTelv",728.9,321.979673271466,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich M H2Oneg HTamb",496.833333333333,247.863860482591,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich M H2Oneg HTelv",798.8,469.620091137507,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich S    ",272.872,93.1672540756676,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M    ",314.0818773,45.9612618005354,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2017,"Cenrich Nenrich S",272.872,93.1672540756676,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M",314.0818773,45.9612618005354,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M   HTelv",509.29,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M H2Oamb  ",570.12,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M H2Oamb",570.12,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M H2Oamb HTamb",555.643333333333,291.532872303165,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M H2Oamb HTelv",597.74,133.869455814237,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M H2Oneg HTamb",342.89,193.625104519016,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb M H2Oneg HTelv",441.706666666667,182.710693812194,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb S    ",321.423444433333,85.3500102641573,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M    ",371.9593182,70.4057149997444,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Namb S",321.423444433333,85.3500102641573,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M",371.9593182,70.4057149997444,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M   HTamb",285.2,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M H2Oamb  ",149.7,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M H2Oamb",149.7,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M H2Oamb HTamb",419.125,110.556145238517,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M H2Oamb HTelv",713.61,164.875511523088,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M H2Oneg HTamb",321.833333333333,198.971543777831,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich M H2Oneg HTelv",652.726666666667,260.68513466121,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich S    ",356.646,41.9625693684264,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb M    ",336.418290066667,38.0090265682809,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Camb Nenrich S",356.646,41.9625693684264,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb M",336.418290066667,38.0090265682809,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb M H2Oamb HTamb",245.876666666667,77.3970066173966,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb M H2Oamb HTelv",625.613333333333,399.85130515397,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb M H2Oneg HTamb",482.85,181.748266841805,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb M H2Oneg HTelv",567.086666666667,173.560002400707,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb S    ",391.202,115.758193956195,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich M    ",443.8057352,56.123896085354,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Namb S",391.202,115.758193956195,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich M",443.8057352,56.123896085354,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich M H2Oamb HTamb",560.323333333333,131.381986715582,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich M H2Oamb HTelv",673.133333333333,84.0897243028739,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich M H2Oneg HTamb",559.593333333333,231.22752784505,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich M H2Oneg HTelv",710.786666666667,142.982805026805,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich S    ",286.474,62.9075029865278,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M    ",251.7275909,22.7537584134471,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2018,"Cenrich Nenrich S",286.474,62.9075029865278,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M",251.7275909,22.7537584134471,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M   HTelv",520.1,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M H2Oamb  ",785.53,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M H2Oamb",785.53,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M H2Oamb HTamb",548.06,290.432926507998,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M H2Oamb HTelv",490.045,42.4617622102522,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M H2Oneg HTamb",472.87,246.609518672739,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb M H2Oneg HTelv",371.266666666667,135.684204435643,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb S    ",357.649555566667,72.8234865697438,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M    ",262.556197,48.5430194042599,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Namb S",357.649555566667,72.8234865697438,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M",262.556197,48.5430194042599,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M   HTamb",178,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M H2Oamb  ",657.2,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M H2Oamb",657.2,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M H2Oamb HTamb",353.25,167.513596463093,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M H2Oamb HTelv",519.9,40.109724506658,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M H2Oneg HTamb",334.89,30.1022474244034,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich M H2Oneg HTelv",536.783333333333,338.546209302856,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich S    ",320.7261111,93.0474686498973,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb M    ",308.139561333333,23.4716387592205,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Camb Nenrich S",320.7261111,93.0474686498973,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb M",308.139561333333,23.4716387592205,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb M H2Oamb HTamb",462.62,377.732399854712,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb M H2Oamb HTelv",421.476666666667,197.575611939666,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb M H2Oneg HTamb",455.933333333333,105.273421780302,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb M H2Oneg HTelv",377.92,108.282792723498,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb S    ",392.253333333333,32.7558381564773,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich M    ",319.495397566667,27.4924474184015,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Namb S",392.253333333333,32.7558381564773,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich M",319.495397566667,27.4924474184015,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich M H2Oamb HTamb",557.2,132.847619474344,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich M H2Oamb HTelv",385.203333333333,152.602992216186,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich M H2Oneg HTamb",492.576666666667,217.112103838854,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich M H2Oneg HTelv",782.85,372.196121016864,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich S    ",354.522666666667,49.0715354287323,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M    ",341.7553412,110.916524972922,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2019,"Cenrich Nenrich S",354.522666666667,49.0715354287323,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M",341.7553412,110.916524972922,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M   HTelv",491.4,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M H2Oamb  ",291.6,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M H2Oamb",291.6,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M H2Oamb HTamb",466.526666666667,158.031085971505,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Namb M H2Oamb HTelv",326.67865,66.5792653282161,2
-"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M    ",327.5268347,59.2889105341839,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M",327.5268347,59.2889105341839,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M   HTamb",437.9,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M H2Oamb  ",484.4,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M H2Oamb",484.4,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M H2Oamb HTamb",277.25,54.5179328294828,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Camb Nenrich M H2Oamb HTelv",571.396833333333,86.1248932079648,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Namb M    ",281.439566466667,61.9142231305139,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Namb M",281.439566466667,61.9142231305139,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Namb M H2Oamb HTamb",461.20705,60.3968893189459,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Namb M H2Oamb HTelv",578.917133333333,317.762084040644,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Nenrich M    ",268.315541733333,91.8796577886457,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Nenrich M",268.315541733333,91.8796577886457,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Nenrich M H2Oamb HTamb",479.95,288.711698758467,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2020,"Cenrich Nenrich M H2Oamb HTelv",467.7,284.115504680755,2
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M  ",196.2990129,45.4764263507657,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M",196.2990129,45.4764263507657,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M  HTelv",241.2,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M H2Oamb ",244.6,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M H2Oamb",244.6,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M H2Oamb HTamb",238.1615,44.9033450507866,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M H2Oamb HTelv",209.15,35.1432070249714,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M H2Oneg HTamb",111.3,25.8835855321476,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb M H2Oneg HTelv",247.672266666667,126.82352111266,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb S  ",208.426988866667,34.2084575225732,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M  ",202.6841212,15.4200078435665,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Namb S",208.426988866667,34.2084575225732,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M",202.6841212,15.4200078435665,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M  HTamb",334.5,0,1
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M H2Oamb ",316.4,0,1
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M H2Oamb",316.4,0,1
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M H2Oamb HTamb",167.57665,1.6640343881663,2
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M H2Oamb HTelv",366.006133333333,125.727962881983,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M H2Oneg HTamb",159.1,49.8133516238368,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich M H2Oneg HTelv",251.9,116.036718326571,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich S  ",181.5617489,105.521301016608,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb M  ",218.837274,29.8397812496689,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Camb Nenrich S",181.5617489,105.521301016608,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb M",218.837274,29.8397812496689,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb M H2Oamb HTamb",186.514533333333,32.1244103082583,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb M H2Oamb HTelv",345.7783,182.588477245061,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb M H2Oneg HTamb",442.366666666667,199.147943331919,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb M H2Oneg HTelv",186,64.8468195056627,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb S  ",238.573313333333,36.1748445944268,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich M  ",182.319112033333,14.6535207924365,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Namb S",238.573313333333,36.1748445944268,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich M",182.319112033333,14.6535207924365,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich M H2Oamb HTamb",223.933333333333,17.433970670313,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich M H2Oamb HTelv",232.933333333333,64.523974872394,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich M H2Oneg HTamb",251.233333333333,47.7435161391925,3
 "CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich M H2Oneg HTelv",488.141933333333,125.003637489328,3
-"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich S  ",225.33884,59.7526395674266,3
+"CDR_Biomass_1998-2021_gm2_processed.csv",2021,"Cenrich Nenrich S",225.33884,59.7526395674266,3
 "CDR_PercentCarbon_1982-2011_processed.csv",1982,"0",1.1715,0.208278004774213,12
 "CDR_PercentCarbon_1982-2011_processed.csv",1982,"1.02",1.268,0.241199502487049,6
 "CDR_PercentCarbon_1982-2011_processed.csv",1982,"17",1.478,0.582560898104224,6
@@ -859,83 +859,67 @@
 "HBR_litterfall_2009-2022_processed.csv",2021,"N",265.084038461538,26.4743192204426,13
 "HBR_litterfall_2009-2022_processed.csv",2021,"NP",266.009846153846,34.9804728142387,13
 "HBR_litterfall_2009-2022_processed.csv",2021,"P",239.504115384615,34.1400784832101,13
-"HFR_soil-respiration_1991-2021_Processed.csv",1991,"C",128.405277777778,12.1351868709764,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1991,"DC",144.948125,13.3641522929968,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1991,"C",136.676701388889,14.9250065240521,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1991,"H",192.391704545455,39.4380957410994,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1992,"C",93.2977083333333,9.63937422734441,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1992,"DC",103.178333333333,7.81479534697513,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1992,"C",98.2380208333333,9.82956144504633,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1992,"H",117.354427083333,19.5688404046305,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1993,"C",100.632121212121,6.8838277939252,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1993,"DC",107.371060606061,9.64864528523173,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1993,"C",104.001590909091,8.73164108884661,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1993,"H",129.633863636364,27.0101030451248,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1994,"C",128.695,7.12855985631039,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1994,"DC",124.777916666667,9.99894738730866,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1994,"C",126.736458333333,8.52806701916286,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1994,"H",148.4565625,22.276160308409,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1995,"C",84.2118055555555,21.9244245484895,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1995,"DC",85.7168055555555,10.9946912494755,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1995,"C",84.9643055555555,16.554629158331,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1995,"H",100.93125,23.9227215549825,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1996,"C",94.4316666666667,20.7398174201757,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1996,"DC",90.2938888888888,8.56367094096824,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1996,"C",92.3627777777778,15.2814386752862,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1996,"H",107.880555555555,16.7276805879311,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1997,"C",100.5503125,15.0031872850717,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1997,"DC",101.135416666667,8.44261648263835,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1997,"C",100.842864583333,11.6107084177293,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1997,"H",107.4471875,15.2892640169397,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1998,"C",146.544444444445,26.4175975685963,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1998,"DC",151.6925,23.6153438055758,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1998,"C",149.118472222222,24.0404527445049,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1998,"H",152.053611111111,28.8238858350091,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1999,"C",102.461354166667,12.2879928653484,6
-"HFR_soil-respiration_1991-2021_Processed.csv",1999,"DC",108.059375,23.9568122585988,6
+"HFR_soil-respiration_1991-2021_Processed.csv",1999,"C",105.260364583333,18.3863378701151,12
 "HFR_soil-respiration_1991-2021_Processed.csv",1999,"H",98.4441666666667,16.5489646469323,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2000,"C",110.500625,19.490383455093,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2000,"DC",111.993333333333,25.6634694179315,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2000,"C",111.246979166667,21.740469350674,12
 "HFR_soil-respiration_1991-2021_Processed.csv",2000,"H",111.928177083333,21.8452725885808,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2001,"C",95.6233333333333,18.9083151792186,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2001,"DC",104.541145833333,21.4354064918619,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2001,"C",100.082239583333,19.8255741893132,12
 "HFR_soil-respiration_1991-2021_Processed.csv",2001,"H",97.1401041666667,16.6480410231611,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2002,"C",110.418214285714,26.9077640367829,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2002,"DC",109.227619047619,24.8359783611691,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2002,"C",109.822916666667,24.6954550182476,12
 "HFR_soil-respiration_1991-2021_Processed.csv",2002,"H",95.9836904761905,15.4895597717227,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2003,"DC",90.9723015873016,17.0592014375991,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2003,"C",90.9723015873016,17.0592014375991,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2003,"H",100.858333333333,16.3097081748356,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2004,"DC",108.929087301587,27.6809017236832,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2004,"C",108.929087301587,27.6809017236832,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2004,"H",106.155019047619,17.5588442703571,5
-"HFR_soil-respiration_1991-2021_Processed.csv",2005,"DC",110.797222222222,20.7590725190663,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2005,"C",110.797222222222,20.7590725190663,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2005,"H",105.568055555556,21.0914278905664,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2006,"DC",77.8477777777778,12.0023040689262,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2006,"C",77.8477777777778,12.0023040689262,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2006,"H",80.1069444444445,22.4349215984731,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2007,"DC",94.608125,17.0353861995773,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2007,"C",94.608125,17.0353861995773,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2007,"H",110.707916666667,31.8324599334809,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2008,"DC",116.79505952381,20.5441817607245,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2008,"C",116.79505952381,20.5441817607245,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2008,"H",141.009226190476,30.6779958154604,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2009,"DC",101.853541666667,15.4658711445692,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2009,"C",101.853541666667,15.4658711445692,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2009,"H",102.156458333333,18.0824365652258,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2010,"DC",89.2395833333333,22.7333049410258,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2010,"C",89.2395833333333,22.7333049410258,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2010,"H",79.4966666666667,11.6377561912366,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2011,"DC",108.789722222222,24.9435036168774,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2011,"C",108.789722222222,24.9435036168774,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2011,"H",119.916111111111,16.4101841233718,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2012,"DC",87.2968518518518,17.479932358779,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2012,"C",87.2968518518518,17.479932358779,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2012,"H",88.0348379629629,11.5618701151141,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2013,"DC",89.9020833333333,21.3910100811455,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2013,"C",89.9020833333333,21.3910100811455,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2013,"H",92.8591666666667,17.9690097053696,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2014,"DC",90.5267261904762,21.2496144213718,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2014,"C",90.5267261904762,21.2496144213718,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2014,"H",90.5010416666667,20.5912072165625,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2015,"DC",149.431148989899,46.3450805123983,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2015,"C",149.431148989899,46.3450805123983,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2015,"H",139.931616161616,50.37385239699,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2016,"DC",123.731296296296,43.421087045418,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2016,"C",123.731296296296,43.421087045418,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2016,"H",100.695185185185,30.8952393445394,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2017,"DC",112.633333333333,39.7021461531573,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2017,"C",112.633333333333,39.7021461531573,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2017,"H",105.234761904762,20.8472553430934,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2018,"DC",121.980555555556,46.9877912709091,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2018,"C",121.980555555556,46.9877912709091,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2018,"H",111.088888888889,16.9103614412606,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2019,"DC",184.678981481482,48.5545281726635,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2019,"DC ",129.455,64.7356258176284,2
-"HFR_soil-respiration_1991-2021_Processed.csv",2019,"H",171.470439814815,30.8167109520855,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2019,"H ",184.57,144.8720373295,2
-"HFR_soil-respiration_1991-2021_Processed.csv",2020,"DC",333.154555555556,102.303850250487,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2020,"DC ",160.455,69.7136575571817,2
-"HFR_soil-respiration_1991-2021_Processed.csv",2020,"H",312.003555555555,142.605940749195,6
-"HFR_soil-respiration_1991-2021_Processed.csv",2020,"H ",221.88,110.181378644488,2
-"HFR_soil-respiration_1991-2021_Processed.csv",2021,"DC",274.793333333333,78.8747851625882,6
+"HFR_soil-respiration_1991-2021_Processed.csv",2019,"C",170.872986111111,54.186113767209,8
+"HFR_soil-respiration_1991-2021_Processed.csv",2019,"H",174.745329861111,60.937501103402,8
+"HFR_soil-respiration_1991-2021_Processed.csv",2020,"C",289.979666666667,120.669612498638,8
+"HFR_soil-respiration_1991-2021_Processed.csv",2020,"H",289.472666666667,134.16705513425,8
+"HFR_soil-respiration_1991-2021_Processed.csv",2021,"C",274.793333333333,78.8747851625882,6
 "HFR_soil-respiration_1991-2021_Processed.csv",2021,"H",246.573611111111,17.7708568985123,6
 "KBS_Biomass_1990-2022_processed.csv",1990,"T1",2044.34333333333,282.79407275731,6
 "KBS_Biomass_1990-2022_processed.csv",1990,"T2",2392.92666666667,226.39102443928,6

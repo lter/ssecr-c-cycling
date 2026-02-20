@@ -27,6 +27,53 @@
 "CDR","Cedar Creek","Grassland","Fertilization","6","stable",1.05353872458441e-05,0.149020061995241,0.367500041314835,0.0901229968462001,1.09024642366415,7
 "CDR","Cedar Creek","Grassland","Fertilization","80","variable",2.62507659818042e-05,0.283325969515743,0.22406308604397,0.233485860624,1.34287233283217,7
 "CDR","Cedar Creek","Grassland","Fertilization","9.52","stable",-1.42918350792881e-06,0.941929223380619,0.00208159635869887,0.119144365249227,1.21922175244359,5
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M   HTelv","variable",-0.000489832444288571,0.0621613547010005,0.465831622318441,0.282986931801701,2.26862007234,8
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M  HTelv","insufficient_data",NA,NA,NA,NA,NA,1
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M H2Oamb","variable",9.28095887170128e-05,0.390616420227789,0.0620079910905262,0.395744157987453,1.58419241971359,14
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M H2Oamb HTamb","variable",-5.8195905971603e-06,0.965690264538522,0.00024612310775601,0.238975437706625,1.71660963300891,10
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M H2Oamb HTelv","variable",-0.000181370850548622,0.329516577419904,0.118743626091774,0.357786747919979,1.62684680286317,10
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M H2Oneg","stable",3.79251483510145e-05,0.813203375767818,0.0216806557935593,0.10958721051439,1.35753468318925,5
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M H2Oneg HTamb","variable",-5.3797816194617e-05,0.722779375050628,0.0191169638110274,0.322097697738817,1.29487449287896,9
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb M H2Oneg HTelv","variable",-2.83791269978334e-05,0.844295558762582,0.00589944430155438,0.267947685164619,1.47809918757193,9
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Namb S","increasing",8.476608734183e-05,0.00110264428738825,0.404679564648332,0.337403891036466,0.989379247929225,23
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M","stable",-7.22085794623724e-06,0.453279938536909,0.0258124919645762,0.103685877591582,1.11951780973776,24
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M   HTamb","variable",-4.30734451664106e-05,0.736109859184898,0.0203534184781324,0.264813971803044,1.01987071188848,8
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M  HTamb","insufficient_data",NA,NA,NA,NA,NA,1
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M H2Oamb","variable",-8.81228981768971e-05,0.400499573061255,0.059545233875055,0.417322583965426,1.4556159551449,14
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M H2Oamb HTamb","variable",1.25895971469258e-05,0.879431506801979,0.00305650829092116,0.223886504722064,1.12481137770705,10
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M H2Oamb HTelv","variable",-5.4152890999337e-05,0.73060853368152,0.0156473568298005,0.230089551503851,2.08071610452716,10
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M H2Oneg","stable",9.2288210978958e-05,0.638787197613264,0.0827806325099395,0.133845028755188,1.38420156844967,5
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M H2Oneg HTamb","variable",-9.31335786766399e-05,0.369376607162131,0.116183399220831,0.254776049612751,1.14957089887104,9
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich M H2Oneg HTelv","variable",8.4726913318969e-05,0.516682048245557,0.0624444985017448,0.220132318419517,1.65101338877777,9
+"CDR","Cedar Creek","Grassland","Fertilization","Camb Nenrich S","increasing",7.23484316950599e-05,0.0156786877973828,0.247653974305462,0.319748421882328,1.13905434219882,23
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M","stable",2.49901322176673e-06,0.794459255804728,0.00347345176275411,0.104571914274572,1.07897304106972,22
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M H2Oamb","decreasing",-0.000532685158666228,0.0034717435523796,0.959732683357675,0.18762937884969,1.67384153012806,5
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M H2Oamb HTamb","variable",1.95975157030979e-06,0.996702218487831,3.0934493180046e-06,0.716435825907071,1.65637770585565,8
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M H2Oamb HTelv","variable",-0.000230908293009206,0.325500287812018,0.160399357498509,0.280820122829577,2.18658893691469,8
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M H2Oneg","stable",-0.000299046935333782,0.275884730531457,0.370572232929664,0.187883064677882,1.51020188711558,5
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M H2Oneg HTamb","stable",8.45987589242877e-05,0.543511189022668,0.0782354095108552,0.172656330848098,1.86320466568271,7
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb M H2Oneg HTelv","variable",7.45282495205321e-06,0.966482799699716,0.000389948377846852,0.266180877234658,1.50806919378096,7
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Namb S","increasing",7.93399568398795e-05,0.00580571975544716,0.336882646713435,0.340547629052038,1.03200201010776,21
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M","stable",-1.34191167648392e-05,0.401551734810648,0.0354284425514834,0.152150739672372,1.24684241413528,22
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M H2Oamb","stable",-0.00010556557417458,0.743019763630211,0.0413064122038569,0.19654307291759,1.52642531631412,5
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M H2Oamb HTamb","variable",-0.000243810390427621,0.22587650478815,0.232841822681333,0.29880569257576,1.80090166919544,8
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M H2Oamb HTelv","variable",-0.000495778944060892,0.114078638476849,0.362769368576243,0.432307312979208,2.02785708397986,8
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M H2Oneg","stable",-0.000297457705897047,0.391756211260619,0.249316827674744,0.191170296773539,1.7999015006797,5
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M H2Oneg HTamb","variable",-0.000102420904218771,0.701579424352403,0.0319050987142503,0.311905639103329,1.95531211558117,7
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich M H2Oneg HTelv","variable",0.000244108896745672,0.512050980174475,0.0905134145244394,0.315060209470226,2.73914066119953,7
+"CDR","Cedar Creek","Grassland","Fertilization","Cenrich Nenrich S","variable",4.76821617610294e-05,0.132501272374757,0.115067191083968,0.298481111422265,1.21079074401706,21
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Namb M","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Namb M H2Oamb HTamb","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Namb M H2Oamb HTelv","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Namb M H2Oneg HTamb","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Namb M H2Oneg HTelv","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Namb S","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Nenrich M","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Nenrich M H2Oamb HTamb","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Nenrich M H2Oamb HTelv","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Nenrich M H2Oneg HTamb","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Nenrich M H2Oneg HTelv","insufficient_data",NA,NA,NA,NA,NA,2
+"CDR","Cedar Creek","Grassland","Fertilization","Cenriched  Nenrich S","insufficient_data",NA,NA,NA,NA,NA,2
 "CDR","Cedar Creek","Grassland","Fertilization","control_NPK","variable",9.17201130520969e-05,0.845170796275482,0.014860874171064,0.326333263290352,1.33131828642075,5
 "CDR","Cedar Creek","Grassland","Inundation","control_NPK","variable",9.17201130520969e-05,0.845170796275482,0.014860874171064,0.326333263290352,1.33131828642075,5
 "CDR","Cedar Creek","Grassland","Inundation","control_NPK","variable",9.17201130520969e-05,0.845170796275482,0.014860874171064,0.326333263290352,1.33131828642075,5
@@ -47,8 +94,7 @@
 "HBR","Hubbard Brook","Forest","Fertilization","N","increasing",3.2064033104119e-05,9.93453354789142e-06,0.841876617891844,0.0494690701209335,1.00481401205068,13
 "HBR","Hubbard Brook","Forest","Fertilization","NP","increasing",1.91868238949442e-05,0.0150703881671147,0.4292584026504,0.0422258068082093,0.98648670285219,13
 "HBR","Hubbard Brook","Forest","Fertilization","P","stable",1.38411375153328e-06,0.798179437385966,0.00620062328623676,0.0260153637894209,0.961058251626106,13
-"HFR","Harvard Forest","Forest","Warming","DC","stable",-1.43290063867506e-05,0.271268377378278,0.119404366503964,0.0526933771633376,1.03640752423292,12
-"HFR","Harvard Forest","Forest","Warming","H","decreasing",-0.000120084084034763,1.14397204899566e-05,0.865633463473617,0.151050042992005,1.12532559615241,12
+"HFR","Harvard Forest","Forest","Warming","H","decreasing",-2.46246007951174e-05,0.000149728307538549,0.395866637362774,0.12497261992357,1.04000931752868,31
 "KBS","Kellogg Biological Station","Grassland","Fertilization","T1","variable",4.2540189446363e-05,0.111651820384935,0.079605324918377,0.347105473981248,1.53413832117576,33
 "KBS","Kellogg Biological Station","Grassland","Fertilization","T2","increasing",5.27567540150367e-05,0.0457117672655067,0.122650938290432,0.333543500938588,1.59509945760054,33
 "KBS","Kellogg Biological Station","Grassland","Fertilization","T21","stable",3.59574230692525e-05,0.795680514186678,0.0995167662962069,0.190841489549256,1.20134826946894,3

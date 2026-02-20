@@ -35,6 +35,17 @@ meta_cols <- metadata %>%
 harmony <- harmony %>%
   left_join(meta_cols, by = "source")
 
+# Trim whitespace in Treatment names (e.g., HFR has "DC " and "H ")
+harmony$Treatment <- trimws(harmony$Treatment)
+
+# HFR fix: remap "DC" (Disturbance Control) to "C" (Control)
+# The HFR soil warming experiment stopped measuring pure control ("C") plots after 2002,
+# but continued measuring Disturbance Control ("DC") plots through 2021.
+# DC plots have cables buried but not heated — they are the appropriate control
+# for this experiment after the cable-disturbance effect was confirmed negligible.
+harmony$Treatment[harmony$site_abbr == "HFR" & harmony$Treatment == "DC"] <- "C"
+cat("HFR: Remapped Disturbance Control (DC) -> Control (C) for full 1991-2021 time series\n")
+
 # Fix Experiment_Type inconsistency: "Fertilizer" -> "Fertilization"
 harmony$experiment_type <- gsub("^Fertilizer$", "Fertilization", harmony$experiment_type)
 
