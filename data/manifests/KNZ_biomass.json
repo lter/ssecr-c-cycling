@@ -1,0 +1,9 @@
+{
+  "dataset_id": "KNZ_biomass",
+  "edi_package_id": "knb-lter-knz.57.15",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-knz/57/15/eaf1b05d4c7578a1fe1efc5173b80953",
+  "download_timestamp": "2026-02-21T14:45:40Z",
+  "checksum_md5": "693c0f9cfe5c5eda9227b6ad2b5f69e2",
+  "file_size_bytes": 290410,
+  "raw_filename": "data.csv"
+}

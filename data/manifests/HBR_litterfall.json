@@ -1,0 +1,9 @@
+{
+  "dataset_id": "HBR_litterfall",
+  "edi_package_id": "knb-lter-hbr.404.1",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-hbr/404/1/bc5694d823694eced9dfdd4e7e29e6de",
+  "download_timestamp": "2026-02-21T14:45:36Z",
+  "checksum_md5": "04b6a173f45e4c1221e0957f7a5d98f3",
+  "file_size_bytes": 1357466,
+  "raw_filename": "data.csv"
+}

@@ -1,0 +1,9 @@
+{
+  "dataset_id": "SEV_biomass",
+  "edi_package_id": "knb-lter-sev.186.208431",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-sev/186/208431/241b57e72e477b460f0f4a03db0be0c7",
+  "download_timestamp": "2026-02-21T14:45:48Z",
+  "checksum_md5": "fe9aba5769d0254780e2883f1bd4bd2a",
+  "file_size_bytes": 3327279,
+  "raw_filename": "data.csv"
+}

@@ -1,0 +1,9 @@
+{
+  "dataset_id": "CDR_BioCON_biomass",
+  "edi_package_id": "knb-lter-cdr.302.13",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-cdr/302/13/e0505eef5f398fdc383d2d477aa65a52",
+  "download_timestamp": "2026-02-21T14:45:35Z",
+  "checksum_md5": "8d16f4a0f16a4bc9733f98cccf6357fa",
+  "file_size_bytes": 5861104,
+  "raw_filename": "data.csv"
+}

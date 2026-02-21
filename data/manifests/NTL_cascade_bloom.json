@@ -1,0 +1,9 @@
+{
+  "dataset_id": "NTL_cascade_bloom",
+  "edi_package_id": "knb-lter-ntl.413.2",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-ntl/413/2/9d812efccf4107979d11e16316000b2e",
+  "download_timestamp": "2026-02-21T14:45:42Z",
+  "checksum_md5": "3a1ffaea68b8d701e1750a2c947c3898",
+  "file_size_bytes": 139958,
+  "raw_filename": "data.csv"
+}

@@ -1,0 +1,9 @@
+{
+  "dataset_id": "AND_tree_dbh",
+  "edi_package_id": "knb-lter-and.2742.28",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-and/2742/28/363a363a1b46f6cab5cc7a61f31c3544",
+  "download_timestamp": "2026-02-21T14:45:53Z",
+  "checksum_md5": "c0dc85384cc261e0b588505c220801cd",
+  "file_size_bytes": 4309361,
+  "raw_filename": "data.csv"
+}

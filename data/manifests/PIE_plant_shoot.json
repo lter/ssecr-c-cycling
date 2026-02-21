@@ -1,0 +1,9 @@
+{
+  "dataset_id": "PIE_plant_shoot",
+  "edi_package_id": "knb-lter-pie.202.5",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-pie/202/5/a896d15c449afd172023a33d77c6d21c",
+  "download_timestamp": "2026-02-21T14:45:46Z",
+  "checksum_md5": "17b2ee62a0addeba91230942cac69e37",
+  "file_size_bytes": 1197346,
+  "raw_filename": "data.csv"
+}

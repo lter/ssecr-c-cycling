@@ -1,0 +1,9 @@
+{
+  "dataset_id": "CAP_biomass",
+  "edi_package_id": "knb-lter-cap.632.17",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-cap/632/17/5588df3b128ddd28ed8d988ed5b3b9a1",
+  "download_timestamp": "2026-02-21T14:46:02Z",
+  "checksum_md5": "5a265d64b9be1ac45eef614bf55a5c5e",
+  "file_size_bytes": 183171,
+  "raw_filename": "data.csv"
+}

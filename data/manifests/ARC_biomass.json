@@ -1,0 +1,9 @@
+{
+  "dataset_id": "ARC_biomass",
+  "edi_package_id": "knb-lter-arc.10004.8",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-arc/10004/8/a93e86f3704defd7141a61f938f78552",
+  "download_timestamp": "2026-02-21T14:45:54Z",
+  "checksum_md5": "1930a9cac5ad801b411be82c0657ba51",
+  "file_size_bytes": 713166,
+  "raw_filename": "data.csv"
+}

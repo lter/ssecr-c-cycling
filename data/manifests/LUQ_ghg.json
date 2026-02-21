@@ -1,0 +1,9 @@
+{
+  "dataset_id": "LUQ_ghg",
+  "edi_package_id": "knb-lter-luq.164.678951",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-luq/164/678951/a1506baec9063d92c5fd910f778002a1",
+  "download_timestamp": "2026-02-21T14:45:51Z",
+  "checksum_md5": "66292da2ac65899beedb09c1bc6541cb",
+  "file_size_bytes": 189897,
+  "raw_filename": "data.csv"
+}

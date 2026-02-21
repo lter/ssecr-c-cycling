@@ -1,0 +1,9 @@
+{
+  "dataset_id": "MCM_co2flux",
+  "edi_package_id": "knb-lter-mcm.4014.5",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-mcm/4014/5/7d83597fcac36341ab828cd1bde7052a",
+  "download_timestamp": "2026-02-21T14:45:41Z",
+  "checksum_md5": "c274257b5476eb6e15d023570b1826a9",
+  "file_size_bytes": 29699,
+  "raw_filename": "data.csv"
+}

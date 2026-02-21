@@ -1,0 +1,9 @@
+{
+  "dataset_id": "VCR_inundation_1st",
+  "edi_package_id": "knb-lter-vcr.168.24",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-vcr/168/24/347eb8899f3b943ded96406174ab02e8",
+  "download_timestamp": "2026-02-21T14:45:49Z",
+  "checksum_md5": "37ca4f0ccdfc28e4660ef6b12939685e",
+  "file_size_bytes": 206803,
+  "raw_filename": "data.csv"
+}

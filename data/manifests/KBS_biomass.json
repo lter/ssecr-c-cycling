@@ -1,0 +1,9 @@
+{
+  "dataset_id": "KBS_biomass",
+  "edi_package_id": "knb-lter-kbs.19.85",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-kbs/19/85/dda27f5e4514af898d526ddaa419177d",
+  "download_timestamp": "2026-02-21T14:46:14Z",
+  "checksum_md5": "12776b58e3553f294da61b3b11d59715",
+  "file_size_bytes": 56153,
+  "raw_filename": "data.csv"
+}

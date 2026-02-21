@@ -1,0 +1,9 @@
+{
+  "dataset_id": "HFR_soil_respiration",
+  "edi_package_id": "knb-lter-hfr.5.37",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-hfr/5/37/f75235fbbc3fc2396171f4b1fa0b18c2",
+  "download_timestamp": "2026-02-21T14:45:37Z",
+  "checksum_md5": "7c46d5da8bde695d1669313b3b7508a1",
+  "file_size_bytes": 96166,
+  "raw_filename": "data.csv"
+}
