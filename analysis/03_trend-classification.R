@@ -211,12 +211,12 @@ panel_c <- trend_clean %>%
   theme_ccycling() + theme(legend.position = "none")
 
 panel_d <- trend_clean %>%
-  ggplot(aes(x = trend_class, y = n_timepoints, fill = trend_class)) +
+  ggplot(aes(x = trend_class, y = year_span, fill = trend_class)) +
   geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
                linewidth = 0.3, color = "gray30") +
   geom_jitter(width = 0.15, alpha = 0.35, size = 0.8, color = "gray30") +
   scale_fill_trend() +
-  labs(x = "Trend Type", y = "Number of Timepoints") +
+  labs(x = "Trend Type", y = "Experiment Duration (Years)") +
   theme_ccycling() + theme(legend.position = "none")
 
 final_figure <- (panel_a | panel_b) / (panel_c | panel_d) +

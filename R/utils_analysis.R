@@ -46,13 +46,14 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
 #' @param data data.frame with Date_parsed and mean_response columns
 #' @param p_threshold Significance threshold (default 0.05)
 #' @param cv_threshold CV threshold for stable vs variable (default 0.3)
-#' @return data.frame with trend_class, slope, p_value, r_squared, cv, mean_ratio, n_timepoints
+#' @return data.frame with trend_class, slope, p_value, r_squared, cv, mean_ratio, n_timepoints, year_span
 classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.3) {
   if (nrow(data) < 3) {
     return(data.frame(
       trend_class = "insufficient_data",
       slope = NA_real_, p_value = NA_real_, r_squared = NA_real_,
-      cv = NA_real_, mean_ratio = NA_real_, n_timepoints = nrow(data)
+      cv = NA_real_, mean_ratio = NA_real_, n_timepoints = nrow(data),
+      year_span = NA_real_
     ))
   }
 
@@ -66,6 +67,7 @@ classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.3) {
   r_squared <- lm_summary$r.squared
   cv <- sd(data$mean_response, na.rm = TRUE) / mean(data$mean_response, na.rm = TRUE)
   mean_ratio <- mean(data$mean_response, na.rm = TRUE)
+  year_span <- as.numeric(max(data$Date_parsed) - min(data$Date_parsed)) / 365.25
 
   if (p_value < p_threshold) {
     trend_class <- ifelse(slope > 0, "increasing", "decreasing")
@@ -76,7 +78,8 @@ classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.3) {
   data.frame(
     trend_class = trend_class,
     slope = slope, p_value = p_value, r_squared = r_squared,
-    cv = cv, mean_ratio = mean_ratio, n_timepoints = nrow(data)
+    cv = cv, mean_ratio = mean_ratio, n_timepoints = nrow(data),
+    year_span = round(year_span, 1)
   )
 }
 

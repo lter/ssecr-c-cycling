@@ -49,22 +49,21 @@ if (nrow(significant_trends) > 0) {
     group_by(trend_class) %>%
     summarise(
       n = n(),
-      mean_n_to_detect = mean(min_n_for_detection, na.rm = TRUE),
-      median_n_to_detect = median(min_n_for_detection, na.rm = TRUE),
-      min_n_to_detect = min(min_n_for_detection, na.rm = TRUE),
-      max_n_to_detect = max(min_n_for_detection, na.rm = TRUE),
-      mean_years_to_detect = mean(time_to_detect, na.rm = TRUE),
+      mean_years_to_detect = round(mean(time_to_detect, na.rm = TRUE), 1),
+      median_years_to_detect = round(median(time_to_detect, na.rm = TRUE), 1),
+      min_years_to_detect = round(min(time_to_detect, na.rm = TRUE), 1),
+      max_years_to_detect = round(max(time_to_detect, na.rm = TRUE), 1),
       .groups = "drop"
     )
 
   cat("\n--- DETECTION TIME SUMMARY ---\n")
   print(as.data.frame(detection_summary))
 
-  cat("\nOverall median timepoints to detect:",
-      median(significant_trends$min_n_for_detection, na.rm = TRUE), "\n")
+  cat("\nOverall median years to detect:",
+      round(median(significant_trends$time_to_detect, na.rm = TRUE), 1), "\n")
   cat("Range:",
-      min(significant_trends$min_n_for_detection, na.rm = TRUE), "to",
-      max(significant_trends$min_n_for_detection, na.rm = TRUE), "\n")
+      round(min(significant_trends$time_to_detect, na.rm = TRUE), 1), "to",
+      round(max(significant_trends$time_to_detect, na.rm = TRUE), 1), "years\n")
 }
 
 # Save results
@@ -73,19 +72,8 @@ write.csv(detection_with_class, "data/harmonized/detection_time_analysis.csv", r
 # --- Plots ---
 
 if (nrow(significant_trends) > 0) {
-  # Plot 1: Timepoints to detection (half-eye + boxplot + jitter)
-  p1 <- ggplot(significant_trends, aes(x = trend_class, y = min_n_for_detection,
-                                       fill = trend_class)) +
-    geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
-                 linewidth = 0.3, color = "gray30") +
-    geom_jitter(width = 0.15, alpha = 0.4, size = 0.8, color = "gray30") +
-    scale_fill_trend() +
-    labs(title = "Timepoints to Detection",
-         x = "Trend Type", y = "Number of Timepoints") +
-    theme_ccycling() + theme(legend.position = "none")
-
-  # Plot 2: Years to detection
-  p2 <- ggplot(significant_trends, aes(x = trend_class, y = time_to_detect,
+  # Plot 1: Years to detection by trend type
+  p1 <- ggplot(significant_trends, aes(x = trend_class, y = time_to_detect,
                                        fill = trend_class)) +
     geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
                  linewidth = 0.3, color = "gray30") +
@@ -95,26 +83,38 @@ if (nrow(significant_trends) > 0) {
          x = "Trend Type", y = "Years to Detection") +
     theme_ccycling() + theme(legend.position = "none")
 
+  # Plot 2: Years to detection by site
+  p2 <- ggplot(significant_trends, aes(x = reorder(site_abbr, time_to_detect),
+                                       y = time_to_detect,
+                                       color = trend_class)) +
+    geom_point(size = 1.5, alpha = 0.6) +
+    scale_color_trend() +
+    coord_flip() +
+    labs(title = "Detection Time by Site",
+         x = "Site", y = "Years to Detection",
+         color = "Trend Type") +
+    theme_ccycling()
+
   # Plot 3: Detection time vs effect size
-  p3 <- ggplot(significant_trends, aes(x = abs(final_slope), y = min_n_for_detection,
+  p3 <- ggplot(significant_trends, aes(x = abs(final_slope), y = time_to_detect,
                                        color = trend_class)) +
     geom_point(size = 1.5, alpha = 0.6) +
     geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5) +
     scale_color_trend() +
     scale_x_log10() +
     labs(title = "Detection Time vs Effect Size",
-         x = "|Slope| (log scale)", y = "Timepoints to Detection",
+         x = "|Slope| (log scale)", y = "Years to Detection",
          color = "Trend Type") +
     theme_ccycling()
 
   # Plot 4: Detection time vs CV
-  p4 <- ggplot(significant_trends, aes(x = cv, y = min_n_for_detection,
+  p4 <- ggplot(significant_trends, aes(x = cv, y = time_to_detect,
                                        color = trend_class)) +
     geom_point(size = 1.5, alpha = 0.6) +
     geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5) +
     scale_color_trend() +
     labs(title = "Detection Time vs Variability",
-         x = "Coefficient of Variation", y = "Timepoints to Detection",
+         x = "Coefficient of Variation", y = "Years to Detection",
          color = "Trend Type") +
     theme_ccycling()
 
