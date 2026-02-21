@@ -41,36 +41,45 @@ We will compile data on carbon stocks, carbon fluxes, and productivity measureme
 
 ```
 ssecr-c-cycling/
-  R/                       # Shared R utility functions
-    utils_dates.R          # Date parsing (handles YYYY, YYYY-MM, MM/DD/YYYY, etc.)
-    utils_labels.R         # Site metadata lookup and abbreviation mapping
-    utils_analysis.R       # Core analysis: relative response, trend classification, LRR
-    utils_plots.R          # Shared ggplot theme, trend color palette
-  data/                    # All data files
-    ready/                 # Processed CSVs ready for harmonization (one per experiment)
-    harmonized/            # Harmonized output (single combined dataset)
-    column_key.csv         # Maps raw column names to tidy names for harmonization
-    site_metadata.csv      # Lookup: site abbreviations, ecosystem types, case-study flags
-  analysis/                # Numbered analysis scripts (run in order)
-    00_validate-data.R     # Check that all files and columns are present
-    01_harmonize.R         # Combine all processed datasets into one harmonized file
-    02_relative-response.R # Calculate treatment/control ratios; per-experiment plots
-    03_trend-classification.R  # Classify trends (stable/variable/increasing/decreasing)
-    04_detection-time.R    # How many timepoints to detect a significant trend
-    05_lrr-analysis.R      # Log-response ratio: standard, early-vs-full, moving window
-    06_summary-stats.R     # Summary tables, stat verification, manuscript outputs
-  figures/                 # All generated figures
-    supplemental/          # Supplemental tables and panel figures
-  preprocessing/           # Site-specific data processing scripts
-  docs/                    # Conceptual figures and methods notes
-  defunct/                 # Archived old scripts and data (historical reference)
-  Analysis/                # [LEGACY] Original analysis scripts
-  Harmonizing/             # [LEGACY] Original harmonization files
-  Ready_data/              # [LEGACY] Original processed data
-  plots/                   # [LEGACY] Original generated plots
+  R/
+    pipeline/                # Data acquisition infrastructure
+      download.R             # EDI + URL download functions with caching
+      registry.R             # Dataset registry reader/query helpers
+      manifest.R             # JSON provenance manifest read/write/verify
+      preprocess_runner.R    # Orchestrator: registry → download → preprocess
+    preprocess/              # One file per LTER site (18 files)
+      preprocess_knz.R       # ... through preprocess_and.R
+    utils_dates.R            # Date parsing (YYYY, YYYY-MM, MM/DD/YYYY, etc.)
+    utils_labels.R           # Site metadata lookup and abbreviation mapping
+    utils_analysis.R         # Core analysis: relative response, trend, LRR
+    utils_plots.R            # Shared ggplot theme, trend color palette
+  data/
+    dataset_registry.csv     # Authoritative source-of-truth: EDI packages → outputs
+    column_key.csv           # Maps raw column names → harmonized names
+    site_metadata.csv        # Site abbreviations, ecosystem types, case-study flags
+    manifests/               # JSON download provenance (git-tracked)
+    raw/                     # Cached EDI downloads (.gitignored, reproducible)
+    ready/                   # Processed CSVs ready for harmonization
+    harmonized/              # Harmonized output (single combined dataset)
+  analysis/                  # Numbered scripts (run in order)
+    00_download-and-preprocess.R  # Download from EDI + run preprocessing
+    00_validate-data.R       # Validate files, columns, manifests, registry
+    01_harmonize.R           # Combine all datasets via ltertools::harmonize()
+    02_relative-response.R   # Treatment/control ratios; per-experiment plots
+    03_trend-classification.R    # Classify trends (stable/variable/inc/dec)
+    04_detection-time.R      # Timepoints needed to detect significant trends
+    05_lrr-analysis.R        # Log-response ratio analysis
+    06_summary-stats.R       # Summary tables, manuscript outputs
+  figures/                   # Generated figures
+    supplemental/            # Supplemental tables and panel figures
+  legacy/
+    preprocessing_scripts_original/  # Archived original preprocessing scripts
+  docs/                      # Conceptual figures and methods notes
 ```
 
 ## How to Reproduce the Analysis
+
+### From a fresh clone (full pipeline)
 
 1. **Clone the repository**
    ```
@@ -79,25 +88,34 @@ ssecr-c-cycling/
    ```
 
 2. **Install R dependencies**
-   The project uses these key packages:
-   - `tidyverse` (dplyr, ggplot2, tidyr, readr)
-   - `patchwork` (plot composition)
-   - `scales` (axis formatting)
-   - `ltertools` (data harmonization; install via `devtools::install_github("lter/ltertools")`)
-   - `SiZer`, `HERON` (SiZer analysis)
-
-3. **Run the analysis pipeline in order:**
    ```r
-   source("analysis/00_validate-data.R")  # Validate data files
-   source("analysis/01_harmonize.R")      # Create harmonized dataset
-   source("analysis/02_relative-response.R")  # Calculate relative responses
-   source("analysis/03_trend-classification.R")  # Classify trends
-   source("analysis/04_detection-time.R")  # Detection time analysis
-   source("analysis/05_lrr-analysis.R")    # Log-response ratio analysis
-   source("analysis/06_summary-stats.R")   # Summary statistics
+   install.packages(c("tidyverse", "patchwork", "scales", "jsonlite", "digest", "httr"))
+   devtools::install_github("lter/ltertools")
+   install.packages("EDIutils")  # For EDI data downloads
    ```
 
-   All scripts use relative paths from the repo root directory.
+3. **Run the full pipeline**
+   ```r
+   # Step 1: Download raw data from EDI and preprocess into ready/ CSVs
+   source("analysis/00_download-and-preprocess.R")
+
+   # Step 2: Validate all data files, manifests, and registry
+   source("analysis/00_validate-data.R")
+
+   # Step 3-8: Run analysis
+   source("analysis/01_harmonize.R")
+   source("analysis/02_relative-response.R")
+   source("analysis/03_trend-classification.R")
+   source("analysis/04_detection-time.R")
+   source("analysis/05_lrr-analysis.R")
+   source("analysis/06_summary-stats.R")
+   ```
+
+### If `data/ready/` files already exist
+
+Skip step 1 and start from `00_validate-data.R`. The ready/ CSVs are checked into the repo.
+
+All scripts use relative paths from the repo root directory.
 
 ## Data Dictionary (Harmonized Dataset)
 
@@ -129,21 +147,60 @@ The harmonized dataset (`data/harmonized/harmonized_current.csv`) contains:
 | BNZ | Bonanza Creek | Tundra | 2009-2021 |
 | CAP | Central Arizona-Phoenix | Urban | 2006-2024 |
 
+## Dataset Provenance
+
+Every dataset is traceable from its EDI source through preprocessing to the harmonized output. The authoritative registry is `data/dataset_registry.csv`.
+
+| Site | Dataset | EDI Package | Response | Type | Years |
+|------|---------|-------------|----------|------|-------|
+| AND | Plant biomass (WS06/07/08) | knb-lter-and.2742.28 + TP114 | DBA/DBH | Stock | 2002-2021 |
+| ARC | Tussock tundra biomass | knb-lter-arc.10004.8 | Biomass (g/m2) | Stock | 1982-2015 |
+| BNZ | CiPEHR CO2 flux | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
+| CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
+| CDR | BioCON biomass | knb-lter-cdr.302.13 | Biomass (g/m2) | Stock | 1998-2021 |
+| CDR | Soil %C (E002) | knb-lter-cdr.449.9 | PercentC | Other | 1982-2018 |
+| CDR | sIDE biomass | knb-lter-cdr.707.2 | Biomass (g/m2) | Stock | 2016-2020 |
+| CDR | sIDE % cover | knb-lter-cdr.708.2 | total_cover | Other | 2016-2020 |
+| CDR | tIDE % cover | knb-lter-cdr.710.2 | total_cover | Other | 2016-2020 |
+| CDR | Small Biodiversity biomass | knb-lter-cdr.291.8 | total_mass | Stock | 1995-2005 |
+| CDR | Soil %C (E001) | knb-lter-cdr.472.8 | total_Carpercent | Other | 1982-2011 |
+| CDR | Soil carbon flux (E004) | knb-lter-cdr.590.8 | total_SCF | Flux | 1999-2005 |
+| GCE | Vegetation cover | PLT-GCED-2207 (non-EDI) | Vegetation_Cover | Stock | 2010-2020 |
+| HBR | MELNHE litterfall | knb-lter-hbr.404.1 | Mass (g/m2) | Other | 2009-2022 |
+| HFR | Soil warming respiration | knb-lter-hfr.5.37 | soil_res | Flux | 1991-2021 |
+| KBS | MCSE NPP | knb-lter-kbs.19.85 | Biomass (g/m2) | Stock | 1990-2022 |
+| KNZ | Belowground plot biomass | knb-lter-knz.57.15 | Biomass (g/m2) | Stock | 1986-2021 |
+| LUQ | CTE soil GHG fluxes | knb-lter-luq.164.678951 | CO2 flux | Flux | 2003-2010 |
+| MCM | Stoichiometry experiment | knb-lter-mcm.4013.6 | Abundance/kg | Stock | 2007-2016 |
+| NTL | Cascade bloom | knb-lter-ntl.413.2 | Chlorophyll | Stock | 2011-2019 |
+| NWT | 3-factor ANPP | knb-lter-nwt.13.7 | mass (g/m2) | Stock | 2006-2019 |
+| PIE | TIDE shoot mass | knb-lter-pie.202.5 | shoot_mass | Stock | 2004-2020 |
+| SBC | Kelp removal biomass | knb-lter-sbc.119 | DRY_GM2 | Stock | 2008-2024 |
+| SEV | NFert biomass | knb-lter-sev.186.208431 | Biomass (g/m2) | Stock | 2004-2023 |
+| VCR | 2nd inundation experiment | knb-lter-vcr.169.24 | totalMass | Stock | 1998-2010 |
+| VCR | 1st inundation experiment | knb-lter-vcr.168.24 | totalMass | Stock | 1994-2014 |
+
 ## CDR Dataset Note
 
 Cedar Creek (CDR) currently has 8 datasets in the pipeline covering different experiments and response variables. A decision on which to retain for the final analysis is pending. All are included for now.
 
-## Additional Datasets Available (Not Yet in Pipeline)
+## Pipeline Architecture
 
-The following processed datasets in `data/ready/` are available but not yet in the column key:
-- `LUQ_seedling_2003-2021_processed.csv` (seedling height/diameter)
-- `PIE_NutrientAddition_PlantParameters_17Y_Multiple_processed.csv` (shoot height/mass)
+```
+EDI Repository                  dataset_registry.csv         data/ready/
+  ┌──────────┐    download.R    ┌──────────────────┐         ┌─────────┐
+  │ EDI pkg  │──────────────────│ registry entry   │────────▶│ CSV     │
+  └──────────┘    ▼             └──────────────────┘  prepr. └─────────┘
+              data/raw/              ▲                    │        │
+              + manifest.json        │                    │        ▼
+                                     │              preprocess_   column_key.csv
+                              preprocess_runner.R   {site}.R     + ltertools::harmonize()
+                                                                       │
+                                                                       ▼
+                                                              data/harmonized/
+```
 
-Raw datasets on Google Drive that could be processed:
-- GCE inundation (elevation and percent cover)
-- NTL heat wave chlorophyll
-- MCM CO2 fluxes
-- SBC NPP measurements
+Each download generates a JSON manifest in `data/manifests/` recording the EDI package ID, download timestamp, and MD5 checksum. The validation script (`00_validate-data.R`) verifies manifest integrity.
 
 ## Contributing Guidelines & Style Guide
 
