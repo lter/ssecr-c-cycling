@@ -30,11 +30,11 @@ VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed
 GCE1.csv,GCE,Date,Date,NA
 GCE1.csv,GCE,Treatment,Treatment,NA
 GCE1.csv,GCE,Site,Replicate,NA
-GCE1.csv,GCE,Vegetation_Cover_sum,Response.Variable,Stock
+GCE1.csv,GCE,Vegetation_Cover_sum,Response.Variable,Proxy
 NTL_NutrientAddition1.csv,NTL,Year,Date,NA
 NTL_NutrientAddition1.csv,NTL,N_addition,Treatment,NA
 NTL_NutrientAddition1.csv,NTL,Lake,Replicate,NA
-NTL_NutrientAddition1.csv,NTL,Manual_Chl_mean,Response.Variable,Stock
+NTL_NutrientAddition1.csv,NTL,Manual_Chl_mean,Response.Variable,Proxy
 MCM_CO2flux_2003-2010_processed.csv,MCM,Year,Date,NA
 MCM_CO2flux_2003-2010_processed.csv,MCM,TREATMENT,Treatment,NA
 MCM_CO2flux_2003-2010_processed.csv,MCM,BLOCK_ID,Replicate,NA

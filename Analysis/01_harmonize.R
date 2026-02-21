@@ -50,21 +50,19 @@ harmony <- harmony %>% filter(!(site_abbr == "MCM" & Treatment == "U"))
 cat("MCM: Excluded U (Unamended); W (Water only) is the control\n")
 
 # Exclude datasets that are not usable for treatment/control carbon analysis
-# - GCE: vegetation percent cover, not carbon mass
 # - CDR sIDE/tIDE: percent cover, not carbon
-# - NTL: chlorophyll proxy, not direct carbon
+# NOTE: GCE (vegetation cover) and NTL (chlorophyll) re-included as carbon proxies
 # NOTE: MCM re-included using CO2 flux from knb-lter-mcm.4014.5
 # NOTE: AND re-included using DBH from TV010 (knb-lter-and.2742.28) for all 3 watersheds
 excluded_sources <- c(
-  "GCE1.csv",
   "CDR_sIDEPercentCover_2016-2020_processed.csv",
-  "CDR_tIDEPercentCover_2016-2020_processed.csv",
-  "NTL_NutrientAddition1.csv"
+  "CDR_tIDEPercentCover_2016-2020_processed.csv"
 )
 n_before <- nrow(harmony)
 harmony <- harmony %>% filter(!source %in% excluded_sources)
-cat("Excluded", n_before - nrow(harmony), "rows from unusable datasets:",
+cat("Excluded", n_before - nrow(harmony), "rows from non-carbon datasets:",
     paste(excluded_sources, collapse = ", "), "\n")
+cat("NOTE: GCE (vegetation cover) and NTL (chlorophyll) included as carbon proxies\n")
 
 # Fix Experiment_Type inconsistency: "Fertilizer" -> "Fertilization"
 harmony$experiment_type <- gsub("^Fertilizer$", "Fertilization", harmony$experiment_type)

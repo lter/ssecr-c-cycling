@@ -131,7 +131,7 @@ The harmonized dataset (`data/harmonized/harmonized_current.csv`) contains:
 | `site_abbr` | LTER site abbreviation (KNZ, HBR, etc.) |
 | `site_type` | Ecosystem type (Grassland, Forest, Coastal, Tundra, Urban, Freshwater) |
 | `experiment_type` | Type of manipulation (Fertilization, Warming, etc.) |
-| `stock_or_flux` | Whether response is a Stock or Flux |
+| `stock_or_flux` | Whether response is a Stock, Flux, or Proxy (indirect C measurement) |
 | `is_case_study` | TRUE for the 7 focal case-study sites |
 
 ## Case-Study Sites
@@ -157,6 +157,8 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 | BNZ | CiPEHR NEE | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
 | CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
 | CDR | BioCON biomass | knb-lter-cdr.302.13 | Biomass (g/m2) | Stock | 1998-2021 |
+| GCE | Vegetation recovery cover* | DOI: 10.6073/pasta/6df40a... | Vegetation cover (%) | Proxy | multi-year |
+| NTL | Cascade bloom chlorophyll* | knb-lter-ntl.413.2 | Chlorophyll (µg/L) | Proxy | 2011-2019 |
 | CDR | Soil %C (E002) | knb-lter-cdr.449.9 | PercentC | Stock | 1982-2018 |
 | CDR | sIDE biomass | knb-lter-cdr.707.2 | Biomass (g/m2) | Stock | 2016-2020 |
 | CDR | Small Biodiversity biomass | knb-lter-cdr.291.8 | total_mass | Stock | 1995-2005 |
@@ -175,22 +177,22 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 | VCR | 2nd inundation experiment | knb-lter-vcr.169.24 | totalMass | Stock | 1998-2010 |
 | VCR | 1st inundation experiment | knb-lter-vcr.168.24 | totalMass | Stock | 1994-2014 |
 
+*GCE and NTL are carbon proxies: vegetation percent cover (GCE) and chlorophyll (NTL) are indirect measurements of plant/algal carbon, not direct carbon stocks or fluxes.
+
 ## CDR Dataset Note
 
 Cedar Creek (CDR) has 6 included datasets (2 percent cover datasets excluded as non-carbon). A decision on which to retain for the final analysis is pending.
 
 ## Excluded Datasets
 
-The following datasets were excluded because their response variables are not carbon stocks or fluxes:
+The following datasets were excluded or replaced:
 
 | Site | Dataset | Reason |
 |------|---------|--------|
 | AND | TP114 Entity 6 DBA (original) | DBA/DBH incompatibility; fixed by using TV010 DBH for all watersheds |
-| GCE | Vegetation cover | Percent cover, not carbon mass |
 | MCM | Stoichiometry biota (4013.6) | Invertebrate abundance, not carbon; replaced by CO2 flux (4014.5) |
 | CDR | sIDE percent cover | Percent cover, not carbon |
 | CDR | tIDE percent cover | Percent cover, not carbon |
-| NTL | Cascade bloom chlorophyll | Chlorophyll proxy, not direct carbon |
 
 ## Pipeline Architecture
 
