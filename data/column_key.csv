@@ -40,7 +40,7 @@ MCM_SoilOC_2007-2016_processed.csv,MCM,TREATMENT,Treatment,NA
 MCM_SoilOC_2007-2016_processed.csv,MCM,BLOCK_ID,Replicate,NA
 MCM_SoilOC_2007-2016_processed.csv,MCM,Total_abundance_per_kg,Response.Variable,Stock
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,YEAR_mean,Date,NA
-LUQ_GHG_fluxes_2003-2010.csv,LUQ,Reported_N2O_Flux_ng_N_cm.2_hr.1_mean,Treatment,NA
+LUQ_GHG_fluxes_2003-2010.csv,LUQ,treatment,Treatment,NA
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,Block_Plot,Replicate,NA
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,Reported_CO2_Flux_ug_C_cm.2_hr.1_mean,Response.Variable,Flux
 HBR_litterfall_2009-2022_processed.csv,HBR,Year,Date,NA
@@ -78,7 +78,7 @@ CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,Response.Variable,O
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,treatment,Treatment,NA
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,plot,Replicate,NA
-CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,total_mass,Response.Variable,Other
+CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,Response.Variable,Other
 CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Date,Date,NA
 CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Grazed,Treatment,NA
 CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Plot,Replicate,NA
@@ -90,7 +90,7 @@ CDR_PercentCarbon_1982-2011_processed.csv,CDR,total_Carpercent,Response.Variable
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Date,Date,NA
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cover_Fertilizer,Treatment,NA
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Plot,Replicate,NA
-CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,total_SCF,Response.Variable,Other
+CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,total_SCF,Response.Variable,Flux
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,year,Date,NA
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,treatment,Treatment,NA
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,plot,Replicate,NA

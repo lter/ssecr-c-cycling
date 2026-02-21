@@ -107,6 +107,59 @@ if (length(sources_without_metadata) > 0) {
   n_issues <- n_issues + length(sources_without_metadata)
 }
 
+# Check 7: Registry and manifest integrity
+cat("\n--- Registry & Manifest Integrity ---\n")
+registry_path <- "data/dataset_registry.csv"
+manifest_dir <- "data/manifests"
+
+if (file.exists(registry_path)) {
+  registry <- read.csv(registry_path, stringsAsFactors = FALSE)
+  registry <- registry[registry$include == TRUE, ]
+  cat("  Registry: ", nrow(registry), " included datasets\n")
+
+  # Check that every ready/ file is traceable to a registry entry
+  ready_files <- list.files("data/ready", pattern = "\\.(csv|CSV)$")
+  registry_outputs <- unique(registry$ready_filename)
+  orphaned <- setdiff(ready_files, registry_outputs)
+  if (length(orphaned) > 0) {
+    cat("  WARNING: Ready files not in registry:", paste(head(orphaned, 5), collapse = ", "), "\n")
+  }
+
+  # Check manifests
+  if (dir.exists(manifest_dir)) {
+    manifests <- list.files(manifest_dir, pattern = "\\.json$")
+    cat("  Manifests found:", length(manifests), "\n")
+
+    # Check every included dataset has a manifest
+    for (i in seq_len(nrow(registry))) {
+      did <- registry$dataset_id[i]
+      mf <- file.path(manifest_dir, paste0(did, ".json"))
+      if (!file.exists(mf)) {
+        cat("    MISSING manifest:", did, "\n")
+        n_issues <- n_issues + 1
+        issues[[length(issues) + 1]] <- paste0("[NO MANIFEST] ", did)
+      }
+    }
+
+    # Verify checksums for existing manifests
+    source("R/pipeline/manifest.R")
+    integrity <- check_all_manifests(manifest_dir, "data/raw")
+    if (nrow(integrity) > 0) {
+      bad <- integrity[!integrity$checksum_ok, ]
+      if (nrow(bad) > 0) {
+        cat("    CHECKSUM FAILURES:", paste(bad$dataset_id, collapse = ", "), "\n")
+        n_issues <- n_issues + nrow(bad)
+      } else {
+        cat("    All manifest checksums OK\n")
+      }
+    }
+  } else {
+    cat("  No manifests directory found (run 00_download-and-preprocess.R first)\n")
+  }
+} else {
+  cat("  No registry file found at", registry_path, "\n")
+}
+
 # Summary
 cat("\n=== SUMMARY ===\n")
 cat("Total sources checked:", length(sources), "\n")
