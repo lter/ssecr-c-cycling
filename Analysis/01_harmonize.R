@@ -55,19 +55,24 @@ cat("HFR: Excluded original C plots; remapped DC -> C for full 1991-2021 time se
 harmony <- harmony %>% filter(!(site_abbr == "MCM" & Treatment == "U"))
 cat("MCM: Excluded U (Unamended); W (Water only) is the control\n")
 
-# Exclude datasets that are not usable for treatment/control carbon analysis
-# - CDR sIDE/tIDE: percent cover, not carbon
-# NOTE: GCE (vegetation cover) and NTL (chlorophyll) re-included as carbon proxies
-# NOTE: MCM re-included using CO2 flux from knb-lter-mcm.4014.5
-# NOTE: AND re-included using DBH from TV010 (knb-lter-and.2742.28) for all 3 watersheds
+# Exclude datasets: one dataset per LTER site
+# CDR: keep BioCON only; VCR: keep 1st inundation (longer record)
+# Also exclude CDR sIDE/tIDE percent cover (not carbon)
 excluded_sources <- c(
   "CDR_sIDEPercentCover_2016-2020_processed.csv",
-  "CDR_tIDEPercentCover_2016-2020_processed.csv"
+  "CDR_tIDEPercentCover_2016-2020_processed.csv",
+  "CDR_SoilBiomass_1982-2018_%C_processed.csv",
+  "CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv",
+  "CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv",
+  "CDR_PercentCarbon_1982-2011_processed.csv",
+  "CDR_SoilCarbonFlux_1999-2005_processed.csv",
+  "VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv"
 )
 n_before <- nrow(harmony)
 harmony <- harmony %>% filter(!source %in% excluded_sources)
-cat("Excluded", n_before - nrow(harmony), "rows from non-carbon datasets:",
-    paste(excluded_sources, collapse = ", "), "\n")
+cat("Excluded", n_before - nrow(harmony), "rows (one dataset per site rule + non-carbon):\n")
+cat("  CDR: kept BioCON; excluded E001, E002, E004, sIDE, Small Biodiv, pctcover\n")
+cat("  VCR: kept 1st inundation (1994-2014); excluded 2nd (1998-2010)\n")
 cat("NOTE: GCE (vegetation cover) and NTL (chlorophyll) included as carbon proxies\n")
 
 # Fix Experiment_Type inconsistency: "Fertilizer" -> "Fertilization"

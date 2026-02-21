@@ -158,30 +158,20 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 | CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
 | CDR | BioCON biomass | knb-lter-cdr.302.13 | Biomass (g/m2) | Stock | 1998-2021 |
 | GCE | Vegetation recovery cover* | DOI: 10.6073/pasta/6df40a... | Vegetation cover (%) | Proxy | multi-year |
-| NTL | Cascade bloom chlorophyll* | knb-lter-ntl.413.2 | Chlorophyll (µg/L) | Proxy | 2011-2019 |
-| CDR | Soil %C (E002) | knb-lter-cdr.449.9 | PercentC | Stock | 1982-2018 |
-| CDR | sIDE biomass | knb-lter-cdr.707.2 | Biomass (g/m2) | Stock | 2016-2020 |
-| CDR | Small Biodiversity biomass | knb-lter-cdr.291.8 | total_mass | Stock | 1995-2005 |
-| CDR | Soil %C (E001) | knb-lter-cdr.472.8 | total_Carpercent | Stock | 1982-2011 |
-| CDR | Soil carbon flux (E004) | knb-lter-cdr.590.8 | total_SCF | Flux | 1999-2005 |
 | HBR | MELNHE litterfall | knb-lter-hbr.404.1 | Mass (g/m2) | Flux | 2009-2022 |
 | HFR | Soil warming respiration | knb-lter-hfr.5.37 | soil_res | Flux | 1991-2021 |
 | KBS | MCSE NPP | knb-lter-kbs.19.85 | Biomass (g/m2) | Stock | 1990-2022 |
 | KNZ | Belowground plot biomass | knb-lter-knz.57.15 | Biomass (g/m2) | Stock | 1986-2021 |
 | LUQ | CTE soil GHG fluxes | knb-lter-luq.164.678951 | CO2 flux | Flux | 2003-2010 |
 | MCM | Stoichiometry CO2 flux | knb-lter-mcm.4014.5 | CO2 flux (µmol/m²/s) | Flux | 2003-2010 |
+| NTL | Cascade bloom chlorophyll* | knb-lter-ntl.413.2 | Chlorophyll (µg/L) | Proxy | 2011-2019 |
 | NWT | 3-factor ANPP | knb-lter-nwt.13.7 | mass (g/m2) | Stock | 2006-2019 |
 | PIE | TIDE shoot mass | knb-lter-pie.202.5 | shoot_mass | Stock | 2004-2020 |
 | SBC | Kelp removal biomass | knb-lter-sbc.119 | DRY_GM2 | Stock | 2008-2024 |
 | SEV | NFert biomass | knb-lter-sev.186.208431 | Biomass (g/m2) | Stock | 2004-2023 |
-| VCR | 2nd inundation experiment | knb-lter-vcr.169.24 | totalMass | Stock | 1998-2010 |
 | VCR | 1st inundation experiment | knb-lter-vcr.168.24 | totalMass | Stock | 1994-2014 |
 
 *GCE and NTL are carbon proxies: vegetation percent cover (GCE) and chlorophyll (NTL) are indirect measurements of plant/algal carbon, not direct carbon stocks or fluxes.
-
-## CDR Dataset Note
-
-Cedar Creek (CDR) has 6 included datasets (2 percent cover datasets excluded as non-carbon). A decision on which to retain for the final analysis is pending.
 
 ## Excluded Datasets
 
@@ -193,6 +183,12 @@ The following datasets were excluded or replaced:
 | MCM | Stoichiometry biota (4013.6) | Invertebrate abundance, not carbon; replaced by CO2 flux (4014.5) |
 | CDR | sIDE percent cover | Percent cover, not carbon |
 | CDR | tIDE percent cover | Percent cover, not carbon |
+| CDR | Soil %C E002 (knb-lter-cdr.449.9) | One dataset per site; BioCON retained |
+| CDR | sIDE biomass (knb-lter-cdr.707.2) | One dataset per site; BioCON retained |
+| CDR | Small Biodiversity biomass (knb-lter-cdr.291.8) | One dataset per site; BioCON retained |
+| CDR | Soil %C E001 (knb-lter-cdr.472.8) | One dataset per site; BioCON retained |
+| CDR | Soil carbon flux E004 (knb-lter-cdr.590.8) | One dataset per site; BioCON retained |
+| VCR | 2nd inundation experiment (knb-lter-vcr.169.24) | One dataset per site; 1st inundation retained (longer record) |
 
 ## Pipeline Architecture
 
