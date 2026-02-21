@@ -1,0 +1,79 @@
+"site_abbr","source","treatment","n_timepoints","n_slope_changes","change_years","segment_slopes","segment_p_values","bandwidth"
+"ARC","ARC_Biomass_1982-2015_processed.csv","NP",5,0,NA,"0.026596","0.2979",5
+"BNZ","BNZ_NEE_2009-2021.csv","C S",12,1,"2011","-0.431876; 0.075806","0.0247; 0.0649",5
+"BNZ","BNZ_NEE_2009-2021.csv","W C",12,0,NA,"-0.068126","0.3848",5
+"BNZ","BNZ_NEE_2009-2021.csv","W S",12,0,NA,"0.073487","0.445",5
+"CAP","CAP_Biomass_2006-2024_Processed.csv","N",11,0,NA,"-0.013726","0.4669",5
+"CAP","CAP_Biomass_2006-2024_Processed.csv","NP",12,2,"2013; 2019","0.047595; -0.23391; -0.176289","0.8379; 0.1373; 0.3753",5
+"CAP","CAP_Biomass_2006-2024_Processed.csv","P",12,0,NA,"-0.005244","0.7591",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb",14,0,NA,"0.0339","0.3906",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTamb",10,0,NA,"-0.002137","0.9655",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTelv",10,0,NA,"-0.066248","0.3295",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg",5,0,NA,"0.013874","0.8129",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTamb",9,0,NA,"-0.019641","0.7229",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTelv",9,0,NA,"-0.01039","0.8439",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M HTelv",9,0,NA,"-0.194572","0.0155",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb S",23,2,"2001; 2012","-0.264328; 0.088858; -0.002705","0.1111; 4e-04; 0.9146",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M",24,0,NA,"-0.002637","0.4533",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb",14,0,NA,"-0.032188","0.4005",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTamb",10,0,NA,"0.0046","0.8794",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTelv",10,0,NA,"-0.019774","0.7307",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg",5,0,NA,"0.033756","0.6383",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTamb",9,0,NA,"-0.034008","0.3696",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTelv",9,0,NA,"0.030953","0.5166",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M HTamb",9,0,NA,"0.034591","0.4683",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich S",23,2,"2003; 2013","-0.184616; 0.034267; -0.099734","0.057; 0.0273; 0.0373",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M",24,0,NA,"8e-04","0.8104",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb",5,0,NA,"-0.194584","0.0035",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTamb",10,0,NA,"0.044922","0.7331",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTelv",10,0,NA,"-0.056162","0.3805",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg",5,0,NA,"-0.109183","0.2762",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTamb",9,0,NA,"0.043025","0.2644",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTelv",9,0,NA,"-0.004561","0.9257",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb S",23,2,"2002; 2011","-0.195897; 0.044112; 0.012683","0.1173; 0.2571; 0.62",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M",24,1,"2020","-5.5e-05; NA","0.9927; NA",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb",5,0,NA,"-0.038478","0.7436",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTamb",10,0,NA,"-0.044229","0.4754",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTelv",10,1,"2015","-0.502204; -0.297546","0.1815; 0.1516",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg",5,0,NA,"-0.108577","0.3922",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTamb",9,0,NA,"0.012361","0.8783",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTelv",9,0,NA,"0.101924","0.3224",5
+"CDR","CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S",23,2,"2002; 2010","-0.241675; 0.077039; -0.047592","0.1373; 0.0641; 0.0237",5
+"GCE","GCE1.csv","Disturbed (March-2010)",11,1,"2012","0.192047; -0.01479","0.0754; 0.0173",5
+"HBR","HBR_litterfall_2009-2022_processed.csv","Ca",6,0,NA,"0.005282","0.4198",5
+"HBR","HBR_litterfall_2009-2022_processed.csv","N",13,0,NA,"0.011711","0",5
+"HBR","HBR_litterfall_2009-2022_processed.csv","NP",13,1,"2012","0.000441; 0.013904","0.976; 0.0075",5
+"HBR","HBR_litterfall_2009-2022_processed.csv","P",13,0,NA,"0.000506","0.7981",5
+"HFR","HFR_soil-respiration_1991-2021_Processed.csv","H",31,1,"2000","-0.035911; -0.003825","0.001; 0.2886",5
+"KBS","KBS_Biomass_1990-2022_processed.csv","T1",33,2,"2010; 2011","-0.010684; NA; 0.042017","0.5202; NA; 0.5095",5
+"KBS","KBS_Biomass_1990-2022_processed.csv","T2",33,2,"2007; 2010","-0.008441; 0.160135; 0.046089","0.7031; 0.6703; 0.3779",5
+"KBS","KBS_Biomass_1990-2022_processed.csv","T3",33,2,"2005; 2012","0.009502; 0.060339; 0.003446","0.5452; 0.2825; 0.9511",5
+"KBS","KBS_Biomass_1990-2022_processed.csv","T6",31,0,NA,"0.053197","0.0346",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b m c",34,3,"1989; 1999; 2014","-0.007055; 0.038666; 0.089353; -0.493055","0.9129; 0.0926; 0.1117; 0.642",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b m n",36,3,"1989; 1996; 2007","0.085917; -0.048878; 0.139634; 0.047514","0.6125; 0.4114; 0.173; 0.7835",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b m n+p",36,3,"1990; 1999; 2007","0.264848; 0.082611; 0.414958; -0.033266","0.0048; 0.2098; 0.094; 0.8372",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b m p",34,2,"1999; 2012","0.036796; 0.087722; 0.070558","0.0025; 0.1308; 0.8715",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b u c",36,0,NA,"0.026066","0.0436",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b u n",36,0,NA,"0.045156","0.1616",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b u n+p",36,1,"1988","0.417543; 0.02491","0.4481; 0.5049",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","b u p",36,0,NA,"0.031483","0.0162",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u m c",36,1,"1988","0.023863; 0.047985","0.8463; 0.0143",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u m n",36,0,NA,"0.017246","0.1272",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u m n+p",36,0,NA,"0.023498","0.0636",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u m p",36,1,"1989","0.045189; 0.04338","0.2185; 0.0173",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u u n",36,0,NA,"-0.014199","0.3539",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u u n+p",36,0,NA,"-0.020918","0.2812",5
+"KNZ","KNZ_Biomass_1986-2021_processed.csv","u u p",36,0,NA,"0.052478","0.0473",5
+"LUQ","LUQ_GHG_fluxes_2003-2010.csv","No trim + debris",7,0,NA,"0.00634","0.7036",5
+"LUQ","LUQ_GHG_fluxes_2003-2010.csv","Trim & clear",7,0,NA,"0.007041","0.7052",5
+"LUQ","LUQ_GHG_fluxes_2003-2010.csv","Trim + debris",7,0,NA,"0.003754","0.8209",5
+"MCM","MCM_CO2flux_2003-2010_processed.csv","CN",5,0,NA,"0.110707","0.318",5
+"MCM","MCM_CO2flux_2003-2010_processed.csv","CP",5,0,NA,"0.088848","0.1738",5
+"MCM","MCM_CO2flux_2003-2010_processed.csv","N",5,0,NA,"0.036053","0.4915",5
+"MCM","MCM_CO2flux_2003-2010_processed.csv","P",5,0,NA,"0.021411","0.2847",5
+"NWT","NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv","N",13,1,"2010","0.032551; -0.016364","0.5426; 0.5522",5
+"PIE","PIE-PlantShoot_2004-2020_Processed.csv","Enriched",17,0,NA,"-4e-05","0.9971",5
+"SBC","SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL",15,0,NA,"-0.005572","0.4986",5
+"SBC","SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL",14,0,NA,"0.031698","0.6748",5
+"SEV","SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv","F",20,0,NA,"-0.015275","0.2999",5
+"VCR","VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv","Inside Juncus",16,1,"2007","0.226389; -0.596216","0.009; 0.2734",5
