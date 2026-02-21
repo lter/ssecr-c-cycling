@@ -9,25 +9,24 @@ library(ggplot2)
 # =============================================================================
 
 TREND_COLORS <- c(
-  "stable"            = "#5B9E6F",
-  "variable"          = "#E8A838",
-  "increasing"        = "#3A7CA5",
-  "decreasing"        = "#D4726A",
-  "insufficient_data" = "#B0B0B0"
+  "stable"     = "#5B9E6F",
+  "variable"   = "#E8A838",
+  "increasing" = "#3A7CA5",
+  "decreasing" = "#D4726A"
 )
 
-TREND_LEVELS <- c("stable", "variable", "increasing", "decreasing", "insufficient_data")
+TREND_LEVELS <- c("stable", "variable", "increasing", "decreasing")
 
 as_trend_factor <- function(x) {
   factor(x, levels = TREND_LEVELS)
 }
 
 scale_fill_trend <- function(...) {
-  scale_fill_manual(values = TREND_COLORS, drop = FALSE, ...)
+  scale_fill_manual(values = TREND_COLORS, drop = TRUE, ...)
 }
 
 scale_color_trend <- function(...) {
-  scale_color_manual(values = TREND_COLORS, drop = FALSE, ...)
+  scale_color_manual(values = TREND_COLORS, drop = TRUE, ...)
 }
 
 # =============================================================================

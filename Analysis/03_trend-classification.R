@@ -178,7 +178,7 @@ panel_a <- overall_proportions %>%
   ggplot(aes(x = "", y = n, fill = trend_class)) +
   geom_bar(stat = "identity", position = "fill", width = 0.5,
            color = "white", linewidth = 0.3) +
-  geom_text(aes(label = paste0(n, "\n(", percentage, "%)")),
+  geom_text(aes(label = n),
             position = position_fill(vjust = 0.5), size = 2.5, fontface = "bold") +
   scale_fill_trend() +
   scale_y_continuous(labels = scales::percent) +
