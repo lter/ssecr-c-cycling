@@ -6,13 +6,13 @@ CAP_Biomass_2006-2024_Processed.csv,CAP,Central Arizona-Phoenix,Urban,Fertilizat
 CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Cedar Creek,Grassland,Floral Manipulation,Stock,FALSE
 CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock,FALSE
 CDR_Biomass_1998-2021_gm2_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock,FALSE
-CDR_PercentCarbon_1982-2011_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Other,FALSE
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Other,FALSE
+CDR_PercentCarbon_1982-2011_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock,FALSE
+CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock,FALSE
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Flux,FALSE
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,Cedar Creek,Grassland,Inundation,Other,FALSE
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,Cedar Creek,Grassland,Inundation,Other,FALSE
-GCE1.csv,GCE,Georgia Coastal Ecosystems,Coastal,Vegetation Removal,Stock,TRUE
-HBR_litterfall_2009-2022_processed.csv,HBR,Hubbard Brook,Forest,Fertilization,Other,TRUE
+GCE1.csv,GCE,Georgia Coastal Ecosystems,Coastal,Vegetation Removal,Stock,FALSE
+HBR_litterfall_2009-2022_processed.csv,HBR,Hubbard Brook,Forest,Fertilization,Flux,TRUE
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,Harvard Forest,Forest,Warming,Flux,TRUE
 KBS_Biomass_1990-2022_processed.csv,KBS,Kellogg Biological Station,Grassland,Fertilization,Stock,TRUE
 KNZ_Biomass_1986-2021_processed.csv,KNZ,Konza Prairie,Grassland,Fertilization,Stock,TRUE

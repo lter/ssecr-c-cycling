@@ -46,7 +46,7 @@ LUQ_GHG_fluxes_2003-2010.csv,LUQ,Reported_CO2_Flux_ug_C_cm.2_hr.1_mean,Response.
 HBR_litterfall_2009-2022_processed.csv,HBR,Year,Date,NA
 HBR_litterfall_2009-2022_processed.csv,HBR,Treatment,Treatment,NA
 HBR_litterfall_2009-2022_processed.csv,HBR,Stand,Replicate,NA
-HBR_litterfall_2009-2022_processed.csv,HBR,Mass_gm2,Response.Variable,Other
+HBR_litterfall_2009-2022_processed.csv,HBR,Mass_gm2,Response.Variable,Flux
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,year,Date,NA
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,block,Replicate,NA
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,N,Treatment,NA
@@ -54,7 +54,7 @@ NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,mass_mean,Response.Variab
 CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Year,Date,NA
 CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,NAdd.g.m2.yr.,Treatment,NA
 CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Plot,Replicate,NA
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,PercentC,Response.Variable,Other
+CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,PercentC,Response.Variable,Stock
 AND_plant_biomass_2002-2021_processed.csv,AND,YEAR,Date,NA
 AND_plant_biomass_2002-2021_processed.csv,AND,WATERSHED,Treatment,NA
 AND_plant_biomass_2002-2021_processed.csv,AND,PLOT,Replicate,NA
@@ -62,7 +62,7 @@ AND_plant_biomass_2002-2021_processed.csv,AND,DBA_mean,Response.Variable,Stock
 BNZ_NEE_2009-2021.csv,BNZ,year,Date,NA
 BNZ_NEE_2009-2021.csv,BNZ,treatment,Treatment,NA
 BNZ_NEE_2009-2021.csv,BNZ,fence,Replicate,NA
-BNZ_NEE_2009-2021.csv,BNZ,NEE,Response.Variable,?
+BNZ_NEE_2009-2021.csv,BNZ,NEE,Response.Variable,Flux
 CAP_Biomass_2006-2024_Processed.csv,CAP,year,Date,NA
 CAP_Biomass_2006-2024_Processed.csv,CAP,treatment_code,Treatment,NA
 CAP_Biomass_2006-2024_Processed.csv,CAP,site_code,Replicate,NA
@@ -86,7 +86,7 @@ CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,total_mass,Response.Varia
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,Year,Date,NA
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,NAdd,Treatment,NA
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,Field_Plot,Replicate,NA
-CDR_PercentCarbon_1982-2011_processed.csv,CDR,total_Carpercent,Response.Variable,Other
+CDR_PercentCarbon_1982-2011_processed.csv,CDR,total_Carpercent,Response.Variable,Stock
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Date,Date,NA
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cover_Fertilizer,Treatment,NA
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Plot,Replicate,NA

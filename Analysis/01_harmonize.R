@@ -38,13 +38,30 @@ harmony <- harmony %>%
 # Trim whitespace in Treatment names (e.g., HFR has "DC " and "H ")
 harmony$Treatment <- trimws(harmony$Treatment)
 
-# HFR fix: remap "DC" (Disturbance Control) to "C" (Control)
-# The HFR soil warming experiment stopped measuring pure control ("C") plots after 2002,
-# but continued measuring Disturbance Control ("DC") plots through 2021.
-# DC plots have cables buried but not heated — they are the appropriate control
-# for this experiment after the cable-disturbance effect was confirmed negligible.
+# HFR fix: exclude original "C" (Control) plots — they only ran 1991-2002 and overlap
+# with DC (Disturbance Control) plots that run the full 1991-2021 series.
+# DC plots have cables buried but not heated; they are the appropriate control.
+harmony <- harmony %>% filter(!(site_abbr == "HFR" & Treatment == "C"))
 harmony$Treatment[harmony$site_abbr == "HFR" & harmony$Treatment == "DC"] <- "C"
-cat("HFR: Remapped Disturbance Control (DC) -> Control (C) for full 1991-2021 time series\n")
+cat("HFR: Excluded original C plots; remapped DC -> C for full 1991-2021 time series\n")
+
+# MCM fix: exclude "U" (Unamended) treatment — "W" (Water only) is the correct control
+harmony <- harmony %>% filter(!(site_abbr == "MCM" & Treatment == "U"))
+cat("MCM: Excluded U (Unamended); W (Water only) is the control\n")
+
+# Exclude non-carbon response variables
+# GCE (vegetation cover), MCM (invertebrate abundance), CDR sIDE/tIDE %cover, NTL (chlorophyll)
+non_carbon_sources <- c(
+  "GCE1.csv",
+  "MCM_SoilOC_2007-2016_processed.csv",
+  "CDR_sIDEPercentCover_2016-2020_processed.csv",
+  "CDR_tIDEPercentCover_2016-2020_processed.csv",
+  "NTL_NutrientAddition1.csv"
+)
+n_before <- nrow(harmony)
+harmony <- harmony %>% filter(!source %in% non_carbon_sources)
+cat("Excluded", n_before - nrow(harmony), "rows from non-carbon datasets:",
+    paste(non_carbon_sources, collapse = ", "), "\n")
 
 # Fix Experiment_Type inconsistency: "Fertilizer" -> "Fertilization"
 harmony$experiment_type <- gsub("^Fertilizer$", "Fertilization", harmony$experiment_type)

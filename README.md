@@ -131,8 +131,8 @@ The harmonized dataset (`data/harmonized/harmonized_current.csv`) contains:
 | `site_abbr` | LTER site abbreviation (KNZ, HBR, etc.) |
 | `site_type` | Ecosystem type (Grassland, Forest, Coastal, Tundra, Urban, Freshwater) |
 | `experiment_type` | Type of manipulation (Fertilization, Warming, etc.) |
-| `stock_or_flux` | Whether response is a Stock, Flux, or Other |
-| `is_case_study` | TRUE for the 8 focal case-study sites |
+| `stock_or_flux` | Whether response is a Stock or Flux |
+| `is_case_study` | TRUE for the 7 focal case-study sites |
 
 ## Case-Study Sites
 
@@ -142,7 +142,6 @@ The harmonized dataset (`data/harmonized/harmonized_current.csv`) contains:
 | HBR | Hubbard Brook | Forest | 2009-2022 |
 | KBS | Kellogg Biological Station | Grassland | 1990-2022 |
 | SBC | Santa Barbara Coastal | Coastal | 2008-2024 |
-| GCE | Georgia Coastal Ecosystems | Coastal | 2010-2020 |
 | HFR | Harvard Forest | Forest | 1991-2021 |
 | BNZ | Bonanza Creek | Tundra | 2009-2021 |
 | CAP | Central Arizona-Phoenix | Urban | 2006-2024 |
@@ -155,24 +154,19 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 |------|---------|-------------|----------|------|-------|
 | AND | Plant biomass (WS06/07/08) | knb-lter-and.2742.28 + TP114 | DBA/DBH | Stock | 2002-2021 |
 | ARC | Tussock tundra biomass | knb-lter-arc.10004.8 | Biomass (g/m2) | Stock | 1982-2015 |
-| BNZ | CiPEHR CO2 flux | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
+| BNZ | CiPEHR NEE | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
 | CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
 | CDR | BioCON biomass | knb-lter-cdr.302.13 | Biomass (g/m2) | Stock | 1998-2021 |
-| CDR | Soil %C (E002) | knb-lter-cdr.449.9 | PercentC | Other | 1982-2018 |
+| CDR | Soil %C (E002) | knb-lter-cdr.449.9 | PercentC | Stock | 1982-2018 |
 | CDR | sIDE biomass | knb-lter-cdr.707.2 | Biomass (g/m2) | Stock | 2016-2020 |
-| CDR | sIDE % cover | knb-lter-cdr.708.2 | total_cover | Other | 2016-2020 |
-| CDR | tIDE % cover | knb-lter-cdr.710.2 | total_cover | Other | 2016-2020 |
 | CDR | Small Biodiversity biomass | knb-lter-cdr.291.8 | total_mass | Stock | 1995-2005 |
-| CDR | Soil %C (E001) | knb-lter-cdr.472.8 | total_Carpercent | Other | 1982-2011 |
+| CDR | Soil %C (E001) | knb-lter-cdr.472.8 | total_Carpercent | Stock | 1982-2011 |
 | CDR | Soil carbon flux (E004) | knb-lter-cdr.590.8 | total_SCF | Flux | 1999-2005 |
-| GCE | Vegetation cover | PLT-GCED-2207 (non-EDI) | Vegetation_Cover | Stock | 2010-2020 |
-| HBR | MELNHE litterfall | knb-lter-hbr.404.1 | Mass (g/m2) | Other | 2009-2022 |
+| HBR | MELNHE litterfall | knb-lter-hbr.404.1 | Mass (g/m2) | Flux | 2009-2022 |
 | HFR | Soil warming respiration | knb-lter-hfr.5.37 | soil_res | Flux | 1991-2021 |
 | KBS | MCSE NPP | knb-lter-kbs.19.85 | Biomass (g/m2) | Stock | 1990-2022 |
 | KNZ | Belowground plot biomass | knb-lter-knz.57.15 | Biomass (g/m2) | Stock | 1986-2021 |
 | LUQ | CTE soil GHG fluxes | knb-lter-luq.164.678951 | CO2 flux | Flux | 2003-2010 |
-| MCM | Stoichiometry experiment | knb-lter-mcm.4013.6 | Abundance/kg | Stock | 2007-2016 |
-| NTL | Cascade bloom | knb-lter-ntl.413.2 | Chlorophyll | Stock | 2011-2019 |
 | NWT | 3-factor ANPP | knb-lter-nwt.13.7 | mass (g/m2) | Stock | 2006-2019 |
 | PIE | TIDE shoot mass | knb-lter-pie.202.5 | shoot_mass | Stock | 2004-2020 |
 | SBC | Kelp removal biomass | knb-lter-sbc.119 | DRY_GM2 | Stock | 2008-2024 |
@@ -182,7 +176,19 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 
 ## CDR Dataset Note
 
-Cedar Creek (CDR) currently has 8 datasets in the pipeline covering different experiments and response variables. A decision on which to retain for the final analysis is pending. All are included for now.
+Cedar Creek (CDR) has 6 included datasets (2 percent cover datasets excluded as non-carbon). A decision on which to retain for the final analysis is pending.
+
+## Excluded Datasets
+
+The following datasets were excluded because their response variables are not carbon stocks or fluxes:
+
+| Site | Dataset | Reason |
+|------|---------|--------|
+| GCE | Vegetation cover | Percent cover, not carbon mass |
+| MCM | Stoichiometry experiment | Invertebrate abundance, not soil OC |
+| CDR | sIDE percent cover | Percent cover, not carbon |
+| CDR | tIDE percent cover | Percent cover, not carbon |
+| NTL | Cascade bloom chlorophyll | Chlorophyll proxy, not direct carbon |
 
 ## Pipeline Architecture
 
