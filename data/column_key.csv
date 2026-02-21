@@ -35,10 +35,10 @@ NTL_NutrientAddition1.csv,NTL,Year,Date,NA
 NTL_NutrientAddition1.csv,NTL,N_addition,Treatment,NA
 NTL_NutrientAddition1.csv,NTL,Lake,Replicate,NA
 NTL_NutrientAddition1.csv,NTL,Manual_Chl_mean,Response.Variable,Stock
-MCM_SoilOC_2007-2016_processed.csv,MCM,Year,Date,NA
-MCM_SoilOC_2007-2016_processed.csv,MCM,TREATMENT,Treatment,NA
-MCM_SoilOC_2007-2016_processed.csv,MCM,BLOCK_ID,Replicate,NA
-MCM_SoilOC_2007-2016_processed.csv,MCM,Total_abundance_per_kg,Response.Variable,Stock
+MCM_CO2flux_2003-2010_processed.csv,MCM,Year,Date,NA
+MCM_CO2flux_2003-2010_processed.csv,MCM,TREATMENT,Treatment,NA
+MCM_CO2flux_2003-2010_processed.csv,MCM,BLOCK_ID,Replicate,NA
+MCM_CO2flux_2003-2010_processed.csv,MCM,CO2_flux,Response.Variable,Flux
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,YEAR_mean,Date,NA
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,treatment,Treatment,NA
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,Block_Plot,Replicate,NA

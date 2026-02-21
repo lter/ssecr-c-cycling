@@ -1,57 +1,70 @@
 # preprocess_mcm.R
-# Source: knb-lter-mcm.4013.6
-# Stoichiometry Experiment in Taylor Valley, Antarctica 2007-2016
+# Source: knb-lter-mcm.4014.5
+# McMurdo Dry Valleys Stoichiometry Experiment - CO2 flux data
+# Replaces the original knb-lter-mcm.4013.6 (invertebrate abundance, not carbon)
 #
-# BUG FIX: The filename was "MCM_SoilOC" but the response variable is actually
-# Total_abundance_per_kg (invertebrate abundance), NOT soil organic carbon.
-# The file keeps the same output name for backward compatibility with column_key.
+# The stoichiometry experiment applies aqueous nutrient additions (C, N, P, CN, CP)
+# at the Redfield Ratio (106:16:1) in the Bonney and Fryxell basins.
+# CO2 flux is measured with a LI-8100 soil gas flux system.
 #
-# CONTROL NOTE: "W" = water only (the control per the team's control names doc).
-# "C" = Carbon addition (NOT control!). "U" = nothing added, not even water.
+# CONTROL: "W" = Water only (the control). "U" = Unamended (excluded in harmonization).
+# NOTE: "C" = Carbon (mannitol) addition — NOT a control label!
+#
+# Columns in raw EDI data:
+#   DATASET_CODE, BASIN, BLOCK_ID, TREATMENT, DATE_TIME,
+#   PRE_CO2 (µmol CO2/m²/sec), POST_CO2 (µmol CO2/m²/sec),
+#   PRE_TEMP, POST_TEMP, PRE_MOISTURE, POST_MOISTURE, comments
+#
+# We use POST_CO2 as the response variable (flux after treatment reapplication),
+# averaged to annual means per treatment × block.
 
 library(dplyr)
 
-#' Preprocess MCM stoichiometry experiment data from EDI
-#' @param raw_path Path to raw CSV from EDI
-#' @return data.frame with columns: Year, BLOCK_ID, TREATMENT, Total_abundance_per_kg
-preprocess_mcm_stoichiometry <- function(raw_path) {
+#' Preprocess MCM CO2 flux data from EDI
+#' @param raw_path Path to raw CSV from EDI (knb-lter-mcm.4014.5 entity SOILS_SE_CO2)
+#' @return data.frame with columns: Year, BLOCK_ID, TREATMENT, CO2_flux
+preprocess_mcm_co2flux <- function(raw_path) {
   data <- read.csv(raw_path, stringsAsFactors = FALSE)
 
-  # Raw EDI has: Year, BLOCK_ID, TREATMENT, various invertebrate counts
-  # (TOTAL_ROTIFERS, TOTAL nematodes, tardigrades, etc.)
-  # Need to sum invertebrate groups into Total_abundance_per_kg
-
-  # Identify relevant columns
-  year_col <- grep("Year|year", names(data), value = TRUE)[1]
-  block_col <- grep("BLOCK|block", names(data), value = TRUE)[1]
-  treatment_col <- grep("TREATMENT|treatment", names(data), value = TRUE)[1]
-  total_col <- grep("^TOTAL$|Total_abund", names(data), value = TRUE)[1]
-  rotifer_col <- grep("ROTIFER|rotifer", names(data), value = TRUE)[1]
-
-  # If there's a pre-computed total column, use it
-  if (!is.null(total_col)) {
-    abundance_col <- total_col
-  } else if (!is.null(rotifer_col)) {
-    # Sum the available invertebrate group columns
-    invert_cols <- grep("TOTAL|nematode|tardigrade|rotifer", names(data),
-                        value = TRUE, ignore.case = TRUE)
-    data$total_abund <- rowSums(data[, invert_cols, drop = FALSE], na.rm = TRUE)
-    abundance_col <- "total_abund"
-  } else {
-    stop("Cannot find invertebrate abundance columns in MCM data")
+  # Extract year from DATE_TIME column
+  date_col <- grep("DATE_TIME|date_time|Date", names(data), value = TRUE)[1]
+  if (is.null(date_col) || is.na(date_col)) {
+    stop("Cannot find date column in MCM CO2 flux data")
   }
 
-  data[[abundance_col]] <- suppressWarnings(as.numeric(data[[abundance_col]]))
+  # Parse date and extract year
+  data$date_parsed <- as.Date(data[[date_col]], format = "%m/%d/%y")
+  if (all(is.na(data$date_parsed))) {
+    data$date_parsed <- as.Date(data[[date_col]], format = "%Y-%m-%d")
+  }
+  data$Year <- as.integer(format(data$date_parsed, "%Y"))
 
+  # Identify columns
+  block_col <- grep("BLOCK_ID|block", names(data), value = TRUE, ignore.case = TRUE)[1]
+  treatment_col <- grep("^TREATMENT$|^treatment$", names(data), value = TRUE)[1]
+
+  # Use POST_CO2 as the response (flux after treatment reapplication)
+  # Fall back to PRE_CO2 if POST_CO2 doesn't exist
+  co2_col <- grep("POST_CO2|post_co2", names(data), value = TRUE, ignore.case = TRUE)[1]
+  if (is.null(co2_col) || is.na(co2_col)) {
+    co2_col <- grep("PRE_CO2|pre_co2", names(data), value = TRUE, ignore.case = TRUE)[1]
+  }
+  if (is.null(co2_col) || is.na(co2_col)) {
+    stop("Cannot find CO2 flux column in MCM data")
+  }
+
+  data[[co2_col]] <- suppressWarnings(as.numeric(data[[co2_col]]))
+
+  # Average to annual means per treatment × block
   result <- data %>%
-    filter(!is.na(.data[[abundance_col]])) %>%
+    filter(!is.na(.data[[co2_col]]), !is.na(Year)) %>%
     group_by(
-      Year = .data[[year_col]],
+      Year = Year,
       BLOCK_ID = .data[[block_col]],
       TREATMENT = .data[[treatment_col]]
     ) %>%
     summarise(
-      Total_abundance_per_kg = sum(.data[[abundance_col]], na.rm = TRUE),
+      CO2_flux = mean(.data[[co2_col]], na.rm = TRUE),
       .groups = "drop"
     )
 

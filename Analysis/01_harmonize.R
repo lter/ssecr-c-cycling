@@ -49,19 +49,24 @@ cat("HFR: Excluded original C plots; remapped DC -> C for full 1991-2021 time se
 harmony <- harmony %>% filter(!(site_abbr == "MCM" & Treatment == "U"))
 cat("MCM: Excluded U (Unamended); W (Water only) is the control\n")
 
-# Exclude non-carbon response variables
-# GCE (vegetation cover), MCM (invertebrate abundance), CDR sIDE/tIDE %cover, NTL (chlorophyll)
-non_carbon_sources <- c(
+# Exclude datasets that are not usable for treatment/control carbon analysis
+# - GCE: vegetation percent cover, not carbon mass
+# - CDR sIDE/tIDE: percent cover, not carbon
+# - NTL: chlorophyll proxy, not direct carbon
+# - AND: treatment (DBA) and control (DBH) use incompatible size metrics
+# NOTE: MCM was previously excluded (invertebrate abundance from knb-lter-mcm.4013.6)
+# but is now re-included using CO2 flux data from knb-lter-mcm.4014.5
+excluded_sources <- c(
   "GCE1.csv",
-  "MCM_SoilOC_2007-2016_processed.csv",
   "CDR_sIDEPercentCover_2016-2020_processed.csv",
   "CDR_tIDEPercentCover_2016-2020_processed.csv",
-  "NTL_NutrientAddition1.csv"
+  "NTL_NutrientAddition1.csv",
+  "AND_plant_biomass_2002-2021_processed.csv"
 )
 n_before <- nrow(harmony)
-harmony <- harmony %>% filter(!source %in% non_carbon_sources)
-cat("Excluded", n_before - nrow(harmony), "rows from non-carbon datasets:",
-    paste(non_carbon_sources, collapse = ", "), "\n")
+harmony <- harmony %>% filter(!source %in% excluded_sources)
+cat("Excluded", n_before - nrow(harmony), "rows from unusable datasets:",
+    paste(excluded_sources, collapse = ", "), "\n")
 
 # Fix Experiment_Type inconsistency: "Fertilizer" -> "Fertilization"
 harmony$experiment_type <- gsub("^Fertilizer$", "Fertilization", harmony$experiment_type)

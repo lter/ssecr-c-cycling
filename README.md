@@ -152,7 +152,6 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 
 | Site | Dataset | EDI Package | Response | Type | Years |
 |------|---------|-------------|----------|------|-------|
-| AND | Plant biomass (WS06/07/08) | knb-lter-and.2742.28 + TP114 | DBA/DBH | Stock | 2002-2021 |
 | ARC | Tussock tundra biomass | knb-lter-arc.10004.8 | Biomass (g/m2) | Stock | 1982-2015 |
 | BNZ | CiPEHR NEE | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
 | CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
@@ -167,6 +166,7 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 | KBS | MCSE NPP | knb-lter-kbs.19.85 | Biomass (g/m2) | Stock | 1990-2022 |
 | KNZ | Belowground plot biomass | knb-lter-knz.57.15 | Biomass (g/m2) | Stock | 1986-2021 |
 | LUQ | CTE soil GHG fluxes | knb-lter-luq.164.678951 | CO2 flux | Flux | 2003-2010 |
+| MCM | Stoichiometry CO2 flux | knb-lter-mcm.4014.5 | CO2 flux (µmol/m²/s) | Flux | 2003-2010 |
 | NWT | 3-factor ANPP | knb-lter-nwt.13.7 | mass (g/m2) | Stock | 2006-2019 |
 | PIE | TIDE shoot mass | knb-lter-pie.202.5 | shoot_mass | Stock | 2004-2020 |
 | SBC | Kelp removal biomass | knb-lter-sbc.119 | DRY_GM2 | Stock | 2008-2024 |
@@ -184,8 +184,9 @@ The following datasets were excluded because their response variables are not ca
 
 | Site | Dataset | Reason |
 |------|---------|--------|
+| AND | Plant biomass (WS06/07/08) | Treatment uses DBA, control uses DBH — incompatible metrics |
 | GCE | Vegetation cover | Percent cover, not carbon mass |
-| MCM | Stoichiometry experiment | Invertebrate abundance, not soil OC |
+| MCM | Stoichiometry biota (4013.6) | Invertebrate abundance, not carbon; replaced by CO2 flux (4014.5) |
 | CDR | sIDE percent cover | Percent cover, not carbon |
 | CDR | tIDE percent cover | Percent cover, not carbon |
 | NTL | Cascade bloom chlorophyll | Chlorophyll proxy, not direct carbon |
