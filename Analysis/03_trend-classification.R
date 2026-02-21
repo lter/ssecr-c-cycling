@@ -163,7 +163,7 @@ p_scatter <- trend_clean %>%
   ggplot(aes(x = cv, y = slope, color = trend_class)) +
   geom_point(size = 1.5, alpha = 0.6) +
   geom_ref_threshold(0, direction = "h") +
-  geom_ref_threshold(0.2, direction = "v") +
+  geom_ref_threshold(0.3, direction = "v") +
   scale_color_trend() +
   labs(title = "Temporal Trend Characteristics",
        subtitle = "Dotted lines show classification thresholds",
@@ -205,7 +205,7 @@ panel_c <- trend_clean %>%
   geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
                linewidth = 0.3, color = "gray30") +
   geom_jitter(width = 0.15, alpha = 0.35, size = 0.8, color = "gray30") +
-  geom_ref_threshold(0.2) +
+  geom_ref_threshold(0.3) +
   scale_fill_trend() +
   labs(x = "Trend Type", y = "Coefficient of Variation") +
   theme_ccycling() + theme(legend.position = "none")

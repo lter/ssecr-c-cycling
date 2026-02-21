@@ -32,15 +32,15 @@ overall_props <- trend_clean %>%
 non_dir <- sum(overall_props$pct[overall_props$trend_class %in% c("stable", "variable")])
 dir_pct <- sum(overall_props$pct[overall_props$trend_class %in% c("increasing", "decreasing")])
 
-cat(sprintf("Non-directional responses: %.1f%% (claimed: ~77%%)\n", non_dir))
-cat(sprintf("  - Stable: %.1f%% (claimed: ~35%%)\n",
+cat(sprintf("Non-directional responses: %.1f%%\n", non_dir))
+cat(sprintf("  - Stable (CV < 0.3): %.1f%%\n",
             overall_props$pct[overall_props$trend_class == "stable"]))
-cat(sprintf("  - Variable: %.1f%% (claimed: ~42%%)\n",
+cat(sprintf("  - Variable (CV >= 0.3): %.1f%%\n",
             overall_props$pct[overall_props$trend_class == "variable"]))
-cat(sprintf("Directional responses: %.1f%% (claimed: ~23%%)\n", dir_pct))
+cat(sprintf("Directional responses: %.1f%%\n", dir_pct))
 cat(sprintf("  - Increasing: %.1f%%\n",
             overall_props$pct[overall_props$trend_class == "increasing"]))
-cat(sprintf("  - Decreasing: %.1f%% (claimed: ~3%%)\n",
+cat(sprintf("  - Decreasing: %.1f%%\n",
             overall_props$pct[overall_props$trend_class == "decreasing"]))
 
 # 2. Detection timepoints
@@ -48,9 +48,9 @@ sig_trends <- detection_data %>%
   filter(trend_class %in% c("increasing", "decreasing"), detected == TRUE)
 
 if (nrow(sig_trends) > 0) {
-  cat(sprintf("\nMedian timepoints for detection: %.0f (claimed: ~9)\n",
+  cat(sprintf("\nMedian timepoints for detection: %.0f\n",
               median(sig_trends$min_n_for_detection, na.rm = TRUE)))
-  cat(sprintf("Range: %d to %d (claimed: 4-33)\n",
+  cat(sprintf("Range: %d to %d\n",
               min(sig_trends$min_n_for_detection, na.rm = TRUE),
               max(sig_trends$min_n_for_detection, na.rm = TRUE)))
 }
@@ -70,7 +70,7 @@ trend_stats <- trend_clean %>%
 
 cat("\nMean treatment/control ratios by trend type:\n")
 for (i in 1:nrow(trend_stats)) {
-  cat(sprintf("  %s: %.2fx control (claimed: stable ~1.08x, variable/increasing ~1.5-1.6x)\n",
+  cat(sprintf("  %s: %.2fx control\n",
               trend_stats$trend_class[i], trend_stats$mean_ratio[i]))
 }
 
