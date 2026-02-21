@@ -45,7 +45,7 @@ LUQ_GHG_fluxes_2003-2010.csv,LUQ,Block_Plot,Replicate,NA
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,Reported_CO2_Flux_ug_C_cm.2_hr.1_mean,Response.Variable,Flux
 HBR_litterfall_2009-2022_processed.csv,HBR,Year,Date,NA
 HBR_litterfall_2009-2022_processed.csv,HBR,Treatment,Treatment,NA
-HBR_litterfall_2009-2022_processed.csv,HBR,Site,Replicate,NA
+HBR_litterfall_2009-2022_processed.csv,HBR,Stand,Replicate,NA
 HBR_litterfall_2009-2022_processed.csv,HBR,Mass_gm2,Response.Variable,Other
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,year,Date,NA
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,block,Replicate,NA
