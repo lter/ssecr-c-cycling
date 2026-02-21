@@ -45,9 +45,9 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
 #' Classify temporal trend for a single treatment time series
 #' @param data data.frame with Date_parsed and mean_response columns
 #' @param p_threshold Significance threshold (default 0.05)
-#' @param cv_threshold CV threshold for stable vs variable (default 0.2)
+#' @param cv_threshold CV threshold for stable vs variable (default 0.3)
 #' @return data.frame with trend_class, slope, p_value, r_squared, cv, mean_ratio, n_timepoints
-classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.2) {
+classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.3) {
   if (nrow(data) < 3) {
     return(data.frame(
       trend_class = "insufficient_data",
