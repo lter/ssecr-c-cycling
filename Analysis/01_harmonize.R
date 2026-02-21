@@ -53,15 +53,13 @@ cat("MCM: Excluded U (Unamended); W (Water only) is the control\n")
 # - GCE: vegetation percent cover, not carbon mass
 # - CDR sIDE/tIDE: percent cover, not carbon
 # - NTL: chlorophyll proxy, not direct carbon
-# - AND: treatment (DBA) and control (DBH) use incompatible size metrics
-# NOTE: MCM was previously excluded (invertebrate abundance from knb-lter-mcm.4013.6)
-# but is now re-included using CO2 flux data from knb-lter-mcm.4014.5
+# NOTE: MCM re-included using CO2 flux from knb-lter-mcm.4014.5
+# NOTE: AND re-included using DBH from TV010 (knb-lter-and.2742.28) for all 3 watersheds
 excluded_sources <- c(
   "GCE1.csv",
   "CDR_sIDEPercentCover_2016-2020_processed.csv",
   "CDR_tIDEPercentCover_2016-2020_processed.csv",
-  "NTL_NutrientAddition1.csv",
-  "AND_plant_biomass_2002-2021_processed.csv"
+  "NTL_NutrientAddition1.csv"
 )
 n_before <- nrow(harmony)
 harmony <- harmony %>% filter(!source %in% excluded_sources)

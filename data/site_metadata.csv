@@ -1,5 +1,5 @@
 source,site_abbr,site_full_name,site_type,experiment_type,stock_or_flux,is_case_study
-AND_plant_biomass_2002-2021_processed.csv,AND,Andrews Forest,Forest,Vegetation Removal,Stock,FALSE
+AND_tree_DBH_2002-2015_processed.csv,AND,Andrews Forest,Forest,Vegetation Removal,Stock,FALSE
 ARC_Biomass_1982-2015_processed.csv,ARC,Arctic LTER,Tundra,Fertilization,Stock,FALSE
 BNZ_NEE_2009-2021.csv,BNZ,Bonanza Creek,Tundra,Warming,Flux,TRUE
 CAP_Biomass_2006-2024_Processed.csv,CAP,Central Arizona-Phoenix,Urban,Fertilization,Stock,TRUE

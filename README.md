@@ -152,6 +152,7 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 
 | Site | Dataset | EDI Package | Response | Type | Years |
 |------|---------|-------------|----------|------|-------|
+| AND | Tree DBH (WS06/07/08) | knb-lter-and.2742.28 | DBH (cm) | Stock | 2002-2015 |
 | ARC | Tussock tundra biomass | knb-lter-arc.10004.8 | Biomass (g/m2) | Stock | 1982-2015 |
 | BNZ | CiPEHR NEE | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
 | CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
@@ -184,7 +185,7 @@ The following datasets were excluded because their response variables are not ca
 
 | Site | Dataset | Reason |
 |------|---------|--------|
-| AND | Plant biomass (WS06/07/08) | Treatment uses DBA, control uses DBH — incompatible metrics |
+| AND | TP114 Entity 6 DBA (original) | DBA/DBH incompatibility; fixed by using TV010 DBH for all watersheds |
 | GCE | Vegetation cover | Percent cover, not carbon mass |
 | MCM | Stoichiometry biota (4013.6) | Invertebrate abundance, not carbon; replaced by CO2 flux (4014.5) |
 | CDR | sIDE percent cover | Percent cover, not carbon |
