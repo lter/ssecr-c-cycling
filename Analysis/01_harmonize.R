@@ -31,7 +31,7 @@ harmony$site_abbr <- source_to_abbr(harmony$source, metadata)
 
 # Add site type, experiment type, and stock/flux from metadata
 meta_cols <- metadata %>%
-  select(source, site_type, experiment_type, stock_or_flux, is_case_study)
+  select(source, site_type, experiment_type, stock_or_flux)
 harmony <- harmony %>%
   left_join(meta_cols, by = "source")
 
@@ -91,9 +91,6 @@ site_summary <- harmony %>%
   summarise(n = n(), .groups = "drop") %>%
   arrange(site_abbr)
 print(as.data.frame(site_summary))
-
-# Check case-study sites
-check_case_studies(harmony, metadata)
 
 # Write output
 output_path <- file.path("data", "harmonized", "harmonized_current.csv")

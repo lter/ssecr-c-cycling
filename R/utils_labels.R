@@ -1,8 +1,6 @@
 # utils_labels.R
 # Site metadata lookup and label formatting utilities
 
-CASE_STUDY_SITES <- c("KNZ", "HBR", "KBS", "SBC", "GCE", "HFR", "BNZ", "CAP")
-
 #' Read the site metadata lookup table
 #' @param data_dir Path to the data directory containing site_metadata.csv
 #' @return data.frame with site metadata
@@ -45,19 +43,4 @@ source_to_label <- function(source_names, metadata = NULL) {
                    paste0(abbrs, " (", exps, ")"))
   labels[is.na(abbrs)] <- source_names[is.na(abbrs)]
   unname(labels)
-}
-
-#' Check that all case-study sites are present in the data
-#' @param data data.frame with a 'source' column
-#' @param metadata Optional pre-loaded metadata data.frame
-check_case_studies <- function(data, metadata = NULL) {
-  if (is.null(metadata)) metadata <- get_site_metadata()
-  data_sites <- unique(source_to_abbr(data$source, metadata))
-  missing <- setdiff(CASE_STUDY_SITES, data_sites)
-  if (length(missing) > 0) {
-    warning(paste("Missing case-study sites:", paste(missing, collapse = ", ")))
-  } else {
-    message("All 8 case-study sites present.")
-  }
-  invisible(missing)
 }

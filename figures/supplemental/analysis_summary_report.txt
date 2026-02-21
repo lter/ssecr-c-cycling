@@ -1,6 +1,6 @@
 TEMPORAL TREND ANALYSIS SUMMARY REPORT
 ====================================================================== 
-Generated: 2026-02-21 08:18 
+Generated: 2026-02-21 09:01 
 
 DATASET OVERVIEW:
   Total sources: 18 

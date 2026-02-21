@@ -10,7 +10,7 @@
 # Output: data/harmonized/sizer_analysis_results.csv
 #         figures/supplemental/sizer_map_*.png (SiZer colormaps)
 #         figures/supplemental/sizer_ggplot_*.png (slope change visualizations)
-#         figures/Figure_sizer_case_studies.png (multi-panel manuscript figure)
+#         figures/Figure_sizer_all_sites.png (multi-panel manuscript figure)
 
 library(dplyr)
 library(ggplot2)
@@ -34,9 +34,6 @@ BANDWIDTH_SLICE <- 5
 
 # Minimum timepoints required for SiZer analysis
 MIN_TIMEPOINTS <- 5
-
-# Case-study sites for manuscript figure
-CASE_STUDY_SITES <- c("KNZ", "HBR", "KBS", "SBC", "HFR", "BNZ", "CAP")
 
 # --- Read Data ---
 
@@ -246,48 +243,47 @@ if (length(sizer_results) > 0) {
   cat("\nWARNING: No SiZer results produced.\n")
 }
 
-# --- Case-Study Summary Figure ---
+# --- All-Sites Summary Figure ---
 
-# Select one representative treatment per case-study site
+# Select one representative treatment per site
 # Priority: the treatment with the most timepoints
-case_study_labels <- sizer_summary %>%
-  filter(site_abbr %in% CASE_STUDY_SITES) %>%
+site_labels <- sizer_summary %>%
   group_by(site_abbr) %>%
   slice_max(n_timepoints, n = 1, with_ties = FALSE) %>%
   ungroup() %>%
   mutate(label = paste0(site_abbr, "_",
                         gsub("[^A-Za-z0-9_]", "", gsub("\\s+", "_", treatment))))
 
-case_panels <- list()
-for (j in seq_len(nrow(case_study_labels))) {
-  lbl <- case_study_labels$label[j]
+all_panels <- list()
+for (j in seq_len(nrow(site_labels))) {
+  lbl <- site_labels$label[j]
   if (lbl %in% names(sizer_plots)) {
-    case_panels[[case_study_labels$site_abbr[j]]] <- sizer_plots[[lbl]] +
+    all_panels[[site_labels$site_abbr[j]]] <- sizer_plots[[lbl]] +
       theme(plot.title = element_text(size = 8, face = "bold"))
   }
 }
 
-if (length(case_panels) >= 4) {
-  # Arrange in 2-column grid
-  n_panels <- length(case_panels)
-  n_rows <- ceiling(n_panels / 2)
+if (length(all_panels) >= 4) {
+  # Arrange in 3-column grid
+  n_panels <- length(all_panels)
+  n_rows <- ceiling(n_panels / 3)
 
-  case_figure <- wrap_plots(case_panels, ncol = 2) +
+  summary_figure <- wrap_plots(all_panels, ncol = 3) +
     plot_annotation(
-      title = "SiZer Slope-Change Analysis: Case-Study Sites",
+      title = "SiZer Slope-Change Analysis: All Sites",
       subtitle = paste0("Bandwidth = ", BANDWIDTH_SLICE,
                         " years | Green = significant slope; Gray = flat"),
       tag_levels = "A"
     )
 
-  ggsave("figures/Figure_sizer_case_studies.png",
-         case_figure, width = 7.2, height = n_rows * 3.5,
+  ggsave("figures/Figure_sizer_all_sites.png",
+         summary_figure, width = 10, height = n_rows * 3.5,
          dpi = 300, bg = "white")
-  ggsave("figures/Figure_sizer_case_studies.pdf",
-         case_figure, width = 7.2, height = n_rows * 3.5,
+  ggsave("figures/Figure_sizer_all_sites.pdf",
+         summary_figure, width = 10, height = n_rows * 3.5,
          device = cairo_pdf)
 
-  cat("\nCase-study figure saved: figures/Figure_sizer_case_studies.png\n")
+  cat("\nSummary figure saved: figures/Figure_sizer_all_sites.png\n")
 }
 
 if (length(skipped) > 0) {

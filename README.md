@@ -56,7 +56,7 @@ ssecr-c-cycling/
   data/
     dataset_registry.csv     # Authoritative source-of-truth: EDI packages → outputs
     column_key.csv           # Maps raw column names → harmonized names
-    site_metadata.csv        # Site abbreviations, ecosystem types, case-study flags
+    site_metadata.csv        # Site abbreviations, ecosystem types, experiment info
     manifests/               # JSON download provenance (git-tracked)
     raw/                     # Cached EDI downloads (.gitignored, reproducible)
     ready/                   # Processed CSVs ready for harmonization
@@ -132,19 +132,6 @@ The harmonized dataset (`data/harmonized/harmonized_current.csv`) contains:
 | `site_type` | Ecosystem type (Grassland, Forest, Coastal, Tundra, Urban, Freshwater) |
 | `experiment_type` | Type of manipulation (Fertilization, Warming, etc.) |
 | `stock_or_flux` | Whether response is a Stock, Flux, or Proxy (indirect C measurement) |
-| `is_case_study` | TRUE for the 7 focal case-study sites |
-
-## Case-Study Sites
-
-| Abbreviation | Full Name | Ecosystem | Years |
-|---|---|---|---|
-| KNZ | Konza Prairie | Grassland | 1986-2021 |
-| HBR | Hubbard Brook | Forest | 2009-2022 |
-| KBS | Kellogg Biological Station | Grassland | 1990-2022 |
-| SBC | Santa Barbara Coastal | Coastal | 2008-2024 |
-| HFR | Harvard Forest | Forest | 1991-2021 |
-| BNZ | Bonanza Creek | Tundra | 2009-2021 |
-| CAP | Central Arizona-Phoenix | Urban | 2006-2024 |
 
 ## Dataset Provenance
 

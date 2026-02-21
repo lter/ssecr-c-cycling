@@ -86,20 +86,7 @@ for (src in sources) {
   }
 }
 
-# Check 5: Case-study sites present
-cat("\n--- Case-Study Site Check ---\n")
-case_study_sources <- metadata %>% filter(is_case_study == TRUE)
-for (i in 1:nrow(case_study_sources)) {
-  src <- case_study_sources$source[i]
-  abbr <- case_study_sources$site_abbr[i]
-  exists <- file.exists(file.path("data", "ready", src))
-  in_key <- src %in% key$source
-  status <- ifelse(exists & in_key, "OK", "MISSING")
-  cat(sprintf("  %s (%s): %s\n", abbr, src, status))
-  if (!exists | !in_key) n_issues <- n_issues + 1
-}
-
-# Check 6: Metadata coverage
+# Check 5: Metadata coverage
 cat("\n--- Metadata Coverage ---\n")
 sources_without_metadata <- setdiff(sources, metadata$source)
 if (length(sources_without_metadata) > 0) {
@@ -107,7 +94,7 @@ if (length(sources_without_metadata) > 0) {
   n_issues <- n_issues + length(sources_without_metadata)
 }
 
-# Check 7: Registry and manifest integrity
+# Check 6: Registry and manifest integrity
 cat("\n--- Registry & Manifest Integrity ---\n")
 registry_path <- "data/dataset_registry.csv"
 manifest_dir <- "data/manifests"

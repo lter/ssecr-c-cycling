@@ -127,18 +127,19 @@ moving_window_lrr <- lrr_results %>%
 cat("Moving window results:", nrow(moving_window_lrr), "windows\n")
 write.csv(moving_window_lrr, "data/harmonized/moving_window_lrr.csv", row.names = FALSE)
 
-# Plot: Moving window for case-study sites (spaghetti with mean)
-case_study_window <- moving_window_lrr %>%
-  filter(site_abbr %in% CASE_STUDY_SITES)
+# Plot: Moving window for all sites (spaghetti with mean)
+if (nrow(moving_window_lrr) > 0) {
+  n_sites <- length(unique(moving_window_lrr$site_abbr))
+  n_cols <- 4
+  n_rows <- ceiling(n_sites / n_cols)
 
-if (nrow(case_study_window) > 0) {
-  p_window <- ggplot(case_study_window,
+  p_window <- ggplot(moving_window_lrr,
                      aes(x = window_mid, y = window_lrr)) +
     geom_hline(yintercept = 0, linetype = "dashed", linewidth = 0.3, color = "gray55") +
     geom_line(aes(group = Treatment), alpha = 0.15, linewidth = 0.3, color = "gray50") +
     geom_smooth(method = "loess", se = TRUE, alpha = 0.12,
                 linewidth = 0.5, color = "#3A7CA5", fill = "#3A7CA5") +
-    facet_wrap(~site_abbr, scales = "free") +
+    facet_wrap(~site_abbr, scales = "free", ncol = n_cols) +
     labs(title = "Moving 3-Year Window Log-Response Ratio",
          subtitle = "Gray lines: individual treatments; blue: mean trend",
          x = "Window Midpoint (Year)",
@@ -146,8 +147,8 @@ if (nrow(case_study_window) > 0) {
     theme_ccycling() +
     theme(strip.text = element_text(size = 7))
 
-  ggsave("figures/moving_window_lrr_case_studies.png", p_window,
-         width = 7.2, height = 6, dpi = 300, bg = "white")
+  ggsave("figures/moving_window_lrr_all_sites.png", p_window,
+         width = 10, height = n_rows * 2.5, dpi = 300, bg = "white")
 }
 
 # Focused plot for KNZ (best-sampled site)
