@@ -33,10 +33,11 @@ preprocess_and_dbh <- function(raw_path) {
   # Rename STANDID to WATERSHED for consistency
   data$WATERSHED <- data$STANDID
 
-  # Parse dates and extract year
-  data$SAMPLEDATE <- as.Date(data$SAMPLEDATE, format = "%m/%d/%Y")
+  # Parse dates and extract year — try YYYY-MM-DD first, then M/D/YYYY
+  raw_dates <- data$SAMPLEDATE
+  data$SAMPLEDATE <- as.Date(raw_dates, format = "%Y-%m-%d")
   if (all(is.na(data$SAMPLEDATE))) {
-    data$SAMPLEDATE <- as.Date(data$SAMPLEDATE, format = "%Y-%m-%d")
+    data$SAMPLEDATE <- as.Date(raw_dates, format = "%m/%d/%Y")
   }
   data$Year <- as.integer(format(data$SAMPLEDATE, "%Y"))
 

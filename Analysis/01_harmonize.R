@@ -38,6 +38,12 @@ harmony <- harmony %>%
 # Trim whitespace in Treatment names (e.g., HFR has "DC " and "H ")
 harmony$Treatment <- trimws(harmony$Treatment)
 
+# CDR BioCON fix: normalize treatment names
+# - "Cenriched " → "Cenrich" (inconsistent spelling across years)
+# - Collapse multiple internal spaces to single space
+harmony$Treatment <- gsub("\\s+", " ", harmony$Treatment)
+harmony$Treatment <- gsub("Cenriched", "Cenrich", harmony$Treatment)
+
 # HFR fix: exclude original "C" (Control) plots — they only ran 1991-2002 and overlap
 # with DC (Disturbance Control) plots that run the full 1991-2021 series.
 # DC plots have cables buried but not heated; they are the appropriate control.

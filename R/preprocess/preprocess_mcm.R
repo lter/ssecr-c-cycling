@@ -24,18 +24,22 @@ library(dplyr)
 #' @param raw_path Path to raw CSV from EDI (knb-lter-mcm.4014.5 entity SOILS_SE_CO2)
 #' @return data.frame with columns: Year, BLOCK_ID, TREATMENT, CO2_flux
 preprocess_mcm_co2flux <- function(raw_path) {
-  data <- read.csv(raw_path, stringsAsFactors = FALSE)
+  data <- read.csv(raw_path, stringsAsFactors = FALSE, comment.char = "#")
 
-  # Extract year from DATE_TIME column
-  date_col <- grep("DATE_TIME|date_time|Date", names(data), value = TRUE)[1]
+  # Extract year from DATE_TIME column (use standalone DATE_TIME, not PRE/POST_DATE_TIME)
+  if ("DATE_TIME" %in% names(data)) {
+    date_col <- "DATE_TIME"
+  } else {
+    date_col <- grep("DATE_TIME|date_time|Date", names(data), value = TRUE)[1]
+  }
   if (is.null(date_col) || is.na(date_col)) {
     stop("Cannot find date column in MCM CO2 flux data")
   }
 
-  # Parse date and extract year
-  data$date_parsed <- as.Date(data[[date_col]], format = "%m/%d/%y")
+  # Parse date and extract year (handles "YYYY-MM-DD HH:MM:SS" and "M/D/YY")
+  data$date_parsed <- as.Date(data[[date_col]], format = "%Y-%m-%d")
   if (all(is.na(data$date_parsed))) {
-    data$date_parsed <- as.Date(data[[date_col]], format = "%Y-%m-%d")
+    data$date_parsed <- as.Date(data[[date_col]], format = "%m/%d/%y")
   }
   data$Year <- as.integer(format(data$date_parsed, "%Y"))
 

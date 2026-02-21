@@ -6,8 +6,8 @@ library(dplyr)
 # Centralized list of control treatment names (was defined 4+ times across scripts)
 CONTROL_NAMES <- c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4",
                    "u u c", "W", "C C", "pre", "XXX", "WS08", "none",
-                   "CONTROL", "Outside Juncus", "C(Control Plot)",
-                   "shaded_0", "unshaded_0")
+                   "CONTROL", "Outside Juncus", "(C)Control Plot",
+                   "shaded_0", "unshaded_0", "X")
 
 #' Calculate treatment response relative to control
 #' @param data data.frame with source, Date, Treatment, and response columns
