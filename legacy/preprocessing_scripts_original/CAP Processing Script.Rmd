@@ -1,0 +1,45 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/Julie Gan/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("CAP_Biomass_2006-2024.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(site_code, treatment_code, location_within_plot, subplot, year, mass) %>%
+  filter(!is.na(mass)) %>% 
+  group_by(year, site_code, treatment_code, location_within_plot, subplot) %>%
+  summarise(Biomass = mean(mass)) %>%
+  group_by(year, site_code, treatment_code, location_within_plot) %>%
+  summarise(Biomass = mean(Biomass)) %>%
+  group_by(year, site_code, treatment_code) %>%
+  summarise(Biomass = mean(Biomass)) 
+
+new_data
+write.csv(new_data, "CAP_Biomass_2006-2024_Processed.csv")
+```

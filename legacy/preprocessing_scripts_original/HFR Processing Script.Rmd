@@ -1,0 +1,41 @@
+---
+title: "Data Processing"
+output: pdf_document
+---
+
+```{r, setup}
+knitr::opts_knit$set(root.dir = "C:/Users/Julie Gan/OneDrive/Documents/PhD Stuff/SSECR/C Cycling Working Group")
+```
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(MuMIn)
+library(lmerTest)
+library(ggpubr)
+library(rstatix)
+library(car)
+library(emmeans)
+library(multcomp)
+library(mgcv)
+library(ggplot2)
+```
+
+```{r}
+raw_data <- read.csv("HFR_soil-respiration_1991-2021.csv")
+
+summary(raw_data)
+head(raw_data)
+
+```
+
+```{r}
+new_data <- raw_data %>%
+  dplyr::select(year, treatment, plot, co2_flux) %>%
+  filter(!is.na(co2_flux)) %>% 
+  group_by(year, treatment, plot) %>%
+  summarise(soil_res = mean(co2_flux)) 
+
+new_data
+write.csv(new_data, "HFR_soil-respiration_1991-2021_Processed.csv")
+```
