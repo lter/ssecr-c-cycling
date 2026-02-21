@@ -61,7 +61,7 @@ ssecr-c-cycling/
     raw/                     # Cached EDI downloads (.gitignored, reproducible)
     ready/                   # Processed CSVs ready for harmonization
     harmonized/              # Harmonized output (single combined dataset)
-  Analysis/                  # Numbered scripts (run in order)
+  analysis/                  # Numbered scripts (run in order)
     00_download-and-preprocess.R  # Download from EDI + run preprocessing
     00_validate-data.R       # Validate files, columns, manifests, registry
     01_harmonize.R           # Combine all datasets via ltertools::harmonize()
@@ -99,19 +99,19 @@ ssecr-c-cycling/
 3. **Run the full pipeline**
    ```r
    # Step 1: Download raw data from EDI and preprocess into ready/ CSVs
-   source("Analysis/00_download-and-preprocess.R")
+   source("analysis/00_download-and-preprocess.R")
 
    # Step 2: Validate all data files, manifests, and registry
-   source("Analysis/00_validate-data.R")
+   source("analysis/00_validate-data.R")
 
    # Step 3-9: Run analysis
-   source("Analysis/01_harmonize.R")
-   source("Analysis/02_relative-response.R")
-   source("Analysis/03_trend-classification.R")
-   source("Analysis/04_detection-time.R")
-   source("Analysis/05_lrr-analysis.R")
-   source("Analysis/06_summary-stats.R")
-   source("Analysis/07_sizer-analysis.R")
+   source("analysis/01_harmonize.R")
+   source("analysis/02_relative-response.R")
+   source("analysis/03_trend-classification.R")
+   source("analysis/04_detection-time.R")
+   source("analysis/05_lrr-analysis.R")
+   source("analysis/06_summary-stats.R")
+   source("analysis/07_sizer-analysis.R")
    ```
 
 ### If `data/ready/` files already exist
