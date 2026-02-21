@@ -19,10 +19,6 @@ SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,YEAR,Date,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,TREATMENT,Treatment,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,DRY_GM2_sum,Response.Variable,Stock
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,SITE,Replicate,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,EOYBYear,Date,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,locationName,Treatment,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,replicate,Replicate,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,totalMass_mean,Response.Variable,Stock
 VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,EOYBYear,Date,NA
 VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Replicate,Replicate,NA
 VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,locationName,Treatment,NA
@@ -51,10 +47,6 @@ NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,year,Date,NA
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,block,Replicate,NA
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,N,Treatment,NA
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,mass_mean,Response.Variable,Stock
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Year,Date,NA
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,NAdd.g.m2.yr.,Treatment,NA
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Plot,Replicate,NA
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,PercentC,Response.Variable,Stock
 AND_tree_DBH_2002-2015_processed.csv,AND,Year,Date,NA
 AND_tree_DBH_2002-2015_processed.csv,AND,WATERSHED,Treatment,NA
 AND_tree_DBH_2002-2015_processed.csv,AND,PLOT,Replicate,NA
@@ -67,30 +59,6 @@ CAP_Biomass_2006-2024_Processed.csv,CAP,year,Date,NA
 CAP_Biomass_2006-2024_Processed.csv,CAP,treatment_code,Treatment,NA
 CAP_Biomass_2006-2024_Processed.csv,CAP,site_code,Replicate,NA
 CAP_Biomass_2006-2024_Processed.csv,CAP,Biomass,Response.Variable,Stock
-CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,date,Date,NA
-CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,treatment,Treatment,NA
-CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,plot,Replicate,NA
-CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,total_mass,Response.Variable,Stock
-CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
-CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,treatment,Treatment,NA
-CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,plot,Replicate,NA
-CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,Response.Variable,Other
-CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,date,Date,NA
-CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,treatment,Treatment,NA
-CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,plot,Replicate,NA
-CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,total_cover,Response.Variable,Other
-CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Date,Date,NA
-CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Grazed,Treatment,NA
-CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Plot,Replicate,NA
-CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,total_mass,Response.Variable,Stock
-CDR_PercentCarbon_1982-2011_processed.csv,CDR,Year,Date,NA
-CDR_PercentCarbon_1982-2011_processed.csv,CDR,NAdd,Treatment,NA
-CDR_PercentCarbon_1982-2011_processed.csv,CDR,Field_Plot,Replicate,NA
-CDR_PercentCarbon_1982-2011_processed.csv,CDR,total_Carpercent,Response.Variable,Stock
-CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Date,Date,NA
-CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cover_Fertilizer,Treatment,NA
-CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Plot,Replicate,NA
-CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,total_SCF,Response.Variable,Flux
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,year,Date,NA
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,treatment,Treatment,NA
 HFR_soil-respiration_1991-2021_Processed.csv,HFR,plot,Replicate,NA

@@ -55,6 +55,12 @@ cat("HFR: Excluded original C plots; remapped DC -> C for full 1991-2021 time se
 harmony <- harmony %>% filter(!(site_abbr == "MCM" & Treatment == "U"))
 cat("MCM: Excluded U (Unamended); W (Water only) is the control\n")
 
+# NOTE: BNZ NEE can be negative (negative NEE = carbon sink). This means treatment/control
+# ratios and log-response ratios produce NaN when signs differ. These are silently dropped
+# in downstream analyses. The trend classification still works on the non-NaN ratios.
+# A difference-based approach would be more appropriate for signed fluxes but is not
+# implemented to keep the analysis framework consistent across datasets.
+
 # Exclude datasets: one dataset per LTER site
 # CDR: keep BioCON only; VCR: keep 1st inundation (longer record)
 # Also exclude CDR sIDE/tIDE percent cover (not carbon)
