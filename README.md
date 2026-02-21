@@ -71,6 +71,7 @@ ssecr-c-cycling/
     05_lrr-analysis.R        # Log-response ratio analysis
     06_summary-stats.R       # Summary tables, manuscript outputs
     07_sizer-analysis.R      # SiZer slope-change detection (uses HERON)
+    08_manuscript-results.R  # All numeric outputs for manuscript text & tables
   figures/                   # Generated figures
     supplemental/            # Supplemental tables and panel figures
   legacy/
@@ -112,6 +113,7 @@ ssecr-c-cycling/
    source("analysis/05_lrr-analysis.R")
    source("analysis/06_summary-stats.R")
    source("analysis/07_sizer-analysis.R")
+   source("analysis/08_manuscript-results.R")
    ```
 
 ### If `data/ready/` files already exist

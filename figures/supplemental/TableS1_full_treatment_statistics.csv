@@ -1,0 +1,81 @@
+"Site","Site Name","Ecosystem","Experiment","Stock/Flux","Treatment","Trend","Slope","P-value","R-squared","CV","Mean Ratio","N Timepoints","Year Span","Early LRR","Full LRR","LRR Change","Detected","Years to Detect"
+"ARC","Arctic LTER","Tundra","Fertilization","Stock","NP","stable",1e-04,0.2979,0.3447,0.2361,1.3925,5,17,0.1683,0.31,0.1416,FALSE,NA
+"BNZ","Bonanza Creek","Tundra","Warming","Flux","C S","stable",-1e-04,0.3923,0.074,0.2651,1.5652,12,12,0.6642,0.4181,-0.2461,TRUE,1.9986
+"BNZ","Bonanza Creek","Tundra","Warming","Flux","W C","variable",-2e-04,0.3848,0.0763,1.1258,0.8669,12,12,0.6396,-0.9031,-1.5427,FALSE,NA
+"BNZ","Bonanza Creek","Tundra","Warming","Flux","W S","variable",2e-04,0.4451,0.0594,0.7081,1.6841,12,12,0.2566,0.3743,0.1177,FALSE,NA
+"CAP","Central Arizona-Phoenix","Urban","Fertilization","Stock","N","stable",0,0.467,0.0602,0.2078,1.4907,11,16,0.4662,0.3812,-0.085,FALSE,NA
+"CAP","Central Arizona-Phoenix","Urban","Fertilization","Stock","NP","decreasing",-2e-04,0.0492,0.3336,0.27,2.0324,12,16,0.875,0.677,-0.198,TRUE,16
+"CAP","Central Arizona-Phoenix","Urban","Fertilization","Stock","P","stable",0,0.7591,0.0098,0.2096,1.3409,12,16,0.2516,0.275,0.0234,TRUE,8
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M H2Oamb","variable",1e-04,0.3906,0.062,0.3957,1.5842,14,14,0.2921,0.3925,0.1004,TRUE,12
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M H2Oamb HTamb","stable",0,0.9657,2e-04,0.239,1.7166,10,9,0.4373,0.5166,0.0793,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M H2Oamb HTelv","variable",-2e-04,0.3295,0.1187,0.3578,1.6268,10,9,0.6341,0.4309,-0.2032,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M H2Oneg","stable",0,0.8132,0.0217,0.1096,1.3575,5,4,0.2942,0.3009,0.0067,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M H2Oneg HTamb","variable",-1e-04,0.7228,0.0191,0.3221,1.2949,9,9,0.2565,0.2034,-0.0531,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M H2Oneg HTelv","stable",0,0.8443,0.0059,0.2679,1.4781,9,9,0.469,0.3607,-0.1083,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb M HTelv","decreasing",-5e-04,0.0156,0.5904,0.322,2.1531,9,8,0.9642,0.7193,-0.2449,TRUE,2.9979
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Namb S","increasing",1e-04,0.0011,0.4047,0.3374,0.9894,23,23,-0.4513,-0.0951,0.3562,TRUE,12
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M","stable",0,0.4533,0.0258,0.1037,1.1195,24,23,0.0727,0.1077,0.035,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M H2Oamb","variable",-1e-04,0.4005,0.0595,0.4173,1.4556,14,14,0.5405,0.2713,-0.2692,TRUE,10.0014
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M H2Oamb HTamb","stable",0,0.8794,0.0031,0.2239,1.1248,10,9,-0.0666,0.094,0.1606,TRUE,4
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M H2Oamb HTelv","stable",-1e-04,0.7306,0.0156,0.2301,2.0807,10,9,0.7301,0.7095,-0.0206,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M H2Oneg","stable",1e-04,0.6388,0.0828,0.1338,1.3842,5,4,0.3082,0.3181,0.0099,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M H2Oneg HTamb","stable",-1e-04,0.3694,0.1162,0.2548,1.1496,9,9,0.244,0.107,-0.137,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M H2Oneg HTelv","stable",1e-04,0.5167,0.0624,0.2201,1.651,9,9,0.4479,0.4776,0.0296,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich M HTamb","variable",1e-04,0.468,0.0776,0.3106,1.0959,9,8,-0.0163,0.0486,0.065,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Camb Nenrich S","increasing",1e-04,0.0157,0.2477,0.3197,1.1391,23,23,-0.1539,0.0634,0.2173,TRUE,15.0007
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M","stable",0,0.8103,0.0027,0.1016,1.0773,24,23,0.007,0.0694,0.0624,TRUE,7.0007
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M H2Oamb","decreasing",-5e-04,0.0035,0.9597,0.1876,1.6738,5,4,0.6074,0.5014,-0.106,TRUE,3.0007
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M H2Oamb HTamb","variable",1e-04,0.733,0.0154,0.7213,1.522,10,9,-0.0687,0.261,0.3297,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M H2Oamb HTelv","stable",-2e-04,0.3806,0.0972,0.2504,2.1781,10,9,0.7872,0.7539,-0.0333,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M H2Oneg","stable",-3e-04,0.2759,0.3706,0.1879,1.5102,5,4,0.4199,0.3972,-0.0226,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M H2Oneg HTamb","stable",1e-04,0.2643,0.1738,0.1676,1.8078,9,9,0.5274,0.58,0.0526,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb M H2Oneg HTelv","stable",0,0.9258,0.0013,0.2388,1.5361,9,9,0.3482,0.4013,0.0532,TRUE,2.0014
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Namb S","increasing",1e-04,0.003,0.3494,0.3286,1.0503,23,23,-0.4019,-0.0307,0.3712,TRUE,13.9986
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M","stable",0,0.5515,0.0164,0.1538,1.2599,24,23,0.2124,0.2188,0.0064,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M H2Oamb","stable",-1e-04,0.743,0.0413,0.1965,1.5264,5,4,0.3815,0.4052,0.0237,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M H2Oamb HTamb","variable",-1e-04,0.4752,0.0656,0.3018,1.734,10,9,0.5159,0.5088,-0.0071,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M H2Oamb HTelv","decreasing",-5e-04,0.0415,0.4239,0.3842,2.1678,10,9,1.0566,0.7064,-0.3502,TRUE,9.0021
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M H2Oneg","stable",-3e-04,0.3918,0.2493,0.1912,1.7999,5,4,0.5924,0.5725,-0.0199,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M H2Oneg HTamb","variable",0,0.8786,0.0036,0.326,1.8571,9,9,0.4284,0.5736,0.1452,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich M H2Oneg HTelv","variable",3e-04,0.3224,0.1393,0.3059,2.6194,9,9,0.72,0.9232,0.2032,FALSE,NA
+"CDR","Cedar Creek","Grassland","Fertilization","Stock","Cenrich Nenrich S","stable",1e-04,0.0887,0.1318,0.2848,1.2292,23,23,-0.0761,0.1508,0.2268,TRUE,13.9986
+"GCE","Georgia Coastal Ecosystems","Coastal","Vegetation Removal","Proxy","Disturbed (March-2010)","stable",1e-04,0.1376,0.2278,0.152,0.855,11,10,-0.3604,-0.17,0.1905,TRUE,3.0007
+"HBR","Hubbard Brook","Forest","Fertilization","Flux","Ca","stable",0,0.4202,0.1676,0.0311,0.9808,6,6,-0.0334,-0.0197,0.0137,FALSE,NA
+"HBR","Hubbard Brook","Forest","Fertilization","Flux","N","increasing",0,0,0.8419,0.0495,1.0048,13,12,-0.0472,0.0037,0.0508,TRUE,8
+"HBR","Hubbard Brook","Forest","Fertilization","Flux","NP","increasing",0,0.0151,0.4293,0.0422,0.9865,13,12,-0.0349,-0.0144,0.0204,TRUE,12
+"HBR","Hubbard Brook","Forest","Fertilization","Flux","P","stable",0,0.7982,0.0062,0.026,0.9611,13,12,-0.0304,-0.04,-0.0096,TRUE,4.9993
+"HFR","Harvard Forest","Forest","Warming","Flux","H","decreasing",0,5e-04,0.3473,0.1181,1.0326,31,30,0.2001,0.0255,-0.1746,TRUE,7.0007
+"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T1","variable",0,0.1117,0.0796,0.3471,1.5341,33,32,0.3503,0.3727,0.0224,FALSE,NA
+"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T2","increasing",1e-04,0.0457,0.1227,0.3335,1.5951,33,32,0.4244,0.4146,-0.0098,TRUE,32
+"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T21","stable",0,0.7957,0.0995,0.1908,1.2013,3,10,NA,NA,NA,FALSE,NA
+"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T3","increasing",1e-04,0.0014,0.2828,0.2879,1.404,33,32,0.124,0.3033,0.1793,TRUE,24
+"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T6","increasing",1e-04,0.0346,0.145,1.2549,1.0481,31,32,-0.8034,-0.5539,0.2495,TRUE,32
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b m c","increasing",3e-04,2e-04,0.3568,1.2108,1.6,34,34,-0.6932,0.0542,0.7475,TRUE,7.0007
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b m n","increasing",3e-04,3e-04,0.326,0.7971,2.4644,36,35,-0.0011,0.6353,0.6364,TRUE,5.9986
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b m n+p","increasing",2e-04,0.0022,0.2432,0.7647,2.4118,36,35,-0.1869,0.6351,0.822,TRUE,3.0007
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b m p","increasing",2e-04,3e-04,0.3383,1.0703,1.3856,34,34,-0.63,-0.0112,0.6188,TRUE,7.0007
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b u c","increasing",1e-04,0.0436,0.1144,0.5969,1.3599,36,35,0.1664,0.1416,-0.0248,TRUE,28.9993
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b u n","variable",1e-04,0.1616,0.0568,0.6256,3.1911,36,35,0.6329,0.9869,0.354,TRUE,7.0007
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b u n+p","variable",1e-04,0.1977,0.0483,0.6173,3.2048,36,35,0.4443,0.9754,0.5311,TRUE,4.9993
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","b u p","increasing",1e-04,0.0162,0.1584,0.6056,1.3762,36,35,0.0434,0.1608,0.1174,TRUE,31.0007
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u m c","increasing",1e-04,0.0065,0.1985,1.0116,1.0533,36,35,-0.7674,-0.2435,0.5239,TRUE,5.9986
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u m n","variable",0,0.1272,0.0671,0.5309,1.3215,36,35,-0.3103,0.1348,0.4451,TRUE,5.9986
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u m n+p","variable",1e-04,0.0636,0.0976,0.5654,1.4015,36,35,-0.3184,0.1809,0.4994,TRUE,4.9993
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u m p","increasing",1e-04,0.0037,0.2223,0.8218,1.1489,36,35,-0.7116,-0.0927,0.6189,TRUE,4
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u u n","variable",0,0.3539,0.0253,0.5825,1.6137,36,35,0.2822,0.2979,0.0157,TRUE,5.9986
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u u n+p","variable",-1e-04,0.2813,0.0341,0.6751,1.7688,36,35,0.2703,0.3522,0.0818,TRUE,4
+"KNZ","Konza Prairie","Grassland","Fertilization","Stock","u u p","increasing",1e-04,0.0473,0.1108,1.052,1.5789,36,35,0.0516,0.084,0.0324,TRUE,28
+"LUQ","Luquillo","Forest","Vegetation Removal","Flux","No trim + debris","stable",0,0.7037,0.0314,0.0707,1.0923,7,6,0.0815,0.0862,0.0047,FALSE,NA
+"LUQ","Luquillo","Forest","Vegetation Removal","Flux","Trim & clear","stable",0,0.7058,0.031,0.0908,0.9499,7,6,-0.0655,-0.0549,0.0106,TRUE,3.0007
+"LUQ","Luquillo","Forest","Vegetation Removal","Flux","Trim + debris","stable",0,0.821,0.0112,0.0785,0.9735,7,6,-0.0229,-0.0295,-0.0066,TRUE,2.0014
+"MCM","McMurdo Dry Valleys","Tundra","Nutrient Addition","Flux","CN","variable",3e-04,0.318,0.3224,0.3672,1.4345,5,7,0.0423,0.1605,0.1182,FALSE,NA
+"MCM","McMurdo Dry Valleys","Tundra","Nutrient Addition","Flux","CP","variable",2e-04,0.1738,0.5125,0.3394,0.9881,5,7,-0.2998,-0.226,0.0738,TRUE,4.9993
+"MCM","McMurdo Dry Valleys","Tundra","Nutrient Addition","Flux","N","stable",1e-04,0.4915,0.1692,0.269,0.8806,5,7,-0.3065,-0.3102,-0.0038,FALSE,NA
+"MCM","McMurdo Dry Valleys","Tundra","Nutrient Addition","Flux","P","stable",1e-04,0.2848,0.36,0.1113,0.866,5,7,-0.2978,-0.3034,-0.0057,TRUE,4.9993
+"NTL","North Temperate Lakes","Freshwater","Fertilization","Proxy","added","variable",-6e-04,0.602,0.1584,0.3554,3.9423,4,6,1.4546,1.3257,-0.1289,FALSE,NA
+"NWT","Niwot Ridge","Tundra","Fertilization","Stock","N","stable",0,0.2007,0.1442,0.142,1.2927,13,13,0.1113,0.2475,0.1363,TRUE,8
+"PIE","Plum Island Ecosystems","Coastal","Fertilization","Stock","Enriched","stable",0,0.9969,0,0.186,1.1365,17,16,0.0777,0.1146,0.0369,FALSE,NA
+"SBC","Santa Barbara Coastal","Coastal","Vegetation Removal","Stock","ANNUAL","stable",0,0.4986,0.0359,0.1821,0.7218,15,14,-0.3581,-0.3414,0.0167,FALSE,NA
+"SBC","Santa Barbara Coastal","Coastal","Vegetation Removal","Stock","CONTINUAL","variable",1e-04,0.6748,0.0152,1.0351,1.0399,14,13,0.0626,0.1008,0.0382,TRUE,4
+"SEV","Sevilleta","Grassland","Fertilization","Stock","F","stable",0,0.2999,0.0595,0.2784,1.3302,20,19,0.2472,0.2468,-4e-04,FALSE,NA
+"VCR","Virginia Coast Reserve","Coastal","Floral Manipulation","Stock","Inside Juncus","increasing",6e-04,0.0037,0.4627,0.8394,2.0876,16,19,-0.8759,0.3502,1.2261,TRUE,5.9986
