@@ -70,6 +70,7 @@ ssecr-c-cycling/
     04_detection-time.R      # Timepoints needed to detect significant trends
     05_lrr-analysis.R        # Log-response ratio analysis
     06_summary-stats.R       # Summary tables, manuscript outputs
+    07_sizer-analysis.R      # SiZer slope-change detection (uses HERON)
   figures/                   # Generated figures
     supplemental/            # Supplemental tables and panel figures
   legacy/
@@ -89,8 +90,9 @@ ssecr-c-cycling/
 
 2. **Install R dependencies**
    ```r
-   install.packages(c("tidyverse", "patchwork", "scales", "jsonlite", "digest", "httr"))
+   install.packages(c("tidyverse", "patchwork", "scales", "jsonlite", "digest", "httr", "SiZer"))
    devtools::install_github("lter/ltertools")
+   devtools::install_github("lter/HERON")  # SiZer slope-change helpers
    install.packages("EDIutils")  # For EDI data downloads
    ```
 
@@ -102,13 +104,14 @@ ssecr-c-cycling/
    # Step 2: Validate all data files, manifests, and registry
    source("analysis/00_validate-data.R")
 
-   # Step 3-8: Run analysis
+   # Step 3-9: Run analysis
    source("analysis/01_harmonize.R")
    source("analysis/02_relative-response.R")
    source("analysis/03_trend-classification.R")
    source("analysis/04_detection-time.R")
    source("analysis/05_lrr-analysis.R")
    source("analysis/06_summary-stats.R")
+   source("analysis/07_sizer-analysis.R")
    ```
 
 ### If `data/ready/` files already exist

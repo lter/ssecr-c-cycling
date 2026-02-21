@@ -172,27 +172,43 @@ for (i in seq_len(nrow(combos))) {
       stringsAsFactors = FALSE
     )
 
-    # 5. Generate ggplot with slope change overlays
-    p <- HERON::sizer_ggplot(
-      raw_data = place_info,
-      sizer_data = sizer_info,
-      x = "year_numeric", y = "mean_response",
-      trendline = "sharp", vline = "changes",
-      sharp_colors = c("#bbbbbb", "#2ca02c")
-    ) +
-      ggtitle(paste0(abbr, " — ", trt)) +
-      labs(x = "Year", y = "Treatment / Control Ratio") +
-      geom_hline(yintercept = 1, linetype = "dashed",
-                 color = "gray50", linewidth = 0.3) +
-      theme_ccycling()
+    # 5. Build publication-quality ggplot (replaces HERON::sizer_ggplot)
+    p <- ggplot(place_info, aes(x = year_numeric, y = mean_response)) +
+      geom_ref_ratio() +
+      geom_ribbon(aes(ymin = mean_response - se_response,
+                      ymax = mean_response + se_response),
+                  fill = "gray80", alpha = 0.3) +
+      geom_smooth(aes(group = groups, color = slope_type),
+                  method = "lm", formula = y ~ x, se = FALSE,
+                  linewidth = 0.7) +
+      geom_point(size = 1.2, alpha = 0.7, color = "gray25") +
+      scale_color_manual(
+        values = c("approx. zero" = "#B0B0B0",
+                   "increasing/decreasing" = "#3A7CA5"),
+        labels = c("approx. zero" = "Flat",
+                   "increasing/decreasing" = "Significant"),
+        name = "Slope"
+      ) +
+      labs(title = paste0(abbr, " \u2014 ", trt),
+           x = "Year", y = "Treatment / Control Ratio") +
+      theme_ccycling() +
+      theme(legend.position = "none")
+
+    # Add subtle slope-change boundary lines
+    if (n_changes > 0) {
+      p <- p + geom_vline(xintercept = change_yr_vals,
+                          linetype = "dotted", linewidth = 0.3,
+                          color = "gray45")
+    }
 
     sizer_plots[[label]] <- p
 
-    # 6. Save individual SiZer colormap
+    # 6. Save individual SiZer colormap (base R; tighten margins)
     png(file.path("figures", "supplemental", paste0("sizer_map_", label, ".png")),
-        width = 5, height = 5, res = 300, units = "in")
+        width = 3.5, height = 3.5, res = 300, units = "in")
+    par(mar = c(4, 4, 2, 1), cex.main = 0.8, cex.axis = 0.7, cex.lab = 0.8)
     HERON::sizer_plot(sizer_object = sizer_obj, bandwidth_vec = BANDWIDTH_SLICE)
-    title(main = paste0(abbr, " — ", trt), cex.main = 0.9)
+    title(main = paste0(abbr, " \u2014 ", trt), cex.main = 0.8)
     dev.off()
 
     cat(n_changes, "slope change(s)\n")
@@ -208,10 +224,9 @@ for (i in seq_len(nrow(combos))) {
 cat("\nSaving", length(sizer_plots), "ggplots...\n")
 
 for (label in names(sizer_plots)) {
-  ggsave(
+  save_figure(
     file.path("figures", "supplemental", paste0("sizer_ggplot_", label, ".png")),
-    sizer_plots[[label]],
-    width = 7, height = 5, dpi = 300, bg = "white"
+    sizer_plots[[label]], size = "double"
   )
 }
 
@@ -257,9 +272,13 @@ site_labels <- sizer_summary %>%
 all_panels <- list()
 for (j in seq_len(nrow(site_labels))) {
   lbl <- site_labels$label[j]
+  site <- site_labels$site_abbr[j]
   if (lbl %in% names(sizer_plots)) {
-    all_panels[[site_labels$site_abbr[j]]] <- sizer_plots[[lbl]] +
-      theme(plot.title = element_text(size = 8, face = "bold"))
+    all_panels[[site]] <- sizer_plots[[lbl]] +
+      ggtitle(site) +
+      theme(plot.title = element_text(size = 7, face = "bold"),
+            axis.title = element_text(size = 6),
+            axis.text = element_text(size = 5.5))
   }
 }
 
@@ -270,17 +289,23 @@ if (length(all_panels) >= 4) {
 
   summary_figure <- wrap_plots(all_panels, ncol = 3) +
     plot_annotation(
-      title = "SiZer Slope-Change Analysis: All Sites",
+      title = "SiZer Slope-Change Analysis",
       subtitle = paste0("Bandwidth = ", BANDWIDTH_SLICE,
-                        " years | Green = significant slope; Gray = flat"),
-      tag_levels = "A"
+                        " years | Blue = significant slope; gray = flat"),
+      tag_levels = "A",
+      theme = theme(
+        plot.title = element_text(face = "bold", size = 10, hjust = 0),
+        plot.subtitle = element_text(size = 8, color = "gray25", hjust = 0)
+      )
     )
 
+  fig_width <- 10
+  fig_height <- n_rows * 3
   ggsave("figures/Figure_sizer_all_sites.png",
-         summary_figure, width = 10, height = n_rows * 3.5,
+         summary_figure, width = fig_width, height = fig_height,
          dpi = 300, bg = "white")
   ggsave("figures/Figure_sizer_all_sites.pdf",
-         summary_figure, width = 10, height = n_rows * 3.5,
+         summary_figure, width = fig_width, height = fig_height,
          device = cairo_pdf)
 
   cat("\nSummary figure saved: figures/Figure_sizer_all_sites.png\n")
