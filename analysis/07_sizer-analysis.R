@@ -283,11 +283,17 @@ for (j in seq_len(nrow(site_labels))) {
 }
 
 if (length(all_panels) >= 4) {
-  # Arrange in 3-column grid
+  # Arrange in 4-column grid (4x4 layout)
   n_panels <- length(all_panels)
-  n_rows <- ceiling(n_panels / 3)
+  n_cols <- 4
+  n_rows <- ceiling(n_panels / n_cols)
 
-  summary_figure <- wrap_plots(all_panels, ncol = 3) +
+  # Pad with blank plots to fill the grid if needed
+  while (length(all_panels) < n_rows * n_cols) {
+    all_panels[[length(all_panels) + 1]] <- ggplot() + theme_void()
+  }
+
+  summary_figure <- wrap_plots(all_panels[1:(n_rows * n_cols)], ncol = n_cols) +
     plot_annotation(
       title = "SiZer Slope-Change Analysis",
       subtitle = paste0("Bandwidth = ", BANDWIDTH_SLICE,
@@ -299,8 +305,8 @@ if (length(all_panels) >= 4) {
       )
     )
 
-  fig_width <- 10
-  fig_height <- n_rows * 3
+  fig_width <- 12
+  fig_height <- n_rows * 2.8
   ggsave("figures/Figure_sizer_all_sites.png",
          summary_figure, width = fig_width, height = fig_height,
          dpi = 300, bg = "white")

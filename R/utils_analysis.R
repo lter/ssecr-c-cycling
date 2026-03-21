@@ -84,20 +84,33 @@ classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.3) {
 }
 
 #' Sequential analysis: how many timepoints needed to detect a significant trend?
+#' Also computes measurement frequency/density and study duration metrics to
+#' disentangle sampling effort from temporal extent.
 #' @param data data.frame with Date_parsed and mean_response columns
 #' @param p_threshold Significance threshold (default 0.05)
-#' @return data.frame with detection time results
+#' @return data.frame with detection time results plus duration/density columns
 detect_trend_timepoints <- function(data, p_threshold = 0.05) {
   if (nrow(data) < 3) {
     return(data.frame(
       min_n_for_detection = NA_integer_, final_n = nrow(data),
       final_slope = NA_real_, final_p = NA_real_,
-      time_to_detect = NA_real_, detected = FALSE
+      time_to_detect = NA_real_, detected = FALSE,
+      total_duration_yr = NA_real_,
+      meas_density_per_yr = NA_real_,
+      median_interval_days = NA_real_,
+      detect_density_per_yr = NA_real_
     ))
   }
 
   data <- data %>% arrange(Date_parsed)
   data$time_numeric <- as.numeric(data$Date_parsed - min(data$Date_parsed))
+
+  # Measurement density metrics for the full time series
+  total_span_days <- as.numeric(max(data$Date_parsed) - min(data$Date_parsed))
+  total_duration_yr <- total_span_days / 365.25
+  meas_density_per_yr <- if (total_duration_yr > 0) nrow(data) / total_duration_yr else NA_real_
+  intervals <- diff(sort(as.numeric(data$Date_parsed)))
+  median_interval_days <- median(intervals, na.rm = TRUE)
 
   detection_n <- NA_integer_
   for (i in 3:nrow(data)) {
@@ -113,14 +126,28 @@ detect_trend_timepoints <- function(data, p_threshold = 0.05) {
   final_lm <- lm(mean_response ~ time_numeric, data = data)
   final_summary <- summary(final_lm)
 
+  detect_dur_yr <- if (!is.na(detection_n)) {
+    as.numeric(data$Date_parsed[detection_n] - data$Date_parsed[1]) / 365.25
+  } else {
+    NA_real_
+  }
+  detect_density <- if (!is.na(detection_n) && !is.na(detect_dur_yr) && detect_dur_yr > 0) {
+    detection_n / detect_dur_yr
+  } else {
+    NA_real_
+  }
+
   data.frame(
     min_n_for_detection = ifelse(is.na(detection_n), nrow(data), detection_n),
     final_n = nrow(data),
     final_slope = coef(final_lm)[2],
     final_p = final_summary$coefficients[2, 4],
-    time_to_detect = ifelse(is.na(detection_n), NA_real_,
-                            as.numeric(data$Date_parsed[detection_n] - data$Date_parsed[1]) / 365.25),
-    detected = !is.na(detection_n)
+    time_to_detect = detect_dur_yr,
+    detected = !is.na(detection_n),
+    total_duration_yr = total_duration_yr,
+    meas_density_per_yr = meas_density_per_yr,
+    median_interval_days = median_interval_days,
+    detect_density_per_yr = detect_density
   )
 }
 

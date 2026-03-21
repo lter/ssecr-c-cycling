@@ -207,4 +207,127 @@ p_forest <- ggplot(lrr_summary, aes(x = mean_lrr, y = site_abbr)) +
 
 save_figure("figures/lrr_forest_plot.png", p_forest, size = "double")
 
+# --- Faceted LRR with Trend-Colored Smooth Fits ---
+# Shows all experiments in a faceted layout; loess fits colored by trend class
+
+cat("\n--- TREND-COLORED LRR FACETED FIGURE ---\n")
+
+trend_analysis <- read.csv("data/harmonized/trend_analysis_results.csv",
+                           stringsAsFactors = FALSE)
+trend_analysis$trend_class <- as_trend_factor(trend_analysis$trend_class)
+
+# Read the relative response summary and join trend classification
+summary_data <- read.csv("data/harmonized/relative_response_summary.csv",
+                         stringsAsFactors = FALSE)
+summary_data$Date_parsed <- as.Date(summary_data$Date_parsed)
+
+summary_with_trend <- summary_data %>%
+  left_join(trend_analysis %>% select(source, Treatment, trend_class),
+            by = c("source", "Treatment")) %>%
+  filter(!is.na(trend_class)) %>%               # drop insufficient-data treatments
+  mutate(log_rr   = log(mean_response),
+         se_log   = se_response / mean_response)  # delta-method SE on log scale
+
+p_lrr_faceted <- ggplot(summary_with_trend, aes(x = Date_parsed, y = log_rr)) +
+  geom_errorbar(aes(ymin = log_rr - se_log, ymax = log_rr + se_log),
+                width = 0, alpha = 0.2, color = "grey50") +
+  geom_point(aes(color = trend_class), size = 0.8, alpha = 0.5) +
+  geom_smooth(aes(group = Treatment, color = trend_class, fill = trend_class),
+              method = "loess", se = TRUE, alpha = 0.08, linewidth = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", linewidth = 0.3, color = "gray55") +
+  scale_color_trend(name = "Trend") +
+  scale_fill_trend(name = "Trend") +
+  facet_wrap(~site_abbr, scales = "free") +
+  labs(title = "Log Response Ratio Across All Sites",
+       subtitle = "Smooth fits colored by temporal trend classification; 0 = no effect",
+       x = "Date", y = "Log Response Ratio  ln(Treatment / Control)") +
+  theme_ccycling() +
+  theme(strip.text = element_text(size = 7),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 6))
+
+n_sites <- length(unique(summary_with_trend$site_abbr))
+n_facet_rows <- ceiling(n_sites / 4)
+
+ggsave("figures/all_experiments_lrr_trend_colored.png",
+       p_lrr_faceted, width = 10, height = n_facet_rows * 2.5,
+       dpi = 300, bg = "white")
+ggsave("figures/all_experiments_lrr_trend_colored.pdf",
+       p_lrr_faceted, width = 10, height = n_facet_rows * 2.5,
+       device = cairo_pdf)
+
+cat("Saved: figures/all_experiments_lrr_trend_colored.png\n")
+
+# --- Combined Layout: LRR Faceted + Temporal Trends Summary ---
+
+cat("--- COMBINED FIGURE ---\n")
+
+# Rebuild compact summary panels (mirrors 03_trend-classification.R panels)
+trend_clean <- trend_analysis %>% filter(trend_class != "insufficient_data")
+
+overall_proportions <- trend_clean %>%
+  count(trend_class, .drop = FALSE) %>%
+  mutate(proportion = n / sum(n),
+         percentage = round(proportion * 100, 1))
+
+pa <- overall_proportions %>%
+  ggplot(aes(x = "", y = n, fill = trend_class)) +
+  geom_bar(stat = "identity", position = "fill", width = 0.5,
+           color = "white", linewidth = 0.3) +
+  geom_text(aes(label = n),
+            position = position_fill(vjust = 0.5), size = 2, fontface = "bold") +
+  scale_fill_trend() +
+  scale_y_continuous(labels = scales::percent) +
+  coord_flip() +
+  labs(y = "Proportion", x = "", fill = "Trend") +
+  theme_ccycling(base_size = 7) +
+  theme(legend.position = "right",
+        axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+        axis.line.y = element_blank())
+
+pb <- trend_clean %>%
+  ggplot(aes(x = trend_class, y = mean_ratio, fill = trend_class)) +
+  geom_ref_ratio() +
+  geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
+               linewidth = 0.3, color = "gray30") +
+  geom_jitter(width = 0.15, alpha = 0.3, size = 0.6, color = "gray30") +
+  scale_fill_trend() +
+  scale_y_continuous(trans = "log2", breaks = c(0.5, 0.75, 1, 1.5, 2, 3, 4)) +
+  labs(x = "", y = "Trt/Ctrl (log scale)") +
+  theme_ccycling(base_size = 7) + theme(legend.position = "none")
+
+pc <- trend_clean %>%
+  ggplot(aes(x = trend_class, y = cv, fill = trend_class)) +
+  geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
+               linewidth = 0.3, color = "gray30") +
+  geom_jitter(width = 0.15, alpha = 0.3, size = 0.6, color = "gray30") +
+  geom_ref_threshold(0.3) +
+  scale_fill_trend() +
+  labs(x = "", y = "CV") +
+  theme_ccycling(base_size = 7) + theme(legend.position = "none")
+
+pd <- trend_clean %>%
+  ggplot(aes(x = trend_class, y = year_span, fill = trend_class)) +
+  geom_boxplot(width = 0.4, outlier.shape = NA, alpha = 0.5,
+               linewidth = 0.3, color = "gray30") +
+  geom_jitter(width = 0.15, alpha = 0.3, size = 0.6, color = "gray30") +
+  scale_fill_trend() +
+  labs(x = "", y = "Duration (years)") +
+  theme_ccycling(base_size = 7) + theme(legend.position = "none")
+
+summary_panels <- (pa | pb) / (pc | pd)
+
+combined_figure <- p_lrr_faceted /
+  summary_panels +
+  plot_layout(heights = c(3, 2))
+
+combined_h <- n_facet_rows * 2.5 + 6
+ggsave("figures/Figure_combined_lrr_and_summary.png",
+       combined_figure, width = 10, height = combined_h,
+       dpi = 300, bg = "white")
+ggsave("figures/Figure_combined_lrr_and_summary.pdf",
+       combined_figure, width = 10, height = combined_h,
+       device = cairo_pdf)
+
+cat("Saved: figures/Figure_combined_lrr_and_summary.png\n")
+
 cat("\n=== COMPLETE ===\n")
