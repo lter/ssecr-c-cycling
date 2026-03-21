@@ -82,14 +82,12 @@ if (nrow(early_vs_full) > 0) {
     geom_point(size = 1.8, alpha = 0.7) +
     scale_color_site() +
     scale_shape_site() +
-    labs(title = "Early (First 3 Years) vs Full-Duration LRR",
-         subtitle = "Points above 1:1 line indicate strengthening effects",
-         x = "Mean LRR (First 3 Years)",
+    labs(x = "Mean LRR (First 3 Years)",
          y = "Mean LRR (Full Duration)",
          color = "Site", shape = "Site") +
     theme_ccycling() +
-    guides(color = guide_legend(ncol = 3),
-           shape = guide_legend(ncol = 3))
+    guides(color = guide_legend(ncol = 6),
+           shape = guide_legend(ncol = 6))
 
   save_figure("figures/early_vs_full_lrr.png", p_early_full, size = "double")
 }

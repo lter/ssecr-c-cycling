@@ -293,17 +293,7 @@ if (length(all_panels) >= 4) {
     all_panels[[length(all_panels) + 1]] <- ggplot() + theme_void()
   }
 
-  summary_figure <- wrap_plots(all_panels[1:(n_rows * n_cols)], ncol = n_cols) +
-    plot_annotation(
-      title = "SiZer Slope-Change Analysis",
-      subtitle = paste0("Bandwidth = ", BANDWIDTH_SLICE,
-                        " years | Blue = significant slope; gray = flat"),
-      tag_levels = "A",
-      theme = theme(
-        plot.title = element_text(face = "bold", size = 10, hjust = 0),
-        plot.subtitle = element_text(size = 8, color = "gray25", hjust = 0)
-      )
-    )
+  summary_figure <- wrap_plots(all_panels[1:(n_rows * n_cols)], ncol = n_cols)
 
   fig_width <- 12
   fig_height <- n_rows * 2.8
@@ -320,6 +310,40 @@ if (length(all_panels) >= 4) {
 if (length(skipped) > 0) {
   cat("\nSkipped combinations:\n")
   for (s in skipped) cat("  -", s, "\n")
+}
+
+# --- Combined Figure: SiZer + Sign Flips ---
+
+sign_flip_file <- "data/harmonized/sign_flip_analysis.csv"
+if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
+  sign_flip_analysis <- read.csv(sign_flip_file, stringsAsFactors = FALSE)
+  metadata <- get_site_metadata()
+
+  p_signflips <- sign_flip_analysis %>%
+    filter(!is.na(n_flips)) %>%
+    left_join(metadata %>% select(source, site_type), by = "source") %>%
+    ggplot(aes(x = site_abbr, y = n_flips)) +
+    geom_boxplot(aes(fill = site_abbr), alpha = 0.4, outlier.shape = NA,
+                 linewidth = 0.3, color = "gray40") +
+    geom_jitter(aes(color = site_abbr), width = 0.15, alpha = 0.5, size = 1) +
+    scale_fill_site() +
+    scale_color_site() +
+    facet_wrap(~site_type, scales = "free_x") +
+    labs(x = "Site", y = "Number of Sign Flips") +
+    theme_ccycling() +
+    theme(legend.position = "none")
+
+  combined_sizer_flips <- summary_figure / p_signflips +
+    plot_layout(heights = c(4, 1))
+
+  ggsave("figures/Figure_sizer_and_sign_flips.png",
+         combined_sizer_flips, width = fig_width, height = fig_height + 3,
+         dpi = 300, bg = "white")
+  ggsave("figures/Figure_sizer_and_sign_flips.pdf",
+         combined_sizer_flips, width = fig_width, height = fig_height + 3,
+         device = cairo_pdf)
+
+  cat("Combined figure saved: figures/Figure_sizer_and_sign_flips.png\n")
 }
 
 cat("\nAll SiZer outputs saved to figures/supplemental/\n")

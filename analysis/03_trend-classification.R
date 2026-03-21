@@ -238,9 +238,7 @@ p_signflips <- sign_flip_analysis %>%
   scale_fill_site() +
   scale_color_site() +
   facet_wrap(~site_type, scales = "free_x") +
-  labs(title = "Trend Reversals (Sign Flips) by Site",
-       subtitle = "Number of times treatment response crosses the control level",
-       x = "Site", y = "Number of Sign Flips") +
+  labs(x = "Site", y = "Number of Sign Flips") +
   theme_ccycling() +
   theme(legend.position = "none")
 
