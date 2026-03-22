@@ -245,10 +245,10 @@ if (file.exists(trend_file)) {
     facet_theme
 
   combined_B <- lrr_total_pooled / summary_row +
-    plot_layout(heights = c(5, 1))
+    plot_layout(heights = c(5, 2))
 
   ggsave("figures/all_experiments_lrr_total_pooled_trend.png",
-         combined_B, width = 16, height = 10, dpi = 300, bg = "white")
+         combined_B, width = 16, height = 12, dpi = 300, bg = "white")
 
   cat("Trend-colored LRR variants saved (6x3 + summary panels)\n")
 } else {
