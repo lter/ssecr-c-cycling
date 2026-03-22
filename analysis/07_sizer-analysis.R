@@ -365,8 +365,8 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
   all_panels_combo <- all_panels[1:(n_rows * n_cols)]
   all_panels_combo[[last_real]] <- all_panels_combo[[last_real]] +
     theme(legend.position = "bottom",
-          legend.text = element_text(size = 10),
-          legend.title = element_text(size = 11))
+          legend.text = element_text(size = 13),
+          legend.title = element_text(size = 14))
 
   sizer_left <- wrap_plots(all_panels_combo, ncol = n_cols, guides = "collect") +
     plot_annotation(theme = theme(legend.position = "bottom"))
