@@ -358,16 +358,30 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
           legend.title = element_text(size = 11))
 
   sizer_left <- wrap_plots(all_panels_combo, ncol = n_cols, guides = "collect") +
-    plot_annotation(title = "A", theme = theme(
-      legend.position = "bottom",
-      plot.title = element_text(size = 16, face = "bold", hjust = 0)))
+    plot_annotation(theme = theme(legend.position = "bottom"))
 
-  p_signflips_labeled <- p_signflips +
-    ggtitle("B") +
-    theme(plot.title = element_text(size = 16, face = "bold", hjust = 0))
+  # Panel label "A" as a standalone text plot above the sizer grid
+  label_a <- ggplot() +
+    annotate("text", x = 0, y = 0, label = "A", size = 7, fontface = "bold", hjust = 0) +
+    theme_void() +
+    theme(plot.margin = margin(0, 0, 0, 5))
 
-  combined_sizer_flips <- wrap_plots(list(sizer_left, p_signflips_labeled),
-                                      ncol = 2, widths = c(2, 1))
+  label_b <- ggplot() +
+    annotate("text", x = 0, y = 0, label = "B", size = 7, fontface = "bold", hjust = 0) +
+    theme_void() +
+    theme(plot.margin = margin(0, 0, 0, 5))
+
+  left_col <- (label_a / sizer_left) + plot_layout(heights = c(1, 40))
+  right_col <- (label_b / p_signflips) + plot_layout(heights = c(1, 40))
+
+  # Vertical separator between panels A and B
+  separator <- ggplot() +
+    geom_vline(xintercept = 0.5, color = "gray60", linewidth = 0.4) +
+    theme_void() +
+    theme(plot.margin = margin(0, 0, 0, 0))
+
+  combined_sizer_flips <- wrap_plots(list(left_col, separator, right_col),
+                                      ncol = 3, widths = c(2, 0.02, 1))
 
   combo_w <- fig_width * 1.5
   combo_h <- fig_height + 1
