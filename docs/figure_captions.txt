@@ -50,10 +50,11 @@ indicate slopes indistinguishable from zero. Vertical dotted lines mark detected
 slope-change boundaries. Grey ribbons show plus/minus 1 SE of the mean
 treatment/control ratio, and the dashed horizontal line marks a ratio of 1 (no
 treatment effect). Of 78 treatment combinations analyzed, 23 (29%) exhibited at
-least one statistically significant slope change. (B) Distribution of sign flips
--- instances where the treatment response crossed the no-effect threshold
-(ratio = 1) -- across all classified treatments at each site (n = 80 treatments
-across 17 sites), displayed as horizontal boxplots with individual values
-overlaid. Colors indicate ecosystem type. Sign-flip frequency varied widely both
-within and among sites (mean = 4.3, range: 0-21), reflecting heterogeneous
-temporal dynamics of treatment effects.
+least one statistically significant slope change. (B) Sign-flip frequency -- the percentage of consecutive measurement transitions
+in which the treatment response crossed the no-effect threshold (ratio = 1) --
+across all classified treatments at each site (n = 80 treatments across 17
+sites), displayed as horizontal boxplots with individual values overlaid.
+Expressing flips as a percentage of transitions normalizes for differences in
+study duration and measurement frequency across sites. Colors indicate ecosystem
+type. Sign-flip frequency varied widely both within and among sites (mean = 21%,
+range: 0-67%), reflecting heterogeneous temporal dynamics of treatment effects.

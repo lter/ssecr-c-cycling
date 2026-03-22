@@ -329,18 +329,29 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
     "Freshwater" = "#5AAECC"
   )
 
+  # Compute flip percentage if not already present
+  if (!"flip_pct" %in% names(sign_flip_analysis)) {
+    n_pts <- summary_data %>%
+      group_by(source, Treatment) %>%
+      summarise(n_timepoints = n(), .groups = "drop")
+    sign_flip_analysis <- sign_flip_analysis %>%
+      left_join(n_pts, by = c("source", "Treatment")) %>%
+      mutate(flip_pct = ifelse(n_timepoints > 1,
+                               100 * n_flips / (n_timepoints - 1), NA_real_))
+  }
+
   flip_data <- sign_flip_analysis %>%
-    filter(!is.na(n_flips)) %>%
+    filter(!is.na(flip_pct)) %>%
     left_join(metadata %>% select(source, site_type), by = "source") %>%
     mutate(site_abbr = factor(site_abbr, levels = sort(unique(site_abbr), decreasing = TRUE)))
 
-  p_signflips <- ggplot(flip_data, aes(y = site_abbr, x = n_flips)) +
+  p_signflips <- ggplot(flip_data, aes(y = site_abbr, x = flip_pct)) +
     geom_boxplot(aes(fill = site_type), alpha = 0.4, outlier.shape = NA,
                  linewidth = 0.3, color = "gray40") +
     geom_jitter(aes(color = site_type), height = 0.15, alpha = 0.5, size = 1.5) +
     scale_fill_manual(values = ecosystem_colors, name = "Ecosystem") +
     scale_color_manual(values = ecosystem_colors, name = "Ecosystem") +
-    labs(y = NULL, x = "Number of Sign Flips") +
+    labs(y = NULL, x = "Sign Flips (% of Transitions)") +
     theme_ccycling(base_size = 14) +
     theme(legend.position = "bottom",
           axis.text = element_text(size = 11),

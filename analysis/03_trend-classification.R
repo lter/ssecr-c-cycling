@@ -51,12 +51,24 @@ sign_flip_analysis <- summary_data %>%
   ungroup() %>%
   mutate(site_abbr = source_to_abbr(source, metadata))
 
+# Add timepoints and compute flip percentage (flips / transitions)
+n_pts <- summary_data %>%
+  group_by(source, Treatment) %>%
+  summarise(n_timepoints = n(), .groups = "drop")
+
+sign_flip_analysis <- sign_flip_analysis %>%
+  left_join(n_pts, by = c("source", "Treatment")) %>%
+  mutate(flip_pct = ifelse(n_timepoints > 1,
+                           100 * n_flips / (n_timepoints - 1), NA_real_))
+
 write.csv(sign_flip_analysis, "data/harmonized/sign_flip_analysis.csv", row.names = FALSE)
 
 cat("\nSign-flip summary:\n")
 cat("  Mean flips per treatment:", round(mean(sign_flip_analysis$n_flips, na.rm = TRUE), 1), "\n")
-cat("  Median flips:", median(sign_flip_analysis$n_flips, na.rm = TRUE), "\n")
-cat("  Max flips:", max(sign_flip_analysis$n_flips, na.rm = TRUE), "\n")
+cat("  Mean flip %:", round(mean(sign_flip_analysis$flip_pct, na.rm = TRUE), 1), "%\n")
+cat("  Median flip %:", round(median(sign_flip_analysis$flip_pct, na.rm = TRUE), 1), "%\n")
+cat("  Range flip %:", round(min(sign_flip_analysis$flip_pct, na.rm = TRUE), 1), "-",
+    round(max(sign_flip_analysis$flip_pct, na.rm = TRUE), 1), "%\n")
 
 # --- Summary Statistics ---
 
@@ -229,16 +241,16 @@ ggsave("figures/Figure_temporal_trends_summary.pdf",
 
 # Sign-flip visualization
 p_signflips <- sign_flip_analysis %>%
-  filter(!is.na(n_flips)) %>%
+  filter(!is.na(flip_pct)) %>%
   left_join(metadata %>% select(source, site_type), by = "source") %>%
-  ggplot(aes(x = site_abbr, y = n_flips)) +
+  ggplot(aes(x = site_abbr, y = flip_pct)) +
   geom_boxplot(aes(fill = site_abbr), alpha = 0.4, outlier.shape = NA,
                linewidth = 0.3, color = "gray40") +
   geom_jitter(aes(color = site_abbr), width = 0.15, alpha = 0.5, size = 1) +
   scale_fill_site() +
   scale_color_site() +
   facet_wrap(~site_type, scales = "free_x") +
-  labs(x = "Site", y = "Number of Sign Flips") +
+  labs(x = "Site", y = "Sign Flips (% of Transitions)") +
   theme_ccycling() +
   theme(legend.position = "none")
 
