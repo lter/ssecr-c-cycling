@@ -276,9 +276,9 @@ for (j in seq_len(nrow(site_labels))) {
   if (lbl %in% names(sizer_plots)) {
     all_panels[[site]] <- sizer_plots[[lbl]] +
       ggtitle(site) +
-      theme(plot.title = element_text(size = 7, face = "bold"),
-            axis.title = element_text(size = 6),
-            axis.text = element_text(size = 5.5))
+      theme(plot.title = element_text(size = 14, face = "bold"),
+            axis.title = element_text(size = 12),
+            axis.text = element_text(size = 11))
   }
 }
 
@@ -319,28 +319,63 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
   sign_flip_analysis <- read.csv(sign_flip_file, stringsAsFactors = FALSE)
   metadata <- get_site_metadata()
 
-  p_signflips <- sign_flip_analysis %>%
+  # Ecosystem type colors (one color per type, matching the site palette families)
+  ecosystem_colors <- c(
+    "Grassland"  = "#CC7A29",
+    "Forest"     = "#3C8556",
+    "Tundra"     = "#4A7BA7",
+    "Coastal"    = "#1B7A7D",
+    "Urban"      = "#8E6FAD",
+    "Freshwater" = "#5AAECC"
+  )
+
+  flip_data <- sign_flip_analysis %>%
     filter(!is.na(n_flips)) %>%
     left_join(metadata %>% select(source, site_type), by = "source") %>%
-    ggplot(aes(x = site_abbr, y = n_flips)) +
-    geom_boxplot(aes(fill = site_abbr), alpha = 0.4, outlier.shape = NA,
+    mutate(site_abbr = factor(site_abbr, levels = sort(unique(site_abbr), decreasing = TRUE)))
+
+  p_signflips <- ggplot(flip_data, aes(y = site_abbr, x = n_flips)) +
+    geom_boxplot(aes(fill = site_type), alpha = 0.4, outlier.shape = NA,
                  linewidth = 0.3, color = "gray40") +
-    geom_jitter(aes(color = site_abbr), width = 0.15, alpha = 0.5, size = 1) +
-    scale_fill_site() +
-    scale_color_site() +
-    facet_wrap(~site_type, scales = "free_x") +
-    labs(x = "Site", y = "Number of Sign Flips") +
-    theme_ccycling() +
-    theme(legend.position = "none")
+    geom_jitter(aes(color = site_type), height = 0.15, alpha = 0.5, size = 1.5) +
+    scale_fill_manual(values = ecosystem_colors, name = "Ecosystem") +
+    scale_color_manual(values = ecosystem_colors, name = "Ecosystem") +
+    labs(y = NULL, x = "Number of Sign Flips") +
+    theme_ccycling(base_size = 14) +
+    theme(legend.position = "bottom",
+          axis.text = element_text(size = 11),
+          axis.title = element_text(size = 13)) +
+    guides(fill = guide_legend(nrow = 2), color = guide_legend(nrow = 2))
 
-  combined_sizer_flips <- summary_figure / p_signflips +
-    plot_layout(heights = c(4, 1))
+  # Re-enable SiZer slope legend on one representative panel
+  # (patchwork collect will de-duplicate)
+  last_real <- max(which(sapply(all_panels[1:(n_rows * n_cols)], function(p)
+    inherits(p, "gg") && !inherits(p, "patchwork"))))
+  all_panels_combo <- all_panels[1:(n_rows * n_cols)]
+  all_panels_combo[[last_real]] <- all_panels_combo[[last_real]] +
+    theme(legend.position = "bottom",
+          legend.text = element_text(size = 10),
+          legend.title = element_text(size = 11))
 
+  sizer_left <- wrap_plots(all_panels_combo, ncol = n_cols, guides = "collect") +
+    plot_annotation(title = "A", theme = theme(
+      legend.position = "bottom",
+      plot.title = element_text(size = 16, face = "bold", hjust = 0)))
+
+  p_signflips_labeled <- p_signflips +
+    ggtitle("B") +
+    theme(plot.title = element_text(size = 16, face = "bold", hjust = 0))
+
+  combined_sizer_flips <- wrap_plots(list(sizer_left, p_signflips_labeled),
+                                      ncol = 2, widths = c(2, 1))
+
+  combo_w <- fig_width * 1.5
+  combo_h <- fig_height + 1
   ggsave("figures/Figure_sizer_and_sign_flips.png",
-         combined_sizer_flips, width = fig_width, height = fig_height + 3,
+         combined_sizer_flips, width = combo_w, height = combo_h,
          dpi = 300, bg = "white")
   ggsave("figures/Figure_sizer_and_sign_flips.pdf",
-         combined_sizer_flips, width = fig_width, height = fig_height + 3,
+         combined_sizer_flips, width = combo_w, height = combo_h,
          device = cairo_pdf)
 
   cat("Combined figure saved: figures/Figure_sizer_and_sign_flips.png\n")

@@ -1,0 +1,59 @@
+Figure Captions
+===============
+
+
+early_vs_full_lrr
+-----------------
+Comparison of early versus full-duration log-response ratios (LRR) across
+treatment-experiment combinations (n = 79). Each point represents a single
+treatment within a long-term experiment, with the mean LRR calculated over the
+first three years of observation (x-axis) plotted against the mean LRR over the
+full study duration (y-axis). The dashed diagonal line indicates 1:1
+correspondence; points above the line indicate treatments whose effects
+strengthened over time, and points below indicate treatments whose effects
+attenuated. Colors and shapes denote LTER site identity. Most treatments cluster
+near the origin and the 1:1 line, indicating that early-period effect sizes are
+broadly predictive of long-term outcomes, though substantial scatter --
+particularly among treatments with strong initial effects -- suggests that
+short-term results can both overestimate and underestimate long-term responses.
+
+
+detection_time_analysis
+-----------------------
+Factors influencing the time required to detect statistically significant
+temporal trends in treatment response ratios. Only treatment-experiment
+combinations classified as increasing (green; n = 18) or decreasing (red; n = 5)
+are included. (A) Distribution of years required to first achieve statistical
+significance (P < 0.05 in sequential linear regression) by trend direction.
+(B) Relationship between measurement density (observations per year) and
+detection time; densely sampled experiments do not consistently detect trends
+faster. (C) Total study duration versus the number of timepoints required for
+detection, with bubble size proportional to measurement density, illustrating
+the interplay between calendar time, sampling effort, and detectability.
+(D) Detection time as a function of absolute slope magnitude (log scale);
+steeper trends are detected sooner. (E) Detection time versus the coefficient of
+variation of the treatment/control ratio; higher temporal variability delays
+detection. (F) Detection time by LTER site, showing cross-site variation in how
+quickly significant trends emerged. Trend lines in panels B, D, and E are linear
+fits with 95% confidence bands.
+
+
+Figure_sizer_and_sign_flips
+---------------------------
+Piecewise slope-change (SiZer) analysis and treatment response sign-flip
+frequency across LTER sites. (A) One representative treatment per site (selected
+as the treatment with the most timepoints; 16 sites with at least 5
+observations), with the treatment/control ratio plotted over time. Piecewise
+linear segments are derived from SiZer analysis at a 5-year smoothing bandwidth:
+blue segments indicate slopes significantly different from zero; grey segments
+indicate slopes indistinguishable from zero. Vertical dotted lines mark detected
+slope-change boundaries. Grey ribbons show plus/minus 1 SE of the mean
+treatment/control ratio, and the dashed horizontal line marks a ratio of 1 (no
+treatment effect). Of 78 treatment combinations analyzed, 23 (29%) exhibited at
+least one statistically significant slope change. (B) Distribution of sign flips
+-- instances where the treatment response crossed the no-effect threshold
+(ratio = 1) -- across all classified treatments at each site (n = 80 treatments
+across 17 sites), displayed as horizontal boxplots with individual values
+overlaid. Colors indicate ecosystem type. Sign-flip frequency varied widely both
+within and among sites (mean = 4.3, range: 0-21), reflecting heterogeneous
+temporal dynamics of treatment effects.
