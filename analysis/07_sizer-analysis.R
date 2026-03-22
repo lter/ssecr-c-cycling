@@ -360,14 +360,16 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
   sizer_left <- wrap_plots(all_panels_combo, ncol = n_cols, guides = "collect") +
     plot_annotation(theme = theme(legend.position = "bottom"))
 
-  # Panel label "A" as a standalone text plot above the sizer grid
+  # Panel label "A" as a standalone text plot, left-aligned
   label_a <- ggplot() +
     annotate("text", x = 0, y = 0, label = "A", size = 7, fontface = "bold", hjust = 0) +
+    scale_x_continuous(limits = c(0, 1)) +
     theme_void() +
     theme(plot.margin = margin(0, 0, 0, 5))
 
   label_b <- ggplot() +
     annotate("text", x = 0, y = 0, label = "B", size = 7, fontface = "bold", hjust = 0) +
+    scale_x_continuous(limits = c(0, 1)) +
     theme_void() +
     theme(plot.margin = margin(0, 0, 0, 5))
 
