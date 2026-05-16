@@ -15,7 +15,6 @@ source("R/utils_labels.R")
 
 site_coords <- tibble::tribble(
   ~site_abbr, ~lat,      ~lon,       ~full_name,
-  "AND",       44.2116,  -122.2562,  "H.J. Andrews",
   "ARC",       68.6283,  -149.5942,  "Arctic LTER",
   "BNZ",       64.6989,  -148.3203,  "Bonanza Creek",
   "CAP",       33.4255,  -111.9288,  "Central Arizona-Phoenix",
@@ -56,7 +55,6 @@ date_ranges <- summary_data %>%
 # Experiment short descriptions
 experiments <- tibble::tribble(
   ~site_abbr, ~experiment,
-  "AND",      "Vegetation removal",
   "ARC",      "Fertilization & warming",
   "BNZ",      "Permafrost warming",
   "CAP",      "Desert fertilization",
