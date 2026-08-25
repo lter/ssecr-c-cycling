@@ -1,28 +1,28 @@
 TEMPORAL TREND ANALYSIS SUMMARY REPORT
 ====================================================================== 
-Generated: 2026-02-21 09:01 
+Generated: 2026-08-25 12:16 
 
 DATASET OVERVIEW:
   Total sources: 18 
-  Total rows: 11376 
+  Total rows: 11142 
   Sites: 18 
 
 TREND DISTRIBUTION:
-  decreasing: 5 (6.2%)
-  increasing: 18 (22.5%)
-  stable: 35 (43.8%)
-  variable: 22 (27.5%)
+  decreasing: 5 (6.0%)
+  increasing: 21 (25.3%)
+  stable: 35 (42.2%)
+  variable: 22 (26.5%)
 
 KEY FINDINGS:
-  - 71% of treatments show non-directional responses
-  - 29% show significant directional change
-  - Directional trends require ~10 timepoints (median) to detect
+  - 69% of treatments show non-directional responses
+  - 31% show significant directional change
+  - Directional trends require ~8 timepoints (median) to detect
 
 TREND TYPE CHARACTERISTICS:
   decreasing (n=5): mean ratio=1.81x, mean CV=0.256, mean timepoints=13
-  increasing (n=18): mean ratio=1.43x, mean CV=0.651, mean timepoints=29
-  stable (n=35): mean ratio=1.31x, mean CV=0.180, mean timepoints=11
-  variable (n=22): mean ratio=1.76x, mean CV=0.515, mean timepoints=18
+  increasing (n=21): mean ratio=1.32x, mean CV=0.582, mean timepoints=26
+  stable (n=35): mean ratio=1.33x, mean CV=0.181, mean timepoints=10
+  variable (n=22): mean ratio=1.79x, mean CV=0.518, mean timepoints=18
 
  =
  =

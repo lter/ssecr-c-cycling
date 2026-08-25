@@ -1,13 +1,13 @@
 "source","Date","Treatment","means","response_sd","sample_size"
 "AND_tree_DBH_2002-2015_processed.csv",2002,"WS06",14.8038094938236,1.97920854137206,22
 "AND_tree_DBH_2002-2015_processed.csv",2002,"WS07",12.5595109271855,2.5251701629051,24
-"AND_tree_DBH_2002-2015_processed.csv",2003,"WS08",34.7510480244149,8.93529972800639,22
+"AND_tree_DBH_2002-2015_processed.csv",2002,"WS08",34.7510480244149,8.93529972800639,22
 "AND_tree_DBH_2002-2015_processed.csv",2008,"WS06",18.4481162741556,2.57897304416333,22
 "AND_tree_DBH_2002-2015_processed.csv",2008,"WS07",16.9636892463659,3.18008753533939,24
-"AND_tree_DBH_2002-2015_processed.csv",2009,"WS08",36.1512849207948,9.0765460999255,22
+"AND_tree_DBH_2002-2015_processed.csv",2008,"WS08",36.1512849207948,9.0765460999255,22
 "AND_tree_DBH_2002-2015_processed.csv",2014,"WS06",21.2294102057646,3.43525259163936,22
 "AND_tree_DBH_2002-2015_processed.csv",2014,"WS07",19.9801130885587,3.86957444251085,24
-"AND_tree_DBH_2002-2015_processed.csv",2015,"WS08",36.0851113289108,8.85134161100588,22
+"AND_tree_DBH_2002-2015_processed.csv",2014,"WS08",36.0851113289108,8.85134161100588,22
 "ARC_Biomass_1982-2015_processed.csv",1982,"Control",984.1234375,328.209444031448,4
 "ARC_Biomass_1982-2015_processed.csv",1983,"Control",957.02521875,162.617049021568,4
 "ARC_Biomass_1982-2015_processed.csv",1983,"GH",699.0171875,175.777720841239,4
@@ -1488,32 +1488,32 @@
 "NTL_NutrientAddition1.csv",2018,"none",2.68799319191175,0.0601723131813877,2
 "NTL_NutrientAddition1.csv",2019,"added",10.2597111187332,0,1
 "NTL_NutrientAddition1.csv",2019,"none",4.01152326458456,0,1
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2006,"N",502.220833333333,135.102305054579,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2006,"X",444.553333333333,130.43807568298,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2007,"N",217.197916666667,77.2190188377523,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2007,"X",206.885416666667,57.7164394399792,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2008,"N",237.692708333333,93.1628486933348,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2008,"X",201.90625,93.581877661781,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2009,"N",290.072916666667,78.3951095763787,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2009,"X",205.3125,69.4374309589707,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2010,"N",193.802083333333,89.809318336339,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2010,"X",174.442708333333,86.2172593421722,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2011,"N",216.567708333333,73.3741746233455,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2011,"X",161.354166666667,95.1909539207027,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2012,"N",183.255208333333,45.9069932588303,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2012,"X",152.177083333333,35.2648344161931,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2013,"N",207.286458333333,76.1655058040349,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2013,"X",129.911458333333,40.2478247782966,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2014,"N",437.541666666667,140.027894779176,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2014,"X",285.802083333333,134.712113689937,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2015,"N",277.098958333333,97.8405890481735,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2015,"X",214.958333333333,76.1550980455894,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2016,"N",499.453125,201.560397496082,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2016,"X",376.244791666667,124.531230276414,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2017,"N",456.782986111111,157.066812856637,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2017,"X",297.161458333333,115.523258241962,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2019,"N",524.5,162.462799500658,12
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2019,"X",478,333.183013454386,12
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2006,"N",497.793333333333,213.172955386778,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2006,"X",495.813333333333,47.3930259461594,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2007,"N",237.25,106.555663270424,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2007,"X",256.9375,43.3576604390735,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2008,"N",248.125,91.6750374965836,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2008,"X",241.145833333333,64.9546817179742,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2009,"N",256.166666666667,50.943148971018,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2009,"X",237.979166666667,77.9062019487751,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2010,"N",226.291666666667,110.956183872659,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2010,"X",210.6875,6.47440875679007,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2011,"N",182.229166666667,69.7866260617558,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2011,"X",150.916666666667,54.1746428422314,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2012,"N",164.645833333333,12.6630511561524,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2012,"X",138.5,31.4821998318097,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2013,"N",207.354166666667,109.472462528635,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2013,"X",158.770833333333,40.6512575399991,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2014,"N",377.333333333333,82.9342108742426,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2014,"X",281.854166666667,126.487745412682,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2015,"N",292.875,45.1007119539149,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2015,"X",232.875,68.7304801834674,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2016,"N",378.145833333333,59.2807255951151,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2016,"X",374.020833333333,179.629331164438,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2017,"N",380.875,99.701350918631,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2017,"X",313.645833333333,47.5471120530294,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2019,"N",390.3125,110.557836249856,3
+"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv",2019,"X",285.229166666667,23.3469361391026,3
 "PIE-PlantShoot_2004-2020_Processed.csv",2004,"Control",6.48257098241667,1.45398747766927,12
 "PIE-PlantShoot_2004-2020_Processed.csv",2004,"Enriched",8.06502892091667,1.4180482031373,12
 "PIE-PlantShoot_2004-2020_Processed.csv",2005,"Control",8.46735904066667,1.36307222503423,12
@@ -1634,35 +1634,35 @@
 "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv",2022,"F",11.15153688635,11.8579202679735,20
 "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv",2023,"C",3.27601217835,1.98904012829627,20
 "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv",2023,"F",3.66369924585,1.82551686179624,20
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1994,"Inside Juncus",8.43290476190476,3.9868027193357,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1994,"Outside Juncus",21.2745210084033,0.78920247268966,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1995,"Inside Juncus",7.53881944444444,0.108324830506777,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1995,"Outside Juncus",23.8527932816537,0.215095670529321,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1996,"Inside Juncus",10.7996794871795,0.0349020654816621,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1996,"Outside Juncus",18.7266805555556,2.18792587397645,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1997,"Inside Juncus",25.6379813664596,5.14857184087922,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1997,"Outside Juncus",21.6176652735562,0.360895802572675,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1998,"Inside Juncus",18.7975609756097,0.663990514041023,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1998,"Outside Juncus",31.8278880266075,3.62061405999278,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2000,"Inside Juncus",159.29,0,1
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2000,"Outside Juncus",65.395,0,1
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2002,"Inside Juncus",15.68,16.2634559672906,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2002,"Outside Juncus",36.9547619047619,4.82516198781111,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2003,"Inside Juncus",11.0805555555555,7.3971226054126,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2003,"Outside Juncus",15.0711111111111,0.351982042190653,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2004,"Inside Juncus",42.0404166666666,3.20613999703003,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2004,"Outside Juncus",23.2360714285714,4.05727769519393,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2005,"Inside Juncus",41.2597727272727,18.1093260783607,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2005,"Outside Juncus",13.2419230769231,9.48665336205737,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2006,"Inside Juncus",40.6973214285714,8.01884343679156,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2006,"Outside Juncus",21.375,1.88797510576808,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2007,"Inside Juncus",107.966666666667,16.7772868949528,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2007,"Outside Juncus",21.3177972027972,1.59603395638864,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2008,"Inside Juncus",93.4175,17.1720881811153,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2008,"Outside Juncus",18.4246153846154,4.88665178629224,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2009,"Inside Juncus",61.95925,7.06647161778777,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2009,"Outside Juncus",11.4742857142857,1.18591908730425,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2010,"Inside Juncus",58.006,20.9190470146228,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2010,"Outside Juncus",29.319126984127,7.66223152877179,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2013,"Inside Juncus",38.9571428571429,8.72367737475292,2
-"VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2013,"Outside Juncus",16.2472159090909,7.94651421880043,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1994,"Inside Juncus",8.43290476190476,3.9868027193357,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1994,"Outside Juncus",21.2745210084033,0.78920247268966,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1995,"Inside Juncus",7.53881944444444,0.108324830506777,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1995,"Outside Juncus",23.8527932816537,0.215095670529321,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1996,"Inside Juncus",10.7996794871795,0.0349020654816621,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1996,"Outside Juncus",18.7266805555556,2.18792587397645,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1997,"Inside Juncus",25.6379813664596,5.14857184087922,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1997,"Outside Juncus",21.6176652735562,0.360895802572675,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1998,"Inside Juncus",18.7975609756097,0.663990514041023,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",1998,"Outside Juncus",31.8278880266075,3.62061405999278,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2000,"Inside Juncus",159.29,0,1
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2000,"Outside Juncus",65.395,0,1
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2002,"Inside Juncus",15.68,16.2634559672906,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2002,"Outside Juncus",36.9547619047619,4.82516198781111,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2003,"Inside Juncus",11.0805555555555,7.3971226054126,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2003,"Outside Juncus",15.0711111111111,0.351982042190653,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2004,"Inside Juncus",42.0404166666666,3.20613999703003,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2004,"Outside Juncus",23.2360714285714,4.05727769519393,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2005,"Inside Juncus",41.2597727272727,18.1093260783607,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2005,"Outside Juncus",13.2419230769231,9.48665336205737,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2006,"Inside Juncus",40.6973214285714,8.01884343679156,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2006,"Outside Juncus",21.375,1.88797510576808,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2007,"Inside Juncus",107.966666666667,16.7772868949528,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2007,"Outside Juncus",21.3177972027972,1.59603395638864,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2008,"Inside Juncus",93.4175,17.1720881811153,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2008,"Outside Juncus",18.4246153846154,4.88665178629224,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2009,"Inside Juncus",61.95925,7.06647161778777,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2009,"Outside Juncus",11.4742857142857,1.18591908730425,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2010,"Inside Juncus",58.006,20.9190470146228,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2010,"Outside Juncus",29.319126984127,7.66223152877179,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2013,"Inside Juncus",38.9571428571429,8.72367737475292,2
+"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv",2013,"Outside Juncus",16.2472159090909,7.94651421880043,2

@@ -67,11 +67,12 @@
 "LUQ","Luquillo","Forest","No trim + debris",7,0,NA,"0.00634","0.7036",5
 "LUQ","Luquillo","Forest","Trim & clear",7,0,NA,"0.007041","0.7052",5
 "LUQ","Luquillo","Forest","Trim + debris",7,0,NA,"0.003754","0.8209",5
-"MCM","McMurdo Dry Valleys","Tundra","CN",5,0,NA,"0.110707","0.318",5
-"MCM","McMurdo Dry Valleys","Tundra","CP",5,0,NA,"0.088848","0.1738",5
-"MCM","McMurdo Dry Valleys","Tundra","N",5,0,NA,"0.036053","0.4915",5
-"MCM","McMurdo Dry Valleys","Tundra","P",5,0,NA,"0.021411","0.2847",5
-"NWT","Niwot Ridge","Tundra","N",13,1,"2010","0.032551; -0.016364","0.5426; 0.5522",5
+"MCM","McMurdo Dry Valleys","Tundra","C",5,0,NA,"0.058991","0.0504",5
+"MCM","McMurdo Dry Valleys","Tundra","CN",5,0,NA,"0.172398","0.2136",5
+"MCM","McMurdo Dry Valleys","Tundra","CP",5,0,NA,"0.125545","0.1598",5
+"MCM","McMurdo Dry Valleys","Tundra","N",5,0,NA,"0.062717","0.3446",5
+"MCM","McMurdo Dry Valleys","Tundra","P",5,0,NA,"0.048422","0.1692",5
+"NWT","Niwot Ridge","Tundra","N",13,1,"2015","0.042705; 0.113116","1e-04; 0.1716",5
 "PIE","Plum Island Ecosystems","Coastal","Enriched",17,0,NA,"-4e-05","0.9971",5
 "SBC","Santa Barbara Coastal","Coastal","ANNUAL",15,0,NA,"-0.005572","0.4986",5
 "SBC","Santa Barbara Coastal","Coastal","CONTINUAL",14,0,NA,"0.031698","0.6748",5
