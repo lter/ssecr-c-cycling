@@ -13,6 +13,13 @@
 #   WS07 = shelterwood cut (measured 2002, 2008, 2014)
 #   WS08 = unlogged control (measured 2003, 2009, 2015)
 #
+# CENSUS-PERIOD ALIGNMENT: the control watershed was censused one year after
+# the treatment watersheds in each of the three census periods. Response-ratio
+# analyses require same-date treatment/control pairing, so WS08 years are
+# recoded to the nominal census year (2003->2002, 2009->2008, 2015->2014).
+# The bias from the 1-year offset is negligible: WS08 mean DBH drifted ~0.3%/yr
+# (34.8 -> 36.1 cm over 12 years).
+#
 # The STANDID column identifies the watershed in the TV010 data.
 # DBH is in centimeters; we compute plot-level mean DBH per year × watershed.
 
@@ -63,6 +70,18 @@ preprocess_and_dbh <- function(raw_path) {
       .groups = "drop"
     ) %>%
     rename(PLOT = PLOTNUMBER)
+
+  # Census-period alignment (see header): pair WS08 control censuses with the
+  # treatment censuses taken one year earlier. Explicit mapping so any future
+  # census with a different offset fails loudly instead of shifting silently.
+  census_map <- c("2003" = 2002L, "2009" = 2008L, "2015" = 2014L)
+  is_ctrl <- result$WATERSHED == "WS08"
+  unmapped <- setdiff(unique(result$Year[is_ctrl]), as.integer(names(census_map)))
+  if (length(unmapped) > 0) {
+    stop("AND: unmapped WS08 census year(s): ", paste(unmapped, collapse = ", "),
+         " — extend census_map with the paired treatment year.")
+  }
+  result$Year[is_ctrl] <- census_map[as.character(result$Year[is_ctrl])]
 
   as.data.frame(result)
 }
