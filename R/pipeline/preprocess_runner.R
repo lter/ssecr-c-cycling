@@ -50,7 +50,8 @@ preprocess_one <- function(dataset_id, registry, raw_dir = "data/raw",
   }
 
   # Get raw file path(s)
-  # Some datasets have multiple inputs (e.g., AND has experimental + control)
+  # (Supports datasets with multiple registry rows sharing one ready_filename;
+  # no current dataset uses this, but the mechanism is kept for generality.)
   entries_for_output <- registry[registry$ready_filename == ready_filename, ]
 
   raw_paths <- vapply(entries_for_output$dataset_id, function(did) {
@@ -113,7 +114,7 @@ preprocess_all <- function(registry_path = "data/dataset_registry.csv",
   registry <- read_registry(registry_path, include_only = TRUE)
 
   # Deduplicate by ready_filename: process each output file only once
-  # (e.g., AND has 2 registry rows but produces 1 output file)
+  # (in case multiple registry rows ever share one output file)
   unique_outputs <- unique(registry$ready_filename)
 
   if (!is.null(datasets)) {

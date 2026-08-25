@@ -50,7 +50,7 @@ get_raw_path <- function(dataset_id, raw_dir = "data/raw") {
   stop("No raw file found for dataset: ", dataset_id)
 }
 
-#' List datasets that share a ready_filename (e.g., AND has 2 inputs → 1 output)
+#' List datasets that share a ready_filename (none currently; kept for generality)
 #' @param ready_filename The output filename
 #' @param registry The registry data.frame
 #' @return data.frame of entries that produce this output

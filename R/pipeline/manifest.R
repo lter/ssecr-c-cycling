@@ -18,8 +18,8 @@ write_manifest <- function(manifest_dir, dataset_id, edi_package_id = NA,
 
   manifest <- list(
     dataset_id = dataset_id,
-    edi_package_id = ifelse(is.na(edi_package_id), NULL, edi_package_id),
-    download_url = ifelse(is.na(download_url), NULL, download_url),
+    edi_package_id = if (is.na(edi_package_id)) NULL else edi_package_id,
+    download_url = if (is.na(download_url)) NULL else download_url,
     download_timestamp = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
     checksum_md5 = digest(file = raw_file_path, algo = "md5"),
     file_size_bytes = file.info(raw_file_path)$size,

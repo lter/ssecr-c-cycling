@@ -66,7 +66,7 @@ download_from_edi <- function(package_id, entity_id = NULL, dataset_id,
   if (is.null(entity_id) || is.na(entity_id) || entity_id == "") {
     cat("  Discovering entity IDs for", package_id, "...\n")
     entities <- discover_entity_ids(package_id)
-    if (length(entities) == 0) stop("No data entities found in ", package_id)
+    if (NROW(entities) == 0) stop("No data entities found in ", package_id)
     # If multiple entities, use the first one and warn
     if (nrow(entities) > 1) {
       cat("  Found", nrow(entities), "entities:\n")
