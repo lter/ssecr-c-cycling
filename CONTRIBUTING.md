@@ -29,7 +29,7 @@ For folder/file names and in code, please follow the following style tips:
     - For files that have an inherent order, use zero-padded numbers as the prefix (e.g., `01_`, `02_`, etc.)
 - Use underscores (`_`) for separating major pieces of information and hyphens (`-`) in lieu of spaces (e.g., `01_find-area.R`, `harmonize_spp-rich-info.py`, etc.)
 
-Example: 00_Data.collection_v1.R 01_Stats.detrend_v1.R
+Example: `00_data-collection.R`, `01_stats-detrend.R`
 
 Raw data should be organized by LTER site following the data template; and named as:
 LTER_Description_YYYYstart-YYYYend_raw.csv

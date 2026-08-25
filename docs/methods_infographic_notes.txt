@@ -5,7 +5,7 @@ This infographic should illustrate the analytical pipeline. Best created in
 PowerPoint, Illustrator, or similar tool.
 
 Suggested panels:
-1. Map of LTER sites across the US (all 18 sites highlighted)
+1. Map of LTER sites across the US (all 18 analyzed sites highlighted)
 2. Data flow: Raw -> Preprocessing -> Harmonization -> Analysis-ready
 3. Analysis steps:
    a. Calculate treatment/control relative response
@@ -15,4 +15,4 @@ Suggested panels:
    e. Moving window analysis
 4. Key findings summary
 
-Style reference: figures/hypothesis.png (existing conceptual figure)
+Style reference: figures/archive/hypothesis.png (existing conceptual figure)

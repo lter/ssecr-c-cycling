@@ -69,14 +69,19 @@ ssecr-c-cycling/
     03_trend-classification.R    # Classify trends (stable/variable/inc/dec)
     04_detection-time.R      # Timepoints needed to detect significant trends
     05_lrr-analysis.R        # Log-response ratio analysis
-    06_summary-stats.R       # Summary tables, manuscript outputs
+    06_summary-stats.R       # Summary tables, verification outputs
     07_sizer-analysis.R      # SiZer slope-change detection (uses HERON)
     08_manuscript-results.R  # All numeric outputs for manuscript text & tables
-  figures/                   # Generated figures
+    09_conceptual-figure.R   # Conceptual trajectory figure (Fig1 source)
+    10_site-map.R            # Site map + experiment timeline (Fig2 source)
+    99_organize-figures.R    # Copy main figures to FigN_* names; archive the rest
+  figures/                   # Main numbered figures (FigN_*) and tables
     supplemental/            # Supplemental tables and panel figures
-  legacy/
-    preprocessing_scripts_original/  # Archived original preprocessing scripts
-  docs/                      # Conceptual figures and methods notes
+    archive/                 # Non-main figures moved here by 99_organize-figures.R
+  legacy/                    # Archived original scripts/data (11 subfolders:
+                             #   analysis, harmonizing, preprocessing, plots,
+                             #   ready data, sizer, and defunct drafts)
+  docs/                      # Figure captions and methods-infographic notes
 ```
 
 ## How to Reproduce the Analysis
@@ -105,7 +110,7 @@ ssecr-c-cycling/
    # Step 2: Validate all data files, manifests, and registry
    source("analysis/00_validate-data.R")
 
-   # Step 3-9: Run analysis
+   # Step 3-11: Run analysis
    source("analysis/01_harmonize.R")
    source("analysis/02_relative-response.R")
    source("analysis/03_trend-classification.R")
@@ -114,7 +119,15 @@ ssecr-c-cycling/
    source("analysis/06_summary-stats.R")
    source("analysis/07_sizer-analysis.R")
    source("analysis/08_manuscript-results.R")
+   source("analysis/09_conceptual-figure.R")
+   source("analysis/10_site-map.R")
+
+   # Step 12: Rename main figures to FigN_* and archive the rest
+   source("analysis/99_organize-figures.R")
    ```
+
+   Note: Fig3 (methodology overview) is created manually outside the pipeline,
+   so the numbered figure sequence in `figures/` intentionally skips it.
 
 ### If `data/ready/` files already exist
 
@@ -144,12 +157,12 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 
 | Site | Dataset | EDI Package | Response | Type | Years |
 |------|---------|-------------|----------|------|-------|
-| AND | Tree DBH (WS06/07/08) | knb-lter-and.2742.28 | DBH (cm) | Stock | 2002-2015 |
+| AND | Tree DBH (WS06/07/08)*** | knb-lter-and.2742.28 | DBH (cm) | Stock | 2002-2015 |
 | ARC | Tussock tundra biomass | knb-lter-arc.10004.8 | Biomass (g/m2) | Stock | 1982-2015 |
 | BNZ | CiPEHR NEE | knb-lter-bnz.481.23 | NEE | Flux | 2009-2021 |
 | CAP | Desert fertilization biomass | knb-lter-cap.632.17 | Biomass (g/m2) | Stock | 2006-2024 |
 | CDR | BioCON biomass | knb-lter-cdr.302.13 | Biomass (g/m2) | Stock | 1998-2021 |
-| GCE | Vegetation recovery cover* | DOI: 10.6073/pasta/6df40a... | Vegetation cover (%) | Proxy | multi-year |
+| GCE | Vegetation recovery cover* | knb-lter-gce.786.13 | Vegetation cover (%) | Proxy | multi-year |
 | HBR | MELNHE litterfall | knb-lter-hbr.404.1 | Mass (g/m2) | Flux | 2009-2022 |
 | HFR | Soil warming respiration | knb-lter-hfr.5.37 | soil_res | Flux | 1991-2021 |
 | KBS | MCSE NPP | knb-lter-kbs.19.85 | Biomass (g/m2) | Stock | 1990-2022 |
@@ -157,13 +170,17 @@ Every dataset is traceable from its EDI source through preprocessing to the harm
 | LUQ | CTE soil GHG fluxes | knb-lter-luq.164.678951 | CO2 flux | Flux | 2003-2010 |
 | MCM | Stoichiometry CO2 flux | knb-lter-mcm.4014.5 | CO2 flux (µmol/m²/s) | Flux | 2003-2010 |
 | NTL | Cascade bloom chlorophyll* | knb-lter-ntl.413.2 | Chlorophyll (µg/L) | Proxy | 2011-2019 |
-| NWT | 3-factor ANPP | knb-lter-nwt.13.7 | mass (g/m2) | Stock | 2006-2019 |
+| NWT | 3-factor ANPP (N contrast)** | knb-lter-nwt.13.7 | mass (g/m2) | Stock | 2006-2019 |
 | PIE | TIDE shoot mass | knb-lter-pie.202.5 | shoot_mass | Stock | 2004-2020 |
-| SBC | Kelp removal biomass | knb-lter-sbc.119 | DRY_GM2 | Stock | 2008-2024 |
+| SBC | Kelp removal biomass | knb-lter-sbc.119.13 | DRY_GM2 | Stock | 2008-2024 |
 | SEV | NFert biomass | knb-lter-sev.186.208431 | Biomass (g/m2) | Stock | 2004-2023 |
 | VCR | 1st inundation experiment | knb-lter-vcr.168.24 | totalMass | Stock | 1994-2014 |
 
 *GCE and NTL are carbon proxies: vegetation percent cover (GCE) and chlorophyll (NTL) are indirect measurements of plant/algal carbon, not direct carbon stocks or fluxes.
+
+**NWT is a snow x N x temperature factorial; the analysis uses only the N contrast, so preprocessing keeps just the ambient-snow, ambient-temperature plots (N vs. control).
+
+***AND's control watershed (WS08) was censused one year after the treatment watersheds in each census period; preprocessing aligns the control census years to the treatment census periods (2003/2009/2015 → 2002/2008/2014) to enable paired comparison. The control's DBH drift over the 1-year offset is negligible (~0.3%/yr).
 
 ## Excluded Datasets
 
