@@ -6,7 +6,6 @@
 
 library(dplyr)
 library(ggplot2)
-library(tidyr)
 library(patchwork)
 
 source("R/utils_labels.R")
@@ -212,6 +211,10 @@ cat("\n--- TREND-COLORED LRR FACETED FIGURE ---\n")
 
 trend_analysis <- read.csv("data/harmonized/trend_analysis_results.csv",
                            stringsAsFactors = FALSE)
+# Filter insufficient_data while trend_class is still character, THEN convert
+# to factor (as_trend_factor has only the 4 analyzable levels)
+trend_analysis <- trend_analysis %>%
+  filter(trend_class != "insufficient_data")
 trend_analysis$trend_class <- as_trend_factor(trend_analysis$trend_class)
 
 # Read the relative response summary and join trend classification
@@ -260,7 +263,7 @@ cat("Saved: figures/all_experiments_lrr_trend_colored.png\n")
 cat("--- COMBINED FIGURE ---\n")
 
 # Rebuild compact summary panels (mirrors 03_trend-classification.R panels)
-trend_clean <- trend_analysis %>% filter(trend_class != "insufficient_data")
+trend_clean <- trend_analysis  # insufficient_data already filtered above
 
 overall_proportions <- trend_clean %>%
   count(trend_class, .drop = FALSE) %>%

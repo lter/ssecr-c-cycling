@@ -142,6 +142,7 @@ for (i in seq_len(nrow(combos))) {
     # Slope rows have term == "data[[x]]"; intercept rows have term == "(Intercept)"
     seg_slopes <- NA_character_
     seg_pvals <- NA_character_
+    model_pvals <- NA_character_
     if (is.list(seg_lm) && length(seg_lm) >= 2) {
       coefs <- seg_lm[[2]]
       if (!is.null(coefs) && "estimate" %in% names(coefs)) {
@@ -151,10 +152,13 @@ for (i in seq_len(nrow(combos))) {
           seg_pvals <- paste(round(slope_rows$p.value, 4), collapse = "; ")
         }
       }
-      # Also get model-level p-values from Stat
+      # Model-level (F-test) p-values from Stat. NOTE: each segment is a
+      # single-predictor regression, so the slope t-test and model F-test are
+      # mathematically identical (t^2 = F); this column is kept only for
+      # provenance and is intentionally omitted from Table S2.
       stats <- seg_lm[[1]]
       if (!is.null(stats) && "p.value" %in% names(stats)) {
-        seg_pvals <- paste(round(stats$p.value, 4), collapse = "; ")
+        model_pvals <- paste(round(stats$p.value, 4), collapse = "; ")
       }
     }
 
@@ -168,6 +172,7 @@ for (i in seq_len(nrow(combos))) {
       change_years = change_years,
       segment_slopes = seg_slopes,
       segment_p_values = seg_pvals,
+      model_p_values = model_pvals,
       bandwidth = BANDWIDTH_SLICE,
       stringsAsFactors = FALSE
     )
@@ -256,6 +261,10 @@ if (length(sizer_results) > 0) {
               100 * mean(sizer_summary$n_slope_changes > 0)))
 } else {
   cat("\nWARNING: No SiZer results produced.\n")
+  # Typed empty frame so the sections below skip gracefully instead of erroring
+  sizer_summary <- data.frame(site_abbr = character(), treatment = character(),
+                              n_timepoints = integer(), n_slope_changes = integer(),
+                              stringsAsFactors = FALSE)
 }
 
 # --- All-Sites Summary Figure ---

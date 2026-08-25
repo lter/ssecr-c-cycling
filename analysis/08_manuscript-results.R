@@ -5,7 +5,6 @@
 
 library(dplyr)
 library(tidyr)
-library(stringr)
 
 source("R/utils_labels.R")
 source("R/utils_dates.R")
@@ -22,14 +21,12 @@ detection_data <- read.csv("data/harmonized/detection_time_analysis.csv", string
 early_full     <- read.csv("data/harmonized/early_vs_full_lrr.csv", stringsAsFactors = FALSE)
 sizer_results  <- read.csv("data/harmonized/sizer_analysis_results.csv", stringsAsFactors = FALSE)
 sign_flips     <- read.csv("data/harmonized/sign_flip_analysis.csv", stringsAsFactors = FALSE)
-lrr_results    <- read.csv("data/harmonized/lrr_results.csv", stringsAsFactors = FALSE)
-rel_response   <- read.csv("data/harmonized/relative_response_summary.csv", stringsAsFactors = FALSE)
 metadata       <- get_site_metadata()
 registry       <- read.csv("data/dataset_registry.csv", stringsAsFactors = FALSE)
 
 # Filter to analyzable cases (>= 3 timepoints)
 trend_clean <- trend_results %>%
-  filter(!is.na(trend_class))
+  filter(!is.na(trend_class), trend_class != "insufficient_data")
 
 # Included datasets only
 registry_included <- registry %>% filter(include == TRUE)
@@ -85,8 +82,12 @@ freq_by_source <- harmonized %>%
     year_range = paste0(year_min, "-", year_max)
   )
 
-n_annual <- sum(freq_by_source$temporal_freq == "Annual")
-n_subannual <- sum(freq_by_source$temporal_freq == "Sub-annual")
+# Count only the analyzable sources so this line matches the site/treatment
+# numbers reported above (freq_by_source spans everything in harmonized)
+freq_analyzable <- freq_by_source %>%
+  filter(source %in% unique(trend_clean$source))
+n_annual <- sum(freq_analyzable$temporal_freq == "Annual")
+n_subannual <- sum(freq_analyzable$temporal_freq == "Sub-annual")
 cat(sprintf("Sampling frequency: %d annual, %d sub-annual datasets\n", n_annual, n_subannual))
 
 # Ecosystem type counts
@@ -95,7 +96,7 @@ eco_counts <- trend_clean %>%
   count(site_type, name = "n_sites") %>%
   arrange(desc(n_sites))
 cat("\nSites by ecosystem type:\n")
-for (i in 1:nrow(eco_counts)) {
+for (i in seq_len(nrow(eco_counts))) {
   cat(sprintf("  %s: %d sites\n", eco_counts$site_type[i], eco_counts$n_sites[i]))
 }
 
@@ -105,7 +106,7 @@ exp_counts <- trend_clean %>%
   count(experiment_type, name = "n_sites") %>%
   arrange(desc(n_sites))
 cat("\nSites by experiment type:\n")
-for (i in 1:nrow(exp_counts)) {
+for (i in seq_len(nrow(exp_counts))) {
   cat(sprintf("  %s: %d sites\n", exp_counts$experiment_type[i], exp_counts$n_sites[i]))
 }
 
@@ -115,7 +116,7 @@ sf_counts <- trend_clean %>%
   count(stock_or_flux, name = "n_sites") %>%
   arrange(desc(n_sites))
 cat("\nSites by response type:\n")
-for (i in 1:nrow(sf_counts)) {
+for (i in seq_len(nrow(sf_counts))) {
   cat(sprintf("  %s: %d sites\n", sf_counts$stock_or_flux[i], sf_counts$n_sites[i]))
 }
 
@@ -137,7 +138,7 @@ table1 <- freq_by_source %>%
     Response = stock_or_flux,
     `EDI Package` = edi_package_id,
     `Year Range` = year_range,
-    `Year Span` = n_years,
+    `N Years Sampled` = n_years,
     `Sampling Freq` = temporal_freq
   ) %>%
   arrange(Ecosystem, Site)
@@ -166,7 +167,7 @@ cat(sprintf("Total analyzable treatment combinations: %d\n", nrow(trend_clean)))
 cat(sprintf("Non-directional: %d (%.1f%%)\n", non_dir_n, non_dir_pct))
 cat(sprintf("Directional: %d (%.1f%%)\n", dir_n, dir_pct))
 cat("\nBreakdown:\n")
-for (i in 1:nrow(trend_props)) {
+for (i in seq_len(nrow(trend_props))) {
   cat(sprintf("  %s: %d (%.1f%%)\n",
               trend_props$trend_class[i], trend_props$n[i], trend_props$pct[i]))
 }
@@ -187,7 +188,7 @@ trend_class_stats <- trend_clean %>%
   )
 
 cat("\nTrend class statistics:\n")
-for (i in 1:nrow(trend_class_stats)) {
+for (i in seq_len(nrow(trend_class_stats))) {
   s <- trend_class_stats[i, ]
   cat(sprintf("  %s (n=%d):\n", s$trend_class, s$n))
   cat(sprintf("    Mean ratio: %.2f (median %.2f, SD %.2f)\n",
@@ -278,7 +279,7 @@ class_counts <- early_full_classified %>%
 
 cat(sprintf("Total treatment combinations with early vs full LRR: %d\n", nrow(early_full_classified)))
 cat("\nClassification:\n")
-for (i in 1:nrow(class_counts)) {
+for (i in seq_len(nrow(class_counts))) {
   cat(sprintf("  %s: %d (%.1f%%)\n",
               class_counts$classification[i], class_counts$n[i], class_counts$pct[i]))
 }
@@ -299,7 +300,7 @@ wrong_dir <- early_full_classified %>%
   filter(classification == "wrong_direction")
 cat(sprintf("\nWrong direction cases: %d\n", nrow(wrong_dir)))
 if (nrow(wrong_dir) > 0) {
-  for (i in 1:nrow(wrong_dir)) {
+  for (i in seq_len(nrow(wrong_dir))) {
     cat(sprintf("  %s / %s: early=%.3f, full=%.3f\n",
                 wrong_dir$site_abbr[i], wrong_dir$Treatment[i],
                 wrong_dir$early_lrr[i], wrong_dir$full_lrr[i]))
@@ -313,7 +314,7 @@ for (site in illustrative_sites) {
   site_data <- early_full_classified %>% filter(site_abbr == site)
   if (nrow(site_data) > 0) {
     cat(sprintf("\n  %s (%d treatments):\n", site, nrow(site_data)))
-    for (j in 1:nrow(site_data)) {
+    for (j in seq_len(nrow(site_data))) {
       cat(sprintf("    %s: early=%.3f, full=%.3f, change=%.3f (%s)\n",
                   site_data$Treatment[j],
                   site_data$early_lrr[j], site_data$full_lrr[j],
@@ -357,7 +358,7 @@ change_dist <- sizer_results %>%
   count(n_slope_changes) %>%
   mutate(pct = round(n / sum(n) * 100, 1))
 cat("\nDistribution of slope changes:\n")
-for (i in 1:nrow(change_dist)) {
+for (i in seq_len(nrow(change_dist))) {
   cat(sprintf("  %d changes: %d (%.1f%%)\n",
               change_dist$n_slope_changes[i], change_dist$n[i], change_dist$pct[i]))
 }
@@ -384,7 +385,7 @@ sizer_by_site <- sizer_results %>%
   arrange(desc(pct_with_changes))
 
 cat("\nSiZer results by site:\n")
-for (i in 1:nrow(sizer_by_site)) {
+for (i in seq_len(nrow(sizer_by_site))) {
   s <- sizer_by_site[i, ]
   cat(sprintf("  %s: %d/%d with changes (%.0f%%), mean=%.1f\n",
               s$site_abbr, s$n_with_changes, s$n_treatments,
@@ -413,7 +414,7 @@ if (nrow(detected_directional) > 0) {
   cat(sprintf("Range: %.1f to %.1f years\n",
               min(detected_directional$time_to_detect, na.rm = TRUE),
               max(detected_directional$time_to_detect, na.rm = TRUE)))
-  cat(sprintf("Median timepoints for detection: %d\n",
+  cat(sprintf("Median timepoints for detection: %g\n",
               median(detected_directional$min_n_for_detection, na.rm = TRUE)))
 }
 
@@ -434,13 +435,13 @@ if (nrow(detected_annual) > 0) {
               max(detected_annual$time_to_detect, na.rm = TRUE)))
 }
 
-# Case-by-case for specific sites
-cat("\nDetection times for annually-sampled directional cases:\n")
+# Case-by-case listing (all detected directional cases, not just annual)
+cat("\nDetection times for all directional cases:\n")
 detection_detail <- detected_directional %>%
   arrange(site_abbr, Treatment) %>%
   select(site_abbr, Treatment, trend_class, time_to_detect, min_n_for_detection)
 
-for (i in 1:nrow(detection_detail)) {
+for (i in seq_len(nrow(detection_detail))) {
   d <- detection_detail[i, ]
   cat(sprintf("  %s / %s (%s): %.1f years (%d timepoints)\n",
               d$site_abbr, d$Treatment, d$trend_class,
@@ -459,7 +460,7 @@ detection_by_trend <- detected_directional %>%
     max_years = round(max(time_to_detect, na.rm = TRUE), 1),
     .groups = "drop"
   )
-for (i in 1:nrow(detection_by_trend)) {
+for (i in seq_len(nrow(detection_by_trend))) {
   d <- detection_by_trend[i, ]
   cat(sprintf("  %s (n=%d): median=%.1f, mean=%.1f, range=%.1f-%.1f years\n",
               d$trend_class, d$n, d$median_years, d$mean_years,
@@ -489,7 +490,7 @@ eco_trends <- trend_clean %>%
   ) %>%
   arrange(desc(pct_directional))
 
-for (i in 1:nrow(eco_trends)) {
+for (i in seq_len(nrow(eco_trends))) {
   e <- eco_trends[i, ]
   cat(sprintf("\n  %s (n=%d):\n", e$site_type, e$n))
   cat(sprintf("    Stable: %d, Variable: %d, Increasing: %d, Decreasing: %d\n",
@@ -514,7 +515,7 @@ sf_trends <- trend_clean %>%
     .groups = "drop"
   )
 
-for (i in 1:nrow(sf_trends)) {
+for (i in seq_len(nrow(sf_trends))) {
   s <- sf_trends[i, ]
   cat(sprintf("\n  %s (n=%d):\n", s$stock_or_flux, s$n))
   cat(sprintf("    Stable: %d, Variable: %d, Increasing: %d, Decreasing: %d\n",
@@ -536,7 +537,7 @@ exp_trends <- trend_clean %>%
   ) %>%
   arrange(desc(pct_directional))
 
-for (i in 1:nrow(exp_trends)) {
+for (i in seq_len(nrow(exp_trends))) {
   e <- exp_trends[i, ]
   cat(sprintf("  %s (n=%d): %.1f%% directional, mean ratio=%.2f, mean CV=%.3f\n",
               e$experiment_type, e$n, e$pct_directional, e$mean_ratio, e$mean_cv))
@@ -555,7 +556,7 @@ detect_eco <- detected_directional %>%
     .groups = "drop"
   )
 
-for (i in 1:nrow(detect_eco)) {
+for (i in seq_len(nrow(detect_eco))) {
   d <- detect_eco[i, ]
   cat(sprintf("  %s (n=%d): median=%.1f, mean=%.1f years\n",
               d$site_type, d$n, d$median_years, d$mean_years))
@@ -573,7 +574,7 @@ sizer_eco <- sizer_results %>%
     .groups = "drop"
   )
 
-for (i in 1:nrow(sizer_eco)) {
+for (i in seq_len(nrow(sizer_eco))) {
   s <- sizer_eco[i, ]
   cat(sprintf("  %s (n=%d): %.1f%% with changes, mean=%.1f changes\n",
               s$site_type, s$n, s$pct_with_changes, s$mean_changes))
@@ -654,6 +655,8 @@ table_s2 <- sizer_results %>%
     `N Slope Changes` = n_slope_changes,
     `Change Years` = change_years,
     `Segment Slopes` = segment_slopes,
+    # model_p_values omitted: identical to the slope p-values by construction
+    # (single-predictor segments, t^2 = F)
     `Segment P-values` = segment_p_values,
     Bandwidth = bandwidth
   ) %>%
@@ -677,12 +680,12 @@ cat("ABSTRACT / INTRO:\n")
 cat(sprintf("  %d LTER sites, %d ecosystem types, %d experiment types\n",
             n_sites, n_ecosystems, n_experiment_types))
 cat(sprintf("  %d site-treatment combinations analyzed\n", nrow(trend_clean)))
-cat(sprintf("  Experiment durations: %d-%d years\n",
+cat(sprintf("  Experiment durations: %.0f-%.0f years\n",
             min(year_spans, na.rm = TRUE), max(year_spans, na.rm = TRUE)))
 
 cat("\nRESULTS 3.2 (Trends):\n")
 cat(sprintf("  %.0f%% non-directional, %.0f%% directional\n", non_dir_pct, dir_pct))
-for (i in 1:nrow(trend_props)) {
+for (i in seq_len(nrow(trend_props))) {
   cat(sprintf("  %s: %d (%.0f%%)\n",
               trend_props$trend_class[i], trend_props$n[i], trend_props$pct[i]))
 }
@@ -691,7 +694,7 @@ cat("\nRESULTS 3.3 (Early vs Full):\n")
 cat(sprintf("  Correlation: r=%.2f, p=%.2e\n", cor_test$estimate, cor_test$p.value))
 cat(sprintf("  Mean |LRR change|: %.3f\n",
             mean(abs(early_full_classified$lrr_change), na.rm = TRUE)))
-for (i in 1:nrow(class_counts)) {
+for (i in seq_len(nrow(class_counts))) {
   cat(sprintf("  %s: %d (%.0f%%)\n",
               class_counts$classification[i], class_counts$n[i], class_counts$pct[i]))
 }
@@ -702,7 +705,7 @@ cat(sprintf("  %d/%d treatment combinations\n", n_with_changes, n_sizer_total))
 
 cat("\nRESULTS 3.5 (Detection):\n")
 if (nrow(detected_directional) > 0) {
-  cat(sprintf("  Median: %.0f years, Range: %.0f-%.0f years\n",
+  cat(sprintf("  Median: %.1f years, Range: %.0f-%.0f years\n",
               median(detected_directional$time_to_detect, na.rm = TRUE),
               min(detected_directional$time_to_detect, na.rm = TRUE),
               max(detected_directional$time_to_detect, na.rm = TRUE)))

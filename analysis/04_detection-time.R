@@ -3,7 +3,6 @@
 
 library(dplyr)
 library(ggplot2)
-library(tidyr)
 library(patchwork)
 # library(ggdist)  # disabled due to ggplot2 4.0 compatibility
 
@@ -164,25 +163,25 @@ if (nrow(significant_trends) > 0) {
 
   cor_density <- cor.test(significant_trends$meas_density_per_yr,
                           significant_trends$time_to_detect,
-                          method = "spearman", use = "complete.obs")
+                          method = "spearman")
   cat(sprintf("Meas density vs years to detect: rho = %.3f, p = %.4f\n",
               cor_density$estimate, cor_density$p.value))
 
   cor_dur <- cor.test(significant_trends$total_duration_yr,
                       significant_trends$min_n_for_detection,
-                      method = "spearman", use = "complete.obs")
+                      method = "spearman")
   cat(sprintf("Total duration vs N to detect: rho = %.3f, p = %.4f\n",
               cor_dur$estimate, cor_dur$p.value))
 
   cor_slope <- cor.test(abs(significant_trends$final_slope),
                         significant_trends$time_to_detect,
-                        method = "spearman", use = "complete.obs")
+                        method = "spearman")
   cat(sprintf("|Slope| vs years to detect: rho = %.3f, p = %.4f\n",
               cor_slope$estimate, cor_slope$p.value))
 
   cor_cv <- cor.test(significant_trends$cv,
                      significant_trends$time_to_detect,
-                     method = "spearman", use = "complete.obs")
+                     method = "spearman")
   cat(sprintf("CV vs years to detect: rho = %.3f, p = %.4f\n",
               cor_cv$estimate, cor_cv$p.value))
 

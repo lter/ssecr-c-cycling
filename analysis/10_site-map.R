@@ -15,6 +15,7 @@ source("R/utils_labels.R")
 
 site_coords <- tibble::tribble(
   ~site_abbr, ~lat,      ~lon,       ~full_name,
+  "AND",       44.2115,  -122.2553,  "Andrews Forest",
   "ARC",       68.6283,  -149.5942,  "Arctic LTER",
   "BNZ",       64.6989,  -148.3203,  "Bonanza Creek",
   "CAP",       33.4255,  -111.9288,  "Central Arizona-Phoenix",
@@ -55,6 +56,7 @@ date_ranges <- summary_data %>%
 # Experiment short descriptions
 experiments <- tibble::tribble(
   ~site_abbr, ~experiment,
+  "AND",      "Forest harvest",
   "ARC",      "Fertilization & warming",
   "BNZ",      "Permafrost warming",
   "CAP",      "Desert fertilization",
@@ -78,9 +80,7 @@ experiments <- tibble::tribble(
 site_info <- site_coords %>%
   left_join(date_ranges, by = "site_abbr") %>%
   left_join(experiments, by = "site_abbr") %>%
-  left_join(metadata %>% distinct(site_abbr, site_type), by = "site_abbr") %>%
-  mutate(duration = year_end - year_start,
-         label = paste0(site_abbr, ": ", experiment, " (", year_start, "\u2013", year_end, ")"))
+  left_join(metadata %>% distinct(site_abbr, site_type), by = "site_abbr")
 
 # Ecosystem type colors (matching 07_sizer-analysis.R)
 ecosystem_colors <- c(
@@ -171,15 +171,13 @@ site_info_ordered <- site_info %>%
 
 p_timeline <- ggplot(site_info_ordered,
                      aes(y = site_label,
-                         xmin = year_start, xmax = year_end,
-                         fill = site_type)) +
+                         xmin = year_start, xmax = year_end)) +
   geom_linerange(aes(x = NULL, xmin = year_start, xmax = year_end,
                      color = site_type),
                  linewidth = 3, alpha = 0.7) +
   geom_point(aes(x = year_start, color = site_type), size = 2) +
   geom_point(aes(x = year_end, color = site_type), size = 2) +
   scale_color_manual(values = ecosystem_colors, name = "Ecosystem") +
-  scale_fill_manual(values = ecosystem_colors, name = "Ecosystem") +
   scale_x_continuous(breaks = seq(1980, 2025, 5)) +
   labs(x = "Year", y = NULL) +
   theme_ccycling(base_size = 10) +

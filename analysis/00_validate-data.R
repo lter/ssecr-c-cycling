@@ -24,7 +24,7 @@ n_issues <- 0
 for (src in sources) {
   filepath <- file.path("data", "ready", src)
   src_key <- key[key$source == src, ]
-  site <- src_key$tidy_sit..name[1]
+  site <- src_key$tidy_site_name[1]
 
   # Check 1: File exists
   if (!file.exists(filepath)) {
@@ -100,13 +100,15 @@ registry_path <- "data/dataset_registry.csv"
 manifest_dir <- "data/manifests"
 
 if (file.exists(registry_path)) {
-  registry <- read.csv(registry_path, stringsAsFactors = FALSE)
-  registry <- registry[registry$include == TRUE, ]
+  registry_full <- read.csv(registry_path, stringsAsFactors = FALSE)
+  registry <- registry_full[registry_full$include == TRUE, ]
   cat("  Registry: ", nrow(registry), " included datasets\n")
 
   # Check that every ready/ file is traceable to a registry entry
+  # (compare against the FULL registry — excluded datasets legitimately
+  # have ready files too and should not be flagged as orphans)
   ready_files <- list.files("data/ready", pattern = "\\.(csv|CSV)$")
-  registry_outputs <- unique(registry$ready_filename)
+  registry_outputs <- unique(registry_full$ready_filename)
   orphaned <- setdiff(ready_files, registry_outputs)
   if (length(orphaned) > 0) {
     cat("  WARNING: Ready files not in registry:", paste(head(orphaned, 5), collapse = ", "), "\n")
@@ -128,15 +130,22 @@ if (file.exists(registry_path)) {
       }
     }
 
-    # Verify checksums for existing manifests
+    # Verify checksums for existing manifests. A missing raw file is NOT a
+    # failure — raw/ is gitignored and re-downloadable; only a present file
+    # whose checksum mismatches the manifest indicates real corruption.
     source("R/pipeline/manifest.R")
     integrity <- check_all_manifests(manifest_dir, "data/raw")
     if (nrow(integrity) > 0) {
-      bad <- integrity[!integrity$checksum_ok, ]
+      no_raw <- integrity[!integrity$has_raw, ]
+      if (nrow(no_raw) > 0) {
+        cat("    Raw files not cached locally (", nrow(no_raw),
+            "datasets ) — run 00_download-and-preprocess.R to fetch\n")
+      }
+      bad <- integrity[integrity$has_raw & !integrity$checksum_ok, ]
       if (nrow(bad) > 0) {
         cat("    CHECKSUM FAILURES:", paste(bad$dataset_id, collapse = ", "), "\n")
         n_issues <- n_issues + nrow(bad)
-      } else {
+      } else if (nrow(no_raw) == 0) {
         cat("    All manifest checksums OK\n")
       }
     }

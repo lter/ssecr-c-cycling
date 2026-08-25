@@ -6,9 +6,11 @@ library(dplyr)
 library(tidyr)
 
 source("R/utils_labels.R")
-source("R/utils_plots.R")
 
 cat("=== SUMMARY STATISTICS & VERIFICATION ===\n")
+
+# Outputs go to figures/supplemental/ — make sure it exists on a fresh clone
+if (!dir.exists("figures/supplemental")) dir.create("figures/supplemental", recursive = TRUE)
 
 # Read all analysis results
 trend_analysis <- read.csv("data/harmonized/trend_analysis_results.csv",
@@ -29,19 +31,22 @@ overall_props <- trend_clean %>%
   count(trend_class) %>%
   mutate(pct = round(n / sum(n) * 100, 1))
 
-non_dir <- sum(overall_props$pct[overall_props$trend_class %in% c("stable", "variable")])
-dir_pct <- sum(overall_props$pct[overall_props$trend_class %in% c("increasing", "decreasing")])
+# Percentage for one class; 0 if the class is absent (a bare subset would
+# return numeric(0) and crash sprintf)
+pct_of <- function(cls) {
+  v <- overall_props$pct[overall_props$trend_class %in% cls]
+  if (length(v) == 0) 0 else sum(v)
+}
+
+non_dir <- pct_of(c("stable", "variable"))
+dir_pct <- pct_of(c("increasing", "decreasing"))
 
 cat(sprintf("Non-directional responses: %.1f%%\n", non_dir))
-cat(sprintf("  - Stable (CV < 0.3): %.1f%%\n",
-            overall_props$pct[overall_props$trend_class == "stable"]))
-cat(sprintf("  - Variable (CV >= 0.3): %.1f%%\n",
-            overall_props$pct[overall_props$trend_class == "variable"]))
+cat(sprintf("  - Stable (CV < 0.3): %.1f%%\n", pct_of("stable")))
+cat(sprintf("  - Variable (CV >= 0.3): %.1f%%\n", pct_of("variable")))
 cat(sprintf("Directional responses: %.1f%%\n", dir_pct))
-cat(sprintf("  - Increasing: %.1f%%\n",
-            overall_props$pct[overall_props$trend_class == "increasing"]))
-cat(sprintf("  - Decreasing: %.1f%%\n",
-            overall_props$pct[overall_props$trend_class == "decreasing"]))
+cat(sprintf("  - Increasing: %.1f%%\n", pct_of("increasing")))
+cat(sprintf("  - Decreasing: %.1f%%\n", pct_of("decreasing")))
 
 # 2. Detection timepoints
 sig_trends <- detection_data %>%
@@ -56,20 +61,23 @@ if (nrow(sig_trends) > 0) {
 }
 
 # 3. Mean ratios by trend type
+# NOTE: medians computed BEFORE means — summarise() evaluates sequentially, so
+# once mean_ratio is reassigned to the group mean, a later median(mean_ratio)
+# would just repeat the mean (this bug shipped in an earlier Table version)
 trend_stats <- trend_clean %>%
   group_by(trend_class) %>%
   summarise(
     n = n(),
-    mean_ratio = mean(mean_ratio, na.rm = TRUE),
     median_ratio = median(mean_ratio, na.rm = TRUE),
-    mean_cv = mean(cv, na.rm = TRUE),
     median_cv = median(cv, na.rm = TRUE),
+    mean_ratio = mean(mean_ratio, na.rm = TRUE),
+    mean_cv = mean(cv, na.rm = TRUE),
     mean_timepoints = mean(n_timepoints, na.rm = TRUE),
     .groups = "drop"
   )
 
 cat("\nMean treatment/control ratios by trend type:\n")
-for (i in 1:nrow(trend_stats)) {
+for (i in seq_len(nrow(trend_stats))) {
   cat(sprintf("  %s: %.2fx control\n",
               trend_stats$trend_class[i], trend_stats$mean_ratio[i]))
 }
@@ -130,7 +138,9 @@ manuscript_table <- trend_stats %>%
          `Mean (Median) Ratio`, `Mean (Median) CV`, `Mean Timepoints`)
 
 print(as.data.frame(manuscript_table))
-write.csv(manuscript_table, "figures/Table_trend_summary.csv", row.names = FALSE)
+# Diagnostic/verification table — lives in supplemental/ so it does not sit
+# beside (and disagree with) the numbered manuscript tables from 08
+write.csv(manuscript_table, "figures/supplemental/Table_trend_summary.csv", row.names = FALSE)
 
 # --- Supplemental: per-experiment statistics ---
 
@@ -162,7 +172,7 @@ cat("  Total rows:", nrow(harmonized), "\n")
 cat("  Sites:", length(unique(harmonized$site_abbr)), "\n\n")
 
 cat("TREND DISTRIBUTION:\n")
-for (i in 1:nrow(overall_props)) {
+for (i in seq_len(nrow(overall_props))) {
   cat(sprintf("  %s: %d (%.1f%%)\n", overall_props$trend_class[i],
               overall_props$n[i], overall_props$pct[i]))
 }
@@ -176,7 +186,7 @@ if (nrow(sig_trends) > 0) {
 }
 
 cat("\nTREND TYPE CHARACTERISTICS:\n")
-for (i in 1:nrow(trend_stats)) {
+for (i in seq_len(nrow(trend_stats))) {
   cat(sprintf("  %s (n=%d): mean ratio=%.2fx, mean CV=%.3f, mean timepoints=%.0f\n",
               trend_stats$trend_class[i], trend_stats$n[i],
               trend_stats$mean_ratio[i], trend_stats$mean_cv[i],
