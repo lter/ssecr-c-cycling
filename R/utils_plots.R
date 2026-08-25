@@ -30,7 +30,7 @@ scale_color_trend <- function(...) {
 }
 
 # =============================================================================
-# 2. SITE PALETTE (17 LTER sites, grouped by ecosystem type)
+# 2. SITE PALETTE (18 LTER sites, grouped by ecosystem type)
 # =============================================================================
 
 SITE_COLORS <- c(

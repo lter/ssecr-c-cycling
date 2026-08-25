@@ -5,9 +5,30 @@ library(dplyr)
 
 # Centralized list of control treatment names (was defined 4+ times across scripts)
 CONTROL_NAMES <- c("control", "Control", "C", "0", "C1", "Camb Namb M", "T4",
-                   "u u c", "W", "C C", "pre", "XXX", "WS08", "none",
+                   "u u c", "W", "C C", "pre", "WS08", "none",
                    "CONTROL", "Outside Juncus", "(C)Control Plot",
                    "shaded_0", "unshaded_0", "X")
+
+# Per-source overrides: sources where the default control names would be wrong.
+# MCM: "C" is a carbon (mannitol) addition treatment, NOT a control — only
+# "W" (water only) is the control (see R/preprocess/preprocess_mcm.R).
+CONTROL_OVERRIDES <- list(
+  "MCM_CO2flux_2003-2010_processed.csv" = "W"
+)
+
+#' Determine whether each row is a control, honoring per-source overrides
+#' @param source Character vector of source filenames
+#' @param treatment Character vector of treatment labels
+#' @param control_names Default control names (used where no override exists)
+#' @return Logical vector
+is_control <- function(source, treatment, control_names = CONTROL_NAMES) {
+  ctrl <- treatment %in% control_names
+  for (src in names(CONTROL_OVERRIDES)) {
+    idx <- source == src
+    if (any(idx)) ctrl[idx] <- treatment[idx] %in% CONTROL_OVERRIDES[[src]]
+  }
+  ctrl
+}
 
 #' Calculate treatment response relative to control
 #' @param data data.frame with source, Date, Treatment, and response columns
@@ -23,14 +44,14 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
 
   # Separate control and treatment data
   control_data <- data %>%
-    filter(Treatment %in% control_names) %>%
+    filter(is_control(source, Treatment, control_names)) %>%
     group_by(source, Date, Date_parsed) %>%
     summarise(control_mean = mean(.data[[response_var]], na.rm = TRUE),
               control_n = n(),
               .groups = "drop")
 
   treatment_data <- data %>%
-    filter(!Treatment %in% control_names)
+    filter(!is_control(source, Treatment, control_names))
 
   # Join and calculate relative response
   relative_data <- treatment_data %>%
@@ -38,6 +59,14 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
     filter(!is.na(control_mean), control_mean > 0, !is.na(.data[[response_var]])) %>%
     mutate(relative_response = .data[[response_var]] / control_mean,
            log_response_ratio = log(.data[[response_var]] / control_mean))
+
+  # Guard against silent data loss: a source disappears entirely when its
+  # control and treatment dates never coincide (the join matches on exact Date)
+  dropped_sources <- setdiff(unique(treatment_data$source), unique(relative_data$source))
+  if (length(dropped_sources) > 0) {
+    warning("Sources dropped entirely (no control measured on any treatment date): ",
+            paste(dropped_sources, collapse = ", "))
+  }
 
   return(relative_data)
 }
@@ -69,7 +98,9 @@ classify_trend <- function(data, p_threshold = 0.05, cv_threshold = 0.3) {
   mean_ratio <- mean(data$mean_response, na.rm = TRUE)
   year_span <- as.numeric(max(data$Date_parsed) - min(data$Date_parsed)) / 365.25
 
-  if (p_value < p_threshold) {
+  # A p-value can be NA/NaN (e.g., constant response or all measurements on one
+  # date); treat that as non-significant rather than crashing the group_modify
+  if (!is.na(p_value) && p_value < p_threshold) {
     trend_class <- ifelse(slope > 0, "increasing", "decreasing")
   } else {
     trend_class <- ifelse(cv < cv_threshold, "stable", "variable")
@@ -159,14 +190,18 @@ count_sign_flips <- function(data) {
   if (nrow(data) < 3) return(data.frame(n_flips = NA_integer_, flip_years = NA_character_))
 
   signs <- sign(data$mean_response - 1)
-  signs <- signs[signs != 0]
+  # Drop exact-1 responses but keep dates aligned with the filtered signs
+  nonzero <- signs != 0
+  signs_nz <- signs[nonzero]
+  dates_nz <- data$Date_parsed[nonzero]
 
-  if (length(signs) < 2) return(data.frame(n_flips = 0L, flip_years = NA_character_))
+  if (length(signs_nz) < 2) return(data.frame(n_flips = 0L, flip_years = NA_character_))
 
-  flips <- sum(diff(signs) != 0)
-  flip_indices <- which(diff(signs) != 0)
-  flip_years <- if (length(flip_indices) > 0) {
-    paste(format(data$Date_parsed[flip_indices], "%Y"), collapse = "; ")
+  flip_indices <- which(diff(signs_nz) != 0)
+  flips <- length(flip_indices)
+  flip_years <- if (flips > 0) {
+    # Report the year at which the flipped sign is first observed
+    paste(format(dates_nz[flip_indices + 1], "%Y"), collapse = "; ")
   } else {
     NA_character_
   }
@@ -185,16 +220,27 @@ calculate_lrr <- function(data, time_col = "Date", control_names = CONTROL_NAMES
     stop(paste("Missing columns:", paste(setdiff(required_cols, colnames(data)), collapse = ", ")))
   }
 
+  # Pool all control rows per source x time (there can be several control
+  # treatment labels or replicate groups); combine as a single weighted group
+  # rather than arbitrarily taking the first row
   control_data <- data %>%
-    filter(Treatment %in% control_names) %>%
+    filter(is_control(source, Treatment, control_names)) %>%
     group_by(source, .data[[time_col]]) %>%
-    slice(1) %>%
-    ungroup() %>%
-    select(source, all_of(time_col),
-           control_mean = means, control_sd = response_sd, control_n = sample_size)
+    summarise(
+      control_n = sum(sample_size),
+      control_mean = sum(means * sample_size) / sum(sample_size),
+      control_sd = if (n() == 1) first(response_sd) else {
+        # Combined-groups SD: within-group + between-group variance
+        sqrt((sum((sample_size - 1) * response_sd^2) +
+                sum(sample_size * (means - sum(means * sample_size) / sum(sample_size))^2)) /
+               (sum(sample_size) - 1))
+      },
+      .groups = "drop"
+    ) %>%
+    select(source, all_of(time_col), control_mean, control_sd, control_n)
 
   results <- data %>%
-    filter(!Treatment %in% control_names) %>%
+    filter(!is_control(source, Treatment, control_names)) %>%
     left_join(control_data, by = c("source", time_col)) %>%
     filter(!is.na(control_mean), control_mean > 0, means > 0) %>%
     mutate(
