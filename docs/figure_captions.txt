@@ -46,6 +46,8 @@ combinations — proportions in each trend class (stable 35, variable 22,
 increasing 21, decreasing 5), and distributions of the mean treatment/control
 ratio (log scale), coefficient of variation (dotted line at the CV = 0.3
 classification threshold), and experiment duration by trend class.
+Confidence bands are omitted where a site has too few timepoints to
+estimate smoother uncertainty (ARC, NTL).
 
 
 Fig5_detection_time_analysis
