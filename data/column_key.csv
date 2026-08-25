@@ -1,4 +1,4 @@
-source,tidy_sit_ name,raw_name,tidy_name,Stock_or_Flux?
+source,tidy_site_name,raw_name,tidy_name,Stock_or_Flux?
 KBS_Biomass_1990-2022_processed.csv,KBS,Year,Date,NA
 KBS_Biomass_1990-2022_processed.csv,KBS,Treatment,Treatment,NA
 KBS_Biomass_1990-2022_processed.csv,KBS,Replicate,Replicate,NA
@@ -19,10 +19,10 @@ SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,YEAR,Date,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,TREATMENT,Treatment,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,DRY_GM2_sum,Response.Variable,Stock
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,SITE,Replicate,NA
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,EOYBYear,Date,NA
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Replicate,Replicate,NA
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,locationName,Treatment,NA
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,totalMass_mean,Response.Variable,Stock
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,EOYBYear,Date,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Replicate,Replicate,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,locationName,Treatment,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,totalMass_mean,Response.Variable,Stock
 GCE1.csv,GCE,Date,Date,NA
 GCE1.csv,GCE,Treatment,Treatment,NA
 GCE1.csv,GCE,Site,Replicate,NA

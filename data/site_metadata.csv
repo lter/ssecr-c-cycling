@@ -7,7 +7,7 @@ CDR_AbovegroundBiomass_1995-2005_gm2_processed.csv,CDR,Cedar Creek,Grassland,Flo
 CDR_AbovegroundBiomass_2016-2020_gm2_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock
 CDR_Biomass_1998-2021_gm2_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock
 CDR_PercentCarbon_1982-2011_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock
-CDR_SoilBiomass_1982-2018_%C_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock
+CDR_SoilBiomass_1982-2018_pctC_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Stock
 CDR_SoilCarbonFlux_1999-2005_processed.csv,CDR,Cedar Creek,Grassland,Fertilization,Flux
 CDR_sIDEPercentCover_2016-2020_processed.csv,CDR,Cedar Creek,Grassland,Inundation,Other
 CDR_tIDEPercentCover_2016-2020_processed.csv,CDR,Cedar Creek,Grassland,Inundation,Other
@@ -17,11 +17,11 @@ HFR_soil-respiration_1991-2021_Processed.csv,HFR,Harvard Forest,Forest,Warming,F
 KBS_Biomass_1990-2022_processed.csv,KBS,Kellogg Biological Station,Grassland,Fertilization,Stock
 KNZ_Biomass_1986-2021_processed.csv,KNZ,Konza Prairie,Grassland,Fertilization,Stock
 LUQ_GHG_fluxes_2003-2010.csv,LUQ,Luquillo,Forest,Vegetation Removal,Flux
-MCM_CO2flux_2003-2010_processed.csv,MCM,McMurdo Dry Valleys,Tundra,Nutrient Addition,Flux
+MCM_CO2flux_2003-2010_processed.csv,MCM,McMurdo Dry Valleys,Tundra,Fertilization,Flux
 NTL_NutrientAddition1.csv,NTL,North Temperate Lakes,Freshwater,Fertilization,Proxy
 NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv,NWT,Niwot Ridge,Tundra,Fertilization,Stock
 PIE-PlantShoot_2004-2020_Processed.csv,PIE,Plum Island Ecosystems,Coastal,Fertilization,Stock
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,Santa Barbara Coastal,Coastal,Vegetation Removal,Stock
 SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv,SEV,Sevilleta,Grassland,Fertilization,Stock
 VCR_flora manipulation and inundation_live_dead_biomass_1998-2010_gm2_processed.csv,VCR,Virginia Coast Reserve,Coastal,Floral Manipulation,Stock
-VCR_flora maniupulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Virginia Coast Reserve,Coastal,Floral Manipulation,Stock
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Virginia Coast Reserve,Coastal,Floral Manipulation,Stock
