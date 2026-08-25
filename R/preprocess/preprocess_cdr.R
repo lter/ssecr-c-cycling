@@ -41,20 +41,18 @@ preprocess_cdr_biocon_biomass <- function(raw_path) {
   date_col <- grep("Date|Year|year", names(data), value = TRUE)[1]
   ring_col <- grep("Ring|ring", names(data), value = TRUE)[1]
 
+  # Build the combined Treatment from whichever factor columns exist.
+  # Note: the x_col variables are length-1 (grep(...)[1] gives NA when absent),
+  # so test them with is.na() outside of vectorized code — a length-1 ifelse()
+  # inside mutate() would recycle row 1's value to every row.
+  trt_parts <- lapply(c(co2_col, n_col, sr_col), function(col) {
+    if (!is.na(col)) as.character(data[[col]]) else rep("", nrow(data))
+  })
   result <- data %>%
-    mutate(
-      Treatment = paste(
-        ifelse(!is.na(co2_col) & !is.null(data[[co2_col]]),
-               data[[co2_col]], ""),
-        ifelse(!is.na(n_col) & !is.null(data[[n_col]]),
-               data[[n_col]], ""),
-        ifelse(!is.na(sr_col) & !is.null(data[[sr_col]]),
-               data[[sr_col]], "")
-      )
-    )
+    mutate(Treatment = trimws(do.call(paste, trt_parts)))
 
   # Aggregate if needed
-  if (!is.null(biomass_col) && !is.null(date_col) && !is.null(ring_col)) {
+  if (!is.na(biomass_col) && !is.na(date_col) && !is.na(ring_col)) {
     result <- result %>%
       group_by(
         Date = .data[[date_col]],
@@ -87,7 +85,7 @@ preprocess_cdr_soil_biomass <- function(raw_path) {
   carbon_col <- grep("Carbon|carbon|%C|pctC|PercentC", names(data), value = TRUE)[1]
 
   result <- data
-  if (!is.null(carbon_col)) {
+  if (!is.na(carbon_col)) {
     result[[carbon_col]] <- suppressWarnings(as.numeric(result[[carbon_col]]))
     result <- result %>%
       filter(!is.na(.data[[carbon_col]])) %>%
@@ -193,7 +191,7 @@ preprocess_cdr_tide_pctcover <- function(raw_path) {
   if (all(c("shelter", "fertilized") %in% names(data))) {
     # Fix common typo: fomerly_irrigated
     irrig_col <- grep("irrigat", names(data), value = TRUE)[1]
-    if (!is.null(irrig_col)) {
+    if (!is.na(irrig_col)) {
       data$formerly_irrigated <- data[[irrig_col]]
     } else {
       data$formerly_irrigated <- ""
@@ -234,15 +232,14 @@ preprocess_cdr_small_biodiv <- function(raw_path) {
   grazed_col <- grep("Grazed|grazed|Graze", names(data), value = TRUE)[1]
   biomass_col <- grep("Biomass|biomass|mass", names(data), value = TRUE)[1]
 
-  # Convert date: YYMMDD format → year
-  data$date_clean <- tryCatch({
-    # Try YYMMDD format
-    dates <- as.Date(as.character(data[[date_col]]), format = "%y%m%d")
-    format(dates, "%Y")
-  }, error = function(e) {
-    # If already year or other format, just extract year
-    sub("^(\\d{4}).*", "\\1", as.character(data[[date_col]]))
-  })
+  # Convert date: YYMMDD format → year. as.Date() returns NA (not an error)
+  # on mismatched formats, so fall back per-value rather than via tryCatch.
+  raw_dates <- as.character(data[[date_col]])
+  parsed <- as.Date(raw_dates, format = "%y%m%d")
+  data$date_clean <- ifelse(!is.na(parsed),
+                            format(parsed, "%Y"),
+                            # If already a year or other format, extract the year
+                            sub("^(\\d{4}).*", "\\1", raw_dates))
 
   result <- data %>%
     mutate(biomass_val = suppressWarnings(as.numeric(.data[[biomass_col]]))) %>%
@@ -316,7 +313,7 @@ preprocess_cdr_soil_carbon_flux <- function(raw_path) {
   data[[scf_col]] <- suppressWarnings(as.numeric(data[[scf_col]]))
 
   # Recode canopy cover: in → shaded, out → unshaded
-  if (!is.null(cover_col)) {
+  if (!is.na(cover_col)) {
     data$cover_recode <- ifelse(
       grepl("in", data[[cover_col]], ignore.case = TRUE), "shaded", "unshaded"
     )

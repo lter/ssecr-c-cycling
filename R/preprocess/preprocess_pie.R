@@ -27,14 +27,18 @@ preprocess_pie_plant_shoot <- function(raw_path) {
     group_by(Year, Creek, Branch) %>%
     summarise(shoot_mass = mean(shoot_mass, na.rm = TRUE), .groups = "drop")
 
-  # Map creek to treatment
+  # Map creek to treatment: NE/SW = Enriched, CL/WE = Control; drop any
+  # other creek codes rather than silently labeling them Control
   data <- data %>%
     mutate(
-      Treatment = ifelse(Creek %in% c("NE", "SW"), "Enriched", "Control"),
-      Replicate = paste(Branch, gsub("[^0-9]", "", Branch))
+      Treatment = case_when(
+        Creek %in% c("NE", "SW") ~ "Enriched",
+        Creek %in% c("CL", "WE") ~ "Control",
+        TRUE ~ NA_character_
+      ),
+      Replicate = Branch
     ) %>%
-    # Create Replicate from Branch (L/R) and numbering
-    mutate(Replicate = Branch) %>%
+    filter(!is.na(Treatment)) %>%
     select(Year, Creek, Treatment, Replicate, shoot_mass)
 
   as.data.frame(data)

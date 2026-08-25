@@ -1,7 +1,11 @@
 # preprocess_gce.R
-# Source: PLT-GCED-2207 from gce-lter.marsci.uga.edu (non-EDI)
+# Source: PLT-GCED-2207 (also published on EDI as knb-lter-gce.786.13)
 # Critical slowing down: vegetation height, cover and composition
 # Treatment: Control vs Disturbed (March 2010)
+#
+# NOTE: skip = 22 matches the GCE-portal export's metadata header block.
+# If re-downloading from EDI, verify the entity's header offset first —
+# a different header depth would silently misparse the file.
 
 library(dplyr)
 
@@ -15,17 +19,7 @@ preprocess_gce_vegetation <- function(raw_path) {
   # Date, Site, Latitude, Longitude, Treatment, Plot, Sub.plot,
   # Vegetation_Cover, Vegetation_Height, and individual species columns
 
-  # Helper function
-  summarize_by_columns <- function(data, group_cols) {
-    data %>%
-      group_by(across(all_of(group_cols))) %>%
-      summarise(across(where(is.numeric), list(
-        sd = ~sd(.x, na.rm = TRUE),
-        mean = ~mean(.x, na.rm = TRUE),
-        sum = ~sum(.x, na.rm = TRUE)
-      ), .names = "{.col}_{.fn}"),
-      .groups = "drop")
-  }
+  # summarize_by_columns() comes from R/preprocess/preprocess_utils.R
 
   # Fix date format: ensure YYYY (not "YYYY-MM" or corrupted)
   if ("Date" %in% names(data)) {

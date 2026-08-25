@@ -15,17 +15,7 @@ preprocess_ntl_bloom <- function(raw_path) {
   # Manual_Chl, DO_Sat, pH, etc.
   # Aggregate to annual summaries using SD, mean, sum for numeric cols
 
-  summarize_by_columns <- function(data, group_cols) {
-    data %>%
-      group_by(across(all_of(group_cols))) %>%
-      summarise(across(where(is.numeric), list(
-        sd = ~sd(.x, na.rm = TRUE),
-        mean = ~mean(.x, na.rm = TRUE),
-        sum = ~sum(.x, na.rm = TRUE)
-      ), .names = "{.col}_{.fn}"),
-      .groups = "drop")
-  }
-
+  # summarize_by_columns() comes from R/preprocess/preprocess_utils.R
   result <- data %>%
     summarize_by_columns(c("Lake", "N_addition", "Year"))
 

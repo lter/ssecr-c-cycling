@@ -60,9 +60,9 @@ preprocess_luq_ghg <- function(raw_path) {
   date_col <- grep("DATE|Date|date", names(data), value = TRUE)[1]
   data[[date_col]] <- as.POSIXct(data[[date_col]], format = "%m/%d/%Y")
 
-  # Separate Block-plot-rep
+  # Separate Block-plot-rep (grep(...)[1] returns NA, not NULL, when absent)
   bpr_col <- grep("Block.plot.rep|Block-plot-rep", names(data), value = TRUE)[1]
-  if (!is.null(bpr_col)) {
+  if (!is.na(bpr_col)) {
     data <- data %>%
       separate(!!bpr_col, into = c("Block", "Plot", "Rep"), sep = "-", remove = FALSE)
     data$Plot <- as.integer(data$Plot)
@@ -78,8 +78,11 @@ preprocess_luq_ghg <- function(raw_path) {
   # Add YEAR column
   data$YEAR <- as.integer(format(data[[date_col]], "%Y"))
 
-  # Summarize by Block_Plot and DATE
-  result <- luq_summarize(data, c("Block_Plot", date_col))
+  # Summarize by Block_Plot, treatment, and DATE. treatment MUST be in the
+  # grouping columns: luq_summarize keeps only group columns plus numeric
+  # summaries, so omitting it silently drops the treatment mapping that
+  # column_key.csv expects.
+  result <- luq_summarize(data, c("Block_Plot", "treatment", date_col))
 
   as.data.frame(result)
 }

@@ -6,19 +6,13 @@
 #   2nd exp: (B)Border Control, (C)Control Plot, (P)Pumped Plot
 #   1st exp: Inside Juncus, Outside Juncus
 
+# NOTE: skip = 22 in both readers matches the EDI CSV's metadata header block
+# for revision 24. If the packages are updated, verify the header offset —
+# a different header depth would silently misparse the files.
+
 library(dplyr)
 
-#' Helper: summarize all numeric columns by group
-vcr_summarize <- function(data, group_cols) {
-  data %>%
-    group_by(across(all_of(group_cols))) %>%
-    summarise(across(where(is.numeric), list(
-      sd = ~sd(.x, na.rm = TRUE),
-      mean = ~mean(.x, na.rm = TRUE),
-      sum = ~sum(.x, na.rm = TRUE)
-    ), .names = "{.col}_{.fn}"),
-    .groups = "drop")
-}
+# Aggregation uses summarize_by_columns() from R/preprocess/preprocess_utils.R
 
 #' Preprocess VCR 2nd inundation experiment (1998-2010)
 #' @param raw_path Path to raw CSV from EDI (knb-lter-vcr.169.24)
@@ -30,7 +24,7 @@ preprocess_vcr_inundation_2nd <- function(raw_path) {
   # EOYBYear, locationName, replicate, marshRegion, isExperiment,
   # transect, locationID, ITISID, liveMass, deadMass, unknownMass, totalMass, etc.
 
-  result <- vcr_summarize(data, c("EOYBYear", "locationName", "replicate"))
+  result <- summarize_by_columns(data, c("EOYBYear", "locationName", "replicate"))
 
   as.data.frame(result)
 }
@@ -42,7 +36,7 @@ preprocess_vcr_inundation_1st <- function(raw_path) {
   data <- read.csv(raw_path, stringsAsFactors = FALSE, skip = 22)
 
   # Same structure as 2nd experiment but with capital R in Replicate
-  result <- vcr_summarize(data, c("EOYBYear", "locationName", "Replicate"))
+  result <- summarize_by_columns(data, c("EOYBYear", "locationName", "Replicate"))
 
   as.data.frame(result)
 }
