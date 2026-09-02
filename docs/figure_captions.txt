@@ -1,8 +1,10 @@
 Figure Captions
 ===============
 
-Numbering follows analysis/99_organize-figures.R. Fig3 (methodology overview)
-is created manually and captioned with the manuscript draft.
+Numbering follows analysis/99_organize-figures.R. Fig2 (methodology overview)
+is created manually and captioned with the manuscript draft; the conceptual
+trajectories figure (09_conceptual-figure.R) is archived — the hand-drawn
+graphical abstract serves that purpose.
 
 Counts below reflect the current pipeline outputs (18 sites; AND included
 via census-period alignment of its control watershed; MCM's carbon addition
@@ -10,21 +12,7 @@ analyzed as a treatment against the water-only control; NWT restricted to
 the N contrast).
 
 
-Fig1_conceptual_trajectories
-----------------------------
-Conceptual trajectories of treatment effects on carbon cycling over time, and
-the inference errors that short-term observation windows can produce. Four
-hypothetical response types are shown (stable, variable, increasing,
-decreasing), all indistinguishable near zero effect during the short-term
-window (shaded region, first three years). Extrapolating from the short-term
-window alone yields an accurate estimate only for stable responses; it
-underestimates responses that strengthen over time (increasing), overestimates
-responses that attenuate or reverse (decreasing), and gives an uncertain
-estimate for oscillating (variable) responses. Colors match the trend
-classification used throughout the analysis.
-
-
-Fig2_site_map_timeline
+Fig1_site_map_timeline
 ----------------------
 Location and temporal extent of the 18 LTER experiments included in the
 synthesis. (A) Site locations, with insets for Alaska (ARC, BNZ) and McMurdo
@@ -34,7 +22,7 @@ the site abbreviation and manipulation type. Colors indicate ecosystem type
 (grassland, forest, tundra, coastal, urban, freshwater).
 
 
-Fig4_all_experiments_lrr_pooled_by_trend
+Fig3_all_experiments_lrr_pooled_by_trend
 ----------------------------------------
 Log response ratios (LRR; ln of treatment/control) over time for all 18
 experiments. In each site panel, gray lines and points show individual
@@ -50,7 +38,7 @@ Confidence bands are omitted where a site has too few timepoints to
 estimate smoother uncertainty (ARC, NTL).
 
 
-Fig5_detection_time_analysis
+Fig4_detection_time_analysis
 ----------------------------
 Factors influencing the time required to detect statistically significant
 temporal trends in treatment response ratios. Only treatment-experiment
@@ -71,7 +59,7 @@ significant trends emerged. Trend lines in panels B, D, and E are linear
 fits with 95% confidence bands.
 
 
-Fig6_early_vs_full_lrr
+Fig5_early_vs_full_lrr
 ----------------------
 Comparison of early versus full-duration log-response ratios (LRR) across
 treatment-experiment combinations (n = 80). Each point represents a single
@@ -88,7 +76,7 @@ effects — suggests that short-term results can both overestimate and
 underestimate long-term responses.
 
 
-Fig7_sizer_and_sign_flips
+Fig6_sizer_and_sign_flips
 -------------------------
 Piecewise slope-change (SiZer) analysis and treatment response sign-flip
 frequency across LTER sites. (A) One representative treatment per site

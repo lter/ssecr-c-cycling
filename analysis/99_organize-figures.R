@@ -3,14 +3,15 @@
 # and move everything else to figures/archive/
 #
 # Figure assignments:
-#   Fig1  - Conceptual trajectories (hypotheses)
-#   Fig2  - Site map and experiment timeline
-#   Fig3  - (methodology overview — added manually)
-#   Fig4  - All experiments LRR pooled by trend
-#   Fig5  - Detection time analysis
-#   Fig6  - Early vs full LRR comparison
-#   Fig7  - SiZer and sign flips combined
+#   Fig1  - Site map and experiment timeline
+#   Fig2  - (methodology overview — added manually)
+#   Fig3  - All experiments LRR pooled by trend
+#   Fig4  - Detection time analysis
+#   Fig5  - Early vs full LRR comparison
+#   Fig6  - SiZer and sign flips combined
 #   FigS1 - Trend characteristics scatter
+#   (The conceptual-trajectories figure from 09 is no longer a main figure —
+#    the hand-drawn graphical abstract fills that role — so it is archived.)
 
 cat("=== ORGANIZING FIGURES ===\n")
 
@@ -20,12 +21,11 @@ if (!dir.exists(archive_dir)) dir.create(archive_dir, recursive = TRUE)
 
 # --- Define main figure mappings (source basename -> Fig number) ---
 main_figs <- list(
-  "Figure_conceptual_trajectories" = "Fig1_conceptual_trajectories",
-  "Figure_site_map_timeline"       = "Fig2_site_map_timeline",
-  "all_experiments_lrr_pooled_by_trend" = "Fig4_all_experiments_lrr_pooled_by_trend",
-  "detection_time_analysis"        = "Fig5_detection_time_analysis",
-  "early_vs_full_lrr"              = "Fig6_early_vs_full_lrr",
-  "Figure_sizer_and_sign_flips"    = "Fig7_sizer_and_sign_flips",
+  "Figure_site_map_timeline"       = "Fig1_site_map_timeline",
+  "all_experiments_lrr_pooled_by_trend" = "Fig3_all_experiments_lrr_pooled_by_trend",
+  "detection_time_analysis"        = "Fig4_detection_time_analysis",
+  "early_vs_full_lrr"              = "Fig5_early_vs_full_lrr",
+  "Figure_sizer_and_sign_flips"    = "Fig6_sizer_and_sign_flips",
   "trend_characteristics_scatter"  = "FigS1_trend_characteristics_scatter"
 )
 
@@ -34,6 +34,8 @@ for (src_base in names(main_figs)) {
   dst_base <- main_figs[[src_base]]
   for (ext in c("png", "pdf")) {
     src <- file.path(fig_dir, paste0(src_base, ".", ext))
+    # a source figure archived by an earlier run is still a valid source
+    if (!file.exists(src)) src <- file.path(archive_dir, paste0(src_base, ".", ext))
     dst <- file.path(fig_dir, paste0(dst_base, ".", ext))
     if (file.exists(src)) {
       file.copy(src, dst, overwrite = TRUE)
@@ -43,8 +45,7 @@ for (src_base in names(main_figs)) {
 }
 
 # --- Move non-main files to archive ---
-keep_prefixes <- c("Fig1_", "Fig2_", "Fig3_", "Fig4_", "Fig5_",
-                    "Fig6_", "Fig7_", "FigS")
+keep_prefixes <- c("Fig1_", "Fig2_", "Fig3_", "Fig4_", "Fig5_", "Fig6_", "FigS")
 keep_other <- c("Table", "manuscript_results.txt")
 
 all_files <- list.files(fig_dir, full.names = FALSE, recursive = FALSE)

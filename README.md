@@ -72,8 +72,8 @@ ssecr-c-cycling/
     06_summary-stats.R       # Summary tables, verification outputs
     07_sizer-analysis.R      # SiZer slope-change detection (uses HERON)
     08_manuscript-results.R  # All numeric outputs for manuscript text & tables
-    09_conceptual-figure.R   # Conceptual trajectory figure (Fig1 source)
-    10_site-map.R            # Site map + experiment timeline (Fig2 source)
+    09_conceptual-figure.R   # Conceptual trajectory figure (archived; graphical abstract used instead)
+    10_site-map.R            # Site map + experiment timeline (Fig1 source)
     99_organize-figures.R    # Copy main figures to FigN_* names; archive the rest
   figures/                   # Main numbered figures (FigN_*) and tables
     supplemental/            # Supplemental tables and panel figures
@@ -126,7 +126,7 @@ ssecr-c-cycling/
    source("analysis/99_organize-figures.R")
    ```
 
-   Note: Fig3 (methodology overview) is created manually outside the pipeline,
+   Note: Fig2 (methodology overview) is created manually outside the pipeline,
    so the numbered figure sequence in `figures/` intentionally skips it.
 
 ### If `data/ready/` files already exist
