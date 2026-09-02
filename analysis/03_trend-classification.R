@@ -307,7 +307,7 @@ make_summary_panels <- function() {
     geom_jitter(width = 0.15, alpha = 0.35, size = 1.2, color = "gray30") +
     scale_fill_trend() +
     scale_y_continuous(trans = "log2", breaks = c(0.5, 0.75, 1, 1.5, 2, 3, 4)) +
-    labs(x = "", y = "Mean Trt/Ctrl (log)") +
+    labs(x = "", y = "Mean response ratio (log scale)") +
     theme_ccycling(base_size = 14) + theme(legend.position = "none") +
     rotate_x_labels(30)
 
@@ -318,7 +318,7 @@ make_summary_panels <- function() {
     geom_jitter(width = 0.15, alpha = 0.35, size = 1.2, color = "gray30") +
     geom_ref_threshold(0.3) +
     scale_fill_trend() +
-    labs(x = "", y = "CV") +
+    labs(x = "", y = "CV of response ratio") +
     theme_ccycling(base_size = 14) + theme(legend.position = "none") +
     rotate_x_labels(30)
 
@@ -332,7 +332,9 @@ make_summary_panels <- function() {
     theme_ccycling(base_size = 14) + theme(legend.position = "none") +
     rotate_x_labels(30)
 
-  (pa | pb | pc | pd)
+  # tag_level = "keep" lets these nested panels continue the parent's A, B, C...
+  # sequence so the composite reads A (site panels) then B-E (summary row)
+  (pa | pb | pc | pd) + plot_layout(tag_level = "keep")
 }
 
 summary_row <- make_summary_panels()
@@ -352,7 +354,9 @@ lrr_pooled_by_trend <- ggplot(log_with_trend, aes(x = Date_parsed, y = mean_log)
   facet_theme
 
 combined_A <- lrr_pooled_by_trend / summary_row +
-  plot_layout(heights = c(5, 1))
+  plot_layout(heights = c(5, 1)) +
+  plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(size = 18, face = "bold"))
 
 ggsave("figures/all_experiments_lrr_pooled_by_trend.png",
        combined_A, width = 16, height = 10, dpi = 300, bg = "white")
