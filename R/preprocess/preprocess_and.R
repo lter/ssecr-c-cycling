@@ -30,7 +30,7 @@ library(dplyr)
 #' ensuring consistent DBH measurements across treatment and control.
 #'
 #' @param raw_path Path to the TV010 CSV (AND_Logging-control_DBH_1910-2023.csv)
-#' @return data.frame with columns: Year, WATERSHED, PLOT, DBH_mean, DBH_sd
+#' @return data.frame with columns: Year, WATERSHED, PLOT, DBH_mean, DBH_sd, n_trees
 preprocess_and_dbh <- function(raw_path) {
   data <- read.csv(raw_path, stringsAsFactors = FALSE)
 
