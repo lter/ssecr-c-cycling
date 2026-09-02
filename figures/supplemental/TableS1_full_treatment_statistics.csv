@@ -1,9 +1,9 @@
 "Site","Site Name","Ecosystem","Experiment","Stock/Flux","Treatment","Trend","Slope","P-value","R-squared","CV","Mean Ratio","N Timepoints","Year Span","Early LRR","Full LRR","LRR Change","Detected","Years to Detect"
-"AND","Andrews Forest","Forest","Vegetation Removal","Stock","WS06","increasing",0,0.0143,0.9995,0.1597,0.5082,3,12,NA,NA,NA,TRUE,12
-"AND","Andrews Forest","Forest","Vegetation Removal","Stock","WS07","increasing",0,0.0447,0.9951,0.2089,0.4614,3,12,NA,NA,NA,TRUE,12
-"ARC","Arctic LTER","Tundra","Fertilization","Stock","NP","stable",1e-04,0.2979,0.3447,0.2361,1.3925,5,17,0.1683,0.31,0.1416,FALSE,NA
+"AND","Andrews Forest","Forest","Vegetation Removal","Stock","WS06","increasing",0,0.0143,0.9995,0.1597,0.5082,3,12,-0.8533,-0.6855,0.1678,TRUE,12
+"AND","Andrews Forest","Forest","Vegetation Removal","Stock","WS07","increasing",0,0.0447,0.9951,0.2089,0.4614,3,12,-1.0177,-0.7885,0.2292,TRUE,12
+"ARC","Arctic LTER","Tundra","Fertilization","Stock","NP","stable",1e-04,0.2979,0.3447,0.2361,1.3925,5,17,0.2336,0.31,0.0763,FALSE,NA
 "BNZ","Bonanza Creek","Tundra","Warming","Flux","C S","stable",-1e-04,0.3923,0.074,0.2651,1.5652,12,12,0.6642,0.4181,-0.2461,TRUE,1.9986
-"BNZ","Bonanza Creek","Tundra","Warming","Flux","W C","variable",-2e-04,0.3848,0.0763,1.1258,0.8669,12,12,0.6396,-0.9031,-1.5427,FALSE,NA
+"BNZ","Bonanza Creek","Tundra","Warming","Flux","W C","variable",-2e-04,0.3848,0.0763,1.1258,0.8669,12,12,0.7411,-0.9031,-1.6442,FALSE,NA
 "BNZ","Bonanza Creek","Tundra","Warming","Flux","W S","variable",2e-04,0.4451,0.0594,0.7081,1.6841,12,12,0.2566,0.3743,0.1177,FALSE,NA
 "CAP","Central Arizona-Phoenix","Urban","Fertilization","Stock","N","stable",0,0.467,0.0602,0.2078,1.4907,11,16,0.4662,0.3812,-0.085,FALSE,NA
 "CAP","Central Arizona-Phoenix","Urban","Fertilization","Stock","NP","decreasing",-2e-04,0.0492,0.3336,0.27,2.0324,12,16,0.875,0.677,-0.198,TRUE,16
@@ -49,7 +49,7 @@
 "HFR","Harvard Forest","Forest","Warming","Flux","H","decreasing",0,5e-04,0.3473,0.1181,1.0326,31,30,0.2001,0.0255,-0.1746,TRUE,7.0007
 "KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T1","variable",0,0.1117,0.0796,0.3471,1.5341,33,32,0.3503,0.3727,0.0224,FALSE,NA
 "KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T2","increasing",1e-04,0.0457,0.1227,0.3335,1.5951,33,32,0.4244,0.4146,-0.0098,TRUE,32
-"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T21","stable",0,0.7957,0.0995,0.1908,1.2013,3,10,NA,NA,NA,FALSE,NA
+"KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T21","stable",0,0.7957,0.0995,0.1908,1.2013,3,10,0.1395,0.1705,0.031,FALSE,NA
 "KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T3","increasing",1e-04,0.0014,0.2828,0.2879,1.404,33,32,0.124,0.3033,0.1793,TRUE,24
 "KBS","Kellogg Biological Station","Grassland","Fertilization","Stock","T6","increasing",1e-04,0.0346,0.145,1.2549,1.0481,31,32,-0.8034,-0.5539,0.2495,TRUE,32
 "KNZ","Konza Prairie","Grassland","Fertilization","Stock","b m c","increasing",3e-04,2e-04,0.3568,1.2108,1.6,34,34,-0.6932,0.0542,0.7475,TRUE,7.0007
@@ -70,11 +70,11 @@
 "LUQ","Luquillo","Forest","Vegetation Removal","Flux","No trim + debris","stable",0,0.7037,0.0314,0.0707,1.0923,7,6,0.0815,0.0862,0.0047,FALSE,NA
 "LUQ","Luquillo","Forest","Vegetation Removal","Flux","Trim & clear","stable",0,0.7058,0.031,0.0908,0.9499,7,6,-0.0655,-0.0549,0.0106,TRUE,3.0007
 "LUQ","Luquillo","Forest","Vegetation Removal","Flux","Trim + debris","stable",0,0.821,0.0112,0.0785,0.9735,7,6,-0.0229,-0.0295,-0.0066,TRUE,2.0014
-"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","C","stable",2e-04,0.0505,0.7702,0.1281,1.4173,5,7,0.3049,0.3415,0.0366,FALSE,NA
-"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","CN","variable",5e-04,0.2136,0.4522,0.3968,1.7456,5,7,0.3472,0.502,0.1548,FALSE,NA
-"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","CP","variable",3e-04,0.1598,0.5356,0.3812,1.2159,5,7,0.0051,0.1155,0.1104,TRUE,6.0014
-"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","N","stable",2e-04,0.3447,0.2944,0.2913,1.0718,5,7,-0.0016,0.0313,0.0328,FALSE,NA
-"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","P","stable",1e-04,0.1693,0.5199,0.1724,1.0525,5,7,0.0071,0.0381,0.0309,TRUE,6.0014
+"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","C","stable",2e-04,0.0505,0.7702,0.1281,1.4173,5,7,0.1083,0.3415,0.2332,FALSE,NA
+"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","CN","variable",5e-04,0.2136,0.4522,0.3968,1.7456,5,7,0.2283,0.502,0.2736,FALSE,NA
+"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","CP","variable",3e-04,0.1598,0.5356,0.3812,1.2159,5,7,-0.6972,0.1155,0.8127,TRUE,6.0014
+"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","N","stable",2e-04,0.3447,0.2944,0.2913,1.0718,5,7,-0.4774,0.0313,0.5087,FALSE,NA
+"MCM","McMurdo Dry Valleys","Tundra","Fertilization","Flux","P","stable",1e-04,0.1693,0.5199,0.1724,1.0525,5,7,-0.263,0.0381,0.301,TRUE,6.0014
 "NTL","North Temperate Lakes","Freshwater","Fertilization","Proxy","added","variable",-6e-04,0.602,0.1584,0.3554,3.9423,4,6,1.4546,1.3257,-0.1289,FALSE,NA
 "NWT","Niwot Ridge","Tundra","Fertilization","Stock","N","increasing",1e-04,0.0059,0.5126,0.1241,1.1538,13,13,-0.0157,0.1359,0.1516,TRUE,4.9993
 "PIE","Plum Island Ecosystems","Coastal","Fertilization","Stock","Enriched","stable",0,0.9969,0,0.186,1.1365,17,16,0.0777,0.1146,0.0369,FALSE,NA

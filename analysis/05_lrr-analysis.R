@@ -49,25 +49,29 @@ cat("\n--- EARLY vs FULL LRR COMPARISON ---\n")
 
 lrr_results$year <- extract_year(lrr_results$Date)
 
+# "Early" = the first three CALENDAR years of each treatment's record (not the
+# first three sampled timepoints — for irregularly sampled series such as AND's
+# three censuses, ranking timepoints would make the early window the whole
+# record). A treatment enters the comparison if it is one of the classified
+# treatments (>= 3 timepoints) and has at least one observation inside the
+# early window and at least one after it.
 early_vs_full <- lrr_results %>%
-  filter(!is.na(year)) %>%
+  filter(!is.na(year), is.finite(log_response_ratio)) %>%
   group_by(source, Treatment, site_abbr) %>%
   arrange(year) %>%
-  mutate(
-    year_rank = dense_rank(year),
-    total_years = n_distinct(year)
-  ) %>%
+  mutate(early = year <= min(year) + 2) %>%
   summarise(
-    early_lrr = mean(log_response_ratio[year_rank <= 3], na.rm = TRUE),
+    early_lrr = mean(log_response_ratio[early], na.rm = TRUE),
     full_lrr = mean(log_response_ratio, na.rm = TRUE),
-    lrr_change = mean(log_response_ratio, na.rm = TRUE) -
-                 mean(log_response_ratio[year_rank <= 3], na.rm = TRUE),
-    n_early = sum(year_rank <= 3),
+    lrr_change = full_lrr - early_lrr,
+    n_early = sum(early),
+    n_later = sum(!early),
     n_total = n(),
-    n_years = first(total_years),
+    n_years = n_distinct(year),
+    year_span = max(year) - min(year),
     .groups = "drop"
   ) %>%
-  filter(n_early >= 1, n_years > 3)
+  filter(n_total >= 3, n_early >= 1, n_later >= 1)
 
 cat("Early vs full comparison:", nrow(early_vs_full), "treatment-experiments\n")
 write.csv(early_vs_full, "data/harmonized/early_vs_full_lrr.csv", row.names = FALSE)

@@ -159,9 +159,16 @@ table1 <- freq_by_source %>%
   arrange(`Ecosystem Type`, Site)
 # N Treatments shows analyzable (screened) where some treatments had < 3 timepoints
 
+# Main-text Table 1 keeps the descriptive columns; provenance and sampling
+# details go to Table S4 so the main table fits a portrait page
+table_s4 <- table1
+table1 <- table1 %>%
+  select(Site, `Site Name`, Setting, Experiment, Manipulation, `Response Variable`,
+         `Response Type`, `N Treatments`)
 print(as.data.frame(table1))
 write.csv(table1, "figures/Table1_case_study_overview.csv", row.names = FALSE)
-cat("  -> Written to figures/Table1_case_study_overview.csv\n")
+write.csv(table_s4, "figures/supplemental/TableS4_case_study_details.csv", row.names = FALSE)
+cat("  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS4_case_study_details.csv (full)\n")
 
 # =============================================================================
 # SECTION 3.2: TREND CLASSIFICATION
