@@ -123,25 +123,41 @@ for (i in seq_len(nrow(sf_counts))) {
 # --- TABLE 1: Case study overview ---
 cat("\n--- TABLE 1: Case Study Overview ---\n")
 
+# Analyzable treatments per source (>= 3 timepoints) and the total screened
+n_trt <- trend_results %>%
+  group_by(source) %>%
+  summarise(n_analyzable = sum(trend_class != "insufficient_data"),
+            n_screened = n(), .groups = "drop") %>%
+  mutate(`N Treatments` = ifelse(n_screened > n_analyzable,
+                                 sprintf("%d (%d)", n_analyzable, n_screened),
+                                 as.character(n_analyzable)))
+
 table1 <- freq_by_source %>%
   left_join(metadata %>% distinct(source, site_full_name, site_type,
-                                   experiment_type, stock_or_flux),
+                                   experiment_type, stock_or_flux,
+                                   experiment_name, manipulation,
+                                   response_variable, setting),
             by = "source") %>%
   left_join(registry_included %>% select(ready_filename, edi_package_id),
             by = c("source" = "ready_filename")) %>%
+  left_join(n_trt %>% select(source, `N Treatments`), by = "source") %>%
   filter(source %in% unique(trend_clean$source)) %>%
   select(
     Site = site_abbr,
     `Site Name` = site_full_name,
-    Ecosystem = site_type,
-    `Experiment Type` = experiment_type,
-    Response = stock_or_flux,
-    `EDI Package` = edi_package_id,
-    `Year Range` = year_range,
+    Setting = setting,
+    `Ecosystem Type` = site_type,
+    Experiment = experiment_name,
+    Manipulation = manipulation,
+    `Response Variable` = response_variable,
+    `Response Type` = stock_or_flux,
+    `Years Analyzed` = year_range,
     `N Years Sampled` = n_years,
-    `Sampling Freq` = temporal_freq
+    `N Treatments` = `N Treatments`,
+    `EDI Package` = edi_package_id
   ) %>%
-  arrange(Ecosystem, Site)
+  arrange(`Ecosystem Type`, Site)
+# N Treatments shows analyzable (screened) where some treatments had < 3 timepoints
 
 print(as.data.frame(table1))
 write.csv(table1, "figures/Table1_case_study_overview.csv", row.names = FALSE)
@@ -196,6 +212,24 @@ for (i in seq_len(nrow(trend_class_stats))) {
   cat(sprintf("    Mean CV: %.3f (median %.3f)\n", s$cv_mean, s$cv_median))
   cat(sprintf("    Mean year span: %.1f (median %.1f)\n",
               s$year_span_mean, s$year_span_median))
+}
+
+# Robustness of the directional call to log-transforming the response
+# (computed reproducibly in 03_trend-classification.R)
+robust_file <- "data/harmonized/trend_robustness_log.csv"
+if (file.exists(robust_file)) {
+  robustness <- read.csv(robust_file, stringsAsFactors = FALSE)
+  n_changed <- sum(robustness$changed, na.rm = TRUE)
+  cat(sprintf("\nRobustness to log transform (LRR vs ratio): %d of %d directional calls change (%.1f%%)\n",
+              n_changed, nrow(robustness), 100 * n_changed / nrow(robustness)))
+  if (n_changed > 0) {
+    ch <- robustness %>% filter(changed)
+    for (i in seq_len(nrow(ch))) {
+      cat(sprintf("  %s / %s: ratio %s (p=%.3f) -> LRR %s (p=%.3f)\n",
+                  ch$site_abbr[i], ch$Treatment[i], ch$ratio_call[i], ch$ratio_p[i],
+                  ch$log_call[i], ch$log_p[i]))
+    }
+  }
 }
 
 # Directional trends specifically

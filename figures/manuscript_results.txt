@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-08-25 12:18 
+Generated: 2026-09-02 11:57 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -34,44 +34,120 @@ Sites by response type:
   Proxy: 2 sites
 
 --- TABLE 1: Case Study Overview ---
-   Site                  Site Name  Ecosystem     Experiment Type Response
-1   GCE Georgia Coastal Ecosystems    Coastal  Vegetation Removal    Proxy
-2   PIE     Plum Island Ecosystems    Coastal       Fertilization    Stock
-3   SBC      Santa Barbara Coastal    Coastal  Vegetation Removal    Stock
-4   VCR     Virginia Coast Reserve    Coastal Floral Manipulation    Stock
-5   AND             Andrews Forest     Forest  Vegetation Removal    Stock
-6   HBR              Hubbard Brook     Forest       Fertilization     Flux
-7   HFR             Harvard Forest     Forest             Warming     Flux
-8   LUQ                   Luquillo     Forest  Vegetation Removal     Flux
-9   NTL      North Temperate Lakes Freshwater       Fertilization    Proxy
-10  CDR                Cedar Creek  Grassland       Fertilization    Stock
-11  KBS Kellogg Biological Station  Grassland       Fertilization    Stock
-12  KNZ              Konza Prairie  Grassland       Fertilization    Stock
-13  SEV                  Sevilleta  Grassland       Fertilization    Stock
-14  ARC                Arctic LTER     Tundra       Fertilization    Stock
-15  BNZ              Bonanza Creek     Tundra             Warming     Flux
-16  MCM        McMurdo Dry Valleys     Tundra       Fertilization     Flux
-17  NWT                Niwot Ridge     Tundra       Fertilization    Stock
-18  CAP    Central Arizona-Phoenix      Urban       Fertilization    Stock
-               EDI Package Year Range N Years Sampled Sampling Freq
-1      knb-lter-gce.786.13  2010-2020              11        Annual
-2       knb-lter-pie.202.5  2004-2020              17        Annual
-3      knb-lter-sbc.119.13  2008-2023              16        Annual
-4      knb-lter-vcr.168.24  1994-2013              16        Annual
-5     knb-lter-and.2742.28  2002-2014               3        Annual
-6       knb-lter-hbr.404.1  2009-2021              13        Annual
-7        knb-lter-hfr.5.37  1991-2021              31        Annual
-8  knb-lter-luq.164.678951  2003-2009               7        Annual
-9       knb-lter-ntl.413.2  2011-2019               7        Annual
-10     knb-lter-cdr.302.13  1998-2021              24        Annual
-11      knb-lter-kbs.19.85  1990-2022              33        Annual
-12      knb-lter-knz.57.15  1986-2021              36        Annual
-13 knb-lter-sev.186.208431  2004-2023              20        Annual
-14    knb-lter-arc.10004.8  1982-2015               7        Annual
-15     knb-lter-bnz.481.23  2009-2021              13        Annual
-16     knb-lter-mcm.4014.5  2003-2010               5        Annual
-17       knb-lter-nwt.13.7  2006-2019              13        Annual
-18     knb-lter-cap.632.17  2008-2024              12        Annual
+   Site                  Site Name                           Setting
+1   GCE Georgia Coastal Ecosystems                        Salt marsh
+2   PIE     Plum Island Ecosystems                  Salt marsh creek
+3   SBC      Santa Barbara Coastal                  Kelp forest reef
+4   VCR     Virginia Coast Reserve                  Salt marsh creek
+5   AND             Andrews Forest          Temperate conifer forest
+6   HBR              Hubbard Brook          Northern hardwood forest
+7   HFR             Harvard Forest        Temperate deciduous forest
+8   LUQ                   Luquillo               Tropical wet forest
+9   NTL      North Temperate Lakes                    Temperate lake
+10  CDR                Cedar Creek                 Prairie grassland
+11  KBS Kellogg Biological Station                          Cropland
+12  KNZ              Konza Prairie                 Tallgrass prairie
+13  SEV                  Sevilleta                  Desert grassland
+14  ARC                Arctic LTER             Arctic tussock tundra
+15  BNZ              Bonanza Creek Boreal forest / permafrost tundra
+16  MCM        McMurdo Dry Valleys                 Polar desert soil
+17  NWT                Niwot Ridge                     Alpine tundra
+18  CAP    Central Arizona-Phoenix                    Sonoran Desert
+   Ecosystem Type
+1         Coastal
+2         Coastal
+3         Coastal
+4         Coastal
+5          Forest
+6          Forest
+7          Forest
+8          Forest
+9      Freshwater
+10      Grassland
+11      Grassland
+12      Grassland
+13      Grassland
+14         Tundra
+15         Tundra
+16         Tundra
+17         Tundra
+18          Urban
+                                                                      Experiment
+1                             Tidal marsh disturbance experiment (PLT-GCED-2207)
+2                                            TIDE nutrient-enrichment experiment
+3                                              Long-term kelp removal experiment
+4                               Upper Phillips Creek inundation experiment (1st)
+5  TV010 experimental watersheds (WS06 clearcut, WS07 shelterwood, WS08 control)
+6           MELNHE (Multiple Element Limitation in Northern Hardwood Ecosystems)
+7                                          Prospect Hill soil warming experiment
+8                                               Canopy Trimming Experiment (CTE)
+9                                   Cascade Project whole-lake nutrient addition
+10                                                                        BioCON
+11                                        Main Cropping System Experiment (MCSE)
+12                                           Belowground Plot Experiment (PBB01)
+13                                                              NFert experiment
+14                            Toolik Lake moist acidic tussock tundra experiment
+15                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
+16                          Stoichiometry experiment (Bonney and Fryxell basins)
+17                              Snow x N x temperature experiment (Niwot Saddle)
+18                                       Desert Fertilization Experiment (CNdep)
+                                             Manipulation
+1                        Vegetation removal (disturbance)
+2                                     Fertilization (NO3)
+3  Vegetation removal (annual and continual kelp removal)
+4                 Inundation; wrack (Juncus) manipulation
+5                  Forest harvest (clearcut; shelterwood)
+6                                Fertilization (N, P, Ca)
+7                                            Soil warming
+8                        Canopy trimming; debris addition
+9                                       Fertilization (N)
+10      CO2 enrichment; N fertilization; species richness
+11                 Cropping system / management intensity
+12                    Fire; mowing; N and P fertilization
+13                                      Fertilization (N)
+14                        Fertilization; warming; shading
+15                                 Warming (soil and air)
+16                            Nutrient addition (C, N, P)
+17  Fertilization (N; ambient snow and temperature plots)
+18                                   Fertilization (N, P)
+                            Response Variable Response Type Years Analyzed
+1          Vegetation cover (%; carbon proxy)         Proxy      2010-2020
+2                            Plant shoot mass         Stock      2004-2020
+3                   Algal dry biomass (g m-2)         Stock      2008-2023
+4                 Total plant biomass (g m-2)         Stock      1994-2013
+5         Tree diameter at breast height (cm)         Stock      2002-2014
+6                     Litterfall mass (g m-2)          Flux      2009-2021
+7                 Soil respiration (CO2 flux)          Flux      1991-2021
+8                               Soil CO2 flux          Flux      2003-2009
+9          Chlorophyll (ug L-1; carbon proxy)         Proxy      2011-2019
+10                Aboveground biomass (g m-2)         Stock      1998-2021
+11 Aboveground net primary production (g m-2)         Stock      1990-2022
+12 Aboveground net primary production (g m-2)         Stock      1986-2021
+13                Aboveground biomass (g m-2)         Stock      2004-2023
+14                Aboveground biomass (g m-2)         Stock      1982-2015
+15                     Net ecosystem exchange          Flux      2009-2021
+16                              Soil CO2 flux          Flux      2003-2010
+17                Aboveground biomass (g m-2)         Stock      2006-2019
+18                Aboveground biomass (g m-2)         Stock      2008-2024
+   N Years Sampled N Treatments             EDI Package
+1               11            1     knb-lter-gce.786.13
+2               17            1      knb-lter-pie.202.5
+3               16            2     knb-lter-sbc.119.13
+4               16            1     knb-lter-vcr.168.24
+5                3            2    knb-lter-and.2742.28
+6               13            4      knb-lter-hbr.404.1
+7               31            1       knb-lter-hfr.5.37
+8                7            3 knb-lter-luq.164.678951
+9                7            1      knb-lter-ntl.413.2
+10              24           33     knb-lter-cdr.302.13
+11              33            5      knb-lter-kbs.19.85
+12              36           15      knb-lter-knz.57.15
+13              20            1 knb-lter-sev.186.208431
+14               7        1 (4)    knb-lter-arc.10004.8
+15              13        3 (6)     knb-lter-bnz.481.23
+16               5            5     knb-lter-mcm.4014.5
+17              13            1       knb-lter-nwt.13.7
+18              12            3     knb-lter-cap.632.17
   -> Written to figures/Table1_case_study_overview.csv
 
 
@@ -104,6 +180,16 @@ Trend class statistics:
     Mean ratio: 1.79 (median 1.60, SD 0.77)
     Mean CV: 0.518 (median 0.407)
     Mean year span: 17.7 (median 12.0)
+
+Robustness to log transform (LRR vs ratio): 8 of 83 directional calls change (9.6%)
+  AND / WS07: ratio increasing (p=0.045) -> LRR non-directional (p=0.082)
+  BNZ / W C: ratio non-directional (p=0.385) -> LRR decreasing (p=0.015)
+  KBS / T6: ratio increasing (p=0.035) -> LRR non-directional (p=0.056)
+  KNZ / b u c: ratio increasing (p=0.044) -> LRR non-directional (p=0.322)
+  KNZ / b u p: ratio increasing (p=0.016) -> LRR non-directional (p=0.098)
+  KNZ / u u n+p: ratio non-directional (p=0.281) -> LRR decreasing (p=0.026)
+  KNZ / u u p: ratio increasing (p=0.047) -> LRR non-directional (p=0.718)
+  MCM / C: ratio non-directional (p=0.050) -> LRR increasing (p=0.043)
 
 Directional trends (n=26):
   Year span range: 4 to 35 years

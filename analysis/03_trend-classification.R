@@ -42,6 +42,40 @@ cat("Classified", nrow(trend_analysis), "treatment-experiment combinations\n")
 # Save results
 write.csv(trend_analysis, "data/harmonized/trend_analysis_results.csv", row.names = FALSE)
 
+# --- Robustness check: does classifying on the log response ratio (LRR)
+# instead of the ratio change the directional call? Reproducible replacement
+# for an earlier ad-hoc check. The CV is ill-defined for a log series whose
+# mean is near zero, so the comparison is restricted to what the transform can
+# actually change: slope significance and sign (directional vs not).
+log_class <- summary_data %>%
+  filter(is.finite(log(mean_response))) %>%
+  mutate(mean_response = log(mean_response)) %>%
+  group_by(source, Treatment) %>%
+  group_modify(~ classify_trend(.x)) %>%
+  ungroup() %>%
+  transmute(source, Treatment, log_slope = slope, log_p = p_value,
+            log_call = case_when(
+              trend_class == "insufficient_data" ~ NA_character_,
+              trend_class %in% c("increasing", "decreasing") ~ trend_class,
+              TRUE ~ "non-directional"))
+
+robustness <- trend_analysis %>%
+  filter(trend_class != "insufficient_data") %>%
+  transmute(source, Treatment, site_abbr, ratio_slope = slope, ratio_p = p_value,
+            ratio_call = ifelse(trend_class %in% c("increasing", "decreasing"),
+                                trend_class, "non-directional")) %>%
+  left_join(log_class, by = c("source", "Treatment")) %>%
+  mutate(changed = ratio_call != log_call)
+
+write.csv(robustness, "data/harmonized/trend_robustness_log.csv", row.names = FALSE)
+cat(sprintf("\nRobustness to log transform: %d of %d directional calls change (%.1f%%)\n",
+            sum(robustness$changed, na.rm = TRUE), nrow(robustness),
+            100 * mean(robustness$changed, na.rm = TRUE)))
+if (any(robustness$changed, na.rm = TRUE)) {
+  print(as.data.frame(robustness %>% filter(changed) %>%
+                        select(site_abbr, Treatment, ratio_call, ratio_p, log_call, log_p)))
+}
+
 # --- Sign-Flip Analysis (Trend Reversals) ---
 
 sign_flip_analysis <- summary_data %>%

@@ -85,19 +85,16 @@ if (nrow(significant_trends) > 0) {
                  linewidth = 0.3, color = "gray30") +
     geom_jitter(width = 0.15, alpha = 0.4, size = 0.8, color = "gray30") +
     scale_fill_trend() +
-    labs(title = "Years to Detection",
-         x = "Trend Type", y = "Years to Detection") +
+    labs(x = "Trend Type", y = "Years to Detection") +
     theme_ccycling() + theme(legend.position = "none")
 
   # Plot 2: Detection time (years) vs measurement density
   p2 <- ggplot(significant_trends, aes(x = meas_density_per_yr, y = time_to_detect,
                                        color = trend_class)) +
     geom_point(size = 1.5, alpha = 0.6) +
-    geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5) +
+    geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5, show.legend = FALSE) +
     scale_color_trend() +
-    labs(title = "Detection Time vs Measurement Density",
-         subtitle = "Does denser sampling shorten detection?",
-         x = "Measurements per Year", y = "Years to Detection",
+    labs(x = "Measurements per Year", y = "Years to Detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -108,9 +105,7 @@ if (nrow(significant_trends) > 0) {
     geom_point(alpha = 0.6) +
     scale_color_trend() +
     scale_size_continuous(name = "Meas./yr", range = c(0.8, 5)) +
-    labs(title = "Duration vs Timepoints to Detection",
-         subtitle = "Bubble size = measurement density",
-         x = "Total Study Duration (years)",
+    labs(x = "Total Study Duration (years)",
          y = "Timepoints to Detection",
          color = "Trend Type") +
     theme_ccycling()
@@ -119,11 +114,10 @@ if (nrow(significant_trends) > 0) {
   p4 <- ggplot(significant_trends, aes(x = abs(final_slope), y = time_to_detect,
                                        color = trend_class)) +
     geom_point(size = 1.5, alpha = 0.6) +
-    geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5) +
+    geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5, show.legend = FALSE) +
     scale_color_trend() +
     scale_x_log10() +
-    labs(title = "Detection Time vs Effect Size",
-         x = "|Slope| (log scale)", y = "Years to Detection",
+    labs(x = "|Slope| (log scale)", y = "Years to Detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -131,10 +125,9 @@ if (nrow(significant_trends) > 0) {
   p5 <- ggplot(significant_trends, aes(x = cv, y = time_to_detect,
                                        color = trend_class)) +
     geom_point(size = 1.5, alpha = 0.6) +
-    geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5) +
+    geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5, show.legend = FALSE) +
     scale_color_trend() +
-    labs(title = "Detection Time vs Variability",
-         x = "Coefficient of Variation", y = "Years to Detection",
+    labs(x = "Coefficient of Variation", y = "Years to Detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -145,13 +138,17 @@ if (nrow(significant_trends) > 0) {
     geom_point(size = 1.5, alpha = 0.6) +
     scale_color_trend() +
     coord_flip() +
-    labs(title = "Detection Time by Site",
-         x = "Site", y = "Years to Detection",
+    labs(x = "Site", y = "Years to Detection",
          color = "Trend Type") +
     theme_ccycling()
 
+  # One shared legend (trend colors + measurement-density sizes) instead of a
+  # legend under every panel; panel titles are intentionally absent — letters
+  # plus axis labels only, with panel content described in the caption
   detection_plots <- (p1 | p2) / (p3 | p4) / (p5 | p6) +
-    plot_annotation(tag_levels = "A")
+    plot_layout(guides = "collect") +
+    plot_annotation(tag_levels = "A") &
+    theme(legend.position = "bottom", legend.box = "horizontal")
 
   ggsave("figures/detection_time_analysis.png", detection_plots,
          width = 7.2, height = 9, dpi = 300, bg = "white")
