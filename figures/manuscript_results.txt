@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-02 11:57 
+Generated: 2026-09-02 14:14 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -212,12 +212,16 @@ Directional trends (n=26):
 
 === SECTION 3.3: EARLY VS FULL LRR COMPARISON ===
 
+Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
+|early - full LRR|: median 0.10 (~11% of ratio), 75th pct 0.23 (~26%), 90th pct 0.52 (~69%)
+
+Sensitivity to tolerance (mispredicted %): t=0.1: 51%; t=0.2: 30%; t=0.3: 20%; t=0.4: 14%; t=0.5: 14%; t=0.6: 11%; t=0.7: 8%; t=0.8: 6%; t=0.9: 6%; t=1.0: 6% 
 Total treatment combinations with early vs full LRR: 80
 
 Classification:
-  accurate: 46 (57.5%)
-  overestimate: 18 (22.5%)
-  underestimate: 11 (13.8%)
+  accurate: 56 (70.0%)
+  overestimate: 5 (6.2%)
+  underestimate: 14 (17.5%)
   wrong_direction: 5 (6.2%)
 
 Mean absolute LRR change: 0.193
@@ -231,21 +235,40 @@ Wrong direction cases: 5
   KNZ / u m n+p: early=-0.318, full=0.181
   VCR / Inside Juncus: early=-0.876, full=0.350
 
+Mispredicted by site:
+  KNZ: 10 of 15 (67%) — under 7, over 0, wrong 3
+  CDR: 10 of 33 (30%) — under 6, over 4, wrong 0
+  BNZ: 2 of 3 (67%) — under 0, over 1, wrong 1
+  VCR: 1 of 1 (100%) — under 0, over 0, wrong 1
+  KBS: 1 of 4 (25%) — under 1, over 0, wrong 0
+  ARC: 0 of 1 (0%) — under 0, over 0, wrong 0
+  CAP: 0 of 3 (0%) — under 0, over 0, wrong 0
+  GCE: 0 of 1 (0%) — under 0, over 0, wrong 0
+  HBR: 0 of 4 (0%) — under 0, over 0, wrong 0
+  HFR: 0 of 1 (0%) — under 0, over 0, wrong 0
+  LUQ: 0 of 3 (0%) — under 0, over 0, wrong 0
+  MCM: 0 of 5 (0%) — under 0, over 0, wrong 0
+  NTL: 0 of 1 (0%) — under 0, over 0, wrong 0
+  NWT: 0 of 1 (0%) — under 0, over 0, wrong 0
+  PIE: 0 of 1 (0%) — under 0, over 0, wrong 0
+  SBC: 0 of 2 (0%) — under 0, over 0, wrong 0
+  SEV: 0 of 1 (0%) — under 0, over 0, wrong 0
+
 Illustrative cases:
 
   KNZ (15 treatments):
-    b m c: early=-0.693, full=0.054, change=0.747 (accurate)
-    b m n: early=-0.001, full=0.635, change=0.636 (accurate)
+    b m c: early=-0.693, full=0.054, change=0.747 (underestimate)
+    b m n: early=-0.001, full=0.635, change=0.636 (underestimate)
     b m n+p: early=-0.187, full=0.635, change=0.822 (wrong_direction)
-    b m p: early=-0.630, full=-0.011, change=0.619 (overestimate)
+    b m p: early=-0.630, full=-0.011, change=0.619 (underestimate)
     b u c: early=0.166, full=0.142, change=-0.025 (accurate)
     b u n: early=0.633, full=0.987, change=0.354 (underestimate)
     b u n+p: early=0.444, full=0.975, change=0.531 (underestimate)
-    b u p: early=0.043, full=0.161, change=0.117 (underestimate)
-    u m c: early=-0.767, full=-0.244, change=0.524 (overestimate)
+    b u p: early=0.043, full=0.161, change=0.117 (accurate)
+    u m c: early=-0.767, full=-0.244, change=0.524 (underestimate)
     u m n: early=-0.310, full=0.135, change=0.445 (wrong_direction)
     u m n+p: early=-0.318, full=0.181, change=0.499 (wrong_direction)
-    u m p: early=-0.712, full=-0.093, change=0.619 (overestimate)
+    u m p: early=-0.712, full=-0.093, change=0.619 (underestimate)
     u u n: early=0.282, full=0.298, change=0.016 (accurate)
     u u n+p: early=0.270, full=0.352, change=0.082 (accurate)
     u u p: early=0.052, full=0.084, change=0.032 (accurate)
@@ -253,11 +276,11 @@ Illustrative cases:
   KBS (4 treatments):
     T1: early=0.350, full=0.373, change=0.022 (accurate)
     T2: early=0.424, full=0.415, change=-0.010 (accurate)
-    T3: early=0.124, full=0.303, change=0.179 (underestimate)
-    T6: early=-0.803, full=-0.554, change=0.249 (overestimate)
+    T3: early=0.124, full=0.303, change=0.179 (accurate)
+    T6: early=-0.803, full=-0.554, change=0.249 (underestimate)
 
   HFR (1 treatments):
-    H: early=0.200, full=0.025, change=-0.175 (overestimate)
+    H: early=0.200, full=0.025, change=-0.175 (accurate)
 
   VCR (1 treatments):
     Inside Juncus: early=-0.876, full=0.350, change=1.226 (wrong_direction)
@@ -460,9 +483,9 @@ RESULTS 3.2 (Trends):
 RESULTS 3.3 (Early vs Full):
   Correlation: r=0.68, p=3.11e-12
   Mean |LRR change|: 0.193
-  accurate: 46 (58%)
-  overestimate: 18 (22%)
-  underestimate: 11 (14%)
+  accurate: 56 (70%)
+  overestimate: 5 (6%)
+  underestimate: 14 (18%)
   wrong_direction: 5 (6%)
 
 RESULTS 3.4 (SiZer):

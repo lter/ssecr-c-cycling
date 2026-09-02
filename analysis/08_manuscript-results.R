@@ -285,31 +285,76 @@ cat("  -> Written to figures/Table2_trend_type_summary.csv\n")
 
 cat("\n\n=== SECTION 3.3: EARLY VS FULL LRR COMPARISON ===\n\n")
 
-# Classify each case
-early_full_classified <- early_full %>%
-  mutate(
-    # Classification based on LRR direction and magnitude change
-    same_sign = sign(early_lrr) == sign(full_lrr),
-    abs_change = abs(lrr_change),
-    # Categories: accurate, underestimate, overestimate, wrong direction
-    classification = case_when(
-      # Wrong direction: early and full LRR have different signs
-      # (only when both are meaningfully different from zero)
-      !same_sign & abs(early_lrr) > 0.1 & abs(full_lrr) > 0.1 ~ "wrong_direction",
-      # Accurate: change is small relative to full LRR magnitude
-      abs_change < 0.1 ~ "accurate",
-      # Underestimate: early LRR magnitude < full LRR magnitude (same sign)
-      same_sign & abs(early_lrr) < abs(full_lrr) ~ "underestimate",
-      # Overestimate: early LRR magnitude > full LRR magnitude (same sign)
-      same_sign & abs(early_lrr) > abs(full_lrr) ~ "overestimate",
-      # Default for edge cases
-      TRUE ~ "accurate"
-    )
+# Classification of the 3-year estimate against the full-record LRR.
+# EARLY_TOLERANCE is a relevance threshold (what counts as a materially
+# different effect size), not a statistical one: 0.2 on the LRR scale means the
+# implied response ratios differ by more than ~20%. Over/under are SIGNED
+# (early estimate too high / too low relative to the long-term value) so that
+# a sign crossing does not change which side of the 1:1 line a point is on.
+# DIRECTION_CUTOFF marks estimates that are meaningfully non-zero for the
+# wrong-direction call. The sensitivity to EARLY_TOLERANCE is reported below.
+EARLY_TOLERANCE  <- 0.2
+DIRECTION_CUTOFF <- 0.1
+
+classify_early_full <- function(early, full, tol = EARLY_TOLERANCE,
+                                dir_cut = DIRECTION_CUTOFF) {
+  d <- full - early
+  case_when(
+    sign(early) != sign(full) & abs(early) > dir_cut & abs(full) > dir_cut ~ "wrong_direction",
+    abs(d) < tol ~ "accurate",
+    d > 0 ~ "underestimate",
+    TRUE ~ "overestimate"
   )
+}
+
+early_full_classified <- early_full %>%
+  mutate(classification = classify_early_full(early_lrr, full_lrr))
 
 class_counts <- early_full_classified %>%
   count(classification) %>%
   mutate(pct = round(n / sum(n) * 100, 1))
+
+# Distribution of the discrepancy itself (threshold-free description)
+abs_d <- abs(early_full_classified$lrr_change)
+q <- quantile(abs_d, c(0.5, 0.75, 0.9))
+cat(sprintf("Tolerance for 'accurate': |early - full LRR| < %.1f (response ratios within ~%.0f%%)\n",
+            EARLY_TOLERANCE, 100 * (exp(EARLY_TOLERANCE) - 1)))
+cat(sprintf("|early - full LRR|: median %.2f (~%.0f%% of ratio), 75th pct %.2f (~%.0f%%), 90th pct %.2f (~%.0f%%)\n",
+            q[1], 100 * (exp(q[1]) - 1), q[2], 100 * (exp(q[2]) - 1), q[3], 100 * (exp(q[3]) - 1)))
+
+# Sensitivity of the classification to the tolerance (Fig. S2)
+sensitivity <- bind_rows(lapply(seq(0.1, 1.0, by = 0.1), function(t) {
+  cl <- classify_early_full(early_full$early_lrr, early_full$full_lrr, tol = t)
+  tibble(tolerance = t, ratio_pct = 100 * (exp(t) - 1),
+         accurate = sum(cl == "accurate"), underestimate = sum(cl == "underestimate"),
+         overestimate = sum(cl == "overestimate"), wrong_direction = sum(cl == "wrong_direction"),
+         mispredicted_pct = 100 * mean(cl != "accurate"))
+}))
+write.csv(sensitivity, "figures/supplemental/TableS3_early_vs_full_sensitivity.csv", row.names = FALSE)
+cat("\nSensitivity to tolerance (mispredicted %):",
+    paste(sprintf("t=%.1f: %.0f%%", sensitivity$tolerance, sensitivity$mispredicted_pct), collapse = "; "), "\n")
+
+library(ggplot2)
+source("R/utils_plots.R")
+sens_long <- sensitivity %>%
+  select(tolerance, underestimate, overestimate, wrong_direction) %>%
+  tidyr::pivot_longer(-tolerance, names_to = "category", values_to = "n") %>%
+  mutate(category = factor(category, levels = c("wrong_direction", "overestimate", "underestimate"),
+                           labels = c("wrong direction", "overestimate", "underestimate")))
+p_sens <- ggplot(sens_long, aes(x = tolerance, y = 100 * n / nrow(early_full), fill = category)) +
+  geom_col(width = 0.08, color = "white", linewidth = 0.2) +
+  geom_vline(xintercept = EARLY_TOLERANCE, linetype = "dotted", linewidth = 0.4, color = "gray35") +
+  annotate("text", x = EARLY_TOLERANCE + 0.02, y = max(sensitivity$mispredicted_pct) * 0.97,
+           label = "tolerance used", hjust = 0, size = 2.6, color = "gray35") +
+  scale_fill_manual(values = c("wrong direction" = "#8E6FAD", "overestimate" = "#B0B0B0", "underestimate" = "#606060"),
+                    name = NULL) +
+  scale_x_continuous(breaks = seq(0.1, 1.0, by = 0.1),
+                     sec.axis = sec_axis(~ 100 * (exp(.) - 1), name = "Equivalent difference in response ratio (%)",
+                                         breaks = c(10, 22, 35, 65, 100, 172))) +
+  labs(x = "Tolerance for 'accurate' (|early LRR - full-record LRR|)",
+       y = "Treatments mispredicted (%)") +
+  theme_ccycling() + theme(legend.position = "bottom")
+save_figure("figures/early_vs_full_sensitivity.png", p_sens, size = "onehalf")
 
 cat(sprintf("Total treatment combinations with early vs full LRR: %d\n", nrow(early_full_classified)))
 cat("\nClassification:\n")
@@ -339,6 +384,22 @@ if (nrow(wrong_dir) > 0) {
                 wrong_dir$site_abbr[i], wrong_dir$Treatment[i],
                 wrong_dir$early_lrr[i], wrong_dir$full_lrr[i]))
   }
+}
+
+# Mispredicted share by site (all sites with >= 1 mispredicted treatment)
+cat("\nMispredicted by site:\n")
+site_mis <- early_full_classified %>%
+  group_by(site_abbr) %>%
+  summarise(n = n(), mispredicted = sum(classification != "accurate"),
+            under = sum(classification == "underestimate"),
+            over = sum(classification == "overestimate"),
+            wrong = sum(classification == "wrong_direction"), .groups = "drop") %>%
+  mutate(pct = round(100 * mispredicted / n)) %>%
+  arrange(desc(mispredicted), desc(pct))
+for (i in seq_len(nrow(site_mis))) {
+  s <- site_mis[i, ]
+  cat(sprintf("  %s: %d of %d (%d%%) — under %d, over %d, wrong %d\n",
+              s$site_abbr, s$mispredicted, s$n, s$pct, s$under, s$over, s$wrong))
 }
 
 # Illustrative cases

@@ -10,6 +10,7 @@
 #   Fig5  - Early vs full LRR comparison
 #   Fig6  - SiZer and sign flips combined
 #   FigS1 - Trend characteristics scatter
+#   FigS2 - Early-vs-full classification sensitivity to tolerance
 #   (The conceptual-trajectories figure from 09 is no longer a main figure —
 #    the hand-drawn graphical abstract fills that role — so it is archived.)
 
@@ -26,7 +27,8 @@ main_figs <- list(
   "detection_time_analysis"        = "Fig4_detection_time_analysis",
   "early_vs_full_lrr"              = "Fig5_early_vs_full_lrr",
   "Figure_sizer_and_sign_flips"    = "Fig6_sizer_and_sign_flips",
-  "trend_characteristics_scatter"  = "FigS1_trend_characteristics_scatter"
+  "trend_characteristics_scatter"  = "FigS1_trend_characteristics_scatter",
+  "early_vs_full_sensitivity"      = "FigS2_early_vs_full_sensitivity"
 )
 
 # Copy source files to numbered names

@@ -68,7 +68,9 @@ first three years of observation (x-axis) plotted against the mean LRR over the
 full study duration (y-axis). The dashed diagonal line indicates 1:1
 correspondence; points above the line indicate treatments whose effects
 strengthened over time, and points below indicate treatments whose effects
-attenuated. Colors and shapes denote LTER site identity. Most treatments
+attenuated. Treatments are classified as accurate, underestimate,
+overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table 3)
+with sensitivity to the tolerance shown in Fig. S2. Colors and shapes denote LTER site identity. Most treatments
 cluster near the origin and the 1:1 line (Pearson r = 0.68), indicating that
 early-period effect sizes are broadly predictive of long-term outcomes, though
 substantial scatter — particularly among treatments with strong initial
@@ -98,6 +100,18 @@ for differences in study duration and measurement frequency across sites.
 Colors indicate ecosystem type. Sign-flip frequency varied widely both within
 and among sites (mean = 20%, range: 0-67%), reflecting heterogeneous temporal
 dynamics of treatment effects.
+
+
+FigS2_early_vs_full_sensitivity
+-------------------------------
+Sensitivity of the early-versus-full-duration classification to the tolerance
+used to define agreement. Bars show the percentage of the 80 treatment-
+experiment combinations whose three-year LRR estimate was classified as an
+underestimate, overestimate, or wrong-direction prediction of the full-record
+LRR, for tolerances from 0.1 to 1.0 (top axis: the equivalent percentage
+difference in the response ratio). The dotted line marks the tolerance used in
+the main text (0.2, ~20%). The five wrong-direction cases (opposite signs, both
+|LRR| > 0.1) do not depend on the tolerance.
 
 
 FigS1_trend_characteristics_scatter
