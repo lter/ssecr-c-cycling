@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-02 17:56 
+Generated: 2026-09-02 18:05 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -257,7 +257,7 @@ Illustrative cases:
     P: early=-0.030, full=-0.040, change=-0.010 (accurate)
 
 --- TABLE 3: Early vs Full LRR Summary ---
-  -> Written to figures/Table3_early_vs_full_lrr.csv
+  -> Written to figures/supplemental/TableS5_early_vs_full_lrr.csv
 
 
 === SECTION 3.4: SIZER RESULTS ===

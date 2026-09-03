@@ -300,7 +300,7 @@ cat("\n\n=== SECTION 3.3: EARLY VS FULL LRR COMPARISON ===\n\n")
 # Classification of the 3-year estimate against the full-record LRR.
 # EARLY_TOLERANCE is a relevance threshold (what counts as a materially
 # different effect size), not a statistical one: 0.2 on the LRR scale means the
-# implied response ratios differ by more than ~20%. Over/under are SIGNED
+# implied response ratios differ by more than ~22%. Over/under are SIGNED
 # (early estimate too high / too low relative to the long-term value) so that
 # a sign crossing does not change which side of the 1:1 line a point is on.
 # DIRECTION_CUTOFF marks estimates that are meaningfully non-zero for the
@@ -441,8 +441,8 @@ table3 <- early_full_classified %>%
   mutate(across(where(is.numeric), ~ round(., 3))) %>%
   arrange(Site, Treatment)
 
-write.csv(table3, "figures/Table3_early_vs_full_lrr.csv", row.names = FALSE)
-cat("  -> Written to figures/Table3_early_vs_full_lrr.csv\n")
+write.csv(table3, "figures/supplemental/TableS5_early_vs_full_lrr.csv", row.names = FALSE)
+cat("  -> Written to figures/supplemental/TableS5_early_vs_full_lrr.csv\n")
 
 # =============================================================================
 # SECTION 3.4: SIZER RESULTS (SLOPE CHANGES)
@@ -826,5 +826,5 @@ sink()
 
 cat("\n=== MANUSCRIPT RESULTS COMPLETE ===\n")
 cat("Report written to:", report_path, "\n")
-cat("Tables written to: figures/Table1_*.csv, Table2_*.csv, Table3_*.csv\n")
+cat("Tables written to: figures/Table1_*.csv, Table2_*.csv (Table S5 in figures/supplemental/)\n")
 cat("Supplemental tables: figures/supplemental/TableS1_*.csv, TableS2_*.csv\n")
