@@ -161,7 +161,12 @@ table1 <- freq_by_source %>%
 
 # Main-text Table 1 keeps the descriptive columns; provenance and sampling
 # details go to Table S4 so the main table fits a portrait page
-table_s4 <- table1
+# Table S4 also carries the EDI data citation for each package (docs/data_citations.csv,
+# generated from DataCite metadata; one citation per analyzed package)
+data_citations <- read.csv("docs/data_citations.csv", stringsAsFactors = FALSE) %>%
+  select(Site = site, `Data Citation` = citation)
+table_s4 <- table1 %>% left_join(data_citations, by = "Site")
+stopifnot(!any(is.na(table_s4$`Data Citation`)))
 table1 <- table1 %>%
   select(Site, `Site Name`, Setting, Experiment, Manipulation, `Response Variable`,
          `Response Type`, `N Treatments`)
