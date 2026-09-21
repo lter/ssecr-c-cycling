@@ -85,7 +85,7 @@ if (nrow(significant_trends) > 0) {
                  linewidth = 0.3, color = "gray30") +
     geom_jitter(width = 0.15, alpha = 0.4, size = 0.8, color = "gray30") +
     scale_fill_trend(guide = "none") +
-    labs(x = "Trend Type", y = "Years to Detection") +
+    labs(x = "Trend Type", y = "Years to first detection") +
     theme_ccycling() + theme(legend.position = "none")
 
   # Plot 2: Detection time (years) vs measurement density
@@ -95,7 +95,7 @@ if (nrow(significant_trends) > 0) {
     geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5, show.legend = FALSE) +
     scale_color_trend() +
     guides(color = guide_legend(override.aes = list(size = 3, alpha = 1))) +
-    labs(x = "Measurements per Year", y = "Years to Detection",
+    labs(x = "Measurements per Year", y = "Years to first detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -108,7 +108,7 @@ if (nrow(significant_trends) > 0) {
     guides(color = guide_legend(override.aes = list(size = 3, alpha = 1))) +
     scale_size_continuous(name = "Meas./yr", range = c(0.8, 5)) +
     labs(x = "Total Study Duration (years)",
-         y = "Timepoints to Detection",
+         y = "Timepoints to first detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -120,7 +120,7 @@ if (nrow(significant_trends) > 0) {
     scale_color_trend() +
     guides(color = guide_legend(override.aes = list(size = 3, alpha = 1))) +
     scale_x_log10() +
-    labs(x = "|Slope| (log scale)", y = "Years to Detection",
+    labs(x = "|Slope| (log scale)", y = "Years to first detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -131,7 +131,7 @@ if (nrow(significant_trends) > 0) {
     geom_smooth(method = "lm", se = TRUE, alpha = 0.1, linewidth = 0.5, show.legend = FALSE) +
     scale_color_trend() +
     guides(color = guide_legend(override.aes = list(size = 3, alpha = 1))) +
-    labs(x = "Coefficient of Variation", y = "Years to Detection",
+    labs(x = "Coefficient of Variation", y = "Years to first detection",
          color = "Trend Type") +
     theme_ccycling()
 
@@ -143,7 +143,7 @@ if (nrow(significant_trends) > 0) {
     scale_color_trend() +
     guides(color = guide_legend(override.aes = list(size = 3, alpha = 1))) +
     coord_flip() +
-    labs(x = "Site", y = "Years to Detection",
+    labs(x = "Site", y = "Years to first detection",
          color = "Trend Type") +
     theme_ccycling()
 

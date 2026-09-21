@@ -57,10 +57,10 @@ date_ranges <- summary_data %>%
 experiments <- tibble::tribble(
   ~site_abbr, ~experiment,
   "AND",      "Forest harvest",
-  "ARC",      "Fertilization & warming",
+  "ARC",      "N + P fertilization",
   "BNZ",      "Permafrost warming",
   "CAP",      "Desert fertilization",
-  "CDR",      "BioCON (CO\u2082 \u00d7 N)",
+  "CDR",      "BioCON (CO\u2082 \u00d7 N \u00d7 water \u00d7 warming)",
   "GCE",      "Marsh disturbance",
   "HBR",      "MELNHE nutrient addition",
   "HFR",      "Soil warming",
@@ -69,11 +69,11 @@ experiments <- tibble::tribble(
   "LUQ",      "Canopy trimming",
   "MCM",      "Stoichiometry (CO\u2082 flux)",
   "NTL",      "Nutrient addition",
-  "NWT",      "Warming \u00d7 N \u00d7 snow",
+  "NWT",      "N addition",
   "PIE",      "TIDE fertilization",
   "SBC",      "Kelp removal",
   "SEV",      "N fertilization",
-  "VCR",      "Inundation \u00d7 wrack"
+  "VCR",      "Wrack deposition"
 )
 
 # Combine all site info

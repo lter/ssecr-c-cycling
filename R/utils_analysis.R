@@ -17,7 +17,7 @@ CONTROL_OVERRIDES <- list(
 )
 
 # CDR BioCON: the experiment is several nested designs that use different plot
-# sets - the main CO2 x N experiment ("M"), the monocultures ("S"), and the
+# sets - the main CO2 x N experiment ("M"), the four-species functional-group plots ("S"), and the
 # water (2007-) and water x warming (2012-) manipulations, which run in the
 # 9-species plots. A treatment is only comparable with the ambient control of
 # its own design, so controls are matched within a stratum.
