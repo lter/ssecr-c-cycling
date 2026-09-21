@@ -9,7 +9,7 @@
 "LUQ","Luquillo","Tropical wet forest","Canopy Trimming Experiment (CTE)","Canopy trimming; debris addition","Soil CO2 flux","Flux","3"
 "NTL","North Temperate Lakes","Temperate lake","Cascade Project whole-lake nutrient addition","Whole-lake fertilization (N + P)","Chlorophyll (ug L-1; carbon proxy)","Proxy","1"
 "CDR","Cedar Creek","Prairie grassland","BioCON","CO2 enrichment; N fertilization; species richness","Aboveground biomass (g m-2)","Stock","28"
-"KBS","Kellogg Biological Station","Cropland","Main Cropping System Experiment (MCSE)","Cropping system / management intensity","Crop aboveground biomass (g m-2)","Stock","4"
+"KBS","Kellogg Biological Station","Cropland","Main Cropping System Experiment (MCSE)","Cropping system / management intensity","Total herbaceous aboveground biomass (crop + weeds + cover crops; g m-2)","Stock","4"
 "KNZ","Konza Prairie","Tallgrass prairie","Belowground Plot Experiment (PBB01)","Fire; mowing; N and P fertilization","Herbaceous aboveground production (g per 0.1 m2)","Stock","15"
 "SEV","Sevilleta","Desert grassland","NFert experiment","Fertilization (N)","Aboveground biomass (g m-2)","Stock","1"
 "ARC","Arctic LTER","Arctic tussock tundra","Toolik Lake moist acidic tussock tundra experiment","Fertilization; warming; shading","Aboveground vascular plant biomass (g m-2)","Stock","1 (4)"

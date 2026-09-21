@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-21 01:48 
+Generated: 2026-09-21 01:58 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -91,44 +91,44 @@ Sites by response type:
 16                            Nutrient addition (C, N, P)
 17  Fertilization (N; ambient snow and temperature plots)
 18                                   Fertilization (N, P)
-                                         Response Variable Response Type
-1                       Vegetation cover (%; carbon proxy)         Proxy
-2      Marsh grass shoot mass (g per shoot; biomass proxy)         Proxy
-3          Reef algae and invertebrate dry biomass (g m-2)         Stock
-4                         Live aboveground biomass (g m-2)         Stock
-5  Mean tree diameter at breast height (cm; biomass proxy)         Proxy
-6                                  Litterfall mass (g m-2)          Flux
-7                              Soil respiration (CO2 flux)          Flux
-8                                            Soil CO2 flux          Flux
-9                       Chlorophyll (ug L-1; carbon proxy)         Proxy
-10                             Aboveground biomass (g m-2)         Stock
-11                        Crop aboveground biomass (g m-2)         Stock
-12        Herbaceous aboveground production (g per 0.1 m2)         Stock
-13                             Aboveground biomass (g m-2)         Stock
-14              Aboveground vascular plant biomass (g m-2)         Stock
-15                                  Net ecosystem exchange          Flux
-16                                           Soil CO2 flux          Flux
-17                        Live aboveground biomass (g m-2)         Stock
-18         Annual herbaceous plant biomass (g per 0.25 m2)         Stock
-   N Treatments
-1             1
-2             1
-3             2
-4             1
-5             2
-6             4
-7             1
-8             3
-9             1
-10           28
-11            4
-12           15
-13            1
-14        1 (4)
-15            3
-16            5
-17            1
-18            3
+                                                          Response Variable
+1                                        Vegetation cover (%; carbon proxy)
+2                       Marsh grass shoot mass (g per shoot; biomass proxy)
+3                           Reef algae and invertebrate dry biomass (g m-2)
+4                                          Live aboveground biomass (g m-2)
+5                   Mean tree diameter at breast height (cm; biomass proxy)
+6                                                   Litterfall mass (g m-2)
+7                                               Soil respiration (CO2 flux)
+8                                                             Soil CO2 flux
+9                                        Chlorophyll (ug L-1; carbon proxy)
+10                                              Aboveground biomass (g m-2)
+11 Total herbaceous aboveground biomass (crop + weeds + cover crops; g m-2)
+12                         Herbaceous aboveground production (g per 0.1 m2)
+13                                              Aboveground biomass (g m-2)
+14                               Aboveground vascular plant biomass (g m-2)
+15                                                   Net ecosystem exchange
+16                                                            Soil CO2 flux
+17                                         Live aboveground biomass (g m-2)
+18                          Annual herbaceous plant biomass (g per 0.25 m2)
+   Response Type N Treatments
+1          Proxy            1
+2          Proxy            1
+3          Stock            2
+4          Stock            1
+5          Proxy            2
+6           Flux            4
+7           Flux            1
+8           Flux            3
+9          Proxy            1
+10         Stock           28
+11         Stock            4
+12         Stock           15
+13         Stock            1
+14         Stock        1 (4)
+15          Flux            3
+16          Flux            5
+17         Stock            1
+18         Stock            3
   -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS1_case_study_details.csv (full)
 
 
