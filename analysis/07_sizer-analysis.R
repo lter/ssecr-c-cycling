@@ -185,14 +185,18 @@ for (i in seq_len(nrow(combos))) {
                   fill = "gray80", alpha = 0.3) +
       geom_smooth(aes(group = groups, color = slope_type),
                   method = "lm", formula = y ~ x, se = FALSE,
-                  linewidth = 0.7) +
+                  linewidth = 0.7, show.legend = TRUE, key_glyph = "path") +
       geom_point(size = 1.2, alpha = 0.7, color = "gray25") +
       scale_color_manual(
         values = c("approx. zero" = "#B0B0B0",
                    "increasing/decreasing" = "#3A7CA5"),
-        labels = c("approx. zero" = "Flat",
+        labels = c("approx. zero" = "Not different from zero",
                    "increasing/decreasing" = "Significant"),
-        name = "Slope"
+        # always show both keys, whichever panel supplies the collected legend
+        limits = c("approx. zero", "increasing/decreasing"),
+        na.translate = FALSE, drop = FALSE,
+        name = "Slope",
+        guide = guide_legend(override.aes = list(linewidth = 1.4, alpha = 1))
       ) +
       labs(title = paste0(abbr, " \u2014 ", trt),
            x = "Year", y = "Treatment / Control Ratio") +
