@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-20 23:39 
+Generated: 2026-09-20 23:44 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -94,7 +94,7 @@ Sites by response type:
                             Response Variable Response Type N Treatments
 1          Vegetation cover (%; carbon proxy)         Proxy            1
 2                            Plant shoot mass         Stock            1
-3                   Algal dry biomass (g m-2)         Stock            2
+3          Reef community dry biomass (g m-2)         Stock            2
 4                 Total plant biomass (g m-2)         Stock            1
 5         Tree diameter at breast height (cm)         Stock            2
 6                     Litterfall mass (g m-2)          Flux            4

@@ -1,7 +1,7 @@
 "Site","Site Name","Setting","Experiment","Manipulation","Response Variable","Response Type","N Treatments"
 "GCE","Georgia Coastal Ecosystems","Salt marsh","Tidal marsh disturbance experiment (PLT-GCED-2207)","Vegetation removal (disturbance)","Vegetation cover (%; carbon proxy)","Proxy","1"
 "PIE","Plum Island Ecosystems","Salt marsh creek","TIDE nutrient-enrichment experiment","Fertilization (NO3)","Plant shoot mass","Stock","1"
-"SBC","Santa Barbara Coastal","Kelp forest reef","Long-term kelp removal experiment","Vegetation removal (annual and continual kelp removal)","Algal dry biomass (g m-2)","Stock","2"
+"SBC","Santa Barbara Coastal","Kelp forest reef","Long-term kelp removal experiment","Vegetation removal (annual and continual kelp removal)","Reef community dry biomass (g m-2)","Stock","2"
 "VCR","Virginia Coast Reserve","Salt marsh creek","Upper Phillips Creek inundation experiment (1st)","Inundation; wrack (Juncus) manipulation","Total plant biomass (g m-2)","Stock","1"
 "AND","Andrews Forest","Temperate conifer forest","TV010 experimental watersheds (WS06 clearcut, WS07 shelterwood, WS08 control)","Forest harvest (clearcut; shelterwood)","Tree diameter at breast height (cm)","Stock","2"
 "HBR","Hubbard Brook","Northern hardwood forest","MELNHE (Multiple Element Limitation in Northern Hardwood Ecosystems)","Fertilization (N, P, Ca)","Litterfall mass (g m-2)","Flux","4"
