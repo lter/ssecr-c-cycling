@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-20 23:44 
+Generated: 2026-09-21 00:06 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -50,9 +50,13 @@ Sites by response type:
 13  SEV                  Sevilleta                  Desert grassland
 14  ARC                Arctic LTER             Arctic tussock tundra
 15  BNZ              Bonanza Creek Boreal forest / permafrost tundra
-16  MCM        McMurdo Dry Valleys                 Polar desert soil
-17  NWT                Niwot Ridge                     Alpine tundra
-18  CAP    Central Arizona-Phoenix                    Sonoran Desert
+16  BNZ              Bonanza Creek Boreal forest / permafrost tundra
+17  BNZ              Bonanza Creek Boreal forest / permafrost tundra
+18  BNZ              Bonanza Creek Boreal forest / permafrost tundra
+19  BNZ              Bonanza Creek Boreal forest / permafrost tundra
+20  MCM        McMurdo Dry Valleys                 Polar desert soil
+21  NWT                Niwot Ridge                     Alpine tundra
+22  CAP    Central Arizona-Phoenix                    Sonoran Desert
                                                                       Experiment
 1                             Tidal marsh disturbance experiment (PLT-GCED-2207)
 2                                            TIDE nutrient-enrichment experiment
@@ -69,9 +73,13 @@ Sites by response type:
 13                                                              NFert experiment
 14                            Toolik Lake moist acidic tussock tundra experiment
 15                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
-16                          Stoichiometry experiment (Bonney and Fryxell basins)
-17                              Snow x N x temperature experiment (Niwot Saddle)
-18                                       Desert Fertilization Experiment (CNdep)
+16                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
+17                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
+18                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
+19                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
+20                          Stoichiometry experiment (Bonney and Fryxell basins)
+21                              Snow x N x temperature experiment (Niwot Saddle)
+22                                       Desert Fertilization Experiment (CNdep)
                                              Manipulation
 1                        Vegetation removal (disturbance)
 2                                     Fertilization (NO3)
@@ -88,9 +96,13 @@ Sites by response type:
 13                                      Fertilization (N)
 14                        Fertilization; warming; shading
 15                                 Warming (soil and air)
-16                            Nutrient addition (C, N, P)
-17  Fertilization (N; ambient snow and temperature plots)
-18                                   Fertilization (N, P)
+16                                 Warming (soil and air)
+17                                 Warming (soil and air)
+18                                 Warming (soil and air)
+19                                 Warming (soil and air)
+20                            Nutrient addition (C, N, P)
+21  Fertilization (N; ambient snow and temperature plots)
+22                                   Fertilization (N, P)
                             Response Variable Response Type N Treatments
 1          Vegetation cover (%; carbon proxy)         Proxy            1
 2                            Plant shoot mass         Stock            1
@@ -107,45 +119,50 @@ Sites by response type:
 13                Aboveground biomass (g m-2)         Stock            1
 14                Aboveground biomass (g m-2)         Stock        1 (4)
 15                     Net ecosystem exchange          Flux        3 (6)
-16                              Soil CO2 flux          Flux            5
-17                Aboveground biomass (g m-2)         Stock            1
-18                Aboveground biomass (g m-2)         Stock            3
+16                     Net ecosystem exchange          Flux        3 (6)
+17                     Net ecosystem exchange          Flux        3 (6)
+18                     Net ecosystem exchange          Flux        3 (6)
+19                     Net ecosystem exchange          Flux        3 (6)
+20                              Soil CO2 flux          Flux            5
+21                Aboveground biomass (g m-2)         Stock            1
+22                Aboveground biomass (g m-2)         Stock            3
   -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS1_case_study_details.csv (full)
 
 
 === SECTION 3.2: TREND CLASSIFICATION ===
 
 Total analyzable treatment combinations: 83
-Non-directional: 57 (68.7%)
-Directional: 26 (31.3%)
+Non-directional: 59 (71.1%)
+Directional: 24 (28.9%)
 
 Breakdown:
   decreasing: 5 (6.0%)
-  increasing: 21 (25.3%)
-  stable: 35 (42.2%)
+  increasing: 19 (22.9%)
+  stable: 37 (44.6%)
   variable: 22 (26.5%)
 
 Trend class statistics:
   decreasing (n=5):
     Mean ratio: 1.81 (median 2.03, SD 0.48)
-    Mean CV: 0.256 (median 0.270)
+    Mean CV: 0.257 (median 0.270)
     Mean year span: 13.4 (median 9.0)
-  increasing (n=21):
-    Mean ratio: 1.32 (median 1.15, SD 0.52)
-    Mean CV: 0.582 (median 0.597)
-    Mean year span: 26.6 (median 32.0)
-  stable (n=35):
-    Mean ratio: 1.33 (median 1.33, SD 0.33)
-    Mean CV: 0.182 (median 0.191)
-    Mean year span: 10.9 (median 9.0)
+  increasing (n=19):
+    Mean ratio: 1.35 (median 1.36, SD 0.54)
+    Mean CV: 0.599 (median 0.606)
+    Mean year span: 26.9 (median 32.0)
+  stable (n=37):
+    Mean ratio: 1.33 (median 1.33, SD 0.32)
+    Mean CV: 0.174 (median 0.188)
+    Mean year span: 11.5 (median 9.0)
   variable (n=22):
     Mean ratio: 1.79 (median 1.60, SD 0.77)
     Mean CV: 0.493 (median 0.407)
     Mean year span: 17.7 (median 12.0)
 
-Robustness to log transform (LRR vs ratio): 8 of 83 directional calls change (9.6%)
+Robustness to log transform (LRR vs ratio): 9 of 83 directional calls change (10.8%)
   AND / WS07: ratio increasing (p=0.045) -> LRR non-directional (p=0.082)
-  BNZ / W C: ratio non-directional (p=0.385) -> LRR decreasing (p=0.015)
+  BNZ / W C: ratio non-directional (p=0.384) -> LRR decreasing (p=0.015)
+  CDR / Cenrich Namb S: ratio non-directional (p=0.057) -> LRR increasing (p=0.050)
   KBS / T6: ratio increasing (p=0.035) -> LRR non-directional (p=0.056)
   KNZ / b u c: ratio increasing (p=0.044) -> LRR non-directional (p=0.322)
   KNZ / b u p: ratio increasing (p=0.016) -> LRR non-directional (p=0.098)
@@ -153,21 +170,21 @@ Robustness to log transform (LRR vs ratio): 8 of 83 directional calls change (9.
   KNZ / u u p: ratio increasing (p=0.047) -> LRR non-directional (p=0.718)
   MCM / C: ratio non-directional (p=0.050) -> LRR increasing (p=0.043)
 
-Directional trends (n=26):
+Directional trends (n=24):
   Year span range: 4 to 35 years
-  Mean year span: 24.0 years
+  Mean year span: 24.1 years
   Sites with >= 1 directional trend: 9 / 18
 
 --- TABLE 2: Trend Type Summary ---
   Trend Type  N Mean Ratio (SD) Median Ratio Mean CV Median CV
-1     stable 35     1.33 (0.33)         1.33   0.182     0.191
+1     stable 37     1.33 (0.32)         1.33   0.174     0.188
 2   variable 22     1.79 (0.77)         1.60   0.493     0.407
-3 increasing 21     1.32 (0.52)         1.15   0.582     0.597
-4 decreasing  5     1.81 (0.48)         2.03   0.256     0.270
+3 increasing 19     1.35 (0.54)         1.36   0.599     0.606
+4 decreasing  5     1.81 (0.48)         2.03   0.257     0.270
   Mean Duration (yr) Median Duration (yr)
-1               10.9                  9.0
+1               11.5                  9.0
 2               17.7                 12.0
-3               26.6                 32.0
+3               26.9                 32.0
 4               13.4                  9.0
   -> Written to figures/Table2_trend_type_summary.csv
 
@@ -175,11 +192,11 @@ Directional trends (n=26):
 === SECTION 3.3: EARLY VS FULL LRR COMPARISON ===
 
 Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
-|early - full LRR|: median 0.12 (~12% of ratio), 75th pct 0.26 (~30%), 90th pct 0.53 (~70%)
+|early - full LRR|: median 0.11 (~11% of ratio), 75th pct 0.25 (~28%), 90th pct 0.53 (~70%)
    tolerance ratio_pct accurate underestimate overestimate wrong_direction
-1        0.1  10.51709       37            28           12               6
-2        0.2  22.14028       53            19            5               6
-3        0.3  34.98588       64            12            1               6
+1        0.1  10.51709       39            26           12               6
+2        0.2  22.14028       57            15            5               6
+3        0.3  34.98588       66            10            1               6
 4        0.4  49.18247       70             7            0               6
 5        0.5  64.87213       70             7            0               6
 6        0.6  82.21188       73             4            0               6
@@ -188,9 +205,9 @@ Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
 9        0.9 145.96031       77             0            0               6
 10       1.0 171.82818       77             0            0               6
    mispredicted_pct
-1         55.421687
-2         36.144578
-3         22.891566
+1         53.012048
+2         31.325301
+3         20.481928
 4         15.662651
 5         15.662651
 6         12.048193
@@ -199,21 +216,21 @@ Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
 9          7.228916
 10         7.228916
 
-Sensitivity to tolerance (mispredicted %): t=0.1: 55%; t=0.2: 36%; t=0.3: 23%; t=0.4: 16%; t=0.5: 16%; t=0.6: 12%; t=0.7: 8%; t=0.8: 7%; t=0.9: 7%; t=1.0: 7% 
+Sensitivity to tolerance (mispredicted %): t=0.1: 53%; t=0.2: 31%; t=0.3: 20%; t=0.4: 16%; t=0.5: 16%; t=0.6: 12%; t=0.7: 8%; t=0.8: 7%; t=0.9: 7%; t=1.0: 7% 
 Total treatment combinations with early vs full LRR: 83
 
 Classification:
-  accurate: 53 (63.9%)
+  accurate: 57 (68.7%)
   overestimate: 5 (6.0%)
-  underestimate: 19 (22.9%)
+  underestimate: 15 (18.1%)
   wrong_direction: 6 (7.2%)
 
-Mean absolute LRR change: 0.214
-Median absolute LRR change: 0.117
-Pearson correlation (early vs full LRR): r = 0.708, p = 6.77e-14
+Mean absolute LRR change: 0.203
+Median absolute LRR change: 0.108
+Pearson correlation (early vs full LRR): r = 0.700, p = 1.84e-13
 
 Wrong direction cases: 6
-  BNZ / W C: early=0.741, full=-0.903
+  BNZ / W C: early=0.741, full=-0.907
   KNZ / b m n+p: early=-0.187, full=0.635
   KNZ / u m n: early=-0.310, full=0.135
   KNZ / u m n+p: early=-0.318, full=0.181
@@ -222,7 +239,7 @@ Wrong direction cases: 6
 
 Mispredicted by site:
   KNZ: 10 of 15 (67%) — under 7, over 0, wrong 3
-  CDR: 10 of 33 (30%) — under 6, over 4, wrong 0
+  CDR: 6 of 33 (18%) — under 2, over 4, wrong 0
   MCM: 5 of 5 (100%) — under 4, over 0, wrong 1
   BNZ: 2 of 3 (67%) — under 0, over 1, wrong 1
   VCR: 1 of 1 (100%) — under 0, over 0, wrong 1
@@ -267,7 +284,7 @@ Illustrative cases:
     T6: early=-0.803, full=-0.554, change=0.249 (underestimate)
 
   HFR (1 treatments):
-    H: early=0.200, full=0.025, change=-0.175 (accurate)
+    H: early=0.200, full=0.021, change=-0.179 (accurate)
 
   VCR (1 treatments):
     Inside Juncus: early=-0.876, full=0.350, change=1.226 (wrong_direction)
@@ -282,14 +299,14 @@ Illustrative cases:
 === SECTION 3.4: SIZER RESULTS ===
 
 Total treatment combinations analyzed by SiZer: 79
-With >= 1 slope change: 23 (29.1%)
-Without slope changes: 56 (70.9%)
+With >= 1 slope change: 21 (26.6%)
+Without slope changes: 58 (73.4%)
 
 Distribution of slope changes:
-  0 changes: 56 (70.9%)
-  1 changes: 11 (13.9%)
-  2 changes: 9 (11.4%)
-  3 changes: 3 (3.8%)
+  0 changes: 58 (73.4%)
+  1 changes: 10 (12.7%)
+  2 changes: 7 (8.9%)
+  3 changes: 4 (5.1%)
 
 Among those with changes:
   Mean slope changes: 1.7
@@ -297,7 +314,7 @@ Among those with changes:
 
 SiZer results by site:
   GCE: 1/1 with changes (100%), mean=1.0
-  HFR: 1/1 with changes (100%), mean=1.0
+  HFR: 1/1 with changes (100%), mean=3.0
   NWT: 1/1 with changes (100%), mean=1.0
   VCR: 1/1 with changes (100%), mean=1.0
   KBS: 3/4 with changes (75%), mean=1.5
@@ -305,7 +322,7 @@ SiZer results by site:
   BNZ: 1/3 with changes (33%), mean=0.3
   CAP: 1/3 with changes (33%), mean=0.7
   HBR: 1/4 with changes (25%), mean=0.2
-  CDR: 6/33 with changes (18%), mean=0.3
+  CDR: 4/33 with changes (12%), mean=0.2
   ARC: 0/1 with changes (0%), mean=0.0
   LUQ: 0/3 with changes (0%), mean=0.0
   MCM: 0/5 with changes (0%), mean=0.0
@@ -316,14 +333,14 @@ SiZer results by site:
 
 === SECTION 3.5: DETECTION TIME ===
 
-Directional trends with detection data: 26
-Median years to detect: 10.5
-Mean years to detect: 13.2
+Directional trends with detection data: 24
+Median years to detect: 7.5
+Mean years to detect: 12.7
 Range: 3.0 to 32.0 years
-Median timepoints for detection: 8.5
+Median timepoints for detection: 8
 
-Annually-sampled directional detections: 26
-  Median years to detect: 10.5
+Annually-sampled directional detections: 24
+  Median years to detect: 7.5
   Range: 3.0 to 32.0 years
 
 Detection times for all directional cases:
@@ -331,10 +348,8 @@ Detection times for all directional cases:
   AND / WS07 (increasing): 12.0 years (3 timepoints)
   CAP / NP (decreasing): 16.0 years (12 timepoints)
   CDR / Camb Namb M HTelv (decreasing): 3.0 years (4 timepoints)
-  CDR / Camb Namb S (increasing): 12.0 years (13 timepoints)
-  CDR / Camb Nenrich S (increasing): 15.0 years (16 timepoints)
+  CDR / Camb Namb S (increasing): 3.0 years (4 timepoints)
   CDR / Cenrich Namb M H2Oamb (decreasing): 3.0 years (4 timepoints)
-  CDR / Cenrich Namb S (increasing): 14.0 years (15 timepoints)
   CDR / Cenrich Nenrich M H2Oamb HTelv (decreasing): 9.0 years (10 timepoints)
   HBR / N (increasing): 8.0 years (9 timepoints)
   HBR / NP (increasing): 12.0 years (13 timepoints)
@@ -356,7 +371,7 @@ Detection times for all directional cases:
 
 Detection time by trend type:
   decreasing (n=5): median=7.0, mean=7.6, range=3.0-16.0 years
-  increasing (n=21): median=12.0, mean=14.5, range=3.0-32.0 years
+  increasing (n=19): median=8.0, mean=14.1, range=3.0-32.0 years
 
 
 === SECTION 3.6: PATTERNS BY ECOSYSTEM TYPE & STOCK/FLUX ===
@@ -366,22 +381,22 @@ Detection time by trend type:
   Forest (n=10):
     Stable: 5, Variable: 0, Increasing: 4, Decreasing: 1
     Directional: 50.0%
-    Mean ratio: 0.90, Mean CV: 0.088
-
-  Grassland (n=54):
-    Stable: 20, Variable: 16, Increasing: 15, Decreasing: 3
-    Directional: 33.3%
-    Mean ratio: 1.59, Mean CV: 0.428
+    Mean ratio: 0.89, Mean CV: 0.088
 
   Urban (n=3):
     Stable: 2, Variable: 0, Increasing: 0, Decreasing: 1
     Directional: 33.3%
     Mean ratio: 1.62, Mean CV: 0.229
 
+  Grassland (n=54):
+    Stable: 22, Variable: 16, Increasing: 13, Decreasing: 3
+    Directional: 29.6%
+    Mean ratio: 1.60, Mean CV: 0.415
+
   Coastal (n=5):
     Stable: 3, Variable: 1, Increasing: 1, Decreasing: 0
     Directional: 20.0%
-    Mean ratio: 1.20, Mean CV: 0.374
+    Mean ratio: 1.19, Mean CV: 0.358
 
   Tundra (n=10):
     Stable: 5, Variable: 4, Increasing: 1, Decreasing: 0
@@ -398,7 +413,7 @@ Detection time by trend type:
   Flux (n=16):
     Stable: 9, Variable: 4, Increasing: 2, Decreasing: 1
     Directional: 18.8%
-    Mean ratio: 1.16, Mean CV: 0.248
+    Mean ratio: 1.16, Mean CV: 0.249
 
   Proxy (n=2):
     Stable: 1, Variable: 1, Increasing: 0, Decreasing: 0
@@ -406,27 +421,27 @@ Detection time by trend type:
     Mean ratio: 2.40, Mean CV: 0.254
 
   Stock (n=65):
-    Stable: 25, Variable: 17, Increasing: 19, Decreasing: 4
-    Directional: 35.4%
-    Mean ratio: 1.53, Mean CV: 0.404
+    Stable: 27, Variable: 17, Increasing: 17, Decreasing: 4
+    Directional: 32.3%
+    Mean ratio: 1.54, Mean CV: 0.392
 
 --- Trends by Experiment Type ---
   Floral Manipulation (n=1): 100.0% directional, mean ratio=2.09, mean CV=0.839
-  Fertilization (n=70): 31.4% directional, mean ratio=1.56, mean CV=0.375
+  Fertilization (n=70): 28.6% directional, mean ratio=1.56, mean CV=0.364
   Vegetation Removal (n=8): 25.0% directional, mean ratio=0.84, mean CV=0.182
-  Warming (n=4): 25.0% directional, mean ratio=1.29, mean CV=0.554
+  Warming (n=4): 25.0% directional, mean ratio=1.29, mean CV=0.555
 
 --- Detection Time by Ecosystem Type ---
   Coastal (n=1): median=6.0, mean=6.0 years
   Forest (n=5): median=12.0, mean=10.2 years
-  Grassland (n=18): median=10.5, mean=14.7 years
+  Grassland (n=16): median=7.0, mean=14.2 years
   Tundra (n=1): median=5.0, mean=5.0 years
   Urban (n=1): median=16.0, mean=16.0 years
 
 --- SiZer Slope Changes by Ecosystem Type ---
   Coastal (n=5): 40.0% with changes, mean=0.4 changes
-  Forest (n=8): 25.0% with changes, mean=0.2 changes
-  Grassland (n=53): 30.2% with changes, mean=0.6 changes
+  Forest (n=8): 25.0% with changes, mean=0.5 changes
+  Grassland (n=53): 26.4% with changes, mean=0.5 changes
   Tundra (n=10): 20.0% with changes, mean=0.2 changes
   Urban (n=3): 33.3% with changes, mean=0.7 changes
 
@@ -435,7 +450,7 @@ Detection time by trend type:
 
 Treatment combinations analyzed: 83
 With >= 1 sign flip: 54 (65.1%)
-Mean flips per combination: 4.1
+Mean flips per combination: 4.0
 Max flips: 21
 
 
@@ -458,25 +473,25 @@ ABSTRACT / INTRO:
   Experiment durations: 4-35 years
 
 RESULTS 3.2 (Trends):
-  69% non-directional, 31% directional
+  71% non-directional, 29% directional
   decreasing: 5 (6%)
-  increasing: 21 (25%)
-  stable: 35 (42%)
+  increasing: 19 (23%)
+  stable: 37 (45%)
   variable: 22 (26%)
 
 RESULTS 3.3 (Early vs Full):
-  Correlation: r=0.71, p=6.77e-14
-  Mean |LRR change|: 0.214
-  accurate: 53 (64%)
+  Correlation: r=0.70, p=1.84e-13
+  Mean |LRR change|: 0.203
+  accurate: 57 (69%)
   overestimate: 5 (6%)
-  underestimate: 19 (23%)
+  underestimate: 15 (18%)
   wrong_direction: 6 (7%)
 
 RESULTS 3.4 (SiZer):
-  29% with slope changes
-  23/79 treatment combinations
+  27% with slope changes
+  21/79 treatment combinations
 
 RESULTS 3.5 (Detection):
-  Median: 10.5 years, Range: 3-32 years
+  Median: 7.5 years, Range: 3-32 years
 
 ====================================================================== 

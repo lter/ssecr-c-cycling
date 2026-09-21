@@ -1,9 +1,9 @@
 {
   "dataset_id": "AND_tree_dbh",
   "edi_package_id": "knb-lter-and.2742.28",
-  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-and/2742/28/363a363a1b46f6cab5cc7a61f31c3544",
-  "download_timestamp": "2026-09-21T06:49:03Z",
-  "checksum_md5": "c0dc85384cc261e0b588505c220801cd",
-  "file_size_bytes": 4309361,
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-and/2742/28/bad609a870aede5da3fca0fe47647363",
+  "download_timestamp": "2026-09-21T07:03:48Z",
+  "checksum_md5": "2bda3a67f0fe607e62a4ad3dc0ff3b6b",
+  "file_size_bytes": 60871423,
   "raw_filename": "data.csv"
 }

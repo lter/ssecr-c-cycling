@@ -21,8 +21,8 @@
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTamb",3,"2015; 2016; 2021","CDR",9,37.5
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTelv",0,NA,"CDR",9,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M HTelv",0,NA,"CDR",9,0
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb S",2,"1999; 2007","CDR",23,9.09090909090909
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M",6,"2000; 2001; 2009; 2010; 2020; 2021","CDR",24,26.0869565217391
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb S",4,"1999; 2004; 2005; 2007","CDR",23,18.1818181818182
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M",4,"2009; 2010; 2020; 2021","CDR",24,17.3913043478261
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb",2,"2015; 2019","CDR",14,15.3846153846154
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTamb",2,"2014; 2020","CDR",10,22.2222222222222
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTelv",0,NA,"CDR",10,0
@@ -30,15 +30,15 @@
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTamb",3,"2015; 2016; 2021","CDR",9,37.5
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTelv",0,NA,"CDR",9,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M HTamb",4,"2014; 2017; 2018; 2020","CDR",9,50
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich S",3,"2000; 2005; 2021","CDR",23,13.6363636363636
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M",11,"1999; 2000; 2001; 2009; 2011; 2012; 2014; 2015; 2016; 2020; 2021","CDR",24,47.8260869565217
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich S",1,"2021","CDR",23,4.54545454545455
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M",9,"1999; 2009; 2011; 2012; 2014; 2015; 2016; 2020; 2021","CDR",24,39.1304347826087
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb",0,NA,"CDR",5,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTamb",6,"2013; 2014; 2015; 2018; 2019; 2021","CDR",10,66.6666666666667
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTelv",0,NA,"CDR",10,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg",0,NA,"CDR",5,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTamb",0,NA,"CDR",9,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTelv",1,"2021","CDR",9,12.5
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb S",6,"2000; 2004; 2009; 2010; 2015; 2016","CDR",23,27.2727272727273
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb S",6,"2000; 2002; 2009; 2010; 2015; 2016","CDR",23,27.2727272727273
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M",1,"2020","CDR",24,4.34782608695652
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb",0,NA,"CDR",5,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTamb",0,NA,"CDR",10,0
@@ -46,13 +46,13 @@
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg",0,NA,"CDR",5,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTamb",0,NA,"CDR",9,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTelv",0,NA,"CDR",9,0
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S",4,"2000; 2004; 2018; 2019","CDR",23,18.1818181818182
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S",2,"2018; 2019","CDR",23,9.09090909090909
 "GCE1.csv","Disturbed (March-2010)",0,NA,"GCE",11,0
 "HBR_litterfall_2009-2022_processed.csv","Ca",2,"2020; 2021","HBR",6,40
 "HBR_litterfall_2009-2022_processed.csv","N",1,"2016","HBR",13,8.33333333333333
 "HBR_litterfall_2009-2022_processed.csv","NP",3,"2017; 2020; 2021","HBR",13,25
 "HBR_litterfall_2009-2022_processed.csv","P",0,NA,"HBR",13,0
-"HFR_soil-respiration_1991-2021_Processed.csv","H",9,"1999; 2003; 2004; 2006; 2010; 2011; 2014; 2019; 2020","HFR",31,30
+"HFR_soil-respiration_1991-2021_Processed.csv","H",7,"1999; 2003; 2004; 2006; 2010; 2011; 2014","HFR",31,23.3333333333333
 "KBS_Biomass_1990-2022_processed.csv","T1",7,"1991; 1999; 2001; 2006; 2007; 2018; 2019","KBS",33,21.875
 "KBS_Biomass_1990-2022_processed.csv","T2",6,"1994; 1995; 1999; 2000; 2018; 2019","KBS",33,18.75
 "KBS_Biomass_1990-2022_processed.csv","T21",1,"1995","KBS",3,50

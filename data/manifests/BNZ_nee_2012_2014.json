@@ -1,0 +1,9 @@
+{
+  "dataset_id": "BNZ_nee_2012_2014",
+  "edi_package_id": "knb-lter-bnz.481.23",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-bnz/481/23/4b3043c86ba1677adb16eeedede1c7f6",
+  "download_timestamp": "2026-09-21T06:58:13Z",
+  "checksum_md5": "b9b2f2d0d33689fe8914fa545f2dca1b",
+  "file_size_bytes": 79214388,
+  "raw_filename": "data.csv"
+}

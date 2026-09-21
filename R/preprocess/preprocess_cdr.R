@@ -8,59 +8,72 @@ library(dplyr)
 # CDR 1: BioCON Biomass (knb-lter-cdr.302.13)
 # =============================================================================
 
+# RAW LAYOUT (long; one row per Sampling x Plot x Species, ~80k rows):
+#   Sampling (1-38), Date (M/D/YYYY; June and August harvests 1998-2011,
+#   August only from 2012), Plot, Ring (1-6), CO2 Treatment (Camb / Cenrich /
+#   "Cenriched "), Nitrogen Treatment (Namb / Nenrich), CountOfSpecies,
+#   CountOfGroup, Experiment (M = main, S = species-level), monospecies,
+#   Monogroup, Water Treatment ("" / " " / H2Oamb / H2Oneg), Temp Treatment
+#   ("" / " " / HTamb / HTelv), Species, Aboveground Biomass (g/m^2)
+#   - Species includes sorted species plus bulk fractions ("Miscellaneous
+#     litter", "Unsorted Biomass", "Green Biomass", "16 Species Weeds", "Real
+#     Weeds", "Bare ground", ...). The committed ready file sums ALL of them.
+#   - 9999 in the biomass column is a missing-value code (108 "Bare ground"
+#     rows, 2000-2004). It is set to NA before aggregating. NOTE: the legacy
+#     ready file summed these 9999s as data, inflating 101 Ring x Treatment x
+#     harvest means by 9999/n_plots (+385 to +800 g/m^2); this function
+#     deliberately does not reproduce that.
+#   - Treatment strings are pasted from the raw columns WITHOUT trimming, so
+#     they keep the raw whitespace/spelling quirks ("Camb Namb M  " vs
+#     "Camb Namb M    ", "Cenriched  Namb M ..."), exactly as in the committed
+#     ready file; analysis/01_harmonize.R normalizes them downstream.
+#
+# PROCESSING: 9999 -> NA; sum biomass over species within Date x Plot; mean of
+# the plot totals per Date x Ring x Treatment; Date reduced to the year (so
+# 1998-2011 have two rows - June and August - per Year x Ring x Treatment).
+
 #' Preprocess CDR BioCON aboveground biomass
 #' @param raw_path Path to raw CSV from EDI
-#' @return data.frame with columns: Date, Ring, Treatment, Biomass
+#' @return data.frame with columns: Date (year), Ring, Treatment, Biomass
+#'   (g/m^2; mean plot total per harvest x ring x treatment)
 preprocess_cdr_biocon_biomass <- function(raw_path) {
-  data <- read.csv(raw_path, stringsAsFactors = FALSE)
+  # strip.white = FALSE: raw whitespace is part of the Treatment keys (see above)
+  data <- read.csv(raw_path, stringsAsFactors = FALSE, check.names = FALSE,
+                   strip.white = FALSE)
 
-  # Raw EDI has: Date/Year, Ring, CO2 Treatment, N Treatment, Species richness,
-  # Aboveground biomass, etc.
-  # Need to create combined treatment: e.g., "Cenrich Namb M"
-  # Aggregate biomass across species to plot level
+  required <- c("Date", "Plot", "Ring", "CO2 Treatment", "Nitrogen Treatment",
+                "Experiment", "Water Treatment", "Temp Treatment",
+                "Aboveground Biomass (g/m^2)")
+  missing_cols <- setdiff(required, names(data))
+  if (length(missing_cols) > 0) {
+    stop("CDR BioCON: expected column(s) not found: ",
+         paste(missing_cols, collapse = ", "))
+  }
 
-  # Identify the correct columns (names may vary by EDI version)
-  # Expected: monoculture/species richness info, CO2 and N treatments
-  # The preprocessing creates: Date (year), Ring, Treatment (combined), Biomass
-
-  # Trim whitespace from character columns
   data <- data %>%
-    mutate(across(where(is.character), trimws))
-
-  # If the data already has Treatment and Biomass columns (pre-aggregated entity):
-  if (all(c("Date", "Ring", "Treatment", "Biomass") %in% names(data))) {
-    return(as.data.frame(data %>% select(Date, Ring, Treatment, Biomass)))
+    rename(Biomass_raw = `Aboveground Biomass (g/m^2)`) %>%
+    mutate(
+      # Missing-value code -> NA before any aggregation
+      Biomass_raw = ifelse(Biomass_raw == 9999, NA_real_, as.numeric(Biomass_raw)),
+      Treatment = paste(`CO2 Treatment`, `Nitrogen Treatment`, Experiment,
+                        `Water Treatment`, `Temp Treatment`),
+      SampleDate = as.Date(Date, format = "%m/%d/%Y")
+    )
+  if (any(is.na(data$SampleDate))) {
+    stop("CDR BioCON: unparseable Date value(s): ",
+         paste(head(unique(data$Date[is.na(data$SampleDate)])), collapse = ", "))
   }
 
-  # Otherwise, build Treatment column from CO2/N treatment columns
-  # Common column patterns in BioCON EDI data:
-  co2_col <- grep("CO2|co2|Cenrich|Camb", names(data), value = TRUE)[1]
-  n_col <- grep("^N$|NTrt|Nitrogen|Nenrich|Namb", names(data), value = TRUE)[1]
-  sr_col <- grep("SR|Species.Rich|Monoculture|CountOfSpecies", names(data), value = TRUE)[1]
-  biomass_col <- grep("Biomass|biomass|AbvBioAnnProd", names(data), value = TRUE)[1]
-  date_col <- grep("Date|Year|year", names(data), value = TRUE)[1]
-  ring_col <- grep("Ring|ring", names(data), value = TRUE)[1]
-
-  # Build the combined Treatment from whichever factor columns exist.
-  # Note: the x_col variables are length-1 (grep(...)[1] gives NA when absent),
-  # so test them with is.na() outside of vectorized code — a length-1 ifelse()
-  # inside mutate() would recycle row 1's value to every row.
-  trt_parts <- lapply(c(co2_col, n_col, sr_col), function(col) {
-    if (!is.na(col)) as.character(data[[col]]) else rep("", nrow(data))
-  })
   result <- data %>%
-    mutate(Treatment = trimws(do.call(paste, trt_parts)))
-
-  # Aggregate if needed
-  if (!is.na(biomass_col) && !is.na(date_col) && !is.na(ring_col)) {
-    result <- result %>%
-      group_by(
-        Date = .data[[date_col]],
-        Ring = .data[[ring_col]],
-        Treatment
-      ) %>%
-      summarise(Biomass = sum(.data[[biomass_col]], na.rm = TRUE), .groups = "drop")
-  }
+    # Plot total per harvest (all species/fractions)
+    group_by(SampleDate, Ring, Treatment, Plot) %>%
+    summarise(Biomass = sum(Biomass_raw, na.rm = TRUE), .groups = "drop") %>%
+    # Mean plot total per harvest x ring x treatment
+    group_by(SampleDate, Ring, Treatment) %>%
+    summarise(Biomass = mean(Biomass), .groups = "drop") %>%
+    arrange(SampleDate, Ring, Treatment) %>%
+    mutate(Date = as.integer(format(SampleDate, "%Y"))) %>%
+    select(Date, Ring, Treatment, Biomass)
 
   as.data.frame(result)
 }

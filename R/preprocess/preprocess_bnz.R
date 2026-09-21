@@ -9,10 +9,16 @@ library(dplyr)
 
 #' Preprocess BNZ NEE data from EDI
 #' Aggregates half-hourly flux to annual totals per fence × treatment
-#' @param raw_path Path to raw CSV from EDI
+#' @param ... Paths to the raw EDI entity files (one per period)
 #' @return data.frame with columns: year, fence, treatment, NEE
-preprocess_bnz_nee <- function(raw_path) {
-  data <- read.csv(raw_path, stringsAsFactors = FALSE)
+preprocess_bnz_nee <- function(...) {
+  # The package splits the half-hourly record across five entities
+  # (2009-2011, 2012-2014, 2015-2017, 2018-2019, 2020-2021), one registry row
+  # each; the runner passes all of their paths. Identical column layout.
+  raw_paths <- c(...)
+  data <- do.call(rbind, lapply(raw_paths, function(p) {
+    as.data.frame(data.table::fread(p, na.strings = c("NA", "NaN", "")))
+  }))
 
   # Raw EDI has half-hourly data: year, doy, hour, fence, WW, SW, NEE_g, etc.
   # WW = winter warming treatment (W/C)

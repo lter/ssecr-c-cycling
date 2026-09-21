@@ -1,9 +1,9 @@
 {
   "dataset_id": "NWT_anpp",
   "edi_package_id": "knb-lter-nwt.13.7",
-  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/13/7/4eb00e2fd65329c4463732974907061f",
-  "download_timestamp": "2026-09-21T06:48:59Z",
-  "checksum_md5": "39678245fc84fd27a64d3358812ea821",
-  "file_size_bytes": 1336811,
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/13/7/9a2e3f9fc5a38f5831065088ee9a75bf",
+  "download_timestamp": "2026-09-21T07:00:31Z",
+  "checksum_md5": "e16bb947be104d52d35e2df3929fde69",
+  "file_size_bytes": 86173,
   "raw_filename": "data.csv"
 }

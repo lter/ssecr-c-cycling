@@ -1,0 +1,9 @@
+{
+  "dataset_id": "BNZ_nee_2018_2019",
+  "edi_package_id": "knb-lter-bnz.481.23",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-bnz/481/23/5f108584e3253c691acfc5acc15a518d",
+  "download_timestamp": "2026-09-21T06:58:19Z",
+  "checksum_md5": "c3e28bf9c303e080af72e913bd1c8612",
+  "file_size_bytes": 34075247,
+  "raw_filename": "data.csv"
+}
