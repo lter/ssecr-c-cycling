@@ -140,7 +140,7 @@ table1 <- freq_by_source %>%
   left_join(metadata %>% distinct(source, site_full_name, site_type,
                                    experiment_type, stock_or_flux,
                                    experiment_name, manipulation,
-                                   response_variable, setting),
+                                   response_variable, setting, processing_notes),
             by = "source") %>%
   # distinct(): a dataset split across several EDI entities (BNZ) has one registry row per entity
   left_join(registry_included %>% distinct(ready_filename, edi_package_id),
@@ -159,7 +159,8 @@ table1 <- freq_by_source %>%
     `Years Analyzed` = year_range,
     `N Years Sampled` = n_years,
     `N Treatments` = `N Treatments`,
-    `EDI Package` = edi_package_id
+    `EDI Package` = edi_package_id,
+    `Processing Notes` = processing_notes
   ) %>%
   arrange(`Ecosystem Type`, Site)
 # N Treatments shows analyzable (screened) where some treatments had < 3 timepoints
