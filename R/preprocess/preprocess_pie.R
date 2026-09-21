@@ -14,7 +14,7 @@
 #   - some code VALUES also carry trailing whitespace: Species "TSA " and
 #     "TSA<nbsp>" (2016, 2018), Creek "WE " (2016), Branch "L " (2012).
 #   - missing values are "NA"; no numeric sentinel codes occur.
-# Codes: Species SP / DS / SSA / TSA; Creek NE, SW = Enriched, CL, WE = Control;
+# Codes: Species SP / DS / SSA / TSA; Creek WE, NE = reference, SW, CL = nutrient;
 #   Branch L / R; Transect 1-4.
 #
 # Legacy transformation (legacy/preprocessing_scripts_manual/PIE Processing
@@ -62,16 +62,22 @@ preprocess_pie_plant_shoot <- function(raw_path, clean_codes = TRUE) {
     group_by(Year, Creek, Branch, Transect) %>%
     summarise(shoot_mass = sum(shoot_mass), .groups = "drop")
 
-  # Map creek to treatment: NE/SW = Enriched, CL/WE = Control; drop any
-  # other creek codes rather than silently labeling them Control
+  # Map creek-years to treatment from the package metadata: reference creeks
+  # are West (WE) and Nelson (NE); Sweeney (SW) was fertilized 2004-2012 and
+  # Clubhead (CL) in 2005 and 2009-2019. Creek-years in which a nutrient creek
+  # was not being fertilized (CL 2004, 2006-2008, 2020; SW after 2012) are
+  # neither treatment nor reference and are dropped. (The 2025 hand-processed
+  # file had NE as enriched and CL as control, in every year.)
   data <- data %>%
     mutate(
+      Creek = trim_code(Creek),
+      Replicate = paste(Creek, Branch, Transect),
       Treatment = case_when(
-        trim_code(Creek) %in% c("NE", "SW") ~ "Enriched",
-        trim_code(Creek) %in% c("CL", "WE") ~ "Control",
+        Creek %in% c("WE", "NE") ~ "Control",
+        Creek == "SW" & Year >= 2004 & Year <= 2012 ~ "Enriched",
+        Creek == "CL" & (Year == 2005 | (Year >= 2009 & Year <= 2019)) ~ "Enriched",
         TRUE ~ NA_character_
-      ),
-      Replicate = paste(Branch, Transect)
+      )
     ) %>%
     filter(!is.na(Treatment)) %>%
     arrange(Year, Creek, Branch, Transect) %>%

@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-21 00:23 
+Generated: 2026-09-21 00:30 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -8,9 +8,9 @@ Generated: 2026-09-21 00:23
 Number of LTER sites: 18
 Number of ecosystem types: 6
 Number of experiment types: 4
-Total site-treatment combinations (analyzable, >= 3 timepoints): 83
+Total site-treatment combinations (analyzable, >= 3 timepoints): 78
 Year span range: 4 to 35 years
-Mean year span: 16.8 years
+Mean year span: 16.9 years
 Median year span: 12.0 years
 Sampling frequency: 18 annual, 0 sub-annual datasets
 
@@ -101,7 +101,7 @@ Sites by response type:
 7                 Soil respiration (CO2 flux)          Flux            1
 8                               Soil CO2 flux          Flux            3
 9          Chlorophyll (ug L-1; carbon proxy)         Proxy            1
-10                Aboveground biomass (g m-2)         Stock           33
+10                Aboveground biomass (g m-2)         Stock           28
 11 Aboveground net primary production (g m-2)         Stock            5
 12 Aboveground net primary production (g m-2)         Stock           15
 13                Aboveground biomass (g m-2)         Stock            1
@@ -115,35 +115,35 @@ Sites by response type:
 
 === SECTION 3.2: TREND CLASSIFICATION ===
 
-Total analyzable treatment combinations: 83
-Non-directional: 61 (73.5%)
-Directional: 22 (26.5%)
+Total analyzable treatment combinations: 78
+Non-directional: 56 (71.8%)
+Directional: 22 (28.2%)
 
 Breakdown:
-  decreasing: 6 (7.2%)
-  increasing: 16 (19.3%)
-  stable: 41 (49.4%)
-  variable: 20 (24.1%)
+  decreasing: 6 (7.7%)
+  increasing: 16 (20.5%)
+  stable: 33 (42.3%)
+  variable: 23 (29.5%)
 
 Trend class statistics:
   decreasing (n=6):
-    Mean ratio: 1.74 (median 1.70, SD 0.63)
-    Mean CV: 0.233 (median 0.208)
-    Mean year span: 18.2 (median 19.5)
+    Mean ratio: 1.39 (median 1.34, SD 0.35)
+    Mean CV: 0.203 (median 0.165)
+    Mean year span: 20.7 (median 23.0)
   increasing (n=16):
     Mean ratio: 1.37 (median 1.36, SD 0.57)
     Mean CV: 0.605 (median 0.685)
-    Mean year span: 26.3 (median 34.0)
-  stable (n=41):
-    Mean ratio: 1.42 (median 1.33, SD 0.44)
-    Mean CV: 0.195 (median 0.206)
-    Mean year span: 11.2 (median 9.0)
-  variable (n=20):
-    Mean ratio: 1.75 (median 1.55, SD 0.78)
-    Mean CV: 0.541 (median 0.505)
-    Mean year span: 20.2 (median 14.0)
+    Mean year span: 26.1 (median 34.0)
+  stable (n=33):
+    Mean ratio: 1.13 (median 1.12, SD 0.25)
+    Mean CV: 0.187 (median 0.208)
+    Mean year span: 10.6 (median 9.0)
+  variable (n=23):
+    Mean ratio: 1.53 (median 1.32, SD 0.83)
+    Mean CV: 0.500 (median 0.480)
+    Mean year span: 18.6 (median 12.0)
 
-Robustness to log transform (LRR vs ratio): 6 of 83 directional calls change (7.2%)
+Robustness to log transform (LRR vs ratio): 6 of 78 directional calls change (7.7%)
   BNZ / W C: ratio non-directional (p=0.384) -> LRR decreasing (p=0.015)
   KNZ / b u c: ratio increasing (p=0.044) -> LRR non-directional (p=0.322)
   KNZ / b u p: ratio increasing (p=0.016) -> LRR non-directional (p=0.098)
@@ -152,66 +152,68 @@ Robustness to log transform (LRR vs ratio): 6 of 83 directional calls change (7.
   MCM / C: ratio non-directional (p=0.050) -> LRR increasing (p=0.043)
 
 Directional trends (n=22):
-  Year span range: 8 to 35 years
-  Mean year span: 24.1 years
+  Year span range: 9 to 35 years
+  Mean year span: 24.6 years
   Sites with >= 1 directional trend: 9 / 18
 
 --- TABLE 2: Trend Type Summary ---
   Trend Type  N Mean Ratio (SD) Median Ratio Mean CV Median CV
-1     stable 41     1.42 (0.44)         1.33   0.195     0.206
-2   variable 20     1.75 (0.78)         1.55   0.541     0.505
+1     stable 33     1.13 (0.25)         1.12   0.187     0.208
+2   variable 23     1.53 (0.83)         1.32   0.500     0.480
 3 increasing 16     1.37 (0.57)         1.36   0.605     0.685
-4 decreasing  6     1.74 (0.63)         1.70   0.233     0.208
+4 decreasing  6     1.39 (0.35)         1.34   0.203     0.165
   Mean Duration (yr) Median Duration (yr)
-1               11.2                  9.0
-2               20.2                 14.0
-3               26.3                 34.0
-4               18.2                 19.5
+1               10.6                  9.0
+2               18.6                 12.0
+3               26.1                 34.0
+4               20.7                 23.0
   -> Written to figures/Table2_trend_type_summary.csv
 
 
 === SECTION 3.3: EARLY VS FULL LRR COMPARISON ===
 
 Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
-|early - full LRR|: median 0.09 (~10% of ratio), 75th pct 0.25 (~28%), 90th pct 0.53 (~70%)
+|early - full LRR|: median 0.12 (~13% of ratio), 75th pct 0.26 (~29%), 90th pct 0.56 (~75%)
    tolerance ratio_pct accurate underestimate overestimate wrong_direction
-1        0.1  10.51709       42            23           12               6
-2        0.2  22.14028       59            13            5               6
-3        0.3  34.98588       65             9            3               6
-4        0.4  49.18247       69             7            1               6
-5        0.5  64.87213       70             7            0               6
-6        0.6  82.21188       73             4            0               6
-7        0.7 101.37527       76             1            0               6
-8        0.8 122.55409       77             0            0               6
-9        0.9 145.96031       77             0            0               6
-10       1.0 171.82818       77             0            0               6
+1        0.1  10.51709       35            19           16               8
+2        0.2  22.14028       54            13            3               8
+3        0.3  34.98588       60             9            1               8
+4        0.4  49.18247       62             7            1               8
+5        0.5  64.87213       63             7            0               8
+6        0.6  82.21188       66             4            0               8
+7        0.7 101.37527       69             1            0               8
+8        0.8 122.55409       70             0            0               8
+9        0.9 145.96031       70             0            0               8
+10       1.0 171.82818       70             0            0               8
    mispredicted_pct
-1         49.397590
-2         28.915663
-3         21.686747
-4         16.867470
-5         15.662651
-6         12.048193
-7          8.433735
-8          7.228916
-9          7.228916
-10         7.228916
+1          55.12821
+2          30.76923
+3          23.07692
+4          20.51282
+5          19.23077
+6          15.38462
+7          11.53846
+8          10.25641
+9          10.25641
+10         10.25641
 
-Sensitivity to tolerance (mispredicted %): t=0.1: 49%; t=0.2: 29%; t=0.3: 22%; t=0.4: 17%; t=0.5: 16%; t=0.6: 12%; t=0.7: 8%; t=0.8: 7%; t=0.9: 7%; t=1.0: 7% 
-Total treatment combinations with early vs full LRR: 83
+Sensitivity to tolerance (mispredicted %): t=0.1: 55%; t=0.2: 31%; t=0.3: 23%; t=0.4: 21%; t=0.5: 19%; t=0.6: 15%; t=0.7: 12%; t=0.8: 10%; t=0.9: 10%; t=1.0: 10% 
+Total treatment combinations with early vs full LRR: 78
 
 Classification:
-  accurate: 59 (71.1%)
-  overestimate: 5 (6.0%)
-  underestimate: 13 (15.7%)
-  wrong_direction: 6 (7.2%)
+  accurate: 54 (69.2%)
+  overestimate: 3 (3.8%)
+  underestimate: 13 (16.7%)
+  wrong_direction: 8 (10.3%)
 
-Mean absolute LRR change: 0.205
-Median absolute LRR change: 0.094
-Pearson correlation (early vs full LRR): r = 0.703, p = 1.27e-13
+Mean absolute LRR change: 0.222
+Median absolute LRR change: 0.122
+Pearson correlation (early vs full LRR): r = 0.594, p = 9.85e-09
 
-Wrong direction cases: 6
+Wrong direction cases: 8
   BNZ / W C: early=0.741, full=-0.907
+  CDR / Camb Namb M H2Oamb HTelv: early=0.220, full=-0.104
+  CDR / Camb Nenrich M H2Oamb: early=0.280, full=-0.125
   KNZ / b m n+p: early=-0.187, full=0.635
   KNZ / u m n: early=-0.310, full=0.135
   KNZ / u m n+p: early=-0.318, full=0.181
@@ -221,7 +223,7 @@ Wrong direction cases: 6
 Mispredicted by site:
   KNZ: 10 of 15 (67%) — under 7, over 0, wrong 3
   MCM: 5 of 5 (100%) — under 4, over 0, wrong 1
-  CDR: 5 of 33 (15%) — under 1, over 4, wrong 0
+  CDR: 5 of 28 (18%) — under 1, over 2, wrong 2
   BNZ: 2 of 3 (67%) — under 0, over 1, wrong 1
   VCR: 1 of 1 (100%) — under 0, over 0, wrong 1
   AND: 1 of 2 (50%) — under 1, over 0, wrong 0
@@ -272,22 +274,22 @@ Illustrative cases:
 
   HBR (4 treatments):
     Ca: early=-0.033, full=-0.020, change=0.014 (accurate)
-    N: early=-0.047, full=0.004, change=0.051 (accurate)
-    NP: early=-0.035, full=-0.014, change=0.020 (accurate)
-    P: early=-0.030, full=-0.040, change=-0.010 (accurate)
+    N: early=-0.031, full=0.012, change=0.044 (accurate)
+    NP: early=-0.032, full=-0.010, change=0.022 (accurate)
+    P: early=-0.061, full=-0.045, change=0.016 (accurate)
 
 
 === SECTION 3.4: SIZER RESULTS ===
 
-Total treatment combinations analyzed by SiZer: 79
-With >= 1 slope change: 20 (25.3%)
-Without slope changes: 59 (74.7%)
+Total treatment combinations analyzed by SiZer: 74
+With >= 1 slope change: 21 (28.4%)
+Without slope changes: 53 (71.6%)
 
 Distribution of slope changes:
-  0 changes: 59 (74.7%)
-  1 changes: 12 (15.2%)
-  2 changes: 3 (3.8%)
-  3 changes: 5 (6.3%)
+  0 changes: 53 (71.6%)
+  1 changes: 12 (16.2%)
+  2 changes: 5 (6.8%)
+  3 changes: 4 (5.4%)
 
 Among those with changes:
   Mean slope changes: 1.6
@@ -303,7 +305,7 @@ SiZer results by site:
   CAP: 1/3 with changes (33%), mean=0.7
   HBR: 1/4 with changes (25%), mean=0.2
   KBS: 1/4 with changes (25%), mean=0.5
-  CDR: 5/33 with changes (15%), mean=0.2
+  CDR: 6/28 with changes (21%), mean=0.3
   ARC: 0/1 with changes (0%), mean=0.0
   LUQ: 0/3 with changes (0%), mean=0.0
   MCM: 0/5 with changes (0%), mean=0.0
@@ -316,9 +318,9 @@ SiZer results by site:
 
 Directional trends with detection data: 22
 Median years to detect: 7.0
-Mean years to detect: 11.8
+Mean years to detect: 12.1
 Range: 3.0 to 31.0 years
-Median timepoints for detection: 7.5
+Median timepoints for detection: 8
 
 Annually-sampled directional detections: 22
   Median years to detect: 7.0
@@ -328,12 +330,12 @@ Detection times for all directional cases:
   AND / WS06 (increasing): 12.0 years (3 timepoints)
   AND / WS07 (increasing): 12.0 years (3 timepoints)
   CAP / NP (decreasing): 16.0 years (12 timepoints)
-  CDR / Camb Namb M HTelv (decreasing): 3.0 years (4 timepoints)
   CDR / Camb Nenrich M (decreasing): 6.0 years (7 timepoints)
   CDR / Cenrich Nenrich M (decreasing): 23.0 years (24 timepoints)
-  CDR / Cenrich Nenrich M H2Oamb HTelv (decreasing): 4.0 years (5 timepoints)
-  HBR / N (increasing): 8.0 years (9 timepoints)
-  HBR / NP (increasing): 12.0 years (13 timepoints)
+  CDR / Cenrich Nenrich M H2Oamb HTelv (decreasing): 7.0 years (8 timepoints)
+  CDR / Cenrich Nenrich S (decreasing): 11.0 years (12 timepoints)
+  HBR / N (increasing): 6.0 years (7 timepoints)
+  HBR / NP (increasing): 10.0 years (11 timepoints)
   HFR / H (decreasing): 7.0 years (8 timepoints)
   KBS / T3 (increasing): 24.0 years (25 timepoints)
   KNZ / b m c (increasing): 7.0 years (8 timepoints)
@@ -349,8 +351,8 @@ Detection times for all directional cases:
   VCR / Inside Juncus (increasing): 6.0 years (6 timepoints)
 
 Detection time by trend type:
-  decreasing (n=6): median=6.5, mean=9.8, range=3.0-23.0 years
-  increasing (n=16): median=7.5, mean=12.5, range=3.0-31.0 years
+  decreasing (n=6): median=9.0, mean=11.7, range=6.0-23.0 years
+  increasing (n=16): median=7.0, mean=12.3, range=3.0-31.0 years
 
 
 === SECTION 3.6: PATTERNS BY ECOSYSTEM TYPE & STOCK/FLUX ===
@@ -360,22 +362,22 @@ Detection time by trend type:
   Forest (n=10):
     Stable: 5, Variable: 0, Increasing: 4, Decreasing: 1
     Directional: 50.0%
-    Mean ratio: 0.90, Mean CV: 0.091
+    Mean ratio: 0.90, Mean CV: 0.095
 
   Urban (n=3):
     Stable: 2, Variable: 0, Increasing: 0, Decreasing: 1
     Directional: 33.3%
     Mean ratio: 1.62, Mean CV: 0.229
 
-  Grassland (n=54):
-    Stable: 26, Variable: 14, Increasing: 10, Decreasing: 4
-    Directional: 25.9%
-    Mean ratio: 1.64, Mean CV: 0.413
+  Grassland (n=49):
+    Stable: 18, Variable: 17, Increasing: 10, Decreasing: 4
+    Directional: 28.6%
+    Mean ratio: 1.34, Mean CV: 0.427
 
   Coastal (n=5):
     Stable: 3, Variable: 1, Increasing: 1, Decreasing: 0
     Directional: 20.0%
-    Mean ratio: 1.19, Mean CV: 0.358
+    Mean ratio: 1.20, Mean CV: 0.358
 
   Tundra (n=10):
     Stable: 5, Variable: 4, Increasing: 1, Decreasing: 0
@@ -392,54 +394,54 @@ Detection time by trend type:
   Flux (n=16):
     Stable: 9, Variable: 4, Increasing: 2, Decreasing: 1
     Directional: 18.8%
-    Mean ratio: 1.16, Mean CV: 0.249
+    Mean ratio: 1.16, Mean CV: 0.251
 
   Proxy (n=2):
     Stable: 1, Variable: 1, Increasing: 0, Decreasing: 0
     Directional: 0.0%
     Mean ratio: 2.40, Mean CV: 0.254
 
-  Stock (n=65):
-    Stable: 31, Variable: 15, Increasing: 14, Decreasing: 5
-    Directional: 29.2%
-    Mean ratio: 1.57, Mean CV: 0.391
+  Stock (n=60):
+    Stable: 23, Variable: 18, Increasing: 14, Decreasing: 5
+    Directional: 31.7%
+    Mean ratio: 1.32, Mean CV: 0.400
 
 --- Trends by Experiment Type ---
   Floral Manipulation (n=1): 100.0% directional, mean ratio=2.09, mean CV=0.839
-  Fertilization (n=70): 25.7% directional, mean ratio=1.59, mean CV=0.362
-  Vegetation Removal (n=8): 25.0% directional, mean ratio=0.84, mean CV=0.186
+  Fertilization (n=65): 27.7% directional, mean ratio=1.36, mean CV=0.369
+  Vegetation Removal (n=8): 25.0% directional, mean ratio=0.85, mean CV=0.191
   Warming (n=4): 25.0% directional, mean ratio=1.29, mean CV=0.555
 
 --- Detection Time by Ecosystem Type ---
   Coastal (n=1): median=6.0, mean=6.0 years
-  Forest (n=5): median=12.0, mean=10.2 years
-  Grassland (n=14): median=6.5, mean=12.9 years
+  Forest (n=5): median=10.0, mean=9.4 years
+  Grassland (n=14): median=7.0, mean=13.7 years
   Tundra (n=1): median=5.0, mean=5.0 years
   Urban (n=1): median=16.0, mean=16.0 years
 
 --- SiZer Slope Changes by Ecosystem Type ---
   Coastal (n=5): 40.0% with changes, mean=0.4 changes
   Forest (n=8): 25.0% with changes, mean=0.5 changes
-  Grassland (n=53): 24.5% with changes, mean=0.4 changes
+  Grassland (n=48): 29.2% with changes, mean=0.5 changes
   Tundra (n=10): 20.0% with changes, mean=0.2 changes
   Urban (n=3): 33.3% with changes, mean=0.7 changes
 
 
 === SIGN FLIP ANALYSIS ===
 
-Treatment combinations analyzed: 83
-With >= 1 sign flip: 55 (66.3%)
-Mean flips per combination: 4.0
+Treatment combinations analyzed: 78
+With >= 1 sign flip: 61 (78.2%)
+Mean flips per combination: 4.6
 Max flips: 21
 
 
 === SUPPLEMENTAL TABLE S2 ===
   -> Written to figures/supplemental/TableS2_full_treatment_statistics.csv
-  Rows: 83
+  Rows: 78
 
 --- SUPPLEMENTAL TABLE S3 ---
   -> Written to figures/supplemental/TableS3_sizer_results.csv
-  Rows: 79
+  Rows: 74
 
 
 ====================================================================== 
@@ -448,27 +450,27 @@ QUICK-REFERENCE: KEY NUMBERS FOR MANUSCRIPT TEXT
 
 ABSTRACT / INTRO:
   18 LTER sites, 6 ecosystem types, 4 experiment types
-  83 site-treatment combinations analyzed
+  78 site-treatment combinations analyzed
   Experiment durations: 4-35 years
 
 RESULTS 3.2 (Trends):
-  74% non-directional, 26% directional
-  decreasing: 6 (7%)
-  increasing: 16 (19%)
-  stable: 41 (49%)
-  variable: 20 (24%)
+  72% non-directional, 28% directional
+  decreasing: 6 (8%)
+  increasing: 16 (20%)
+  stable: 33 (42%)
+  variable: 23 (30%)
 
 RESULTS 3.3 (Early vs Full):
-  Correlation: r=0.70, p=1.27e-13
-  Mean |LRR change|: 0.205
-  accurate: 59 (71%)
-  overestimate: 5 (6%)
-  underestimate: 13 (16%)
-  wrong_direction: 6 (7%)
+  Correlation: r=0.59, p=9.85e-09
+  Mean |LRR change|: 0.222
+  accurate: 54 (69%)
+  overestimate: 3 (4%)
+  underestimate: 13 (17%)
+  wrong_direction: 8 (10%)
 
 RESULTS 3.4 (SiZer):
-  25% with slope changes
-  20/79 treatment combinations
+  28% with slope changes
+  21/74 treatment combinations
 
 RESULTS 3.5 (Detection):
   Median: 7.0 years, Range: 3-31 years

@@ -6,44 +6,39 @@
 "CAP","Central Arizona-Phoenix","Urban","N",11,0,NA,"-0.013726","0.4669",5
 "CAP","Central Arizona-Phoenix","Urban","NP",12,2,"2013; 2019","0.047595; -0.23391; -0.176289","0.8379; 0.1373; 0.3753",5
 "CAP","Central Arizona-Phoenix","Urban","P",12,0,NA,"-0.005244","0.7591",5
-"CDR","Cedar Creek","Grassland","Camb Namb M H2Oamb",14,0,NA,"0.036039","0.445",5
-"CDR","Cedar Creek","Grassland","Camb Namb M H2Oamb HTamb",10,0,NA,"-0.001531","0.9768",5
-"CDR","Cedar Creek","Grassland","Camb Namb M H2Oamb HTelv",10,0,NA,"-0.083858","0.1855",5
-"CDR","Cedar Creek","Grassland","Camb Namb M H2Oneg",5,0,NA,"0.057858","0.3101",5
-"CDR","Cedar Creek","Grassland","Camb Namb M H2Oneg HTamb",9,0,NA,"-0.030688","0.5385",5
-"CDR","Cedar Creek","Grassland","Camb Namb M H2Oneg HTelv",9,0,NA,"-0.027891","0.6272",5
-"CDR","Cedar Creek","Grassland","Camb Namb M HTelv",9,0,NA,"-0.265037","0.0063",5
-"CDR","Cedar Creek","Grassland","Camb Namb S",23,3,"2001; 2004; 2015","-0.07757; 0.257033; -0.005213; -0.045065","0.2796; 0.039; 0.8061; 0.2125",5
+"CDR","Cedar Creek","Grassland","Camb Namb M H2Oamb HTelv",10,0,NA,"-0.05032","0.201",5
+"CDR","Cedar Creek","Grassland","Camb Namb M H2Oneg",5,0,NA,"0.020345","0.7915",5
+"CDR","Cedar Creek","Grassland","Camb Namb M H2Oneg HTamb",9,0,NA,"-0.030807","0.2324",5
+"CDR","Cedar Creek","Grassland","Camb Namb M H2Oneg HTelv",9,0,NA,"-0.021451","0.4662",5
 "CDR","Cedar Creek","Grassland","Camb Nenrich M",24,1,"2005","-0.038159; -0.001718","0.0048; 0.7783",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oamb",14,0,NA,"-0.017448","0.6807",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oamb HTamb",10,0,NA,"-0.009151","0.7952",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oamb HTelv",10,0,NA,"-0.02591","0.7068",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oneg",5,0,NA,"0.003813","0.9637",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oneg HTamb",9,0,NA,"-0.0291","0.4763",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oneg HTelv",9,0,NA,"0.019832","0.6737",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich M HTamb",9,0,NA,"0.022429","0.7031",5
-"CDR","Cedar Creek","Grassland","Camb Nenrich S",23,1,"2018","0.005961; -0.113073","0.461; NaN",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oamb",14,1,"2011","-0.007339; 0.092273","0.7651; 0.2864",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oamb HTamb",10,0,NA,"-0.004022","0.818",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oamb HTelv",10,0,NA,"-0.007213","0.8899",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oneg",5,0,NA,"-0.029769","0.2583",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oneg HTamb",9,0,NA,"-0.024823","0.3734",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich M H2Oneg HTelv",9,0,NA,"0.001845","0.9468",5
+"CDR","Cedar Creek","Grassland","Camb Nenrich S",23,2,"2000; 2004","-0.000838; -0.327109; 0.00769","0.9981; 0.0345; 0.5332",5
 "CDR","Cedar Creek","Grassland","Cenrich Namb M",24,0,NA,"-0.003678","0.3208",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oamb",5,0,NA,"-0.217598","0.0939",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oamb HTamb",10,0,NA,"0.042229","0.7689",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oamb HTelv",10,0,NA,"-0.07308","0.2348",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oneg",5,0,NA,"-0.111333","0.1875",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oneg HTamb",9,0,NA,"-0.031022","0.3624",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oneg HTelv",9,0,NA,"-0.029662","0.5407",5
-"CDR","Cedar Creek","Grassland","Cenrich Namb S",23,0,NA,"0.003481","0.67",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oamb",5,0,NA,"-0.188196","0.1287",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oamb HTamb",10,0,NA,"0.021726","0.6681",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oamb HTelv",10,0,NA,"-0.034378","0.2599",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oneg",5,0,NA,"-0.112082","0.2043",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oneg HTamb",9,1,"2012","NA; 0.000522","NA; 0.9824",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb M H2Oneg HTelv",9,0,NA,"-0.026175","0.3083",5
+"CDR","Cedar Creek","Grassland","Cenrich Namb S",23,0,NA,"-0.002011","0.7841",5
 "CDR","Cedar Creek","Grassland","Cenrich Nenrich M",24,1,"2015","-0.001469; -0.12574","0.8258; 0.0232",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oamb",5,0,NA,"0.068858","0.5612",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oamb HTamb",10,0,NA,"-0.037132","0.5643",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oamb HTelv",10,0,NA,"-0.217907","0.0278",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg",5,0,NA,"-0.038331","0.6892",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg HTamb",9,0,NA,"-0.025773","0.7405",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg HTelv",9,0,NA,"0.093847","0.3883",5
-"CDR","Cedar Creek","Grassland","Cenrich Nenrich S",23,1,"2015","0.003826; -0.070093","0.7799; 0.285",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oamb",5,0,NA,"0.018914","0.8627",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oamb HTamb",10,0,NA,"-0.023284","0.5729",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oamb HTelv",10,0,NA,"-0.13022","0.0107",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg",5,0,NA,"-0.068388","0.3253",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg HTamb",9,0,NA,"-0.027992","0.5723",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg HTelv",9,0,NA,"0.047522","0.4411",5
+"CDR","Cedar Creek","Grassland","Cenrich Nenrich S",23,2,"2000; 2007","-0.095787; -0.12109; -0.009755","0.7563; 0.0424; 0.4449",5
 "GCE","Georgia Coastal Ecosystems","Coastal","Disturbed (March-2010)",11,1,"2012","0.192047; -0.01479","0.0754; 0.0173",5
 "HBR","Hubbard Brook","Forest","Ca",6,0,NA,"0.005282","0.4198",5
-"HBR","Hubbard Brook","Forest","N",13,0,NA,"0.011711","0",5
-"HBR","Hubbard Brook","Forest","NP",13,1,"2012","0.000441; 0.013904","0.976; 0.0075",5
-"HBR","Hubbard Brook","Forest","P",13,0,NA,"0.000506","0.7981",5
+"HBR","Hubbard Brook","Forest","N",11,0,NA,"0.013621","1e-04",5
+"HBR","Hubbard Brook","Forest","NP",11,1,"2011","NA; 0.010853","NA; 0.014",5
+"HBR","Hubbard Brook","Forest","P",11,0,NA,"0.003714","0.1166",5
 "HFR","Harvard Forest","Forest","H",31,3,"2000; 2011; 2018","-0.035911; 0.011632; -0.024153; -0.017584","0.001; 0.2967; 0.0794; 0.519",5
 "KBS","Kellogg Biological Station","Grassland","T1",29,0,NA,"0.010103","0.3808",5
 "KBS","Kellogg Biological Station","Grassland","T2",29,0,NA,"0.013785","0.2291",5
@@ -64,16 +59,16 @@
 "KNZ","Konza Prairie","Grassland","u u n",36,0,NA,"-0.014199","0.3539",5
 "KNZ","Konza Prairie","Grassland","u u n+p",36,0,NA,"-0.020918","0.2812",5
 "KNZ","Konza Prairie","Grassland","u u p",36,0,NA,"0.052478","0.0473",5
-"LUQ","Luquillo","Forest","No trim + debris",7,0,NA,"0.00634","0.7036",5
-"LUQ","Luquillo","Forest","Trim & clear",7,0,NA,"0.007041","0.7052",5
-"LUQ","Luquillo","Forest","Trim + debris",7,0,NA,"0.003754","0.8209",5
+"LUQ","Luquillo","Forest","No trim + debris",5,0,NA,"-0.01987","0.5289",5
+"LUQ","Luquillo","Forest","Trim & clear",5,0,NA,"0.033517","0.3824",5
+"LUQ","Luquillo","Forest","Trim + debris",5,0,NA,"0.005625","0.8787",5
 "MCM","McMurdo Dry Valleys","Tundra","C",5,0,NA,"0.058991","0.0504",5
 "MCM","McMurdo Dry Valleys","Tundra","CN",5,0,NA,"0.172398","0.2136",5
 "MCM","McMurdo Dry Valleys","Tundra","CP",5,0,NA,"0.125545","0.1598",5
 "MCM","McMurdo Dry Valleys","Tundra","N",5,0,NA,"0.062717","0.3446",5
 "MCM","McMurdo Dry Valleys","Tundra","P",5,0,NA,"0.048422","0.1692",5
 "NWT","Niwot Ridge","Tundra","N",13,1,"2015","0.042705; 0.113116","1e-04; 0.1716",5
-"PIE","Plum Island Ecosystems","Coastal","Enriched",17,0,NA,"-0.007182","0.2149",5
+"PIE","Plum Island Ecosystems","Coastal","Enriched",16,0,NA,"0.001802","0.7991",5
 "SBC","Santa Barbara Coastal","Coastal","ANNUAL",16,0,NA,"-0.01232","0.1545",5
 "SBC","Santa Barbara Coastal","Coastal","CONTINUAL",14,0,NA,"-0.031785","0.4091",5
 "SEV","Sevilleta","Grassland","F",20,0,NA,"-0.015275","0.2999",5

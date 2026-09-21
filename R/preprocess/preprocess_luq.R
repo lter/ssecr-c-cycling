@@ -84,6 +84,10 @@ preprocess_luq_ghg <- function(raw_path) {
   # Add YEAR column
   data$YEAR <- as.integer(format(data[[date_col]], "%Y"))
 
+  # The canopy was trimmed (and debris deposited) between October 2004 and
+  # June 2005 (package metadata, Table 1); 2003-2004 fluxes are pre-treatment.
+  data <- data %>% filter(YEAR >= 2005)
+
   # Summarize by Block_Plot, treatment, and DATE. treatment MUST be in the
   # grouping columns: luq_summarize keeps only group columns plus numeric
   # summaries, so omitting it silently drops the treatment mapping that

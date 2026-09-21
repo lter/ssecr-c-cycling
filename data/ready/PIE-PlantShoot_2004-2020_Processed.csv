@@ -1,316 +1,253 @@
 "Year","Creek","Treatment","Replicate","shoot_mass"
-2004,"CL","Control","L 1",4.69230947368421
-2004,"CL","Control","L 2",6.85870173913044
-2004,"CL","Control","L 3",6.9898
-2004,"CL","Control","R 1",8.59551852813853
-2004,"CL","Control","R 2",7.51424
-2004,"CL","Control","R 3",8.89945043478261
-2004,"NE","Enriched","L 1",8.03224166666667
-2004,"NE","Enriched","L 2",8.4181252173913
-2004,"NE","Enriched","L 3",5.89976963768116
-2004,"NE","Enriched","R 1",8.86724
-2004,"NE","Enriched","R 2",7.08396
-2004,"NE","Enriched","R 3",9.75024
-2004,"SW","Enriched","L 1",8.06416909090909
-2004,"SW","Enriched","L 2",6.84442608695652
-2004,"SW","Enriched","L 3",6.7868
-2004,"SW","Enriched","R 1",10.0809923809524
-2004,"SW","Enriched","R 2",10.1092
-2004,"SW","Enriched","R 3",6.84318297101449
-2004,"WE","Control","L 1",6.52195256916996
-2004,"WE","Control","L 2",4.83643
-2004,"WE","Control","L 3",6.66181076604555
-2004,"WE","Control","R 1",4.91943787878788
-2004,"WE","Control","R 2",4.72602052295531
-2004,"WE","Control","R 3",6.5751798757764
-2005,"CL","Control","L 1",7.334465
-2005,"CL","Control","L 2",8.74321391304348
-2005,"CL","Control","L 3",9.58766260869565
-2005,"CL","Control","R 1",9.71290307692308
-2005,"CL","Control","R 2",9.90950962962963
-2005,"CL","Control","R 3",10.6763312318841
-2005,"NE","Enriched","L 1",8.142805
-2005,"NE","Enriched","L 2",10.3062382608696
-2005,"NE","Enriched","L 3",8.11548166666667
-2005,"NE","Enriched","R 1",10.4584034782609
-2005,"NE","Enriched","R 2",8.501745
-2005,"NE","Enriched","R 3",10.75768
-2005,"SW","Enriched","L 1",8.05184
-2005,"SW","Enriched","L 2",7.49543959866221
-2005,"SW","Enriched","L 3",7.04232981481481
-2005,"SW","Enriched","R 1",8.89106615384615
-2005,"SW","Enriched","R 2",9.20978307692308
-2005,"SW","Enriched","R 3",6.23819416445623
-2005,"WE","Control","L 1",7.31708
-2005,"WE","Control","L 2",8.89977648351648
-2005,"WE","Control","L 3",7.56323132183908
-2005,"WE","Control","R 1",6.02285656084656
-2005,"WE","Control","R 2",8.37412173913043
-2005,"WE","Control","R 3",7.46715692307692
-2006,"CL","Control","L 1",7.50048232441472
-2006,"CL","Control","L 2",5.50982367816092
-2006,"CL","Control","L 3",6.67819282051282
-2006,"CL","Control","R 1",9.01253022983458
-2006,"CL","Control","R 2",6.79694248233026
-2006,"CL","Control","R 3",10.305208994709
-2006,"NE","Enriched","L 1",8.44970167487685
-2006,"NE","Enriched","L 2",10.5725434615385
-2006,"NE","Enriched","L 3",5.75742361854787
-2006,"NE","Enriched","R 1",11.0842083333333
-2006,"NE","Enriched","R 2",8.84968806177719
-2006,"NE","Enriched","R 3",0.968104882943144
-2006,"SW","Enriched","L 1",8.55486930641822
-2006,"SW","Enriched","L 2",7.80528239028945
-2006,"SW","Enriched","L 3",9.26841961861668
-2006,"SW","Enriched","R 1",9.60842136591479
-2006,"SW","Enriched","R 2",6.98289454545455
-2006,"SW","Enriched","R 3",8.96255375696767
-2006,"WE","Control","L 1",7.4294614609362
-2006,"WE","Control","L 2",10.2353864468864
-2006,"WE","Control","L 3",8.36115496540497
-2006,"WE","Control","R 1",7.00688968253968
-2006,"WE","Control","R 2",9.72088090351677
-2006,"WE","Control","R 3",8.40211854154617
-2007,"SW","Enriched","L 1",8.6475252173913
-2007,"SW","Enriched","L 2",8.48803851851852
-2007,"SW","Enriched","L 3",7.58695666666667
-2007,"SW","Enriched","R 1",8.97251361823362
-2007,"SW","Enriched","R 2",8.96594
-2007,"SW","Enriched","R 3",7.96576
-2007,"WE","Control","L 1",7.31794
-2007,"WE","Control","L 2",8.898
-2007,"WE","Control","L 3",7.95172
-2007,"WE","Control","R 1",4.91432578347578
-2007,"WE","Control","R 2",6.99965391304348
-2007,"WE","Control","R 3",7.99707833333333
-2008,"SW","Enriched","L 1",7.95125895763657
-2008,"SW","Enriched","L 2",10.05384
-2008,"SW","Enriched","L 3",6.85431269230769
-2008,"SW","Enriched","R 1",8.34621666666667
-2008,"SW","Enriched","R 2",5.950135
-2008,"SW","Enriched","R 3",6.29494769230769
-2008,"WE","Control","L 1",6.60758260869565
-2008,"WE","Control","L 2",5.806745
-2008,"WE","Control","L 3",5.440575
-2008,"WE","Control","R 1",4.30648119047619
-2008,"WE","Control","R 2",6.07181398550725
-2008,"WE","Control","R 3",4.32841904761905
-2009,"CL","Control","L 1",6.70779166666667
-2009,"CL","Control","L 2",6.52312
-2009,"CL","Control","L 3",6.83152
-2009,"CL","Control","L 4",7.33468
-2009,"NE","Enriched","R 1",5.87468613154961
-2009,"NE","Enriched","R 2",9.05672
-2009,"NE","Enriched","R 3",6.67279826086957
-2009,"NE","Enriched","R 4",7.18948
-2009,"SW","Enriched","L 1",9.098
-2009,"SW","Enriched","L 2",7.4388
-2009,"SW","Enriched","L 3",6.60839076923077
-2009,"SW","Enriched","L 4",8.97588
-2009,"SW","Enriched","R 1",8.40840190476191
-2009,"SW","Enriched","R 2",6.97608
-2009,"SW","Enriched","R 3",7.52572
-2009,"SW","Enriched","R 4",6.35387333333333
-2009,"WE","Control","L 1",5.59240196969697
-2009,"WE","Control","L 2",6.43
-2009,"WE","Control","L 3",6.88832
-2009,"WE","Control","L 4",6.92556
-2009,"WE","Control","R 1",5.63456
-2009,"WE","Control","R 2",7.20788
-2009,"WE","Control","R 3",7.05748
-2009,"WE","Control","R 4",5.95056
-2010,"CL","Control","R 1",9.10584
-2010,"CL","Control","R 2",6.45450424242424
-2010,"CL","Control","R 3",8.10628
-2010,"NE","Enriched","L 1",6.99261666666667
-2010,"NE","Enriched","L 2",5.54524
-2010,"NE","Enriched","L 3",7.51759368421053
-2010,"SW","Enriched","L 1",8.05943166666667
-2010,"SW","Enriched","L 2",7.18040666666667
-2010,"SW","Enriched","L 3",7.34695833333333
-2010,"SW","Enriched","R 1",10.8577882021152
-2010,"SW","Enriched","R 2",8.47585702898551
-2010,"SW","Enriched","R 3",8.06764166666667
-2010,"WE","Control","L 1",7.30275152173913
-2010,"WE","Control","L 2",7.99342727272727
-2010,"WE","Control","L 3",6.79332115942029
-2010,"WE","Control","R 1",7.36805833333333
-2010,"WE","Control","R 2",0.870912380952381
-2010,"WE","Control","R 3",8.47167965367965
-2011,"CL","Control","R 1",8.573685
-2011,"CL","Control","R 2",6.94464
-2011,"CL","Control","R 3",6.896
-2011,"NE","Enriched","L 1",7.83665833333333
-2011,"NE","Enriched","L 2",7.84004
-2011,"NE","Enriched","L 3",7.90598166666667
-2011,"SW","Enriched","L 1",6.56728
-2011,"SW","Enriched","L 2",6.96432
-2011,"SW","Enriched","L 3",8.49008
-2011,"SW","Enriched","R 1",8.995
-2011,"SW","Enriched","R 2",8.33731304347826
-2011,"SW","Enriched","R 3",7.08892
-2011,"WE","Control","L 1",6.79548
-2011,"WE","Control","L 2",7.88462166666667
-2011,"WE","Control","L 3",6.94068
-2011,"WE","Control","R 1",7.0896
-2011,"WE","Control","R 2",6.75524
-2011,"WE","Control","R 3",6.30044
-2012,"CL","Control","R 1",5.60244
-2012,"CL","Control","R 2",5.48922833333333
-2012,"CL","Control","R 3",5.83256
-2012,"NE","Enriched","L 1",5.2884
-2012,"NE","Enriched","L 2",5.40836666666667
-2012,"NE","Enriched","L 3",5.61312
-2012,"SW","Enriched","L 1",6.1236
-2012,"SW","Enriched","L 2",6.19944
-2012,"SW","Enriched","L 3",5.69188
-2012,"SW","Enriched","R 1",6.24092
-2012,"SW","Enriched","R 2",4.55916
-2012,"SW","Enriched","R 3",6.723
-2012,"WE","Control","L 1",6.41832
-2012,"WE","Control","L 2",5.70096
-2012,"WE","Control","L 3",5.13976
-2012,"WE","Control","R 1",4.52
-2012,"WE","Control","R 2",5.66996
-2012,"WE","Control","R 3",6.27528
-2013,"CL","Control","R 1",6.39352681818182
-2013,"CL","Control","R 2",6.61458289855072
-2013,"CL","Control","R 3",8.03366742424242
-2013,"NE","Enriched","L 1",8.44978506393862
-2013,"NE","Enriched","L 2",7.63912303030303
-2013,"NE","Enriched","L 3",5.32879166666667
-2013,"SW","Enriched","L 1",4.88736818181818
-2013,"SW","Enriched","L 2",6.60947862318841
-2013,"SW","Enriched","L 3",4.62571428571429
-2013,"SW","Enriched","R 1",4.94265391304348
-2013,"SW","Enriched","R 2",5.34177111111111
-2013,"SW","Enriched","R 3",4.70172476190476
-2013,"WE","Control","L 1",6.37651333333333
-2013,"WE","Control","L 2",5.72965454545455
-2013,"WE","Control","L 3",4.56404173913044
-2013,"WE","Control","R 1",5.32873540372671
-2013,"WE","Control","R 2",5.8274798245614
-2013,"WE","Control","R 3",6.41310285714286
-2014,"CL","Control","R 1",7.15764
-2014,"CL","Control","R 2",6.09672
-2014,"CL","Control","R 3",6.74528
-2014,"NE","Enriched","L 1",8.69592
-2014,"NE","Enriched","L 2",6.95228
-2014,"NE","Enriched","L 3",5.04516
-2014,"SW","Enriched","L 1",6.87632
-2014,"SW","Enriched","L 2",7.42937666666667
-2014,"SW","Enriched","L 3",5.96296
-2014,"SW","Enriched","R 1",6.251025
-2014,"SW","Enriched","R 2",6.82648
-2014,"SW","Enriched","R 3",5.15772
-2014,"WE","Control","L 1",6.21536
-2014,"WE","Control","L 2",6.29238
-2014,"WE","Control","L 3",4.25692
-2014,"WE","Control","R 1",5.12535
-2014,"WE","Control","R 2",6.57228
-2014,"WE","Control","R 3",5.82996
-2015,"CL","Control","R 1",6.78828
-2015,"CL","Control","R 2",4.87868
-2015,"CL","Control","R 3",7.89148
-2015,"NE","Enriched","L 1",6.75352
-2015,"NE","Enriched","L 2",4.98824
-2015,"NE","Enriched","L 3",5.14056
-2015,"SW","Enriched","L 1",6.7744
-2015,"SW","Enriched","L 2",5.9094
-2015,"SW","Enriched","L 3",6.6408
-2015,"SW","Enriched","R 1",8.93476
-2015,"SW","Enriched","R 2",5.18512
-2015,"SW","Enriched","R 3",7.11284
-2015,"WE","Control","L 1",6.11976
-2015,"WE","Control","L 2",7.0798
-2015,"WE","Control","L 3",7.55832
-2015,"WE","Control","R 1",5.16748
-2015,"WE","Control","R 2",6.05284
-2015,"WE","Control","R 3",6.54568
-2016,"CL","Control","R 1",7.4062
-2016,"CL","Control","R 2",6.59808
-2016,"CL","Control","R 3",7.989855
-2016,"NE","Enriched","L 1",5.32534434782609
-2016,"NE","Enriched","L 2",4.4662
-2016,"NE","Enriched","L 3",4.27752
-2016,"SW","Enriched","L 1",11.3076589473684
-2016,"SW","Enriched","L 2",5.39258666666667
-2016,"SW","Enriched","L 3",8.56124
-2016,"SW","Enriched","R 1",8.06536
-2016,"SW","Enriched","R 2",5.02428
-2016,"SW","Enriched","R 3",6.01416
-2016,"WE","Control","L 1",5.063155
-2016,"WE","Control","L 2",4.19412
-2016,"WE","Control","L 3",5.75928333333333
-2016,"WE","Control","R 1",4.43492
-2016,"WE","Control","R 2",6.05744
-2016,"WE","Control","R 3",5.72792
-2017,"CL","Control","R 1",7.1604
-2017,"CL","Control","R 2",5.33544
-2017,"CL","Control","R 3",6.66916
-2017,"NE","Enriched","L 1",8.61732
-2017,"NE","Enriched","L 2",4.63076
-2017,"NE","Enriched","L 3",4.41752
-2017,"SW","Enriched","L 1",7.79636
-2017,"SW","Enriched","L 2",7.00716
-2017,"SW","Enriched","L 3",7.01848
-2017,"SW","Enriched","R 1",8.1216
-2017,"SW","Enriched","R 2",6.47624
-2017,"SW","Enriched","R 3",8.5922
-2017,"WE","Control","L 1",5.60164
-2017,"WE","Control","L 2",7.05848
-2017,"WE","Control","L 3",6.7824
-2017,"WE","Control","R 1",5.0426
-2017,"WE","Control","R 2",4.64308
-2017,"WE","Control","R 3",5.03964
-2018,"CL","Control","R 1",5.33132
-2018,"CL","Control","R 2",5.18672
-2018,"CL","Control","R 3",5.85232
-2018,"NE","Enriched","L 1",3.64832
-2018,"NE","Enriched","L 2",3.39884
-2018,"NE","Enriched","L 3",4.5082
-2018,"SW","Enriched","L 1",4.67808
-2018,"SW","Enriched","L 2",5.4002
-2018,"SW","Enriched","L 3",4.91616
-2018,"SW","Enriched","R 1",9.49445575757576
-2018,"SW","Enriched","R 2",4.58096
-2018,"SW","Enriched","R 3",4.69556
-2018,"WE","Control","L 1",6.29116
-2018,"WE","Control","L 2",6.42176
-2018,"WE","Control","L 3",7.20464
-2018,"WE","Control","R 1",2.75936
-2018,"WE","Control","R 2",4.22804
-2018,"WE","Control","R 3",4.65016
-2019,"CL","Control","R 1",5.897
-2019,"CL","Control","R 2",5.85212
-2019,"CL","Control","R 3",6.30644
-2019,"NE","Enriched","L 1",5.94048
-2019,"NE","Enriched","L 2",5.26132
-2019,"NE","Enriched","L 3",5.00484
-2019,"SW","Enriched","L 1",5.95824
-2019,"SW","Enriched","L 2",6.77376
-2019,"SW","Enriched","L 3",7.6298
-2019,"SW","Enriched","R 1",8.2386
-2019,"SW","Enriched","R 2",5.93952
-2019,"SW","Enriched","R 3",7.19704
-2019,"WE","Control","L 1",5.788
-2019,"WE","Control","L 2",5.7778
-2019,"WE","Control","L 3",4.54552
-2019,"WE","Control","R 1",5.43136
-2019,"WE","Control","R 2",5.64744
-2019,"WE","Control","R 3",5.1568
-2020,"CL","Control","R 1",5.47776
-2020,"CL","Control","R 2",5.31432
-2020,"CL","Control","R 3",6.0104
-2020,"NE","Enriched","L 1",6.17072
-2020,"NE","Enriched","L 2",5.88976
-2020,"NE","Enriched","L 3",4.5516
-2020,"SW","Enriched","L 1",6.51136
-2020,"SW","Enriched","L 2",5.71712
-2020,"SW","Enriched","L 3",5.37796
-2020,"SW","Enriched","R 1",7.04332
-2020,"SW","Enriched","R 2",3.8956
-2020,"SW","Enriched","R 3",4.79424
-2020,"WE","Control","R 1",4.42384
-2020,"WE","Control","R 2",6.47532
-2020,"WE","Control","R 3",5.09944
+2004,"NE","Control","NE L 1",8.03224166666667
+2004,"NE","Control","NE L 2",8.4181252173913
+2004,"NE","Control","NE L 3",5.89976963768116
+2004,"NE","Control","NE R 1",8.86724
+2004,"NE","Control","NE R 2",7.08396
+2004,"NE","Control","NE R 3",9.75024
+2004,"SW","Enriched","SW L 1",8.06416909090909
+2004,"SW","Enriched","SW L 2",6.84442608695652
+2004,"SW","Enriched","SW L 3",6.7868
+2004,"SW","Enriched","SW R 1",10.0809923809524
+2004,"SW","Enriched","SW R 2",10.1092
+2004,"SW","Enriched","SW R 3",6.84318297101449
+2004,"WE","Control","WE L 1",6.52195256916996
+2004,"WE","Control","WE L 2",4.83643
+2004,"WE","Control","WE L 3",6.66181076604555
+2004,"WE","Control","WE R 1",4.91943787878788
+2004,"WE","Control","WE R 2",4.72602052295531
+2004,"WE","Control","WE R 3",6.5751798757764
+2005,"CL","Enriched","CL L 1",7.334465
+2005,"CL","Enriched","CL L 2",8.74321391304348
+2005,"CL","Enriched","CL L 3",9.58766260869565
+2005,"CL","Enriched","CL R 1",9.71290307692308
+2005,"CL","Enriched","CL R 2",9.90950962962963
+2005,"CL","Enriched","CL R 3",10.6763312318841
+2005,"NE","Control","NE L 1",8.142805
+2005,"NE","Control","NE L 2",10.3062382608696
+2005,"NE","Control","NE L 3",8.11548166666667
+2005,"NE","Control","NE R 1",10.4584034782609
+2005,"NE","Control","NE R 2",8.501745
+2005,"NE","Control","NE R 3",10.75768
+2005,"SW","Enriched","SW L 1",8.05184
+2005,"SW","Enriched","SW L 2",7.49543959866221
+2005,"SW","Enriched","SW L 3",7.04232981481481
+2005,"SW","Enriched","SW R 1",8.89106615384615
+2005,"SW","Enriched","SW R 2",9.20978307692308
+2005,"SW","Enriched","SW R 3",6.23819416445623
+2005,"WE","Control","WE L 1",7.31708
+2005,"WE","Control","WE L 2",8.89977648351648
+2005,"WE","Control","WE L 3",7.56323132183908
+2005,"WE","Control","WE R 1",6.02285656084656
+2005,"WE","Control","WE R 2",8.37412173913043
+2005,"WE","Control","WE R 3",7.46715692307692
+2006,"NE","Control","NE L 1",8.44970167487685
+2006,"NE","Control","NE L 2",10.5725434615385
+2006,"NE","Control","NE L 3",5.75742361854787
+2006,"NE","Control","NE R 1",11.0842083333333
+2006,"NE","Control","NE R 2",8.84968806177719
+2006,"NE","Control","NE R 3",0.968104882943144
+2006,"SW","Enriched","SW L 1",8.55486930641822
+2006,"SW","Enriched","SW L 2",7.80528239028945
+2006,"SW","Enriched","SW L 3",9.26841961861668
+2006,"SW","Enriched","SW R 1",9.60842136591479
+2006,"SW","Enriched","SW R 2",6.98289454545455
+2006,"SW","Enriched","SW R 3",8.96255375696767
+2006,"WE","Control","WE L 1",7.4294614609362
+2006,"WE","Control","WE L 2",10.2353864468864
+2006,"WE","Control","WE L 3",8.36115496540497
+2006,"WE","Control","WE R 1",7.00688968253968
+2006,"WE","Control","WE R 2",9.72088090351677
+2006,"WE","Control","WE R 3",8.40211854154617
+2007,"SW","Enriched","SW L 1",8.6475252173913
+2007,"SW","Enriched","SW L 2",8.48803851851852
+2007,"SW","Enriched","SW L 3",7.58695666666667
+2007,"SW","Enriched","SW R 1",8.97251361823362
+2007,"SW","Enriched","SW R 2",8.96594
+2007,"SW","Enriched","SW R 3",7.96576
+2007,"WE","Control","WE L 1",7.31794
+2007,"WE","Control","WE L 2",8.898
+2007,"WE","Control","WE L 3",7.95172
+2007,"WE","Control","WE R 1",4.91432578347578
+2007,"WE","Control","WE R 2",6.99965391304348
+2007,"WE","Control","WE R 3",7.99707833333333
+2008,"SW","Enriched","SW L 1",7.95125895763657
+2008,"SW","Enriched","SW L 2",10.05384
+2008,"SW","Enriched","SW L 3",6.85431269230769
+2008,"SW","Enriched","SW R 1",8.34621666666667
+2008,"SW","Enriched","SW R 2",5.950135
+2008,"SW","Enriched","SW R 3",6.29494769230769
+2008,"WE","Control","WE L 1",6.60758260869565
+2008,"WE","Control","WE L 2",5.806745
+2008,"WE","Control","WE L 3",5.440575
+2008,"WE","Control","WE R 1",4.30648119047619
+2008,"WE","Control","WE R 2",6.07181398550725
+2008,"WE","Control","WE R 3",4.32841904761905
+2009,"CL","Enriched","CL L 1",6.70779166666667
+2009,"CL","Enriched","CL L 2",6.52312
+2009,"CL","Enriched","CL L 3",6.83152
+2009,"CL","Enriched","CL L 4",7.33468
+2009,"NE","Control","NE R 1",5.87468613154961
+2009,"NE","Control","NE R 2",9.05672
+2009,"NE","Control","NE R 3",6.67279826086957
+2009,"NE","Control","NE R 4",7.18948
+2009,"SW","Enriched","SW L 1",9.098
+2009,"SW","Enriched","SW L 2",7.4388
+2009,"SW","Enriched","SW L 3",6.60839076923077
+2009,"SW","Enriched","SW L 4",8.97588
+2009,"SW","Enriched","SW R 1",8.40840190476191
+2009,"SW","Enriched","SW R 2",6.97608
+2009,"SW","Enriched","SW R 3",7.52572
+2009,"SW","Enriched","SW R 4",6.35387333333333
+2009,"WE","Control","WE L 1",5.59240196969697
+2009,"WE","Control","WE L 2",6.43
+2009,"WE","Control","WE L 3",6.88832
+2009,"WE","Control","WE L 4",6.92556
+2009,"WE","Control","WE R 1",5.63456
+2009,"WE","Control","WE R 2",7.20788
+2009,"WE","Control","WE R 3",7.05748
+2009,"WE","Control","WE R 4",5.95056
+2010,"CL","Enriched","CL R 1",9.10584
+2010,"CL","Enriched","CL R 2",6.45450424242424
+2010,"CL","Enriched","CL R 3",8.10628
+2010,"NE","Control","NE L 1",6.99261666666667
+2010,"NE","Control","NE L 2",5.54524
+2010,"NE","Control","NE L 3",7.51759368421053
+2010,"SW","Enriched","SW L 1",8.05943166666667
+2010,"SW","Enriched","SW L 2",7.18040666666667
+2010,"SW","Enriched","SW L 3",7.34695833333333
+2010,"SW","Enriched","SW R 1",10.8577882021152
+2010,"SW","Enriched","SW R 2",8.47585702898551
+2010,"SW","Enriched","SW R 3",8.06764166666667
+2010,"WE","Control","WE L 1",7.30275152173913
+2010,"WE","Control","WE L 2",7.99342727272727
+2010,"WE","Control","WE L 3",6.79332115942029
+2010,"WE","Control","WE R 1",7.36805833333333
+2010,"WE","Control","WE R 2",0.870912380952381
+2010,"WE","Control","WE R 3",8.47167965367965
+2011,"CL","Enriched","CL R 1",8.573685
+2011,"CL","Enriched","CL R 2",6.94464
+2011,"CL","Enriched","CL R 3",6.896
+2011,"NE","Control","NE L 1",7.83665833333333
+2011,"NE","Control","NE L 2",7.84004
+2011,"NE","Control","NE L 3",7.90598166666667
+2011,"SW","Enriched","SW L 1",6.56728
+2011,"SW","Enriched","SW L 2",6.96432
+2011,"SW","Enriched","SW L 3",8.49008
+2011,"SW","Enriched","SW R 1",8.995
+2011,"SW","Enriched","SW R 2",8.33731304347826
+2011,"SW","Enriched","SW R 3",7.08892
+2011,"WE","Control","WE L 1",6.79548
+2011,"WE","Control","WE L 2",7.88462166666667
+2011,"WE","Control","WE L 3",6.94068
+2011,"WE","Control","WE R 1",7.0896
+2011,"WE","Control","WE R 2",6.75524
+2011,"WE","Control","WE R 3",6.30044
+2012,"CL","Enriched","CL R 1",5.60244
+2012,"CL","Enriched","CL R 2",5.48922833333333
+2012,"CL","Enriched","CL R 3",5.83256
+2012,"NE","Control","NE L 1",5.2884
+2012,"NE","Control","NE L 2",5.40836666666667
+2012,"NE","Control","NE L 3",5.61312
+2012,"SW","Enriched","SW L 1",6.1236
+2012,"SW","Enriched","SW L 2",6.19944
+2012,"SW","Enriched","SW L 3",5.69188
+2012,"SW","Enriched","SW R 1",6.24092
+2012,"SW","Enriched","SW R 2",4.55916
+2012,"SW","Enriched","SW R 3",6.723
+2012,"WE","Control","WE L 1",6.41832
+2012,"WE","Control","WE L 2",5.70096
+2012,"WE","Control","WE L 3",5.13976
+2012,"WE","Control","WE R 1",4.52
+2012,"WE","Control","WE R 2",5.66996
+2012,"WE","Control","WE R 3",6.27528
+2013,"CL","Enriched","CL R 1",6.39352681818182
+2013,"CL","Enriched","CL R 2",6.61458289855072
+2013,"CL","Enriched","CL R 3",8.03366742424242
+2013,"NE","Control","NE L 1",8.44978506393862
+2013,"NE","Control","NE L 2",7.63912303030303
+2013,"NE","Control","NE L 3",5.32879166666667
+2013,"WE","Control","WE L 1",6.37651333333333
+2013,"WE","Control","WE L 2",5.72965454545455
+2013,"WE","Control","WE L 3",4.56404173913044
+2013,"WE","Control","WE R 1",5.32873540372671
+2013,"WE","Control","WE R 2",5.8274798245614
+2013,"WE","Control","WE R 3",6.41310285714286
+2014,"CL","Enriched","CL R 1",7.15764
+2014,"CL","Enriched","CL R 2",6.09672
+2014,"CL","Enriched","CL R 3",6.74528
+2014,"NE","Control","NE L 1",8.69592
+2014,"NE","Control","NE L 2",6.95228
+2014,"NE","Control","NE L 3",5.04516
+2014,"WE","Control","WE L 1",6.21536
+2014,"WE","Control","WE L 2",6.29238
+2014,"WE","Control","WE L 3",4.25692
+2014,"WE","Control","WE R 1",5.12535
+2014,"WE","Control","WE R 2",6.57228
+2014,"WE","Control","WE R 3",5.82996
+2015,"CL","Enriched","CL R 1",6.78828
+2015,"CL","Enriched","CL R 2",4.87868
+2015,"CL","Enriched","CL R 3",7.89148
+2015,"NE","Control","NE L 1",6.75352
+2015,"NE","Control","NE L 2",4.98824
+2015,"NE","Control","NE L 3",5.14056
+2015,"WE","Control","WE L 1",6.11976
+2015,"WE","Control","WE L 2",7.0798
+2015,"WE","Control","WE L 3",7.55832
+2015,"WE","Control","WE R 1",5.16748
+2015,"WE","Control","WE R 2",6.05284
+2015,"WE","Control","WE R 3",6.54568
+2016,"CL","Enriched","CL R 1",7.4062
+2016,"CL","Enriched","CL R 2",6.59808
+2016,"CL","Enriched","CL R 3",7.989855
+2016,"NE","Control","NE L 1",5.32534434782609
+2016,"NE","Control","NE L 2",4.4662
+2016,"NE","Control","NE L 3",4.27752
+2016,"WE","Control","WE L 1",5.063155
+2016,"WE","Control","WE L 2",4.19412
+2016,"WE","Control","WE L 3",5.75928333333333
+2016,"WE","Control","WE R 1",4.43492
+2016,"WE","Control","WE R 2",6.05744
+2016,"WE","Control","WE R 3",5.72792
+2017,"CL","Enriched","CL R 1",7.1604
+2017,"CL","Enriched","CL R 2",5.33544
+2017,"CL","Enriched","CL R 3",6.66916
+2017,"NE","Control","NE L 1",8.61732
+2017,"NE","Control","NE L 2",4.63076
+2017,"NE","Control","NE L 3",4.41752
+2017,"WE","Control","WE L 1",5.60164
+2017,"WE","Control","WE L 2",7.05848
+2017,"WE","Control","WE L 3",6.7824
+2017,"WE","Control","WE R 1",5.0426
+2017,"WE","Control","WE R 2",4.64308
+2017,"WE","Control","WE R 3",5.03964
+2018,"CL","Enriched","CL R 1",5.33132
+2018,"CL","Enriched","CL R 2",5.18672
+2018,"CL","Enriched","CL R 3",5.85232
+2018,"NE","Control","NE L 1",3.64832
+2018,"NE","Control","NE L 2",3.39884
+2018,"NE","Control","NE L 3",4.5082
+2018,"WE","Control","WE L 1",6.29116
+2018,"WE","Control","WE L 2",6.42176
+2018,"WE","Control","WE L 3",7.20464
+2018,"WE","Control","WE R 1",2.75936
+2018,"WE","Control","WE R 2",4.22804
+2018,"WE","Control","WE R 3",4.65016
+2019,"CL","Enriched","CL R 1",5.897
+2019,"CL","Enriched","CL R 2",5.85212
+2019,"CL","Enriched","CL R 3",6.30644
+2019,"NE","Control","NE L 1",5.94048
+2019,"NE","Control","NE L 2",5.26132
+2019,"NE","Control","NE L 3",5.00484
+2019,"WE","Control","WE L 1",5.788
+2019,"WE","Control","WE L 2",5.7778
+2019,"WE","Control","WE L 3",4.54552
+2019,"WE","Control","WE R 1",5.43136
+2019,"WE","Control","WE R 2",5.64744
+2019,"WE","Control","WE R 3",5.1568
+2020,"NE","Control","NE L 1",6.17072
+2020,"NE","Control","NE L 2",5.88976
+2020,"NE","Control","NE L 3",4.5516
+2020,"WE","Control","WE R 1",4.42384
+2020,"WE","Control","WE R 2",6.47532
+2020,"WE","Control","WE R 3",5.09944

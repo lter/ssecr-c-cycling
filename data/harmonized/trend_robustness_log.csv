@@ -8,44 +8,39 @@
 "CAP_Biomass_2006-2024_Processed.csv","N","CAP",-3.75760304402349e-05,0.466991244073088,"non-directional",-2.39735118783944e-05,0.462792505541125,"non-directional",FALSE
 "CAP_Biomass_2006-2024_Processed.csv","NP","CAP",-0.000163186254769398,0.0492274608259053,"decreasing",-8.01547194683416e-05,0.0446588532939784,"decreasing",FALSE
 "CAP_Biomass_2006-2024_Processed.csv","P","CAP",-1.43550834265843e-05,0.759149855866053,"non-directional",-1.6271057955988e-05,0.617242982797627,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb","CDR",9.866907019666e-05,0.445025153271125,"non-directional",3.13697705714791e-05,0.672917777656528,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTamb","CDR",-4.16793977534729e-06,0.97692105901954,"non-directional",-1.66639345779065e-05,0.823445410423063,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTelv","CDR",-0.00022956416024636,0.18549446549972,"non-directional",-0.000144549611039116,0.137236848105641,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg","CDR",0.000158292989758637,0.310407861907271,"non-directional",0.000117501594712346,0.354755594269361,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTamb","CDR",-8.40358298297216e-05,0.538341240095382,"non-directional",-0.000111523165490275,0.369921309471291,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTelv","CDR",-7.6274129688843e-05,0.627607481543758,"non-directional",-4.54892002425377e-05,0.669687464978412,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M HTelv","CDR",-0.000725581275575282,0.00635374876461095,"decreasing",-0.000309013526548193,0.00473286615792201,"decreasing",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb S","CDR",1.04376323468929e-05,0.558881672692323,"non-directional",1.28318565896822e-05,0.457678965029964,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTelv","CDR",-0.00013776065312952,0.200973593528371,"non-directional",-0.000127885676461207,0.23188738147223,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg","CDR",5.56380573847492e-05,0.791699132992181,"non-directional",4.57455986486922e-05,0.829783649672075,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTamb","CDR",-8.43535442538754e-05,0.232255865689826,"non-directional",-0.000126220973451662,0.209555619260228,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTelv","CDR",-5.86839221486373e-05,0.466486229777406,"non-directional",-6.01870082039244e-05,0.584736850421706,"non-directional",FALSE
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M","CDR",-2.08101752595975e-05,0.0222436166764956,"decreasing",-1.81406336977551e-05,0.0197755266217027,"decreasing",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb","CDR",-4.7770348848241e-05,0.680676285119295,"non-directional",-7.02582913030556e-05,0.464658430607552,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTamb","CDR",-2.50493845200013e-05,0.795269100807979,"non-directional",-3.68792512524785e-05,0.707314593213725,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTelv","CDR",-7.09515394777779e-05,0.706752150174938,"non-directional",-1.68115242251125e-05,0.82949152925047,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg","CDR",1.03849332873621e-05,0.963879488092636,"non-directional",-1.16195281250823e-05,0.952418077160349,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTamb","CDR",-7.9707313825006e-05,0.47606886771921,"non-directional",-7.59221973699441e-05,0.447221292094159,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTelv","CDR",5.42858837068543e-05,0.673766974904069,"non-directional",2.07555859994233e-05,0.781322746520679,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M HTamb","CDR",6.14902349285479e-05,0.702752196392155,"non-directional",5.13964322059587e-05,0.681784622968988,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich S","CDR",-1.0502068263054e-05,0.61397311616686,"non-directional",-1.3150282273649e-05,0.392252833478735,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb","CDR",-4.83380563666465e-05,0.604482410119105,"non-directional",-0.000101628061874535,0.349991322165048,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTamb","CDR",-1.10153346276025e-05,0.817983589409083,"non-directional",-2.02153166745722e-05,0.787188868272426,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTelv","CDR",-1.97694668577775e-05,0.889751788222447,"non-directional",-1.47589647206281e-07,0.998894028469847,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg","CDR",-8.152889824492e-05,0.258059349699647,"non-directional",-8.3375524188738e-05,0.264078830742197,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTamb","CDR",-6.79831879214411e-05,0.373190846905388,"non-directional",-9.06200053313324e-05,0.443133076435296,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTelv","CDR",5.04866339556684e-06,0.946857314399227,"non-directional",6.0577780380357e-06,0.944824522082496,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich S","CDR",-3.84673324755851e-05,0.12074960787568,"non-directional",-2.59821388633315e-05,0.166403044428685,"non-directional",FALSE
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M","CDR",-1.00700925665099e-05,0.320727088673533,"non-directional",-9.68111154696124e-06,0.300065597448983,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb","CDR",-0.000595486560322691,0.0940452973754512,"non-directional",-0.000333366689140218,0.0905874744592896,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTamb","CDR",0.000115676957705278,0.76880525558939,"non-directional",5.17356176091175e-05,0.777913010537756,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTelv","CDR",-0.000200032771645207,0.234870892551647,"non-directional",-9.82773815110866e-05,0.130918819581021,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg","CDR",-0.000304904799912647,0.187232390752135,"non-directional",-0.000199839539430097,0.22337894187378,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTamb","CDR",-8.49166747897548e-05,0.36242305147027,"non-directional",-5.21624039618901e-05,0.355691178261357,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTelv","CDR",-8.11827758848319e-05,0.540826535406576,"non-directional",-6.62299391757509e-05,0.474608818519388,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb S","CDR",9.52753780769171e-06,0.670069092889363,"non-directional",9.78925050657872e-06,0.579129611888746,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb","CDR",-0.000515047960159042,0.12887974344845,"non-directional",-0.000405122685203871,0.134037704845639,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTamb","CDR",5.94858157281825e-05,0.668053232659853,"non-directional",6.8399552187024e-05,0.637992214163797,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTelv","CDR",-9.41182313634283e-05,0.259885719767336,"non-directional",-8.16134469331804e-05,0.289944585847357,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg","CDR",-0.00030691535149899,0.204141274057288,"non-directional",-0.000271595535493746,0.240570513915219,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTamb","CDR",-6.44821970326703e-05,0.343778415006651,"non-directional",-6.68602119232774e-05,0.370934098986452,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTelv","CDR",-7.16473856846413e-05,0.308353173398264,"non-directional",-8.09277471371382e-05,0.292185939831393,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb S","CDR",-5.50447867150752e-06,0.784144557463258,"non-directional",-3.04260608310334e-06,0.858079626927058,"non-directional",FALSE
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M","CDR",-3.64320391440839e-05,0.0215327738735256,"decreasing",-3.13969249335998e-05,0.0155892105223173,"decreasing",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb","CDR",0.000188421830910569,0.561399600813136,"non-directional",0.000115559260501658,0.577757701419914,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTamb","CDR",-0.000101735850171998,0.564042130172457,"non-directional",-5.22351915449386e-05,0.580301654562257,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTelv","CDR",-0.000596487066350805,0.0278274722354675,"decreasing",-0.000272446484976829,0.0172779951932222,"decreasing",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg","CDR",-0.000105027421632909,0.688961829321792,"non-directional",-6.04946315492181e-05,0.689583217921576,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTamb","CDR",-7.06249994429621e-05,0.740288412083016,"non-directional",-5.26459178246115e-05,0.616566258967784,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTelv","CDR",0.000256916683482317,0.388260012488143,"non-directional",9.70390163687403e-05,0.333825421698221,"non-directional",FALSE
-"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S","CDR",-3.55273842807255e-05,0.170673924600508,"non-directional",-2.62090095647978e-05,0.126633078623756,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb","CDR",5.17426690130159e-05,0.862756844688371,"non-directional",4.38032644380026e-05,0.860382654594779,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTamb","CDR",-6.38028607462967e-05,0.572540044627027,"non-directional",-3.55712569670325e-05,0.728128205710279,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTelv","CDR",-0.000356484468813613,0.0107243114398048,"decreasing",-0.000255782550398923,0.018213101326419,"decreasing",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg","CDR",-0.000187273844269937,0.325101772772708,"non-directional",-0.000132250627612871,0.366453673192045,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTamb","CDR",-7.6678502330995e-05,0.572080469981836,"non-directional",-6.73437257859982e-05,0.519896786308916,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTelv","CDR",0.000130091821497188,0.441125715223082,"non-directional",8.23412084073523e-05,0.413255967088799,"non-directional",FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S","CDR",-5.85665165845478e-05,0.00551692029065115,"decreasing",-3.90408661544795e-05,0.00670901286676634,"decreasing",FALSE
 "GCE1.csv","Disturbed (March-2010)","GCE",5.12200078195894e-05,0.137643133893252,"non-directional",7.52454304607517e-05,0.115832809709092,"non-directional",FALSE
 "HBR_litterfall_2009-2022_processed.csv","Ca","HBR",1.44497386639916e-05,0.420160346416697,"non-directional",1.44987128876062e-05,0.420030706775283,"non-directional",FALSE
-"HBR_litterfall_2009-2022_processed.csv","N","HBR",3.20640331064951e-05,9.9345335487252e-06,"increasing",3.17170822746157e-05,1.02477391278872e-05,"increasing",FALSE
-"HBR_litterfall_2009-2022_processed.csv","NP","HBR",1.91868238947144e-05,0.0150703881695628,"increasing",1.9206877258512e-05,0.0164219717477799,"increasing",FALSE
-"HBR_litterfall_2009-2022_processed.csv","P","HBR",1.38411375231038e-06,0.798179437279302,"non-directional",1.52236421577344e-06,0.788364148735909,"non-directional",FALSE
+"HBR_litterfall_2009-2022_processed.csv","N","HBR",3.72905091656488e-05,5.84707922860972e-05,"increasing",3.67598727701495e-05,6.53302366836882e-05,"increasing",FALSE
+"HBR_litterfall_2009-2022_processed.csv","NP","HBR",2.4941722303776e-05,0.0141961637942408,"increasing",2.49432860431712e-05,0.0154381038951558,"increasing",FALSE
+"HBR_litterfall_2009-2022_processed.csv","P","HBR",1.01672899699365e-05,0.116714418895387,"non-directional",1.07134155530502e-05,0.115154470004562,"non-directional",FALSE
 "HFR_soil-respiration_1991-2021_Processed.csv","H","HFR",-2.37218400638251e-05,0.000123760310534308,"decreasing",-2.24848323131127e-05,0.000141601005861748,"decreasing",FALSE
 "KBS_Biomass_1990-2022_processed.csv","T1","KBS",2.76625223026622e-05,0.380788443130248,"non-directional",1.77594564369657e-05,0.376223839141079,"non-directional",FALSE
 "KBS_Biomass_1990-2022_processed.csv","T2","KBS",3.77416853875143e-05,0.22910865973288,"non-directional",2.29490177837656e-05,0.254189168810347,"non-directional",FALSE
@@ -67,9 +62,9 @@
 "KNZ_Biomass_1986-2021_processed.csv","u u n","KNZ",-3.88746543106509e-05,0.353859523865009,"non-directional",-5.2333174381841e-05,0.0653246937245078,"non-directional",FALSE
 "KNZ_Biomass_1986-2021_processed.csv","u u n+p","KNZ",-5.726440496626e-05,0.281278113483574,"non-directional",-6.84338026170161e-05,0.0260847492879076,"decreasing",TRUE
 "KNZ_Biomass_1986-2021_processed.csv","u u p","KNZ",0.000143681302015755,0.0472904613785212,"increasing",1.47849651733483e-05,0.717771782708893,"non-directional",TRUE
-"LUQ_GHG_fluxes_2003-2010.csv","No trim + debris","LUQ",1.73511652678429e-05,0.703728425462934,"non-directional",1.49711652104147e-05,0.71602119495211,"non-directional",FALSE
-"LUQ_GHG_fluxes_2003-2010.csv","Trim & clear","LUQ",1.92405408024704e-05,0.705766573307672,"non-directional",1.8226810118425e-05,0.732315148231779,"non-directional",FALSE
-"LUQ_GHG_fluxes_2003-2010.csv","Trim + debris","LUQ",1.02697883036994e-05,0.821047797022465,"non-directional",9.72620380266858e-06,0.83497423311206,"non-directional",FALSE
+"LUQ_GHG_fluxes_2003-2010.csv","No trim + debris","LUQ",-5.44544217501146e-05,0.528514904562454,"non-directional",-5.08067170554702e-05,0.51291145872225,"non-directional",FALSE
+"LUQ_GHG_fluxes_2003-2010.csv","Trim & clear","LUQ",9.17045174522554e-05,0.382891960348759,"non-directional",9.7118210042994e-05,0.372516832627565,"non-directional",FALSE
+"LUQ_GHG_fluxes_2003-2010.csv","Trim + debris","LUQ",1.53915736607031e-05,0.878802245612721,"non-directional",1.84131154959063e-05,0.859131993469223,"non-directional",FALSE
 "MCM_CO2flux_2003-2010_processed.csv","C","MCM",0.000161471806886591,0.0504527401572323,"non-directional",0.000124129386024975,0.0425614002263078,"increasing",TRUE
 "MCM_CO2flux_2003-2010_processed.csv","CN","MCM",0.000471917009495652,0.213601773959698,"non-directional",0.000254249615423931,0.189129979121202,"non-directional",FALSE
 "MCM_CO2flux_2003-2010_processed.csv","CP","MCM",0.00034366068856307,0.159834841133461,"non-directional",0.000396056933149343,0.100594166734142,"non-directional",FALSE
@@ -77,7 +72,7 @@
 "MCM_CO2flux_2003-2010_processed.csv","P","MCM",0.000132542139487022,0.169288152712569,"non-directional",0.000142240219711124,0.140482260039472,"non-directional",FALSE
 "NTL_NutrientAddition1.csv","added","NTL",-0.000580484438111794,0.602039581631616,"non-directional",-0.000180029286676996,0.503867295111882,"non-directional",FALSE
 "NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv","N","NWT",6.96148326485385e-05,0.00591492232321076,"increasing",6.06959988787861e-05,0.00620925556747573,"increasing",FALSE
-"PIE-PlantShoot_2004-2020_Processed.csv","Enriched","PIE",-1.96661123855542e-05,0.214796660555927,"non-directional",-1.7161406675674e-05,0.220002170663563,"non-directional",FALSE
+"PIE-PlantShoot_2004-2020_Processed.csv","Enriched","PIE",4.92828289929624e-06,0.799288883735717,"non-directional",4.24028466653984e-06,0.789171100248821,"non-directional",FALSE
 "SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL","SBC",-3.3733921909345e-05,0.154468688748437,"non-directional",-3.71849320377386e-05,0.237125666094989,"non-directional",FALSE
 "SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL","SBC",-8.70125817700501e-05,0.409113670089004,"non-directional",-5.73437128309997e-05,0.327232474152584,"non-directional",FALSE
 "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv","F","SEV",-4.18185873360962e-05,0.299923891233045,"non-directional",-3.97473960322794e-05,0.203098641211349,"non-directional",FALSE
