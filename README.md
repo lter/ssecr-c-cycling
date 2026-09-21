@@ -220,3 +220,12 @@ Each download generates a JSON manifest in `data/manifests/` recording the EDI p
 ## Contributing Guidelines & Style Guide
 
 See [CONTRIBUTING.md](https://github.com/lter/ssecr-c-cycling/blob/main/CONTRIBUTING.md)
+
+## Data provenance and processing (2026-09)
+
+- Every included dataset downloads from its EDI package (entity IDs in `data/dataset_registry.csv`, checksums in `data/manifests/`). If the PASTA API refuses anonymous requests, `R/pipeline/download.R` falls back to EDI's DataONE member node; files are checksum-identical.
+- Each `R/preprocess/preprocess_<site>.R` documents, in its header, the raw layout and the processing choices, which were checked against the package metadata (EML). A plain-language summary per site is in the `processing_notes` column of `data/site_metadata.csv`, which also feeds Table S1 and the Supplementary Methods.
+- Controls: `R/utils_analysis.R` (`CONTROL_NAMES`, `CONTROL_OVERRIDES`, `control_stratum()`). BioCON treatments are compared with the ambient control of their own nested design; SBC, HBR and MCM treatments with the control of their own block (reef, stand, basin).
+- Supplement: `python3 docs/supplement/build_supplement.py` assembles the SI document and tables workbook from the pipeline outputs; `docs/data_citations.csv` holds one EDI data citation per package.
+- `analysis/04b_detection-probability.R` and `analysis/04c_figure4_candidate.R` are exploratory (window-based detection probability) and are not used in the manuscript.
+- A clean clone reproduces every data and results file: run `analysis/00_download-and-preprocess.R` then scripts 01-08, 10, 99.
