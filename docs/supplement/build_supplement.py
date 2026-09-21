@@ -1,12 +1,10 @@
 """Assemble the Supplementary Information from pipeline outputs.
 
-Writes docs/supplement/Supplementary_Information.docx (Fig. S1, table captions,
-Table S3) and docs/supplement/Supplementary_Tables_S1-S3.xlsx (all three tables;
-S1 and S2 are too wide for a page). Run from the repo root after analysis/08 and 99.
+Writes docs/supplement/Supplementary_Information.docx (Fig. S1 and the table captions)
+and docs/supplement/Supplementary_Tables_S1-S3.xlsx (the three tables, one sheet each). Run from the repo root after analysis/08 and 99.
 """
 import csv
 from docx import Document
-from docx.enum.section import WD_ORIENT
 from docx.shared import Inches, Pt
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment
@@ -60,22 +58,11 @@ wb.save("docs/supplement/Supplementary_Tables_S1-S3.xlsx")
 d = Document()
 st = d.styles["Normal"]; st.font.name = "Cambria"; st.font.size = Pt(11)
 d.add_heading("Supplementary Information", level=1)
-d.add_paragraph("Figure S1 and Tables S1–S3. Tables S1 and S2 are provided in full in the accompanying workbook "
-                "(Supplementary_Tables_S1-S3.xlsx); Table S3 is reproduced below.")
+d.add_paragraph("Figure S1 and Tables S1–S3. The tables are provided in the accompanying workbook "
+                "(Supplementary_Tables_S1-S3.xlsx), one sheet per table; their captions are given below.")
 d.add_picture(FIG_S1[0], width=Inches(6.0))
 p = d.add_paragraph(); p.add_run("Figure S1. ").bold = True; p.add_run(FIG_S1[1])
-for name in ("Table S1", "Table S2"):
+for name in TABLES:
     p = d.add_paragraph(); p.add_run(f"{name}. ").bold = True; p.add_run(TABLES[name][1] + " (Workbook.)")
-sec = d.add_section(); sec.orientation = WD_ORIENT.LANDSCAPE
-sec.page_width, sec.page_height = sec.page_height, sec.page_width
-for m in ("left_margin", "right_margin"): setattr(sec, m, Inches(0.6))
-p = d.add_paragraph(); p.add_run("Table S3. ").bold = True; p.add_run(TABLES["Table S3"][1])
-rows = read(TABLES["Table S3"][0])
-t = d.add_table(rows=len(rows), cols=len(rows[0])); t.style = "Light Grid Accent 1"
-for i, r in enumerate(rows):
-    for j, v in enumerate(r):
-        c = t.cell(i, j); c.text = v
-        for par in c.paragraphs:
-            for run in par.runs: run.font.size = Pt(6.5); run.bold = (i == 0)
 d.save("docs/supplement/Supplementary_Information.docx")
 print("written")
