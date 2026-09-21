@@ -69,7 +69,7 @@ full study duration (y-axis). The dashed diagonal line indicates 1:1
 correspondence; points above the line indicate treatments whose effects
 strengthened over time, and points below indicate treatments whose effects
 attenuated. Treatments are classified as accurate, underestimate,
-overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table S2)
+overestimate, or wrong direction (response ratios within 20% of each other, |early - full LRR| < 0.182; Table S2)
 with sensitivity to the tolerance shown in Fig. S1. Colors and shapes denote LTER site identity. Most treatments
 cluster near the origin and the 1:1 line (Pearson r = 0.62), indicating that
 early-period effect sizes are broadly predictive of long-term outcomes, though
@@ -106,10 +106,11 @@ FigS1_early_vs_full_sensitivity
 -------------------------------
 Sensitivity of the early-versus-full-duration classification to the tolerance
 used to define agreement. Bars show the percentage of the 77 treatment-
-experiment combinations whose three-year LRR estimate was classified as an
+experiment combinations whose three-year estimate was classified as an
 underestimate, overestimate, or wrong-direction prediction of the full-record
-LRR, for tolerances from 0.1 to 1.0 (top axis: the equivalent percentage
-difference in the response ratio). The dotted line marks the tolerance used in
-the main text (0.2, ~22%). The seven wrong-direction cases (opposite signs, both
-|LRR| > 0.1) do not depend on the tolerance. Mispredicted treatments (of 77) at
-tolerances 0.1, 0.2, 0.3, 0.5, and 1.0: 44, 28, 23, 16, and 7.
+response, for tolerated differences between the early and full-record response
+ratios of 10% to 150% (|early - full LRR| < ln(1 + tolerance)). The main text
+uses 20% (|early - full LRR| < 0.182). The seven wrong-direction cases
+(opposite signs, both |LRR| > 0.1) do not depend on the tolerance. Mispredicted
+treatments (of 77) at tolerances of 10, 20, 30, 50, 100 and 150%: 48, 31, 23,
+18, 10 and 7.

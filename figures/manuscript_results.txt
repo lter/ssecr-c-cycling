@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-21 01:58 
+Generated: 2026-09-21 02:08 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -190,38 +190,34 @@ Directional trends (n=18):
 
 === SECTION 3.3: EARLY VS FULL LRR COMPARISON ===
 
-Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
+Tolerance for 'accurate': |early - full LRR| < 0.182 (response ratios within 20%)
 |early - full LRR|: median 0.14 (~15% of ratio), 75th pct 0.35 (~41%), 90th pct 0.60 (~82%)
    tolerance ratio_pct accurate underestimate overestimate wrong_direction
-1        0.1  10.51709       33            19           18               7
-2        0.2  22.14028       49            16            5               7
-3        0.3  34.98588       54            14            2               7
-4        0.4  49.18247       59            10            1               7
-5        0.5  64.87213       61             9            0               7
-6        0.6  82.21188       64             6            0               7
-7        0.7 101.37527       67             3            0               7
-8        0.8 122.55409       68             2            0               7
-9        0.9 145.96031       70             0            0               7
-10       1.0 171.82818       70             0            0               7
-   mispredicted_pct
-1         57.142857
-2         36.363636
-3         29.870130
-4         23.376623
-5         20.779221
-6         16.883117
-7         12.987013
-8         11.688312
-9          9.090909
-10         9.090909
+1 0.09531018        10       29            21           20               7
+2 0.18232156        20       46            17            7               7
+3 0.26236426        30       54            14            2               7
+4 0.33647224        40       57            12            1               7
+5 0.40546511        50       59            10            1               7
+6 0.55961579        75       61             9            0               7
+7 0.69314718       100       67             3            0               7
+8 0.91629073       150       70             0            0               7
+  mispredicted_pct
+1        62.337662
+2        40.259740
+3        29.870130
+4        25.974026
+5        23.376623
+6        20.779221
+7        12.987013
+8         9.090909
 
-Sensitivity to tolerance (mispredicted %): t=0.1: 57%; t=0.2: 36%; t=0.3: 30%; t=0.4: 23%; t=0.5: 21%; t=0.6: 17%; t=0.7: 13%; t=0.8: 12%; t=0.9: 9%; t=1.0: 9% 
+Sensitivity to tolerance (mispredicted %): 10%: 62%; 20%: 40%; 30%: 30%; 40%: 26%; 50%: 23%; 75%: 21%; 100%: 13%; 150%: 9% 
 Total treatment combinations with early vs full LRR: 77
 
 Classification:
-  accurate: 49 (63.6%)
-  overestimate: 5 (6.5%)
-  underestimate: 16 (20.8%)
+  accurate: 46 (59.7%)
+  overestimate: 7 (9.1%)
+  underestimate: 17 (22.1%)
   wrong_direction: 7 (9.1%)
 
 Mean absolute LRR change: 0.243
@@ -240,16 +236,16 @@ Wrong direction cases: 7
 Mispredicted by site:
   KNZ: 13 of 15 (87%) — under 9, over 0, wrong 4
   MCM: 5 of 5 (100%) — under 3, over 0, wrong 2
-  CDR: 4 of 28 (14%) — under 1, over 3, wrong 0
+  CDR: 5 of 28 (18%) — under 1, over 4, wrong 0
+  AND: 2 of 2 (100%) — under 2, over 0, wrong 0
   BNZ: 2 of 3 (67%) — under 0, over 1, wrong 1
   ARC: 1 of 1 (100%) — under 1, over 0, wrong 0
+  HFR: 1 of 1 (100%) — under 0, over 1, wrong 0
   VCR: 1 of 1 (100%) — under 1, over 0, wrong 0
-  AND: 1 of 2 (50%) — under 1, over 0, wrong 0
   SBC: 1 of 2 (50%) — under 0, over 1, wrong 0
   CAP: 0 of 3 (0%) — under 0, over 0, wrong 0
   GCE: 0 of 1 (0%) — under 0, over 0, wrong 0
   HBR: 0 of 4 (0%) — under 0, over 0, wrong 0
-  HFR: 0 of 1 (0%) — under 0, over 0, wrong 0
   KBS: 0 of 4 (0%) — under 0, over 0, wrong 0
   LUQ: 0 of 3 (0%) — under 0, over 0, wrong 0
   NTL: 0 of 1 (0%) — under 0, over 0, wrong 0
@@ -283,7 +279,7 @@ Illustrative cases:
     T3: early=0.130, full=0.171, change=0.041 (accurate)
 
   HFR (1 treatments):
-    H: early=0.222, full=0.023, change=-0.199 (accurate)
+    H: early=0.222, full=0.023, change=-0.199 (overestimate)
 
   VCR (1 treatments):
     Wrack: early=-0.865, full=-0.550, change=0.315 (underestimate)
@@ -473,9 +469,9 @@ RESULTS 3.2 (Trends):
 RESULTS 3.3 (Early vs Full):
   Correlation: r=0.62, p=1.76e-09
   Mean |LRR change|: 0.243
-  accurate: 49 (64%)
-  overestimate: 5 (6%)
-  underestimate: 16 (21%)
+  accurate: 46 (60%)
+  overestimate: 7 (9%)
+  underestimate: 17 (22%)
   wrong_direction: 7 (9%)
 
 RESULTS 3.4 (SiZer):
