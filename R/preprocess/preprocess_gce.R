@@ -30,6 +30,11 @@ preprocess_gce_vegetation <- function(raw_path) {
     data$Date <- sub("^(\\d{4}).*", "\\1", as.character(data$Date))
   }
 
+  # Monitoring of a marsh stopped once its disturbed plots had recovered, so
+  # after 2014 only the slowest sites remain. The balanced panel (all twelve
+  # sites, 2010-2014) is analyzed.
+  data <- data %>% filter(as.integer(Date) <= 2014)
+
   result <- summarize_by_columns(
     data,
     c("Date", "Site", "Latitude", "Longitude", "Treatment")

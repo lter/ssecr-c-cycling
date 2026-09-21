@@ -21,10 +21,12 @@ preprocess_sev_biomass <- function(raw_path) {
       Cover = sum(cover, na.rm = TRUE),
       .groups = "drop"
     ) %>%
+    # Quadrat total = SUM over species (the 2025 file took the mean across
+    # species, which depends on richness - and fertilization lowers richness)
     group_by(year, season, plot, quad, treatment) %>%
     summarise(
-      Biomass = mean(Biomass, na.rm = TRUE),
-      Cover = mean(Cover, na.rm = TRUE),
+      Biomass = sum(Biomass, na.rm = TRUE),
+      Cover = sum(Cover, na.rm = TRUE),
       .groups = "drop"
     ) %>%
     group_by(year, season, plot, treatment) %>%

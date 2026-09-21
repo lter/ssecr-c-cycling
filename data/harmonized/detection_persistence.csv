@@ -1,0 +1,78 @@
+"source","Treatment","trend_class","ever_significant","first_significant_year","lapses_after_first","first_sign_matches_final"
+"AND_tree_DBH_2002-2015_processed.csv","WS06","increasing",TRUE,12,0,TRUE
+"AND_tree_DBH_2002-2015_processed.csv","WS07","increasing",TRUE,12,0,TRUE
+"ARC_vascular_biomass_1983-2015.csv","NP","stable",TRUE,12,2,TRUE
+"BNZ_NEE_2009-2021.csv","C S","stable",TRUE,1.99863107460643,4,TRUE
+"BNZ_NEE_2009-2021.csv","W C","variable",FALSE,NA,NA,NA
+"BNZ_NEE_2009-2021.csv","W S","variable",FALSE,NA,NA,NA
+"CAP_annual_plant_biomass_2008-2024.csv","N","stable",FALSE,NA,NA,NA
+"CAP_annual_plant_biomass_2008-2024.csv","NP","stable",FALSE,NA,NA,NA
+"CAP_annual_plant_biomass_2008-2024.csv","P","stable",TRUE,8,4,FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTelv","variable",TRUE,2.00136892539357,7,FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTamb","variable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTelv","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M","decreasing",TRUE,5.99863107460643,7,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb","stable",TRUE,2.00136892539357,2,FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTamb","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oamb HTelv","variable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTamb","variable",TRUE,3.00068446269678,5,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich M H2Oneg HTelv","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Camb Nenrich S","stable",TRUE,9.99863107460643,9,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTamb","variable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oamb HTelv","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTamb","stable",TRUE,7.00068446269678,1,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb M H2Oneg HTelv","stable",TRUE,2.00136892539357,6,FALSE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Namb S","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M","decreasing",TRUE,23.0006844626968,0,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTamb","variable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oamb HTelv","decreasing",TRUE,7.00068446269678,0,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg","stable",TRUE,2.00136892539357,2,TRUE
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTamb","variable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTelv","stable",FALSE,NA,NA,NA
+"CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S","decreasing",TRUE,11.0006844626968,1,TRUE
+"GCE_vegetation_cover_2010-2014.csv","Disturbed (March-2010)","increasing",TRUE,3.00068446269678,0,TRUE
+"HBR_litterfall_2011-2021.csv","Ca","stable",FALSE,NA,NA,NA
+"HBR_litterfall_2011-2021.csv","N","increasing",TRUE,7.00068446269678,0,TRUE
+"HBR_litterfall_2011-2021.csv","NP","increasing",TRUE,10.0013689253936,0,TRUE
+"HBR_litterfall_2011-2021.csv","P","stable",FALSE,NA,NA,NA
+"HFR_soil-respiration_1991-2021_Processed.csv","H","decreasing",TRUE,7.00068446269678,1,TRUE
+"KBS_herbaceous_biomass_1993-2018.csv","T1","stable",FALSE,NA,NA,NA
+"KBS_herbaceous_biomass_1993-2018.csv","T2","variable",FALSE,NA,NA,NA
+"KBS_herbaceous_biomass_1993-2018.csv","T21","stable",FALSE,NA,NA,NA
+"KBS_herbaceous_biomass_1993-2018.csv","T3","increasing",TRUE,22.9979466119097,0,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b m c","variable",FALSE,NA,NA,NA
+"KNZ_Biomass_1986-2021_processed.csv","b m n","increasing",TRUE,16,0,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b m n+p","stable",TRUE,13.9986310746064,2,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b m p","variable",TRUE,16,1,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b u c","increasing",TRUE,24,0,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b u n","increasing",TRUE,5.99863107460643,6,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b u n+p","increasing",TRUE,5.99863107460643,12,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","b u p","increasing",TRUE,20.9993155373032,0,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","u m c","variable",FALSE,NA,NA,NA
+"KNZ_Biomass_1986-2021_processed.csv","u m n","variable",FALSE,NA,NA,NA
+"KNZ_Biomass_1986-2021_processed.csv","u m n+p","variable",FALSE,NA,NA,NA
+"KNZ_Biomass_1986-2021_processed.csv","u m p","variable",FALSE,NA,NA,NA
+"KNZ_Biomass_1986-2021_processed.csv","u u n","variable",FALSE,NA,NA,NA
+"KNZ_Biomass_1986-2021_processed.csv","u u n+p","increasing",TRUE,4,22,TRUE
+"KNZ_Biomass_1986-2021_processed.csv","u u p","stable",FALSE,NA,NA,NA
+"LUQ_soil_CO2_flux_2005-2009.csv","No trim + debris","stable",FALSE,NA,NA,NA
+"LUQ_soil_CO2_flux_2005-2009.csv","Trim & clear","stable",FALSE,NA,NA,NA
+"LUQ_soil_CO2_flux_2005-2009.csv","Trim + debris","stable",FALSE,NA,NA,NA
+"MCM_CO2flux_2003-2010_processed.csv","C","variable",FALSE,NA,NA,NA
+"MCM_CO2flux_2003-2010_processed.csv","CN","variable",FALSE,NA,NA,NA
+"MCM_CO2flux_2003-2010_processed.csv","CP","variable",FALSE,NA,NA,NA
+"MCM_CO2flux_2003-2010_processed.csv","N","variable",FALSE,NA,NA,NA
+"MCM_CO2flux_2003-2010_processed.csv","P","variable",FALSE,NA,NA,NA
+"NTL_chlorophyll_2013-2019.csv","added","variable",FALSE,NA,NA,NA
+"NWT_live_biomass_2007-2019.csv","N","stable",TRUE,4,7,FALSE
+"PIE_shoot_mass_2004-2019.csv","Enriched","stable",FALSE,NA,NA,NA
+"SBC_reef_biomass_2008-2023.csv","ANNUAL","decreasing",TRUE,4,7,TRUE
+"SBC_reef_biomass_2008-2023.csv","CONTINUAL","stable",FALSE,NA,NA,NA
+"SEV_aboveground_biomass_2004-2023.csv","F","stable",FALSE,NA,NA,NA
+"VCR_wrack_live_biomass_1994-1998.csv","Wrack","variable",FALSE,NA,NA,NA

@@ -22,7 +22,10 @@ metadata <- get_site_metadata()
 # Calculate means and SDs per source/date/treatment (needed for LRR with variance)
 mean_sd <- df %>%
   filter(!is.na(Response.Variable), !is.na(Treatment)) %>%
-  group_by(source, Date, Treatment) %>%
+  # block-matched sources are summarized (and compared with their control)
+  # within block; see control_stratum() in R/utils_analysis.R
+  mutate(control_stratum = control_stratum(source, Treatment, Replicate)) %>%
+  group_by(source, control_stratum, Date, Treatment) %>%
   summarise(
     means = mean(Response.Variable, na.rm = TRUE),
     response_sd = sd(Response.Variable, na.rm = TRUE),
@@ -38,6 +41,27 @@ write.csv(mean_sd, "data/harmonized/lrr_master_file.csv", row.names = FALSE)
 
 # --- Standard LRR Calculation ---
 lrr_results <- calculate_lrr(mean_sd, time_col = "Date")
+
+# Block-matched sources return one LRR per block; average them to one value per
+# treatment x date (variance of a mean of k independent block estimates)
+lrr_results <- lrr_results %>%
+  group_by(source, Treatment, Date) %>%
+  summarise(
+    n_strata = n(),
+    log_rr_variance = sum(log_rr_variance) / n()^2,
+    log_response_ratio = mean(log_response_ratio),
+    means = mean(means), response_sd = mean(response_sd), sample_size = sum(sample_size),
+    control_mean = mean(control_mean), control_sd = mean(control_sd), control_n = sum(control_n),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    log_rr_se = sqrt(log_rr_variance),
+    log_rr_ci_lower = log_response_ratio - 1.96 * log_rr_se,
+    log_rr_ci_upper = log_response_ratio + 1.96 * log_rr_se,
+    response_ratio = exp(log_response_ratio),
+    response_ratio_ci_lower = exp(log_rr_ci_lower),
+    response_ratio_ci_upper = exp(log_rr_ci_upper)
+  )
 lrr_results$site_abbr <- source_to_abbr(lrr_results$source, metadata)
 
 cat("LRR calculated:", nrow(lrr_results), "treatment-control comparisons\n")

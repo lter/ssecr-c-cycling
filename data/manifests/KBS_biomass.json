@@ -1,9 +1,9 @@
 {
   "dataset_id": "KBS_biomass",
   "edi_package_id": "knb-lter-kbs.19.85",
-  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-kbs/19/85/39e42936b351be6735e7f46baaa85437",
-  "download_timestamp": "2026-09-21T07:01:49Z",
-  "checksum_md5": "ce15a0684d15d27e2369157fe59151f5",
-  "file_size_bytes": 679222,
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-kbs/19/85/22d8b107eceadefb821046f4306f816b",
+  "download_timestamp": "2026-09-21T08:28:16Z",
+  "checksum_md5": "0298cb66ea836d04fee95a8d0c9ffb15",
+  "file_size_bytes": 3756691,
   "raw_filename": "data.csv"
 }

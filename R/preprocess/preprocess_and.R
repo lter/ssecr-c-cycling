@@ -17,7 +17,7 @@
 # the treatment watersheds in each of the three census periods. Response-ratio
 # analyses require same-date treatment/control pairing, so WS08 years are
 # recoded to the nominal census year (2003->2002, 2009->2008, 2015->2014).
-# The bias from the 1-year offset is negligible: WS08 mean DBH drifted ~0.3%/yr
+# The bias from the 1-year offset is negligible: WS08 mean DBH drifted <0.2%/yr
 # (34.8 -> 36.1 cm over 12 years).
 #
 # RAW LAYOUT (TV010 entity 2, "individual tree remeasurements", ~611k rows):

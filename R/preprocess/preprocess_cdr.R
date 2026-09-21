@@ -53,6 +53,16 @@ preprocess_cdr_biocon_biomass <- function(raw_path) {
          paste(missing_cols, collapse = ", "))
   }
 
+  # From 2013 four water x warming plots carry only one of their two factor
+  # labels. Plots 97 and 226 (warming label present, water label blank) were
+  # "H2Oamb" in 2012 and are restored; plots 83 and 194 (water label present,
+  # warming label blank, and unlabelled in 2012) cannot be assigned and are
+  # dropped for those years rather than forming a spurious one-plot treatment.
+  yr <- as.integer(format(as.Date(data$Date, format = "%m/%d/%Y"), "%Y"))
+  fix <- yr >= 2013 & data$Plot %in% c(97, 226) & trimws(data$`Water Treatment`) == ""
+  data$`Water Treatment`[fix] <- "H2Oamb"
+  data <- data[!(yr >= 2013 & data$Plot %in% c(83, 194)), ]
+
   data <- data %>%
     rename(Biomass_raw = `Aboveground Biomass (g/m^2)`) %>%
     mutate(

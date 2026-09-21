@@ -62,9 +62,11 @@ preprocess_mcm_co2flux <- function(raw_path) {
   # Average to annual means per treatment × block
   result <- data %>%
     filter(!is.na(.data[[co2_col]]), !is.na(Year)) %>%
+    # Block numbers 1-8 are reused in each basin (Bonney, Fryxell); a replicate
+    # is a basin x block
     group_by(
       Year = Year,
-      BLOCK_ID = .data[[block_col]],
+      BLOCK_ID = paste(.data[[grep("^BASIN$|basin", names(data), value = TRUE, ignore.case = TRUE)[1]]], .data[[block_col]]),
       TREATMENT = .data[[treatment_col]]
     ) %>%
     summarise(

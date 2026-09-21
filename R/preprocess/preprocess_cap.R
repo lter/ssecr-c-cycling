@@ -21,6 +21,9 @@ preprocess_cap_biomass <- function(raw_path) {
 
   result <- data %>%
     filter(!is.na(.data[[mass_col]])) %>%
+    # 2018: 141 of 144 quadrats had no annual plants to harvest (recorded as
+    # missing), leaving one sub-plot - not a usable year
+    filter(year != 2018) %>%
     # Mean across subplots within each location
     group_by(year, site_code, treatment_code, location_within_plot, subplot) %>%
     summarise(Biomass = mean(.data[[mass_col]], na.rm = TRUE), .groups = "drop") %>%

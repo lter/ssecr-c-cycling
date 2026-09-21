@@ -52,14 +52,26 @@ preprocess_kbs_biomass <- function(raw_path) {
     # so summing every fraction double-counts. Per sampling event use WHOLE
     # where it exists, otherwise the sum of the component fractions; LITTER is
     # not plant production and is never included.
+    # Through 1992 the treatments were in different phases of the rotation
+    # (e.g. T1 soybean while T4 grew corn), so a treatment/reference ratio was a
+    # crop contrast; all systems share one crop sequence from 1993
+    filter(Year >= 1993) %>%
     filter(Fraction != "LITTER") %>%
+    # Annual cropping systems only. T6 (alfalfa) is a perennial forage cut a
+    # varying number of times per year and is not comparable with the annual
+    # crops; T5/T7/T8/TSF are the poplar and successional communities.
+    filter(Treatment %in% c("T1", "T2", "T3", "T4", "T21")) %>%
+    # The compiled table holds every component of herbaceous production: the
+    # crop ("Harvest"), the weeds harvested with it, and winter cover crops
+    # ("Cover Harvest"). Special one-off campaigns are not part of the annual series.
+    filter(grepl("^Harvest$|^Cover Harvest", Campaign)) %>%
     group_by(Year, Campaign, Treatment, Replicate, Station, Species) %>%
     summarise(Biomass = if (any(Fraction == "WHOLE")) sum(Biomass[Fraction == "WHOLE"])
                         else sum(Biomass), .groups = "drop") %>%
-    # repeated cuttings within a year (alfalfa) add up to annual production
-    group_by(Year, Treatment, Replicate, Station, Species) %>%
+    # all species at a station in a campaign -> mean of stations -> sum of campaigns
+    group_by(Year, Campaign, Treatment, Replicate, Station) %>%
     summarise(Biomass = sum(Biomass), .groups = "drop") %>%
-    group_by(Year, Treatment, Replicate, Species) %>%
+    group_by(Year, Campaign, Treatment, Replicate) %>%
     summarise(Biomass = mean(Biomass), .groups = "drop") %>%
     group_by(Year, Treatment, Replicate) %>%
     summarise(Biomass = sum(Biomass), .groups = "drop")
