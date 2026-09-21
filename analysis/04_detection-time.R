@@ -198,3 +198,35 @@ if (nrow(significant_trends) > 0) {
 }
 
 cat("\n=== COMPLETE ===\n")
+
+# =============================================================================
+# Persistence of first detections, and transient "detections" in treatments
+# without a long-term trend (reported alongside the time to first detection)
+# =============================================================================
+seq_sig <- function(d) {
+  d <- d[order(d$Date_parsed), ]
+  t <- as.numeric(d$Date_parsed - min(d$Date_parsed))
+  fits <- lapply(3:nrow(d), function(i) summary(lm(d$mean_response[1:i] ~ t[1:i]))$coefficients[2, c(1, 4)])
+  data.frame(year = as.numeric(d$Date_parsed[3:nrow(d)] - min(d$Date_parsed)) / 365.25,
+             slope = sapply(fits, `[`, 1), sig = sapply(fits, `[`, 2) < 0.05)
+}
+persistence <- summary_data %>%
+  inner_join(trend_analysis %>% filter(trend_class != "insufficient_data") %>%
+               select(source, Treatment, trend_class), by = c("source", "Treatment")) %>%
+  group_by(source, Treatment, trend_class) %>%
+  group_modify(~ {
+    if (nrow(.x) < 3) return(data.frame())
+    s <- seq_sig(.x); first <- if (any(s$sig)) which(s$sig)[1] else NA
+    data.frame(ever_significant = any(s$sig),
+               first_significant_year = if (is.na(first)) NA else s$year[first],
+               lapses_after_first = if (is.na(first)) NA else sum(!s$sig[first:nrow(s)]),
+               first_sign_matches_final = if (is.na(first)) NA else sign(s$slope[first]) == sign(tail(s$slope, 1)))
+  }) %>% ungroup()
+write.csv(persistence, "data/harmonized/detection_persistence.csv", row.names = FALSE)
+dirn <- persistence %>% filter(trend_class %in% c("increasing", "decreasing"))
+nond <- persistence %>% filter(!trend_class %in% c("increasing", "decreasing"))
+cat(sprintf("\nPersistence: of %d directional treatments, %d lost significance at least once after first detection; %d first detections had the same sign as the final trend\n",
+            nrow(dirn), sum(dirn$lapses_after_first > 0), sum(dirn$first_sign_matches_final)))
+cat(sprintf("Transient significance: %d of %d non-directional treatments (%.0f%%) were nominally significant at some point (median year %.0f)\n",
+            sum(nond$ever_significant), nrow(nond), 100 * mean(nond$ever_significant),
+            median(nond$first_significant_year, na.rm = TRUE)))
