@@ -16,8 +16,10 @@ TABLES = {
                  "slope, P-value and R-squared of the linear fit of the response ratio over time, coefficient of "
                  "variation (CV), mean response ratio, number of timepoints, record length, early (first three "
                  "calendar years) and full-duration log response ratios (LRR) with their difference and "
-                 "classification (accurate, underestimate, overestimate, wrong direction; tolerance 0.2), and years "
-                 "to first detection of a significant trend (directional treatments only)."),
+                 "classification (accurate, underestimate, overestimate, wrong direction; tolerance 0.2), years "
+                 "to first detection of a significant trend (directional treatments only), the number, "
+                 "percentage (of consecutive measurement transitions), and years of sign flips, and the "
+                 "P-value and directional call when the trend analysis is repeated on the log response ratio."),
     "Table S2": (f"{SUP}/TableS2_sizer_results.csv",
                  "SiZer results for the 79 treatment-experiment combinations with at least five timepoints: number "
                  "of significant slope changes at a 5-year bandwidth, the years at which they occurred, and segment "

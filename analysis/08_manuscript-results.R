@@ -707,6 +707,10 @@ table_s1 <- trend_clean %>%
             by = c("source", "Treatment")) %>%
   left_join(detection_data %>% select(source, Treatment, time_to_detect, detected),
             by = c("source", "Treatment")) %>%
+  left_join(sign_flips_clean %>% select(source, Treatment, n_flips, flip_pct, flip_years),
+            by = c("source", "Treatment")) %>%
+  left_join(robustness %>% select(source, Treatment, log_p, log_call),
+            by = c("source", "Treatment")) %>%
   select(
     Site = site_abbr,
     `Site Name` = site_full_name,
@@ -727,7 +731,12 @@ table_s1 <- trend_clean %>%
     `LRR Change` = lrr_change,
     `Early vs Full` = classification,
     Detected = detected,
-    `Years to Detect` = time_to_detect
+    `Years to Detect` = time_to_detect,
+    `N Sign Flips` = n_flips,
+    `Sign Flip %` = flip_pct,
+    `Flip Years` = flip_years,
+    `Log-scale P-value` = log_p,
+    `Log-scale Directional Call` = log_call
   ) %>%
   mutate(across(where(is.numeric), ~ round(., 4))) %>%
   arrange(Site, Treatment)
