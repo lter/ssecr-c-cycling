@@ -1,11 +1,10 @@
 # preprocess_gce.R
-# Source: PLT-GCED-2207 (also published on EDI as knb-lter-gce.786.13)
+# Source: knb-lter-gce.786.13, entity PLT-GCED-2207_vegetation_2_0.CSV
 # Critical slowing down: vegetation height, cover and composition
 # Treatment: Control vs Disturbed (March 2010)
 #
-# NOTE: skip = 22 matches the GCE-portal export's metadata header block.
-# If re-downloading from EDI, verify the entity's header offset first —
-# a different header depth would silently misparse the file.
+# The EDI entity has two title lines above the column names, then two
+# descriptor rows (units, variable type) before the data.
 
 library(dplyr)
 
@@ -13,9 +12,14 @@ library(dplyr)
 #' @param raw_path Path to raw CSV
 #' @return data.frame with summary statistics per Date/Site/Treatment
 preprocess_gce_vegetation <- function(raw_path) {
-  data <- read.csv(raw_path, stringsAsFactors = FALSE, skip = 22)
+  data <- read.csv(raw_path, stringsAsFactors = FALSE, skip = 2)
+  stopifnot(identical(names(data)[1:5], c("Date", "Site", "Latitude", "Longitude", "Treatment")))
+  # Drop the units / variable-type descriptor rows, then restore numeric columns
+  data <- data[grepl("^\\d{4}", data$Date), ]
+  num_cols <- setdiff(names(data), c("Date", "Site", "Treatment"))
+  data[num_cols] <- lapply(data[num_cols], function(x) suppressWarnings(as.numeric(x)))
 
-  # After skipping 22 header rows, raw data has:
+  # Raw data has:
   # Date, Site, Latitude, Longitude, Treatment, Plot, Sub.plot,
   # Vegetation_Cover, Vegetation_Height, and individual species columns
 

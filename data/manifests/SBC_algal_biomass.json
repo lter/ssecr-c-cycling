@@ -1,0 +1,9 @@
+{
+  "dataset_id": "SBC_algal_biomass",
+  "edi_package_id": "knb-lter-sbc.119.13",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/119/13/020f9b0e507561cb49fc8fd122da0a29",
+  "download_timestamp": "2026-09-21T06:37:22Z",
+  "checksum_md5": "604a8f0b005d6fe47f830f6c94dbe0aa",
+  "file_size_bytes": 49571953,
+  "raw_filename": "data.csv"
+}

@@ -74,7 +74,7 @@
 "MCM","MCM_CO2flux_2003-2010_processed.csv","P",5,0,NA,"0.048422","0.1692","0.1692",5
 "NWT","NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv","N",13,1,"2015","0.042705; 0.113116","1e-04; 0.1716","1e-04; 0.1716",5
 "PIE","PIE-PlantShoot_2004-2020_Processed.csv","Enriched",17,0,NA,"-4e-05","0.9971","0.9971",5
-"SBC","SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL",15,0,NA,"-0.005572","0.4986","0.4986",5
-"SBC","SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL",14,0,NA,"0.031698","0.6748","0.6748",5
+"SBC","SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL",16,0,NA,"-0.01232","0.1545","0.1545",5
+"SBC","SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL",14,0,NA,"-0.031785","0.4091","0.4091",5
 "SEV","SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv","F",20,0,NA,"-0.015275","0.2999","0.2999",5
 "VCR","VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv","Inside Juncus",16,1,"2007","0.226389; -0.596216","0.009; 0.2734","0.009; 0.2734",5

@@ -22,8 +22,10 @@ preprocess_sbc_algal_biomass <- function(raw_path) {
   numeric_cols <- c("VIS", "PERCENT_COVER", "DENSITY", "WM_GM2", "DRY_GM2", "SFDM", "AFDM")
   available_cols <- numeric_cols[numeric_cols %in% names(data)]
 
+  # -99999 is the package's missing-value code; it must not enter the sums
   result <- data %>%
     select(YEAR, MONTH, SITE, TRANSECT, TREATMENT, all_of(available_cols)) %>%
+    mutate(across(all_of(available_cols), ~ na_if(.x, -99999))) %>%
     summarize_by_columns(c("YEAR", "MONTH", "SITE", "TRANSECT", "TREATMENT"))
 
   as.data.frame(result)

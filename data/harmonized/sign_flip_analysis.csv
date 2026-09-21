@@ -84,7 +84,7 @@
 "NTL_NutrientAddition1.csv","added",0,NA,"NTL",4,0
 "NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv","N",2,"2007; 2008","NWT",13,16.6666666666667
 "PIE-PlantShoot_2004-2020_Processed.csv","Enriched",8,"2006; 2007; 2013; 2014; 2015; 2016; 2018; 2019","PIE",17,50
-"SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL",0,NA,"SBC",15,0
-"SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL",4,"2012; 2015; 2018; 2020","SBC",14,30.7692307692308
+"SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL",1,"2009","SBC",16,6.66666666666667
+"SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL",5,"2011; 2012; 2015; 2018; 2020","SBC",14,38.4615384615385
 "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv","F",2,"2018; 2022","SEV",20,10.5263157894737
 "VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv","Inside Juncus",5,"1997; 1998; 2000; 2002; 2004","VCR",16,33.3333333333333

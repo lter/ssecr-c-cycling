@@ -78,7 +78,7 @@
 "NTL_NutrientAddition1.csv","added","NTL",-0.000580484438111794,0.602039581631616,"non-directional",-0.000180029286676996,0.503867295111882,"non-directional",FALSE
 "NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv","N","NWT",6.96148326485385e-05,0.00591492232321076,"increasing",6.06959988787861e-05,0.00620925556747573,"increasing",FALSE
 "PIE-PlantShoot_2004-2020_Processed.csv","Enriched","PIE",-1.16989818724925e-07,0.996897056930263,"non-directional",-3.5023411715281e-06,0.878581352814956,"non-directional",FALSE
-"SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL","SBC",-1.52566288319203e-05,0.498573519084543,"non-directional",-1.54152229652304e-05,0.622286848087221,"non-directional",FALSE
-"SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL","SBC",8.67863702425599e-05,0.674793139932109,"non-directional",-7.63346187387897e-05,0.364592793118927,"non-directional",FALSE
+"SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL","SBC",-3.3733921909345e-05,0.154468688748437,"non-directional",-3.71849320377386e-05,0.237125666094989,"non-directional",FALSE
+"SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL","SBC",-8.70125817700501e-05,0.409113670089004,"non-directional",-5.73437128309997e-05,0.327232474152584,"non-directional",FALSE
 "SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv","F","SEV",-4.18185873164654e-05,0.299923891470979,"non-directional",-3.97473960175568e-05,0.203098641384352,"non-directional",FALSE
 "VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv","Inside Juncus","VCR",0.000562475839786072,0.00373356264278491,"increasing",0.000350177129902095,0.000455101818547544,"increasing",FALSE

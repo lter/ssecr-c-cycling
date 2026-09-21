@@ -112,4 +112,4 @@ LRR, for tolerances from 0.1 to 1.0 (top axis: the equivalent percentage
 difference in the response ratio). The dotted line marks the tolerance used in
 the main text (0.2, ~22%). The six wrong-direction cases (opposite signs, both
 |LRR| > 0.1) do not depend on the tolerance. Mispredicted treatments (of 83) at
-tolerances 0.1, 0.2, 0.3, 0.5, and 1.0: 45, 30, 19, 13, and 6.
+tolerances 0.1, 0.2, 0.3, 0.5, and 1.0: 46, 30, 19, 13, and 6.

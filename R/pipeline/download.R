@@ -91,7 +91,15 @@ download_from_edi <- function(package_id, entity_id = NULL, dataset_id,
 
   response <- GET(download_url, write_disk(dest_file, overwrite = TRUE))
   if (http_error(response)) {
-    stop("Download failed for ", package_id, ": HTTP ", status_code(response))
+    # PASTA sometimes refuses anonymous API requests (HTTP 401/403). The same
+    # object is served by EDI's DataONE member node under its PASTA URL as PID.
+    cat("  PASTA returned HTTP", status_code(response), "- retrying via the LTER DataONE member node\n")
+    mirror_url <- paste0("https://gmn.lternet.edu/mn/v2/object/",
+                         utils::URLencode(download_url, reserved = TRUE))
+    response <- GET(mirror_url, write_disk(dest_file, overwrite = TRUE))
+    if (http_error(response)) {
+      stop("Download failed for ", package_id, ": HTTP ", status_code(response))
+    }
   }
 
   cat("  Downloaded", round(file.info(dest_file)$size / 1024, 1), "KB\n")

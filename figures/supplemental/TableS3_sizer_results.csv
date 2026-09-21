@@ -74,7 +74,7 @@
 "MCM","McMurdo Dry Valleys","Tundra","P",5,0,NA,"0.048422","0.1692",5
 "NWT","Niwot Ridge","Tundra","N",13,1,"2015","0.042705; 0.113116","1e-04; 0.1716",5
 "PIE","Plum Island Ecosystems","Coastal","Enriched",17,0,NA,"-4e-05","0.9971",5
-"SBC","Santa Barbara Coastal","Coastal","ANNUAL",15,0,NA,"-0.005572","0.4986",5
-"SBC","Santa Barbara Coastal","Coastal","CONTINUAL",14,0,NA,"0.031698","0.6748",5
+"SBC","Santa Barbara Coastal","Coastal","ANNUAL",16,0,NA,"-0.01232","0.1545",5
+"SBC","Santa Barbara Coastal","Coastal","CONTINUAL",14,0,NA,"-0.031785","0.4091",5
 "SEV","Sevilleta","Grassland","F",20,0,NA,"-0.015275","0.2999",5
 "VCR","Virginia Coast Reserve","Coastal","Inside Juncus",16,1,"2007","0.226389; -0.596216","0.009; 0.2734",5

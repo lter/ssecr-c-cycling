@@ -1,0 +1,9 @@
+{
+  "dataset_id": "GCE_vegetation",
+  "edi_package_id": "knb-lter-gce.786.13",
+  "download_url": "https://pasta.lternet.edu/package/data/eml/knb-lter-gce/786/13/c6ea8f3c4277ea30b7944d4a2a694921",
+  "download_timestamp": "2026-09-21T06:37:19Z",
+  "checksum_md5": "180f527fd57fb42eefc1d9dc6a80ced5",
+  "file_size_bytes": 123446,
+  "raw_filename": "data.csv"
+}

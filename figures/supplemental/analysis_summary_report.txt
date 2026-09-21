@@ -1,10 +1,10 @@
 TEMPORAL TREND ANALYSIS SUMMARY REPORT
 ====================================================================== 
-Generated: 2026-08-25 12:16 
+Generated: 2026-09-20 23:38 
 
 DATASET OVERVIEW:
   Total sources: 18 
-  Total rows: 11142 
+  Total rows: 11156 
   Sites: 18 
 
 TREND DISTRIBUTION:
@@ -21,8 +21,8 @@ KEY FINDINGS:
 TREND TYPE CHARACTERISTICS:
   decreasing (n=5): mean ratio=1.81x, mean CV=0.256, mean timepoints=13
   increasing (n=21): mean ratio=1.32x, mean CV=0.582, mean timepoints=26
-  stable (n=35): mean ratio=1.33x, mean CV=0.181, mean timepoints=10
-  variable (n=22): mean ratio=1.79x, mean CV=0.518, mean timepoints=18
+  stable (n=35): mean ratio=1.33x, mean CV=0.182, mean timepoints=10
+  variable (n=22): mean ratio=1.79x, mean CV=0.493, mean timepoints=18
 
  =
  =

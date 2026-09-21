@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-20 23:20 
+Generated: 2026-09-20 23:39 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -136,11 +136,11 @@ Trend class statistics:
     Mean year span: 26.6 (median 32.0)
   stable (n=35):
     Mean ratio: 1.33 (median 1.33, SD 0.33)
-    Mean CV: 0.181 (median 0.191)
+    Mean CV: 0.182 (median 0.191)
     Mean year span: 10.9 (median 9.0)
   variable (n=22):
     Mean ratio: 1.79 (median 1.60, SD 0.77)
-    Mean CV: 0.518 (median 0.407)
+    Mean CV: 0.493 (median 0.407)
     Mean year span: 17.7 (median 12.0)
 
 Robustness to log transform (LRR vs ratio): 8 of 83 directional calls change (9.6%)
@@ -160,8 +160,8 @@ Directional trends (n=26):
 
 --- TABLE 2: Trend Type Summary ---
   Trend Type  N Mean Ratio (SD) Median Ratio Mean CV Median CV
-1     stable 35     1.33 (0.33)         1.33   0.181     0.191
-2   variable 22     1.79 (0.77)         1.60   0.518     0.407
+1     stable 35     1.33 (0.33)         1.33   0.182     0.191
+2   variable 22     1.79 (0.77)         1.60   0.493     0.407
 3 increasing 21     1.32 (0.52)         1.15   0.582     0.597
 4 decreasing  5     1.81 (0.48)         2.03   0.256     0.270
   Mean Duration (yr) Median Duration (yr)
@@ -177,7 +177,7 @@ Directional trends (n=26):
 Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
 |early - full LRR|: median 0.12 (~12% of ratio), 75th pct 0.26 (~30%), 90th pct 0.53 (~70%)
    tolerance ratio_pct accurate underestimate overestimate wrong_direction
-1        0.1  10.51709       38            28           11               6
+1        0.1  10.51709       37            28           12               6
 2        0.2  22.14028       53            19            5               6
 3        0.3  34.98588       64            12            1               6
 4        0.4  49.18247       70             7            0               6
@@ -188,7 +188,7 @@ Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
 9        0.9 145.96031       77             0            0               6
 10       1.0 171.82818       77             0            0               6
    mispredicted_pct
-1         54.216867
+1         55.421687
 2         36.144578
 3         22.891566
 4         15.662651
@@ -199,7 +199,7 @@ Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
 9          7.228916
 10         7.228916
 
-Sensitivity to tolerance (mispredicted %): t=0.1: 54%; t=0.2: 36%; t=0.3: 23%; t=0.4: 16%; t=0.5: 16%; t=0.6: 12%; t=0.7: 8%; t=0.8: 7%; t=0.9: 7%; t=1.0: 7% 
+Sensitivity to tolerance (mispredicted %): t=0.1: 55%; t=0.2: 36%; t=0.3: 23%; t=0.4: 16%; t=0.5: 16%; t=0.6: 12%; t=0.7: 8%; t=0.8: 7%; t=0.9: 7%; t=1.0: 7% 
 Total treatment combinations with early vs full LRR: 83
 
 Classification:
@@ -208,9 +208,9 @@ Classification:
   underestimate: 19 (22.9%)
   wrong_direction: 6 (7.2%)
 
-Mean absolute LRR change: 0.213
+Mean absolute LRR change: 0.214
 Median absolute LRR change: 0.117
-Pearson correlation (early vs full LRR): r = 0.712, p = 4.47e-14
+Pearson correlation (early vs full LRR): r = 0.708, p = 6.77e-14
 
 Wrong direction cases: 6
   BNZ / W C: early=0.741, full=-0.903
@@ -381,7 +381,7 @@ Detection time by trend type:
   Coastal (n=5):
     Stable: 3, Variable: 1, Increasing: 1, Decreasing: 0
     Directional: 20.0%
-    Mean ratio: 1.17, Mean CV: 0.479
+    Mean ratio: 1.20, Mean CV: 0.374
 
   Tundra (n=10):
     Stable: 5, Variable: 4, Increasing: 1, Decreasing: 0
@@ -408,12 +408,12 @@ Detection time by trend type:
   Stock (n=65):
     Stable: 25, Variable: 17, Increasing: 19, Decreasing: 4
     Directional: 35.4%
-    Mean ratio: 1.53, Mean CV: 0.412
+    Mean ratio: 1.53, Mean CV: 0.404
 
 --- Trends by Experiment Type ---
   Floral Manipulation (n=1): 100.0% directional, mean ratio=2.09, mean CV=0.839
   Fertilization (n=70): 31.4% directional, mean ratio=1.56, mean CV=0.375
-  Vegetation Removal (n=8): 25.0% directional, mean ratio=0.83, mean CV=0.247
+  Vegetation Removal (n=8): 25.0% directional, mean ratio=0.84, mean CV=0.182
   Warming (n=4): 25.0% directional, mean ratio=1.29, mean CV=0.554
 
 --- Detection Time by Ecosystem Type ---
@@ -434,7 +434,7 @@ Detection time by trend type:
 === SIGN FLIP ANALYSIS ===
 
 Treatment combinations analyzed: 83
-With >= 1 sign flip: 53 (63.9%)
+With >= 1 sign flip: 54 (65.1%)
 Mean flips per combination: 4.1
 Max flips: 21
 
@@ -465,8 +465,8 @@ RESULTS 3.2 (Trends):
   variable: 22 (26%)
 
 RESULTS 3.3 (Early vs Full):
-  Correlation: r=0.71, p=4.47e-14
-  Mean |LRR change|: 0.213
+  Correlation: r=0.71, p=6.77e-14
+  Mean |LRR change|: 0.214
   accurate: 53 (64%)
   overestimate: 5 (6%)
   underestimate: 19 (23%)
