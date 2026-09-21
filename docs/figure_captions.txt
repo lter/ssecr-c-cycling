@@ -69,7 +69,7 @@ full study duration (y-axis). The dashed diagonal line indicates 1:1
 correspondence; points above the line indicate treatments whose effects
 strengthened over time, and points below indicate treatments whose effects
 attenuated. Treatments are classified as accurate, underestimate,
-overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table S1)
+overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table S2)
 with sensitivity to the tolerance shown in Fig. S1. Colors and shapes denote LTER site identity. Most treatments
 cluster near the origin and the 1:1 line (Pearson r = 0.71), indicating that
 early-period effect sizes are broadly predictive of long-term outcomes, though

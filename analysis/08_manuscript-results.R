@@ -160,8 +160,8 @@ table1 <- freq_by_source %>%
 # N Treatments shows analyzable (screened) where some treatments had < 3 timepoints
 
 # Main-text Table 1 keeps the descriptive columns; provenance and sampling
-# details go to Table S3 so the main table fits a portrait page
-# Table S3 also carries the EDI data citation for each package (docs/data_citations.csv,
+# details go to Table S1 so the main table fits a portrait page
+# Table S1 also carries the EDI data citation for each package (docs/data_citations.csv,
 # generated from DataCite metadata; one citation per analyzed package)
 data_citations <- read.csv("docs/data_citations.csv", stringsAsFactors = FALSE) %>%
   select(Site = site, `Data Citation` = citation)
@@ -172,8 +172,8 @@ table1 <- table1 %>%
          `Response Type`, `N Treatments`)
 print(as.data.frame(table1))
 write.csv(table1, "figures/Table1_case_study_overview.csv", row.names = FALSE)
-write.csv(table_s4, "figures/supplemental/TableS3_case_study_details.csv", row.names = FALSE)
-cat("  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS3_case_study_details.csv (full)\n")
+write.csv(table_s4, "figures/supplemental/TableS1_case_study_details.csv", row.names = FALSE)
+cat("  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS1_case_study_details.csv (full)\n")
 
 # =============================================================================
 # SECTION 3.2: TREND CLASSIFICATION
@@ -432,7 +432,7 @@ for (site in illustrative_sites) {
 }
 
 # The per-treatment early/full LRR values and their classification are reported in
-# Supplemental Table S1 (below).
+# Supplemental Table S2 (below).
 
 # =============================================================================
 # SECTION 3.4: SIZER RESULTS (SLOPE CHANGES)
@@ -695,10 +695,10 @@ cat(sprintf("Mean flips per combination: %.1f\n",
 cat(sprintf("Max flips: %d\n", max(sign_flips_clean$n_flips, na.rm = TRUE)))
 
 # =============================================================================
-# SUPPLEMENTAL TABLE S1: Full Per-Treatment Statistics
+# SUPPLEMENTAL TABLE S2: Full Per-Treatment Statistics
 # =============================================================================
 
-cat("\n\n=== SUPPLEMENTAL TABLE S1 ===\n")
+cat("\n\n=== SUPPLEMENTAL TABLE S2 ===\n")
 
 table_s1 <- trend_clean %>%
   left_join(metadata %>% distinct(source, site_full_name), by = "source") %>%
@@ -741,16 +741,16 @@ table_s1 <- trend_clean %>%
   mutate(across(where(is.numeric), ~ round(., 4))) %>%
   arrange(Site, Treatment)
 
-write.csv(table_s1, "figures/supplemental/TableS1_full_treatment_statistics.csv",
+write.csv(table_s1, "figures/supplemental/TableS2_full_treatment_statistics.csv",
           row.names = FALSE)
-cat("  -> Written to figures/supplemental/TableS1_full_treatment_statistics.csv\n")
+cat("  -> Written to figures/supplemental/TableS2_full_treatment_statistics.csv\n")
 cat(sprintf("  Rows: %d\n", nrow(table_s1)))
 
 # =============================================================================
-# SUPPLEMENTAL TABLE S2: SiZer Results
+# SUPPLEMENTAL TABLE S3: SiZer Results
 # =============================================================================
 
-cat("\n--- SUPPLEMENTAL TABLE S2 ---\n")
+cat("\n--- SUPPLEMENTAL TABLE S3 ---\n")
 
 table_s2 <- sizer_results %>%
   left_join(metadata %>% distinct(source, site_full_name, site_type), by = "source") %>%
@@ -770,9 +770,9 @@ table_s2 <- sizer_results %>%
   ) %>%
   arrange(Site, Treatment)
 
-write.csv(table_s2, "figures/supplemental/TableS2_sizer_results.csv",
+write.csv(table_s2, "figures/supplemental/TableS3_sizer_results.csv",
           row.names = FALSE)
-cat("  -> Written to figures/supplemental/TableS2_sizer_results.csv\n")
+cat("  -> Written to figures/supplemental/TableS3_sizer_results.csv\n")
 cat(sprintf("  Rows: %d\n", nrow(table_s2)))
 
 # =============================================================================

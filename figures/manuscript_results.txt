@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-20 23:17 
+Generated: 2026-09-20 23:20 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -110,7 +110,7 @@ Sites by response type:
 16                              Soil CO2 flux          Flux            5
 17                Aboveground biomass (g m-2)         Stock            1
 18                Aboveground biomass (g m-2)         Stock            3
-  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS3_case_study_details.csv (full)
+  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS1_case_study_details.csv (full)
 
 
 === SECTION 3.2: TREND CLASSIFICATION ===
@@ -439,12 +439,12 @@ Mean flips per combination: 4.1
 Max flips: 21
 
 
-=== SUPPLEMENTAL TABLE S1 ===
-  -> Written to figures/supplemental/TableS1_full_treatment_statistics.csv
+=== SUPPLEMENTAL TABLE S2 ===
+  -> Written to figures/supplemental/TableS2_full_treatment_statistics.csv
   Rows: 83
 
---- SUPPLEMENTAL TABLE S2 ---
-  -> Written to figures/supplemental/TableS2_sizer_results.csv
+--- SUPPLEMENTAL TABLE S3 ---
+  -> Written to figures/supplemental/TableS3_sizer_results.csv
   Rows: 79
 
 

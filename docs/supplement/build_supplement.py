@@ -11,7 +11,11 @@ from openpyxl.styles import Font, Alignment
 
 SUP = "figures/supplemental"
 TABLES = {
-    "Table S1": (f"{SUP}/TableS1_full_treatment_statistics.csv",
+    "Table S1": (f"{SUP}/TableS1_case_study_details.csv",
+                 "Details of the 18 case-study datasets: setting, experiment, manipulation, response variable and "
+                 "type, years analyzed, number of years sampled, number of analyzable treatments (in parentheses, "
+                 "the number screened), EDI data-package identifier, and data citation."),
+    "Table S2": (f"{SUP}/TableS2_full_treatment_statistics.csv",
                  "Per-treatment statistics for the 83 classified treatment-experiment combinations: trend class, "
                  "slope, P-value and R-squared of the linear fit of the response ratio over time, coefficient of "
                  "variation (CV), mean response ratio, number of timepoints, record length, early (first three "
@@ -20,14 +24,10 @@ TABLES = {
                  "to first detection of a significant trend (directional treatments only), the number, "
                  "percentage (of consecutive measurement transitions), and years of sign flips, and the "
                  "P-value and directional call when the trend analysis is repeated on the log response ratio."),
-    "Table S2": (f"{SUP}/TableS2_sizer_results.csv",
+    "Table S3": (f"{SUP}/TableS3_sizer_results.csv",
                  "SiZer results for the 79 treatment-experiment combinations with at least five timepoints: number "
                  "of significant slope changes at a 5-year bandwidth, the years at which they occurred, and segment "
                  "slopes with P-values."),
-    "Table S3": (f"{SUP}/TableS3_case_study_details.csv",
-                 "Details of the 18 case-study datasets: setting, experiment, manipulation, response variable and "
-                 "type, years analyzed, number of years sampled, number of analyzable treatments (in parentheses, "
-                 "the number screened), EDI data-package identifier, and data citation."),
 }
 FIG_S1 = ("figures/FigS1_early_vs_full_sensitivity.png",
           open("docs/figure_captions.txt", encoding="utf-8").read().split("FigS1_early_vs_full_sensitivity")[1]

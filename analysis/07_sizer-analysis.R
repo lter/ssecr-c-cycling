@@ -155,7 +155,7 @@ for (i in seq_len(nrow(combos))) {
       # Model-level (F-test) p-values from Stat. NOTE: each segment is a
       # single-predictor regression, so the slope t-test and model F-test are
       # mathematically identical (t^2 = F); this column is kept only for
-      # provenance and is intentionally omitted from Table S2.
+      # provenance and is intentionally omitted from Table S3.
       stats <- seg_lm[[1]]
       if (!is.null(stats) && "p.value" %in% names(stats)) {
         model_pvals <- paste(round(stats$p.value, 4), collapse = "; ")
