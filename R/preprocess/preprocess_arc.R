@@ -19,18 +19,22 @@
 #   - Several harvests per year in 1982 (Jun, Jul, Sep) and 1983 (May, Jun,
 #     3 Jul, 30 Jul, Aug); one (late July) in all other years.
 #
-# PROCESSING (reproduces legacy "ARC Processing Script.Rmd"):
-#   1. Keep July harvests only (peak season).
-#   2. Per Year x Treatment x Species x Tissue and block: mean of each quadrat
-#      column (na.rm), then the mean of those quadrat means, multiplied by the
-#      number of raw rows in the group. The legacy script used mutate() and
-#      then summed the repeated value, so a group holding two harvests (only
-#      1983 Control/NP: 3 Jul + 30 Jul) contributes the SUM of the two
-#      harvests, not their mean. Kept for fidelity with the ready file.
-#   3. Legacy quadrat subset: block 1 = Q1,Q3,Q4,Q5 (Q2 omitted); blocks 2-3 =
-#      Q1-Q5; block 4 = Q1-Q4 (Q5 omitted); Q6-Q7 (2000 only) never used.
-#   4. Sum over species and tissues (all biomass categories, incl. below,
-#      non-vascular and litter) -> one Biomass value per Year x Treatment x block.
+# PROCESSING
+#   1. Peak-season harvest only: the late-July harvest of each year (day >= 15;
+#      1983 also has a 3 July harvest, which is excluded).
+#   2. Aboveground biomass only: categories "new above", "old above" and
+#      "non-vascular". Belowground tissues and litter are excluded, matching
+#      the dataset title and the response variable reported in the paper.
+#   3. Quadrat totals are computed from the raw per-quadrat masses (x25 to
+#      g/m^2; quadrats are 20 x 20 cm), using every quadrat that was harvested
+#      for that Date x Treatment (absent species are recorded as 0, unharvested
+#      quadrats as "."). This recovers 2015, whose *gm2 columns are empty.
+#   4. One value per Year x Treatment x block: the mean of the block's quadrat
+#      totals.
+#
+# The 2025 hand-processed file differed: it summed the two July 1983 harvests
+# for Control and NP, included belowground biomass and litter, dropped quadrats
+# B1Q2 and B4Q5, and had no values for 2015.
 
 library(dplyr)
 library(tidyr)
@@ -52,41 +56,29 @@ preprocess_arc_biomass <- function(raw_path) {
   data$Year <- as.integer(format(harvest_date, "%Y"))
   data$Month <- as.integer(format(harvest_date, "%m"))
 
-  # 1. Peak-season (July) harvests only
-  data <- data %>% filter(Month == 7)
+  data$Day <- as.integer(format(harvest_date, "%d"))
 
-  # 3. Legacy quadrat subset per block (g/m^2 columns)
-  block_quads <- list(
-    "block 1" = c("B1Q1gm2", "B1Q3gm2", "B1Q4gm2", "B1Q5gm2"),
-    "block 2" = paste0("B2Q", 1:5, "gm2"),
-    "block 3" = paste0("B3Q", 1:5, "gm2"),
-    "block 4" = paste0("B4Q", 1:4, "gm2")
-  )
-  quad_cols <- unlist(block_quads, use.names = FALSE)
-  missing_cols <- setdiff(quad_cols, names(data))
-  if (length(missing_cols) > 0) {
-    stop("ARC: expected quadrat column(s) not found: ",
-         paste(missing_cols, collapse = ", "))
-  }
-  for (col in quad_cols) {
-    data[[col]] <- suppressWarnings(as.numeric(data[[col]]))
-  }
+  # 1. Late-July (peak-season) harvest; 2. aboveground categories
+  data <- data %>%
+    filter(Month == 7, Day >= 15,
+           `Biomass Categroy` %in% c("new above", "old above", "non-vascular"))
 
-  # 2. + 4. Block value per species x tissue, then sum over species/tissues
-  result <- lapply(names(block_quads), function(b) {
-    cols <- block_quads[[b]]
-    data %>%
-      group_by(Year, Treatment, Species, Tissue) %>%
-      summarise(
-        value = n() * mean(colMeans(pick(all_of(cols)), na.rm = TRUE)),
-        .groups = "drop"
-      ) %>%
-      group_by(Year, Treatment) %>%
-      summarise(Biomass = sum(value), .groups = "drop") %>%
-      mutate(block = b)
-  }) %>%
-    bind_rows() %>%
-    mutate(Biomass = ifelse(is.nan(Biomass), NA_real_, Biomass))
+  # 3. Quadrat totals from the raw masses of every harvested quadrat
+  quad_cols <- grep("^B[1-4]Q[1-8]$", names(data), value = TRUE)
+  long <- data %>%
+    select(Year, Treatment, all_of(quad_cols)) %>%
+    mutate(across(all_of(quad_cols), ~ suppressWarnings(as.numeric(.x)))) %>%
+    pivot_longer(all_of(quad_cols), names_to = "quadrat", values_to = "mass") %>%
+    filter(!is.na(mass)) %>%
+    mutate(block = paste("block", substr(quadrat, 2, 2))) %>%
+    group_by(Year, Treatment, block, quadrat) %>%
+    summarise(gm2 = sum(mass) * 25, .groups = "drop")
+
+  # 4. Block means
+  result <- long %>%
+    group_by(Year, Treatment, block) %>%
+    summarise(Biomass = mean(gm2), n_quadrats = n(), .groups = "drop") %>%
+    select(Year, Treatment, Biomass, block, n_quadrats)
 
   as.data.frame(result)
 }

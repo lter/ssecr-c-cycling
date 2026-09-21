@@ -1,1612 +1,1156 @@
 "Date","Ring","Treatment","Biomass"
-1998,1,"Cenrich Namb M    ",395.4752
-1998,1,"Cenrich Namb S    ",603.834
-1998,1,"Cenrich Nenrich M    ",476.001923076923
-1998,1,"Cenrich Nenrich S    ",449.98
-1998,2,"Camb Namb M    ",396.6976
-1998,2,"Camb Namb S    ",394.32
-1998,2,"Camb Nenrich M    ",444.956
-1998,2,"Camb Nenrich S    ",549.203333333333
-1998,3,"Cenrich Namb M    ",456.506923076923
-1998,3,"Cenrich Namb S    ",573.808
-1998,3,"Cenrich Nenrich M    ",485.807307692308
-1998,3,"Cenrich Nenrich S    ",489.978
-1998,4,"Camb Namb M    ",414.535384615385
-1998,4,"Camb Namb S    ",640.818333333333
-1998,4,"Camb Nenrich M    ",469.0864
-1998,4,"Camb Nenrich S    ",662.498
-1998,5,"Cenrich Namb M    ",359.176923076923
-1998,5,"Cenrich Namb S    ",530.942
-1998,5,"Cenrich Nenrich M    ",456.542
-1998,5,"Cenrich Nenrich S    ",672.384
-1998,6,"Camb Namb M    ",464.204230769231
-1998,6,"Camb Namb S    ",382.123333333333
-1998,6,"Camb Nenrich M    ",437.860384615385
-1998,6,"Camb Nenrich S    ",555.346
-1998,1,"Cenrich Namb M    ",420.466666666667
-1998,1,"Cenrich Namb S    ",423.04
-1998,1,"Cenrich Nenrich M    ",513.738461538462
-1998,1,"Cenrich Nenrich S    ",511.94
-1998,2,"Camb Namb M    ",309.324
-1998,2,"Camb Namb S    ",324.08
-1998,2,"Camb Nenrich M    ",443.7848
-1998,2,"Camb Nenrich S    ",425.683333333333
-1998,3,"Cenrich Namb M    ",348.4724
-1998,3,"Cenrich Namb S    ",305
-1998,3,"Cenrich Nenrich M    ",456.14
-1998,3,"Cenrich Nenrich S    ",597.44
-1998,4,"Camb Namb M    ",327.152
-1998,4,"Camb Namb S    ",315.233333333333
-1998,4,"Camb Nenrich M    ",400.285
-1998,4,"Camb Nenrich S    ",406.5
-1998,5,"Cenrich Namb M    ",358.6836
-1998,5,"Cenrich Namb S    ",350.004
-1998,5,"Cenrich Nenrich M    ",441.75
-1998,5,"Cenrich Nenrich S    ",539.334
-1998,6,"Camb Namb M    ",434.889615384615
-1998,6,"Camb Namb S    ",393.6
-1998,6,"Camb Nenrich M    ",502.160769230769
-1998,6,"Camb Nenrich S    ",572.6
-1999,1,"Cenrich Namb M    ",413.0644
-1999,1,"Cenrich Namb S    ",396.6
-1999,1,"Cenrich Nenrich M    ",539.314615384615
-1999,1,"Cenrich Nenrich S    ",628.48
-1999,2,"Camb Namb M    ",439.372
-1999,2,"Camb Namb S    ",430.92
-1999,2,"Camb Nenrich M    ",546.880769230769
-1999,2,"Camb Nenrich S    ",530.6
-1999,3,"Cenrich Namb M    ",533.176923076923
-1999,3,"Cenrich Namb S    ",415.22
-1999,3,"Cenrich Nenrich M    ",577.963076923077
-1999,3,"Cenrich Nenrich S    ",636.28
-1999,4,"Camb Namb M    ",480.549230769231
-1999,4,"Camb Namb S    ",497.3
-1999,4,"Camb Nenrich M    ",581.3944
-1999,4,"Camb Nenrich S    ",562.22
-1999,5,"Cenrich Namb M    ",438.0948
-1999,5,"Cenrich Namb S    ",461.85
-1999,5,"Cenrich Nenrich M    ",539.4288
-1999,5,"Cenrich Nenrich S    ",710.6
-1999,6,"Camb Namb M    ",441.788461538462
-1999,6,"Camb Namb S    ",469.003333333333
-1999,6,"Camb Nenrich M    ",461.646538461538
-1999,6,"Camb Nenrich S    ",551.022
-1999,1,"Cenrich Namb M    ",501.4824
-1999,1,"Cenrich Namb S    ",616.618
-1999,1,"Cenrich Nenrich M    ",707.438076923077
-1999,1,"Cenrich Nenrich S    ",662.712
-1999,2,"Camb Namb M    ",506.6676
-1999,2,"Camb Namb S    ",365.24
-1999,2,"Camb Nenrich M    ",697.8232
-1999,2,"Camb Nenrich S    ",629.915
-1999,3,"Cenrich Namb M    ",494.6456
-1999,3,"Cenrich Namb S    ",455.374
-1999,3,"Cenrich Nenrich M    ",571.014230769231
-1999,3,"Cenrich Nenrich S    ",806.73
-1999,4,"Camb Namb M    ",405.7364
-1999,4,"Camb Namb S    ",367.028333333333
-1999,4,"Camb Nenrich M    ",511.336
-1999,4,"Camb Nenrich S    ",517.832
-1999,5,"Cenrich Namb M    ",493.7884
-1999,5,"Cenrich Namb S    ",383.62
-1999,5,"Cenrich Nenrich M    ",557.3192
-1999,5,"Cenrich Nenrich S    ",641.344
-1999,6,"Camb Namb M    ",451.403076923077
-1999,6,"Camb Namb S    ",356.05
-1999,6,"Camb Nenrich M    ",556.2924
-1999,6,"Camb Nenrich S    ",690.07
-2000,1,"Cenrich Namb M    ",190.5308
-2000,1,"Cenrich Namb S    ",87.546
-2000,1,"Cenrich Nenrich M    ",249.777307692308
-2000,1,"Cenrich Nenrich S    ",224.568
-2000,2,"Camb Namb M    ",139.6444
-2000,2,"Camb Namb S    ",161.754
-2000,2,"Camb Nenrich M    ",208.802307692308
-2000,2,"Camb Nenrich S    ",135.863333333333
-2000,3,"Cenrich Namb M    ",159.696153846154
-2000,3,"Cenrich Namb S    ",96.494
-2000,3,"Cenrich Nenrich M    ",203.985384615385
-2000,3,"Cenrich Nenrich S    ",161.392
-2000,4,"Camb Namb M    ",154.35
-2000,4,"Camb Namb S    ",122.656666666667
-2000,4,"Camb Nenrich M    ",156.232
-2000,4,"Camb Nenrich S    ",131.68
-2000,5,"Cenrich Namb M    ",210.851538461538
-2000,5,"Cenrich Namb S    ",154.334
-2000,5,"Cenrich Nenrich M    ",235.1168
-2000,5,"Cenrich Nenrich S    ",209.72
-2000,6,"Camb Namb M    ",233.529615384615
-2000,6,"Camb Namb S    ",136.24
-2000,6,"Camb Nenrich M    ",255.268846153846
-2000,6,"Camb Nenrich S    ",325.478
-2000,1,"Cenrich Namb M    ",334.6925
-2000,1,"Cenrich Namb S    ",278.746
-2000,1,"Cenrich Nenrich M    ",396.520769230769
-2000,1,"Cenrich Nenrich S    ",244.926
-2000,2,"Camb Namb M    ",189.7852
-2000,2,"Camb Namb S    ",198.702
-2000,2,"Camb Nenrich M    ",299.356
-2000,2,"Camb Nenrich S    ",300.485
-2000,3,"Cenrich Namb M    ",295.756
-2000,3,"Cenrich Namb S    ",135.364
-2000,3,"Cenrich Nenrich M    ",308.828846153846
-2000,3,"Cenrich Nenrich S    ",314.9
-2000,4,"Camb Namb M    ",257.393461538462
-2000,4,"Camb Namb S    ",194.576666666667
-2000,4,"Camb Nenrich M    ",237.6696
-2000,4,"Camb Nenrich S    ",248.52
-2000,5,"Cenrich Namb M    ",285.095
-2000,5,"Cenrich Namb S    ",236.408
-2000,5,"Cenrich Nenrich M    ",288.5792
-2000,5,"Cenrich Nenrich S    ",344.66
-2000,6,"Camb Namb M    ",228.792307692308
-2000,6,"Camb Namb S    ",251.068333333333
-2000,6,"Camb Nenrich M    ",339.0968
-2000,6,"Camb Nenrich S    ",291.134
-2001,1,"Cenrich Namb M    ",350.5956
-2001,1,"Cenrich Namb S    ",397.59
-2001,1,"Cenrich Nenrich M    ",421.8992
-2001,1,"Cenrich Nenrich S    ",424.012
-2001,2,"Camb Namb M    ",309.2876
-2001,2,"Camb Namb S    ",156.92
-2001,2,"Camb Nenrich M    ",396.572692307692
-2001,2,"Camb Nenrich S    ",344.875
-2001,3,"Cenrich Namb M    ",289.489615384615
-2001,3,"Cenrich Namb S    ",335.94
-2001,3,"Cenrich Nenrich M    ",378.850384615385
-2001,3,"Cenrich Nenrich S    ",425.818
-2001,4,"Camb Namb M    ",323.816153846154
-2001,4,"Camb Namb S    ",285.89
-2001,4,"Camb Nenrich M    ",343.1952
-2001,4,"Camb Nenrich S    ",382.032
-2001,5,"Cenrich Namb M    ",394.239230769231
-2001,5,"Cenrich Namb S    ",252.72
-2001,5,"Cenrich Nenrich M    ",445.5504
-2001,5,"Cenrich Nenrich S    ",347.414
-2001,6,"Camb Namb M    ",342.732692307692
-2001,6,"Camb Namb S    ",282.245
-2001,6,"Camb Nenrich M    ",406.276923076923
-2001,6,"Camb Nenrich S    ",358.486
-2001,1,"Cenrich Namb M    ",373.5732
-2001,1,"Cenrich Namb S    ",394.84
-2001,1,"Cenrich Nenrich M    ",525.159230769231
-2001,1,"Cenrich Nenrich S    ",403.982
-2001,2,"Camb Namb M    ",350.2192
-2001,2,"Camb Namb S    ",196.06
-2001,2,"Camb Nenrich M    ",477.310384615385
-2001,2,"Camb Nenrich S    ",484.795
-2001,3,"Cenrich Namb M    ",335.007692307692
-2001,3,"Cenrich Namb S    ",299.9
-2001,3,"Cenrich Nenrich M    ",584.218461538461
-2001,3,"Cenrich Nenrich S    ",520.162
-2001,4,"Camb Namb M    ",341.018461538462
-2001,4,"Camb Namb S    ",291.933333333333
-2001,4,"Camb Nenrich M    ",380.634
-2001,4,"Camb Nenrich S    ",423.684
-2001,5,"Cenrich Namb M    ",403.595769230769
-2001,5,"Cenrich Namb S    ",274.12
-2001,5,"Cenrich Nenrich M    ",490.0076
-2001,5,"Cenrich Nenrich S    ",442.564
-2001,6,"Camb Namb M    ",315.730384615385
-2001,6,"Camb Namb S    ",269.116666666667
-2001,6,"Camb Nenrich M    ",436.896538461538
-2001,6,"Camb Nenrich S    ",438.726
-2002,1,"Cenrich Namb M    ",290.4692
-2002,1,"Cenrich Namb S    ",228.468
-2002,1,"Cenrich Nenrich M    ",331.377692307692
-2002,1,"Cenrich Nenrich S    ",463.946
-2002,2,"Camb Namb M    ",270.104
-2002,2,"Camb Namb S    ",260.972
-2002,2,"Camb Nenrich M    ",252.263076923077
-2002,2,"Camb Nenrich S    ",253.271666666667
-2002,3,"Cenrich Namb M    ",322.279230769231
-2002,3,"Cenrich Namb S    ",160.634
-2002,3,"Cenrich Nenrich M    ",296.960384615385
-2002,3,"Cenrich Nenrich S    ",292.664
-2002,4,"Camb Namb M    ",323.020769230769
-2002,4,"Camb Namb S    ",353.468333333333
-2002,4,"Camb Nenrich M    ",337.9284
-2002,4,"Camb Nenrich S    ",329.906
-2002,5,"Cenrich Namb M    ",350.821153846154
-2002,5,"Cenrich Namb S    ",369.778
-2002,5,"Cenrich Nenrich M    ",370.2756
-2002,5,"Cenrich Nenrich S    ",455.466
-2002,6,"Camb Namb M    ",362.123461538462
-2002,6,"Camb Namb S    ",277.7
-2002,6,"Camb Nenrich M    ",401.368461538462
-2002,6,"Camb Nenrich S    ",489.322
-2002,1,"Cenrich Namb M    ",460.8332
-2002,1,"Cenrich Namb S    ",534.752
-2002,1,"Cenrich Nenrich M    ",557.140384615385
-2002,1,"Cenrich Nenrich S    ",444.18
-2002,2,"Camb Namb M    ",309.8688
-2002,2,"Camb Namb S    ",289.1
-2002,2,"Camb Nenrich M    ",363.086538461538
-2002,2,"Camb Nenrich S    ",434.736666666667
-2002,3,"Cenrich Namb M    ",350.93
-2002,3,"Cenrich Namb S    ",344.622
-2002,3,"Cenrich Nenrich M    ",498.676538461538
-2002,3,"Cenrich Nenrich S    ",451.46
-2002,4,"Camb Namb M    ",345.120384615385
-2002,4,"Camb Namb S    ",185.656666666667
-2002,4,"Camb Nenrich M    ",387.1724
-2002,4,"Camb Nenrich S    ",365.706
-2002,5,"Cenrich Namb M    ",377.581153846154
-2002,5,"Cenrich Namb S    ",350.27
-2002,5,"Cenrich Nenrich M    ",422.8972
-2002,5,"Cenrich Nenrich S    ",506.6
-2002,6,"Camb Namb M    ",371.705769230769
-2002,6,"Camb Namb S    ",361.385
-2002,6,"Camb Nenrich M    ",414.839615384615
-2002,6,"Camb Nenrich S    ",563.44
-2003,1,"Cenrich Namb M    ",253.352
-2003,1,"Cenrich Namb S    ",271.164
-2003,1,"Cenrich Nenrich M    ",256.314615384615
-2003,1,"Cenrich Nenrich S    ",283.02
-2003,2,"Camb Namb M    ",235.0308
-2003,2,"Camb Namb S    ",107.894
-2003,2,"Camb Nenrich M    ",214.524230769231
-2003,2,"Camb Nenrich S    ",148.466666666667
-2003,3,"Cenrich Namb M    ",246.904230769231
-2003,3,"Cenrich Namb S    ",229.28
-2003,3,"Cenrich Nenrich M    ",271.533461538462
-2003,3,"Cenrich Nenrich S    ",189.16
-2003,4,"Camb Namb M    ",172.342307692308
-2003,4,"Camb Namb S    ",161.393333333333
-2003,4,"Camb Nenrich M    ",189.6364
-2003,4,"Camb Nenrich S    ",228.8
-2003,5,"Cenrich Namb M    ",245.831538461538
-2003,5,"Cenrich Namb S    ",190.2
-2003,5,"Cenrich Nenrich M    ",261.222
-2003,5,"Cenrich Nenrich S    ",305.082
-2003,6,"Camb Namb M    ",240.582692307692
-2003,6,"Camb Namb S    ",213.983333333333
-2003,6,"Camb Nenrich M    ",227.657307692308
-2003,6,"Camb Nenrich S    ",188.24
-2003,1,"Cenrich Namb M    ",333.3132
-2003,1,"Cenrich Namb S    ",281.92
-2003,1,"Cenrich Nenrich M    ",311.390384615385
-2003,1,"Cenrich Nenrich S    ",560.95
-2003,2,"Camb Namb M    ",258.4944
-2003,2,"Camb Namb S    ",354.344
-2003,2,"Camb Nenrich M    ",300.791538461538
-2003,2,"Camb Nenrich S    ",317.346666666667
-2003,3,"Cenrich Namb M    ",325.505769230769
-2003,3,"Cenrich Namb S    ",308
-2003,3,"Cenrich Nenrich M    ",469.64
-2003,3,"Cenrich Nenrich S    ",447.178
-2003,4,"Camb Namb M    ",277.835
-2003,4,"Camb Namb S    ",320.265
-2003,4,"Camb Nenrich M    ",271.852
-2003,4,"Camb Nenrich S    ",438.58
-2003,5,"Cenrich Namb M    ",316.068846153846
-2003,5,"Cenrich Namb S    ",248.39
-2003,5,"Cenrich Nenrich M    ",376.919583333333
-2003,5,"Cenrich Nenrich S    ",735.894
-2003,6,"Camb Namb M    ",279.967692307692
-2003,6,"Camb Namb S    ",241.07
-2003,6,"Camb Nenrich M    ",347.8588
-2003,6,"Camb Nenrich S    ",339.26
-2004,1,"Cenrich Namb M    ",525.484583333333
-2004,1,"Cenrich Namb S    ",482.72
-2004,1,"Cenrich Nenrich M    ",540.631538461539
-2004,1,"Cenrich Nenrich S    ",580.51
-2004,2,"Camb Namb M    ",372.536666666667
-2004,2,"Camb Namb S    ",366.624
-2004,2,"Camb Nenrich M    ",427.507307692308
-2004,2,"Camb Nenrich S    ",387.226666666667
-2004,3,"Cenrich Namb M    ",471.765769230769
-2004,3,"Cenrich Namb S    ",583.54
-2004,3,"Cenrich Nenrich M    ",529.843076923077
-2004,3,"Cenrich Nenrich S    ",551.454
-2004,4,"Camb Namb M    ",375.950384615385
-2004,4,"Camb Namb S    ",447.226666666667
-2004,4,"Camb Nenrich M    ",416.823333333333
-2004,4,"Camb Nenrich S    ",422.31
-2004,5,"Cenrich Namb M    ",462.5836
-2004,5,"Cenrich Namb S    ",347.652
-2004,5,"Cenrich Nenrich M    ",508.3904
-2004,5,"Cenrich Nenrich S    ",533.062
-2004,6,"Camb Namb M    ",400.139615384615
-2004,6,"Camb Namb S    ",402.988333333333
-2004,6,"Camb Nenrich M    ",546.2792
-2004,6,"Camb Nenrich S    ",511.462
-2004,1,"Cenrich Namb M    ",396.7896
-2004,1,"Cenrich Namb S    ",727.54
-2004,1,"Cenrich Nenrich M    ",605.882307692308
-2004,1,"Cenrich Nenrich S    ",643.014
-2004,2,"Camb Namb M    ",360.8516
-2004,2,"Camb Namb S    ",391.86
-2004,2,"Camb Nenrich M    ",427.026538461538
-2004,2,"Camb Nenrich S    ",449.114
-2004,3,"Cenrich Namb M    ",494.723846153846
-2004,3,"Cenrich Namb S    ",482.5
-2004,3,"Cenrich Nenrich M    ",589.697307692308
-2004,3,"Cenrich Nenrich S    ",572.12
-2004,4,"Camb Namb M    ",392.6144
-2004,4,"Camb Namb S    ",454.203333333333
-2004,4,"Camb Nenrich M    ",415.4376
-2004,4,"Camb Nenrich S    ",642.618
-2004,5,"Cenrich Namb M    ",481.9124
-2004,5,"Cenrich Namb S    ",750.746
-2004,5,"Cenrich Nenrich M    ",527.642
-2004,5,"Cenrich Nenrich S    ",650.26
-2004,6,"Camb Namb M    ",349.891923076923
-2004,6,"Camb Namb S    ",448.983333333333
-2004,6,"Camb Nenrich M    ",480.681923076923
-2004,6,"Camb Nenrich S    ",452.52
-2005,1,"Cenrich Namb M    ",257.2775
-2005,1,"Cenrich Namb S    ",204.092
-2005,1,"Cenrich Nenrich M    ",376.604615384615
-2005,1,"Cenrich Nenrich S    ",286.9
-2005,2,"Camb Namb M    ",262.075833333333
-2005,2,"Camb Namb S    ",234.96
-2005,2,"Camb Nenrich M    ",257.0988
-2005,2,"Camb Nenrich S    ",369.75
-2005,3,"Cenrich Namb M    ",344.955416666667
-2005,3,"Cenrich Namb S    ",166.96
-2005,3,"Cenrich Nenrich M    ",335.1356
-2005,3,"Cenrich Nenrich S    ",396.84
-2005,4,"Camb Namb M    ",274.819230769231
-2005,4,"Camb Namb S    ",339.485
-2005,4,"Camb Nenrich M    ",294.997826086957
-2005,4,"Camb Nenrich S    ",314.52
-2005,5,"Cenrich Namb M    ",347.7408
-2005,5,"Cenrich Namb S    ",318.82
-2005,5,"Cenrich Nenrich M    ",337.945454545455
-2005,5,"Cenrich Nenrich S    ",378.32
-2005,6,"Camb Namb M    ",262.280769230769
-2005,6,"Camb Namb S    ",272.556666666667
-2005,6,"Camb Nenrich M    ",292.95
-2005,6,"Camb Nenrich S    ",273.12
-2005,1,"Cenrich Namb M    ",429.7332
-2005,1,"Cenrich Namb S    ",421.54
-2005,1,"Cenrich Nenrich M    ",532.857692307692
-2005,1,"Cenrich Nenrich S    ",501.86
-2005,2,"Camb Namb M    ",306.7825
-2005,2,"Camb Namb S    ",214.36
-2005,2,"Camb Nenrich M    ",387.56
-2005,2,"Camb Nenrich S    ",322.616666666667
-2005,3,"Cenrich Namb M    ",441.2388
-2005,3,"Cenrich Namb S    ",403.44
-2005,3,"Cenrich Nenrich M    ",504.868
-2005,3,"Cenrich Nenrich S    ",420.34
-2005,4,"Camb Namb M    ",420.632
-2005,4,"Camb Namb S    ",318.716666666667
-2005,4,"Camb Nenrich M    ",359.320833333333
-2005,4,"Camb Nenrich S    ",428.56
-2005,5,"Cenrich Namb M    ",389.165384615385
-2005,5,"Cenrich Namb S    ",595.28
-2005,5,"Cenrich Nenrich M    ",416.6375
-2005,5,"Cenrich Nenrich S    ",399.8
-2005,6,"Camb Namb M    ",399.1496
-2005,6,"Camb Namb S    ",436.501666666667
-2005,6,"Camb Nenrich M    ",411.704
-2005,6,"Camb Nenrich S    ",537.24
-2006,1,"Cenrich Namb M    ",553.728
-2006,1,"Cenrich Namb S    ",624.2
-2006,1,"Cenrich Nenrich M    ",678.407692307692
-2006,1,"Cenrich Nenrich S    ",652.12
-2006,2,"Camb Namb M    ",524.254166666667
-2006,2,"Camb Namb S    ",335.28
-2006,2,"Camb Nenrich M    ",596.732
-2006,2,"Camb Nenrich S    ",421.566666666667
-2006,3,"Cenrich Namb M    ",627.200384615385
-2006,3,"Cenrich Namb S    ",405.92
-2006,3,"Cenrich Nenrich M    ",679.223076923077
-2006,3,"Cenrich Nenrich S    ",743.86
-2006,4,"Camb Namb M    ",524.2164
-2006,4,"Camb Namb S    ",624.966666666667
-2006,4,"Camb Nenrich M    ",502.4288
-2006,4,"Camb Nenrich S    ",408.42
-2006,5,"Cenrich Namb M    ",623.046153846154
-2006,5,"Cenrich Namb S    ",652.602
-2006,5,"Cenrich Nenrich M    ",801.991304347826
-2006,5,"Cenrich Nenrich S    ",574.24
-2006,6,"Camb Namb M    ",554.892
-2006,6,"Camb Namb S    ",439.985
-2006,6,"Camb Nenrich M    ",655.26
-2006,6,"Camb Nenrich S    ",1032.362
-2006,1,"Cenrich Namb M    ",480.692083333333
-2006,1,"Cenrich Namb S    ",563.44
-2006,1,"Cenrich Nenrich M    ",595.841153846154
-2006,1,"Cenrich Nenrich S    ",743.8
-2006,2,"Camb Namb M    ",388.424347826087
-2006,2,"Camb Namb S    ",310.02
-2006,2,"Camb Nenrich M    ",486.928
-2006,2,"Camb Nenrich S    ",506.983333333333
-2006,3,"Cenrich Namb M    ",554.588
-2006,3,"Cenrich Namb S    ",487.64
-2006,3,"Cenrich Nenrich M    ",732.633333333333
-2006,3,"Cenrich Nenrich S    ",616.46
-2006,4,"Camb Namb M    ",532.58
-2006,4,"Camb Namb S    ",701.426666666667
-2006,4,"Camb Nenrich M    ",693.382608695652
-2006,4,"Camb Nenrich S    ",849.58
-2006,5,"Cenrich Namb M    ",447.4724
-2006,5,"Cenrich Namb S    ",478.444
-2006,5,"Cenrich Nenrich M    ",792.004782608696
-2006,5,"Cenrich Nenrich S    ",906.46
-2006,6,"Camb Namb M    ",419.5656
-2006,6,"Camb Namb S    ",407.15
-2006,6,"Camb Nenrich M    ",520.662173913043
-2006,6,"Camb Nenrich S    ",615.98
-2007,1,"Cenrich Namb M    ",301.191428571429
-2007,1,"Cenrich Namb M H2Oamb  ",714.4
-2007,1,"Cenrich Namb M H2Oneg  ",463.5
-2007,1,"Cenrich Namb S    ",412.44
-2007,1,"Cenrich Nenrich M    ",359.831818181818
-2007,1,"Cenrich Nenrich M H2Oamb  ",512.05
-2007,1,"Cenrich Nenrich M H2Oneg  ",744.7
-2007,1,"Cenrich Nenrich S    ",498.76
-2007,2,"Camb Namb M    ",216.42
-2007,2,"Camb Namb M H2Oamb  ",411.433333333333
-2007,2,"Camb Namb M H2Oneg  ",374.85
-2007,2,"Camb Namb S    ",245.278
-2007,2,"Camb Nenrich M    ",283.043913043478
-2007,2,"Camb Nenrich M H2Oamb  ",491.9
-2007,2,"Camb Nenrich M H2Oneg  ",246.55
-2007,2,"Camb Nenrich S    ",279.05
-2007,3,"Cenrich Namb M    ",324.538181818182
-2007,3,"Cenrich Namb M H2Oamb  ",427.85
-2007,3,"Cenrich Namb M H2Oneg  ",453.65
-2007,3,"Cenrich Namb S    ",196.1
-2007,3,"Cenrich Nenrich M    ",338.423181818182
-2007,3,"Cenrich Nenrich M H2Oamb  ",208.85
-2007,3,"Cenrich Nenrich M H2Oneg  ",541.9
-2007,3,"Cenrich Nenrich S    ",411.16
-2007,4,"Camb Namb M    ",277.252173913043
-2007,4,"Camb Namb M H2Oamb  ",434.6
-2007,4,"Camb Namb M H2Oneg  ",219.15
-2007,4,"Camb Namb S    ",254.716666666667
-2007,4,"Camb Nenrich M    ",283.924
-2007,4,"Camb Nenrich M H2Oamb  ",350.066666666667
-2007,4,"Camb Nenrich M H2Oneg  ",254.05
-2007,4,"Camb Nenrich S    ",177
-2007,5,"Cenrich Namb M    ",314.704545454545
-2007,5,"Cenrich Namb M H2Oamb  ",441.55
-2007,5,"Cenrich Namb M H2Oneg  ",518.6
-2007,5,"Cenrich Namb S    ",263.1
-2007,5,"Cenrich Nenrich M    ",293.512857142857
-2007,5,"Cenrich Nenrich M H2Oamb  ",442.95
-2007,5,"Cenrich Nenrich M H2Oneg  ",300.3
-2007,5,"Cenrich Nenrich S    ",343.282
-2007,6,"Camb Namb M    ",268.531818181818
-2007,6,"Camb Namb M H2Oamb  ",202.2
-2007,6,"Camb Namb M H2Oneg  ",300.1
-2007,6,"Camb Namb S    ",270.983333333333
-2007,6,"Camb Nenrich M    ",266.127272727273
-2007,6,"Camb Nenrich M H2Oamb  ",558.85
-2007,6,"Camb Nenrich M H2Oneg  ",434.75
-2007,6,"Camb Nenrich S    ",295.1
-2007,1,"Cenrich Namb M    ",226.061904761905
-2007,1,"Cenrich Namb M H2Oamb  ",526.8
-2007,1,"Cenrich Namb M H2Oneg  ",507.035
-2007,1,"Cenrich Namb S    ",466.4
-2007,1,"Cenrich Nenrich M    ",333.604545454545
-2007,1,"Cenrich Nenrich M H2Oamb  ",396.55
-2007,1,"Cenrich Nenrich M H2Oneg  ",446.55
-2007,1,"Cenrich Nenrich S    ",257.44
-2007,2,"Camb Namb M    ",250.6255
-2007,2,"Camb Namb M H2Oamb  ",296.763333333333
-2007,2,"Camb Namb M H2Oneg  ",313.55
-2007,2,"Camb Namb S    ",369.14
-2007,2,"Camb Nenrich M    ",267.117391304348
-2007,2,"Camb Nenrich M H2Oamb  ",616.5
-2007,2,"Camb Nenrich M H2Oneg  ",356
-2007,2,"Camb Nenrich S    ",314.383333333333
-2007,3,"Cenrich Namb M    ",364.668181818182
-2007,3,"Cenrich Namb M H2Oamb  ",661.25
-2007,3,"Cenrich Namb M H2Oneg  ",283.55
-2007,3,"Cenrich Namb S    ",439.96
-2007,3,"Cenrich Nenrich M    ",396.518181818182
-2007,3,"Cenrich Nenrich M H2Oamb  ",329.2
-2007,3,"Cenrich Nenrich M H2Oneg  ",502.47
-2007,3,"Cenrich Nenrich S    ",390.48
-2007,4,"Camb Namb M    ",219.301739130435
-2007,4,"Camb Namb M H2Oamb  ",368.04
-2007,4,"Camb Namb M H2Oneg  ",319.45
-2007,4,"Camb Namb S    ",353.023333333333
-2007,4,"Camb Nenrich M    ",237.1755
-2007,4,"Camb Nenrich M H2Oamb  ",249.49
-2007,4,"Camb Nenrich M H2Oneg  ",181.325
-2007,4,"Camb Nenrich S    ",264.898
-2007,5,"Cenrich Namb M    ",275.427272727273
-2007,5,"Cenrich Namb M H2Oamb  ",374.35
-2007,5,"Cenrich Namb M H2Oneg  ",436.4
-2007,5,"Cenrich Namb S    ",380.7
-2007,5,"Cenrich Nenrich M    ",292.49
-2007,5,"Cenrich Nenrich M H2Oamb  ",516.05
-2007,5,"Cenrich Nenrich M H2Oneg  ",388.15
-2007,5,"Cenrich Nenrich S    ",396.82
-2007,6,"Camb Namb M    ",241.668181818182
-2007,6,"Camb Namb M H2Oamb  ",304.5
-2007,6,"Camb Namb M H2Oneg  ",197.75
-2007,6,"Camb Namb S    ",361.1
-2007,6,"Camb Nenrich M    ",237.459090909091
-2007,6,"Camb Nenrich M H2Oamb  ",234.15
-2007,6,"Camb Nenrich M H2Oneg  ",404.45
-2007,6,"Camb Nenrich S    ",313.36
-2008,1,"Cenrich Namb M    ",301.617142857143
-2008,1,"Cenrich Namb M H2Oamb  ",680.09
-2008,1,"Cenrich Namb M H2Oneg  ",508.55
-2008,1,"Cenrich Namb S    ",279.078
-2008,1,"Cenrich Nenrich M    ",334.975909090909
-2008,1,"Cenrich Nenrich M H2Oamb  ",843.55
-2008,1,"Cenrich Nenrich M H2Oneg  ",598.65
-2008,1,"Cenrich Nenrich S    ",231.38
-2008,2,"Camb Namb M    ",231.98605
-2008,2,"Camb Namb M H2Oamb  ",358.3
-2008,2,"Camb Namb M H2Oneg  ",504.5
-2008,2,"Camb Namb S    ",209.684
-2008,2,"Camb Nenrich M    ",328.635260869565
-2008,2,"Camb Nenrich M H2Oamb  ",551.07
-2008,2,"Camb Nenrich M H2Oneg  ",509.5
-2008,2,"Camb Nenrich S    ",306.625
-2008,3,"Cenrich Namb M    ",386.611818181818
-2008,3,"Cenrich Namb M H2Oamb  ",382.955
-2008,3,"Cenrich Namb M H2Oneg  ",405.05
-2008,3,"Cenrich Namb S    ",346.144
-2008,3,"Cenrich Nenrich M    ",469.691818181818
-2008,3,"Cenrich Nenrich M H2Oamb  ",350.405
-2008,3,"Cenrich Nenrich M H2Oneg  ",893.9
-2008,3,"Cenrich Nenrich S    ",283.378
-2008,4,"Camb Namb M    ",279.694782608696
-2008,4,"Camb Namb M H2Oamb  ",416
-2008,4,"Camb Namb M H2Oneg  ",570.2
-2008,4,"Camb Namb S    ",305.706666666667
-2008,4,"Camb Nenrich M    ",343.361
-2008,4,"Camb Nenrich M H2Oamb  ",401.6
-2008,4,"Camb Nenrich M H2Oneg  ",369.4
-2008,4,"Camb Nenrich S    ",309.016
-2008,5,"Cenrich Namb M    ",368.230454545455
-2008,5,"Cenrich Namb M H2Oamb  ",679.5
-2008,5,"Cenrich Namb M H2Oneg  ",594.6
-2008,5,"Cenrich Namb S    ",311.51
-2008,5,"Cenrich Nenrich M    ",425.125714285714
-2008,5,"Cenrich Nenrich M H2Oamb  ",776.4
-2008,5,"Cenrich Nenrich M H2Oneg  ",665.4
-2008,5,"Cenrich Nenrich S    ",509.08
-2008,6,"Camb Namb M    ",363.854090909091
-2008,6,"Camb Namb M H2Oamb  ",368.15
-2008,6,"Camb Namb M H2Oneg  ",528.84
-2008,6,"Camb Namb S    ",483.333333333333
-2008,6,"Camb Nenrich M    ",413.343181818182
-2008,6,"Camb Nenrich M H2Oamb  ",386.8
-2008,6,"Camb Nenrich M H2Oneg  ",568.7
-2008,6,"Camb Nenrich S    ",330.214
-2008,1,"Cenrich Namb M    ",302.610476190476
-2008,1,"Cenrich Namb M H2Oamb  ",552.555
-2008,1,"Cenrich Namb M H2Oneg  ",502.85
-2008,1,"Cenrich Namb S    ",450.92
-2008,1,"Cenrich Nenrich M    ",393.462727272727
-2008,1,"Cenrich Nenrich M H2Oamb  ",377.1
-2008,1,"Cenrich Nenrich M H2Oneg  ",508.45
-2008,1,"Cenrich Nenrich S    ",403.12
-2008,2,"Camb Namb M    ",279.6505
-2008,2,"Camb Namb M H2Oamb  ",431.4
-2008,2,"Camb Namb M H2Oneg  ",403.7
-2008,2,"Camb Namb S    ",378.186
-2008,2,"Camb Nenrich M    ",357.078260869565
-2008,2,"Camb Nenrich M H2Oamb  ",903.3
-2008,2,"Camb Nenrich M H2Oneg  ",327.65
-2008,2,"Camb Nenrich S    ",402.17
-2008,3,"Cenrich Namb M    ",353.907772727273
-2008,3,"Cenrich Namb M H2Oamb  ",415.9
-2008,3,"Cenrich Namb M H2Oneg  ",464.6
-2008,3,"Cenrich Namb S    ",485.66
-2008,3,"Cenrich Nenrich M    ",475.68
-2008,3,"Cenrich Nenrich M H2Oamb  ",302.05
-2008,3,"Cenrich Nenrich M H2Oneg  ",659.85
-2008,3,"Cenrich Nenrich S    ",345.636
-2008,4,"Camb Namb M    ",304.299130434783
-2008,4,"Camb Namb M H2Oamb  ",336.4
-2008,4,"Camb Namb M H2Oneg  ",411
-2008,4,"Camb Namb S    ",303.81
-2008,4,"Camb Nenrich M    ",258.127
-2008,4,"Camb Nenrich M H2Oamb  ",324.396666666667
-2008,4,"Camb Nenrich M H2Oneg  ",263.4
-2008,4,"Camb Nenrich S    ",277.068
-2008,5,"Cenrich Namb M    ",302.525909090909
-2008,5,"Cenrich Namb M H2Oamb  ",415.365
-2008,5,"Cenrich Namb M H2Oneg  ",545.155
-2008,5,"Cenrich Namb S    ",238.504
-2008,5,"Cenrich Nenrich M    ",416.024285714286
-2008,5,"Cenrich Nenrich M H2Oamb  ",528.305
-2008,5,"Cenrich Nenrich M H2Oneg  ",538.05
-2008,5,"Cenrich Nenrich S    ",551.778
-2008,6,"Camb Namb M    ",259.667272727273
-2008,6,"Camb Namb M H2Oamb  ",260.1
-2008,6,"Camb Namb M H2Oneg  ",291.95
-2008,6,"Camb Namb S    ",263.85
-2008,6,"Camb Nenrich M    ",339.450454545455
-2008,6,"Camb Nenrich M H2Oamb  ",397.18
-2008,6,"Camb Nenrich M H2Oneg  ",627.46
-2008,6,"Camb Nenrich S    ",411.8
-2009,1,"Cenrich Namb M    ",177.814285714286
-2009,1,"Cenrich Namb M H2Oamb  ",512.55
-2009,1,"Cenrich Namb M H2Oneg  ",221.9
-2009,1,"Cenrich Namb S    ",169.56
-2009,1,"Cenrich Nenrich M    ",241.388181818182
-2009,1,"Cenrich Nenrich M H2Oamb  ",301.95
-2009,1,"Cenrich Nenrich M H2Oneg  ",321.75
-2009,1,"Cenrich Nenrich S    ",256.44
-2009,2,"Camb Namb M    ",203.055
-2009,2,"Camb Namb M H2Oamb  ",342.033333333333
-2009,2,"Camb Namb M H2Oneg  ",335.2
-2009,2,"Camb Namb S    ",223
-2009,2,"Camb Nenrich M    ",245.191739130435
-2009,2,"Camb Nenrich M H2Oamb  ",129
-2009,2,"Camb Nenrich M H2Oneg  ",358.45
-2009,2,"Camb Nenrich S    ",226.2
-2009,3,"Cenrich Namb M    ",249.466818181818
-2009,3,"Cenrich Namb M H2Oamb  ",227.1
-2009,3,"Cenrich Namb M H2Oneg  ",229.45
-2009,3,"Cenrich Namb S    ",163.472
-2009,3,"Cenrich Nenrich M    ",240.536363636364
-2009,3,"Cenrich Nenrich M H2Oamb  ",98.05
-2009,3,"Cenrich Nenrich M H2Oneg  ",438.2
-2009,3,"Cenrich Nenrich S    ",256.058
-2009,4,"Camb Namb M    ",343.903913043478
-2009,4,"Camb Namb M H2Oamb  ",620
-2009,4,"Camb Namb M H2Oneg  ",630.25
-2009,4,"Camb Namb S    ",424.151666666667
-2009,4,"Camb Nenrich M    ",192.3395
-2009,4,"Camb Nenrich M H2Oamb  ",521.533333333333
-2009,4,"Camb Nenrich M H2Oneg  ",150.5
-2009,4,"Camb Nenrich S    ",234.908
-2009,5,"Cenrich Namb M    ",257.640454545455
-2009,5,"Cenrich Namb M H2Oamb  ",340.6
-2009,5,"Cenrich Namb M H2Oneg  ",332.85
-2009,5,"Cenrich Namb S    ",208.276
-2009,5,"Cenrich Nenrich M    ",171.020952380952
-2009,5,"Cenrich Nenrich M H2Oamb  ",363.2
-2009,5,"Cenrich Nenrich M H2Oneg  ",176.705
-2009,5,"Cenrich Nenrich S    ",356.5
-2009,6,"Camb Namb M    ",243.782272727273
-2009,6,"Camb Namb M H2Oamb  ",208.8
-2009,6,"Camb Namb M H2Oneg  ",323.25
-2009,6,"Camb Namb S    ",257.3
-2009,6,"Camb Nenrich M    ",279.572727272727
-2009,6,"Camb Nenrich M H2Oamb  ",686.9
-2009,6,"Camb Nenrich M H2Oneg  ",526.25
-2009,6,"Camb Nenrich S    ",222.42
-2009,1,"Cenrich Namb M    ",255.285714285714
-2009,1,"Cenrich Namb M H2Oamb  ",514.55
-2009,1,"Cenrich Namb M H2Oneg  ",440.55
-2009,1,"Cenrich Namb S    ",342.64
-2009,1,"Cenrich Nenrich M    ",337.036363636364
-2009,1,"Cenrich Nenrich M H2Oamb  ",333
-2009,1,"Cenrich Nenrich M H2Oneg  ",538.5
-2009,1,"Cenrich Nenrich S    ",341.86
-2009,2,"Camb Namb M    ",254.41
-2009,2,"Camb Namb M H2Oamb  ",293.233333333333
-2009,2,"Camb Namb M H2Oneg  ",258.6
-2009,2,"Camb Namb S    ",411.78
-2009,2,"Camb Nenrich M    ",292.673913043478
-2009,2,"Camb Nenrich M H2Oamb  ",576.8
-2009,2,"Camb Nenrich M H2Oneg  ",262.65
-2009,2,"Camb Nenrich S    ",338.783333333333
-2009,3,"Cenrich Namb M    ",303.4
-2009,3,"Cenrich Namb M H2Oamb  ",537.65
-2009,3,"Cenrich Namb M H2Oneg  ",277.75
-2009,3,"Cenrich Namb S    ",352.542
-2009,3,"Cenrich Nenrich M    ",430.336363636364
-2009,3,"Cenrich Nenrich M H2Oamb  ",187.8
-2009,3,"Cenrich Nenrich M H2Oneg  ",336.55
-2009,3,"Cenrich Nenrich S    ",431.42
-2009,4,"Camb Namb M    ",262.217391304348
-2009,4,"Camb Namb M H2Oamb  ",490
-2009,4,"Camb Namb M H2Oneg  ",296.64
-2009,4,"Camb Namb S    ",303.65
-2009,4,"Camb Nenrich M    ",217.94
-2009,4,"Camb Nenrich M H2Oamb  ",347.433333333333
-2009,4,"Camb Nenrich M H2Oneg  ",193.7
-2009,4,"Camb Nenrich S    ",285.66
-2009,5,"Cenrich Namb M    ",243.576363636364
-2009,5,"Cenrich Namb M H2Oamb  ",373.2
-2009,5,"Cenrich Namb M H2Oneg  ",243.17
-2009,5,"Cenrich Namb S    ",231.7
-2009,5,"Cenrich Nenrich M    ",254.398095238095
-2009,5,"Cenrich Nenrich M H2Oamb  ",353.25
-2009,5,"Cenrich Nenrich M H2Oneg  ",273.8
-2009,5,"Cenrich Nenrich S    ",298.08
-2009,6,"Camb Namb M    ",265.271363636364
-2009,6,"Camb Namb M H2Oamb  ",231.8
-2009,6,"Camb Namb M H2Oneg  ",216.635
-2009,6,"Camb Namb S    ",363.016666666667
-2009,6,"Camb Nenrich M    ",290.925
-2009,6,"Camb Nenrich M H2Oamb  ",457.9
-2009,6,"Camb Nenrich M H2Oneg  ",515.54
-2009,6,"Camb Nenrich S    ",409.76
-2010,1,"Cenrich Namb M    ",259.632857142857
-2010,1,"Cenrich Namb M H2Oamb  ",456.62
-2010,1,"Cenrich Namb M H2Oneg  ",431.75
-2010,1,"Cenrich Namb S    ",247.632
-2010,1,"Cenrich Nenrich M    ",288.055454545455
-2010,1,"Cenrich Nenrich M H2Oamb  ",400.055
-2010,1,"Cenrich Nenrich M H2Oneg  ",614.55
-2010,1,"Cenrich Nenrich S    ",485.502
-2010,2,"Camb Namb M    ",241.835
-2010,2,"Camb Namb M H2Oamb  ",529.5
-2010,2,"Camb Namb M H2Oneg  ",381.95
-2010,2,"Camb Namb S    ",354.092
-2010,2,"Camb Nenrich M    ",357.443043478261
-2010,2,"Camb Nenrich M H2Oamb  ",872
-2010,2,"Camb Nenrich M H2Oneg  ",332.5
-2010,2,"Camb Nenrich S    ",301.216666666667
-2010,3,"Cenrich Namb M    ",338.646818181818
-2010,3,"Cenrich Namb M H2Oamb  ",359.55
-2010,3,"Cenrich Namb M H2Oneg  ",650.7
-2010,3,"Cenrich Namb S    ",193.168
-2010,3,"Cenrich Nenrich M    ",365.173181818182
-2010,3,"Cenrich Nenrich M H2Oamb  ",306.205
-2010,3,"Cenrich Nenrich M H2Oneg  ",552.65
-2010,3,"Cenrich Nenrich S    ",506.118
-2010,4,"Camb Namb M    ",297.425652173913
-2010,4,"Camb Namb M H2Oamb  ",765.3
-2010,4,"Camb Namb M H2Oneg  ",493.75
-2010,4,"Camb Namb S    ",311.198333333333
-2010,4,"Camb Nenrich M    ",312.618
-2010,4,"Camb Nenrich M H2Oamb  ",555.02
-2010,4,"Camb Nenrich M H2Oneg  ",142.1
-2010,4,"Camb Nenrich S    ",380.982
-2010,5,"Cenrich Namb M    ",237.967727272727
-2010,5,"Cenrich Namb M H2Oamb  ",351.82
-2010,5,"Cenrich Namb M H2Oneg  ",293.47
-2010,5,"Cenrich Namb S    ",403.94
-2010,5,"Cenrich Nenrich M    ",263.868571428571
-2010,5,"Cenrich Nenrich M H2Oamb  ",209.41
-2010,5,"Cenrich Nenrich M H2Oneg  ",551.5
-2010,5,"Cenrich Nenrich S    ",327.456
-2010,6,"Camb Namb M    ",282.323181818182
-2010,6,"Camb Namb M H2Oamb  ",263.935
-2010,6,"Camb Namb M H2Oneg  ",349.195
-2010,6,"Camb Namb S    ",344.311666666667
-2010,6,"Camb Nenrich M    ",374.85
-2010,6,"Camb Nenrich M H2Oamb  ",279.25
-2010,6,"Camb Nenrich M H2Oneg  ",519.6
-2010,6,"Camb Nenrich S    ",261.838
-2010,1,"Cenrich Namb M    ",394.391428571429
-2010,1,"Cenrich Namb M H2Oamb  ",566.295
-2010,1,"Cenrich Namb M H2Oneg  ",765.95
-2010,1,"Cenrich Namb S    ",475.836
-2010,1,"Cenrich Nenrich M    ",510.417727272727
-2010,1,"Cenrich Nenrich M H2Oamb  ",1060.885
-2010,1,"Cenrich Nenrich M H2Oneg  ",734.14
-2010,1,"Cenrich Nenrich S    ",743.636
-2010,2,"Camb Namb M    ",466.187
-2010,2,"Camb Namb M H2Oamb  ",583.76
-2010,2,"Camb Namb M H2Oneg  ",461.45
-2010,2,"Camb Namb S    ",367.434
-2010,2,"Camb Nenrich M    ",504.44652173913
-2010,2,"Camb Nenrich M H2Oamb  ",585.81
-2010,2,"Camb Nenrich M H2Oneg  ",711.33
-2010,2,"Camb Nenrich S    ",570.098333333333
-2010,3,"Cenrich Namb M    ",427.328181818182
-2010,3,"Cenrich Namb M H2Oamb  ",847.86
-2010,3,"Cenrich Namb M H2Oneg  ",583.995
-2010,3,"Cenrich Namb S    ",522.244
-2010,3,"Cenrich Nenrich M    ",538.420909090909
-2010,3,"Cenrich Nenrich M H2Oamb  ",391.98
-2010,3,"Cenrich Nenrich M H2Oneg  ",633.57
-2010,3,"Cenrich Nenrich S    ",499.29
-2010,4,"Camb Namb M    ",384.550869565217
-2010,4,"Camb Namb M H2Oamb  ",288.2
-2010,4,"Camb Namb M H2Oneg  ",632.8
-2010,4,"Camb Namb S    ",483.863333333333
-2010,4,"Camb Nenrich M    ",382.6975
-2010,4,"Camb Nenrich M H2Oamb  ",582.02
-2010,4,"Camb Nenrich M H2Oneg  ",327.735
-2010,4,"Camb Nenrich S    ",497.516
-2010,5,"Cenrich Namb M    ",291.360909090909
-2010,5,"Cenrich Namb M H2Oamb  ",500.4
-2010,5,"Cenrich Namb M H2Oneg  ",300.2
-2010,5,"Cenrich Namb S    ",315.952
-2010,5,"Cenrich Nenrich M    ",356.698095238095
-2010,5,"Cenrich Nenrich M H2Oamb  ",692.05
-2010,5,"Cenrich Nenrich M H2Oneg  ",508.855
-2010,5,"Cenrich Nenrich S    ",445.608
-2010,6,"Camb Namb M    ",378.563636363636
-2010,6,"Camb Namb M H2Oamb  ",490.4
-2010,6,"Camb Namb M H2Oneg  ",562.96
-2010,6,"Camb Namb S    ",395.566666666667
-2010,6,"Camb Nenrich M    ",463.163636363636
-2010,6,"Camb Nenrich M H2Oamb  ",391.64
-2010,6,"Camb Nenrich M H2Oneg  ",437.65
-2010,6,"Camb Nenrich S    ",347.412
-2011,1,"Cenrich Namb M    ",209.227619047619
-2011,1,"Cenrich Namb M H2Oamb  ",395.45
-2011,1,"Cenrich Namb M H2Oneg  ",302.455
-2011,1,"Cenrich Namb S    ",196.08
-2011,1,"Cenrich Nenrich M    ",253.690454545455
-2011,1,"Cenrich Nenrich M H2Oamb  ",461.74
-2011,1,"Cenrich Nenrich M H2Oneg  ",244.1
-2011,1,"Cenrich Nenrich S    ",352.634
-2011,2,"Camb Namb M    ",268.35
-2011,2,"Camb Namb M H2Oamb  ",446.833333333333
-2011,2,"Camb Namb M H2Oneg  ",329.2
-2011,2,"Camb Namb S    ",270.42
-2011,2,"Camb Nenrich M    ",381.950869565217
-2011,2,"Camb Nenrich M H2Oamb  ",540.1
-2011,2,"Camb Nenrich M H2Oneg  ",510.025
-2011,2,"Camb Nenrich S    ",205.866666666667
-2011,3,"Cenrich Namb M    ",260.464090909091
-2011,3,"Cenrich Namb M H2Oamb  ",311.85
-2011,3,"Cenrich Namb M H2Oneg  ",420.35
-2011,3,"Cenrich Namb S    ",195.62
-2011,3,"Cenrich Nenrich M    ",299.299090909091
-2011,3,"Cenrich Nenrich M H2Oamb  ",227.34
-2011,3,"Cenrich Nenrich M H2Oneg  ",451.25
-2011,3,"Cenrich Nenrich S    ",256.54
-2011,4,"Camb Namb M    ",293.850869565217
-2011,4,"Camb Namb M H2Oamb  ",580.1
-2011,4,"Camb Namb M H2Oneg  ",417.35
-2011,4,"Camb Namb S    ",389.518333333333
-2011,4,"Camb Nenrich M    ",279.329
-2011,4,"Camb Nenrich M H2Oamb  ",549.533333333333
-2011,4,"Camb Nenrich M H2Oneg  ",316.6
-2011,4,"Camb Nenrich S    ",211.22
-2011,5,"Cenrich Namb M    ",264.749545454545
-2011,5,"Cenrich Namb M H2Oamb  ",363.8
-2011,5,"Cenrich Namb M H2Oneg  ",363.85
-2011,5,"Cenrich Namb S    ",276.34
-2011,5,"Cenrich Nenrich M    ",244.740476190476
-2011,5,"Cenrich Nenrich M H2Oamb  ",351.8
-2011,5,"Cenrich Nenrich M H2Oneg  ",464.75
-2011,5,"Cenrich Nenrich S    ",340.154
-2011,6,"Camb Namb M    ",210.7
-2011,6,"Camb Namb M H2Oamb  ",182
-2011,6,"Camb Namb M H2Oneg  ",152.75
-2011,6,"Camb Namb S    ",235.35
-2011,6,"Camb Nenrich M    ",305.55
-2011,6,"Camb Nenrich M H2Oamb  ",466.33
-2011,6,"Camb Nenrich M H2Oneg  ",538.2
-2011,6,"Camb Nenrich S    ",262.592
-2011,1,"Cenrich Namb M    ",321.855238095238
-2011,1,"Cenrich Namb M H2Oamb  ",345.65
-2011,1,"Cenrich Namb M H2Oneg  ",470.12
-2011,1,"Cenrich Namb S    ",401.022
-2011,1,"Cenrich Nenrich M    ",309.507272727273
-2011,1,"Cenrich Nenrich M H2Oamb  ",701.1
-2011,1,"Cenrich Nenrich M H2Oneg  ",428.2
-2011,1,"Cenrich Nenrich S    ",644.4
-2011,2,"Camb Namb M    ",280.077
-2011,2,"Camb Namb M H2Oamb  ",452
-2011,2,"Camb Namb M H2Oneg  ",348.95
-2011,2,"Camb Namb S    ",561.52
-2011,2,"Camb Nenrich M    ",408.178260869565
-2011,2,"Camb Nenrich M H2Oamb  ",667.4
-2011,2,"Camb Nenrich M H2Oneg  ",472.9
-2011,2,"Camb Nenrich S    ",453.75
-2011,3,"Cenrich Namb M    ",335.627727272727
-2011,3,"Cenrich Namb M H2Oamb  ",478.745
-2011,3,"Cenrich Namb M H2Oneg  ",426.7
-2011,3,"Cenrich Namb S    ",315.334
-2011,3,"Cenrich Nenrich M    ",551.207727272727
-2011,3,"Cenrich Nenrich M H2Oamb  ",438.9
-2011,3,"Cenrich Nenrich M H2Oneg  ",659.15
-2011,3,"Cenrich Nenrich S    ",545.752
-2011,4,"Camb Namb M    ",316.578695652174
-2011,4,"Camb Namb M H2Oamb  ",532.55
-2011,4,"Camb Namb M H2Oneg  ",547.4
-2011,4,"Camb Namb S    ",366.828333333333
-2011,4,"Camb Nenrich M    ",298.1215
-2011,4,"Camb Nenrich M H2Oamb  ",487.666666666667
-2011,4,"Camb Nenrich M H2Oneg  ",387.005
-2011,4,"Camb Nenrich S    ",391.282
-2011,5,"Cenrich Namb M    ",263.700454545455
-2011,5,"Cenrich Namb M H2Oamb  ",233.95
-2011,5,"Cenrich Namb M H2Oneg  ",278.35
-2011,5,"Cenrich Namb S    ",472.04
-2011,5,"Cenrich Nenrich M    ",317.929523809524
-2011,5,"Cenrich Nenrich M H2Oamb  ",430.05
-2011,5,"Cenrich Nenrich M H2Oneg  ",477.35
-2011,5,"Cenrich Nenrich S    ",666.54
-2011,6,"Camb Namb M    ",244.155
-2011,6,"Camb Namb M H2Oamb  ",300.65
-2011,6,"Camb Namb M H2Oneg  ",343
-2011,6,"Camb Namb S    ",300.851666666667
-2011,6,"Camb Nenrich M    ",282.010454545455
-2011,6,"Camb Nenrich M H2Oamb  ",460.15
-2011,6,"Camb Nenrich M H2Oneg  ",382.15
-2011,6,"Camb Nenrich S    ",582.566
-2012,1,"Cenrich Namb M    ",217.345761904762
-2012,1,"Cenrich Namb M H2Oamb HTamb",223.7
-2012,1,"Cenrich Namb M H2Oamb HTelv",486
-2012,1,"Cenrich Namb M H2Oneg HTamb",344.27
-2012,1,"Cenrich Namb M H2Oneg HTelv",282.2
-2012,1,"Cenrich Namb S    ",399.08
-2012,1,"Cenrich Nenrich M    ",309.91
-2012,1,"Cenrich Nenrich M H2Oamb HTamb",639
-2012,1,"Cenrich Nenrich M H2Oamb HTelv",1754.6
-2012,1,"Cenrich Nenrich M H2Oneg HTamb",629.61
-2012,1,"Cenrich Nenrich M H2Oneg HTelv",658.5
-2012,1,"Cenrich Nenrich S    ",333.38
-2012,2,"Camb Namb M    ",254.55619047619
-2012,2,"Camb Namb M H2Oamb HTamb",564.2
-2012,2,"Camb Namb M H2Oamb HTelv",486.7
-2012,2,"Camb Namb M H2Oneg HTamb",285.1
-2012,2,"Camb Namb M H2Oneg HTelv",469.5
-2012,2,"Camb Namb S    ",357.24
-2012,2,"Camb Nenrich M    ",290.820454545455
-2012,2,"Camb Nenrich M H2Oamb HTamb",321.2
-2012,2,"Camb Nenrich M H2Oamb HTelv",658.8
-2012,2,"Camb Nenrich M H2Oneg HTamb",486.1
-2012,2,"Camb Nenrich M H2Oneg HTelv",309.4
-2012,2,"Camb Nenrich S    ",376.166666666667
-2012,3,"Cenrich Namb M    ",303.459090909091
-2012,3,"Cenrich Namb M H2Oamb HTamb",305.6
-2012,3,"Cenrich Namb M H2Oamb HTelv",784.9
-2012,3,"Cenrich Namb M H2Oneg HTamb",331.1
-2012,3,"Cenrich Namb M H2Oneg HTelv",408.69
-2012,3,"Cenrich Namb S    ",320.662
-2012,3,"Cenrich Nenrich M    ",395.154545454545
-2012,3,"Cenrich Nenrich M H2Oamb HTamb",308.1
-2012,3,"Cenrich Nenrich M H2Oamb HTelv",179.1
-2012,3,"Cenrich Nenrich M H2Oneg HTamb",361.2
-2012,3,"Cenrich Nenrich M H2Oneg HTelv",382.1
-2012,3,"Cenrich Nenrich S    ",430.434
-2012,4,"Camb Namb M    ",279.216227272727
-2012,4,"Camb Namb M H2Oamb HTamb",279.8
-2012,4,"Camb Namb M H2Oamb HTelv",295.3
-2012,4,"Camb Namb M H2Oneg HTamb",368.6
-2012,4,"Camb Namb M H2Oneg HTelv",386
-2012,4,"Camb Namb S    ",448.881666666667
-2012,4,"Camb Nenrich M    ",272.514285714286
-2012,4,"Camb Nenrich M H2Oamb HTamb",251.2
-2012,4,"Camb Nenrich M H2Oamb HTelv",463.7
-2012,4,"Camb Nenrich M H2Oneg HTamb",326.1
-2012,4,"Camb Nenrich M H2Oneg HTelv",324
-2012,4,"Camb Nenrich S    ",391.02
-2012,5,"Cenrich Namb M    ",238.372727272727
-2012,5,"Cenrich Namb M H2Oamb HTamb",224.1
-2012,5,"Cenrich Namb M H2Oamb HTelv",519.48
-2012,5,"Cenrich Namb M H2Oneg HTamb",773.5
-2012,5,"Cenrich Namb M H2Oneg HTelv",145.17
-2012,5,"Cenrich Namb S    ",337.006
-2012,5,"Cenrich Nenrich M    ",423.096666666667
-2012,5,"Cenrich Nenrich M H2Oamb HTamb",851.37
-2012,5,"Cenrich Nenrich M H2Oamb HTelv",553.6
-2012,5,"Cenrich Nenrich M H2Oneg HTamb",345.6
-2012,5,"Cenrich Nenrich M H2Oneg HTelv",375.56
-2012,5,"Cenrich Nenrich S    ",360.848
-2012,6,"Camb Namb M    ",239.327272727273
-2012,6,"Camb Namb M H2Oamb HTamb",258.9
-2012,6,"Camb Namb M H2Oamb HTelv",474.3
-2012,6,"Camb Namb M H2Oneg HTamb",332
-2012,6,"Camb Namb M H2Oneg HTelv",125.8
-2012,6,"Camb Namb S    ",174.15
-2012,6,"Camb Nenrich M    ",289.259818181818
-2012,6,"Camb Nenrich M H2Oamb HTamb",67.2
-2012,6,"Camb Nenrich M H2Oamb HTelv",482.7
-2012,6,"Camb Nenrich M H2Oneg HTamb",321.4
-2012,6,"Camb Nenrich M H2Oneg HTelv",547.8
-2012,6,"Camb Nenrich S    ",373.98
-2013,1,"Cenriched  Namb M    ",379.262476190476
-2013,1,"Cenriched  Namb M H2Oamb HTamb",261.55
-2013,1,"Cenriched  Namb M H2Oamb HTelv",993.7
-2013,1,"Cenriched  Namb M H2Oneg HTamb",309.75
-2013,1,"Cenriched  Namb M H2Oneg HTelv",624.5
-2013,1,"Cenriched  Namb S    ",447.2
-2013,1,"Cenriched  Nenrich M    ",450.767272727273
-2013,1,"Cenriched  Nenrich M H2Oamb HTamb",931.5
-2013,1,"Cenriched  Nenrich M H2Oamb HTelv",993.3
-2013,1,"Cenriched  Nenrich M H2Oneg HTamb",256.1
-2013,1,"Cenriched  Nenrich M H2Oneg HTelv",1094.8
-2013,1,"Cenriched  Nenrich S    ",635.662
-2013,2,"Camb Namb M    ",338.8655
-2013,2,"Camb Namb M H2Oamb  ",347.1
-2013,2,"Camb Namb M H2Oamb HTamb",673.1
-2013,2,"Camb Namb M H2Oamb HTelv",572.2
-2013,2,"Camb Namb M H2Oneg HTamb",491.71
-2013,2,"Camb Namb M H2Oneg HTelv",585.5
-2013,2,"Camb Namb S    ",342.92
-2013,2,"Camb Nenrich M    ",411.042727272727
-2013,2,"Camb Nenrich M   HTamb",546.31
-2013,2,"Camb Nenrich M H2Oamb HTelv",418.7
-2013,2,"Camb Nenrich M H2Oneg HTamb",252.3
-2013,2,"Camb Nenrich M H2Oneg HTelv",417.5
-2013,2,"Camb Nenrich S    ",461.533333333333
-2013,3,"Cenriched  Namb M    ",368.275909090909
-2013,3,"Cenriched  Namb M H2Oamb HTamb",817
-2013,3,"Cenriched  Namb M H2Oamb HTelv",605.8
-2013,3,"Cenriched  Namb M H2Oneg HTamb",584.9
-2013,3,"Cenriched  Namb M H2Oneg HTelv",735
-2013,3,"Cenriched  Namb S    ",461.44
-2013,3,"Cenriched  Nenrich M    ",477.797272727273
-2013,3,"Cenriched  Nenrich M H2Oamb HTamb",317.7
-2013,3,"Cenriched  Nenrich M H2Oamb HTelv",833.4
-2013,3,"Cenriched  Nenrich M H2Oneg HTamb",470.2
-2013,3,"Cenriched  Nenrich M H2Oneg HTelv",753.6
-2013,3,"Cenriched  Nenrich S    ",501.544
-2013,4,"Camb Namb M    ",442.154545454545
-2013,4,"Camb Namb M   HTelv",1190.9
-2013,4,"Camb Namb M H2Oamb HTamb",797.7
-2013,4,"Camb Namb M H2Oneg HTamb",539.85
-2013,4,"Camb Namb M H2Oneg HTelv",559.1
-2013,4,"Camb Namb S    ",428.376666666667
-2013,4,"Camb Nenrich M    ",397.86947368421
-2013,4,"Camb Nenrich M H2Oamb  ",779.4
-2013,4,"Camb Nenrich M H2Oamb HTamb",444.2
-2013,4,"Camb Nenrich M H2Oamb HTelv",492.22
-2013,4,"Camb Nenrich M H2Oneg HTamb",568.3
-2013,4,"Camb Nenrich M H2Oneg HTelv",424.4
-2013,4,"Camb Nenrich S    ",567.03
-2013,5,"Cenriched  Namb M    ",412.410909090909
-2013,5,"Cenriched  Namb M H2Oamb HTamb",490.4
-2013,5,"Cenriched  Namb M H2Oamb HTelv",737.905
-2013,5,"Cenriched  Namb M H2Oneg HTamb",875.2
-2013,5,"Cenriched  Namb M H2Oneg HTelv",300.5
-2013,5,"Cenriched  Namb S    ",320.48
-2013,5,"Cenriched  Nenrich M    ",496.906285714286
-2013,5,"Cenriched  Nenrich M H2Oamb HTamb",871.8
-2013,5,"Cenriched  Nenrich M H2Oamb HTelv",1111.2
-2013,5,"Cenriched  Nenrich M H2Oneg HTamb",514.9
-2013,5,"Cenriched  Nenrich M H2Oneg HTelv",1089.8
-2013,5,"Cenriched  Nenrich S    ",487.62
-2013,6,"Camb Namb M    ",380.994333333333
-2013,6,"Camb Namb M H2Oamb HTamb",537.5
-2013,6,"Camb Namb M H2Oamb HTelv",553.1
-2013,6,"Camb Namb M H2Oneg HTamb",211
-2013,6,"Camb Namb M H2Oneg HTelv",701.9
-2013,6,"Camb Namb S    ",440.435
-2013,6,"Camb Nenrich M    ",458.076285714286
-2013,6,"Camb Nenrich M H2Oamb HTamb",305
-2013,6,"Camb Nenrich M H2Oamb HTelv",819.2
-2013,6,"Camb Nenrich M H2Oneg HTamb",459.047
-2013,6,"Camb Nenrich M H2Oneg HTelv",1015.4
-2013,6,"Camb Nenrich S    ",508.6624
-2014,1,"Cenriched  Namb M    ",224.114761904762
-2014,1,"Cenriched  Namb M H2Oamb HTamb",144
-2014,1,"Cenriched  Namb M H2Oamb HTelv",338.4
-2014,1,"Cenriched  Namb M H2Oneg HTamb",305.3
-2014,1,"Cenriched  Namb M H2Oneg HTelv",688.2
-2014,1,"Cenriched  Namb S    ",327.088
-2014,1,"Cenriched  Nenrich M    ",350.238636363636
-2014,1,"Cenriched  Nenrich M H2Oamb HTamb",305.1
-2014,1,"Cenriched  Nenrich M H2Oamb HTelv",773
-2014,1,"Cenriched  Nenrich M H2Oneg HTamb",678.7
-2014,1,"Cenriched  Nenrich M H2Oneg HTelv",444.6
-2014,1,"Cenriched  Nenrich S    ",250.184
-2014,2,"Camb Namb M    ",226.3585
-2014,2,"Camb Namb M H2Oamb  ",606.91
-2014,2,"Camb Namb M H2Oamb HTamb",534.5
-2014,2,"Camb Namb M H2Oamb HTelv",638.3
-2014,2,"Camb Namb M H2Oneg HTamb",246.2
-2014,2,"Camb Namb M H2Oneg HTelv",515
-2014,2,"Camb Namb S    ",384.366
-2014,2,"Camb Nenrich M    ",364.459545454545
-2014,2,"Camb Nenrich M   HTamb",265.09
-2014,2,"Camb Nenrich M H2Oamb HTelv",623.5
-2014,2,"Camb Nenrich M H2Oneg HTamb",433.3
-2014,2,"Camb Nenrich M H2Oneg HTelv",216.6
-2014,2,"Camb Nenrich S    ",468.14
-2014,3,"Cenriched  Namb M    ",356.026818181818
-2014,3,"Cenriched  Namb M H2Oamb HTamb",202.2
-2014,3,"Cenriched  Namb M H2Oamb HTelv",909.3
-2014,3,"Cenriched  Namb M H2Oneg HTamb",455.63
-2014,3,"Cenriched  Namb M H2Oneg HTelv",365.9
-2014,3,"Cenriched  Namb S    ",453.82
-2014,3,"Cenriched  Nenrich M    ",500.018636363636
-2014,3,"Cenriched  Nenrich M H2Oamb HTamb",194.1
-2014,3,"Cenriched  Nenrich M H2Oamb HTelv",264.6
-2014,3,"Cenriched  Nenrich M H2Oneg HTamb",703
-2014,3,"Cenriched  Nenrich M H2Oneg HTelv",448.3
-2014,3,"Cenriched  Nenrich S    ",361.82
-2014,4,"Camb Namb M    ",333.301818181818
-2014,4,"Camb Namb M   HTelv",718.2
-2014,4,"Camb Namb M H2Oamb HTamb",418.9
-2014,4,"Camb Namb M H2Oneg HTamb",818.41
-2014,4,"Camb Namb M H2Oneg HTelv",469.3
-2014,4,"Camb Namb S    ",376.02
-2014,4,"Camb Nenrich M    ",311.627
-2014,4,"Camb Nenrich M H2Oamb  ",373.2
-2014,4,"Camb Nenrich M H2Oamb HTamb",411.1
-2014,4,"Camb Nenrich M H2Oamb HTelv",705.7
-2014,4,"Camb Nenrich M H2Oneg HTamb",281
-2014,4,"Camb Nenrich M H2Oneg HTelv",339.1
-2014,4,"Camb Nenrich S    ",362.602
-2014,5,"Cenriched  Namb M    ",316.967272727273
-2014,5,"Cenriched  Namb M H2Oamb HTamb",149.1
-2014,5,"Cenriched  Namb M H2Oamb HTelv",575.6
-2014,5,"Cenriched  Namb M H2Oneg HTamb",604.1
-2014,5,"Cenriched  Namb M H2Oneg HTelv",419
-2014,5,"Cenriched  Namb S    ",362.7
-2014,5,"Cenriched  Nenrich M    ",415.68
-2014,5,"Cenriched  Nenrich M H2Oamb HTamb",387.3
-2014,5,"Cenriched  Nenrich M H2Oamb HTelv",1305.9
-2014,5,"Cenriched  Nenrich M H2Oneg HTamb",186.5
-2014,5,"Cenriched  Nenrich M H2Oneg HTelv",606.2
-2014,5,"Cenriched  Nenrich S    ",546.944
-2014,6,"Camb Namb M    ",241.135909090909
-2014,6,"Camb Namb M H2Oamb HTamb",252.6
-2014,6,"Camb Namb M H2Oamb HTelv",877.2
-2014,6,"Camb Namb M H2Oneg HTamb",203.16
-2014,6,"Camb Namb M H2Oneg HTelv",637
-2014,6,"Camb Namb S    ",314.908333333333
-2014,6,"Camb Nenrich M    ",328.786227272727
-2014,6,"Camb Nenrich M H2Oamb HTamb",135.3
-2014,6,"Camb Nenrich M H2Oamb HTelv",986.3
-2014,6,"Camb Nenrich M H2Oneg HTamb",316.9
-2014,6,"Camb Nenrich M H2Oneg HTelv",701.4
-2014,6,"Camb Nenrich S    ",576.822
-2015,1,"Cenrich Namb M    ",372.530476190476
-2015,1,"Cenrich Namb M H2Oamb HTamb",293.7
-2015,1,"Cenrich Namb M H2Oamb HTelv",1044.9
-2015,1,"Cenrich Namb M H2Oneg HTamb",810.8
-2015,1,"Cenrich Namb M H2Oneg HTelv",602.4
-2015,1,"Cenrich Namb S    ",392.234
-2015,1,"Cenrich Nenrich M    ",405.954545454545
-2015,1,"Cenrich Nenrich M H2Oamb HTamb",535.82
-2015,1,"Cenrich Nenrich M H2Oamb HTelv",805
-2015,1,"Cenrich Nenrich M H2Oneg HTamb",376.1
-2015,1,"Cenrich Nenrich M H2Oneg HTelv",912.67
-2015,1,"Cenrich Nenrich S    ",479.456
-2015,2,"Camb Namb M    ",356.2275
-2015,2,"Camb Namb M H2Oamb  ",390.8
-2015,2,"Camb Namb M H2Oamb HTamb",836.6
-2015,2,"Camb Namb M H2Oamb HTelv",604.5
-2015,2,"Camb Namb M H2Oneg HTamb",317.9
-2015,2,"Camb Namb M H2Oneg HTelv",619.9
-2015,2,"Camb Namb S    ",426.022
-2015,2,"Camb Nenrich M    ",360.205454545455
-2015,2,"Camb Nenrich M   HTamb",294.3
-2015,2,"Camb Nenrich M H2Oamb HTelv",762.1
-2015,2,"Camb Nenrich M H2Oneg HTamb",266.89
-2015,2,"Camb Nenrich M H2Oneg HTelv",379.9
-2015,2,"Camb Nenrich S    ",490.993333333333
-2015,3,"Cenrich Namb M    ",504.644090909091
-2015,3,"Cenrich Namb M H2Oamb HTamb",925.5
-2015,3,"Cenrich Namb M H2Oamb HTelv",1147.8
-2015,3,"Cenrich Namb M H2Oneg HTamb",999.13
-2015,3,"Cenrich Namb M H2Oneg HTelv",723.3
-2015,3,"Cenrich Namb S    ",362.322
-2015,3,"Cenrich Nenrich M    ",537.773227272727
-2015,3,"Cenrich Nenrich M H2Oamb HTamb",874.1
-2015,3,"Cenrich Nenrich M H2Oamb HTelv",738.59
-2015,3,"Cenrich Nenrich M H2Oneg HTamb",528
-2015,3,"Cenrich Nenrich M H2Oneg HTelv",729.4
-2015,3,"Cenrich Nenrich S    ",663.6
-2015,4,"Camb Namb M    ",356.803636363636
-2015,4,"Camb Namb M   HTelv",944.2
-2015,4,"Camb Namb M H2Oamb HTamb",1063.75
-2015,4,"Camb Namb M H2Oneg HTamb",585.07
-2015,4,"Camb Namb M H2Oneg HTelv",495.35
-2015,4,"Camb Namb S    ",514.996666666667
-2015,4,"Camb Nenrich M    ",475.1475
-2015,4,"Camb Nenrich M H2Oamb  ",250.1
-2015,4,"Camb Nenrich M H2Oamb HTamb",414.3
-2015,4,"Camb Nenrich M H2Oamb HTelv",477.3
-2015,4,"Camb Nenrich M H2Oneg HTamb",263.73
-2015,4,"Camb Nenrich M H2Oneg HTelv",253.55
-2015,4,"Camb Nenrich S    ",403.74
-2015,5,"Cenrich Namb M    ",419.902272727273
-2015,5,"Cenrich Namb M H2Oamb HTamb",297.5
-2015,5,"Cenrich Namb M H2Oamb HTelv",309.7
-2015,5,"Cenrich Namb M H2Oneg HTamb",558.6
-2015,5,"Cenrich Namb M H2Oneg HTelv",478.1
-2015,5,"Cenrich Namb S    ",448.432
-2015,5,"Cenrich Nenrich M    ",551.199047619048
-2015,5,"Cenrich Nenrich M H2Oamb HTamb",179.44
-2015,5,"Cenrich Nenrich M H2Oamb HTelv",288.4
-2015,5,"Cenrich Nenrich M H2Oneg HTamb",1007.4
-2015,5,"Cenrich Nenrich M H2Oneg HTelv",725.8
-2015,5,"Cenrich Nenrich S    ",606.52
-2015,6,"Camb Namb M    ",585.728181818182
-2015,6,"Camb Namb M H2Oamb HTamb",520.4
-2015,6,"Camb Namb M H2Oamb HTelv",270.26
-2015,6,"Camb Namb M H2Oneg HTamb",333.2
-2015,6,"Camb Namb M H2Oneg HTelv",266.4
-2015,6,"Camb Namb S    ",533.000166666667
-2015,6,"Camb Nenrich M    ",506.851909090909
-2015,6,"Camb Nenrich M H2Oamb HTamb",785.4
-2015,6,"Camb Nenrich M H2Oamb HTelv",772.5
-2015,6,"Camb Nenrich M H2Oneg HTamb",325.32
-2015,6,"Camb Nenrich M H2Oneg HTelv",673.9
-2015,6,"Camb Nenrich S    ",725.292
-2016,1,"Cenrich Namb M    ",345.730952380952
-2016,1,"Cenrich Namb M H2Oamb HTamb",700.2
-2016,1,"Cenrich Namb M H2Oamb HTelv",842.76
-2016,1,"Cenrich Namb M H2Oneg HTamb",584
-2016,1,"Cenrich Namb M H2Oneg HTelv",1032.5
-2016,1,"Cenrich Namb S    ",467.574
-2016,1,"Cenrich Nenrich M    ",441.88
-2016,1,"Cenrich Nenrich M H2Oamb HTamb",1110.65
-2016,1,"Cenrich Nenrich M H2Oamb HTelv",680.2
-2016,1,"Cenrich Nenrich M H2Oneg HTamb",508.6
-2016,1,"Cenrich Nenrich M H2Oneg HTelv",1309.7
-2016,1,"Cenrich Nenrich S    ",399.61
-2016,2,"Camb Namb M    ",393.7625
-2016,2,"Camb Namb M H2Oamb  ",671.38
-2016,2,"Camb Namb M H2Oamb HTamb",384.4
-2016,2,"Camb Namb M H2Oamb HTelv",468.4
-2016,2,"Camb Namb M H2Oneg HTamb",267.5
+1998,1,"Cenrich Namb M    ",336.654166666667
+1998,1,"Cenrich Namb S    ",280.32
+1998,1,"Cenrich Nenrich M    ",391.888461538462
+1998,1,"Cenrich Nenrich S    ",362.62
+1998,2,"Camb Namb M    ",239.84
+1998,2,"Camb Namb S    ",276.64
+1998,2,"Camb Nenrich M    ",339.6768
+1998,2,"Camb Nenrich S    ",347.433333333333
+1998,3,"Cenrich Namb M    ",283.4004
+1998,3,"Cenrich Namb S    ",251
+1998,3,"Cenrich Nenrich M    ",379.58
+1998,3,"Cenrich Nenrich S    ",519.88
+1998,4,"Camb Namb M    ",262.152
+1998,4,"Camb Namb S    ",262.466666666667
+1998,4,"Camb Nenrich M    ",340.026666666667
+1998,4,"Camb Nenrich S    ",345.6
+1998,5,"Cenrich Namb M    ",299.8836
+1998,5,"Cenrich Namb S    ",312.544
+1998,5,"Cenrich Nenrich M    ",368.002
+1998,5,"Cenrich Nenrich S    ",465.114
+1998,6,"Camb Namb M    ",320.839615384615
+1998,6,"Camb Namb S    ",290.883333333333
+1998,6,"Camb Nenrich M    ",380.495384615385
+1998,6,"Camb Nenrich S    ",419.9
+1999,1,"Cenrich Namb M    ",206.9512
+1999,1,"Cenrich Namb S    ",276.062
+1999,1,"Cenrich Nenrich M    ",286.811923076923
+1999,1,"Cenrich Nenrich S    ",338.186
+1999,2,"Camb Namb M    ",189.2236
+1999,2,"Camb Namb S    ",136
+1999,2,"Camb Nenrich M    ",340.2992
+1999,2,"Camb Nenrich S    ",278.431666666667
+1999,3,"Cenrich Namb M    ",228.1012
+1999,3,"Cenrich Namb S    ",205.594
+1999,3,"Cenrich Nenrich M    ",283.214230769231
+1999,3,"Cenrich Nenrich S    ",307.15
+1999,4,"Camb Namb M    ",190.6924
+1999,4,"Camb Namb S    ",163.245
+1999,4,"Camb Nenrich M    ",224.308
+1999,4,"Camb Nenrich S    ",239.172
+1999,5,"Cenrich Namb M    ",205.0844
+1999,5,"Cenrich Namb S    ",172.94
+1999,5,"Cenrich Nenrich M    ",229.0632
+1999,5,"Cenrich Nenrich S    ",212.084
+1999,6,"Camb Namb M    ",174.356923076923
+1999,6,"Camb Namb S    ",142.766666666667
+1999,6,"Camb Nenrich M    ",211.6604
+1999,6,"Camb Nenrich S    ",287.79
+2000,1,"Cenrich Namb M    ",327.363333333333
+2000,1,"Cenrich Namb S    ",272.406
+2000,1,"Cenrich Nenrich M    ",404.2856
+2000,1,"Cenrich Nenrich S    ",242.666
+2000,2,"Camb Namb M    ",179.4552
+2000,2,"Camb Namb S    ",190.662
+2000,2,"Camb Nenrich M    ",291.776
+2000,2,"Camb Nenrich S    ",298.118333333333
+2000,3,"Cenrich Namb M    ",285.02
+2000,3,"Cenrich Namb S    ",134.444
+2000,3,"Cenrich Nenrich M    ",314.8508
+2000,3,"Cenrich Nenrich S    ",308.62
+2000,4,"Camb Namb M    ",248.2932
+2000,4,"Camb Namb S    ",189.676666666667
+2000,4,"Camb Nenrich M    ",237.14625
+2000,4,"Camb Nenrich S    ",245.36
+2000,5,"Cenrich Namb M    ",282.7468
+2000,5,"Cenrich Namb S    ",234.948
+2000,5,"Cenrich Nenrich M    ",285.640833333333
+2000,5,"Cenrich Nenrich S    ",336.66
+2000,6,"Camb Namb M    ",229.7412
+2000,6,"Camb Namb S    ",239.701666666667
+2000,6,"Camb Nenrich M    ",324.9872
+2000,6,"Camb Nenrich S    ",286.894
+2001,1,"Cenrich Namb M    ",243.584583333333
+2001,1,"Cenrich Namb S    ",275.56
+2001,1,"Cenrich Nenrich M    ",369.5616
+2001,1,"Cenrich Nenrich S    ",208.462
+2001,2,"Camb Namb M    ",262.2075
+2001,2,"Camb Namb S    ",139.4
+2001,2,"Camb Nenrich M    ",351.1548
+2001,2,"Camb Nenrich S    ",353.145
+2001,3,"Cenrich Namb M    ",242.1
+2001,3,"Cenrich Namb S    ",210.9
+2001,3,"Cenrich Nenrich M    ",382.453076923077
+2001,3,"Cenrich Nenrich S    ",360.162
+2001,4,"Camb Namb M    ",260.7672
+2001,4,"Camb Namb S    ",220.066666666667
+2001,4,"Camb Nenrich M    ",281.258
+2001,4,"Camb Nenrich S    ",355.724
+2001,5,"Cenrich Namb M    ",304.923461538462
+2001,5,"Cenrich Namb S    ",198.2
+2001,5,"Cenrich Nenrich M    ",356.7316
+2001,5,"Cenrich Nenrich S    ",288.744
+2001,6,"Camb Namb M    ",236.8756
+2001,6,"Camb Namb S    ",173.65
+2001,6,"Camb Nenrich M    ",308.5524
+2001,6,"Camb Nenrich S    ",304.666
+2002,1,"Cenrich Namb M    ",376.222083333333
+2002,1,"Cenrich Namb S    ",497.832
+2002,1,"Cenrich Nenrich M    ",473.328846153846
+2002,1,"Cenrich Nenrich S    ",372.76
+2002,2,"Camb Namb M    ",259.946666666667
+2002,2,"Camb Namb S    ",240.9
+2002,2,"Camb Nenrich M    ",319.8716
+2002,2,"Camb Nenrich S    ",396.153333333333
+2002,3,"Cenrich Namb M    ",316.0552
+2002,3,"Cenrich Namb S    ",227.022
+2002,3,"Cenrich Nenrich M    ",467.5996
+2002,3,"Cenrich Nenrich S    ",375.56
+2002,4,"Camb Namb M    ",279.4564
+2002,4,"Camb Namb S    ",133.406666666667
+2002,4,"Camb Nenrich M    ",335.4084
+2002,4,"Camb Nenrich S    ",306.046
+2002,5,"Cenrich Namb M    ",316.2204
+2002,5,"Cenrich Namb S    ",302.118
+2002,5,"Cenrich Nenrich M    ",368.5972
+2002,5,"Cenrich Nenrich S    ",455.9
+2002,6,"Camb Namb M    ",302.475
+2002,6,"Camb Namb S    ",268.151666666667
+2002,6,"Camb Nenrich M    ",382.8532
+2002,6,"Camb Nenrich S    ",463.8
+2003,1,"Cenrich Namb M    ",325.26375
+2003,1,"Cenrich Namb S    ",253.24
+2003,1,"Cenrich Nenrich M    ",300.99
+2003,1,"Cenrich Nenrich S    ",525.95
+2003,2,"Camb Namb M    ",257.764166666667
+2003,2,"Camb Namb S    ",301.584
+2003,2,"Camb Nenrich M    ",292.2312
+2003,2,"Camb Nenrich S    ",312.146666666667
+2003,3,"Cenrich Namb M    ",315.386
+2003,3,"Cenrich Namb S    ",283.26
+2003,3,"Cenrich Nenrich M    ",469.6736
+2003,3,"Cenrich Nenrich S    ",443.318
+2003,4,"Camb Namb M    ",272.54
+2003,4,"Camb Namb S    ",311.231666666667
+2003,4,"Camb Nenrich M    ",268.583333333333
+2003,4,"Camb Nenrich S    ",426.66
+2003,5,"Cenrich Namb M    ",317.4316
+2003,5,"Cenrich Namb S    ",213.89
+2003,5,"Cenrich Nenrich M    ",384.442173913043
+2003,5,"Cenrich Nenrich S    ",731.274
+2003,6,"Camb Namb M    ",276.8024
+2003,6,"Camb Namb S    ",232.62
+2003,6,"Camb Nenrich M    ",351.43625
+2003,6,"Camb Nenrich S    ",314.04
+2004,1,"Cenrich Namb M    ",249.255833333333
+2004,1,"Cenrich Namb S    ",484.96
+2004,1,"Cenrich Nenrich M    ",385.8856
+2004,1,"Cenrich Nenrich S    ",458.474
+2004,2,"Camb Namb M    ",239.662083333333
+2004,2,"Camb Namb S    ",297.92
+2004,2,"Camb Nenrich M    ",284.5396
+2004,2,"Camb Nenrich S    ",215.754
+2004,3,"Cenrich Namb M    ",304.127692307692
+2004,3,"Cenrich Namb S    ",347.68
+2004,3,"Cenrich Nenrich M    ",359.0692
+2004,3,"Cenrich Nenrich S    ",361.62
+2004,4,"Camb Namb M    ",249.719166666667
+2004,4,"Camb Namb S    ",290.303333333333
+2004,4,"Camb Nenrich M    ",257.364166666667
+2004,4,"Camb Nenrich S    ",386.538
+2004,5,"Cenrich Namb M    ",302.542083333333
+2004,5,"Cenrich Namb S    ",417.606
+2004,5,"Cenrich Nenrich M    ",316.485416666667
+2004,5,"Cenrich Nenrich S    ",336
+2004,6,"Camb Namb M    ",201.018846153846
+2004,6,"Camb Namb S    ",293.55
+2004,6,"Camb Nenrich M    ",282.30125
+2004,6,"Camb Nenrich S    ",280.05
+2005,1,"Cenrich Namb M    ",425.147083333333
+2005,1,"Cenrich Namb S    ",417.68
+2005,1,"Cenrich Nenrich M    ",518.072
+2005,1,"Cenrich Nenrich S    ",483.04
+2005,2,"Camb Namb M    ",313.577391304348
+2005,2,"Camb Namb S    ",198.58
+2005,2,"Camb Nenrich M    ",379.056
+2005,2,"Camb Nenrich S    ",310.166666666667
+2005,3,"Cenrich Namb M    ",444.894583333333
+2005,3,"Cenrich Namb S    ",378.44
+2005,3,"Cenrich Nenrich M    ",488.148
+2005,3,"Cenrich Nenrich S    ",369.56
+2005,4,"Camb Namb M    ",404.84
+2005,4,"Camb Namb S    ",294.6
+2005,4,"Camb Nenrich M    ",354.15652173913
+2005,4,"Camb Nenrich S    ",406.78
+2005,5,"Cenrich Namb M    ",378.916
+2005,5,"Cenrich Namb S    ",532.04
+2005,5,"Cenrich Nenrich M    ",410.525
+2005,5,"Cenrich Nenrich S    ",373.48
+2005,6,"Camb Namb M    ",375.9456
+2005,6,"Camb Namb S    ",345.018333333333
+2005,6,"Camb Nenrich M    ",417.145833333333
+2005,6,"Camb Nenrich S    ",532
+2006,1,"Cenrich Namb M    ",285.074347826087
+2006,1,"Cenrich Namb S    ",339.24
+2006,1,"Cenrich Nenrich M    ",283.264230769231
+2006,1,"Cenrich Nenrich S    ",440.76
+2006,2,"Camb Namb M    ",227.511304347826
+2006,2,"Camb Namb S    ",194.48
+2006,2,"Camb Nenrich M    ",247.704
+2006,2,"Camb Nenrich S    ",335.95
+2006,3,"Cenrich Namb M    ",276.636
+2006,3,"Cenrich Namb S    ",254.3
+2006,3,"Cenrich Nenrich M    ",353.175
+2006,3,"Cenrich Nenrich S    ",344
+2006,4,"Camb Namb M    ",300.204
+2006,4,"Camb Namb S    ",443.11
+2006,4,"Camb Nenrich M    ",324.613043478261
+2006,4,"Camb Nenrich S    ",334.82
+2006,5,"Cenrich Namb M    ",220.5844
+2006,5,"Cenrich Namb S    ",225.964
+2006,5,"Cenrich Nenrich M    ",309.065652173913
+2006,5,"Cenrich Nenrich S    ",372.98
+2006,6,"Camb Namb M    ",208.2976
+2006,6,"Camb Namb S    ",285.666666666667
+2006,6,"Camb Nenrich M    ",223.031739130435
+2006,6,"Camb Nenrich S    ",207.52
+2007,1,"Cenrich Namb M    ",197.757142857143
+2007,1,"Cenrich Namb M H2Oamb  ",508.15
+2007,1,"Cenrich Namb M H2Oneg  ",496.335
+2007,1,"Cenrich Namb S    ",413
+2007,1,"Cenrich Nenrich M    ",309.927272727273
+2007,1,"Cenrich Nenrich M H2Oamb  ",357.5
+2007,1,"Cenrich Nenrich M H2Oneg  ",434.3
+2007,1,"Cenrich Nenrich S    ",245.32
+2007,2,"Camb Namb M    ",219.9205
+2007,2,"Camb Namb M H2Oamb  ",242.896666666667
+2007,2,"Camb Namb M H2Oneg  ",278.05
+2007,2,"Camb Namb S    ",270.5
+2007,2,"Camb Nenrich M    ",239.534782608696
+2007,2,"Camb Nenrich M H2Oamb  ",591
+2007,2,"Camb Nenrich M H2Oneg  ",324.35
+2007,2,"Camb Nenrich S    ",262.383333333333
+2007,3,"Cenrich Namb M    ",340.076818181818
+2007,3,"Cenrich Namb M H2Oamb  ",629.05
+2007,3,"Cenrich Namb M H2Oneg  ",227.8
+2007,3,"Cenrich Namb S    ",380.68
+2007,3,"Cenrich Nenrich M    ",364.468181818182
+2007,3,"Cenrich Nenrich M H2Oamb  ",279.15
+2007,3,"Cenrich Nenrich M H2Oneg  ",462.32
+2007,3,"Cenrich Nenrich S    ",374.1
+2007,4,"Camb Namb M    ",194.347826086957
+2007,4,"Camb Namb M H2Oamb  ",269.14
+2007,4,"Camb Namb M H2Oneg  ",300.2
+2007,4,"Camb Namb S    ",310.456666666667
+2007,4,"Camb Nenrich M    ",215.9855
+2007,4,"Camb Nenrich M H2Oamb  ",195.623333333333
+2007,4,"Camb Nenrich M H2Oneg  ",147.675
+2007,4,"Camb Nenrich S    ",241.398
+2007,5,"Cenrich Namb M    ",241.245454545455
+2007,5,"Cenrich Namb M H2Oamb  ",345.7
+2007,5,"Cenrich Namb M H2Oneg  ",367.75
+2007,5,"Cenrich Namb S    ",346.74
+2007,5,"Cenrich Nenrich M    ",270.385238095238
+2007,5,"Cenrich Nenrich M H2Oamb  ",488.75
+2007,5,"Cenrich Nenrich M H2Oneg  ",358.45
+2007,5,"Cenrich Nenrich S    ",315.38
+2007,6,"Camb Namb M    ",206.304545454545
+2007,6,"Camb Namb M H2Oamb  ",272.65
+2007,6,"Camb Namb M H2Oneg  ",185.7
+2007,6,"Camb Namb S    ",288.983333333333
+2007,6,"Camb Nenrich M    ",220.745454545455
+2007,6,"Camb Nenrich M H2Oamb  ",215.25
+2007,6,"Camb Nenrich M H2Oneg  ",329.85
+2007,6,"Camb Nenrich S    ",272.76
+2008,1,"Cenrich Namb M    ",222.781904761905
+2008,1,"Cenrich Namb M H2Oamb  ",414.305
+2008,1,"Cenrich Namb M H2Oneg  ",377.9
+2008,1,"Cenrich Namb S    ",303.94
+2008,1,"Cenrich Nenrich M    ",272.362727272727
+2008,1,"Cenrich Nenrich M H2Oamb  ",304.2
+2008,1,"Cenrich Nenrich M H2Oneg  ",328.75
+2008,1,"Cenrich Nenrich S    ",319.3
+2008,2,"Camb Namb M    ",196.8805
+2008,2,"Camb Namb M H2Oamb  ",311.866666666667
+2008,2,"Camb Namb M H2Oneg  ",275.85
+2008,2,"Camb Namb S    ",277.526
+2008,2,"Camb Nenrich M    ",265.234782608696
+2008,2,"Camb Nenrich M H2Oamb  ",521.1
+2008,2,"Camb Nenrich M H2Oneg  ",225.75
+2008,2,"Camb Nenrich S    ",282.12
+2008,3,"Cenrich Namb M    ",245.731863636364
+2008,3,"Cenrich Namb M H2Oamb  ",292.6
+2008,3,"Cenrich Namb M H2Oneg  ",278.65
+2008,3,"Cenrich Namb S    ",335.36
+2008,3,"Cenrich Nenrich M    ",337.753181818182
+2008,3,"Cenrich Nenrich M H2Oamb  ",163
+2008,3,"Cenrich Nenrich M H2Oneg  ",397
+2008,3,"Cenrich Nenrich S    ",242.518
+2008,4,"Camb Namb M    ",226.799130434783
+2008,4,"Camb Namb M H2Oamb  ",297.5
+2008,4,"Camb Namb M H2Oneg  ",317.35
+2008,4,"Camb Namb S    ",221.71
+2008,4,"Camb Nenrich M    ",167.337
+2008,4,"Camb Nenrich M H2Oamb  ",225.896666666667
+2008,4,"Camb Nenrich M H2Oneg  ",194.85
+2008,4,"Camb Nenrich S    ",170.308
+2008,5,"Cenrich Namb M    ",160.475909090909
+2008,5,"Cenrich Namb M H2Oamb  ",271.665
+2008,5,"Cenrich Namb M H2Oneg  ",304.855
+2008,5,"Cenrich Namb S    ",137.184
+2008,5,"Cenrich Nenrich M    ",227.876666666667
+2008,5,"Cenrich Nenrich M H2Oamb  ",292.305
+2008,5,"Cenrich Nenrich M H2Oneg  ",256.3
+2008,5,"Cenrich Nenrich S    ",327.858
+2008,6,"Camb Namb M    ",164.353636363636
+2008,6,"Camb Namb M H2Oamb  ",125.75
+2008,6,"Camb Namb M H2Oneg  ",165.4
+2008,6,"Camb Namb S    ",134.85
+2008,6,"Camb Nenrich M    ",204.155
+2008,6,"Camb Nenrich M H2Oamb  ",227.68
+2008,6,"Camb Nenrich M H2Oneg  ",366.46
+2008,6,"Camb Nenrich S    ",232.64
+2009,1,"Cenrich Namb M    ",201.804761904762
+2009,1,"Cenrich Namb M H2Oamb  ",471
+2009,1,"Cenrich Namb M H2Oneg  ",310.05
+2009,1,"Cenrich Namb S    ",256.56
+2009,1,"Cenrich Nenrich M    ",287.018181818182
+2009,1,"Cenrich Nenrich M H2Oamb  ",303.45
+2009,1,"Cenrich Nenrich M H2Oneg  ",395.5
+2009,1,"Cenrich Nenrich S    ",220.38
+2009,2,"Camb Namb M    ",188.545
+2009,2,"Camb Namb M H2Oamb  ",269
+2009,2,"Camb Namb M H2Oneg  ",219.55
+2009,2,"Camb Namb S    ",283.98
+2009,2,"Camb Nenrich M    ",211.591304347826
+2009,2,"Camb Nenrich M H2Oamb  ",545.2
+2009,2,"Camb Nenrich M H2Oneg  ",210.85
+2009,2,"Camb Nenrich S    ",238.2
+2009,3,"Cenrich Namb M    ",243.940909090909
+2009,3,"Cenrich Namb M H2Oamb  ",471.1
+2009,3,"Cenrich Namb M H2Oneg  ",212.6
+2009,3,"Cenrich Namb S    ",300.842
+2009,3,"Cenrich Nenrich M    ",375.15
+2009,3,"Cenrich Nenrich M H2Oamb  ",146.15
+2009,3,"Cenrich Nenrich M H2Oneg  ",294.45
+2009,3,"Cenrich Nenrich S    ",383.4
+2009,4,"Camb Namb M    ",224.595652173913
+2009,4,"Camb Namb M H2Oamb  ",405.8
+2009,4,"Camb Namb M H2Oneg  ",255.99
+2009,4,"Camb Namb S    ",215.816666666667
+2009,4,"Camb Nenrich M    ",187.655
+2009,4,"Camb Nenrich M H2Oamb  ",294.133333333333
+2009,4,"Camb Nenrich M H2Oneg  ",168.5
+2009,4,"Camb Nenrich S    ",200.08
+2009,5,"Cenrich Namb M    ",185.070454545455
+2009,5,"Cenrich Namb M H2Oamb  ",352.55
+2009,5,"Cenrich Namb M H2Oneg  ",190.06
+2009,5,"Cenrich Namb S    ",153.72
+2009,5,"Cenrich Nenrich M    ",213.26
+2009,5,"Cenrich Nenrich M H2Oamb  ",343.85
+2009,5,"Cenrich Nenrich M H2Oneg  ",256.4
+2009,5,"Cenrich Nenrich S    ",233.366
+2009,6,"Camb Namb M    ",208.216818181818
+2009,6,"Camb Namb M H2Oamb  ",208.95
+2009,6,"Camb Namb M H2Oneg  ",179.985
+2009,6,"Camb Namb S    ",287.883333333333
+2009,6,"Camb Nenrich M    ",238.093181818182
+2009,6,"Camb Nenrich M H2Oamb  ",370.7
+2009,6,"Camb Nenrich M H2Oneg  ",456.04
+2009,6,"Camb Nenrich S    ",320.4
+2010,1,"Cenrich Namb M    ",266.160952380952
+2010,1,"Cenrich Namb M H2Oamb  ",401.395
+2010,1,"Cenrich Namb M H2Oneg  ",538.75
+2010,1,"Cenrich Namb S    ",330.958
+2010,1,"Cenrich Nenrich M    ",334.172272727273
+2010,1,"Cenrich Nenrich M H2Oamb  ",733.635
+2010,1,"Cenrich Nenrich M H2Oneg  ",545.41
+2010,1,"Cenrich Nenrich S    ",525.324
+2010,2,"Camb Namb M    ",331.904
+2010,2,"Camb Namb M H2Oamb  ",331.493333333333
+2010,2,"Camb Namb M H2Oneg  ",262.9
+2010,2,"Camb Namb S    ",242.446
+2010,2,"Camb Nenrich M    ",365.738695652174
+2010,2,"Camb Nenrich M H2Oamb  ",435.81
+2010,2,"Camb Nenrich M H2Oneg  ",320.23
+2010,2,"Camb Nenrich S    ",368.948333333333
+2010,3,"Cenrich Namb M    ",273.720454545455
+2010,3,"Cenrich Namb M H2Oamb  ",653.565
+2010,3,"Cenrich Namb M H2Oneg  ",359.195
+2010,3,"Cenrich Namb S    ",369.146
+2010,3,"Cenrich Nenrich M    ",360.696818181818
+2010,3,"Cenrich Nenrich M H2Oamb  ",249.475
+2010,3,"Cenrich Nenrich M H2Oneg  ",354.97
+2010,3,"Cenrich Nenrich S    ",306.544
+2010,4,"Camb Namb M    ",252.844782608696
+2010,4,"Camb Namb M H2Oamb  ",209.6
+2010,4,"Camb Namb M H2Oneg  ",462.925
+2010,4,"Camb Namb S    ",306.633333333333
+2010,4,"Camb Nenrich M    ",256.766
+2010,4,"Camb Nenrich M H2Oamb  ",353.47
+2010,4,"Camb Nenrich M H2Oneg  ",251.335
+2010,4,"Camb Nenrich S    ",320.604
+2010,5,"Cenrich Namb M    ",189.742727272727
+2010,5,"Cenrich Namb M H2Oamb  ",354.25
+2010,5,"Cenrich Namb M H2Oneg  ",183.2
+2010,5,"Cenrich Namb S    ",208.312
+2010,5,"Cenrich Nenrich M    ",236.864761904762
+2010,5,"Cenrich Nenrich M H2Oamb  ",427.95
+2010,5,"Cenrich Nenrich M H2Oneg  ",328.855
+2010,5,"Cenrich Nenrich S    ",252.208
+2010,6,"Camb Namb M    ",253.040909090909
+2010,6,"Camb Namb M H2Oamb  ",358.2
+2010,6,"Camb Namb M H2Oneg  ",430.86
+2010,6,"Camb Namb S    ",277.083333333333
+2010,6,"Camb Nenrich M    ",335.540909090909
+2010,6,"Camb Nenrich M H2Oamb  ",290.94
+2010,6,"Camb Nenrich M H2Oneg  ",213.7
+2010,6,"Camb Nenrich S    ",232.832
+2011,1,"Cenrich Namb M    ",305.78380952381
+2011,1,"Cenrich Namb M H2Oamb  ",325.9
+2011,1,"Cenrich Namb M H2Oneg  ",461.67
+2011,1,"Cenrich Namb S    ",387.642
+2011,1,"Cenrich Nenrich M    ",292.023636363636
+2011,1,"Cenrich Nenrich M H2Oamb  ",691.85
+2011,1,"Cenrich Nenrich M H2Oneg  ",413.55
+2011,1,"Cenrich Nenrich S    ",616
+2011,2,"Camb Namb M    ",250.577
+2011,2,"Camb Namb M H2Oamb  ",425.766666666667
+2011,2,"Camb Namb M H2Oneg  ",297.45
+2011,2,"Camb Namb S    ",523.08
+2011,2,"Camb Nenrich M    ",391.182608695652
+2011,2,"Camb Nenrich M H2Oamb  ",659.1
+2011,2,"Camb Nenrich M H2Oneg  ",443.95
+2011,2,"Camb Nenrich S    ",447.133333333333
+2011,3,"Cenrich Namb M    ",331.264090909091
+2011,3,"Cenrich Namb M H2Oamb  ",463.695
+2011,3,"Cenrich Namb M H2Oneg  ",344.75
+2011,3,"Cenrich Namb S    ",311.334
+2011,3,"Cenrich Nenrich M    ",540.798636363636
+2011,3,"Cenrich Nenrich M H2Oamb  ",425.7
+2011,3,"Cenrich Nenrich M H2Oneg  ",633.7
+2011,3,"Cenrich Nenrich S    ",523.412
+2011,4,"Camb Namb M    ",300.148260869565
+2011,4,"Camb Namb M H2Oamb  ",503.85
+2011,4,"Camb Namb M H2Oneg  ",522.7
+2011,4,"Camb Namb S    ",340.545
+2011,4,"Camb Nenrich M    ",287.2315
+2011,4,"Camb Nenrich M H2Oamb  ",480.1
+2011,4,"Camb Nenrich M H2Oneg  ",371.755
+2011,4,"Camb Nenrich S    ",371.102
+2011,5,"Cenrich Namb M    ",257.805
+2011,5,"Cenrich Namb M H2Oamb  ",226.9
+2011,5,"Cenrich Namb M H2Oneg  ",274.9
+2011,5,"Cenrich Namb S    ",417.66
+2011,5,"Cenrich Nenrich M    ",308.334285714286
+2011,5,"Cenrich Nenrich M H2Oamb  ",424.9
+2011,5,"Cenrich Nenrich M H2Oneg  ",472.2
+2011,5,"Cenrich Nenrich S    ",655.54
+2011,6,"Camb Namb M    ",235.659545454545
+2011,6,"Camb Namb M H2Oamb  ",293.75
+2011,6,"Camb Namb M H2Oneg  ",339.8
+2011,6,"Camb Namb S    ",266.351666666667
+2011,6,"Camb Nenrich M    ",275.996818181818
+2011,6,"Camb Nenrich M H2Oamb  ",454.15
+2011,6,"Camb Nenrich M H2Oneg  ",373.15
+2011,6,"Camb Nenrich S    ",576.52
+2012,1,"Cenrich Namb M    ",196.079095238095
+2012,1,"Cenrich Namb M H2Oamb HTamb",206.6
+2012,1,"Cenrich Namb M H2Oamb HTelv",471
+2012,1,"Cenrich Namb M H2Oneg HTamb",294.67
+2012,1,"Cenrich Namb M H2Oneg HTelv",281
+2012,1,"Cenrich Namb S    ",354.78
+2012,1,"Cenrich Nenrich M    ",291.836363636364
+2012,1,"Cenrich Nenrich M H2Oamb HTamb",629.4
+2012,1,"Cenrich Nenrich M H2Oamb HTelv",1655.9
+2012,1,"Cenrich Nenrich M H2Oneg HTamb",591.81
+2012,1,"Cenrich Nenrich M H2Oneg HTelv",648.7
+2012,1,"Cenrich Nenrich S    ",292.66
+2012,2,"Camb Namb M    ",238.53380952381
+2012,2,"Camb Namb M H2Oamb HTamb",559.1
+2012,2,"Camb Namb M H2Oamb HTelv",482.1
+2012,2,"Camb Namb M H2Oneg HTamb",234.9
+2012,2,"Camb Namb M H2Oneg HTelv",431.7
+2012,2,"Camb Namb S    ",295.64
+2012,2,"Camb Nenrich M    ",269.793181818182
+2012,2,"Camb Nenrich M H2Oamb HTamb",302.2
+2012,2,"Camb Nenrich M H2Oamb HTelv",623.3
+2012,2,"Camb Nenrich M H2Oneg HTamb",388.3
+2012,2,"Camb Nenrich M H2Oneg HTelv",308.7
+2012,2,"Camb Nenrich S    ",364.133333333333
+2012,3,"Cenrich Namb M    ",286.554545454545
+2012,3,"Cenrich Namb M H2Oamb HTamb",300.9
+2012,3,"Cenrich Namb M H2Oamb HTelv",694
+2012,3,"Cenrich Namb M H2Oneg HTamb",279.6
+2012,3,"Cenrich Namb M H2Oneg HTelv",391.39
+2012,3,"Cenrich Namb S    ",276.662
+2012,3,"Cenrich Nenrich M    ",369.336363636364
+2012,3,"Cenrich Nenrich M H2Oamb HTamb",303.6
+2012,3,"Cenrich Nenrich M H2Oamb HTelv",171.9
+2012,3,"Cenrich Nenrich M H2Oneg HTamb",356.5
+2012,3,"Cenrich Nenrich M H2Oneg HTelv",355.3
+2012,3,"Cenrich Nenrich S    ",417.754
+2012,4,"Camb Namb M    ",227.1185
+2012,4,"Camb Namb M H2Oamb HTamb",268.7
+2012,4,"Camb Namb M H2Oamb HTelv",286.8
+2012,4,"Camb Namb M H2Oneg HTamb",286.8
+2012,4,"Camb Namb M H2Oneg HTelv",345.7
+2012,4,"Camb Namb S    ",316.823333333333
+2012,4,"Camb Nenrich M    ",249.609523809524
+2012,4,"Camb Nenrich M H2Oamb HTamb",197.8
+2012,4,"Camb Nenrich M H2Oamb HTelv",444.5
+2012,4,"Camb Nenrich M H2Oneg HTamb",306.7
+2012,4,"Camb Nenrich M H2Oneg HTelv",268
+2012,4,"Camb Nenrich S    ",351.74
+2012,5,"Cenrich Namb M    ",214.138181818182
+2012,5,"Cenrich Namb M H2Oamb HTamb",221.5
+2012,5,"Cenrich Namb M H2Oamb HTelv",486.79
+2012,5,"Cenrich Namb M H2Oneg HTamb",761
+2012,5,"Cenrich Namb M H2Oneg HTelv",130.66
+2012,5,"Cenrich Namb S    ",306.632
+2012,5,"Cenrich Nenrich M    ",393.867619047619
+2012,5,"Cenrich Nenrich M H2Oamb HTamb",815.05
+2012,5,"Cenrich Nenrich M H2Oamb HTelv",549.1
+2012,5,"Cenrich Nenrich M H2Oneg HTamb",315.5
+2012,5,"Cenrich Nenrich M H2Oneg HTelv",351.18
+2012,5,"Cenrich Nenrich S    ",354.546
+2012,6,"Camb Namb M    ",211.263636363636
+2012,6,"Camb Namb M H2Oamb HTamb",249.1
+2012,6,"Camb Namb M H2Oamb HTelv",351.9
+2012,6,"Camb Namb M H2Oneg HTamb",326.3
+2012,6,"Camb Namb M H2Oneg HTelv",122
+2012,6,"Camb Namb S    ",132.783333333333
+2012,6,"Camb Nenrich M    ",250.518909090909
+2012,6,"Camb Nenrich M H2Oamb HTamb",16
+2012,6,"Camb Nenrich M H2Oamb HTelv",458.7
+2012,6,"Camb Nenrich M H2Oneg HTamb",304.5
+2012,6,"Camb Nenrich M H2Oneg HTelv",544.9
+2012,6,"Camb Nenrich S    ",365.84
+2013,1,"Cenriched  Namb M    ",279.305333333333
+2013,1,"Cenriched  Namb M H2Oamb HTamb",217.15
+2013,1,"Cenriched  Namb M H2Oamb HTelv",710.9
+2013,1,"Cenriched  Namb M H2Oneg HTamb",167.45
+2013,1,"Cenriched  Namb M H2Oneg HTelv",408.3
+2013,1,"Cenriched  Namb S    ",290.04
+2013,1,"Cenriched  Nenrich M    ",320.853636363636
+2013,1,"Cenriched  Nenrich M H2Oamb HTamb",658.9
+2013,1,"Cenriched  Nenrich M H2Oamb HTelv",618.1
+2013,1,"Cenriched  Nenrich M H2Oneg HTamb",155.8
+2013,1,"Cenriched  Nenrich M H2Oneg HTelv",918
+2013,1,"Cenriched  Nenrich S    ",435.222
+2013,2,"Camb Namb M    ",203.9555
+2013,2,"Camb Namb M H2Oamb  ",283
+2013,2,"Camb Namb M H2Oamb HTamb",417
+2013,2,"Camb Namb M H2Oamb HTelv",417.7
+2013,2,"Camb Namb M H2Oneg HTamb",326.51
+2013,2,"Camb Namb M H2Oneg HTelv",455.2
+2013,2,"Camb Namb S    ",227.34
+2013,2,"Camb Nenrich M    ",267.788181818182
+2013,2,"Camb Nenrich M   HTamb",423.81
+2013,2,"Camb Nenrich M H2Oamb HTelv",249.4
+2013,2,"Camb Nenrich M H2Oneg HTamb",229.4
+2013,2,"Camb Nenrich M H2Oneg HTelv",260.4
+2013,2,"Camb Nenrich S    ",276.75
+2013,3,"Cenriched  Namb M    ",280.712272727273
+2013,3,"Cenriched  Namb M H2Oamb HTamb",500.8
+2013,3,"Cenriched  Namb M H2Oamb HTelv",426.6
+2013,3,"Cenriched  Namb M H2Oneg HTamb",455.8
+2013,3,"Cenriched  Namb M H2Oneg HTelv",598.1
+2013,3,"Cenriched  Namb S    ",366.9
+2013,3,"Cenriched  Nenrich M    ",359.283636363636
+2013,3,"Cenriched  Nenrich M H2Oamb HTamb",301.3
+2013,3,"Cenriched  Nenrich M H2Oamb HTelv",819.5
+2013,3,"Cenriched  Nenrich M H2Oneg HTamb",445.8
+2013,3,"Cenriched  Nenrich M H2Oneg HTelv",567.2
+2013,3,"Cenriched  Nenrich S    ",317.184
+2013,4,"Camb Namb M    ",273.286363636364
+2013,4,"Camb Namb M   HTelv",892.3
+2013,4,"Camb Namb M H2Oamb HTamb",503.7
+2013,4,"Camb Namb M H2Oneg HTamb",224.85
+2013,4,"Camb Namb M H2Oneg HTelv",412
+2013,4,"Camb Namb S    ",279.326666666667
+2013,4,"Camb Nenrich M    ",251.543157894737
+2013,4,"Camb Nenrich M H2Oamb  ",420.5
+2013,4,"Camb Nenrich M H2Oamb HTamb",233.4
+2013,4,"Camb Nenrich M H2Oamb HTelv",255.32
+2013,4,"Camb Nenrich M H2Oneg HTamb",284.2
+2013,4,"Camb Nenrich M H2Oneg HTelv",255.2
+2013,4,"Camb Nenrich S    ",341.43
+2013,5,"Cenriched  Namb M    ",266.07
+2013,5,"Cenriched  Namb M H2Oamb HTamb",282.1
+2013,5,"Cenriched  Namb M H2Oamb HTelv",497.705
+2013,5,"Cenriched  Namb M H2Oneg HTamb",451.1
+2013,5,"Cenriched  Namb M H2Oneg HTelv",228.9
+2013,5,"Cenriched  Namb S    ",209.12
+2013,5,"Cenriched  Nenrich M    ",348.844380952381
+2013,5,"Cenriched  Nenrich M H2Oamb HTamb",255.9
+2013,5,"Cenriched  Nenrich M H2Oamb HTelv",692.9
+2013,5,"Cenriched  Nenrich M H2Oneg HTamb",467.7
+2013,5,"Cenriched  Nenrich M H2Oneg HTelv",746.2
+2013,5,"Cenriched  Nenrich S    ",288.24
+2013,6,"Camb Namb M    ",228.513380952381
+2013,6,"Camb Namb M H2Oamb HTamb",315
+2013,6,"Camb Namb M H2Oamb HTelv",458.9
+2013,6,"Camb Namb M H2Oneg HTamb",161.6
+2013,6,"Camb Namb M H2Oneg HTelv",562.1
+2013,6,"Camb Namb S    ",250.885
+2013,6,"Camb Nenrich M    ",308.923904761905
+2013,6,"Camb Nenrich M H2Oamb HTamb",189.1
+2013,6,"Camb Nenrich M H2Oamb HTelv",607.1
+2013,6,"Camb Nenrich M H2Oneg HTamb",288.147
+2013,6,"Camb Nenrich M H2Oneg HTelv",786.9
+2013,6,"Camb Nenrich S    ",290.4224
+2014,1,"Cenriched  Namb M    ",188.995714285714
+2014,1,"Cenriched  Namb M H2Oamb HTamb",135.8
+2014,1,"Cenriched  Namb M H2Oamb HTelv",187.2
+2014,1,"Cenriched  Namb M H2Oneg HTamb",247.7
+2014,1,"Cenriched  Namb M H2Oneg HTelv",610.9
+2014,1,"Cenriched  Namb S    ",246.328
+2014,1,"Cenriched  Nenrich M    ",291.302272727273
+2014,1,"Cenriched  Nenrich M H2Oamb HTamb",253.4
+2014,1,"Cenriched  Nenrich M H2Oamb HTelv",623.4
+2014,1,"Cenriched  Nenrich M H2Oneg HTamb",642.2
+2014,1,"Cenriched  Nenrich M H2Oneg HTelv",408.7
+2014,1,"Cenriched  Nenrich S    ",207.804
+2014,2,"Camb Namb M    ",171.3885
+2014,2,"Camb Namb M H2Oamb  ",568.41
+2014,2,"Camb Namb M H2Oamb HTamb",510.9
+2014,2,"Camb Namb M H2Oamb HTelv",572.9
+2014,2,"Camb Namb M H2Oneg HTamb",208.1
+2014,2,"Camb Namb M H2Oneg HTelv",487
+2014,2,"Camb Namb S    ",255.346
+2014,2,"Camb Nenrich M    ",284.868636363636
+2014,2,"Camb Nenrich M   HTamb",191.79
+2014,2,"Camb Nenrich M H2Oamb HTelv",591.7
+2014,2,"Camb Nenrich M H2Oneg HTamb",273.4
+2014,2,"Camb Nenrich M H2Oneg HTelv",198.9
+2014,2,"Camb Nenrich S    ",377.106666666667
+2014,3,"Cenriched  Namb M    ",292.567727272727
+2014,3,"Cenriched  Namb M H2Oamb HTamb",188.3
+2014,3,"Cenriched  Namb M H2Oamb HTelv",824.1
+2014,3,"Cenriched  Namb M H2Oneg HTamb",265.63
+2014,3,"Cenriched  Namb M H2Oneg HTelv",310.9
+2014,3,"Cenriched  Namb S    ",338.86
+2014,3,"Cenriched  Nenrich M    ",420.836818181818
+2014,3,"Cenriched  Nenrich M H2Oamb HTamb",178
+2014,3,"Cenriched  Nenrich M H2Oamb HTelv",223.4
+2014,3,"Cenriched  Nenrich M H2Oneg HTamb",676.3
+2014,3,"Cenriched  Nenrich M H2Oneg HTelv",327.7
+2014,3,"Cenriched  Nenrich S    ",257.4
+2014,4,"Camb Namb M    ",250.206363636364
+2014,4,"Camb Namb M   HTelv",694.5
+2014,4,"Camb Namb M H2Oamb HTamb",284.1
+2014,4,"Camb Namb M H2Oneg HTamb",681.01
+2014,4,"Camb Namb M H2Oneg HTelv",337.7
+2014,4,"Camb Namb S    ",241.12
+2014,4,"Camb Nenrich M    ",255.7565
+2014,4,"Camb Nenrich M H2Oamb  ",244.9
+2014,4,"Camb Nenrich M H2Oamb HTamb",379.1
+2014,4,"Camb Nenrich M H2Oamb HTelv",622.3
+2014,4,"Camb Nenrich M H2Oneg HTamb",144.4
+2014,4,"Camb Nenrich M H2Oneg HTelv",303.1
+2014,4,"Camb Nenrich S    ",270.922
+2014,5,"Cenriched  Namb M    ",256.535454545455
+2014,5,"Cenriched  Namb M H2Oamb HTamb",141.9
+2014,5,"Cenriched  Namb M H2Oamb HTelv",545.3
+2014,5,"Cenriched  Namb M H2Oneg HTamb",589.7
+2014,5,"Cenriched  Namb M H2Oneg HTelv",371.9
+2014,5,"Cenriched  Namb S    ",273.88
+2014,5,"Cenriched  Nenrich M    ",360.546666666667
+2014,5,"Cenriched  Nenrich M H2Oamb HTamb",318.2
+2014,5,"Cenriched  Nenrich M H2Oamb HTelv",1213
+2014,5,"Cenriched  Nenrich M H2Oneg HTamb",147.7
+2014,5,"Cenriched  Nenrich M H2Oneg HTelv",592.7
+2014,5,"Cenriched  Nenrich S    ",471.624
+2014,6,"Camb Namb M    ",200.131363636364
+2014,6,"Camb Namb M H2Oamb HTamb",245.9
+2014,6,"Camb Namb M H2Oamb HTelv",639.2
+2014,6,"Camb Namb M H2Oneg HTamb",194.96
+2014,6,"Camb Namb M H2Oneg HTelv",259.1
+2014,6,"Camb Namb S    ",222.825
+2014,6,"Camb Nenrich M    ",291.390772727273
+2014,6,"Camb Nenrich M H2Oamb HTamb",85.6
+2014,6,"Camb Nenrich M H2Oamb HTelv",968
+2014,6,"Camb Nenrich M H2Oneg HTamb",217.2
+2014,6,"Camb Nenrich M H2Oneg HTelv",591.6
+2014,6,"Camb Nenrich S    ",522.822
+2015,1,"Cenrich Namb M    ",323.535238095238
+2015,1,"Cenrich Namb M H2Oamb HTamb",205.2
+2015,1,"Cenrich Namb M H2Oamb HTelv",959.4
+2015,1,"Cenrich Namb M H2Oneg HTamb",514.1
+2015,1,"Cenrich Namb M H2Oneg HTelv",561
+2015,1,"Cenrich Namb S    ",271.814
+2015,1,"Cenrich Nenrich M    ",324.595454545455
+2015,1,"Cenrich Nenrich M H2Oamb HTamb",500.22
+2015,1,"Cenrich Nenrich M H2Oamb HTelv",801.5
+2015,1,"Cenrich Nenrich M H2Oneg HTamb",294.2
+2015,1,"Cenrich Nenrich M H2Oneg HTelv",870.07
+2015,1,"Cenrich Nenrich S    ",364.456
+2015,2,"Camb Namb M    ",311.3895
+2015,2,"Camb Namb M H2Oamb  ",259.9
+2015,2,"Camb Namb M H2Oamb HTamb",792.5
+2015,2,"Camb Namb M H2Oamb HTelv",602.3
+2015,2,"Camb Namb M H2Oneg HTamb",233.7
+2015,2,"Camb Namb M H2Oneg HTelv",471.6
+2015,2,"Camb Namb S    ",303.722
+2015,2,"Camb Nenrich M    ",313.714545454545
+2015,2,"Camb Nenrich M   HTamb",283.5
+2015,2,"Camb Nenrich M H2Oamb HTelv",699.3
+2015,2,"Camb Nenrich M H2Oneg HTamb",215.49
+2015,2,"Camb Nenrich M H2Oneg HTelv",379.7
+2015,2,"Camb Nenrich S    ",354.426666666667
+2015,3,"Cenrich Namb M    ",393.685454545455
+2015,3,"Cenrich Namb M H2Oamb HTamb",779.75
+2015,3,"Cenrich Namb M H2Oamb HTelv",930.6
+2015,3,"Cenrich Namb M H2Oneg HTamb",402.33
+2015,3,"Cenrich Namb M H2Oneg HTelv",624.9
+2015,3,"Cenrich Namb S    ",252.002
+2015,3,"Cenrich Nenrich M    ",425.226863636364
+2015,3,"Cenrich Nenrich M H2Oamb HTamb",862
+2015,3,"Cenrich Nenrich M H2Oamb HTelv",738.33
+2015,3,"Cenrich Nenrich M H2Oneg HTamb",513.5
+2015,3,"Cenrich Nenrich M H2Oneg HTelv",662.7
+2015,3,"Cenrich Nenrich S    ",591.26
+2015,4,"Camb Namb M    ",258.651363636364
+2015,4,"Camb Namb M   HTelv",909.2
+2015,4,"Camb Namb M H2Oamb HTamb",887.03
+2015,4,"Camb Namb M H2Oneg HTamb",503.27
+2015,4,"Camb Namb M H2Oneg HTelv",225.55
+2015,4,"Camb Namb S    ",313.79
+2015,4,"Camb Nenrich M    ",402.355
+2015,4,"Camb Nenrich M H2Oamb  ",148.3
+2015,4,"Camb Nenrich M H2Oamb HTamb",351.3
+2015,4,"Camb Nenrich M H2Oamb HTelv",452.7
+2015,4,"Camb Nenrich M H2Oneg HTamb",222.06
+2015,4,"Camb Nenrich M H2Oneg HTelv",251.65
+2015,4,"Camb Nenrich S    ",249.38
+2015,5,"Cenrich Namb M    ",341.011363636364
+2015,5,"Cenrich Namb M H2Oamb HTamb",295.7
+2015,5,"Cenrich Namb M H2Oamb HTelv",307.2
+2015,5,"Cenrich Namb M H2Oneg HTamb",531.1
+2015,5,"Cenrich Namb M H2Oneg HTelv",423.9
+2015,5,"Cenrich Namb S    ",288.972
+2015,5,"Cenrich Nenrich M    ",518.387142857143
+2015,5,"Cenrich Nenrich M H2Oamb HTamb",158.24
+2015,5,"Cenrich Nenrich M H2Oamb HTelv",208.9
+2015,5,"Cenrich Nenrich M H2Oneg HTamb",925.4
+2015,5,"Cenrich Nenrich M H2Oneg HTelv",695.2
+2015,5,"Cenrich Nenrich S    ",514.5
+2015,6,"Camb Namb M    ",463.087272727273
+2015,6,"Camb Namb M H2Oamb HTamb",482.5
+2015,6,"Camb Namb M H2Oamb HTelv",248.86
+2015,6,"Camb Namb M H2Oneg HTamb",274.4
+2015,6,"Camb Namb M H2Oneg HTelv",225.3
+2015,6,"Camb Namb S    ",295.1335
+2015,6,"Camb Nenrich M    ",442.524636363636
+2015,6,"Camb Nenrich M H2Oamb HTamb",528.7
+2015,6,"Camb Nenrich M H2Oamb HTelv",743.8
+2015,6,"Camb Nenrich M H2Oneg HTamb",315.82
+2015,6,"Camb Nenrich M H2Oneg HTelv",645
+2015,6,"Camb Nenrich S    ",657.632
+2016,1,"Cenrich Namb M    ",332.245238095238
+2016,1,"Cenrich Namb M H2Oamb HTamb",685.1
+2016,1,"Cenrich Namb M H2Oamb HTelv",538.26
+2016,1,"Cenrich Namb M H2Oneg HTamb",402
+2016,1,"Cenrich Namb M H2Oneg HTelv",844.6
+2016,1,"Cenrich Namb S    ",444.054
+2016,1,"Cenrich Nenrich M    ",412.949545454545
+2016,1,"Cenrich Nenrich M H2Oamb HTamb",940.65
+2016,1,"Cenrich Nenrich M H2Oamb HTelv",339.1
+2016,1,"Cenrich Nenrich M H2Oneg HTamb",380.9
+2016,1,"Cenrich Nenrich M H2Oneg HTelv",1187.2
+2016,1,"Cenrich Nenrich S    ",364.57
+2016,2,"Camb Namb M    ",349.4725
+2016,2,"Camb Namb M H2Oamb  ",544.08
+2016,2,"Camb Namb M H2Oamb HTamb",370.6
+2016,2,"Camb Namb M H2Oamb HTelv",414.2
+2016,2,"Camb Namb M H2Oneg HTamb",251.5
 2016,2,"Camb Namb M H2Oneg HTelv",246.3
-2016,2,"Camb Namb S    ",382.712
-2016,2,"Camb Nenrich M    ",383.330909090909
-2016,2,"Camb Nenrich M   HTamb",311.6
-2016,2,"Camb Nenrich M H2Oamb HTelv",646.7
-2016,2,"Camb Nenrich M H2Oneg HTamb",177.8
-2016,2,"Camb Nenrich M H2Oneg HTelv",675.55
-2016,2,"Camb Nenrich S    ",430.728333333333
-2016,3,"Cenrich Namb M    ",529.775909090909
-2016,3,"Cenrich Namb M H2Oamb HTamb",376.9
-2016,3,"Cenrich Namb M H2Oamb HTelv",1163.8
-2016,3,"Cenrich Namb M H2Oneg HTamb",312.7
-2016,3,"Cenrich Namb M H2Oneg HTelv",490
-2016,3,"Cenrich Namb S    ",382.16
-2016,3,"Cenrich Nenrich M    ",491.790909090909
-2016,3,"Cenrich Nenrich M H2Oamb HTamb",737.8
-2016,3,"Cenrich Nenrich M H2Oamb HTelv",495.4
-2016,3,"Cenrich Nenrich M H2Oneg HTamb",1303.7
-2016,3,"Cenrich Nenrich M H2Oneg HTelv",2017.71
-2016,3,"Cenrich Nenrich S    ",525.8
-2016,4,"Camb Namb M    ",271.281363636364
-2016,4,"Camb Namb M   HTelv",647.4
-2016,4,"Camb Namb M H2Oamb HTamb",403.2
-2016,4,"Camb Namb M H2Oneg HTamb",339.8
-2016,4,"Camb Namb M H2Oneg HTelv",257.8
-2016,4,"Camb Namb S    ",475.356666666667
-2016,4,"Camb Nenrich M    ",446.2985
-2016,4,"Camb Nenrich M H2Oamb  ",282
-2016,4,"Camb Nenrich M H2Oamb HTamb",531.5
-2016,4,"Camb Nenrich M H2Oamb HTelv",1201.72
+2016,2,"Camb Namb S    ",302.352
+2016,2,"Camb Nenrich M    ",359.986818181818
+2016,2,"Camb Nenrich M   HTamb",263
+2016,2,"Camb Nenrich M H2Oamb HTelv",601.7
+2016,2,"Camb Nenrich M H2Oneg HTamb",148.4
+2016,2,"Camb Nenrich M H2Oneg HTelv",617.05
+2016,2,"Camb Nenrich S    ",391.928333333333
+2016,3,"Cenrich Namb M    ",477.035
+2016,3,"Cenrich Namb M H2Oamb HTamb",370.8
+2016,3,"Cenrich Namb M H2Oamb HTelv",1010.4
+2016,3,"Cenrich Namb M H2Oneg HTamb",252.9
+2016,3,"Cenrich Namb M H2Oneg HTelv",469.4
+2016,3,"Cenrich Namb S    ",302.26
+2016,3,"Cenrich Nenrich M    ",422.745454545455
+2016,3,"Cenrich Nenrich M H2Oamb HTamb",722.7
+2016,3,"Cenrich Nenrich M H2Oamb HTelv",458.6
+2016,3,"Cenrich Nenrich M H2Oneg HTamb",1211.7
+2016,3,"Cenrich Nenrich M H2Oneg HTelv",1954.61
+2016,3,"Cenrich Nenrich S    ",475.68
+2016,4,"Camb Namb M    ",248.821363636364
+2016,4,"Camb Namb M   HTelv",618.1
+2016,4,"Camb Namb M H2Oamb HTamb",402.2
+2016,4,"Camb Namb M H2Oneg HTamb",332
+2016,4,"Camb Namb M H2Oneg HTelv",246.2
+2016,4,"Camb Namb S    ",404.923333333333
+2016,4,"Camb Nenrich M    ",421.3935
+2016,4,"Camb Nenrich M H2Oamb  ",262.9
+2016,4,"Camb Nenrich M H2Oamb HTamb",529.1
+2016,4,"Camb Nenrich M H2Oamb HTelv",1192.42
 2016,4,"Camb Nenrich M H2Oneg HTamb",1064.4
-2016,4,"Camb Nenrich M H2Oneg HTelv",342.4
-2016,4,"Camb Nenrich S    ",700.54
-2016,5,"Cenrich Namb M    ",407.940909090909
+2016,4,"Camb Nenrich M H2Oneg HTelv",337.5
+2016,4,"Camb Nenrich S    ",581.08
+2016,5,"Cenrich Namb M    ",381.363636363636
 2016,5,"Cenrich Namb M H2Oamb HTamb",685.75
-2016,5,"Cenrich Namb M H2Oamb HTelv",700.8
-2016,5,"Cenrich Namb M H2Oneg HTamb",564.8
-2016,5,"Cenrich Namb M H2Oneg HTelv",277
-2016,5,"Cenrich Namb S    ",295.46
-2016,5,"Cenrich Nenrich M    ",468.854761904762
-2016,5,"Cenrich Nenrich M H2Oamb HTamb",780
+2016,5,"Cenrich Namb M H2Oamb HTelv",693.3
+2016,5,"Cenrich Namb M H2Oneg HTamb",557.1
+2016,5,"Cenrich Namb M H2Oneg HTelv",270.7
+2016,5,"Cenrich Namb S    ",252.16
+2016,5,"Cenrich Nenrich M    ",435.483333333333
+2016,5,"Cenrich Nenrich M H2Oamb HTamb",776.4
 2016,5,"Cenrich Nenrich M H2Oamb HTelv",711.8
 2016,5,"Cenrich Nenrich M H2Oneg HTamb",1301.31
-2016,5,"Cenrich Nenrich M H2Oneg HTelv",535.5
-2016,5,"Cenrich Nenrich S    ",560.758
-2016,6,"Camb Namb M    ",344.089090909091
-2016,6,"Camb Namb M H2Oamb HTamb",765.7
-2016,6,"Camb Namb M H2Oamb HTelv",913.1
-2016,6,"Camb Namb M H2Oneg HTamb",930.1
-2016,6,"Camb Namb M H2Oneg HTelv",544.68
-2016,6,"Camb Namb S    ",428.17
-2016,6,"Camb Nenrich M    ",431.296363636364
-2016,6,"Camb Nenrich M H2Oamb HTamb",401.9
-2016,6,"Camb Nenrich M H2Oamb HTelv",978.9
-2016,6,"Camb Nenrich M H2Oneg HTamb",321
-2016,6,"Camb Nenrich M H2Oneg HTelv",794.8
-2016,6,"Camb Nenrich S    ",615.08
-2017,1,"Cenrich Namb M    ",217.874285714286
-2017,1,"Cenrich Namb M H2Oamb HTamb",1790.22
-2017,1,"Cenrich Namb M H2Oamb HTelv",506.01
-2017,1,"Cenrich Namb M H2Oneg HTamb",470.8
-2017,1,"Cenrich Namb M H2Oneg HTelv",592.51
-2017,1,"Cenrich Namb S    ",398.452
-2017,1,"Cenrich Nenrich M    ",272.709090909091
-2017,1,"Cenrich Nenrich M H2Oamb HTamb",375.8
-2017,1,"Cenrich Nenrich M H2Oamb HTelv",597.5
-2017,1,"Cenrich Nenrich M H2Oneg HTamb",475.9
-2017,1,"Cenrich Nenrich M H2Oneg HTelv",1042.9
-2017,1,"Cenrich Nenrich S    ",184.196
-2017,2,"Camb Namb M    ",228.535
-2017,2,"Camb Namb M H2Oamb  ",434.5
-2017,2,"Camb Namb M H2Oamb HTamb",410.3
-2017,2,"Camb Namb M H2Oamb HTelv",303.9
-2017,2,"Camb Namb M H2Oneg HTamb",304.5
-2017,2,"Camb Namb M H2Oneg HTelv",173.4
-2017,2,"Camb Namb S    ",200.8
-2017,2,"Camb Nenrich M    ",263.931818181818
-2017,2,"Camb Nenrich M   HTamb",261.2
-2017,2,"Camb Nenrich M H2Oamb HTelv",374.5
-2017,2,"Camb Nenrich M H2Oneg HTamb",124.6
-2017,2,"Camb Nenrich M H2Oneg HTelv",306.4
-2017,2,"Camb Nenrich S    ",232.233333333333
-2017,3,"Cenrich Namb M    ",292.762727272727
-2017,3,"Cenrich Namb M H2Oamb HTamb",705.1
-2017,3,"Cenrich Namb M H2Oamb HTelv",1136.9
-2017,3,"Cenrich Namb M H2Oneg HTamb",456.4
-2017,3,"Cenrich Namb M H2Oneg HTelv",505.6
-2017,3,"Cenrich Namb S    ",204.88
-2017,3,"Cenrich Nenrich M    ",362.486363636364
-2017,3,"Cenrich Nenrich M H2Oamb HTamb",393.95
-2017,3,"Cenrich Nenrich M H2Oamb HTelv",493.4
-2017,3,"Cenrich Nenrich M H2Oneg HTamb",754.5
-2017,3,"Cenrich Nenrich M H2Oneg HTelv",257.4
-2017,3,"Cenrich Nenrich S    ",369.96
-2017,4,"Camb Namb M    ",189.310454545455
-2017,4,"Camb Namb M   HTelv",657.3
-2017,4,"Camb Namb M H2Oamb HTamb",866.7
-2017,4,"Camb Namb M H2Oneg HTamb",593.3
-2017,4,"Camb Namb M H2Oneg HTelv",642.5
-2017,4,"Camb Namb S    ",275.351666666667
-2017,4,"Camb Nenrich M    ",194.65255
-2017,4,"Camb Nenrich M H2Oamb  ",151.7
-2017,4,"Camb Nenrich M H2Oamb HTamb",336.8
-2017,4,"Camb Nenrich M H2Oamb HTelv",370.2
-2017,4,"Camb Nenrich M H2Oneg HTamb",217.6
-2017,4,"Camb Nenrich M H2Oneg HTelv",370.1
-2017,4,"Camb Nenrich S    ",250.76
-2017,5,"Cenrich Namb M    ",244.504545454545
-2017,5,"Cenrich Namb M H2Oamb HTamb",282.7
-2017,5,"Cenrich Namb M H2Oamb HTelv",512.2
-2017,5,"Cenrich Namb M H2Oneg HTamb",507.8
-2017,5,"Cenrich Namb M H2Oneg HTelv",183.22
-2017,5,"Cenrich Namb S    ",211.54
-2017,5,"Cenrich Nenrich M    ",213.74380952381
+2016,5,"Cenrich Nenrich M H2Oneg HTelv",531
+2016,5,"Cenrich Nenrich S    ",512.198
+2016,6,"Camb Namb M    ",316.107272727273
+2016,6,"Camb Namb M H2Oamb HTamb",695.6
+2016,6,"Camb Namb M H2Oamb HTelv",699.6
+2016,6,"Camb Namb M H2Oneg HTamb",784.6
+2016,6,"Camb Namb M H2Oneg HTelv",490.38
+2016,6,"Camb Namb S    ",381.57
+2016,6,"Camb Nenrich M    ",411.332727272727
+2016,6,"Camb Nenrich M H2Oamb HTamb",383.8
+2016,6,"Camb Nenrich M H2Oamb HTelv",934
+2016,6,"Camb Nenrich M H2Oneg HTamb",291.3
+2016,6,"Camb Nenrich M H2Oneg HTelv",707.7
+2016,6,"Camb Nenrich S    ",561.34
+2017,1,"Cenrich Namb M    ",207.43619047619
+2017,1,"Cenrich Namb M H2Oamb HTamb",1768.52
+2017,1,"Cenrich Namb M H2Oamb HTelv",433.41
+2017,1,"Cenrich Namb M H2Oneg HTamb",275
+2017,1,"Cenrich Namb M H2Oneg HTelv",440.01
+2017,1,"Cenrich Namb S    ",320.212
+2017,1,"Cenrich Nenrich M    ",249.7
+2017,1,"Cenrich Nenrich M H2Oamb HTamb",320
+2017,1,"Cenrich Nenrich M H2Oamb HTelv",581.1
+2017,1,"Cenrich Nenrich M H2Oneg HTamb",386.5
+2017,1,"Cenrich Nenrich M H2Oneg HTelv",980.7
+2017,1,"Cenrich Nenrich S    ",153.016
+2017,2,"Camb Namb M    ",202.195
+2017,2,"Camb Namb M H2Oamb  ",321
+2017,2,"Camb Namb M H2Oamb HTamb",393.3
+2017,2,"Camb Namb M H2Oamb HTelv",256.4
+2017,2,"Camb Namb M H2Oneg HTamb",286.1
+2017,2,"Camb Namb M H2Oneg HTelv",171.9
+2017,2,"Camb Namb S    ",166.24
+2017,2,"Camb Nenrich M    ",223.454545454545
+2017,2,"Camb Nenrich M   HTamb",208
+2017,2,"Camb Nenrich M H2Oamb HTelv",339.7
+2017,2,"Camb Nenrich M H2Oneg HTamb",107.5
+2017,2,"Camb Nenrich M H2Oneg HTelv",289.7
+2017,2,"Camb Nenrich S    ",158.916666666667
+2017,3,"Cenrich Namb M    ",260.585454545455
+2017,3,"Cenrich Namb M H2Oamb HTamb",609
+2017,3,"Cenrich Namb M H2Oamb HTelv",1053.5
+2017,3,"Cenrich Namb M H2Oneg HTamb",350.1
+2017,3,"Cenrich Namb M H2Oneg HTelv",478.5
+2017,3,"Cenrich Namb S    ",145.08
+2017,3,"Cenrich Nenrich M    ",332.040909090909
+2017,3,"Cenrich Nenrich M H2Oamb HTamb",380.55
+2017,3,"Cenrich Nenrich M H2Oamb HTelv",443.9
+2017,3,"Cenrich Nenrich M H2Oneg HTamb",683.2
+2017,3,"Cenrich Nenrich M H2Oneg HTelv",213.7
+2017,3,"Cenrich Nenrich S    ",352.36
+2017,4,"Camb Namb M    ",166.837727272727
+2017,4,"Camb Namb M   HTelv",632.5
+2017,4,"Camb Namb M H2Oamb HTamb",724.5
+2017,4,"Camb Namb M H2Oneg HTamb",387.4
+2017,4,"Camb Namb M H2Oneg HTelv",520.5
+2017,4,"Camb Namb S    ",229.101666666667
+2017,4,"Camb Nenrich M    ",171.36755
+2017,4,"Camb Nenrich M H2Oamb  ",117.7
+2017,4,"Camb Nenrich M H2Oamb HTamb",304.9
+2017,4,"Camb Nenrich M H2Oamb HTelv",347.4
+2017,4,"Camb Nenrich M H2Oneg HTamb",188.4
+2017,4,"Camb Nenrich M H2Oneg HTelv",318.7
+2017,4,"Camb Nenrich S    ",213
+2017,5,"Cenrich Namb M    ",223.636363636364
+2017,5,"Cenrich Namb M H2Oamb HTamb",282.6
+2017,5,"Cenrich Namb M H2Oamb HTelv",497.2
+2017,5,"Cenrich Namb M H2Oneg HTamb",495.2
+2017,5,"Cenrich Namb M H2Oneg HTelv",182.82
+2017,5,"Cenrich Namb S    ",153.94
+2017,5,"Cenrich Nenrich M    ",203.715238095238
 2017,5,"Cenrich Nenrich M H2Oamb HTamb",299.7
-2017,5,"Cenrich Nenrich M H2Oamb HTelv",1095.8
+2017,5,"Cenrich Nenrich M H2Oamb HTelv",1072.4
 2017,5,"Cenrich Nenrich M H2Oneg HTamb",260.1
-2017,5,"Cenrich Nenrich M H2Oneg HTelv",1096.1
-2017,5,"Cenrich Nenrich S    ",264.46
-2017,6,"Camb Namb M    ",207.623636363636
-2017,6,"Camb Namb M H2Oamb HTamb",335.1
-2017,6,"Camb Namb M H2Oamb HTelv",287
-2017,6,"Camb Namb M H2Oneg HTamb",174.2
-2017,6,"Camb Namb M H2Oneg HTelv",543.8
-2017,6,"Camb Namb S    ",164.458333333333
-2017,6,"Camb Nenrich M    ",211.407727272727
-2017,6,"Camb Nenrich M H2Oamb HTamb",186.3
-2017,6,"Camb Nenrich M H2Oamb HTelv",584.9
-2017,6,"Camb Nenrich M H2Oneg HTamb",356.6
-2017,6,"Camb Nenrich M H2Oneg HTelv",490.8
-2017,6,"Camb Nenrich S    ",430.32
-2018,1,"Cenrich Namb M    ",366.927142857143
-2018,1,"Cenrich Namb M H2Oamb HTamb",254.33
-2018,1,"Cenrich Namb M H2Oamb HTelv",251.73
-2018,1,"Cenrich Namb M H2Oneg HTamb",422.9
-2018,1,"Cenrich Namb M H2Oneg HTelv",634.52
-2018,1,"Cenrich Namb S    ",515.278
-2018,1,"Cenrich Nenrich M    ",400.669090909091
-2018,1,"Cenrich Nenrich M H2Oamb HTamb",525.53
-2018,1,"Cenrich Nenrich M H2Oamb HTelv",623.28
-2018,1,"Cenrich Nenrich M H2Oneg HTamb",462.85
-2018,1,"Cenrich Nenrich M H2Oneg HTelv",842.1
-2018,1,"Cenrich Nenrich S    ",216.296
-2018,2,"Camb Namb M    ",309.91745
-2018,2,"Camb Namb M H2Oamb  ",570.12
-2018,2,"Camb Namb M H2Oamb HTamb",881.8
-2018,2,"Camb Namb M H2Oamb HTelv",692.4
-2018,2,"Camb Namb M H2Oneg HTamb",120.18
-2018,2,"Camb Namb M H2Oneg HTelv",634.75
-2018,2,"Camb Namb S    ",233.672
-2018,2,"Camb Nenrich M    ",342.884545454545
-2018,2,"Camb Nenrich M   HTamb",285.2
-2018,2,"Camb Nenrich M H2Oamb HTelv",741.2
-2018,2,"Camb Nenrich M H2Oneg HTamb",196.37
-2018,2,"Camb Nenrich M H2Oneg HTelv",752.1
-2018,2,"Camb Nenrich S    ",359.88
-2018,3,"Cenrich Namb M    ",348.487727272727
-2018,3,"Cenrich Namb M H2Oamb HTamb",164.6
-2018,3,"Cenrich Namb M H2Oamb HTelv",1047.16
-2018,3,"Cenrich Namb M H2Oneg HTamb",338.65
-2018,3,"Cenrich Namb M H2Oneg HTelv",369.93
-2018,3,"Cenrich Namb S    ",372.22
-2018,3,"Cenrich Nenrich M    ",507.258590909091
-2018,3,"Cenrich Nenrich M H2Oamb HTamb",449.84
-2018,3,"Cenrich Nenrich M H2Oamb HTelv",625.9
-2018,3,"Cenrich Nenrich M H2Oneg HTamb",823.48
-2018,3,"Cenrich Nenrich M H2Oneg HTelv",731.8
-2018,3,"Cenrich Nenrich S    ",337.8
-2018,4,"Camb Namb M    ",270.344545454545
-2018,4,"Camb Namb M   HTelv",509.29
-2018,4,"Camb Namb M H2Oamb HTamb",320.4
-2018,4,"Camb Namb M H2Oneg HTamb",437.19
-2018,4,"Camb Namb M H2Oneg HTelv",418.9
-2018,4,"Camb Namb S    ",404.15
-2018,4,"Camb Nenrich M    ",320.7475
-2018,4,"Camb Nenrich M H2Oamb  ",149.7
-2018,4,"Camb Nenrich M H2Oamb HTamb",340.95
-2018,4,"Camb Nenrich M H2Oamb HTelv",536.68
-2018,4,"Camb Nenrich M H2Oneg HTamb",551.25
-2018,4,"Camb Nenrich M H2Oneg HTelv",356.97
-2018,4,"Camb Nenrich S    ",313.16
-2018,5,"Cenrich Namb M    ",293.84
-2018,5,"Cenrich Namb M H2Oamb HTamb",318.7
-2018,5,"Cenrich Namb M H2Oamb HTelv",577.95
-2018,5,"Cenrich Namb M H2Oneg HTamb",687
-2018,5,"Cenrich Namb M H2Oneg HTelv",696.81
-2018,5,"Cenrich Namb S    ",286.108
-2018,5,"Cenrich Nenrich M    ",423.489523809524
-2018,5,"Cenrich Nenrich M H2Oamb HTamb",705.6
-2018,5,"Cenrich Nenrich M H2Oamb HTelv",770.22
-2018,5,"Cenrich Nenrich M H2Oneg HTamb",392.45
-2018,5,"Cenrich Nenrich M H2Oneg HTelv",558.46
-2018,5,"Cenrich Nenrich S    ",305.326
-2018,6,"Camb Namb M    ",361.983636363636
-2018,6,"Camb Namb M H2Oamb HTamb",464.73
-2018,6,"Camb Namb M H2Oamb HTelv",503.08
-2018,6,"Camb Namb M H2Oneg HTamb",471.3
-2018,6,"Camb Namb M H2Oneg HTelv",271.47
-2018,6,"Camb Namb S    ",326.448333333333
-2018,6,"Camb Nenrich M    ",452.245909090909
-2018,6,"Camb Nenrich M H2Oamb HTamb",497.3
-2018,6,"Camb Nenrich M H2Oamb HTelv",862.95
-2018,6,"Camb Nenrich M H2Oneg HTamb",217.88
-2018,6,"Camb Nenrich M H2Oneg HTelv",849.11
-2018,6,"Camb Nenrich S    ",396.898
-2019,1,"Cenrich Namb M    ",320.780047619048
-2019,1,"Cenrich Namb M H2Oamb HTamb",887.45
-2019,1,"Cenrich Namb M H2Oamb HTelv",637
-2019,1,"Cenrich Namb M H2Oneg HTamb",342
-2019,1,"Cenrich Namb M H2Oneg HTelv",501.4
-2019,1,"Cenrich Namb S    ",428.98
-2019,1,"Cenrich Nenrich M    ",313.213227272727
-2019,1,"Cenrich Nenrich M H2Oamb HTamb",541.5
-2019,1,"Cenrich Nenrich M H2Oamb HTelv",341.5
-2019,1,"Cenrich Nenrich M H2Oneg HTamb",395.2
-2019,1,"Cenrich Nenrich M H2Oneg HTelv",1096.1
-2019,1,"Cenrich Nenrich S    ",345.84
-2019,2,"Camb Namb M    ",230.3905
-2019,2,"Camb Namb M H2Oamb  ",785.53
-2019,2,"Camb Namb M H2Oamb HTamb",514.1
-2019,2,"Camb Namb M H2Oamb HTelv",460.02
-2019,2,"Camb Namb M H2Oneg HTamb",338.01
-2019,2,"Camb Namb M H2Oneg HTelv",510.3
-2019,2,"Camb Namb S    ",277.692
-2019,2,"Camb Nenrich M    ",211.049545454545
-2019,2,"Camb Nenrich M   HTamb",178
-2019,2,"Camb Nenrich M H2Oamb HTelv",474.6
-2019,2,"Camb Nenrich M H2Oneg HTamb",314.8
-2019,2,"Camb Nenrich M H2Oneg HTelv",159
-2019,2,"Camb Nenrich S    ",237.228333333333
-2019,3,"Cenrich Namb M    ",281.056818181818
-2019,3,"Cenrich Namb M H2Oamb HTamb",335.77
-2019,3,"Cenrich Namb M H2Oamb HTelv",248.92
-2019,3,"Cenrich Namb M H2Oneg HTamb",476.2
+2017,5,"Cenrich Nenrich M H2Oneg HTelv",1093.1
+2017,5,"Cenrich Nenrich S    ",249.56
+2017,6,"Camb Namb M    ",185.450909090909
+2017,6,"Camb Namb M H2Oamb HTamb",324.3
+2017,6,"Camb Namb M H2Oamb HTelv",274.5
+2017,6,"Camb Namb M H2Oneg HTamb",172.2
+2017,6,"Camb Namb M H2Oneg HTelv",526
+2017,6,"Camb Namb S    ",138.158333333333
+2017,6,"Camb Nenrich M    ",188.116818181818
+2017,6,"Camb Nenrich M H2Oamb HTamb",185.7
+2017,6,"Camb Nenrich M H2Oamb HTelv",583.3
+2017,6,"Camb Nenrich M H2Oneg HTamb",355.6
+2017,6,"Camb Nenrich M H2Oneg HTelv",408.8
+2017,6,"Camb Nenrich S    ",368.72
+2018,1,"Cenrich Namb M    ",331.33380952381
+2018,1,"Cenrich Namb M H2Oamb HTamb",223.13
+2018,1,"Cenrich Namb M H2Oamb HTelv",201.53
+2018,1,"Cenrich Namb M H2Oneg HTamb",301.8
+2018,1,"Cenrich Namb M H2Oneg HTelv",577.72
+2018,1,"Cenrich Namb S    ",411.438
+2018,1,"Cenrich Nenrich M    ",373.705454545455
+2018,1,"Cenrich Nenrich M H2Oamb HTamb",474.23
+2018,1,"Cenrich Nenrich M H2Oamb HTelv",576.18
+2018,1,"Cenrich Nenrich M H2Oneg HTamb",404.95
+2018,1,"Cenrich Nenrich M H2Oneg HTelv",818.3
+2018,1,"Cenrich Nenrich S    ",173.596
+2018,2,"Camb Namb M    ",273.40145
+2018,2,"Camb Namb M H2Oamb  ",527.02
+2018,2,"Camb Namb M H2Oamb HTamb",875.5
+2018,2,"Camb Namb M H2Oamb HTelv",601.7
+2018,2,"Camb Namb M H2Oneg HTamb",111.68
+2018,2,"Camb Namb M H2Oneg HTelv",631.75
+2018,2,"Camb Namb S    ",167.252
+2018,2,"Camb Nenrich M    ",304.345909090909
+2018,2,"Camb Nenrich M   HTamb",269.4
+2018,2,"Camb Nenrich M H2Oamb HTelv",711.7
+2018,2,"Camb Nenrich M H2Oneg HTamb",158.57
+2018,2,"Camb Nenrich M H2Oneg HTelv",725.1
+2018,2,"Camb Nenrich S    ",301.23
+2018,3,"Cenrich Namb M    ",312.748181818182
+2018,3,"Cenrich Namb M H2Oamb HTamb",152.7
+2018,3,"Cenrich Namb M H2Oamb HTelv",924.66
+2018,3,"Cenrich Namb M H2Oneg HTamb",241.75
+2018,3,"Cenrich Namb M H2Oneg HTelv",318.53
+2018,3,"Cenrich Namb S    ",311.988
+2018,3,"Cenrich Nenrich M    ",424.949045454545
+2018,3,"Cenrich Nenrich M H2Oamb HTamb",449.13
+2018,3,"Cenrich Nenrich M H2Oamb HTelv",583.1
+2018,3,"Cenrich Nenrich M H2Oneg HTamb",753.88
+2018,3,"Cenrich Nenrich M H2Oneg HTelv",662
+2018,3,"Cenrich Nenrich S    ",310.576
+2018,4,"Camb Namb M    ",236.482272727273
+2018,4,"Camb Namb M   HTelv",501.49
+2018,4,"Camb Namb M H2Oamb HTamb",284.2
+2018,4,"Camb Namb M H2Oneg HTamb",413.79
+2018,4,"Camb Namb M H2Oneg HTelv",295
+2018,4,"Camb Namb S    ",314.466666666667
+2018,4,"Camb Nenrich M    ",305.818
+2018,4,"Camb Nenrich M H2Oamb  ",147.7
+2018,4,"Camb Nenrich M H2Oamb HTamb",222.05
+2018,4,"Camb Nenrich M H2Oamb HTelv",486.58
+2018,4,"Camb Nenrich M H2Oneg HTamb",486.55
+2018,4,"Camb Nenrich M H2Oneg HTelv",353.87
+2018,4,"Camb Nenrich S    ",286.84
+2018,5,"Cenrich Namb M    ",286.317272727273
+2018,5,"Cenrich Namb M H2Oamb HTamb",305.2
+2018,5,"Cenrich Namb M H2Oamb HTelv",559.85
+2018,5,"Cenrich Namb M H2Oneg HTamb",667.7
+2018,5,"Cenrich Namb M H2Oneg HTelv",624.01
+2018,5,"Cenrich Namb S    ",262.408
+2018,5,"Cenrich Nenrich M    ",395.50380952381
+2018,5,"Cenrich Nenrich M H2Oamb HTamb",697
+2018,5,"Cenrich Nenrich M H2Oamb HTelv",751.92
+2018,5,"Cenrich Nenrich M H2Oneg HTamb",382.55
+2018,5,"Cenrich Nenrich M H2Oneg HTelv",464.96
+2018,5,"Cenrich Nenrich S    ",276.256
+2018,6,"Camb Namb M    ",325.656363636364
+2018,6,"Camb Namb M H2Oamb HTamb",383.83
+2018,6,"Camb Namb M H2Oamb HTelv",447.18
+2018,6,"Camb Namb M H2Oneg HTamb",443.2
+2018,6,"Camb Namb M H2Oneg HTelv",236.87
+2018,6,"Camb Namb S    ",240.265
+2018,6,"Camb Nenrich M    ",437.081363636364
+2018,6,"Camb Nenrich M H2Oamb HTamb",407.8
+2018,6,"Camb Nenrich M H2Oamb HTelv",853.95
+2018,6,"Camb Nenrich M H2Oneg HTamb",188.88
+2018,6,"Camb Nenrich M H2Oneg HTelv",839.81
+2018,6,"Camb Nenrich S    ",312.218
+2019,1,"Cenrich Namb M    ",276.28480952381
+2019,1,"Cenrich Namb M H2Oamb HTamb",876.15
+2019,1,"Cenrich Namb M H2Oamb HTelv",565.7
+2019,1,"Cenrich Namb M H2Oneg HTamb",255.9
+2019,1,"Cenrich Namb M H2Oneg HTelv",461.6
+2019,1,"Cenrich Namb S    ",354.7
+2019,1,"Cenrich Nenrich M    ",267.335954545455
+2019,1,"Cenrich Nenrich M H2Oamb HTamb",484.5
+2019,1,"Cenrich Nenrich M H2Oamb HTelv",339.6
+2019,1,"Cenrich Nenrich M H2Oneg HTamb",362.9
+2019,1,"Cenrich Nenrich M H2Oneg HTelv",1092.1
+2019,1,"Cenrich Nenrich S    ",223.88
+2019,2,"Camb Namb M    ",191.3755
+2019,2,"Camb Namb M H2Oamb  ",742.73
+2019,2,"Camb Namb M H2Oamb HTamb",513.2
+2019,2,"Camb Namb M H2Oamb HTelv",420.42
+2019,2,"Camb Namb M H2Oneg HTamb",233.41
+2019,2,"Camb Namb M H2Oneg HTelv",423.6
+2019,2,"Camb Namb S    ",163.472
+2019,2,"Camb Nenrich M    ",173.664545454545
+2019,2,"Camb Nenrich M   HTamb",174.5
+2019,2,"Camb Nenrich M H2Oamb HTelv",454.2
+2019,2,"Camb Nenrich M H2Oneg HTamb",224.8
+2019,2,"Camb Nenrich M H2Oneg HTelv",156.2
+2019,2,"Camb Nenrich S    ",153.678333333333
+2019,3,"Cenrich Namb M    ",254.982727272727
+2019,3,"Cenrich Namb M H2Oamb HTamb",307.57
+2019,3,"Cenrich Namb M H2Oamb HTelv",211.02
+2019,3,"Cenrich Namb M H2Oneg HTamb",296.6
 2019,3,"Cenrich Namb M H2Oneg HTelv",333.2
-2019,3,"Cenrich Namb S    ",381.72
-2019,3,"Cenrich Nenrich M    ",295.687727272727
-2019,3,"Cenrich Nenrich M H2Oamb HTamb",432.9
-2019,3,"Cenrich Nenrich M H2Oamb HTelv",259.22
-2019,3,"Cenrich Nenrich M H2Oneg HTamb",741.33
-2019,3,"Cenrich Nenrich M H2Oneg HTelv",371.4
-2019,3,"Cenrich Nenrich S    ",310.372
-2019,4,"Camb Namb M    ",249.119090909091
-2019,4,"Camb Namb M   HTelv",520.1
-2019,4,"Camb Namb M H2Oamb HTamb",853.98
-2019,4,"Camb Namb M H2Oneg HTamb",757.5
-2019,4,"Camb Namb M H2Oneg HTelv",364.3
-2019,4,"Camb Namb S    ",420.175
-2019,4,"Camb Nenrich M    ",269.1595
-2019,4,"Camb Nenrich M H2Oamb  ",657.2
-2019,4,"Camb Nenrich M H2Oamb HTamb",234.8
-2019,4,"Camb Nenrich M H2Oamb HTelv",550.9
+2019,3,"Cenrich Namb S    ",269.4
+2019,3,"Cenrich Nenrich M    ",249.760454545455
+2019,3,"Cenrich Nenrich M H2Oamb HTamb",429.5
+2019,3,"Cenrich Nenrich M H2Oamb HTelv",244.92
+2019,3,"Cenrich Nenrich M H2Oneg HTamb",736.83
+2019,3,"Cenrich Nenrich M H2Oneg HTelv",359.4
+2019,3,"Cenrich Nenrich S    ",259.092
+2019,4,"Camb Namb M    ",222.296363636364
+2019,4,"Camb Namb M   HTelv",513.1
+2019,4,"Camb Namb M H2Oamb HTamb",842.98
+2019,4,"Camb Namb M H2Oneg HTamb",547.9
+2019,4,"Camb Namb M H2Oneg HTelv",290.1
+2019,4,"Camb Namb S    ",240.908333333333
+2019,4,"Camb Nenrich M    ",228.621
+2019,4,"Camb Nenrich M H2Oamb  ",604.7
+2019,4,"Camb Nenrich M H2Oamb HTamb",198.4
+2019,4,"Camb Nenrich M H2Oamb HTelv",545.7
 2019,4,"Camb Nenrich M H2Oneg HTamb",320.37
-2019,4,"Camb Nenrich M H2Oneg HTelv",638.65
-2019,4,"Camb Nenrich S    ",421.032
-2019,5,"Cenrich Namb M    ",322.581818181818
-2019,5,"Cenrich Namb M H2Oamb HTamb",164.64
-2019,5,"Cenrich Namb M H2Oamb HTelv",378.51
+2019,4,"Camb Nenrich M H2Oneg HTelv",501.45
+2019,4,"Camb Nenrich S    ",257.392
+2019,5,"Cenrich Namb M    ",259.104545454545
+2019,5,"Cenrich Namb M H2Oamb HTamb",161.84
+2019,5,"Cenrich Namb M H2Oamb HTelv",362.41
 2019,5,"Cenrich Namb M H2Oneg HTamb",549.6
-2019,5,"Cenrich Namb M H2Oneg HTelv",299.16
-2019,5,"Cenrich Namb S    ",366.06
-2019,5,"Cenrich Nenrich M    ",349.585238095238
-2019,5,"Cenrich Nenrich M H2Oamb HTamb",697.2
-2019,5,"Cenrich Nenrich M H2Oamb HTelv",554.89
-2019,5,"Cenrich Nenrich M H2Oneg HTamb",341.2
-2019,5,"Cenrich Nenrich M H2Oneg HTelv",881.05
-2019,5,"Cenrich Nenrich S    ",407.356
-2019,6,"Camb Namb M    ",275.673181818182
-2019,6,"Camb Namb M H2Oamb HTamb",276.1
-2019,6,"Camb Namb M H2Oamb HTelv",520.07
-2019,6,"Camb Namb M H2Oneg HTamb",323.1
-2019,6,"Camb Namb M H2Oneg HTelv",239.2
-2019,6,"Camb Namb S    ",375.081666666667
-2019,6,"Camb Nenrich M    ",307.459545454545
-2019,6,"Camb Nenrich M H2Oamb HTamb",471.7
+2019,5,"Cenrich Namb M H2Oneg HTelv",285.66
+2019,5,"Cenrich Namb S    ",302.96
+2019,5,"Cenrich Nenrich M    ",291.980476190476
+2019,5,"Cenrich Nenrich M H2Oamb HTamb",683.4
+2019,5,"Cenrich Nenrich M H2Oamb HTelv",545.59
+2019,5,"Cenrich Nenrich M H2Oneg HTamb",331.5
+2019,5,"Cenrich Nenrich M H2Oneg HTelv",876.95
+2019,5,"Cenrich Nenrich S    ",318.056
+2019,6,"Camb Namb M    ",229.573636363636
+2019,6,"Camb Namb M H2Oamb HTamb",269.7
+2019,6,"Camb Namb M H2Oamb HTelv",452.17
+2019,6,"Camb Namb M H2Oneg HTamb",286.3
+2019,6,"Camb Namb M H2Oneg HTelv",236.1
+2019,6,"Camb Namb S    ",228.631666666667
+2019,6,"Camb Nenrich M    ",265.796363636364
+2019,6,"Camb Nenrich M H2Oamb HTamb",355.5
 2019,6,"Camb Nenrich M H2Oamb HTelv",534.2
-2019,6,"Camb Nenrich M H2Oneg HTamb",369.5
-2019,6,"Camb Nenrich M H2Oneg HTelv",812.7
-2019,6,"Camb Nenrich S    ",303.918
-2020,1,"Cenrich Namb M    ",213.20602
-2020,1,"Cenrich Namb M H2Oamb HTelv",279.2294
-2020,1,"Cenrich Nenrich M    ",163.253916666667
-2020,2,"Camb Namb M    ",260.5020125
-2020,2,"Camb Namb M H2Oamb  ",291.6
-2020,2,"Camb Namb M H2Oamb HTamb",287
-2020,2,"Camb Namb M H2Oamb HTelv",279.6
-2020,2,"Camb Nenrich M    ",259.191044444444
-2020,2,"Camb Nenrich M   HTamb",437.9
-2020,2,"Camb Nenrich M H2Oamb HTelv",473.7905
-2020,3,"Cenrich Namb M    ",334.036285
-2020,3,"Cenrich Namb M H2Oamb HTamb",503.9141
-2020,3,"Cenrich Namb M H2Oamb HTelv",545.422
-2020,3,"Cenrich Nenrich M    ",308.063055555556
-2020,3,"Cenrich Nenrich M H2Oamb HTamb",275.8
-2020,3,"Cenrich Nenrich M H2Oamb HTelv",266.8
-2020,4,"Camb Namb M    ",296.644627777778
-2020,4,"Camb Namb M   HTelv",491.4
-2020,4,"Camb Namb M H2Oamb HTamb",527.98
-2020,4,"Camb Nenrich M    ",365.2779875
-2020,4,"Camb Nenrich M H2Oamb  ",484.4
-2020,4,"Camb Nenrich M H2Oamb HTamb",315.8
-2020,4,"Camb Nenrich M H2Oamb HTelv",603.7
-2020,5,"Cenrich Namb M    ",297.076394444444
-2020,5,"Cenrich Namb M H2Oamb HTamb",418.5
-2020,5,"Cenrich Namb M H2Oamb HTelv",912.1
-2020,5,"Cenrich Nenrich M    ",333.629652941176
-2020,5,"Cenrich Nenrich M H2Oamb HTamb",684.1
-2020,5,"Cenrich Nenrich M H2Oamb HTelv",668.6
-2020,6,"Camb Namb M    ",468.119383333333
-2020,6,"Camb Namb M H2Oamb HTamb",584.6
-2020,6,"Camb Namb M H2Oamb HTelv",373.7573
-2020,6,"Camb Nenrich M    ",358.111472222222
-2020,6,"Camb Nenrich M H2Oamb HTamb",238.7
-2020,6,"Camb Nenrich M H2Oamb HTelv",636.7
-2021,1,"Cenrich Namb M  ",198.905385714286
-2021,1,"Cenrich Namb M H2Oamb HTamb",205.91
-2021,1,"Cenrich Namb M H2Oamb HTelv",154.6349
-2021,1,"Cenrich Namb M H2Oneg HTamb",660.8
-2021,1,"Cenrich Namb M H2Oneg HTelv",242.1
-2021,1,"Cenrich Namb S  ",207.23314
-2021,1,"Cenrich Nenrich M  ",165.535418181818
-2021,1,"Cenrich Nenrich M H2Oamb HTamb",229.1
-2021,1,"Cenrich Nenrich M H2Oamb HTelv",307.1
-2021,1,"Cenrich Nenrich M H2Oneg HTamb",234.9
-2021,1,"Cenrich Nenrich M H2Oneg HTelv",486.7
-2021,1,"Cenrich Nenrich S  ",168.6167
-2021,2,"Camb Namb M  ",242.687325
-2021,2,"Camb Namb M H2Oamb ",244.6
-2021,2,"Camb Namb M H2Oamb HTamb",290
-2021,2,"Camb Namb M H2Oamb HTelv",184.3
-2021,2,"Camb Namb M H2Oneg HTamb",86.7
-2021,2,"Camb Namb M H2Oneg HTelv",385.5
-2021,2,"Camb Namb S  ",247.56
-2021,2,"Camb Nenrich M  ",208.863304545455
-2021,2,"Camb Nenrich M  HTamb",334.5
-2021,2,"Camb Nenrich M H2Oamb HTelv",221.5
-2021,2,"Camb Nenrich M H2Oneg HTamb",162
-2021,2,"Camb Nenrich M H2Oneg HTelv",372.7
-2021,2,"Camb Nenrich S  ",143.016666666667
-2021,3,"Cenrich Namb M  ",204.462872727273
-2021,3,"Cenrich Namb M H2Oamb HTamb",149.4336
-2021,3,"Cenrich Namb M H2Oamb HTelv",364.3
-2021,3,"Cenrich Namb M H2Oneg HTamb",395.4
-2021,3,"Cenrich Namb M H2Oneg HTelv",200.9
-2021,3,"Cenrich Namb S  ",230.32762
-2021,3,"Cenrich Nenrich M  ",188.851822727273
-2021,3,"Cenrich Nenrich M H2Oamb HTamb",238.2
-2021,3,"Cenrich Nenrich M H2Oamb HTelv",189.7
-2021,3,"Cenrich Nenrich M H2Oneg HTamb",305
-2021,3,"Cenrich Nenrich M H2Oneg HTelv",363.8655
-2021,3,"Cenrich Nenrich S  ",219.6804
-2021,4,"Camb Namb M  ",151.792918181818
-2021,4,"Camb Namb M  HTelv",241.2
-2021,4,"Camb Namb M H2Oamb HTamb",213.1845
-2021,4,"Camb Namb M H2Oneg HTamb",138.3
-2021,4,"Camb Namb M H2Oneg HTelv",221.6168
-2021,4,"Camb Namb S  ",193.516033333333
-2021,4,"Camb Nenrich M  ",214.0562
-2021,4,"Camb Nenrich M H2Oamb ",316.4
-2021,4,"Camb Nenrich M H2Oamb HTamb",168.7533
-2021,4,"Camb Nenrich M H2Oamb HTelv",450.3424
-2021,4,"Camb Nenrich M H2Oneg HTamb",207.4
-2021,4,"Camb Nenrich M H2Oneg HTelv",141.3
-2021,4,"Camb Nenrich S  ",300.9365
-2021,5,"Cenrich Namb M  ",253.143563636364
-2021,5,"Cenrich Namb M H2Oamb HTamb",204.2
-2021,5,"Cenrich Namb M H2Oamb HTelv",518.4
-2021,5,"Cenrich Namb M H2Oneg HTamb",270.9
-2021,5,"Cenrich Namb M H2Oneg HTelv",115
-2021,5,"Cenrich Namb S  ",278.15918
-2021,5,"Cenrich Nenrich M  ",192.570095238095
-2021,5,"Cenrich Nenrich M H2Oamb HTamb",204.5
-2021,5,"Cenrich Nenrich M H2Oamb HTelv",202
-2021,5,"Cenrich Nenrich M H2Oneg HTamb",213.8
-2021,5,"Cenrich Nenrich M H2Oneg HTelv",613.8603
-2021,5,"Cenrich Nenrich S  ",287.71942
-2021,6,"Camb Namb M  ",194.416795454545
-2021,6,"Camb Namb M H2Oamb HTamb",211.3
-2021,6,"Camb Namb M H2Oamb HTelv",234
-2021,6,"Camb Namb M H2Oneg HTamb",108.9
-2021,6,"Camb Namb M H2Oneg HTelv",135.9
-2021,6,"Camb Namb S  ",184.204933333333
-2021,6,"Camb Nenrich M  ",185.132859090909
-2021,6,"Camb Nenrich M H2Oamb HTamb",166.4
-2021,6,"Camb Nenrich M H2Oamb HTelv",426.176
-2021,6,"Camb Nenrich M H2Oneg HTamb",107.9
-2021,6,"Camb Nenrich M H2Oneg HTelv",241.7
-2021,6,"Camb Nenrich S  ",100.73208
+2019,6,"Camb Nenrich M H2Oneg HTamb",358.9
+2019,6,"Camb Nenrich M H2Oneg HTelv",807.8
+2019,6,"Camb Nenrich S    ",283.838
+2020,1,"Cenrich Namb M    ",182.71602
+2020,1,"Cenrich Namb M H2Oamb HTelv",255.3294
+2020,1,"Cenrich Nenrich M    ",142.320583333333
+2020,2,"Camb Namb M    ",240.4395125
+2020,2,"Camb Namb M H2Oamb  ",230.8
+2020,2,"Camb Namb M H2Oamb HTamb",263.2
+2020,2,"Camb Namb M H2Oamb HTelv",257.9
+2020,2,"Camb Nenrich M    ",241.791044444444
+2020,2,"Camb Nenrich M   HTamb",353
+2020,2,"Camb Nenrich M H2Oamb HTelv",446.8905
+2020,3,"Cenrich Namb M    ",298.101362777778
+2020,3,"Cenrich Namb M H2Oamb HTamb",480.8141
+2020,3,"Cenrich Namb M H2Oamb HTelv",484.322
+2020,3,"Cenrich Nenrich M    ",270.4575
+2020,3,"Cenrich Nenrich M H2Oamb HTamb",255.1
+2020,3,"Cenrich Nenrich M H2Oamb HTelv",201.5
+2020,4,"Camb Namb M    ",256.884627777778
+2020,4,"Camb Namb M   HTelv",454.9
+2020,4,"Camb Namb M H2Oamb HTamb",459.38
+2020,4,"Camb Nenrich M    ",290.7123625
+2020,4,"Camb Nenrich M H2Oamb  ",449.1
+2020,4,"Camb Nenrich M H2Oamb HTamb",244.7
+2020,4,"Camb Nenrich M H2Oamb HTelv",544.6
+2020,5,"Cenrich Namb M    ",255.230277777778
+2020,5,"Cenrich Namb M H2Oamb HTamb",396.8
+2020,5,"Cenrich Namb M H2Oamb HTelv",895.2
+2020,5,"Cenrich Nenrich M    ",318.859064705882
+2020,5,"Cenrich Nenrich M H2Oamb HTamb",662.8
+2020,5,"Cenrich Nenrich M H2Oamb HTelv",589.1
+2020,6,"Camb Namb M    ",369.93605
+2020,6,"Camb Namb M H2Oamb HTamb",524.7
+2020,6,"Camb Namb M H2Oamb HTelv",347.2573
+2020,6,"Camb Nenrich M    ",300.261472222222
+2020,6,"Camb Nenrich M H2Oamb HTamb",93
+2020,6,"Camb Nenrich M H2Oamb HTelv",597.9
+2021,1,"Cenrich Namb M  ",179.985385714286
+2021,1,"Cenrich Namb M H2Oamb HTamb",93.41
+2021,1,"Cenrich Namb M H2Oamb HTelv",137.8349
+2021,1,"Cenrich Namb M H2Oneg HTamb",190.1
+2021,1,"Cenrich Namb M H2Oneg HTelv",212.5
+2021,1,"Cenrich Namb S  ",171.43314
+2021,1,"Cenrich Nenrich M  ",129.771781818182
+2021,1,"Cenrich Nenrich M H2Oamb HTamb",210.6
+2021,1,"Cenrich Nenrich M H2Oamb HTelv",282
+2021,1,"Cenrich Nenrich M H2Oneg HTamb",131.5
+2021,1,"Cenrich Nenrich M H2Oneg HTelv",468.4
+2021,1,"Cenrich Nenrich S  ",148.5967
+2021,2,"Camb Namb M  ",210.617325
+2021,2,"Camb Namb M H2Oamb ",183.8
+2021,2,"Camb Namb M H2Oamb HTamb",282.8
+2021,2,"Camb Namb M H2Oamb HTelv",165.7
+2021,2,"Camb Namb M H2Oneg HTamb",63.7
+2021,2,"Camb Namb M H2Oneg HTelv",320.8
+2021,2,"Camb Namb S  ",188.96
+2021,2,"Camb Nenrich M  ",184.955868181818
+2021,2,"Camb Nenrich M  HTamb",325.3
+2021,2,"Camb Nenrich M H2Oamb HTelv",213
+2021,2,"Camb Nenrich M H2Oneg HTamb",113.3
+2021,2,"Camb Nenrich M H2Oneg HTelv",362.3
+2021,2,"Camb Nenrich S  ",117.283333333333
+2021,3,"Cenrich Namb M  ",163.021963636364
+2021,3,"Cenrich Namb M H2Oamb HTamb",146.3336
+2021,3,"Cenrich Namb M H2Oamb HTelv",313
+2021,3,"Cenrich Namb M H2Oneg HTamb",258.5
+2021,3,"Cenrich Namb M H2Oneg HTelv",189.1
+2021,3,"Cenrich Namb S  ",167.94762
+2021,3,"Cenrich Nenrich M  ",147.610913636364
+2021,3,"Cenrich Nenrich M H2Oamb HTamb",235
+2021,3,"Cenrich Nenrich M H2Oamb HTelv",162
+2021,3,"Cenrich Nenrich M H2Oneg HTamb",279.2
+2021,3,"Cenrich Nenrich M H2Oneg HTelv",348.2655
+2021,3,"Cenrich Nenrich S  ",164.5404
+2021,4,"Camb Namb M  ",135.892918181818
+2021,4,"Camb Namb M  HTelv",228.5
+2021,4,"Camb Namb M H2Oamb HTamb",191.4845
+2021,4,"Camb Namb M H2Oneg HTamb",130.3
+2021,4,"Camb Namb M H2Oneg HTelv",156.8168
+2021,4,"Camb Namb S  ",154.066033333333
+2021,4,"Camb Nenrich M  ",175.72183
+2021,4,"Camb Nenrich M H2Oamb ",305.6
+2021,4,"Camb Nenrich M H2Oamb HTamb",159.7533
+2021,4,"Camb Nenrich M H2Oamb HTelv",436.1424
+2021,4,"Camb Nenrich M H2Oneg HTamb",197.2
+2021,4,"Camb Nenrich M H2Oneg HTelv",134.1
+2021,4,"Camb Nenrich S  ",235.1165
+2021,5,"Cenrich Namb M  ",216.839018181818
+2021,5,"Cenrich Namb M H2Oamb HTamb",196.5
+2021,5,"Cenrich Namb M H2Oamb HTelv",452.8
+2021,5,"Cenrich Namb M H2Oneg HTamb",254.5
+2021,5,"Cenrich Namb M H2Oneg HTelv",76.8
+2021,5,"Cenrich Namb S  ",263.11918
+2021,5,"Cenrich Nenrich M  ",179.993904761905
+2021,5,"Cenrich Nenrich M H2Oamb HTamb",191.7
+2021,5,"Cenrich Nenrich M H2Oamb HTelv",189.6
+2021,5,"Cenrich Nenrich M H2Oneg HTamb",196.5
+2021,5,"Cenrich Nenrich M H2Oneg HTelv",591.3603
+2021,5,"Cenrich Nenrich S  ",245.33942
+2021,6,"Camb Namb M  ",168.530431818182
+2021,6,"Camb Namb M H2Oamb HTamb",196.9
+2021,6,"Camb Namb M H2Oamb HTelv",203.5
+2021,6,"Camb Namb M H2Oneg HTamb",98.2
+2021,6,"Camb Namb M H2Oneg HTelv",131.7
+2021,6,"Camb Namb S  ",115.5216
+2021,6,"Camb Nenrich M  ",162.501040909091
+2021,6,"Camb Nenrich M H2Oamb HTamb",119
+2021,6,"Camb Nenrich M H2Oamb HTelv",419.376
+2021,6,"Camb Nenrich M H2Oneg HTamb",85.5
+2021,6,"Camb Nenrich M H2Oneg HTelv",205
+2021,6,"Camb Nenrich S  ",87.53208

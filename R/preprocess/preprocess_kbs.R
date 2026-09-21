@@ -27,8 +27,8 @@ preprocess_kbs_biomass <- function(raw_path) {
                    strip.white = TRUE)
 
   # Column names differ in case between the KBS website and EDI copies
-  canonical <- c("Year", "Treatment", "Replicate", "Station", "Species",
-                 "Fraction", "Biomass")
+  canonical <- c("Year", "Campaign", "Treatment", "Replicate", "Station",
+                 "Species", "Fraction", "Biomass")
   lower <- tolower(names(data))
   lower[lower %in% c("biomass_g_m2", "biomass_g")] <- "biomass"
   idx <- match(tolower(canonical), lower)
@@ -42,12 +42,21 @@ preprocess_kbs_biomass <- function(raw_path) {
   data <- data[, idx]
   names(data) <- canonical
 
-  # Aggregate as in the legacy script:
-  #   sum across Fraction (and repeated cuttings within a year, e.g. alfalfa)
+  # Aggregate: whole-plant biomass per sampling event -> sum of cuttings
   #   -> mean across Station -> sum across Species
   data <- data %>%
     mutate(Biomass = suppressWarnings(as.numeric(Biomass))) %>%
     filter(!is.na(Biomass)) %>%
+    # WHOLE is the whole-plant total and already contains SEED / STOVER etc.
+    # (KBS added WHOLE records to the early years so totals are comparable),
+    # so summing every fraction double-counts. Per sampling event use WHOLE
+    # where it exists, otherwise the sum of the component fractions; LITTER is
+    # not plant production and is never included.
+    filter(Fraction != "LITTER") %>%
+    group_by(Year, Campaign, Treatment, Replicate, Station, Species) %>%
+    summarise(Biomass = if (any(Fraction == "WHOLE")) sum(Biomass[Fraction == "WHOLE"])
+                        else sum(Biomass), .groups = "drop") %>%
+    # repeated cuttings within a year (alfalfa) add up to annual production
     group_by(Year, Treatment, Replicate, Station, Species) %>%
     summarise(Biomass = sum(Biomass), .groups = "drop") %>%
     group_by(Year, Treatment, Replicate, Species) %>%

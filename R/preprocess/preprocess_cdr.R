@@ -28,9 +28,12 @@ library(dplyr)
 #     "Camb Namb M    ", "Cenriched  Namb M ..."), exactly as in the committed
 #     ready file; analysis/01_harmonize.R normalizes them downstream.
 #
-# PROCESSING: 9999 -> NA; sum biomass over species within Date x Plot; mean of
-# the plot totals per Date x Ring x Treatment; Date reduced to the year (so
-# 1998-2011 have two rows - June and August - per Year x Ring x Treatment).
+# PROCESSING: 9999 -> NA; litter and bare-ground records dropped; August
+# (peak-season) harvest only; sum biomass over species within Date x Plot; mean
+# of the plot totals per Date x Ring x Treatment; Date reduced to the year.
+# The 2025 hand-processed file averaged the 9999 code into 101 plot means,
+# counted litter (~26% of all mass) as aboveground biomass, and carried the June
+# harvests of 1998-2011 as extra rows.
 
 #' Preprocess CDR BioCON aboveground biomass
 #' @param raw_path Path to raw CSV from EDI
@@ -65,7 +68,12 @@ preprocess_cdr_biocon_biomass <- function(raw_path) {
   }
 
   result <- data %>%
-    # Plot total per harvest (all species/fractions)
+    # Aboveground *plant* biomass: litter and bare-ground records are not biomass
+    filter(!grepl("litter|^Oak Leaves$|^Bare ground$", trimws(Species), ignore.case = TRUE)) %>%
+    # Peak-season (August) harvest only. A June harvest also exists for
+    # 1998-2011; mixing it in would make early and late years incomparable.
+    filter(format(SampleDate, "%m") == "08") %>%
+    # Plot total per harvest (all live species and unsorted live fractions)
     group_by(SampleDate, Ring, Treatment, Plot) %>%
     summarise(Biomass = sum(Biomass_raw, na.rm = TRUE), .groups = "drop") %>%
     # Mean plot total per harvest x ring x treatment

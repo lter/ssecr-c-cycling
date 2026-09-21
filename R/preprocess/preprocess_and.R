@@ -28,8 +28,7 @@
 #   - STANDID identifies the watershed (WS06 / WS07 / WS08 among ~170 stands).
 #   - TREE_STATUS: 1 = live (previously tagged), 2 = ingrowth, 3 = other live
 #     code, 6 = dead, 9 = missing/not found. Dead and missing trees carry an
-#     empty DBH (DBH_CODE "M"). Only TREE_STATUS == 1 is kept, as in the
-#     committed ready file (NB: this excludes live ingrowth, status 2).
+#     empty DBH (DBH_CODE "M"). All live stems (status 1, 2, 3) are kept.
 #   - Missing values are empty cells; 9999/99999 occur only as "unknown" codes
 #     in PLOTNUMBER and TAG (never in DBH) and not in WS06-08. They are set to
 #     NA defensively so they can never become a plot key.
@@ -96,8 +95,11 @@ preprocess_and_dbh <- function(raw_path) {
   # Convert DBH to numeric (in case of any non-numeric entries)
   data$DBH <- suppressWarnings(as.numeric(data$DBH))
 
-  # Living, previously tagged trees only (TREE_STATUS == 1; see header)
-  data <- data %>% filter(TREE_STATUS == 1)
+  # All living stems: 1 = live, 2 = ingrowth (a stem's first census), 3 = other
+  # live. Dead (6) and missing (9) stems have no DBH. The 2025 hand-processed
+  # file kept only status 1, which dropped every stem in the census it first
+  # reached tagging size and so biased mean DBH upward.
+  data <- data %>% filter(TREE_STATUS %in% c(1, 2, 3), !is.na(DBH))
 
   # Compute plot-level mean DBH per year × watershed × plot
   result <- data %>%
