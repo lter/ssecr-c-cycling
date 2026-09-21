@@ -16,17 +16,50 @@ CONTROL_OVERRIDES <- list(
   "MCM_CO2flux_2003-2010_processed.csv" = "W"
 )
 
+# CDR BioCON: the experiment is several nested designs that use different plot
+# sets - the main CO2 x N experiment ("M"), the monocultures ("S"), and the
+# water (2007-) and water x warming (2012-) manipulations, which run in the
+# 9-species plots. A treatment is only comparable with the ambient control of
+# its own design, so controls are matched within a stratum.
+CDR_SOURCE <- "CDR_Biomass_1998-2021_gm2_processed.csv"
+
+cdr_stratum <- function(treatment) {
+  vapply(strsplit(as.character(treatment), " +"), function(tok) {
+    paste(c(tok[3],
+            if (any(grepl("^H2O", tok))) "water",
+            if (any(grepl("^HT", tok))) "warming"), collapse = "+")
+  }, character(1))
+}
+
+cdr_is_control <- function(treatment) {
+  vapply(strsplit(as.character(treatment), " +"), function(tok) {
+    tok[1] == "Camb" && tok[2] == "Namb" &&
+      all(tok[grepl("^H2O", tok)] == "H2Oamb") &&
+      all(tok[grepl("^HT", tok)] == "HTamb")
+  }, logical(1))
+}
+
+#' Stratum within which a treatment is compared with its control.
+#' One stratum per source, except where a source holds several nested designs.
+control_stratum <- function(source, treatment) {
+  out <- rep("all", length(source))
+  idx <- source == CDR_SOURCE
+  if (any(idx)) out[idx] <- cdr_stratum(treatment[idx])
+  out
+}
+
 #' Determine whether each row is a control, honoring per-source overrides
 #' @param source Character vector of source filenames
 #' @param treatment Character vector of treatment labels
-#' @param control_names Default control names (used where no override exists)
-#' @return Logical vector
+#' @param control_names Default control labels
 is_control <- function(source, treatment, control_names = CONTROL_NAMES) {
   ctrl <- treatment %in% control_names
   for (src in names(CONTROL_OVERRIDES)) {
     idx <- source == src
     if (any(idx)) ctrl[idx] <- treatment[idx] %in% CONTROL_OVERRIDES[[src]]
   }
+  idx <- source == CDR_SOURCE
+  if (any(idx)) ctrl[idx] <- cdr_is_control(treatment[idx])
   ctrl
 }
 
@@ -43,9 +76,11 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
   data$Date_parsed <- parse_dates(data$Date)
 
   # Separate control and treatment data
+  data$control_stratum <- control_stratum(data$source, data$Treatment)
+
   control_data <- data %>%
     filter(is_control(source, Treatment, control_names)) %>%
-    group_by(source, Date, Date_parsed) %>%
+    group_by(source, control_stratum, Date, Date_parsed) %>%
     summarise(control_mean = mean(.data[[response_var]], na.rm = TRUE),
               control_n = n(),
               .groups = "drop")
@@ -55,7 +90,7 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
 
   # Join and calculate relative response
   relative_data <- treatment_data %>%
-    left_join(control_data, by = c("source", "Date", "Date_parsed")) %>%
+    left_join(control_data, by = c("source", "control_stratum", "Date", "Date_parsed")) %>%
     filter(!is.na(control_mean), control_mean > 0, !is.na(.data[[response_var]])) %>%
     mutate(relative_response = .data[[response_var]] / control_mean,
            log_response_ratio = log(.data[[response_var]] / control_mean))
@@ -223,9 +258,11 @@ calculate_lrr <- function(data, time_col = "Date", control_names = CONTROL_NAMES
   # Pool all control rows per source x time (there can be several control
   # treatment labels or replicate groups); combine as a single weighted group
   # rather than arbitrarily taking the first row
+  data$control_stratum <- control_stratum(data$source, data$Treatment)
+
   control_data <- data %>%
     filter(is_control(source, Treatment, control_names)) %>%
-    group_by(source, .data[[time_col]]) %>%
+    group_by(source, control_stratum, .data[[time_col]]) %>%
     summarise(
       control_n = sum(sample_size),
       control_mean = sum(means * sample_size) / sum(sample_size),
@@ -237,11 +274,11 @@ calculate_lrr <- function(data, time_col = "Date", control_names = CONTROL_NAMES
       },
       .groups = "drop"
     ) %>%
-    select(source, all_of(time_col), control_mean, control_sd, control_n)
+    select(source, control_stratum, all_of(time_col), control_mean, control_sd, control_n)
 
   results <- data %>%
     filter(!is_control(source, Treatment, control_names)) %>%
-    left_join(control_data, by = c("source", time_col)) %>%
+    left_join(control_data, by = c("source", "control_stratum", time_col)) %>%
     filter(!is.na(control_mean), control_mean > 0, means > 0) %>%
     mutate(
       log_response_ratio = log(means / control_mean),

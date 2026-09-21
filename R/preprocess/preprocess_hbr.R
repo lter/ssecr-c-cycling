@@ -17,6 +17,9 @@ preprocess_hbr_litterfall <- function(raw_path) {
 
   data <- data %>%
     filter(Season == "Fall") %>%
+    # MELNHE fertilization began in spring 2011; fall 2009 and 2010 litterfall
+    # is pre-treatment and would dilute the early-response window
+    filter(Year >= 2011) %>%
     filter(!is.na(Total_Mass_g_m2)) %>%
     group_by(Year, Season, Site, Stand, Treatment) %>%
     summarise(Mass_gm2 = mean(Total_Mass_g_m2, na.rm = TRUE), .groups = "drop")

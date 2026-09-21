@@ -29,9 +29,9 @@ experiments. In each site panel, gray lines and points show individual
 treatments; colored curves are loess fits pooled by temporal trend
 classification (stable, variable, increasing, decreasing), with 95%
 confidence bands. The dashed horizontal line at 0 indicates no treatment
-effect. Bottom row: summary of the n = 83 classified treatment-experiment
-combinations — proportions in each trend class (stable 35, variable 22,
-increasing 21, decreasing 5), and distributions of the mean treatment/control
+effect. Bottom row: summary of the n = 78 classified treatment-experiment
+combinations — proportions in each trend class (stable 33, variable 23,
+increasing 16, decreasing 6), and distributions of the mean treatment/control
 ratio (log scale), coefficient of variation (dotted line at the CV = 0.3
 classification threshold), and experiment duration by trend class.
 Confidence bands are omitted where a site has too few timepoints to
@@ -42,8 +42,8 @@ Fig4_detection_time_analysis
 ----------------------------
 Factors influencing the time required to detect statistically significant
 temporal trends in treatment response ratios. Only treatment-experiment
-combinations classified as increasing (blue; n = 21) or decreasing (red;
-n = 5) are included. (A) Distribution of years required to first achieve
+combinations classified as increasing (blue; n = 16) or decreasing (red;
+n = 6) are included. (A) Distribution of years required to first achieve
 statistical significance (P < 0.05 in sequential linear regression) by trend
 direction. (B) Relationship between measurement density (observations per
 year) and detection time; densely sampled experiments do not consistently
@@ -62,7 +62,7 @@ fits with 95% confidence bands.
 Fig5_early_vs_full_lrr
 ----------------------
 Comparison of early versus full-duration log-response ratios (LRR) across
-treatment-experiment combinations (n = 83). Each point represents a single
+treatment-experiment combinations (n = 78). Each point represents a single
 treatment within a long-term experiment, with the mean LRR calculated over the
 first three years of observation (x-axis) plotted against the mean LRR over the
 full study duration (y-axis). The dashed diagonal line indicates 1:1
@@ -71,7 +71,7 @@ strengthened over time, and points below indicate treatments whose effects
 attenuated. Treatments are classified as accurate, underestimate,
 overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table S2)
 with sensitivity to the tolerance shown in Fig. S1. Colors and shapes denote LTER site identity. Most treatments
-cluster near the origin and the 1:1 line (Pearson r = 0.71), indicating that
+cluster near the origin and the 1:1 line (Pearson r = 0.59), indicating that
 early-period effect sizes are broadly predictive of long-term outcomes, though
 substantial scatter — particularly among treatments with strong initial
 effects — suggests that short-term results can both overestimate and
@@ -89,27 +89,27 @@ bandwidth: blue segments indicate slopes significantly different from zero;
 grey segments indicate slopes indistinguishable from zero. Vertical dotted
 lines mark detected slope-change boundaries. Grey ribbons show plus/minus 1 SE
 of the mean treatment/control ratio, and the dashed horizontal line marks a
-ratio of 1 (no treatment effect). Of 79 treatment combinations analyzed (those with at least 5 timepoints), 23
-(29%) exhibited at least one statistically significant slope change.
+ratio of 1 (no treatment effect). Of 74 treatment combinations analyzed (those with at least 5 timepoints), 21
+(28%) exhibited at least one statistically significant slope change.
 (B) Sign-flip frequency — the percentage of consecutive measurement
 transitions in which the treatment response crossed the no-effect threshold
-(ratio = 1) — across all classified treatments at each site (n = 83
+(ratio = 1) — across all classified treatments at each site (n = 78
 treatments across 18 sites), displayed as horizontal boxplots with individual
 values overlaid. Expressing flips as a percentage of transitions normalizes
 for differences in study duration and measurement frequency across sites.
 Colors indicate ecosystem type. Sign-flip frequency varied widely both within
-and among sites (mean = 20%, range: 0-67%), reflecting heterogeneous temporal
+and among sites (mean = 28%, range: 0-100%), reflecting heterogeneous temporal
 dynamics of treatment effects.
 
 
 FigS1_early_vs_full_sensitivity
 -------------------------------
 Sensitivity of the early-versus-full-duration classification to the tolerance
-used to define agreement. Bars show the percentage of the 83 treatment-
+used to define agreement. Bars show the percentage of the 78 treatment-
 experiment combinations whose three-year LRR estimate was classified as an
 underestimate, overestimate, or wrong-direction prediction of the full-record
 LRR, for tolerances from 0.1 to 1.0 (top axis: the equivalent percentage
 difference in the response ratio). The dotted line marks the tolerance used in
-the main text (0.2, ~22%). The six wrong-direction cases (opposite signs, both
-|LRR| > 0.1) do not depend on the tolerance. Mispredicted treatments (of 83) at
-tolerances 0.1, 0.2, 0.3, 0.5, and 1.0: 46, 30, 19, 13, and 6.
+the main text (0.2, ~22%). The eight wrong-direction cases (opposite signs, both
+|LRR| > 0.1) do not depend on the tolerance. Mispredicted treatments (of 78) at
+tolerances 0.1, 0.2, 0.3, 0.5, and 1.0: 43, 24, 18, 15, and 8.

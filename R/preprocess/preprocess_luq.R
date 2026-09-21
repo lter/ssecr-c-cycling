@@ -7,9 +7,9 @@
 # treatment mapping from the CTE (Canopy Trimming Experiment).
 #
 # Treatment mapping (Block × Plot → Treatment):
-#   Block A: Plot 1=Control, 2=Trim+clear, 3=Trim+debris, 4=No trim+debris
-#   Block B: Plot 1=Control, 2=Trim+debris, 3=No trim+debris, 4=Trim+clear
-#   Block C: Plot 1=No trim+debris, 2=Trim+debris, 3=Trim+clear, 4=Control
+#   Block A: Plot 1=Control, 2=Trim&clear, 3=Trim+debris, 4=No trim+debris
+#   Block B: Plot 1=Control, 2=Trim+debris, 3=No trim+debris, 4=Trim&clear
+#   Block C: Plot 1=No trim+debris, 2=Trim+debris, 3=Trim&clear, 4=Control
 
 library(dplyr)
 library(tidyr)
@@ -18,18 +18,18 @@ library(tidyr)
 luq_treatment_map <- function(block, plot) {
   dplyr::case_when(
     block == "A" & plot == 1 ~ "Control",
-    block == "A" & plot == 2 ~ "Trim + clear",
+    block == "A" & plot == 2 ~ "Trim & clear",
     block == "A" & plot == 3 ~ "Trim + debris",
     block == "A" & plot == 4 ~ "No trim + debris",
 
     block == "B" & plot == 1 ~ "Control",
     block == "B" & plot == 2 ~ "Trim + debris",
     block == "B" & plot == 3 ~ "No trim + debris",
-    block == "B" & plot == 4 ~ "Trim + clear",
+    block == "B" & plot == 4 ~ "Trim & clear",
 
     block == "C" & plot == 1 ~ "No trim + debris",
     block == "C" & plot == 2 ~ "Trim + debris",
-    block == "C" & plot == 3 ~ "Trim + clear",
+    block == "C" & plot == 3 ~ "Trim & clear",
     block == "C" & plot == 4 ~ "Control",
 
     TRUE ~ NA_character_
@@ -58,7 +58,11 @@ preprocess_luq_ghg <- function(raw_path) {
 
   # Fix date format
   date_col <- grep("DATE|Date|date", names(data), value = TRUE)[1]
-  data[[date_col]] <- as.POSIXct(data[[date_col]], format = "%m/%d/%Y")
+  # The EDI entity stores ISO dates (YYYY-MM-DD); older exports used m/d/Y
+  parsed <- as.Date(data[[date_col]], format = "%Y-%m-%d")
+  if (all(is.na(parsed))) parsed <- as.Date(data[[date_col]], format = "%m/%d/%Y")
+  if (any(is.na(parsed))) stop("LUQ GHG: unparseable dates in ", date_col)
+  data[[date_col]] <- parsed
 
   # Separate Block-plot-rep (grep(...)[1] returns NA, not NULL, when absent)
   bpr_col <- grep("Block.plot.rep|Block-plot-rep", names(data), value = TRUE)[1]
@@ -73,10 +77,16 @@ preprocess_luq_ghg <- function(raw_path) {
     mutate(
       Block_Plot = paste(Block, Plot, sep = "-"),
       treatment = luq_treatment_map(Block, Plot)
-    )
+    ) %>%
+    # the entity ends with a few 2010 rows that have no Block-plot-rep ID
+    filter(!is.na(treatment))
 
   # Add YEAR column
   data$YEAR <- as.integer(format(data[[date_col]], "%Y"))
+
+  # The canopy was trimmed (and debris deposited) between October 2004 and
+  # June 2005 (package metadata, Table 1); 2003-2004 fluxes are pre-treatment.
+  data <- data %>% filter(YEAR >= 2005)
 
   # Summarize by Block_Plot, treatment, and DATE. treatment MUST be in the
   # grouping columns: luq_summarize keeps only group columns plus numeric

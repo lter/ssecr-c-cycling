@@ -65,7 +65,11 @@ cat(sprintf("Mean year span: %.1f years\n", mean(year_spans, na.rm = TRUE)))
 cat(sprintf("Median year span: %.1f years\n", median(year_spans, na.rm = TRUE)))
 
 # Temporal frequency from raw data
-freq_by_source <- harmonized %>%
+# Years analyzed are taken from the paired treatment/control record (what the
+# analysis uses), not the harmonized input, which can include control-only or
+# unpaired years
+paired_record <- read.csv("data/harmonized/relative_response_full.csv", stringsAsFactors = FALSE)
+freq_by_source <- paired_record %>%
   mutate(year = extract_year(Date)) %>%
   group_by(source) %>%
   summarise(
@@ -138,7 +142,8 @@ table1 <- freq_by_source %>%
                                    experiment_name, manipulation,
                                    response_variable, setting),
             by = "source") %>%
-  left_join(registry_included %>% select(ready_filename, edi_package_id),
+  # distinct(): a dataset split across several EDI entities (BNZ) has one registry row per entity
+  left_join(registry_included %>% distinct(ready_filename, edi_package_id),
             by = c("source" = "ready_filename")) %>%
   left_join(n_trt %>% select(source, `N Treatments`), by = "source") %>%
   filter(source %in% unique(trend_clean$source)) %>%
