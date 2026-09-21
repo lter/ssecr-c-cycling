@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-21 00:16 
+Generated: 2026-09-21 00:23 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -50,13 +50,9 @@ Sites by response type:
 13  SEV                  Sevilleta                  Desert grassland
 14  ARC                Arctic LTER             Arctic tussock tundra
 15  BNZ              Bonanza Creek Boreal forest / permafrost tundra
-16  BNZ              Bonanza Creek Boreal forest / permafrost tundra
-17  BNZ              Bonanza Creek Boreal forest / permafrost tundra
-18  BNZ              Bonanza Creek Boreal forest / permafrost tundra
-19  BNZ              Bonanza Creek Boreal forest / permafrost tundra
-20  MCM        McMurdo Dry Valleys                 Polar desert soil
-21  NWT                Niwot Ridge                     Alpine tundra
-22  CAP    Central Arizona-Phoenix                    Sonoran Desert
+16  MCM        McMurdo Dry Valleys                 Polar desert soil
+17  NWT                Niwot Ridge                     Alpine tundra
+18  CAP    Central Arizona-Phoenix                    Sonoran Desert
                                                                       Experiment
 1                             Tidal marsh disturbance experiment (PLT-GCED-2207)
 2                                            TIDE nutrient-enrichment experiment
@@ -73,13 +69,9 @@ Sites by response type:
 13                                                              NFert experiment
 14                            Toolik Lake moist acidic tussock tundra experiment
 15                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
-16                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
-17                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
-18                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
-19                   CiPEHR (Carbon in Permafrost Experimental Heating Research)
-20                          Stoichiometry experiment (Bonney and Fryxell basins)
-21                              Snow x N x temperature experiment (Niwot Saddle)
-22                                       Desert Fertilization Experiment (CNdep)
+16                          Stoichiometry experiment (Bonney and Fryxell basins)
+17                              Snow x N x temperature experiment (Niwot Saddle)
+18                                       Desert Fertilization Experiment (CNdep)
                                              Manipulation
 1                        Vegetation removal (disturbance)
 2                                     Fertilization (NO3)
@@ -96,13 +88,9 @@ Sites by response type:
 13                                      Fertilization (N)
 14                        Fertilization; warming; shading
 15                                 Warming (soil and air)
-16                                 Warming (soil and air)
-17                                 Warming (soil and air)
-18                                 Warming (soil and air)
-19                                 Warming (soil and air)
-20                            Nutrient addition (C, N, P)
-21  Fertilization (N; ambient snow and temperature plots)
-22                                   Fertilization (N, P)
+16                            Nutrient addition (C, N, P)
+17  Fertilization (N; ambient snow and temperature plots)
+18                                   Fertilization (N, P)
                             Response Variable Response Type N Treatments
 1          Vegetation cover (%; carbon proxy)         Proxy            1
 2                            Plant shoot mass         Stock            1
@@ -119,13 +107,9 @@ Sites by response type:
 13                Aboveground biomass (g m-2)         Stock            1
 14                Aboveground biomass (g m-2)         Stock        1 (4)
 15                     Net ecosystem exchange          Flux        3 (6)
-16                     Net ecosystem exchange          Flux        3 (6)
-17                     Net ecosystem exchange          Flux        3 (6)
-18                     Net ecosystem exchange          Flux        3 (6)
-19                     Net ecosystem exchange          Flux        3 (6)
-20                              Soil CO2 flux          Flux            5
-21                Aboveground biomass (g m-2)         Stock            1
-22                Aboveground biomass (g m-2)         Stock            3
+16                              Soil CO2 flux          Flux            5
+17                Aboveground biomass (g m-2)         Stock            1
+18                Aboveground biomass (g m-2)         Stock            3
   -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS1_case_study_details.csv (full)
 
 

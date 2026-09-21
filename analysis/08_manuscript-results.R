@@ -138,7 +138,8 @@ table1 <- freq_by_source %>%
                                    experiment_name, manipulation,
                                    response_variable, setting),
             by = "source") %>%
-  left_join(registry_included %>% select(ready_filename, edi_package_id),
+  # distinct(): a dataset split across several EDI entities (BNZ) has one registry row per entity
+  left_join(registry_included %>% distinct(ready_filename, edi_package_id),
             by = c("source" = "ready_filename")) %>%
   left_join(n_trt %>% select(source, `N Treatments`), by = "source") %>%
   filter(source %in% unique(trend_clean$source)) %>%
