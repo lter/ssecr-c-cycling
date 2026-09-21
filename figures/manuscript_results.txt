@@ -1,6 +1,6 @@
 MANUSCRIPT QUANTITATIVE RESULTS
 ====================================================================== 
-Generated: 2026-09-02 18:05 
+Generated: 2026-09-20 22:10 
 ====================================================================== 
 
 === SECTION 3.1: DATASET OVERVIEW ===
@@ -110,7 +110,7 @@ Sites by response type:
 16                              Soil CO2 flux          Flux            5
 17                Aboveground biomass (g m-2)         Stock            1
 18                Aboveground biomass (g m-2)         Stock            3
-  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS4_case_study_details.csv (full)
+  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS3_case_study_details.csv (full)
 
 
 === SECTION 3.2: TREND CLASSIFICATION ===
@@ -176,6 +176,28 @@ Directional trends (n=26):
 
 Tolerance for 'accurate': |early - full LRR| < 0.2 (response ratios within ~22%)
 |early - full LRR|: median 0.12 (~12% of ratio), 75th pct 0.26 (~30%), 90th pct 0.53 (~70%)
+   tolerance ratio_pct accurate underestimate overestimate wrong_direction
+1        0.1  10.51709       38            28           11               6
+2        0.2  22.14028       53            19            5               6
+3        0.3  34.98588       64            12            1               6
+4        0.4  49.18247       70             7            0               6
+5        0.5  64.87213       70             7            0               6
+6        0.6  82.21188       73             4            0               6
+7        0.7 101.37527       76             1            0               6
+8        0.8 122.55409       77             0            0               6
+9        0.9 145.96031       77             0            0               6
+10       1.0 171.82818       77             0            0               6
+   mispredicted_pct
+1         54.216867
+2         36.144578
+3         22.891566
+4         15.662651
+5         15.662651
+6         12.048193
+7          8.433735
+8          7.228916
+9          7.228916
+10         7.228916
 
 Sensitivity to tolerance (mispredicted %): t=0.1: 54%; t=0.2: 36%; t=0.3: 23%; t=0.4: 16%; t=0.5: 16%; t=0.6: 12%; t=0.7: 8%; t=0.8: 7%; t=0.9: 7%; t=1.0: 7% 
 Total treatment combinations with early vs full LRR: 83
@@ -255,9 +277,6 @@ Illustrative cases:
     N: early=-0.047, full=0.004, change=0.051 (accurate)
     NP: early=-0.035, full=-0.014, change=0.020 (accurate)
     P: early=-0.030, full=-0.040, change=-0.010 (accurate)
-
---- TABLE 3: Early vs Full LRR Summary ---
-  -> Written to figures/supplemental/TableS5_early_vs_full_lrr.csv
 
 
 === SECTION 3.4: SIZER RESULTS ===

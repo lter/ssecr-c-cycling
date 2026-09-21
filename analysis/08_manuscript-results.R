@@ -160,8 +160,8 @@ table1 <- freq_by_source %>%
 # N Treatments shows analyzable (screened) where some treatments had < 3 timepoints
 
 # Main-text Table 1 keeps the descriptive columns; provenance and sampling
-# details go to Table S4 so the main table fits a portrait page
-# Table S4 also carries the EDI data citation for each package (docs/data_citations.csv,
+# details go to Table S3 so the main table fits a portrait page
+# Table S3 also carries the EDI data citation for each package (docs/data_citations.csv,
 # generated from DataCite metadata; one citation per analyzed package)
 data_citations <- read.csv("docs/data_citations.csv", stringsAsFactors = FALSE) %>%
   select(Site = site, `Data Citation` = citation)
@@ -172,8 +172,8 @@ table1 <- table1 %>%
          `Response Type`, `N Treatments`)
 print(as.data.frame(table1))
 write.csv(table1, "figures/Table1_case_study_overview.csv", row.names = FALSE)
-write.csv(table_s4, "figures/supplemental/TableS4_case_study_details.csv", row.names = FALSE)
-cat("  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS4_case_study_details.csv (full)\n")
+write.csv(table_s4, "figures/supplemental/TableS3_case_study_details.csv", row.names = FALSE)
+cat("  -> Written to figures/Table1_case_study_overview.csv (main) and figures/supplemental/TableS3_case_study_details.csv (full)\n")
 
 # =============================================================================
 # SECTION 3.2: TREND CLASSIFICATION
@@ -334,7 +334,8 @@ cat(sprintf("Tolerance for 'accurate': |early - full LRR| < %.1f (response ratio
 cat(sprintf("|early - full LRR|: median %.2f (~%.0f%% of ratio), 75th pct %.2f (~%.0f%%), 90th pct %.2f (~%.0f%%)\n",
             q[1], 100 * (exp(q[1]) - 1), q[2], 100 * (exp(q[2]) - 1), q[3], 100 * (exp(q[3]) - 1)))
 
-# Sensitivity of the classification to the tolerance (Fig. S2)
+# Sensitivity of the classification to the tolerance (Fig. S1; counts are printed
+# here and quoted in the figure caption rather than written as a separate table)
 sensitivity <- bind_rows(lapply(seq(0.1, 1.0, by = 0.1), function(t) {
   cl <- classify_early_full(early_full$early_lrr, early_full$full_lrr, tol = t)
   tibble(tolerance = t, ratio_pct = 100 * (exp(t) - 1),
@@ -342,7 +343,7 @@ sensitivity <- bind_rows(lapply(seq(0.1, 1.0, by = 0.1), function(t) {
          overestimate = sum(cl == "overestimate"), wrong_direction = sum(cl == "wrong_direction"),
          mispredicted_pct = 100 * mean(cl != "accurate"))
 }))
-write.csv(sensitivity, "figures/supplemental/TableS3_early_vs_full_sensitivity.csv", row.names = FALSE)
+print(as.data.frame(sensitivity))
 cat("\nSensitivity to tolerance (mispredicted %):",
     paste(sprintf("t=%.1f: %.0f%%", sensitivity$tolerance, sensitivity$mispredicted_pct), collapse = "; "), "\n")
 
@@ -430,19 +431,8 @@ for (site in illustrative_sites) {
   }
 }
 
-# --- TABLE 3: Early vs Full LRR ---
-cat("\n--- TABLE 3: Early vs Full LRR Summary ---\n")
-
-table3 <- early_full_classified %>%
-  select(Site = site_abbr, Treatment, `Early LRR` = early_lrr,
-         `Full LRR` = full_lrr, `LRR Change` = lrr_change,
-         `N Early` = n_early, `N Total` = n_total, `N Years` = n_years,
-         Classification = classification) %>%
-  mutate(across(where(is.numeric), ~ round(., 3))) %>%
-  arrange(Site, Treatment)
-
-write.csv(table3, "figures/supplemental/TableS5_early_vs_full_lrr.csv", row.names = FALSE)
-cat("  -> Written to figures/supplemental/TableS5_early_vs_full_lrr.csv\n")
+# The per-treatment early/full LRR values and their classification are reported in
+# Supplemental Table S1 (below).
 
 # =============================================================================
 # SECTION 3.4: SIZER RESULTS (SLOPE CHANGES)
@@ -712,7 +702,8 @@ cat("\n\n=== SUPPLEMENTAL TABLE S1 ===\n")
 
 table_s1 <- trend_clean %>%
   left_join(metadata %>% distinct(source, site_full_name), by = "source") %>%
-  left_join(early_full %>% select(source, Treatment, early_lrr, full_lrr, lrr_change),
+  left_join(early_full_classified %>%
+              select(source, Treatment, early_lrr, full_lrr, lrr_change, classification),
             by = c("source", "Treatment")) %>%
   left_join(detection_data %>% select(source, Treatment, time_to_detect, detected),
             by = c("source", "Treatment")) %>%
@@ -734,6 +725,7 @@ table_s1 <- trend_clean %>%
     `Early LRR` = early_lrr,
     `Full LRR` = full_lrr,
     `LRR Change` = lrr_change,
+    `Early vs Full` = classification,
     Detected = detected,
     `Years to Detect` = time_to_detect
   ) %>%
@@ -826,5 +818,5 @@ sink()
 
 cat("\n=== MANUSCRIPT RESULTS COMPLETE ===\n")
 cat("Report written to:", report_path, "\n")
-cat("Tables written to: figures/Table1_*.csv, Table2_*.csv (Table S5 in figures/supplemental/)\n")
-cat("Supplemental tables: figures/supplemental/TableS1_*.csv, TableS2_*.csv\n")
+cat("Tables written to: figures/Table1_*.csv, Table2_*.csv\n")
+cat("Supplemental tables: figures/supplemental/TableS1_*.csv, TableS2_*.csv, TableS3_*.csv\n")

@@ -69,8 +69,8 @@ full study duration (y-axis). The dashed diagonal line indicates 1:1
 correspondence; points above the line indicate treatments whose effects
 strengthened over time, and points below indicate treatments whose effects
 attenuated. Treatments are classified as accurate, underestimate,
-overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table S5)
-with sensitivity to the tolerance shown in Fig. S2. Colors and shapes denote LTER site identity. Most treatments
+overestimate, or wrong direction (|early - full LRR| tolerance 0.2; Table S1)
+with sensitivity to the tolerance shown in Fig. S1. Colors and shapes denote LTER site identity. Most treatments
 cluster near the origin and the 1:1 line (Pearson r = 0.71), indicating that
 early-period effect sizes are broadly predictive of long-term outcomes, though
 substantial scatter — particularly among treatments with strong initial
@@ -102,7 +102,7 @@ and among sites (mean = 20%, range: 0-67%), reflecting heterogeneous temporal
 dynamics of treatment effects.
 
 
-FigS2_early_vs_full_sensitivity
+FigS1_early_vs_full_sensitivity
 -------------------------------
 Sensitivity of the early-versus-full-duration classification to the tolerance
 used to define agreement. Bars show the percentage of the 83 treatment-
@@ -111,15 +111,5 @@ underestimate, overestimate, or wrong-direction prediction of the full-record
 LRR, for tolerances from 0.1 to 1.0 (top axis: the equivalent percentage
 difference in the response ratio). The dotted line marks the tolerance used in
 the main text (0.2, ~22%). The six wrong-direction cases (opposite signs, both
-|LRR| > 0.1) do not depend on the tolerance.
-
-
-FigS1_trend_characteristics_scatter
------------------------------------
-Characteristics of the temporal trend classification. Each point is one
-treatment-experiment combination, plotted by its coefficient of variation
-(x-axis) and the slope of the linear fit of the treatment/control ratio over
-time (y-axis), colored by assigned trend class. Dotted lines mark the
-classification thresholds: combinations with a significant slope (P < 0.05)
-are classified increasing or decreasing by slope sign; non-significant
-combinations are classified stable (CV < 0.3) or variable (CV >= 0.3).
+|LRR| > 0.1) do not depend on the tolerance. Mispredicted treatments (of 83) at
+tolerances 0.1, 0.2, 0.3, 0.5, and 1.0: 45, 30, 19, 13, and 6.
