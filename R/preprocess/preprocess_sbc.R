@@ -28,6 +28,9 @@ preprocess_sbc_algal_biomass <- function(raw_path) {
     # records (32 and 51 kg m-2) otherwise dominate whole years; the response is
     # the dry mass of algae and invertebrates.
     filter(GROUP != "FISH") %>%
+    # Giant kelp (SP_CODE "MAPY") is the thing being removed, so it cannot be
+    # part of the response; the response is the rest of the reef community.
+    filter(SP_CODE != "MAPY") %>%
     # Kelp is first removed in February 2008; January 2008 surveys are pre-treatment
     filter(!(YEAR == 2008 & MONTH < 2)) %>%
     select(YEAR, MONTH, SITE, TRANSECT, TREATMENT, all_of(available_cols)) %>%

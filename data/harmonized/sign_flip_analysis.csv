@@ -1,16 +1,16 @@
 "source","Treatment","n_flips","flip_years","site_abbr","n_timepoints","flip_pct"
 "AND_tree_DBH_2002-2015_processed.csv","WS06",0,NA,"AND",3,0
 "AND_tree_DBH_2002-2015_processed.csv","WS07",0,NA,"AND",3,0
-"ARC_Biomass_1982-2015_processed.csv","GH",NA,NA,"ARC",2,NA
-"ARC_Biomass_1982-2015_processed.csv","GHNP",NA,NA,"ARC",2,NA
-"ARC_Biomass_1982-2015_processed.csv","NP",0,NA,"ARC",6,0
-"ARC_Biomass_1982-2015_processed.csv","SH",NA,NA,"ARC",2,NA
+"ARC_vascular_biomass_1983-2015.csv","GH",NA,NA,"ARC",2,NA
+"ARC_vascular_biomass_1983-2015.csv","GHNP",NA,NA,"ARC",2,NA
+"ARC_vascular_biomass_1983-2015.csv","NP",0,NA,"ARC",6,0
+"ARC_vascular_biomass_1983-2015.csv","SH",NA,NA,"ARC",2,NA
 "BNZ_NEE_2009-2021.csv","C S",0,NA,"BNZ",13,0
 "BNZ_NEE_2009-2021.csv","W C",4,"2010; 2014; 2019; 2020","BNZ",13,33.3333333333333
 "BNZ_NEE_2009-2021.csv","W S",1,"2010","BNZ",13,8.33333333333333
-"CAP_Biomass_2006-2024_Processed.csv","N",0,NA,"CAP",11,0
-"CAP_Biomass_2006-2024_Processed.csv","NP",0,NA,"CAP",11,0
-"CAP_Biomass_2006-2024_Processed.csv","P",2,"2019; 2021","CAP",11,20
+"CAP_annual_plant_biomass_2008-2024.csv","N",0,NA,"CAP",11,0
+"CAP_annual_plant_biomass_2008-2024.csv","NP",0,NA,"CAP",11,0
+"CAP_annual_plant_biomass_2008-2024.csv","P",2,"2019; 2021","CAP",11,20
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oamb HTelv",5,"2015; 2016; 2017; 2018; 2019","CDR",10,55.5555555555556
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg",4,"2008; 2009; 2010; 2011","CDR",5,100
 "CDR_Biomass_1998-2021_gm2_processed.csv","Camb Namb M H2Oneg HTamb",2,"2014; 2015","CDR",9,25
@@ -39,17 +39,16 @@
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTamb",5,"2013; 2014; 2015; 2016; 2017","CDR",9,62.5
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich M H2Oneg HTelv",0,NA,"CDR",9,0
 "CDR_Biomass_1998-2021_gm2_processed.csv","Cenrich Nenrich S",0,NA,"CDR",23,0
-"GCE1.csv","Disturbed (March-2010)",0,NA,"GCE",11,0
-"HBR_litterfall_2009-2022_processed.csv","Ca",2,"2020; 2021","HBR",6,40
-"HBR_litterfall_2009-2022_processed.csv","N",1,"2016","HBR",11,10
-"HBR_litterfall_2009-2022_processed.csv","NP",3,"2017; 2020; 2021","HBR",11,30
-"HBR_litterfall_2009-2022_processed.csv","P",0,NA,"HBR",11,0
+"GCE_vegetation_cover_2010-2014.csv","Disturbed (March-2010)",0,NA,"GCE",5,0
+"HBR_litterfall_2011-2021.csv","Ca",2,"2020; 2021","HBR",6,40
+"HBR_litterfall_2011-2021.csv","N",1,"2016","HBR",11,10
+"HBR_litterfall_2011-2021.csv","NP",3,"2017; 2020; 2021","HBR",11,30
+"HBR_litterfall_2011-2021.csv","P",2,"2015; 2016","HBR",11,20
 "HFR_soil-respiration_1991-2021_Processed.csv","H",7,"1999; 2003; 2004; 2006; 2010; 2011; 2014","HFR",31,23.3333333333333
-"KBS_Biomass_1990-2022_processed.csv","T1",5,"1999; 2001; 2006; 2007; 2018","KBS",26,20
-"KBS_Biomass_1990-2022_processed.csv","T2",5,"1994; 1995; 1999; 2000; 2018","KBS",26,20
-"KBS_Biomass_1990-2022_processed.csv","T21",1,"1995","KBS",3,50
-"KBS_Biomass_1990-2022_processed.csv","T3",5,"1994; 1995; 1999; 2001; 2018","KBS",26,20
-"KBS_Biomass_1990-2022_processed.csv","T6",13,"1995; 1996; 1997; 1999; 2002; 2005; 2006; 2007; 2010; 2011; 2012; 2014; 2016","KBS",25,54.1666666666667
+"KBS_herbaceous_biomass_1993-2018.csv","T1",15,"1994; 1995; 1996; 1998; 1999; 2001; 2005; 2007; 2009; 2010; 2012; 2013; 2015; 2016; 2018","KBS",26,60
+"KBS_herbaceous_biomass_1993-2018.csv","T2",13,"1994; 1995; 1997; 1998; 1999; 2001; 2002; 2004; 2005; 2007; 2009; 2010; 2018","KBS",26,52
+"KBS_herbaceous_biomass_1993-2018.csv","T21",1,"1995","KBS",3,50
+"KBS_herbaceous_biomass_1993-2018.csv","T3",9,"1994; 1995; 1997; 1998; 1999; 2001; 2006; 2007; 2018","KBS",26,36
 "KNZ_Biomass_1986-2021_processed.csv","b m c",3,"1987; 1988; 1989","KNZ",18,17.6470588235294
 "KNZ_Biomass_1986-2021_processed.csv","b m n",1,"1987","KNZ",18,5.88235294117647
 "KNZ_Biomass_1986-2021_processed.csv","b m n+p",3,"1987; 1988; 1989","KNZ",18,17.6470588235294
@@ -65,18 +64,18 @@
 "KNZ_Biomass_1986-2021_processed.csv","u u n",11,"1987; 1989; 1990; 1999; 2000; 2004; 2005; 2009; 2010; 2011; 2012","KNZ",31,36.6666666666667
 "KNZ_Biomass_1986-2021_processed.csv","u u n+p",3,"1987; 1998; 1999","KNZ",31,10
 "KNZ_Biomass_1986-2021_processed.csv","u u p",13,"1989; 1990; 1992; 1993; 1996; 2001; 2003; 2005; 2009; 2010; 2012; 2013; 2016","KNZ",31,43.3333333333333
-"LUQ_GHG_fluxes_2003-2010.csv","No trim + debris",0,NA,"LUQ",5,0
-"LUQ_GHG_fluxes_2003-2010.csv","Trim & clear",2,"2008; 2009","LUQ",5,50
-"LUQ_GHG_fluxes_2003-2010.csv","Trim + debris",2,"2007; 2008","LUQ",5,50
+"LUQ_soil_CO2_flux_2005-2009.csv","No trim + debris",0,NA,"LUQ",5,0
+"LUQ_soil_CO2_flux_2005-2009.csv","Trim & clear",2,"2008; 2009","LUQ",5,50
+"LUQ_soil_CO2_flux_2005-2009.csv","Trim + debris",2,"2007; 2008","LUQ",5,50
 "MCM_CO2flux_2003-2010_processed.csv","C",0,NA,"MCM",5,0
 "MCM_CO2flux_2003-2010_processed.csv","CN",0,NA,"MCM",5,0
 "MCM_CO2flux_2003-2010_processed.csv","CP",1,"2007","MCM",5,25
 "MCM_CO2flux_2003-2010_processed.csv","N",1,"2007","MCM",5,25
 "MCM_CO2flux_2003-2010_processed.csv","P",1,"2007","MCM",5,25
-"NTL_NutrientAddition1.csv","added",0,NA,"NTL",4,0
-"NWT_AbovegroundBiomass_2006-2019_gm2_processed.csv","N",8,"2008; 2009; 2010; 2012; 2014; 2015; 2017; 2019","NWT",12,72.7272727272727
-"PIE-PlantShoot_2004-2020_Processed.csv","Enriched",0,NA,"PIE",16,0
-"SBC_algal_biomass_2008-2024_processed_corrected.csv","ANNUAL",1,"2009","SBC",16,6.66666666666667
-"SBC_algal_biomass_2008-2024_processed_corrected.csv","CONTINUAL",5,"2011; 2012; 2014; 2018; 2020","SBC",14,38.4615384615385
-"SEV_Aboveground_Biomass_2004-2023_gm2_processed_compactv.csv","F",3,"2006; 2018; 2022","SEV",20,15.7894736842105
-"VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv","Wrack",0,NA,"VCR",5,0
+"NTL_chlorophyll_2013-2019.csv","added",0,NA,"NTL",4,0
+"NWT_live_biomass_2007-2019.csv","N",8,"2008; 2009; 2010; 2012; 2014; 2015; 2017; 2019","NWT",12,72.7272727272727
+"PIE_shoot_mass_2004-2019.csv","Enriched",0,NA,"PIE",16,0
+"SBC_reef_biomass_2008-2023.csv","ANNUAL",5,"2010; 2015; 2016; 2018; 2019","SBC",16,33.3333333333333
+"SBC_reef_biomass_2008-2023.csv","CONTINUAL",0,NA,"SBC",14,0
+"SEV_aboveground_biomass_2004-2023.csv","F",3,"2006; 2018; 2022","SEV",20,15.7894736842105
+"VCR_wrack_live_biomass_1994-1998.csv","Wrack",0,NA,"VCR",5,0

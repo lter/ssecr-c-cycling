@@ -39,12 +39,26 @@ cdr_is_control <- function(treatment) {
   }, logical(1))
 }
 
+# Sources whose replicates sit in blocks with very different baselines (reefs,
+# forest stands, lake basins) and whose treatments are not present in every
+# block: a treatment replicate is compared with the control of its own block.
+BLOCK_MATCHED_SOURCES <- c("SBC", "HBR", "MCM")   # matched on the source's site prefix
+
 #' Stratum within which a treatment is compared with its control.
-#' One stratum per source, except where a source holds several nested designs.
-control_stratum <- function(source, treatment) {
+#' One stratum per source, except (a) CDR, which holds several nested designs,
+#' and (b) block-matched sources, where the stratum is the replicate block
+#' (SBC reef, HBR stand, MCM lake basin).
+control_stratum <- function(source, treatment, replicate = NULL) {
   out <- rep("all", length(source))
   idx <- source == CDR_SOURCE
   if (any(idx)) out[idx] <- cdr_stratum(treatment[idx])
+  if (!is.null(replicate)) {
+    site <- substr(source, 1, 3)
+    blk <- site %in% c("SBC", "HBR")
+    out[blk] <- as.character(replicate[blk])
+    mcm <- site == "MCM"
+    out[mcm] <- sub(" .*$", "", as.character(replicate[mcm]))   # "Bonney 3" -> "Bonney"
+  }
   out
 }
 
@@ -76,7 +90,7 @@ calculate_relative_response <- function(data, response_var = "Response.Variable"
   data$Date_parsed <- parse_dates(data$Date)
 
   # Separate control and treatment data
-  data$control_stratum <- control_stratum(data$source, data$Treatment)
+  data$control_stratum <- control_stratum(data$source, data$Treatment, data$Replicate)
 
   control_data <- data %>%
     filter(is_control(source, Treatment, control_names)) %>%
@@ -258,7 +272,9 @@ calculate_lrr <- function(data, time_col = "Date", control_names = CONTROL_NAMES
   # Pool all control rows per source x time (there can be several control
   # treatment labels or replicate groups); combine as a single weighted group
   # rather than arbitrarily taking the first row
-  data$control_stratum <- control_stratum(data$source, data$Treatment)
+  if (!"control_stratum" %in% names(data)) {
+    data$control_stratum <- control_stratum(data$source, data$Treatment)
+  }
 
   control_data <- data %>%
     filter(is_control(source, Treatment, control_names)) %>%

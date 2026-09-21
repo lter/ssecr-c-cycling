@@ -34,16 +34,15 @@
 "CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg HTamb",9,0,NA,"-0.027992","0.5723",5
 "CDR","Cedar Creek","Grassland","Cenrich Nenrich M H2Oneg HTelv",9,0,NA,"0.047522","0.4411",5
 "CDR","Cedar Creek","Grassland","Cenrich Nenrich S",23,2,"2000; 2007","-0.095787; -0.12109; -0.009755","0.7563; 0.0424; 0.4449",5
-"GCE","Georgia Coastal Ecosystems","Coastal","Disturbed (March-2010)",11,1,"2012","0.192047; -0.01479","0.0754; 0.0173",5
-"HBR","Hubbard Brook","Forest","Ca",6,0,NA,"0.005282","0.4198",5
-"HBR","Hubbard Brook","Forest","N",11,0,NA,"0.013621","1e-04",5
-"HBR","Hubbard Brook","Forest","NP",11,1,"2011","NA; 0.010853","NA; 0.014",5
-"HBR","Hubbard Brook","Forest","P",11,0,NA,"0.003714","0.1166",5
+"GCE","Georgia Coastal Ecosystems","Coastal","Disturbed (March-2010)",5,0,NA,"0.115298","0.0187",5
+"HBR","Hubbard Brook","Forest","Ca",6,0,NA,"0.012176","0.367",5
+"HBR","Hubbard Brook","Forest","N",11,0,NA,"0.013761","1e-04",5
+"HBR","Hubbard Brook","Forest","NP",11,1,"2011","NA; 0.011344","NA; 0.0129",5
+"HBR","Hubbard Brook","Forest","P",11,0,NA,"0.002812","0.2115",5
 "HFR","Harvard Forest","Forest","H",31,3,"2000; 2011; 2018","-0.040722; 0.011632; -0.024153; -0.017584","0.0013; 0.2967; 0.0794; 0.519",5
-"KBS","Kellogg Biological Station","Grassland","T1",26,0,NA,"0.014312","0.2938",5
-"KBS","Kellogg Biological Station","Grassland","T2",26,0,NA,"0.020858","0.1221",5
-"KBS","Kellogg Biological Station","Grassland","T3",26,2,"2005; 2011","0.005958; 0.139268; 0.050223","0.7821; 0.023; 0.6818",5
-"KBS","Kellogg Biological Station","Grassland","T6",25,0,NA,"0.022589","0.4387",5
+"KBS","Kellogg Biological Station","Grassland","T1",26,0,NA,"0.00661","0.468",5
+"KBS","Kellogg Biological Station","Grassland","T2",26,0,NA,"0.011057","0.2603",5
+"KBS","Kellogg Biological Station","Grassland","T3",26,2,"2005; 2010","0.001956; 0.077894; 0.006294","0.8832; 0.2338; 0.9093",5
 "KNZ","Konza Prairie","Grassland","b m c",18,0,NA,"0.032832","0.1116",5
 "KNZ","Konza Prairie","Grassland","b m n",18,1,"1994","0.160072; 0.075375","0.1974; 0.3537",5
 "KNZ","Konza Prairie","Grassland","b m n+p",18,0,NA,"0.064554","0.0819",5
@@ -62,14 +61,14 @@
 "LUQ","Luquillo","Forest","No trim + debris",5,0,NA,"-0.023518","0.4731",5
 "LUQ","Luquillo","Forest","Trim & clear",5,0,NA,"0.035192","0.3625",5
 "LUQ","Luquillo","Forest","Trim + debris",5,0,NA,"0.006295","0.8641",5
-"MCM","McMurdo Dry Valleys","Tundra","C",5,0,NA,"0.065193","0.0485",5
-"MCM","McMurdo Dry Valleys","Tundra","CN",5,0,NA,"0.180051","0.1772",5
-"MCM","McMurdo Dry Valleys","Tundra","CP",5,0,NA,"0.129964","0.1635",5
-"MCM","McMurdo Dry Valleys","Tundra","N",5,0,NA,"0.058661","0.3807",5
-"MCM","McMurdo Dry Valleys","Tundra","P",5,0,NA,"0.049677","0.1681",5
+"MCM","McMurdo Dry Valleys","Tundra","C",5,0,NA,"0.190221","0.4516",5
+"MCM","McMurdo Dry Valleys","Tundra","CN",5,0,NA,"0.323469","0.2538",5
+"MCM","McMurdo Dry Valleys","Tundra","CP",5,0,NA,"0.316942","0.426",5
+"MCM","McMurdo Dry Valleys","Tundra","N",5,0,NA,"0.112114","0.3366",5
+"MCM","McMurdo Dry Valleys","Tundra","P",5,0,NA,"0.100083","0.3515",5
 "NWT","Niwot Ridge","Tundra","N",12,0,NA,"-0.003616","0.7448",5
 "PIE","Plum Island Ecosystems","Coastal","Enriched",16,0,NA,"0.001802","0.7991",5
-"SBC","Santa Barbara Coastal","Coastal","ANNUAL",16,1,"2014","-0.056052; -0.005063","0.0462; 0.7255",5
-"SBC","Santa Barbara Coastal","Coastal","CONTINUAL",14,0,NA,"-0.008169","0.2214",5
+"SBC","Santa Barbara Coastal","Coastal","ANNUAL",16,2,"2009; 2022","0.01494; -0.006949; NA","NaN; 0.4482; NA",5
+"SBC","Santa Barbara Coastal","Coastal","CONTINUAL",14,1,"2020","0.0143; 0.054766","0.5245; 0.6481",5
 "SEV","Sevilleta","Grassland","F",20,0,NA,"-0.012726","0.3227",5
 "VCR","Virginia Coast Reserve","Coastal","Wrack",5,0,NA,"0.183471","0.0876",5
