@@ -25,21 +25,35 @@ preprocess_knz_biomass <- function(raw_path) {
                    na.strings = c("", "NA", ".", "-9999", "-99999", "9999"),
                    strip.white = TRUE)
 
-  biomass_cols <- c("LVGRASS", "FORBS", "WOODY")
+  biomass_cols <- c("LVGRASS", "FORBS", "CUYRDD")
 
+  # Herbaceous aboveground production per quadrat. Current-year dead (CUYRDD)
+  # was sorted separately until 2002 and is part of LVGRASS afterwards, so it is
+  # added back for a consistent series. Woody stems are multi-year biomass and
+  # single shrub quadrats (400-660 g) in the control plots otherwise swing the
+  # denominator of every treatment, so WOODY is not included.
   data <- data %>%
     mutate(across(all_of(biomass_cols), ~ suppressWarnings(as.numeric(.x)))) %>%
-    # Legacy rule: keep quadrats with both live grass and forbs recorded
     filter(!is.na(LVGRASS), !is.na(FORBS)) %>%
     mutate(
+      MOWED = tolower(MOW) == "m",
+      FERTILIZED = tolower(NUTRIENT) != "c",
       TREATMENT = paste(tolower(BURN), tolower(MOW), tolower(NUTRIENT)),
-      # Live aboveground biomass per quadrat (current-year dead CUYRDD and
-      # previous-year dead PRYRDD are not included, as in the legacy file)
-      BIOMASS = LVGRASS + FORBS + WOODY
+      BIOMASS = LVGRASS + FORBS + coalesce(CUYRDD, 0)
     ) %>%
-    # Mean across quadrats (REPLICATE a/b) within plot and harvest date
-    group_by(RECYEAR, RECMONTH, RECDAY, PLOT, TREATMENT) %>%
-    summarise(BIOMASS = mean(BIOMASS), .groups = "drop")
+    # Treatments are analyzed only while they were applied (package metadata):
+    # mowing was last implemented in 2003, fertilization ended in 2017
+    filter(!(MOWED & RECYEAR > 2003), !(FERTILIZED & RECYEAR > 2016)) %>%
+    # mean of the quadrats clipped on a date
+    group_by(RECYEAR, RECMONTH, RECDAY, PLOT, TREATMENT, MOWED) %>%
+    summarise(BIOMASS = mean(BIOMASS), .groups = "drop") %>%
+    # One value per plot-year: mowed plots were clipped before mowing and again
+    # at peak biomass, so their production is the SUM of the clips; unmowed
+    # plots use the last (peak-season) clip of the year
+    arrange(RECYEAR, PLOT, RECMONTH, RECDAY) %>%
+    group_by(RECYEAR, PLOT, TREATMENT) %>%
+    summarise(BIOMASS = if (first(MOWED)) sum(BIOMASS) else last(BIOMASS),
+              N_CLIPS = n(), .groups = "drop")
 
   as.data.frame(data)
 }

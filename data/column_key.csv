@@ -20,9 +20,9 @@ SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,TREATMENT,Treatment,NA
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,DRY_GM2_sum,Response.Variable,Stock
 SBC_algal_biomass_2008-2024_processed_corrected.csv,SBC,SITE,Replicate,NA
 VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,EOYBYear,Date,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Replicate,Replicate,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,locationName,Treatment,NA
-VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,totalMass_mean,Response.Variable,Stock
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Plot,Replicate,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,Treatment,Treatment,NA
+VCR_flora manipulation and inundation_live_dead_biomass_1994-2014_gm2_processed.csv,VCR,live_gm2,Response.Variable,Stock
 GCE1.csv,GCE,Date,Date,NA
 GCE1.csv,GCE,Treatment,Treatment,NA
 GCE1.csv,GCE,Site,Replicate,NA

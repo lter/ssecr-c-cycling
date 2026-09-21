@@ -24,6 +24,12 @@ preprocess_sbc_algal_biomass <- function(raw_path) {
 
   # -99999 is the package's missing-value code; it must not enter the sums
   result <- data %>%
+    # Mobile fish are not attached to a transect, and two single schooling-fish
+    # records (32 and 51 kg m-2) otherwise dominate whole years; the response is
+    # the dry mass of algae and invertebrates.
+    filter(GROUP != "FISH") %>%
+    # Kelp is first removed in February 2008; January 2008 surveys are pre-treatment
+    filter(!(YEAR == 2008 & MONTH < 2)) %>%
     select(YEAR, MONTH, SITE, TRANSECT, TREATMENT, all_of(available_cols)) %>%
     mutate(across(all_of(available_cols), ~ na_if(.x, -99999))) %>%
     summarize_by_columns(c("YEAR", "MONTH", "SITE", "TRANSECT", "TREATMENT"))

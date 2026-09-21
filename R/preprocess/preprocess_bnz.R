@@ -37,19 +37,24 @@ preprocess_bnz_nee <- function(...) {
 
   data <- data %>%
     filter(!is.na(.data[[nee_col]])) %>%
-    mutate(treatment = paste(.data[[ww_col]], .data[[sw_col]]))
+    # 2012 codes the same treatments as WW / SW instead of W / S
+    mutate(across(all_of(c(ww_col, sw_col)), ~ recode(.x, "WW" = "W", "SW" = "S")),
+           treatment = paste(.data[[ww_col]], .data[[sw_col]]))
 
-  # Sum to daily totals first, then annual
+  # Seasonal sum per plot, then the MEAN of the plots in a fence x treatment.
+  # (Summing across plots doubled the values and, in 2019 when most cells had
+  # one plot instead of two, made years incomparable.)
+  plot_col <- grep("^plot$|^Plot$", names(data), value = TRUE)[1]
   result <- data %>%
     group_by(
       year = .data[[year_col]],
       fence = .data[[fence_col]],
       treatment,
-      doy = .data[[doy_col]]
+      plot = .data[[plot_col]]
     ) %>%
-    summarise(NEE_daily = sum(.data[[nee_col]], na.rm = TRUE), .groups = "drop") %>%
+    summarise(NEE_plot = sum(.data[[nee_col]], na.rm = TRUE), .groups = "drop") %>%
     group_by(year, fence, treatment) %>%
-    summarise(NEE = sum(NEE_daily, na.rm = TRUE), .groups = "drop")
+    summarise(NEE = mean(NEE_plot, na.rm = TRUE), .groups = "drop")
 
   as.data.frame(result)
 }

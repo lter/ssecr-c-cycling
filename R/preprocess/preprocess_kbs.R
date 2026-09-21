@@ -52,6 +52,10 @@ preprocess_kbs_biomass <- function(raw_path) {
     # so summing every fraction double-counts. Per sampling event use WHOLE
     # where it exists, otherwise the sum of the component fractions; LITTER is
     # not plant production and is never included.
+    # Through 1992 the treatments were in different phases of the rotation
+    # (e.g. T1 soybean while T4 grew corn), so a treatment/reference ratio was a
+    # crop contrast; all systems share one crop sequence from 1993
+    filter(Year >= 1993) %>%
     filter(Fraction != "LITTER") %>%
     group_by(Year, Campaign, Treatment, Replicate, Station, Species) %>%
     summarise(Biomass = if (any(Fraction == "WHOLE")) sum(Biomass[Fraction == "WHOLE"])

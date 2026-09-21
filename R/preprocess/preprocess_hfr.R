@@ -68,6 +68,9 @@ preprocess_hfr_soil_respiration <- function(raw_path) {
   data <- data %>%
     mutate(co2_flux = suppressWarnings(as.numeric(co2_flux))) %>%
     filter(!is.na(co2_flux)) %>%
+    # Heating began in July 1991; the two June 1991 sampling dates are
+    # pre-treatment (heated/control ~ 1.0)
+    filter(!(year == 1991 & "month" %in% names(.) & month < 7)) %>%
     group_by(year, treatment, plot) %>%
     summarise(soil_res = mean(co2_flux), .groups = "drop")
 

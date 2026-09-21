@@ -33,10 +33,24 @@ preprocess_vcr_inundation_2nd <- function(raw_path) {
 #' @param raw_path Path to raw CSV from EDI (knb-lter-vcr.168.24)
 #' @return data.frame with summary statistics per Year/Location/Replicate
 preprocess_vcr_inundation_1st <- function(raw_path) {
-  data <- read.csv(raw_path, stringsAsFactors = FALSE, skip = 22)
-
-  # Same structure as 2nd experiment but with capital R in Replicate
-  result <- summarize_by_columns(data, c("EOYBYear", "locationName", "Replicate"))
-
-  as.data.frame(result)
+  # Upper Phillips Creek inundation x wrack experiment (Tolley & Christian 1999):
+  # nine 4 x 3 m plots in three blocks; within every plot, Spartina alterniflora
+  # wrack was laid over half of the area in April 1994. The package does not
+  # say which plots were flooded, but it does record the wrack contrast:
+  # Transect "W" = wrack half, "V" = vegetated (no-wrack) half, sampled 1994-1998.
+  # ("Inside/Outside Juncus", used by the 2025 hand-processed file as the
+  # treatment, is the vegetation zone sampled, not a manipulation.)
+  #
+  # Response: live aboveground biomass, g m-2. Species rows of a 0.0625 m2
+  # quadrat are summed (x16), then quadrats are averaged per plot x half x year.
+  data <- read.csv(raw_path, stringsAsFactors = FALSE, comment.char = "#")
+  data %>%
+    filter(Transect %in% c("V", "W"),
+           !speciesName %in% c("Wrack", "Combined Dead")) %>%
+    mutate(Treatment = ifelse(Transect == "W", "Wrack", "No wrack")) %>%
+    group_by(EOYBYear, Plot = marshRegion, Treatment, locationName, Replicate) %>%
+    summarise(live_gm2 = sum(liveMass, na.rm = TRUE) * 16, .groups = "drop") %>%
+    group_by(EOYBYear, Plot, Treatment) %>%
+    summarise(live_gm2 = mean(live_gm2), n_quadrats = n(), .groups = "drop") %>%
+    as.data.frame()
 }

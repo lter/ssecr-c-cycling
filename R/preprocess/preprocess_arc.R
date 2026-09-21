@@ -61,7 +61,9 @@ preprocess_arc_biomass <- function(raw_path) {
   # 1. Late-July (peak-season) harvest; 2. aboveground categories
   data <- data %>%
     filter(Month == 7, Day >= 15,
-           `Biomass Categroy` %in% c("new above", "old above", "non-vascular"))
+           # mosses and lichens ("non-vascular") were only sorted from 1989 on,
+           # so including them makes 1983-84 incomparable with later harvests
+           `Biomass Categroy` %in% c("new above", "old above"))
 
   # 3. Quadrat totals from the raw masses of every harvested quadrat
   quad_cols <- grep("^B[1-4]Q[1-8]$", names(data), value = TRUE)

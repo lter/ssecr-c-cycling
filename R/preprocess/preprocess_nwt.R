@@ -33,7 +33,7 @@ preprocess_nwt_anpp <- function(raw_path) {
   data <- read.csv(raw_path, stringsAsFactors = FALSE,
                    na.strings = c("NA", "NaN", "", "."))
 
-  needed <- c("year", "block", "snow", "N", "temp", "plot", "mass")
+  needed <- c("year", "block", "snow", "N", "temp", "plot", "spp", "mass")
   missing_cols <- setdiff(needed, names(data))
   if (length(missing_cols) > 0) {
     hint <- if ("hits" %in% names(data)) {
@@ -56,6 +56,11 @@ preprocess_nwt_anpp <- function(raw_path) {
       # explicit missing-value codes -> NA before aggregating
       mass = ifelse(mass %in% c(-9999, -99999, 9999), NA_real_, mass)
     ) %>%
+    # 'spp' distinguishes live biomass from litter (biomass senesced in earlier
+    # years); 2006 reports only their total. Use live biomass, 2007 onward -
+    # averaging live and litter rows made litter build-up look like a response.
+    filter(spp == "live") %>%
+    select(-spp) %>%
     filter(!is.na(mass), snow == "X", temp == "X") %>%
     summarize_by_columns(c("year", "block", "snow", "N", "temp")) %>%
     arrange(year, block, snow, N, temp)
