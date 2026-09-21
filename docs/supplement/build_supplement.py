@@ -16,7 +16,7 @@ TABLES = {
                  "type, years analyzed, number of years sampled, number of analyzable treatments (in parentheses, "
                  "the number screened), EDI data-package identifier, and data citation."),
     "Table S2": (f"{SUP}/TableS2_full_treatment_statistics.csv",
-                 "Per-treatment statistics for the 83 classified treatment-experiment combinations: trend class, "
+                 "Per-treatment statistics for the 78 classified treatment-experiment combinations: trend class, "
                  "slope, P-value and R-squared of the linear fit of the response ratio over time, coefficient of "
                  "variation (CV), mean response ratio, number of timepoints, record length, early (first three "
                  "calendar years) and full-duration log response ratios (LRR) with their difference and "
@@ -25,7 +25,7 @@ TABLES = {
                  "percentage (of consecutive measurement transitions), and years of sign flips, and the "
                  "P-value and directional call when the trend analysis is repeated on the log response ratio."),
     "Table S3": (f"{SUP}/TableS3_sizer_results.csv",
-                 "SiZer results for the 79 treatment-experiment combinations with at least five timepoints: number "
+                 "SiZer results for the 74 treatment-experiment combinations with at least five timepoints: number "
                  "of significant slope changes at a 5-year bandwidth, the years at which they occurred, and segment "
                  "slopes with P-values."),
 }
