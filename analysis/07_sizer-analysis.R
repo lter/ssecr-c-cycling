@@ -334,12 +334,12 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
 
   # Ecosystem type colors (one color per type, matching the site palette families)
   ecosystem_colors <- c(
-    "Grassland"  = "#CC7A29",
-    "Forest"     = "#3C8556",
-    "Tundra"     = "#4A7BA7",
-    "Coastal"    = "#1B7A7D",
-    "Urban"      = "#8E6FAD",
-    "Freshwater" = "#5AAECC"
+    "Grassland"  = "#A6D854",
+    "Forest"     = "#0E9637",
+    "Tundra"     = "#E69F00",
+    "Coastal"    = "#004DB3",
+    "Urban"      = "#94328C",
+    "Freshwater" = "#56AEE0"
   )
 
   # Compute flip percentage if not already present
@@ -361,7 +361,8 @@ if (file.exists(sign_flip_file) && length(all_panels) >= 4) {
   p_signflips <- ggplot(flip_data, aes(y = site_abbr, x = flip_pct)) +
     geom_boxplot(aes(fill = site_type), alpha = 0.4, outlier.shape = NA,
                  linewidth = 0.3, color = "gray40") +
-    geom_jitter(aes(color = site_type), height = 0.15, alpha = 0.5, size = 1.5) +
+   geom_point(aes(color = site_type), position = position_jitter(width = 0,height = 0.15, seed = 123), 
+               alpha = 0.5,size = 1.5) +
     scale_fill_manual(values = ecosystem_colors, name = "Ecosystem") +
     scale_color_manual(values = ecosystem_colors, name = "Ecosystem") +
     labs(y = NULL, x = "Sign Flips (% of Transitions)") +
