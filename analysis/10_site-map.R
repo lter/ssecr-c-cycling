@@ -83,14 +83,14 @@ site_info <- site_coords %>%
   left_join(metadata %>% distinct(site_abbr, site_type), by = "site_abbr")
 
 # Ecosystem type colors (matching 07_sizer-analysis.R)
-ecosystem_colors <- c(
-  "Grassland"  = "#CC7A29",
-  "Forest"     = "#3C8556",
-  "Tundra"     = "#4A7BA7",
-  "Coastal"    = "#1B7A7D",
-  "Urban"      = "#8E6FAD",
-  "Freshwater" = "#5AAECC"
-)
+ ecosystem_colors <- c(
+    "Grassland"  = "#A6D854",
+    "Forest"     = "#0E9637",
+    "Tundra"     = "#E69F00",
+    "Coastal"    = "#004DB3",
+    "Urban"      = "#94328C",
+    "Freshwater" = "#56AEE0"
+  )
 
 # =============================================================================
 # PANEL A: Map (continental US + Alaska + McMurdo inset)
